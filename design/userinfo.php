@@ -1,0 +1,101 @@
+<?php
+	if (session_status() == PHP_SESSION_NONE) {session_start();}
+	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
+	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
+	else{
+		$conn->query("SET NAMES 'utf8'");
+		$profile = $conn->query("SELECT * FROM users WHERE nick='" .$user. "'");
+
+		if ($profile->num_rows > 0) {
+			$i = $profile->fetch_assoc();
+			if ($i["auctor"] == '1') {$v = "<img id='vicon' src='media/images/icons/verified.png' />";}
+			else {$v = "";};
+
+			if (strlen($i['birth']) > 7)
+				{$b = substr($i['birth'],8,2). '/'. substr($i['birth'],5,2) .'/'. substr($i['birth'],0,4);}
+			else {$b = $i['birth'];}
+			if ($i['auctor'] == '1') {
+				$d = "<img src='media/images/icons/death.png' height='30' /><span>";
+				if (strlen($i['death']) > 7)
+					{$d = $d.substr($i['death'],8,2). '/'. substr($i['death'],5,2) .'/'. substr($i['death'],0,4);}
+				else {$d = $d.$i['death'];}
+				$d = $d."</span>";
+			}
+			else {$d = '';}
+
+			$bnr = "media/images/banners/" .$i["nick"]. ".jpg";
+			if (strlen($i['name']) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';}
+			else {$hst = '';}
+
+			$slf = '';
+			$fav = '';
+			if ($_SESSION['user'] == $i['nick']) {
+				$shelf = $conn->query("SELECT b.id,b.name,u.name as auctor,s.state FROM shelves as s JOIN books as b JOIN users as u
+					ON b.auctor=u.nick and s.book=b.id WHERE s.user='".$i['nick']."'");
+				if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
+				else {$lang = $_COOKIE['lang'];}
+
+				if ($shelf->num_rows > 0) {
+					$slf = "<div class='brow shelf'>
+								<div class='displaybooks'>
+									<div class='manlan' lang='pt'>
+										<h1>Na sua estante</h1>
+									</div>
+									<div class='manlan' lang='en'>
+										<h1>In your shelf</h1>
+									</div>
+									<div class='manlan' lang='es'>
+										<h1>En tu estante</h1>
+									</div>";
+					$fav = "<div class='brow shelf'>
+								<div class='displaybooks'>
+									<div class='manlan' lang='pt'>
+										<h1>Favoritos</h1>
+									</div>
+									<div class='manlan' lang='en'>
+										<h1>Favorites</h1>
+									</div>
+									<div class='manlan' lang='es'>
+										<h1>Favoritos</h1>
+									</div>";
+					while ($s = $shelf->fetch_assoc()) {
+						$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$s['id']."'");
+						$t = $translation->fetch_assoc();
+						$thb = "<a href='books/" .$s["id"]. ".php'>
+									<button class='thumbs'>
+										<div class='coverart'> <img  src='media/images/covers/" .$s["id"]. ".jpg' /> </div>
+										<div class='description'>
+										<h2> ".$t[$lang]." </h2>
+										<h3> ".$s['auctor']." </h3>";
+										$thb = $thb. file_get_contents('../sinopsis/'.$s['id'].'.php');
+									$thb = $thb. "</div>
+									</button>
+								</a>";
+						if ($s['state'] > 0) {$slf = $slf.$thb;}
+						if ($s['state'] == 3) {$fav = $fav.$thb;}
+						}
+					$slf = $slf. "</div></div>";
+					$fav = $fav. "</div></div>";
+					}
+				}
+
+			echo "<div id='banner' style='background-image: url(".'"'.$bnr.'"'.")'></div>
+				<div id='profile'>
+					<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' title='" .$i["name"]. "'/>
+					<h1 id='username' ".$hst."> " .$i["name"]. " </h1> " .$v. "
+					<h2 id='nickname'> @" .$i["nick"]. " </h2>
+					<div id='binfobar'>
+						<img src='media/images/icons/birth.png' height='30' />
+						<span> " .$b. " </span>
+						" .$d. "
+						<img src='media/images/icons/gender_" .$i["gender"]. ".png' height='30' />
+						<span> " .$i["hometown"]. " </span>
+						<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
+							<img id='couflag' src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
+						</a>
+					</div>
+				</div>".$slf.$fav;
+			}
+	}
+	$conn->close();
+?>

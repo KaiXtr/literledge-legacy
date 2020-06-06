@@ -1,0 +1,9 @@
+<div class='manlan' lang='pt'>
+Um menino decide sair do asteróide B-12 para buscar a felicidade entre os adultos, como são estranhos os adultos...
+</div>
+<div class='manlan' lang='en'>
+The boy from asteroid-B12 travel through space finding the hapiness in the adults, how strange are the adults...
+</div>
+<div class='manlan' lang='es'>
+Un niño decide abandonar el asteroide B-12 para buscar la felicidad entre los adultos, cuán extraños son los adultos ...
+</div>
