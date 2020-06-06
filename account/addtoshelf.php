@@ -1,9 +1,6 @@
 <?php
-	if (session_status() == PHP_SESSION_NONE) {session_start();}
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else if ((isset($_POST['id']))&&(strlen($_POST['id']) == 6)) {
+	require 'mysql_connect.php';
+	if (($notcon == null)&&(isset($_POST['id']))&&(strlen($_POST['id']) == 6)) {
 		$fuser = $conn->query("SELECT nick FROM users WHERE nick='".$_SESSION['user']."'");
 		$fbook = $conn->query("SELECT id FROM books WHERE id='".$_POST['id']."'");
 

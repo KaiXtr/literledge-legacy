@@ -156,11 +156,22 @@ function previmg(event,target) {
 	obj.src = URL.createObjectURL(event.target.files[0]);
 }
 
+function valueChange(value) {
+	this.remainingText = 1000 - value;
+}
+
 $(document).ready(function() {
 	$("#burgerbut").on('click', function () {set_display('lateralbar')});
 	$("#openpro").on('click', function () {set_display('profilemenu')});
 });
 
-function valueChange(value) {
-	this.remainingText = 1000 - value;
-}
+function search_suggest(text) {
+	$.ajax({
+		type: "GET",
+		url: "upload.php",
+		data: "seasugg=" + text,
+		success: function(result) {
+			$("#somewhere").html(result);
+		}
+	});
+};

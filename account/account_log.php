@@ -1,9 +1,6 @@
 <?php
-	if (session_status() == PHP_SESSION_NONE) {session_start();}
-	if ((!isset($_POST['user']))||(!isset($_POST['password']))) {header("location: http://localhost/literledge/login.php?error=1");}
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else{
+	require 'mysql_connect.php';
+	if ($notcon == null) {
 		$conn->query("SET NAMES 'utf8'");
 		$find = $conn->query("SELECT nick, email, password, auctor FROM users");
 		$u = '';

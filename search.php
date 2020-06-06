@@ -33,9 +33,8 @@
 				if (@$_GET['ob'] == true) {$ofsb = (int) $_GET['ob'];} else {$ofsb = 0;}
 				if (@$_GET['op'] == true) {$ofsp = (int) $_GET['op'];} else {$ofsp = 0;}
 
-				$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-				if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-				else{
+				require 'account/mysql_connect.php';
+				if ($notcon == null) {
 					require 'design/array_lists.php';
 					
 					echo "<div class='brow'>";

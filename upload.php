@@ -19,11 +19,10 @@
 
 		<div class='content'>
 			<div class='login proedit'>
-				<form action='account/profile_edit.php' method='post' enctype='multipart/form-data'>
+				<form action='account/send_request.php' method='post' enctype='multipart/form-data'>
 					<?php
-						$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-						if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-						else{
+						require 'account/mysql_connect.php';
+						if ($notcon == null) {
 							$find = $conn->query("SELECT * FROM users WHERE nick='" .$_SESSION['user']. "'");
 							if ($find->num_rows > 0) {$i = $find->fetch_assoc();}
 						}
@@ -36,15 +35,15 @@
 					?>
 					<div id='optlst'>
 						<ul>
-							<li> <a onclick='set_tab("tab1","tab2","tab3")'> <input id='op1' type='radio' name='edit' value='account' checked='true' />
+							<li> <a onclick='set_tab("tab1","tab2","tab3")'> <input id='op1' type='radio' name='request' value='poem' checked='true' />
 								<div class='manlan' lang='pt'> <label for='op1'> Poema </label> </div>
 								<div class='manlan' lang='en'> <label for='op1'> Poem </label> </div>
 							</a> </li>
-							<li> <a onclick='set_tab("tab2","tab1","tab3")'> <input id='op2' type='radio' name='edit' value='security' />
+							<li> <a onclick='set_tab("tab2","tab1","tab3")'> <input id='op2' type='radio' name='request' value='book' />
 								<div class='manlan' lang='pt'> <label for='op2'> Livro </label> </div>
 								<div class='manlan' lang='en'> <label for='op2'> Book </label> </div>
 							</a> </li>
-							<li> <a onclick='set_tab("tab3","tab1","tab3")'> <input id='op3' type='radio' name='edit' value='navigation' />
+							<li> <a onclick='set_tab("tab3","tab1","tab2")'> <input id='op3' type='radio' name='request' value='auctor' />
 								<div class='manlan' lang='pt'> <label for='op3'> Autor </label> </div>
 								<div class='manlan' lang='en'> <label for='op3'> Auctor </label> </div>
 							</a> </li>
@@ -55,15 +54,97 @@
 						</ul>
 					</div>
 					<div id='tab1' class='optabs' style='display: block;'>
-						
+						<span id='text'>
+							<div class='manlan' lang='pt'> nome </div>
+							<div class='manlan' lang='en'> name </div>
+							<div class='manlan' lang='es'> nombre </div>
+						</span> <br />
+						<input type='text' class='textbox' name='pname' maxLength='30' />
+						<br />
+						<span id='text'>
+							<div class='manlan' lang='pt'> poema </div>
+							<div class='manlan' lang='en'> poem </div>
+							<div class='manlan' lang='es'> poema </div>
+						</span> <br />
+						<textarea class='textbox long' name='pcontent'></textarea>
+						<br />
+						<span id='text'>
+							<div class='manlan' lang='pt'> autor </div>
+							<div class='manlan' lang='en'> auctor </div>
+							<div class='manlan' lang='es'> autor </div>
+						</span> <br />
+						<input type='text' class='textbox' name='pauctor' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
+						<datalist id='auctors'>
+						<?php
+							require 'account/mysql_connect.php';
+							if ($notcon == null) {
+								$find = $conn->query("SELECT name FROM users");
+								if ($find->num_rows > 0) {
+									while ($i = $find->fetch_assoc()) {
+											echo "<option>".$i['name']."</option>";
+										}
+									}
+								$conn->close();
+								}
+							if (isset($_GET['seasugg'])) {
+								mainInfo($_GET['seasugg']);
+							}
+						?>
+						</datalist>
 					</div>
 					<div id='tab2' class='optabs' style='display: none;'>
-						
+						<span id='text'>
+							<div class='manlan' lang='pt'> autor </div>
+							<div class='manlan' lang='en'> auctor </div>
+							<div class='manlan' lang='es'> autor </div>
+						</span> <br />
+						<input type='text' class='textbox' name='pauctor' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
+						<datalist id='auctors'>
+						<?php
+							require 'account/mysql_connect.php';
+							if ($notcon == null) {
+								$find = $conn->query("SELECT name FROM users");
+								if ($find->num_rows > 0) {
+									while ($i = $find->fetch_assoc()) {
+											echo "<option>".$i['name']."</option>";
+										}
+									}
+								$conn->close();
+								}
+							if (isset($_GET['seasugg'])) {
+								mainInfo($_GET['seasugg']);
+							}
+						?>
+						</datalist>
+					</div>
+					<div id='tab3' class='optabs' style='display: none;'>
+						<span id='text'>
+							<div class='manlan' lang='pt'> autor </div>
+							<div class='manlan' lang='en'> auctor </div>
+							<div class='manlan' lang='es'> autor </div>
+						</span> <br />
+						<input type='text' class='textbox' name='aname' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
+						<datalist id='auctors'>
+						<?php
+							require 'account/mysql_connect.php';
+							if ($notcon == null) {
+								$find = $conn->query("SELECT name FROM users");
+								if ($find->num_rows > 0) {
+									while ($i = $find->fetch_assoc()) {
+											echo "<option>".$i['name']."</option>";
+										}
+									}
+								$conn->close();
+								}
+							if (isset($_GET['seasugg'])) {
+								mainInfo($_GET['seasugg']);
+							}
+						?>
+						</datalist>
 					</div>
 				</form>
 			</div>
 		</div>
-		<?php $conn->close(); ?>
 		<?php include 'design/footer.php' ?>
 	</body>
 </html>

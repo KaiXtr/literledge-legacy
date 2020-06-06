@@ -1,7 +1,6 @@
 <?php
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else {
+	require 'mysql_connect.php';
+	if ($notcon == null) {
 		$find = $conn->query("SELECT email FROM users WHERE email='" .$_POST['email']. "';");
 
 		if ($find->num_rows > 0) {

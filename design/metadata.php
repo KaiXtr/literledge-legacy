@@ -17,7 +17,7 @@
 		$_SESSION['password'] = $_COOKIE['password'];
 		}
 ?>
-<base href='http://literledge.com/' />
+<base href='http://localhost/literledge/' />
 <meta name='keywords' content='mattkai, matt, kai, ebooks, epub, livros, digitais' />
 <meta name='refresh' content='60' />
 <meta charset='utf-8' />
@@ -29,4 +29,3 @@
 <script src="jquery-3.5.1.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
 <script type='text/javascript' src='script.js'></script>
-<script type='text/javascript' src='script.ts'></script>

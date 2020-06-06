@@ -1,11 +1,8 @@
 <?php
-	if (session_status() == PHP_SESSION_NONE) {session_start();}
-	if ((!isset($_POST['nick']))||(!isset($_POST['password']))) {header("location: http://localhost/literledge/signin.php");}
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	$error = '';
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else{
+	require 'mysql_connect.php';
+	if ($notcon == null) {
 		$conn->query("SET NAMES 'utf8'");
+		$error = '';
 
 		if (strlen($_POST['password']) < 8) {$error = $error .'1';}
 		if ($_POST['password'] != $_POST['confirm']) {$error = $error .'2';}

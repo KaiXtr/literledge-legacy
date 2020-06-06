@@ -3,24 +3,20 @@
 		<button id='burgerbut'> ☰ </button>
 		<a href='index.php'> <img id='logo' src='media/images/icons/logo.png' /> </a>
 		<a id='title' href='index.php'> Literledge </a>
-		<div class='manlan' lang='pt'>
-			<form class='searchbar' action='search.php' method='post'>
-				<input class='searchtext' type='text' name='search' placeholder='Buscar...' /> 
-				<input class='submit' type='image' src='media/images/icons/search.png' alt='pesquisar' />
-			</form>
-		</div>
-		<div class='manlan' lang='en'>
-			<form class='searchbar' action='search.php' method='post'>
-				<input class='searchtext' type='text' name='search' placeholder='Search...' /> 
-				<input class='submit' type='image' src='media/images/icons/search.png' alt='search' />
-			</form>
-		</div>
-		<div class='manlan' lang='es'>
-			<form class='searchbar' action='search.php' method='post'>
-				<input class='searchtext' type='text' name='search' placeholder='Buscar...' /> 
-				<input class='submit' type='image' src='media/images/icons/search.png' alt='buscar' />
-			</form>
-		</div>
+		<?php
+			if ($_COOKIE['lang'] == 'pt') {$vl = 'Buscar';}
+			if ($_COOKIE['lang'] == 'en') {$vl = 'Search';}
+			if ($_COOKIE['lang'] == 'es') {$vl = 'Buscar';}
+		?>
+		<form class='searchbar' action='search.php' method='post'>
+			<?php 
+				echo "<input class='searchtext' type='text' name='search' onchange='search_suggest(this.value)' placeholder='".$vl."...' />
+				<input class='submit' type='image' src='media/images/icons/search.png' alt='".strtolower($vl)."' />";
+				if (isset($_GET['seasugg'])) {
+					mainInfo($_GET['seasugg']);
+				}
+			?>
+		</form>
 		<?php
 			if (session_status() == PHP_SESSION_NONE) {session_start();}
 			if (isset($_SESSION['user'])) {

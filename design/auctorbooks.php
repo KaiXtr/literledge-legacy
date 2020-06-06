@@ -1,7 +1,6 @@
 <?php
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else{
+	require '../account/mysql_connect.php';
+	if ($notcon == null) {
 		$conn->query("SET NAMES 'utf8'");
 		$profile = $conn->query("SELECT b.id, b.name, u.name as auctor FROM books as b JOIN users as u ON b.auctor=u.nick WHERE b.auctor='" .$user. "'");
 		$check = $conn->query("SELECT auctor FROM users WHERE nick='" .$user. "'");

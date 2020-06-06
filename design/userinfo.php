@@ -1,8 +1,6 @@
 <?php
-	if (session_status() == PHP_SESSION_NONE) {session_start();}
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else{
+	require '../account/mysql_connect.php';
+	if ($notcon == null) {
 		$conn->query("SET NAMES 'utf8'");
 		$profile = $conn->query("SELECT * FROM users WHERE nick='" .$user. "'");
 

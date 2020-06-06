@@ -23,9 +23,8 @@
 			<div class='login proedit'>
 				<form action='account/profile_edit.php' method='post' enctype='multipart/form-data'>
 					<?php
-						$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-						if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-						else{
+						require 'account/mysql_connect.php';
+						if ($notcon == null) {
 							$find = $conn->query("SELECT * FROM users WHERE nick='" .$_SESSION['user']. "'");
 							if ($find->num_rows > 0) {$i = $find->fetch_assoc();}
 						}
@@ -48,7 +47,7 @@
 								<div class='manlan' lang='en'> <label for='op2'> Security </label> </div>
 								<div class='manlan' lang='es'> <label for='op2'> Seguridad </label> </div>
 							</a> </li>
-							<?php /*<li> <a onclick='set_tab("tab3","tab1","tab3")'> <input id='op3' type='radio' name='edit' value='navigation' />
+							<?php /*<li> <a onclick='set_tab("tab3","tab1","tab2")'> <input id='op3' type='radio' name='edit' value='navigation' />
 								<div class='manlan' lang='pt'> <label for='op3'> Navegação </label> </div>
 								<div class='manlan' lang='en'> <label for='op3'> Navigation </label> </div>
 								<div class='manlan' lang='es'> <label for='op3'> Navegación </label> </div>

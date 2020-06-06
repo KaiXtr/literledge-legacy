@@ -1,9 +1,6 @@
 <?php
-	if (session_status() == PHP_SESSION_NONE) {session_start();}
-	if (!isset($_SESSION['user'])) {header("location: http://localhost/literledge/login.php");}
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else {
+	require 'mysql_connect.php';
+	if ($notcon == null) {
 		$error = '';
 		if ($_POST['edit'] == 'account') {
 			if ((isset($_FILES['propic']['name']))&&($_FILES['propic']['name'] != '')) {

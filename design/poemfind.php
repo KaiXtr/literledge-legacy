@@ -1,7 +1,6 @@
 <?php
-	$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-	if ($conn->connect_error) {echo("Connection failed: " . $conn->connect_error);}
-	else{
+	require '../account/mysql_connect.php';
+	if ($notcon == null) {
 		$find = $conn->query("SELECT pid, auctor FROM poems WHERE auctor='" .$auctor. "'");
 		$check = $conn->query("SELECT auctor FROM users WHERE nick='" .$auctor. "'");
 
