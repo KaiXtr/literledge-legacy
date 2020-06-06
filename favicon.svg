@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="148.9016mm"
+   height="148.9016mm"
+   viewBox="0 0 148.9016 148.9016"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="C:\Users\Kai_Xtr\XAMPP\htdocs\literledge\media\images\icons\logo.png"
+   inkscape:export-xdpi="5.1174755"
+   inkscape:export-ydpi="5.1174755">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.3062462"
+     inkscape:cx="196.23512"
+     inkscape:cy="295.98164"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="105.93492,157.20624"
+       orientation="1,0"
+       id="guide835" />
+    <sodipodi:guide
+       position="74.941132,74.624442"
+       orientation="0,-1"
+       id="guide837" />
+    <sodipodi:guide
+       position="14.17867,159.23177"
+       orientation="1,0"
+       id="guide841" />
+    <sodipodi:guide
+       position="162.60553,87.18611"
+       orientation="1,0"
+       id="guide847" />
+    <sodipodi:guide
+       position="17.478184,113.64579"
+       orientation="0,-1"
+       id="guide849" />
+    <sodipodi:guide
+       position="15.607297,34.534013"
+       orientation="0,-1"
+       id="guide851" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     transform="translate(-0.6961436,-0.29104564)">
+    <path
+       id="path833"
+       style="display:inline;fill:#d8c0a2;fill-opacity:1;fill-rule:evenodd;stroke:#d8c0a2;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 280.89453 0 A 281.38884 281.38884 0 0 0 0 281.38867 A 281.38884 281.38884 0 0 0 281.38867 562.77734 A 281.38884 281.38884 0 0 0 559.16602 326.33984 L 403.1543 454.75586 L 53.587891 280.73242 L 403.1543 111.34961 L 559.14648 236.32617 A 281.38884 281.38884 0 0 0 281.38867 0 A 281.38884 281.38884 0 0 0 280.89453 0 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0.6961436,0.29104564)" />
+    <path
+       inkscape:export-ydpi="5.1174736"
+       inkscape:export-xdpi="5.1174736"
+       inkscape:export-filename="C:\Users\Kai_Xtr\XAMPP\htdocs\literledge\media\images\icons\logo.png"
+       id="path867"
+       d="M 14.874814,74.568198 H 110.19344"
+       style="display:inline;mix-blend-mode:normal;fill:#d8c0a2;stroke:#d8c0a2;stroke-width:2.39;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-0.6961436,-0.29104564)"
+     style="mix-blend-mode:normal" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.874529,-26.225389)"
+     style="display:inline;mix-blend-mode:normal">
+    <circle
+       style="fill:#d8c0a2;fill-opacity:1;fill-rule:evenodd;stroke:#d8c0a2;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path865"
+       cx="131.96478"
+       cy="100.49965"
+       r="6.4999995"
+       inkscape:export-filename="C:\Users\Kai_Xtr\XAMPP\htdocs\literledge\media\images\icons\logo.png"
+       inkscape:export-xdpi="5.1174736"
+       inkscape:export-ydpi="5.1174736" />
+  </g>
+</svg>

@@ -23,9 +23,9 @@
 <meta charset='utf-8' />
 <meta http-equiv="Content-Language" content="pt-br, en, es, fr, it">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='shortcut icon' type='image/x-ico' href='favicon.ico'/>
-<link rel='stylesheet' type='text/css' media='screen' href='style-screen.css' />
-<link rel='stylesheet' type='text/css' media='portable' href='style-mobile.css' />
-<script src="jquery-3.5.1.js" type="text/javascript"></script>
+<link rel='shortcut icon' type='image/svg+xml' sizes='any' href='favicon.svg' />
+<link rel='stylesheet' type='text/css' media='screen' href='styles/style-screen.css' />
+<link rel='stylesheet' type='text/css' media='portable' href='styles/style-mobile.css' />
+<script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='script.js'></script>
+<script src='scripts/script.js'type='text/javascript'></script>
