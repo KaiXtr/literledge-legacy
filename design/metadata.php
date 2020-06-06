@@ -17,7 +17,7 @@
 		$_SESSION['password'] = $_COOKIE['password'];
 		}
 ?>
-<base href='http://localhost/literledge/' />
+<base href='http://literledge.com/' />
 <meta name='keywords' content='mattkai, matt, kai, ebooks, epub, livros, digitais' />
 <meta name='refresh' content='60' />
 <meta charset='utf-8' />
