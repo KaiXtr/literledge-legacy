@@ -19,26 +19,26 @@
 			<div class='summary'>
 				<div class='manlan' lang='pt'>
 					<ul>
-						<li> <a href='#ptgoto1'> Qual é o propósito do Literledge? </a> </li>
-						<li> <a href='#ptgoto2'> Qual é a origem dos livros? </a> </li>
-						<li> <a href='#ptgoto3'> O site possui informações confiáveis? </a> </li>
-						<li> <a href='#ptgoto4'> Posso publicar meus livros no site? </a> </li>
-						<li> <a href='#ptgoto5'> Como contribuir com o site? </a> </li>
-						<li> <a href='#ptgoto6'> Como criar uma conta? </a> </li>
-						<li> <a href='#ptgoto7'> Como são feitas as avaliações de livros? </a> </li>
-						<li> <a href='#ptgoto8'> O site possui informações incorretas. </a> </li>
+						<li> <a href='help.php#ptgoto1'> Qual é o propósito do Literledge? </a> </li>
+						<li> <a href='help.php#ptgoto2'> Qual é a origem dos livros? </a> </li>
+						<li> <a href='help.php#ptgoto3'> O site possui informações confiáveis? </a> </li>
+						<li> <a href='help.php#ptgoto4'> Posso publicar meus livros no site? </a> </li>
+						<li> <a href='help.php#ptgoto5'> Como contribuir com o site? </a> </li>
+						<li> <a href='help.php#ptgoto6'> Como criar uma conta? </a> </li>
+						<li> <a href='help.php#ptgoto7'> Como são feitas as avaliações de livros? </a> </li>
+						<li> <a href='help.php#ptgoto8'> O site possui informações incorretas. </a> </li>
 					</ul>
 				</div>
 				<div class='manlan' lang='en'>
 					<ul>
-						<li> <a href='#engoto1'> What is the purpose of Literledge? </a> </li>
-						<li> <a href='#engoto2'> What is the origin of the books? </a> </li>
-						<li> <a href='#engoto3'> Does the site have reliable information? </a> </li>
-						<li> <a href='#engoto4'> Can I publish my books on the website? </a> </li>
-						<li> <a href='#engoto5'> How to contribute to the site? </a> </li>
-						<li> <a href='#engoto6'> How to create an account? </a> </li>
-						<li> <a href='#engoto7'> How are book reviews done? </a> </li>
-						<li> <a href='#engoto8'> The website has incorrect information. </a> </li>
+						<li> <a href='help.php#engoto1'> What is the purpose of Literledge? </a> </li>
+						<li> <a href='help.php#engoto2'> What is the origin of the books? </a> </li>
+						<li> <a href='help.php#engoto3'> Does the site have reliable information? </a> </li>
+						<li> <a href='help.php#engoto4'> Can I publish my books on the website? </a> </li>
+						<li> <a href='help.php#engoto5'> How to contribute to the site? </a> </li>
+						<li> <a href='help.php#engoto6'> How to create an account? </a> </li>
+						<li> <a href='help.php#engoto7'> How are book reviews done? </a> </li>
+						<li> <a href='help.php#engoto8'> The website has incorrect information. </a> </li>
 					</ul>
 				</div>
 			</div>

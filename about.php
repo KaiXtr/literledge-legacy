@@ -18,10 +18,10 @@
 		<div class='infocontent'>
 			<div class='summary'>
 				<ul>
-					<li> <a href='#goto1'> Termos e Condições </a> </li>
-					<li> <a href='#goto2'> Política de Privacidade </a> </li>
-					<li> <a href='#goto3'> Sobre </a> </li>
-					<li> <a href='#goto4'> Ajuda </a> </li>
+					<li> <a href='about.php#goto1'> Termos e Condições </a> </li>
+					<li> <a href='about.php#goto2'> Política de Privacidade </a> </li>
+					<li> <a href='about.php#goto3'> Sobre </a> </li>
+					<li> <a href='about.php#goto4'> Ajuda </a> </li>
 				</ul>
 			</div>
 

@@ -239,10 +239,10 @@
 						echo "</div>
 							<div class='summary'>
 								<ul>
-									<li> <a href='#goto1'> Resenha </a> </li>
-									<li> <a href='#goto2'> Sobre o livro </a> </li>
-									<li> <a href='#goto3'> Adaptações </a> </li>
-									<li> <a href='#goto4'> Downloads </a> </li>
+									<li> <a href='books/".$b['id'].".php#goto1'> Resenha </a> </li>
+									<li> <a href='books/".$b['id'].".php#goto2'> Sobre o livro </a> </li>
+									<li> <a href='books/".$b['id'].".php#goto3'> Adaptações </a> </li>
+									<li> <a href='books/".$b['id'].".php#goto4'> Downloads </a> </li>
 								</ul>
 							</div>
 						</div>
