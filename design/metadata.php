@@ -16,6 +16,8 @@
 		$_SESSION['user'] = $_COOKIE['user'];
 		$_SESSION['password'] = $_COOKIE['password'];
 		}
+
+	$devlprs = array('KaiXtr');
 ?>
 <base href='http://localhost/literledge/' />
 <meta name='keywords' content='mattkai, matt, kai, ebooks, epub, livros, digitais' />
