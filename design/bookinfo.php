@@ -3,7 +3,7 @@
 	if ($notcon == null) {
 		$conn->query("SET NAMES 'utf8'");
 		$bookinfo = $conn->query("SELECT * FROM books WHERE id='" .$book. "'");
-		$auctorinfo = $conn->query("SELECT b.auctor,b.id,u.name FROM books as b JOIN users as u ON b.auctor=u.nick WHERE b.id='" .$book. "'");
+		$auctorinfo = $conn->query("SELECT b.auctor,b.id,u.nick FROM books as b JOIN users as u ON b.auctor=u.nick WHERE b.id='" .$book. "'");
 		$editioninfo = $conn->query("SELECT b.id,e.* FROM books as b JOIN editions as e ON b.id=e.title WHERE b.id='" .$book. "'");
 		$translation = $conn->query("SELECT * FROM translations WHERE fkey='" .$book. "'");
 		$reviews = $conn->query("SELECT u.name,u.nick,r.* FROM users as u JOIN reviews as r ON u.nick=r.user WHERE r.book='" .$book. "'");
@@ -17,6 +17,11 @@
 
 			if (!isset($_COOKIE['lang'])) {$lang = 'pt';}
 			else {$lang = $_COOKIE['lang'];}
+
+			$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$a['nick']."'");
+			$n = $find->fetch_assoc();
+			if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+			else {$nm = $n[$_COOKIE['lang']];}
 			
 			if ($ech == '1') {
 				$wrng = '';
@@ -219,7 +224,7 @@
 								<a href='https://www.flaticon.com/authors/freepik' >
 									<img id='couflag' src='media/images/icons/flags/" .$b["country"]. ".png' height='30' title='Icons made by Freepik' 
 									alt='" .$b["country"]. "'/>
-								</a> • <a href='users/" .$b["auctor"]. ".php'>" .$a["name"]. "</a> • " .$b["year"]. "
+								</a> • <a href='users/" .$b["auctor"]. ".php'>" .$nm. "</a> • " .$b["year"]. "
 							</h2>
 							" .$sv. "
 

@@ -20,11 +20,13 @@
 	$devlprs = array('KaiXtr');
 ?>
 <base href='http://localhost/literledge/' />
-<meta name='keywords' content='mattkai, matt, kai, ebooks, epub, livros, digitais' />
-<meta name='refresh' content='60' />
 <meta charset='utf-8' />
-<meta http-equiv="Content-Language" content="pt-br, en, es, fr, it">
+<meta name='refresh' content='60' />
+<meta http-equiv="Content-Language" content="pt, en, es">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='keywords' content='mattkai, matt, kai, ebooks, epub, livros, digitais, pdf, wikipedia, livro, livros, books, libros, libro, book, liter, ledge, literledge
+literature, knowledge, search, study, pensador, filosofia, sociologia, saraiva, amazon, americanas, gratuito, grátis, free, download, baixar, público, domínio, domain, public,
+resumo, review, autores, escritores, movimentos, ler, escritor' />
 <link rel='shortcut icon' type='image/svg+xml' sizes='any' href='favicon.svg' />
 <link rel='stylesheet' type='text/css' media='screen' href='styles/style-screen.css' />
 <link rel='stylesheet' type='text/css' media='portable' href='styles/style-mobile.css' />

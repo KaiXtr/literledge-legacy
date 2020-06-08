@@ -1,58 +1,5 @@
 <?php
 
-#AUCTOR NAMES
-if ($_COOKIE['lang'] == 'pt') {
-	$namlst = array('AESOP'=>'Esopo','ALENCARjose'=>'José de Alencar','ALIGHIERIdante'=>'Dante Alighieri','ALLANpoe'=>'Edgar Allan Poe','ANDERSENhans','Hans Christian Andersen',
-	'ANDRADEmario'=>'Mário de Andrade','ANTONIOalmeida'=>'Manuel Antônio de Almeida','ANTONIOgonzaga'=>'Tomás António Gonzaga','ARISTOTLE'=>'Aristóteles',
-	'AZEVEDOaluisio'=>'Aluísio de Azevedo','BANDEIRAmanuel'=>'Manuel Banderia','BARRETOlima'=>'Lima Barreto','BASILIOgama'=>'Basílio da Gama',
-	'BEAUVOIRsimone'=>'Simone de Beauvoir','BILAColavo'=>'Olavo Bilac','BOPPraul'=>'Raul Bopp','BYSSHEshelley'=>'Percy Bysshe Shelley','CABRALmelo'=>'João Cabral de Melo Neto',
-	'CAMOESluis'=>'Luís de Camões','CARROLLlewis'=>'Lewis Carroll','CERVANTESmiguel'=>'Miguel de Cervantes','CHRISTIEagatha'=>'Agatha Christie',
-	'CONANdoyle'=>'Arthur Conan Doyle','CSLEWIS'=>'C. S. Lewis','CUNHAeuclides'=>'Euclides da Cunha','DESCARTESrene'=>'René Descartes',
-	'DRUMMONDandrade'=>'Carlos Drummond de Andrade','DUMASalexandre'=>'Alexandre Dumas','DURKHEIMemile'=>'Émile Durkheim','ECOumberto'=>'Umberto Eco',
-	'FRANKbaum'=>'Frank Baum','FREIREpaulo'=>'Paulo Freire','FREUDsigmund'=>'Sigmund Freud','GRACAaranha'=>'Graça Aranha','GRACILIANOramos'=>'Graciliano Ramos',
-	'GRIMMbros'=>'Irmãos Grimm','GUIMARAESbernardo'=>'Bernardo Guimarães','HOBBESthomas'=>'Thomas Hobbes','HOMERUS'=>'Homero','HPLOVECRAFT'=>'H. P. Lovecraft',
-	'HUGOvictor'=>'Victor Hugo','JRRTOLKIEN'=>'J. R. R. Tolkien','KAFKAfranz'=>'Franz Kafka','LISPECTORclarice'=>'Clarice Lispector','LOBATOmonteiro'=>'Monteiro Lobato',
-	'MACHADOassis'=>'Machado de Assis','MACHIAVELLIniccolo'=>'Nicolau Maquiavel','MARXkarl'=>'Karl Marx','MEIRELEScecilia'=>'Cecília Meireles',
-	'NABOKOVvladimir'=>'Vladimir Nabokov','NIETZSCHEfriedrich'=>'Friedrich Nietzsche','ORWELLgeorge'=>'George Orwell','OSWALDandrade'=>'Oswald de Andrade',
-	'PESSOAfernando'=>'Fernando Pessoa','PLATO'=>'Platão','POMPEIAraul'=>'Raul Pompéia','SAINTexupery'=>'Antoine de Saint-Exupéry','SARTREjeanpaul'=>'Jean-Paul Sartre',
-	'SCHOPENHAUERarthur'=>'Arthur Schopenhauer','SHAKESPEAREwilliam'=>'William Shakespeare','VERNEjules'=>'Júlio Verne','WEBERmax'=>'Max Weber');
-	}
-else if ($_COOKIE['lang'] == 'en') {
-	$namlst = array('AESOP'=>'Aesop','ALENCARjose'=>'José de Alencar','ALIGHIERIdante'=>'Dante Alighieri','ALLANpoe'=>'Edgar Allan Poe','ANDERSENhans','Hans Christian Andersen',
-	'ANDRADEmario'=>'Mário de Andrade','ANTONIOalmeida'=>'Manuel Antônio de Almeida','ANTONIOgonzaga'=>'Tomás António Gonzaga','ARISTOTLE'=>'Aristotle',
-	'AZEVEDOaluisio'=>'Aluísio de Azevedo',
-	'BANDEIRAmanuel'=>'Manuel Banderia','BARRETOlima'=>'Lima Barreto','BASILIOgama'=>'Basílio da Gama','BEAUVOIRsimone'=>'Simone de Beauvoir','BILAColavo'=>'Olavo Bilac',
-	'BOPPraul'=>'Raul Bopp','BYSSHEshelley'=>'Percy Bysshe Shelley','CABRALmelo'=>'João Cabral de Melo Neto','CAMOESluis'=>'Luís de Camões','CARROLLlewis'=>'Lewis Carroll',
-	'CERVANTESmiguel'=>'Miguel de Cervantes','CHRISTIEagatha'=>'Agatha Christie','CONANdoyle'=>'Arthur Conan Doyle','CSLEWIS'=>'C. S. Lewis',
-	'CUNHAeuclides'=>'Euclides da Cunha','DESCARTESrene'=>'René Descartes','DRUMMONDandrade'=>'Carlos Drummond de Andrade','DUMASalexandre'=>'Alexandre Dumas',
-	'DURKHEIMemile'=>'Émile Durkheim','ECOumberto'=>'Umberto Eco','FRANKbaum'=>'Frank Baum','FREIREpaulo'=>'Paulo Freire','FREUDsigmund'=>'Sigmund Freud',
-	'GRACAaranha'=>'Graça Aranha',
-	'GRACILIANOramos'=>'Graciliano Ramos','GRIMMbros'=>'Grimm Brothers','GUIMARAESbernardo'=>'Bernardo Guimarães','HOBBESthomas'=>'Thomas Hobbes','HOMERUS'=>'Homer',
-	'HPLOVECRAFT'=>'H. P. Lovecraft','HUGOvictor'=>'Victor Hugo','JRRTOLKIEN'=>'J. R. R. Tolkien','KAFKAfranz'=>'Franz Kafka','LISPECTORclarice'=>'Clarice Lispector',
-	'LOBATOmonteiro'=>'Monteiro Lobato','MACHADOassis'=>'Machado de Assis','MACHIAVELLIniccolo'=>'Niccolò Machiavelli','MARXkarl'=>'Karl Marx',
-	'MEIRELEScecilia'=>'Cecília Meireles','NABOKOVvladimir'=>'Vladimir Nabokov','NIETZSCHEfriedrich'=>'Friedrich Nietzsche','ORWELLgeorge'=>'George Orwell',
-	'OSWALDandrade'=>'Oswald de Andrade','PESSOAfernando'=>'Fernando Pessoa','PLATO'=>'Plato','POMPEIAraul'=>'Raul Pompéia','SAINTexupery'=>'Antoine de Saint-Exupéry',
-	'SARTREjeanpaul'=>'Jean-Paul Sartre','SCHOPENHAUERarthur'=>'Arthur Schopenhauer','SHAKESPEAREwilliam'=>'William Shakespeare','VERNEjules'=>'Jules Verne',
-	'WEBERmax'=>'Max Weber');
-	}
-if ($_COOKIE['lang'] == 'es') {
-	$namlst = array('AESOP'=>'Esopo','ALENCARjose'=>'José de Alencar','ALIGHIERIdante'=>'Dante Alighieri','ALLANpoe'=>'Edgar Allan Poe','ANDERSENhans','Hans Christian Andersen',
-	'ANDRADEmario'=>'Mário de Andrade','ANTONIOalmeida'=>'Manuel Antônio de Almeida','ANTONIOgonzaga'=>'Tomás António Gonzaga','ARISTOTLE'=>'Aristóteles',
-	'AZEVEDOaluisio'=>'Aluísio de Azevedo','BANDEIRAmanuel'=>'Manuel Banderia','BARRETOlima'=>'Lima Barreto','BASILIOgama'=>'Basílio da Gama',
-	'BEAUVOIRsimone'=>'Simone de Beauvoir','BILAColavo'=>'Olavo Bilac','BOPPraul'=>'Raul Bopp','BYSSHEshelley'=>'Percy Bysshe Shelley',
-	'CABRALmelo'=>'João Cabral de Melo Neto','CAMOESluis'=>'Luís de Camões','CARROLLlewis'=>'Lewis Carroll','CERVANTESmiguel'=>'Miguel de Cervantes',
-	'CHRISTIEagatha'=>'Agatha Christie','CONANdoyle'=>'Arthur Conan Doyle','CSLEWIS'=>'C. S. Lewis','CUNHAeuclides'=>'Euclides da Cunha','DESCARTESrene'=>'René Descartes',
-	'DRUMMONDandrade'=>'Carlos Drummond de Andrade','DUMASalexandre'=>'Alexandre Dumas','DURKHEIMemile'=>'Émile Durkheim','ECOumberto'=>'Umberto Eco','FRANKbaum'=>'Frank Baum',
-	'FREIREpaulo'=>'Paulo Freire','FREUDsigmund'=>'Sigmund Freud','GRACAaranha'=>'Graça Aranha','GRACILIANOramos'=>'Graciliano Ramos','GRIMMbros'=>'Irmãos Grimm',
-	'GUIMARAESbernardo'=>'Bernardo Guimarães','HOBBESthomas'=>'Thomas Hobbes','HOMERUS'=>'Homero','HPLOVECRAFT'=>'H. P. Lovecraft','HUGOvictor'=>'Victor Hugo',
-	'JRRTOLKIEN'=>'J. R. R. Tolkien','KAFKAfranz'=>'Franz Kafka','LISPECTORclarice'=>'Clarice Lispector',
-	'LOBATOmonteiro'=>'Monteiro Lobato','MACHADOassis'=>'Machado de Assis','MACHIAVELLIniccolo'=>'Nicolau Maquiavel','MARXkarl'=>'Karl Marx',
-	'MEIRELEScecilia'=>'Cecília Meireles','NABOKOVvladimir'=>'Vladimir Nabokov','NIETZSCHEfriedrich'=>'Friedrich Nietzsche','ORWELLgeorge'=>'George Orwell',
-	'OSWALDandrade'=>'Oswald de Andrade','PESSOAfernando'=>'Fernando Pessoa','PLATO'=>'Platão','POMPEIAraul'=>'Raul Pompéia','SAINTexupery'=>'Antoine de Saint-Exupéry',
-	'SARTREjeanpaul'=>'Jean-Paul Sartre','SCHOPENHAUERarthur'=>'Arthur Schopenhauer','SHAKESPEAREwilliam'=>'William Shakespeare','VERNEjules'=>'Júlio Verne',
-	'WEBERmax'=>'Max Weber');
-	}
-
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
 	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo',

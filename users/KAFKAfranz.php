@@ -3,8 +3,16 @@
 <html>
 	<!--Então você gosta de usar o botão inspecionar né...?-->
 	<head>
-		<?php require '../design/array_lists.php';
-		$v = $namlst['KAFKAfranz'].' - '; include '../design/metadata.php'; ?>
+		<?php
+			require '../account/mysql_connect.php';
+			if ($notcon == null) {
+				$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='KAFKAfranz'");
+				$i = $find->fetch_assoc();
+				if ($i[$_COOKIE['lang']] == null) {$v = $i['name'].' - ';}
+				else {$v = $i[$_COOKIE['lang']].' - ';}
+			}
+			require '../design/metadata.php';
+		?>
 	</head>
 
 	<body>

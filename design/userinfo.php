@@ -6,6 +6,7 @@
 
 		if ($profile->num_rows > 0) {
 			$i = $profile->fetch_assoc();
+
 			if ($i["auctor"] == '1') {$v = "<img id='vicon' src='media/images/icons/verified.png' />";}
 			else {$v = "";};
 
@@ -22,7 +23,13 @@
 			else {$d = '';}
 
 			$bnr = "media/images/banners/" .$i["nick"]. ".jpg";
-			if (strlen($i['name']) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';}
+
+			$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
+			$n = $find->fetch_assoc();
+			if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+			else {$nm = $n[$_COOKIE['lang']];}
+
+			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';}
 			else {$hst = '';}
 
 			$slf = '';
@@ -80,7 +87,7 @@
 			echo "<div id='banner' style='background-image: url(".'"'.$bnr.'"'.")'></div>
 				<div id='profile'>
 					<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' title='" .$i["name"]. "'/>
-					<h1 id='username' ".$hst."> " .$i["name"]. " </h1> " .$v. "
+					<h1 id='username' ".$hst."> " .$nm. " </h1> " .$v. "
 					<h2 id='nickname'> @" .$i["nick"]. " </h2>
 					<div id='binfobar'>
 						<img src='media/images/icons/birth.png' height='30' />

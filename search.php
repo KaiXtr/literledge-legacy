@@ -220,9 +220,7 @@
 						}
 					echo "</div>";
 					
-					$sql = "SELECT name, nick, auctor, birth, country FROM users ORDER BY name";
-					$result = $conn->query($sql);
-
+					$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY name");
 					if ($result->num_rows > 0) {
 						$disp = "<div class='brow'> <div class='blabel'>";
 						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools'))
@@ -251,13 +249,18 @@
 							while (($i = $result->fetch_assoc())&&($max < $ofsa + 20)) {
 								if ($max < $ofsa) {$max++;}
 								else {
+									$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
+									$n = $find->fetch_assoc();
+									if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+									else {$nm = $n[$_COOKIE['lang']];}
+
 									$p = false;
 									if (($search != '$auctors')&&($search != '$all')) {
-										preg_match('/' .$search. '/i',$i['name'],$re);
+										preg_match('/' .$search. '/i',$nm,$re);
 										if (sizeof($re) > 0) {$p = true;}}
 									else if ($i['auctor'] == 1) {$p = true;}
 
-									if ((@$flet) && ($i['name'][0] != $flet)) {$p = false;}
+									if ((@$flet) && ($nm[0] != $flet)) {$p = false;}
 									if ((@$fcou) && ($i['country'] != $fcou)) {$p = false;}
 									if ((@$fyer) && (substr($i['birth'],0,2) != substr($fyer,0,2) - 1)) {$p = false;}
 									if ($p == true) {
@@ -265,7 +268,7 @@
 												<a href='users/" .$i["nick"]. ".php'>
 													<button class='portraits'>
 														<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' />
-														<h2> " .$i["name"]. " </h2>
+														<h2> " .$nm. " </h2>
 													</button>
 												</a>
 											</html>";
@@ -290,7 +293,7 @@
 					}
 
 					if ($search != '$auctors') {
-						$result = $conn->query("SELECT b.id, b.name, u.name as auctor, u.nick, b.year, b.country, b.genre, b.litschool FROM books as b JOIN users as u
+						$result = $conn->query("SELECT b.*, u.nick as auctor FROM books as b JOIN users as u
 								ON b.auctor=u.nick ORDER BY b.name");
 						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 						else {$lang = $_COOKIE['lang'];}
@@ -309,28 +312,37 @@
 								$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
 								$t = $translation->fetch_assoc();
 
+								$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+								else {$nm = $n[$_COOKIE['lang']];}
+
 								$p = false;
 								if (($search == '$all')||($search == '$books')) {$p = true;}
 								else {
-									preg_match('/\b' .$search. '\b/i',$i['name'],$fn);
-									preg_match('/\b' .$search. '\b/i',$i['auctor'],$fa);
-									if ((sizeof($fn) > 0) || (sizeof($fa) > 0)) {$p = true;}
+									preg_match('/\b' .$search. '\b/i',$t[$lang],$fn);
+									preg_match('/\b' .$search. '\b/i',$nm,$fa);
+									preg_match('/#' .$search. '/i',$i['tags'],$ft);
+									if ((sizeof($fn) > 0)||(sizeof($fa) > 0)||(sizeof($ft) > 0)) {$p = true;}
 									}
 
-								if ((@$flet) && ($i['name'][0] != $flet)) {$p = false;}
+								if ((@$flet) && ($t[$lang][0] != $flet)) {$p = false;}
 								if ((@$fcou) && ($i['country'] != $fcou)) {$p = false;}
 								if ((@$fyer) && (substr($i['year'],0,2) != substr($fyer,0,2) - 1)) {$p = false;}
 								if ((@$fgen) && (strtolower($i['genre']) != $fgen)) {$p = false;}
 								if ((@$flsc) && (strtolower($i['litschool']) != $flsc)) {$p = false;}
 
+								if ($i['warning'] == '0') {$wrg = '';}
+								else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
+
 								if ($p == true) {
 									$disb = $disb ."
 										<a href='books/" .$i["id"]. ".php'>
-											<button class='thumbs'>
+											<button class='thumbs' ".$wrg.">
 												<div class='coverart'> <img  src='media/images/covers/" .$i["id"]. ".jpg' /> </div>
 												<div class='description'>
 												<h2> ".$t[$lang]." </h2>
-												<h3> ".$i['auctor']." </h3>";
+												<h3> ".$nm." </h3>";
 													$disb = $disb. file_get_contents('sinopsis/'.$i['id'].'.php');
 											$disb = $disb. "</div>
 											</button>
