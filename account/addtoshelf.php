@@ -1,5 +1,6 @@
 <?php
 	require 'mysql_connect.php';
+	if (!isset($_SESSION['user'])) {header("location: http://localhost/literledge/login.php");}
 	if (($notcon == null)&&(isset($_POST['id']))&&(strlen($_POST['id']) == 6)) {
 		$fuser = $conn->query("SELECT nick FROM users WHERE nick='".$_SESSION['user']."'");
 		$fbook = $conn->query("SELECT id FROM books WHERE id='".$_POST['id']."'");

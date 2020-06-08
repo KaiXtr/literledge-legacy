@@ -1,5 +1,6 @@
 <?php
 	require 'mysql_connect.php';
+	if (!isset($_SESSION['user'])) {header("location: http://localhost/literledge/login.php");}
 	if ($notcon == null) {
 		$error = '';
 		if ($_POST['edit'] == 'account') {

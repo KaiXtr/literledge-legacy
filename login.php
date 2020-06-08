@@ -62,6 +62,15 @@
 						<div class='manlan' lang='en'> Create an account </div>
 						<div class='manlan' lang='es'> Crear una cuenta </div>
 					</a>
+					<button class="g-recaptcha" 
+					data-sitekey="reCAPTCHA_site_key" 
+					data-callback='onSubmit' 
+					data-action='submit'>Submit</button>
+					<script>
+						function onSubmit(token) {
+							document.getElementById("demo-form").submit();
+						}
+					</script>
 				</form>
 			</div>
 		</div>

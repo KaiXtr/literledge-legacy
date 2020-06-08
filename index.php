@@ -108,9 +108,8 @@
 						require 'account/mysql_connect.php';
 						if ($notcon == null) {
 							$conn->query("SET NAMES 'utf8'");
-							$sql = "SELECT b.id, b.name, u.name as auctor FROM books as b JOIN users as u
-									ON b.auctor=u.nick";
-							$result = $conn->query($sql);
+							$result = $conn->query("SELECT b.id, b.name, u.name as auctor FROM books as b JOIN users as u
+									ON b.auctor=u.nick LIMIT 51");
 							if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 							else {$lang = $_COOKIE['lang'];}
 

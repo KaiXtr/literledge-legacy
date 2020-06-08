@@ -31,3 +31,4 @@
 <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
 <script src='scripts/script.js'type='text/javascript'></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
