@@ -58,16 +58,6 @@
 
 				$rws = '';
 				$urev = false;
-				while ($rw = $reviews->fetch_assoc()) {
-					if ((isset($_SESSION['user']))&&($rw['nick'] == $_SESSION['user'])) {$urev = true;}
-					$rws = $rws."<div class='thbcritic'>
-									<div>
-										<h2> ".$rw['name']." </h2>
-										<h3> @".$rw['nick']." | ".$rw['datime']." </h3>
-										<div id='cricom'>" .$rw['comment']. "</div>
-									</div>
-								</div>";
-				}
 				if ((isset($_SESSION['user']))&&($urev == false)) {
 					$rws = $rws."<div class='thbcritic'>
 									<div>
@@ -80,6 +70,16 @@
 											<input id='subcom' class='btpress' type='submit' disabled />
 											<input name='book' value='".$b['id']."' style='display: none;' />
 										</form>
+									</div>
+								</div>";
+				}
+				while ($rw = $reviews->fetch_assoc()) {
+					if ((isset($_SESSION['user']))&&($rw['nick'] == $_SESSION['user'])) {$urev = true;}
+					$rws = $rws."<div class='thbcritic'>
+									<div>
+										<h2> ".$rw['name']." </h2>
+										<h3> @".$rw['nick']." | ".$rw['datime']." </h3>
+										<div id='cricom'>" .$rw['comment']. "</div>
 									</div>
 								</div>";
 				}
@@ -176,45 +176,39 @@
 				$btns = $btns."<input name='id' value='".$b['id']."' style='display: none;' /></form>";
 				
 				echo "<div id='reportab' style='visibility: hidden;'>
-						<div class='manlan' lang='pt'>
-							<button id='btexit' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>
-							<h1> Reportar Erro </h1>
+						<button id='btexit' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>";
+
+						if ($_COOKIE['lang'] == 'pt') {
+							echo "<h1> Reportar Erro </h1>
 							Se você encontrou algum erro, por favor, <br />
 							envie sua contribuição aos desenvolvedores. <br />
 							<select class='selectbox'>
 								<option value='er1'> Erro de Ortografia </option>
 								<option value='er2'> Informações Incorretas </option>
-								<option value='er3'> Não mostra a página como deveria </option>
-							</select> <br />
-							<input class='textbox' type='text' /> <br />
-							<input class='btpress' type='submit' />
-						</div>
-						<div class='manlan' lang='en'>
-							<button id='btexit' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>
-							<h1> Report Error </h1>
+								<option value='er3'> Não mostra a página como deveria </option>";
+							}
+						if ($_COOKIE['lang'] == 'en') {
+							echo "<h1> Report Error </h1>
 							If you found any mistake, please <br />
 							send your contribution to the developers. <br />
 							<select class='selectbox'>
 							<option value='er1'> Spelling Error </option>
 							<option value='er2'> Incorrect Information </option>
-							<option value='er3'> Don't show the page as it should </option>
-							</select> <br />
-							<input class='textbox' type='text' /> <br />
-							<input class='btpress' type='submit' />
-						</div>
-						<div class='manlan' lang='es'>
-							<button id='btexit' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>
-							<h1> Informar error </h1>
+							<option value='er3'> Don't show the page as it should </option>";
+							}
+						if ($_COOKIE['lang'] == 'es') {
+							echo "<h1> Informar error </h1>
 							Si encuentra algún error, por favor <br />
 							envíe su contribución a los desarrolladores. <br />
 							<select class='selectbox'>
 							<option value='er1'> Error de ortografía </option>
 							<option value='er2'> Información incorrecta </option>
-							<option value='er3'> No mostrar la página como debería </option>
-							</select> <br />
+							<option value='er3'> No mostrar la página como debería </option>";
+							}
+
+					echo "</select> <br />
 							<input class='textbox' type='text' /> <br />
 							<input class='btpress' type='submit' />
-						</div>
 					</div>
 					<div id='bookblock'>
 						<button id='reportbt' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/report.png' /></button>
