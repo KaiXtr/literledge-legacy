@@ -26,7 +26,7 @@
 					$i = $find->fetch_assoc();
 					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload.png' /> </a>
 						<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
-						<div id='profilemenu'>
+						<div id='profilemenu' style='visibility: hidden;'>
 								<h1> " .$i['name']. " </h1>
 								<h2> " .$_SESSION['user']. " </h2>
 								<ul>
@@ -67,7 +67,7 @@
 
 <?php
 	if (!isset($_COOKIE['cookieagree'])) {
-		echo "<div id='cookies'>
+		echo "<div id='cookies' style='visibility: hidden;'>
 				Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
 				<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> Entendi </button>
 			</div>";

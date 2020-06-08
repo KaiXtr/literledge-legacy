@@ -213,13 +213,14 @@ hr{
 	font-size: 20px;
 	padding: 10px;
 	width: 200px;
+	height: 0px;
 	z-index: 10;
 	top: 80px;
 	right: 300px;
 	border-radius: 8px;
 	position: fixed;
 	transition: height 0.5s, visibility 0.5s, opacity 0.5s;
-	visibility: hidden;
+	opacity: 0%;
 }
 
 #profilemenu h1{

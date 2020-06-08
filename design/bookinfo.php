@@ -169,7 +169,7 @@
 					}
 				$btns = $btns."<input name='id' value='".$b['id']."' style='display: none;' /></form>";
 				
-				echo "<div id='reportab'>
+				echo "<div id='reportab' style='visibility: hidden;'>
 						<div class='manlan' lang='pt'>
 							<button id='btexit' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>
 							<h1> Reportar Erro </h1>

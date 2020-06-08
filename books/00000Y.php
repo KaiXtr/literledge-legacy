@@ -3,7 +3,15 @@
 <html>
 	<!--Então você gosta de usar o botão inspecionar né...?-->
 	<head>
-		<?php $v = 'Memórias de um sargento de milícias - '; include '../design/metadata.php'; ?>
+		<?php
+			require '../account/mysql_connect.php';
+			if ($notcon == null) {
+				$find = $conn->query("SELECT ".$_COOKIE['lang']." FROM translations WHERE fkey='00000Y'");
+				$i = $find->fetch_assoc();
+				$v = $i[$_COOKIE['lang']].' - ';
+			}
+			include '../design/metadata.php'; 
+		?>
 	</head>
 
 	<body>

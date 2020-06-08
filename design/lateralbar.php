@@ -1,4 +1,4 @@
-<div id='lateralbar'>
+<div id='lateralbar' style='visibility: hidden;'>
 	<ul>
 		<li> <h1>
 			<div class='manlan' lang='pt'> Categoria </div>

@@ -78,10 +78,10 @@
 						<?php
 							require 'account/mysql_connect.php';
 							if ($notcon == null) {
-								$find = $conn->query("SELECT name,nick FROM users");
+								$find = $conn->query("SELECT name FROM users");
 								if ($find->num_rows > 0) {
 									while ($i = $find->fetch_assoc()) {
-											echo "<option value='".$i['nick']."'>".$i['name']."</option>";
+											echo "<option value='".$i['name']."'>";
 										}
 									}
 								$conn->close();
