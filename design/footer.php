@@ -23,9 +23,11 @@
 
 	<ul class='lowerbarinfo'>
 		<li> <a href='about.php'>
-			<div class='manlan' lang='pt'> Sobre </div>
-			<div class='manlan' lang='en'> About </div>
-			<div class='manlan' lang='es'> Sobre </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Sobre";}
+				if ($_COOKIE['lang'] == 'en') {echo "About";}
+				if ($_COOKIE['lang'] == 'es') {echo "Sobre";}
+			?>
 		</a> </li>
 		<?php /*<li> <a href='about.php'>
 			<div class='manlan' lang='pt'> Termos e Condições </div>
@@ -38,9 +40,11 @@
 			<div class='manlan' lang='es'> Política de Privacidad </div>
 		</a> </li>*/ ?>
 		<li> <a href='help.php'>
-			<div class='manlan' lang='pt'> Ajuda </div>
-			<div class='manlan' lang='en'> Help </div>
-			<div class='manlan' lang='es'> Ayuda </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Ajuda";}
+				if ($_COOKIE['lang'] == 'en') {echo "Help";}
+				if ($_COOKIE['lang'] == 'es') {echo "Ayuda";}
+			?>
 		</a> </li>
 	</ul>
 </footer>

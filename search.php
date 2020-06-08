@@ -223,11 +223,11 @@
 					$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY name");
 					if ($result->num_rows > 0) {
 						$disp = "<div class='brow'> <div class='blabel'>";
-						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools'))
-							{$disp = $disp 
-										."<div class='manlan' lang='pt'> <h1> Autores </h1> </div>
-										<div class='manlan' lang='en'> <h1> Auctors </h1> </div>
-										<div class='manlan' lang='es'> <h1> Autores </h1> </div>";}
+						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
+							if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Autores </h1>";}
+							if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Auctors </h1>";}
+							if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Autores </h1>";}
+							}
 						$disp = $disp ."</div> <div class='displaybooks'>";
 						
 						if ($search == 'century') {
@@ -277,17 +277,19 @@
 									};
 								};
 							if ($ofsa > 0) {
-								$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa - 21).'","'.($ofsb).'","'.($ofsp).'"'.")'>
-										<div class='manlan' lang='pt'> Anterior </div>
-										<div class='manlan' lang='en'> Previous </div>
-										<div class='manlan' lang='es'> Anterior </div>
-										</button>";} else {$btp = '';}
+								$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa - 21).'","'.($ofsb).'","'.($ofsp).'"'.")'>";
+								if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
+								if ($_COOKIE['lang'] == 'en') {$btp = $btp."Previous";}
+								if ($_COOKIE['lang'] == 'es') {$btp = $btp."Anterior";}
+								}
+							else{$btp = '';}
 							if ($max == $ofsa + 20) {
-								$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa + 21).'","'.($ofsb).'","'.($ofsp).'"'.")'>
-										<div class='manlan' lang='pt'> Próximo </div>
-										<div class='manlan' lang='en'> Next </div>
-										<div class='manlan' lang='es'> Siguiente </div>
-										</button>";} else {$btn = '';}
+								$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa + 21).'","'.($ofsb).'","'.($ofsp).'"'.")'>";
+								if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
+								if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}
+								if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
+								}
+							else {$btn = '';}
 							echo $disp ."</div>".$btp.$btn."</div>";
 						}
 					}
@@ -299,12 +301,13 @@
 						else {$lang = $_COOKIE['lang'];}
 
 						$disb = "<div class='brow'>
-									<div class='blabel'>
-										<div class='manlan' lang='pt'> <h1> Livros </h1> </div>
-										<div class='manlan' lang='en'> <h1> Books </h1> </div>
-										<div class='manlan' lang='es'> <h1> Libros </h1> </div>
-									</div>
+									<div class='blabel'>";
+						if ($_COOKIE['lang'] == 'pt') {$disb = $disb."<h1> Livros </h1>";}
+						if ($_COOKIE['lang'] == 'en') {$disb = $disb."<h1> Books </h1>";}
+						if ($_COOKIE['lang'] == 'es') {$disb = $disb."<h1> Libros </h1>";}
+						$disb = $disb."</div>
 									<div class='displaysearch'>";
+
 						$max = $ofsb;
 						while (($i = $result->fetch_assoc())&&($max < $ofsb + 20)) {
 							if ($max < $ofsb) {$max++;}
@@ -323,7 +326,12 @@
 									preg_match('/\b' .$search. '\b/i',$t[$lang],$fn);
 									preg_match('/\b' .$search. '\b/i',$nm,$fa);
 									preg_match('/#' .$search. '/i',$i['tags'],$ft);
-									if ((sizeof($fn) > 0)||(sizeof($fa) > 0)||(sizeof($ft) > 0)) {$p = true;}
+									preg_match('/' .$search. '/i',$gnrlst[$i['genre']],$fg);
+									if ((sizeof($fn) > 0)||(sizeof($fa) > 0)||(sizeof($ft) > 0)||(sizeof($fg) > 0))
+										{$p = true;}
+									else if ($i['litschool'] != '') {
+										preg_match('/' .$search. '/i',$ltslst[$i['litschool']],$fl);
+										if (sizeof($fl) > 0) {$p = true;}}
 									}
 
 								if ((@$flet) && ($t[$lang][0] != $flet)) {$p = false;}
@@ -352,17 +360,19 @@
 								};
 							};
 						if ($ofsa > 0) {
-							$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb - 21).'","'.($ofsp).'"'.")'>
-									<div class='manlan' lang='pt'> Anterior </div>
-									<div class='manlan' lang='en'> Previous </div>
-									<div class='manlan' lang='es'> Anterior </div>
-									</button>";} else {$btp = '';}
+							$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb - 21).'","'.($ofsp).'"'.")'>";
+								if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
+								if ($_COOKIE['lang'] == 'en') {$btp = $btp."Previous";}
+								if ($_COOKIE['lang'] == 'es') {$btp = $btp."Anterior";}
+								}
+						else {$btp = '';}
 						if ($max == $ofsb + 20) {
-							$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb + 21).'","'.($ofsp).'"'.")'>
-									<div class='manlan' lang='pt'> Próximo </div>
-									<div class='manlan' lang='en'> Next </div>
-									<div class='manlan' lang='es'> Siguiente </div>
-									</button>";} else {$btn = '';}
+							$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb + 21).'","'.($ofsp).'"'.")'>";
+								if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
+								if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}
+								if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
+								}
+						else {$btn = '';}
 						echo $disb ."</div>".$btp.$btn."</div>";
 						}
 					$conn->close();

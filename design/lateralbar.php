@@ -1,136 +1,188 @@
 <div id='lateralbar' style='visibility: hidden;'>
 	<ul>
 		<li> <h1>
-			<div class='manlan' lang='pt'> Categoria </div>
-			<div class='manlan' lang='en'> Categories </div>
-			<div class='manlan' lang='es'> Categoría </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Categoria";}
+				if ($_COOKIE['lang'] == 'en') {echo "Categories";}
+				if ($_COOKIE['lang'] == 'es') {echo "Categoría";}
+			?>
 		</h1> </li>
 		<li> <a >
-			<div class='manlan' lang='pt'> Populares </div>
-			<div class='manlan' lang='en'> Popular </div>
-			<div class='manlan' lang='es'> Popular </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Populares";}
+				if ($_COOKIE['lang'] == 'en') {echo "Popular";}
+				if ($_COOKIE['lang'] == 'es') {echo "Popular";}
+			?>
 		</a> </li>
 		<li> <a >
-			<div class='manlan' lang='pt'> Novos </div>
-			<div class='manlan' lang='en'> New </div>
-			<div class='manlan' lang='es'> Nuevos </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Novos";}
+				if ($_COOKIE['lang'] == 'en') {echo "New";}
+				if ($_COOKIE['lang'] == 'es') {echo "Nuevos";}
+			?>
 		</a> </li>
 		<li> <a >
-			<div class='manlan' lang='pt'> Favoritos </div>
-			<div class='manlan' lang='en'> Favorite </div>
-			<div class='manlan' lang='es'> Favoritos </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Favoritos";}
+				if ($_COOKIE['lang'] == 'en') {echo "Favorite";}
+				if ($_COOKIE['lang'] == 'es') {echo "Favoritos";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$auctors'>
-			<div class='manlan' lang='pt'> Autores </div>
-			<div class='manlan' lang='en'> Auctors </div>
-			<div class='manlan' lang='es'> Autores </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
+				if ($_COOKIE['lang'] == 'en') {echo "Auctors";}
+				if ($_COOKIE['lang'] == 'es') {echo "Autores";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$century'>
-			<div class='manlan' lang='pt'> Séculos </div>
-			<div class='manlan' lang='en'> Centuries </div>
-			<div class='manlan' lang='es'> Siglos </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Séculos";}
+				if ($_COOKIE['lang'] == 'en') {echo "Centuries";}
+				if ($_COOKIE['lang'] == 'es') {echo "Siglos";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$schools'>
-			<div class='manlan' lang='pt'> Escolas Literárias </div>
-			<div class='manlan' lang='en'> Literary Schools </div>
-			<div class='manlan' lang='es'> Escuelas Literarias </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Escolas Literárias";}
+				if ($_COOKIE['lang'] == 'en') {echo "Literary Schools";}
+				if ($_COOKIE['lang'] == 'es') {echo "Escuelas Literarias";}
+			?>
 		</a> </li>
 		<li> <hr> </li>
 		<li> <h1>
-			<div class='manlan' lang='pt'> Literatura </div>
-			<div class='manlan' lang='en'> Literature </div>
-			<div class='manlan' lang='es'> Literatura </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Literatura";}
+				if ($_COOKIE['lang'] == 'en') {echo "Literature";}
+				if ($_COOKIE['lang'] == 'es') {echo "Literatura";}
+			?>
 		</h1> </li>
 		<li> <a href='search.php?q=$books&g=adventure'>
-			<div class='manlan' lang='pt'> Aventura </div>
-			<div class='manlan' lang='en'> Adventure </div>
-			<div class='manlan' lang='es'> Aventura </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Aventura";}
+				if ($_COOKIE['lang'] == 'en') {echo "Adventure";}
+				if ($_COOKIE['lang'] == 'es') {echo "Aventura";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=romance'>
-			<div class='manlan' lang='pt'> Romance </div>
-			<div class='manlan' lang='en'> Romance </div>
-			<div class='manlan' lang='es'> Romance </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Romance";}
+				if ($_COOKIE['lang'] == 'en') {echo "Romance";}
+				if ($_COOKIE['lang'] == 'es') {echo "Romance";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=mystery'>
-			<div class='manlan' lang='pt'> Mistério </div>
-			<div class='manlan' lang='en'> Mystery </div>
-			<div class='manlan' lang='es'> Misterio </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Mistério";}
+				if ($_COOKIE['lang'] == 'en') {echo "Mystery";}
+				if ($_COOKIE['lang'] == 'es') {echo "Misterio";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=everyday'>
-			<div class='manlan' lang='pt'> Cotidiano </div>
-			<div class='manlan' lang='en'> Everyday </div>
-			<div class='manlan' lang='es'> Día a Dia </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Cotidiano";}
+				if ($_COOKIE['lang'] == 'en') {echo "Everyday";}
+				if ($_COOKIE['lang'] == 'es') {echo "Día a dia";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=drama'>
-			<div class='manlan' lang='pt'> Drama </div>
-			<div class='manlan' lang='en'> Drama </div>
-			<div class='manlan' lang='es'> Drama </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Drama";}
+				if ($_COOKIE['lang'] == 'en') {echo "Drama";}
+				if ($_COOKIE['lang'] == 'es') {echo "Drama";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=horror'>
-			<div class='manlan' lang='pt'> Terror </div>
-			<div class='manlan' lang='en'> Horror </div>
-			<div class='manlan' lang='es'> Horror </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Terror";}
+				if ($_COOKIE['lang'] == 'en') {echo "Horror";}
+				if ($_COOKIE['lang'] == 'es') {echo "Horror";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=poetry'>
-			<div class='manlan' lang='pt'> Poesia </div>
-			<div class='manlan' lang='en'> Poetry </div>
-			<div class='manlan' lang='es'> Poesía </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Poesia";}
+				if ($_COOKIE['lang'] == 'en') {echo "Poetry";}
+				if ($_COOKIE['lang'] == 'es') {echo "Poesía";}
+			?>
 		</a> </li>
 		<li> <hr> </li>
 		<li> <h1>
-			<div class='manlan' lang='pt'> Acadêmico </div>
-			<div class='manlan' lang='en'> Academic </div>
-			<div class='manlan' lang='es'> Académico </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Acadêmico";}
+				if ($_COOKIE['lang'] == 'en') {echo "Academic";}
+				if ($_COOKIE['lang'] == 'es') {echo "Académico";}
+			?>
 		</h1> </li>
 		<li> <a href='search.php?q=$books&g=mathematics'>
-			<div class='manlan' lang='pt'> Matemática </div>
-			<div class='manlan' lang='en'> Mathematics </div>
-			<div class='manlan' lang='es'> Matemáticas </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Matemática";}
+				if ($_COOKIE['lang'] == 'en') {echo "Mathematics";}
+				if ($_COOKIE['lang'] == 'es') {echo "Matemáticas";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=biology'>
-			<div class='manlan' lang='pt'> Biologia </div>
-			<div class='manlan' lang='en'> Biology </div>
-			<div class='manlan' lang='es'> Biología </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Biologia";}
+				if ($_COOKIE['lang'] == 'en') {echo "Biology";}
+				if ($_COOKIE['lang'] == 'es') {echo "Biología";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=chemistry'>
-			<div class='manlan' lang='pt'> Química </div>
-			<div class='manlan' lang='en'> Chemistry </div>
-			<div class='manlan' lang='es'> Química </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Química";}
+				if ($_COOKIE['lang'] == 'en') {echo "Chemistry";}
+				if ($_COOKIE['lang'] == 'es') {echo "Química";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=physics'>
-			<div class='manlan' lang='pt'> Física </div>
-			<div class='manlan' lang='en'> Physics </div>
-			<div class='manlan' lang='es'> Física </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Física";}
+				if ($_COOKIE['lang'] == 'en') {echo "Physics";}
+				if ($_COOKIE['lang'] == 'es') {echo "Física";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=computation'>
-			<div class='manlan' lang='pt'> Computação </div>
-			<div class='manlan' lang='en'> Computation </div>
-			<div class='manlan' lang='es'> Computación </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Computação";}
+				if ($_COOKIE['lang'] == 'en') {echo "Computacion";}
+				if ($_COOKIE['lang'] == 'es') {echo "Computación";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=history'>
-			<div class='manlan' lang='pt'> História </div>
-			<div class='manlan' lang='en'> History </div>
-			<div class='manlan' lang='es'> Historia </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "História";}
+				if ($_COOKIE['lang'] == 'en') {echo "History";}
+				if ($_COOKIE['lang'] == 'es') {echo "Historia";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=geography'>
-			<div class='manlan' lang='pt'> Geografia </div>
-			<div class='manlan' lang='en'> Geography </div>
-			<div class='manlan' lang='es'> Geografía </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Geografia";}
+				if ($_COOKIE['lang'] == 'en') {echo "Geography";}
+				if ($_COOKIE['lang'] == 'es') {echo "Geografía";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=philosophy'>
-			<div class='manlan' lang='pt'> Filosofia </div>
-			<div class='manlan' lang='en'> Philosophy </div>
-			<div class='manlan' lang='es'> Filosofía </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Filosofia";}
+				if ($_COOKIE['lang'] == 'en') {echo "Philosophy";}
+				if ($_COOKIE['lang'] == 'es') {echo "Filosofía";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=sociology'>
-			<div class='manlan' lang='pt'> Sociologia </div>
-			<div class='manlan' lang='en'> Sociology </div>
-			<div class='manlan' lang='es'> Sociología </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Sociologia";}
+				if ($_COOKIE['lang'] == 'en') {echo "Sociology";}
+				if ($_COOKIE['lang'] == 'es') {echo "Sociología";}
+			?>
 		</a> </li>
 		<li> <a href='search.php?q=$books&g=arts'>
-			<div class='manlan' lang='pt'> Artes </div>
-			<div class='manlan' lang='en'> Arts </div>
-			<div class='manlan' lang='es'> Artes </div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Artes";}
+				if ($_COOKIE['lang'] == 'en') {echo "Arts";}
+				if ($_COOKIE['lang'] == 'es') {echo "Letras";}
+			?>
 		</a> </li>
 	</ul>
 </div>

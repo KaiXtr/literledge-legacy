@@ -89,19 +89,12 @@
 
 		<div class='content'>
 			<div class='brow'>
-				<div class='blabel'>
-					<div class='manlan' lang='pt'>
-						<h1> Populares </h1>
-						Os livros que estão bombando.
-					</div>
-					<div class='manlan' lang='en'>
-						<h1> Popular </h1>
-						The best books just for you.
-					</div>
-					<div class='manlan' lang='es'>
-						<h1> Popular </h1>
-						Los mejores libros del sitio.
-					</div>
+				<div class='blabel'><h1>
+					<?php
+						if ($_COOKIE['lang'] == 'pt') {echo "Populares</h1>Os livros que estão bombando.";}
+						if ($_COOKIE['lang'] == 'en') {echo "Popular</h1>The best books just for you.";}
+						if ($_COOKIE['lang'] == 'es') {echo "Popular</h1>Los mejores libros del sitio.";}
+					?>
 				</div>
 				<div class='displaysearch'>
 					<?php

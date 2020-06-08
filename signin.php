@@ -21,11 +21,13 @@
 
 		<div class='content'>
 			<div class='login'>
-				<form action='account/account_sign.php' method='post'>
-					<div class='manlan' lang='pt'> <h1> Cadastre-se no Literledge </h1> </div>
-					<div class='manlan' lang='en'> <h1> Sign in Literledge </h1> </div>
-					<div class='manlan' lang='es'> <h1> Registrarse en Literledge </h1> </div>
-					<br />
+				<form action='account/account_sign.php' method='post'><h1>
+					<?php
+						if ($_COOKIE['lang'] == 'pt') {echo "Cadastre-se no Literledge";}
+						if ($_COOKIE['lang'] == 'en') {echo "Sign in Literledge";}
+						if ($_COOKIE['lang'] == 'es') {echo "Registrarse en Literledge";}
+					?>
+					</h1><br />
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '6') != false) {
@@ -50,9 +52,11 @@
 						echo $errl ."</span>";
 					?>
 					<span id='text'>
-						<div class='manlan' lang='pt'> nome </div>
-						<div class='manlan' lang='en'> name </div>
-						<div class='manlan' lang='es'> nombre </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "nome";}
+							if ($_COOKIE['lang'] == 'en') {echo "name";}
+							if ($_COOKIE['lang'] == 'es') {echo "nombre";}
+						?>
 					</span> <br />
 					<input type='text' class='textbox' name='name' /> <br />
 					<?php
@@ -70,15 +74,19 @@
 					<span id='text'> nick </span> <br />
 					<input type='text' class='textbox' name='nick' /> <br />
 					<span id='text'>
-						<div class='manlan' lang='pt'> você não pode alterar essa informação </div>
-						<div class='manlan' lang='en'> you can't change this information </div>
-						<div class='manlan' lang='es'> no puedes cambiar esta información </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "você não pode alterar essa informação";}
+							if ($_COOKIE['lang'] == 'en') {echo "you can't change this information";}
+							if ($_COOKIE['lang'] == 'es') {echo "no puedes cambiar esta información";}
+						?>
 					</span> <br />
 					<div class='selectrow'>
 						<span id='text'>
-							<div class='manlan' lang='pt'> gênero </div>
-							<div class='manlan' lang='en'> gender </div>
-							<div class='manlan' lang='es'> género </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "gênero";}
+								if ($_COOKIE['lang'] == 'en') {echo "gender";}
+								if ($_COOKIE['lang'] == 'es') {echo "género";}
+							?>
 						</span>
 						<select class='selectbox' name='gender'>
 							<?php
@@ -91,9 +99,11 @@
 
 					<div class='selectrow'>
 						<span id='text'>
-							<div class='manlan' lang='pt'> nacimento </div>
-							<div class='manlan' lang='en'> birth </div>
-							<div class='manlan' lang='es'> nascimiento </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "nacimento";}
+								if ($_COOKIE['lang'] == 'en') {echo "birth";}
+								if ($_COOKIE['lang'] == 'es') {echo "nascimiento";}
+							?>
 						</span>
 						<select class='selectbox' name='by'>
 							<?php
@@ -117,9 +127,11 @@
 
 					<div class='selectrow'>
 						<span id='text'>
-							<div class='manlan' lang='pt'> país </div>
-							<div class='manlan' lang='en'> country </div>
-							<div class='manlan' lang='es'> país </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "país";}
+								if ($_COOKIE['lang'] == 'en') {echo "country";}
+								if ($_COOKIE['lang'] == 'es') {echo "país";}
+							?>
 						</span>
 						<select class='selectbox' name='country'>
 							<?php
@@ -139,9 +151,11 @@
 						echo $errl ."</span>";
 					?>
 					<span id='text'>
-						<div class='manlan' lang='pt'> senha </div>
-						<div class='manlan' lang='en'> password </div>
-						<div class='manlan' lang='es'> contraseña </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "senha";}
+							if ($_COOKIE['lang'] == 'en') {echo "password";}
+							if ($_COOKIE['lang'] == 'es') {echo "contraseña";}
+						?>
 					</span> <br />
 					<div class='passbox'>
 						<input type='password' id='pass' class='textbox' name='password' />
@@ -157,9 +171,11 @@
 						echo $errl ."</span>";
 					?>
 					<span id='text'>
-						<div class='manlan' lang='pt'> confirme a senha </div>
-						<div class='manlan' lang='en'> confirm password </div>
-						<div class='manlan' lang='es'> confira la contraseña </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "confirme a senha";}
+							if ($_COOKIE['lang'] == 'en') {echo "confirm password";}
+							if ($_COOKIE['lang'] == 'es') {echo "confira la contraseña";}
+						?>
 					</span> <br />
 					<div class='passbox'>
 						<input type='password' id='conf' class='textbox' name='confirm' />
@@ -175,23 +191,24 @@
 						echo $errl ."</span>";
 					?>
 					<span id='checkbox'>
-						<div class='manlan' lang='pt'>
-							<input type='checkbox' /> Li e concordo com os <a href='about.php'> termos e condições </a>
-						</div>
-						<div class='manlan' lang='en'>
-							<input type='checkbox' /> I Agree with <a href='about.php'> terms of service </a>
-						</div>
-						<div class='manlan' lang='es'>
-							<input type='checkbox' /> Leí y Acepto los <a href='about.php'> términos y condiciones </a>
-						</div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "Li e concordo com os <a href='about.php'> termos e condições";}
+							if ($_COOKIE['lang'] == 'en') {echo "I Agree with <a href='about.php'> terms of service";}
+							if ($_COOKIE['lang'] == 'es') {echo "Leí y Acepto los <a href='about.php'> términos y condiciones";}
+						?>
 					</span> <br />
-					<div class='manlan' lang='pt'> <input type='submit' class='btpress' value='Cadastrar' /> </div>
-					<div class='manlan' lang='en'> <input type='submit' class='btpress' value='Sign in' /> </div>
+					<?php
+						if ($_COOKIE['lang'] == 'pt') {echo "<input type='submit' class='btpress' value='Cadastrar' />";}
+						if ($_COOKIE['lang'] == 'en') {echo "<input type='submit' class='btpress' value='Sign in' />";}
+						if ($_COOKIE['lang'] == 'es') {echo "<input type='submit' class='btpress' value='Registrarse' />";}
+					?>
 					<br />
 					<a id='signin' href='login.php'>
-						<div class='manlan' lang='pt'> já tenho uma conta </div>
-						<div class='manlan' lang='en'> I already have an account </div>
-						<div class='manlan' lang='es'> Ya tengo una cuenta </div>
+					<?php
+						if ($_COOKIE['lang'] == 'pt') {echo "já tenho uma conta";}
+						if ($_COOKIE['lang'] == 'en') {echo "I already have an account";}
+						if ($_COOKIE['lang'] == 'es') {echo "Ya tengo una cuenta";}
+					?>
 					</a>
 				</form>
 			</div>

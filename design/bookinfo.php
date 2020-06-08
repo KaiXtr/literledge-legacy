@@ -26,23 +26,20 @@
 			if ($ech == '1') {
 				$wrng = '';
 				if ($b['warning'] == '1') {
-					$wrng = "<div id='warning'>
-								<div class='manlan' lang='pt'>
-									Esta obra pode possuir conteúdo inapropriado ou
+					$wrng = "<div id='warning'>";
+					if ($_COOKIE['lang'] == 'pt') {
+						$wrng = $wrng."Esta obra pode possuir conteúdo inapropriado ou
 									desatualizado com os valores dos dias de hoje,
-									tais como discriminação, misoginia ou racismo.
-								</div>
-								<div class='manlan' lang='en'>
-									This work may contain inappropriate content or
+									tais como discriminação, misoginia ou racismo.";}
+					if ($_COOKIE['lang'] == 'en') {
+						$wrng = $wrng."This work may contain inappropriate content or
 									outdated with today's values,
-									such as discrimination, misogyny or racism.
-								</div>
-								<div class='manlan' lang='es'>
-									Este trabajo puede contener contenido inapropiado o
+									such as discrimination, misogyny or racism.";}
+					if ($_COOKIE['lang'] == 'es') {
+						$wrng = $wrng."Este trabajo puede contener contenido inapropiado o
 									desactualizado con los valores de hoy,
-									como la discriminación, la misoginia o el racismo.
-								</div>
-							</div>";
+									como la discriminación, la misoginia o el racismo.";}
+					$wrng = $wrng."</div>";
 				}
 
 				if ($b['serie'] != '')
@@ -50,10 +47,13 @@
 				else {$sv = '';}
 
 
-				if ($b['litschool'] != '')
-					{$ls = "<h2> <div class='manlan' lang='pt'> Escola Literária: " .$ltslst[$b["litschool"]]. "</div>
-					<div class='manlan' lang='en'> Literary School: " .$ltslst[$b["litschool"]]. "</div>
-					<div class='manlan' lang='es'> Escuela Literaria: " .$ltslst[$b["litschool"]]. "</div> </h2>";}
+				if ($b['litschool'] != '') {
+					$ls = '<h2>';
+					if ($_COOKIE['lang'] == 'pt') {$ls = $ls."Escola Literária: ".$ltslst[$b["litschool"]];}
+					if ($_COOKIE['lang'] == 'en') {$ls = $ls."Literary School: ".$ltslst[$b["litschool"]];}
+					if ($_COOKIE['lang'] == 'es') {$ls = $ls."Escuela Literaria: ".$ltslst[$b["litschool"]];}
+					$ls = $ls.'<h2>';
+					}
 				else {$ls = '';}
 
 				$rws = '';
@@ -71,7 +71,8 @@
 				if ((isset($_SESSION['user']))&&($urev == false)) {
 					$rws = $rws."<div class='thbcritic'>
 									<div>
-										<h2> Publique sua opinião </h2> <br />
+										<h2> Publique sua opinião </h2>
+										<br />
 										<form action='account/post_opinion.php' method='post'>
 											<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();'
 											pInputTextArea [(ngModel)]='value' (ngModelChange)='valueChange(value)' maxlength='736'></textarea> <br />
@@ -100,9 +101,9 @@
 				if (($r >= 10000)&&($r < 10000000)){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-3).'K';}
 				else if ($r >= 10000000){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-6).'M';}
 
-				if ($lang == 'pt') {$shrmsg = "Venha dar uma olhada no livro ".$t[$lang]." no Literledge! books/".$b['id'].".php";}
-				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! books/".$b['id'].".php";}
-				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! books/".$b['id'].".php";}
+				if ($lang == 'pt') {$shrmsg = "Venha dar uma olhada no livro ".$t[$lang]." no Literledge! https://literledge.com/books/".$b['id'].".php";}
+				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! https://literledge.com/books/".$b['id'].".php";}
+				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! https://literledge.com/books/".$b['id'].".php";}
 
 				$btns = "<form id='ubuttons' action='account/addtoshelf.php' method='post'>";
 				$ainpt = "<input class='btpress' type='submit' name='add' value='' style='background-image: url(media/images/icons/addto.png);' ";
@@ -226,22 +227,17 @@
 									alt='" .$b["country"]. "'/>
 								</a> • <a href='users/" .$b["auctor"]. ".php'>" .$nm. "</a> • " .$b["year"]. "
 							</h2>
-							" .$sv. "
-
-							<h2> <div class='manlan' lang='pt'> Gênero: " .$gnrlst[$b["genre"]]. " </div>
-							<div class='manlan' lang='en'> Genre: " .$gnrlst[$b["genre"]]. " </div>
-							<div class='manlan' lang='es'> Género: " .$gnrlst[$b["genre"]]. " </div> </h2>
-
-							" .$ls. "
-
-							<h2> <div class='manlan' lang='pt'> Liçenca: " .$liclst[$b["license"]]. " </div>
-							<div class='manlan' lang='en'> License: " .$liclst[$b["license"]]. " </div>
-							<div class='manlan' lang='es'> Licencia: " .$liclst[$b["license"]]. " </div> </h2>
-							".$wrng."
-
-							<div id='sinopsis'>";
+							" .$sv. "<h2>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Gênero: " .$gnrlst[$b["genre"]];}
+						if ($_COOKIE['lang'] == 'en') {echo "Genre: " .$gnrlst[$b["genre"]];}
+						if ($_COOKIE['lang'] == 'es') {echo "Género: " .$gnrlst[$b["genre"]];}
+					echo "</h2>" .$ls. "<h2>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Liçenca: " .$liclst[$b["license"]];}
+						if ($_COOKIE['lang'] == 'en') {echo "License: " .$liclst[$b["license"]];}
+						if ($_COOKIE['lang'] == 'es') {echo "Licencia: " .$liclst[$b["license"]];}
+					echo $wrng."</h2><div id='sinopsis'>";
 							include '../sinopsis/'.$b['id'].'.php';
-						echo "</div>
+					echo "</div>
 							<div class='summary'>
 								<ul>
 									<li> <a href='books/".$b['id'].".php#goto1'> Resenha </a> </li>
@@ -254,15 +250,15 @@
 					</div>
 					<div id='status'>"
 						#<div id='rating' style='background-color: #" .$rc. ";'> <span>" .$b["rating"]. " </span> </div>
-						."<div id='statistics'>
-							<div class='manlan' lang='pt'>" .$v. " Visualizações  <br /> </div>
-							<div class='manlan' lang='en'>" .$v. " Visualizations <br /> </div>
-							<div class='manlan' lang='es'>" .$v. " Visualizaciónes <br /> </div>
-
-							<div class='manlan' lang='pt'>" .$r. " Leituras <br /> </div>
-							<div class='manlan' lang='en'>" .$r. " Readings <br /> </div>
-							<div class='manlan' lang='es'>" .$r. " Lecturas <br /> </div>
-						</div>
+						."<div id='statistics'>";
+						if ($_COOKIE['lang'] == 'pt') {echo $v." Visualizações";}
+						if ($_COOKIE['lang'] == 'en') {echo $v." Visualizations";}
+						if ($_COOKIE['lang'] == 'es') {echo $v." Visualizaciónes";}
+					echo "<br />";
+						if ($_COOKIE['lang'] == 'pt') {echo $r." Leituras";}
+						if ($_COOKIE['lang'] == 'en') {echo $r." Readings";}
+						if ($_COOKIE['lang'] == 'es') {echo $r." Lecturas";}
+					echo "<br /></div>
 						" .$btns. "
 					</div>";
 				}
@@ -293,9 +289,14 @@
 						<a href='https://busca.saraiva.com.br/busca?q=".$t[$lang]."' target='_blank'><button class='btpress'> Comprar </button></a>
 					</div>
 					<a name='goto5'></a>
-					<div id='opinions'>
-						<h1> Opiniões </h1>
-						".$rws."
+					<div id='opinions'><h1>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Opiniões";}
+						if ($_COOKIE['lang'] == 'en') {echo "Opinions";}
+						if ($_COOKIE['lang'] == 'es') {echo "Opiniónes";}
+				echo "</h1>".$rws."
+					</div>
+					<div id='tags'>
+						".$b['tags']."
 					</div>";
 				}
 			}

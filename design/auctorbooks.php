@@ -14,18 +14,12 @@
 				if ($profile->num_rows > 0) {
 					$list = "<div class='content'>
 								<div class='brow'>
-									<div class='blabel'>
-										<div class='manlan' lang='pt'>
-											<h1> Do mesmo autor </h1>
-										</div>
-										<div class='manlan' lang='en'>
-											<h1> From the same auctor </h1>
-										</div>
-										<div class='manlan' lang='es'>
-											<h1> Por el mismo auctor </h1>
-										</div>
-									</div>
-									<div id='books' class='displaybooks'>";
+									<div class='blabel'>";
+					if ($_COOKIE['lang'] == 'pt') {$list = $list."<h1> Do mesmo autor </h1>";}
+					if ($_COOKIE['lang'] == 'en') {$list = $list."<h1> From the same auctor </h1>";}
+					if ($_COOKIE['lang'] == 'es') {$list = $list."<h1> Por el mismo auctor </h1>";}
+					$list = $list."</div>
+							<div id='books' class='displaybooks'>";
 					while ($i = $profile->fetch_assoc()) {
 						$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
 						$t = $translation->fetch_assoc();

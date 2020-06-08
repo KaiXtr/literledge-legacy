@@ -21,11 +21,13 @@
 
 		<div class='content'>
 			<div class='login'>
-				<form action='account/account_log.php' method='post'>
-					<div class='manlan' lang='pt'> <h1> Entrar no Literledge </h1> </div>
-					<div class='manlan' lang='en'> <h1> Log in Literledge </h1> </div>
-					<div class='manlan' lang='es'> <h1> Iniciar Sesión en Literledge </h1> </div>
-					<br />
+				<form action='account/account_log.php' method='post'><h1>
+					<?php
+						if ($_COOKIE['lang'] == 'pt') {echo "Entrar no Literledge";}
+						if ($_COOKIE['lang'] == 'en') {echo "Log in Literledge";}
+						if ($_COOKIE['lang'] == 'es') {echo "Iniciar Sesión en Literledge";}
+					?>
+					</h1><br />
 					<?php
 						$errl = "<span class='error'>";
 						if ($error == '1') {
@@ -38,29 +40,38 @@
 					<span id='text'> email </span> <br />
 					<input type='text'  id='user' class='textbox' name='user' /> <br />
 					<span id='text'>
-						<div class='manlan' lang='pt'> senha </div>
-						<div class='manlan' lang='en'> password </div>
-						<div class='manlan' lang='es'> contraseña </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "senha";}
+							if ($_COOKIE['lang'] == 'en') {echo "password";}
+							if ($_COOKIE['lang'] == 'es') {echo "contraseña";}
+						?>
 					</span> <br />
 					<div class='passbox'>
 						<input type='password' id='pass' class='textbox' name='password' />
 						<button type='button' id='shpass' class='passeye' onclick='showhide("pass","shpass")'></button>
 					</div>
 					<a id='signin' href='recover.php'>
-						<div class='manlan' lang='pt'> Esqueci a senha </div>
-						<div class='manlan' lang='en'> I forgot the password </div>
-						<div class='manlan' lang='es'> Olvidé la contraseña </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "Esqueci a senha";}
+							if ($_COOKIE['lang'] == 'en') {echo "I forgot the password";}
+							if ($_COOKIE['lang'] == 'es') {echo "Olvidé la contraseña";}
+						?>
 					</a>
 					<span id='checkbox'>
-						<div class='manlan' lang='pt'> <input type='checkbox' name='remember' /> Lembre-se de mim </div>
-						<div class='manlan' lang='en'> <input type='checkbox' name='remember' /> Remember me </div>
-						<div class='manlan' lang='es'> <input type='checkbox' name='remember' /> Acuérdate de mim </div>
+						<input type='checkbox' name='remember' />
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "Lembre-se de mim";}
+							if ($_COOKIE['lang'] == 'en') {echo "Remember me";}
+							if ($_COOKIE['lang'] == 'es') {echo "Acuérdate de mim";}
+						?>
 					</span>
 					<input type='submit' class='btpress' /> <br />
 					<a id='signin' href='signin.php'>
-						<div class='manlan' lang='pt'> Criar uma conta </div>
-						<div class='manlan' lang='en'> Create an account </div>
-						<div class='manlan' lang='es'> Crear una cuenta </div>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "Criar uma conta";}
+							if ($_COOKIE['lang'] == 'en') {echo "Create an account";}
+							if ($_COOKIE['lang'] == 'es') {echo "Crear una cuenta";}
+						?>
 					</a>
 					<button class="g-recaptcha" 
 					data-sitekey="reCAPTCHA_site_key" 

@@ -30,36 +30,36 @@
 								<h1> " .$i['name']. " </h1>
 								<h2> " .$_SESSION['user']. " </h2>
 								<ul>
-									<li> <a href='users/" .$_SESSION['user']. ".php'>
-										<div class='manlan' lang='pt'> Perfil </div>
-										<div class='manlan' lang='en'> Profile </div>
-										<div class='manlan' lang='es'> Perfil </div>
-									</a></li>
-									<li> <a href='usersettings.php'>
-										<div class='manlan' lang='pt'> Ajustes </div>
-										<div class='manlan' lang='en'> Settings </div>
-										<div class='manlan' lang='es'> Definiciones </div>
-									</a> </li>
-									<li> <a href='account/logout.php'>
-										<div class='manlan' lang='pt'> Sair </div>
-										<div class='manlan' lang='en'> Log out </div>
-										<div class='manlan' lang='es'> Salir </div>
-									</a> </li>
+									<li> <a href='users/" .$_SESSION['user']. ".php'>";
+											if ($_COOKIE['lang'] == 'pt') {echo "Perfil";}
+											if ($_COOKIE['lang'] == 'en') {echo "Profile";}
+											if ($_COOKIE['lang'] == 'es') {echo "Perfil";}
+									echo "</a></li>
+									<li> <a href='usersettings.php'>";
+											if ($_COOKIE['lang'] == 'pt') {echo "Ajustes";}
+											if ($_COOKIE['lang'] == 'en') {echo "Settings";}
+											if ($_COOKIE['lang'] == 'es') {echo "Definiciones";}
+									echo "</a> </li>
+									<li> <a href='account/logout.php'>";
+											if ($_COOKIE['lang'] == 'pt') {echo "Sair";}
+											if ($_COOKIE['lang'] == 'en') {echo "Log out";}
+											if ($_COOKIE['lang'] == 'es') {echo "Salir";}
+									echo "</a> </li>
 								</ul>
 							</div>";
 					}
 				}
 			else {
-				echo "<a href='signin.php'> <button class='btpress'>
-						<div class='manlan' lang='pt'> Cadastrar </div>
-						<div class='manlan' lang='en'> Sign in </div>
-						<div class='manlan' lang='es'> Registrarse </div>
-					</button> </a>
-					<a href='login.php'> <button class='btpress'>
-						<div class='manlan' lang='pt'> Entrar </div>
-						<div class='manlan' lang='en'> Log in </div>
-						<div class='manlan' lang='es'> Iniciar Sesión </div>
-					</button> </a>";
+				echo "<a href='signin.php'> <button class='btpress'>";
+							if ($_COOKIE['lang'] == 'pt') {echo "Cadastrar";}
+							if ($_COOKIE['lang'] == 'en') {echo "Sign in";}
+							if ($_COOKIE['lang'] == 'es') {echo "Registrarse";}
+					echo "</button> </a>
+					<a href='login.php'> <button class='btpress'>";
+							if ($_COOKIE['lang'] == 'pt') {echo "Entrar";}
+							if ($_COOKIE['lang'] == 'en') {echo "Log in";}
+							if ($_COOKIE['lang'] == 'es') {echo "Iniciar Sesión";}
+					echo "</button> </a>";
 				}
 		?>
 	</div>
@@ -67,10 +67,24 @@
 
 <?php
 	if (!isset($_COOKIE['cookieagree'])) {
-		echo "<div id='cookies' style='visibility: hidden;'>
-				Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-				<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> Entendi </button>
-			</div>";
+		if ($_COOKIE['lang'] == 'pt') {
+			echo "<div id='cookies' style='visibility: hidden;'>
+					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+					<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> Entendi </button>
+				</div>";
+			}
+		if ($_COOKIE['lang'] == 'en') {
+			echo "<div id='cookies' style='visibility: hidden;'>
+					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+					<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> I got it </button>
+				</div>";
+			}
+		if ($_COOKIE['lang'] == 'es') {
+			echo "<div id='cookies' style='visibility: hidden;'>
+					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+					<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> Entendido </button>
+				</div>";
+			}
 	}
 ?>
 
