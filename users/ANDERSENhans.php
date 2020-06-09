@@ -16,8 +16,8 @@
 	</head>
 
 	<body>
-		<?php include 'design/header.php' ?>
-		<?php include 'design/lateralbar.php' ?>
+		<?php include '../design/header.php' ?>
+		<?php include '../design/lateralbar.php' ?>
 
 		<?php $user = 'ANDERSENhans'; include '../design/userinfo.php'; ?>
 		<div id='bio'>

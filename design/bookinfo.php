@@ -42,12 +42,12 @@
 					$wrng = $wrng."</div>";
 				}
 
-				if ($b['serie'] != '')
-					{$sv = "<h2> " .$b["serie"]. " • Vol. " .$b["volume"]. " </h2>";}
+				if ($b['series'] != null)
+					{$sv = "<h2> " .$b["series"]. " • Vol. " .$b["volume"]. " </h2>";}
 				else {$sv = '';}
 
 
-				if ($b['litschool'] != '') {
+				if ($b['litschool'] != null) {
 					$ls = '<h2>';
 					if ($_COOKIE['lang'] == 'pt') {$ls = $ls."Escola Literária: ".$ltslst[$b["litschool"]];}
 					if ($_COOKIE['lang'] == 'en') {$ls = $ls."Literary School: ".$ltslst[$b["litschool"]];}
@@ -77,8 +77,8 @@
 					if ((isset($_SESSION['user']))&&($rw['nick'] == $_SESSION['user'])) {$urev = true;}
 					$rws = $rws."<div class='thbcritic'>
 									<div>
-										<h2> ".$rw['name']." </h2>
-										<h3> @".$rw['nick']." | ".$rw['datime']." </h3>
+										<a href='users/".$rw['nick'].".php'><h2> ".$rw['name']." </h2></a>
+										<h3><a href='users/".$rw['nick'].".php'> @".$rw['nick']."</a> | ".$rw['datime']." </h3>
 										<div id='cricom'>" .$rw['comment']. "</div>
 									</div>
 								</div>";
@@ -216,9 +216,9 @@
 						<div id='info'>
 							<h1> " .$t[$lang]. " </h1>
 							<h2> 
-								<a href='https://www.flaticon.com/authors/freepik' >
+								<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
 									<img id='couflag' src='media/images/icons/flags/" .$b["country"]. ".png' height='30' title='Icons made by Freepik' 
-									alt='" .$b["country"]. "'/>
+									alt='" .$b["country"]. "' />
 								</a> • <a href='users/" .$b["auctor"]. ".php'>" .$nm. "</a> • " .$b["year"]. "
 							</h2>
 							" .$sv. "<h2>";
@@ -269,7 +269,7 @@
 					else {$pr = $e['price'];}
 					$l = "media/books/" .$b["id"]. "-" .$e["id"]. "." .$e["filtyp"];
 					if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
-					$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$b['name'].'"'.")'>
+					$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$b['name'].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
 						<th>" .$e['filtyp']. "</th><th>" .$e['credit']. "</th><th>" .$e['language']. "</th><th>" .$pr.  "</th>
 						</tr>";
 					}

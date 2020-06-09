@@ -86,57 +86,72 @@
 		<script type='text/javascript'>
 			slide_show();
 		</script>
-
 		<div class='content'>
-			<div class='brow'>
-				<div class='blabel'><h1>
-					<?php
-						if ($_COOKIE['lang'] == 'pt') {echo "Populares</h1>Os livros que estão bombando.";}
-						if ($_COOKIE['lang'] == 'en') {echo "Popular</h1>The best books just for you.";}
-						if ($_COOKIE['lang'] == 'es') {echo "Popular</h1>Los mejores libros del sitio.";}
-					?>
-				</div>
-				<div class='displaysearch'>
-					<?php
-						require 'account/mysql_connect.php';
-						if ($notcon == null) {
-							$conn->query("SET NAMES 'utf8'");
-							$result = $conn->query("SELECT id, name, auctor, warning FROM books LIMIT 51");
-							if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
-							else {$lang = $_COOKIE['lang'];}
+			<?php
+				require 'account/mysql_connect.php';
+				if ($notcon == null) {
+					require 'design/array_lists.php';
+					$lists = array('SELECT id, name, auctor, warning FROM books ORDER BY readings desc LIMIT 10',
+						'SELECT id, name, auctor, warning FROM books ORDER BY id desc LIMIT 10');
+					$names = array($fltlst['Popular'],$fltlst['New']);
+					$index = array(0,1);
+					$x = 2;
+					while ($x < 10) {
+						$r = random_int(0,1);
+						if ($r == 0) {
+							$i = array_keys($gnrlst)[random_int(0,sizeof($gnrlst)-1)];
+							if (in_array($gnrlst[$i], $names) == false) {
+								$names[] = $gnrlst[$i];$lists[] = 'SELECT id, name, auctor, warning FROM books WHERE genre="'.$i.'"	 LIMIT 10';
+								$index[] = $x; $x++;
+							}
+						}
+						if ($r == 1) {
+							$i = array_keys($ltslst)[random_int(0,sizeof($ltslst)-1)];
+							if (in_array($ltslst[$i], $names) == false) {
+								$names[] = $ltslst[$i];$lists[] = 'SELECT id, name, auctor, warning FROM books WHERE litschool="'.$i.'" LIMIT 10';
+								$index[] = $x; $x++;
+							}
+						}
+					}
 
-							if ($result->num_rows > 0) {
-								while ($i = $result->fetch_assoc()) {
-									$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
-									$t = $translation->fetch_assoc();
+					for ($q=0;$q<sizeof($lists);$q++) {
+						echo "<div class='brow'><div class='blabel'><h1>".$names[$index[$q]]."</h1></div><div class='displaybooks'>";
+						$result = $conn->query($lists[$index[$q]]);
+						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
+						else {$lang = $_COOKIE['lang'];}
 
-									$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
-									$n = $find->fetch_assoc();
-									if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
-									else {$nm = $n[$_COOKIE['lang']];}
+						if ($result->num_rows > 0) {
+							while ($i = $result->fetch_assoc()) {
+								$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
+								$t = $translation->fetch_assoc();
 
-									if ($i['warning'] == '0') {$wrg = '';}
-									else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
+								$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
-									echo "<a href='books/" .$i["id"]. ".php'>
-											<button class='thumbs' ".$wrg.">
-												<div class='coverart'> <img  src='media/images/covers/" .$i["id"]. ".jpg' /> </div>
-												<div class='description'>
-													<h2> ".$t[$lang]." </h2>
-													<h3> ".$nm." </h3>";
-													include 'sinopsis/'.$i['id'].'.php';
-											echo "</div>
-											</button>
-										</a>";
-									}
+								if ($i['warning'] == '0') {$wrg = '';}
+								else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
+
+								echo "<a href='books/" .$i["id"]. ".php'>
+										<button class='thumbs' ".$wrg.">
+											<div class='coverart'> <img  src='media/images/covers/" .$i["id"]. ".jpg' /> </div>
+											<div class='description'>
+												<h2> ".$t[$lang]." </h2>
+												<h3> ".$nm." </h3>";
+												include 'sinopsis/'.$i['id'].'.php';
+										echo "</div>
+										</button>
+									</a>";
 								}
+							}
+							echo "</div>
+							</div>";
 						}
 						$conn->close();
-					?>
-				</div>
-			</div>
+					}
+			?>
 		</div>
-
 		<?php include 'design/footer.php' ?>
 	</body>
 </html>

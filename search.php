@@ -143,9 +143,9 @@
 							{echo "Siglo</option>";}
 						for ($x = 0;$x < sizeof($found);$x++) {
 							if ($fyer == $found[$x])
-								{echo "<option value='".$found[$x]."' selected>".(substr($found[$x],0,2) + 1)."</option>";}
+								{echo "<option value='".$found[$x]."' selected>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
 							else
-								{echo "<option value='".$found[$x]."'>".(substr($found[$x],0,2) + 1)."</option>";}
+								{echo "<option value='".$found[$x]."'>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
 							}
 						echo "</select>";
 						}
@@ -171,15 +171,11 @@
 						if ($_COOKIE['lang'] == 'es')
 							{echo "Género</option>";}
 
-						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lbl = $gnrlst;}
-						else if ($_COOKIE['lang'] == 'en') {$lbl = $found;}
-						else if ($_COOKIE['lang'] == 'es') {$lbl = $ges;}
-
 						for ($x = 0;$x < sizeof($found);$x++) {
 							if ($fgen == strtolower($found[$x]))
-								{echo "<option value='".strtolower($found[$x])."'selected>".$lbl[$found[$x]]."</option>";}
+								{echo "<option value='".strtolower($found[$x])."'selected>".$gnrlst[$found[$x]]."</option>";}
 							else
-								{echo "<option value='".strtolower($found[$x])."'>".$lbl[$found[$x]]."</option>";}
+								{echo "<option value='".strtolower($found[$x])."'>".$gnrlst[$found[$x]]."</option>";}
 							}
 						echo "</select>";
 						}
@@ -205,15 +201,12 @@
 						if ($_COOKIE['lang'] == 'es')
 							{echo "Escuela Literaria</option>";}
 
-						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lbl = $ltslst;}
-						else if ($_COOKIE['lang'] == 'en') {$lbl = $found;}
-
 						for ($x = 0;$x < sizeof($found);$x++) {
 							if ($found[$x] != NULL) {
 								if ($flsc == strtolower($found[$x]))
-									{echo "<option value='".strtolower($found[$x])."'selected>".$lbl[$found[$x]]."</option>";}
+									{echo "<option value='".strtolower($found[$x])."'selected>".$ltslst[$found[$x]]."</option>";}
 								else
-									{echo "<option value='".strtolower($found[$x])."'>".$lbl[$found[$x]]."</option>";}
+									{echo "<option value='".strtolower($found[$x])."'>".$ltslst[$found[$x]]."</option>";}
 								}
 							}
 						echo "</select>";
@@ -222,15 +215,15 @@
 					
 					$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY name");
 					if ($result->num_rows > 0) {
-						$disp = "<div class='brow'> <div class='blabel'>";
-						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
-							if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Autores </h1>";}
-							if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Auctors </h1>";}
-							if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Autores </h1>";}
-							}
-						$disp = $disp ."</div> <div class='displaybooks'>";
-						
-						if ($search == 'century') {
+						if ($search == '$century') {
+							$disp = "<div class='brow'> <div class='blabel'>";
+							if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
+								if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Séculos </h1>";}
+								if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Centuries </h1>";}
+								if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Siglos </h1>";}
+								}
+							$disp = $disp ."</div> <div class='displaybooks'>";
+
 							$c1 = array('XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX');
 							$c2 = array('12','13','14','15','16','17','18','19');
 							for ($y = 0; $y < sizeof($c1); $y++) {
@@ -244,7 +237,15 @@
 								};
 							echo $disp ."</div></div>";
 						}
-						else {
+						else if ($search != '$books') {
+							$disp = "<div class='brow'> <div class='blabel'>";
+							if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
+								if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Autores </h1>";}
+								if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Auctors </h1>";}
+								if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Autores </h1>";}
+								}
+							$disp = $disp ."</div> <div class='displaybooks'>";
+
 							$max = 0;
 							while (($i = $result->fetch_assoc())&&($max < $ofsa + 20)) {
 								if ($max < $ofsa) {$max++;}
@@ -294,7 +295,7 @@
 						}
 					}
 
-					if ($search != '$auctors') {
+					if (($search != '$auctors')&&($search != '$century')) {
 						$result = $conn->query("SELECT b.*, u.nick as auctor FROM books as b JOIN users as u
 								ON b.auctor=u.nick ORDER BY b.name");
 						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
@@ -329,8 +330,11 @@
 									preg_match('/' .$search. '/i',$gnrlst[$i['genre']],$fg);
 									if ((sizeof($fn) > 0)||(sizeof($fa) > 0)||(sizeof($ft) > 0)||(sizeof($fg) > 0))
 										{$p = true;}
-									else if ($i['litschool'] != '') {
+									if ($i['litschool'] != null) {
 										preg_match('/' .$search. '/i',$ltslst[$i['litschool']],$fl);
+										if (sizeof($fl) > 0) {$p = true;}}
+									if ($i['series'] != null) {
+										preg_match('/' .$search. '/i',$i['series'],$fl);
 										if (sizeof($fl) > 0) {$p = true;}}
 									}
 

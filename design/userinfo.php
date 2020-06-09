@@ -29,8 +29,8 @@
 			if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
 			else {$nm = $n[$_COOKIE['lang']];}
 
-			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';}
-			else {$hst = '';}
+			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';echo "<script type='text/javascript'>namescroll(40,0)</script>";}
+			else {$hst = '';echo "<script type='text/javascript'>namescroll(160,200)</script>";}
 
 			$slf = '';
 			$fav = '';

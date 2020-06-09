@@ -151,6 +151,10 @@ function lang_set() {
 	}
 }
 
+function namescroll(rpf,rpt) {
+	document.styleSheets[0].addRule('@keyframes username','from {opacity: 0%; right: '+rpf+'px;} to {opacity: 100%; right: '+rpt+'px;}');
+}
+
 function previmg(event,target) {
 	var obj = document.getElementById(target);
 	obj.src = URL.createObjectURL(event.target.files[0]);

@@ -522,11 +522,6 @@ hr{
 	position: absolute;
 }
 
-@keyframes username{
-	from {opacity: 0%}
-	to {opacity: 100%}
-}
-
 #profile #username{
 	color: #FCF7F2;
 	text-align: right;
@@ -541,11 +536,6 @@ hr{
 	position: absolute;
 }
 
-@keyframes username{
-	from {opacity: 0%; right: 180px;}
-	to {opacity: 100%; right: 200px;}
-}
-
 #profile #nickname{
 	color: #FCF7F2;
 	text-align: right;
@@ -555,7 +545,6 @@ hr{
 	top: 450px;
 	right: 200px;
 	animation-name: nickname;
-	animation-direction: right;
 	animation-duration: 3s;
 	position: absolute;
 }
@@ -957,6 +946,7 @@ hr{
 }
 
 .portraits .profilepic{
+	margin-left: 12px;
 	width: 200px;
 	height: 266px;
 	display: block;
