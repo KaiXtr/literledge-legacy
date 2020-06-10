@@ -17,17 +17,17 @@ else if ($_COOKIE['lang'] == 'es') {
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
 	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo',
-	'Parody'=>'Paródia','Philosophy'=>'Filosofia','Rhapsody'=>'Rapsódia','Romance'=>'Romance','Sociology'=>'Sociologia','Tale'=>'Conto','Tragedy'=>'Tragédia',
+	'Parody'=>'Paródia','Philosophy'=>'Filosofia','Play'=>'Peça','Rhapsody'=>'Rapsódia','Romance'=>'Romance','Sociology'=>'Sociologia','Tale'=>'Conto','Tragedy'=>'Tragédia',
 	'Poetry'=>'Poesia');
 	}
 else if ($_COOKIE['lang'] == 'en') {
 	$gnrlst = array('Chronicle'=>'Chronicle','Comedy'=>'Comedy','Epic'=>'Epic','Fantasy'=>'Fantasy','Horror'=>'Horror','Journalism'=>'Journalism',
-	'Parody'=>'Parody','Philosophy'=>'Philosophy','Rhapsody'=>'Rhapsody','Romance'=>'Romance','Sociology'=>'Sociology','Tale'=>'Tale',
+	'Parody'=>'Parody','Philosophy'=>'Philosophy','Play'=>'Play','Rhapsody'=>'Rhapsody','Romance'=>'Romance','Sociology'=>'Sociology','Tale'=>'Tale',
 	'Tragedy'=>'Tragedy','Poetry'=>'Poetry');
 	}
 else if ($_COOKIE['lang'] == 'es') {
 	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comedia','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Horror','Journalism'=>'Jornalismo',
-	'Parody'=>'Parodia','Philosophy'=>'Filosofía','Rhapsody'=>'Rapsodia','Romance'=>'Romance','Sociology'=>'Sociología','Tale'=>'Conto',
+	'Parody'=>'Parodia','Philosophy'=>'Filosofía','Play'=>'Pieza','Rhapsody'=>'Rapsodia','Romance'=>'Romance','Sociology'=>'Sociología','Tale'=>'Conto',
 	'Tragedy'=>'Tragédia','Poetry'=>'Poesía');
 	}
 

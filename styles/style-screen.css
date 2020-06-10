@@ -48,6 +48,7 @@ hr{
 	height: 100%;
 	z-index: 15;
 	position: fixed;
+	transition: visibility 0.5s, opacity 0.5s;
 	visibility: hidden;
 	opacity: 0%;
 }
@@ -486,7 +487,7 @@ hr{
 }
 
 #profile .profilepic{
-	top: 300px;
+	top: 250px;
 	bottom: 0px;
 	left: 200px;
 	right: 0px;
@@ -563,6 +564,37 @@ hr{
 	padding-right: 100px;
 	height: 50px;
 	align-items: center;
+}
+
+#displayimg {
+	background-repeat: no-repeat;
+	background-size: auto 800px;
+	background-position: center;
+	width: 1000px;
+	height: 800px;
+	top: 100px;
+	left: 400px;
+	position: fixed;
+	transition: visibility 0.25s, opacity 0.25s;
+	visibility: hidden;
+	opacity: 0%;
+	z-index: 20;
+}
+
+#imageclose {
+	top: 100px;
+	right: 400px;
+	position: fixed;
+	visibility: hidden;
+	transition: visibility 0.25s, opacity 0.25s;
+	z-index: 20;
+}
+
+.uphoto{
+	margin: 5px;
+	max-width: 400px;
+	max-height: 300px;
+	cursor: zoom-in;
 }
 
 #bio{

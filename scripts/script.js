@@ -76,6 +76,29 @@ function set_display(target){
 		}
 	}
 
+function show_image(src) {
+	var dis = document.getElementById('displayimg');
+	var fad = document.getElementById('fadescreen');
+	var btn = document.getElementById('imageclose');
+	if (src == null) {
+		dis.style.visibility = 'hidden';
+		dis.style.opacity = '0%';
+		fad.style.visibility = 'hidden';
+		fad.style.opacity = '0%';
+		btn.style.visibility = 'hidden';
+		btn.style.opacity = '0%';
+	}
+	else {
+		dis.style.visibility = 'visible';
+		dis.style['background-image'] = 'url('+src+')';
+		dis.style.opacity = '100%';
+		fad.style.visibility = 'visible';
+		fad.style.opacity = '50%';
+		btn.style.visibility = 'visible';
+		btn.style.opacity = '100%';
+	}
+}
+
 function showhide(target,btn){
 	var obj = document.getElementById(target);
 	var but = document.getElementById(btn);

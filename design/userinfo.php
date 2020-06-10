@@ -32,6 +32,26 @@
 			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';echo "<script type='text/javascript'>namescroll(40,0)</script>";}
 			else {$hst = '';echo "<script type='text/javascript'>namescroll(160,200)</script>";}
 
+			#GALLERY
+			if ($i['auctor'] == '1') {
+				$pht = glob('../media/images/gallery/'.$i['nick'].'*.jpg');
+				$pht = array_slice($pht, 2);
+				if (sizeof($pht) > 0) {
+					$gly = "<div class='brow' style='margin-top: 40px;'><div class='blabel'><h1>";
+					if ($_COOKIE['lang'] == 'pt') {$gly = $gly."Galeria";}
+					if ($_COOKIE['lang'] == 'en') {$gly = $gly."Gallery";}
+					if ($_COOKIE['lang'] == 'es') {$gly = $gly."Galería";}
+					$gly = $gly."</h1></div><div class='displaybooks'>";
+					for ($x=0;$x<sizeof($pht);$x++) {
+						$gly = $gly."<img class='uphoto' src='literledge/".$pht[$x]."' onclick='show_image(".'"literledge/'.$pht[$x].'"'.")' />";
+					}
+					$gly = $gly."</div></div><div id='displayimg'></div><button id='imageclose' class='btpress' onclick='show_image(null)'>sair</button>";
+				}
+				else {$gly = '';}
+			}
+			else {$gly = '';}
+
+			#SHELVES
 			$slf = '';
 			$fav = '';
 			if ((isset($_SESSION['user']))&&($_SESSION['user'] == $i['nick'])) {
@@ -89,7 +109,7 @@
 							<img id='couflag' src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
 						</a>
 					</div>
-				</div>".$slf.$fav;
+				</div>".$gly.$slf.$fav;
 			}
 	}
 	$conn->close();
