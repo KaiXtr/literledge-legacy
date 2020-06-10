@@ -224,13 +224,12 @@
 								}
 							$disp = $disp ."</div> <div class='displaybooks'>";
 
-							$c1 = array('XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX');
-							$c2 = array('12','13','14','15','16','17','18','19');
-							for ($y = 0; $y < sizeof($c1); $y++) {
+							$cn = array('20','19','18','17','16','15','14','13','12','11','10');
+							for ($y = 0; $y < sizeof($cn); $y++) {
 								$disp = $disp ."<html>
-										<a href='search.php?q=".'$all'."&y=" .$c2[$y]. "00'>
+										<a href='search.php?q=".'$all'."&y=" .$cn[$y]. "00'>
 											<button class='portraits'>
-												<h2> " .$c1[$y]. " </h2>
+												<h2> " .$cenlst[$cn[$y]]. " </h2>
 											</button>
 										</a>
 									</html>";
@@ -309,8 +308,8 @@
 						$disb = $disb."</div>
 									<div class='displaysearch'>";
 
-						$max = $ofsb;
-						while (($i = $result->fetch_assoc())&&($max < $ofsb + 20)) {
+						$max = 0;
+						while (($i = $result->fetch_assoc())&&($max < $ofsb + 21)) {
 							if ($max < $ofsb) {$max++;}
 							else {
 								$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
@@ -363,14 +362,14 @@
 									};
 								};
 							};
-						if ($ofsa > 0) {
+						if ($ofsb > 0) {
 							$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb - 21).'","'.($ofsp).'"'.")'>";
 								if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
 								if ($_COOKIE['lang'] == 'en') {$btp = $btp."Previous";}
 								if ($_COOKIE['lang'] == 'es') {$btp = $btp."Anterior";}
 								}
 						else {$btp = '';}
-						if ($max == $ofsb + 20) {
+						if ($max == $ofsb + 21) {
 							$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb + 21).'","'.($ofsp).'"'.")'>";
 								if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
 								if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}

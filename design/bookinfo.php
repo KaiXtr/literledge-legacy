@@ -43,16 +43,16 @@
 				}
 
 				if ($b['series'] != null)
-					{$sv = "<h2> " .$b["series"]. " • Vol. " .$b["volume"]. " </h2>";}
+					{$sv = "<h2><a href='search.php?q=".strtolower($b["litschool"])."'>".$b["series"]." • Vol. ".$b["volume"]."</a></h2>";}
 				else {$sv = '';}
 
 
 				if ($b['litschool'] != null) {
-					$ls = '<h2>';
+					$ls = "<h2><a href='search.php?q=".'$books'."&s=".strtolower($b["litschool"])."'>";
 					if ($_COOKIE['lang'] == 'pt') {$ls = $ls."Escola Literária: ".$ltslst[$b["litschool"]];}
 					if ($_COOKIE['lang'] == 'en') {$ls = $ls."Literary School: ".$ltslst[$b["litschool"]];}
 					if ($_COOKIE['lang'] == 'es') {$ls = $ls."Escuela Literaria: ".$ltslst[$b["litschool"]];}
-					$ls = $ls.'<h2>';
+					$ls = $ls.'</a><h2>';
 					}
 				else {$ls = '';}
 
@@ -221,15 +221,15 @@
 									alt='" .$b["country"]. "' />
 								</a> • <a href='users/" .$b["auctor"]. ".php'>" .$nm. "</a> • " .$b["year"]. "
 							</h2>
-							" .$sv. "<h2>";
+							" .$sv. "<h2><a href='search.php?q=".'$books'."&g=".strtolower($b["genre"])."'>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Gênero: " .$gnrlst[$b["genre"]];}
 						if ($_COOKIE['lang'] == 'en') {echo "Genre: " .$gnrlst[$b["genre"]];}
 						if ($_COOKIE['lang'] == 'es') {echo "Género: " .$gnrlst[$b["genre"]];}
-					echo "</h2>" .$ls. "<h2>";
+					echo "</a></h2>" .$ls. "<h2>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Liçenca: " .$liclst[$b["license"]];}
 						if ($_COOKIE['lang'] == 'en') {echo "License: " .$liclst[$b["license"]];}
 						if ($_COOKIE['lang'] == 'es') {echo "Licencia: " .$liclst[$b["license"]];}
-					echo $wrng."</h2><div id='sinopsis'>";
+					echo "</h2>".$wrng."<div id='sinopsis'>";
 							include '../sinopsis/'.$b['id'].'.php';
 					echo "</div>
 							<div class='summary'>
@@ -289,9 +289,17 @@
 						if ($_COOKIE['lang'] == 'es') {echo "Opiniónes";}
 				echo "</h1>".$rws."
 					</div>
-					<div id='tags'>
-						".$b['tags']."
-					</div>";
+					<div id='tags'>";
+					$tg = 0;
+					for($x=0;$x<strlen($b['tags']);$x++) {
+						if ($b['tags'][$x] == '#') {
+							$t = substr(substr($b['tags'],$x-$tg,$tg),1);
+							echo "<a href='search.php?q=".$t."'><u>".$t."</u></a> ";
+							$tg = 0;
+						}
+						$tg++;
+					}
+				echo "</div>";
 				}
 			}
 	}

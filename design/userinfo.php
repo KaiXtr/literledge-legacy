@@ -100,14 +100,17 @@
 					<h1 id='username' ".$hst."> " .$nm. " </h1> " .$v. "
 					<h2 id='nickname'> @" .$i["nick"]. " </h2>
 					<div id='binfobar'>
-						<img src='media/images/icons/birth.png' height='30' />
-						<span> " .$b. " </span>
-						" .$d. "
-						<img src='media/images/icons/gender_" .$i["gender"]. ".png' height='30' />
-						<span> " .$i["hometown"]. " </span>
-						<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
-							<img id='couflag' src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
-						</a>
+						<div>
+							<img src='media/images/icons/birth.png' height='30' />
+							<span> " .$b. " </span>
+							" .$d. "</div>
+						<div>
+							<img src='media/images/icons/gender_" .$i["gender"]. ".png' height='30' />
+							<span> " .$i["hometown"]. " </span>
+							<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
+								<img id='couflag' src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
+							</a>
+						</div>
 					</div>
 				</div>".$gly.$slf.$fav;
 			}

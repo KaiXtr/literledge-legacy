@@ -7,6 +7,13 @@
 				if ($_COOKIE['lang'] == 'es') {echo "Categoría";}
 			?>
 		</h1> </li>
+		<li> <a href='search.php?q=$books'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Tudo";}
+				if ($_COOKIE['lang'] == 'en') {echo "All";}
+				if ($_COOKIE['lang'] == 'es') {echo "Tudo";}
+			?>
+		</a> </li>
 		<li> <a >
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Populares";}

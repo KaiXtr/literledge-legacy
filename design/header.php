@@ -9,8 +9,9 @@
 			if ($_COOKIE['lang'] == 'es') {$vl = 'Buscar';}
 		?>
 		<form class='searchbar' action='search.php' method='post'>
-			<?php 
-				echo "<input class='searchtext' type='text' name='search' onchange='search_suggest(this.value)' placeholder='".$vl."...' />
+			<?php
+				if (isset($_GET['q'])) {$sch = "value='".$_GET['q']."'";} else {$sch = '';}
+				echo "<input class='searchtext' type='text' name='search' ".$sch."onchange='search_suggest(this.value)' placeholder='".$vl."...' />
 				<input class='submit' type='image' src='media/images/icons/search.png' alt='".strtolower($vl)."' />";
 				if (isset($_GET['seasugg'])) {
 					mainInfo($_GET['seasugg']);
