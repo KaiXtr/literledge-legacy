@@ -38,6 +38,8 @@
 			termo orwelliano — palavra usada para definir qualquer prática social autoritária ou totalitária[12] — já fazem parte do vernáculo popular. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/George_Orwell' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/V4s9pdL7tpA?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='ORWELLgeorge'; include '../design/poemfind.php'; ?>
 		<?php $user = 'ORWELLgeorge'; include '../design/auctorbooks.php'; ?>

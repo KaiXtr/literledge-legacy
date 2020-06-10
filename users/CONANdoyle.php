@@ -28,6 +28,8 @@
 			Arthur Conan Doyle viveu e escreveu parte de suas obras em Southsea, um bairro elegante de Portsmouth. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Arthur_Conan_Doyle' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/XWjgt9PzYEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='CONANdoyle'; include '../design/poemfind.php'; ?>
 		<?php $user = 'CONANdoyle'; include '../design/auctorbooks.php'; ?>

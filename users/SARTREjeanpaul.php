@@ -27,6 +27,8 @@
 				Repeliu as distinções e as funções problemáticas e, por estes motivos, se recusou a receber o Nobel de Literatura de 1964.[1] Sua filosofia dizia que no caso humano (e só no caso humano) a existência precede a essência, pois o homem primeiro existe, depois se define, enquanto todas as outras coisas são o que são, sem se definir, e por isso sem ter uma "essência" que suceda à existência.[2] Ele também é conhecido por seu relacionamento aberto que durou cerca de 51 anos (até sua morte) com a filósofa e escritora francesa Simone de Beauvoir.
 				<br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Paul_Sartre' > Wikipedia </a>
+				<br />
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/5lFLO16TRPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class='manlan' lang='en'>
 				Hot dog yea trup united states uhuuuu rockn roll <br />

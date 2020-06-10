@@ -27,6 +27,8 @@
 				A cidade de Frankfurt homenageou Max Horkheimer em 1953 com o distintivo Goethe e o nomeou, em 1960, cidadão honorário.[2] Em 2014, a Universidade de Frankfurt nomeou uma rua em sua homenagem. O gabinete de Max Horkheimer, no Ebene Leben, no terceiro andar do Stadtbibliothek Stuttgart na Praça de Milão, também recebeu seu nome.[3]
 				<br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/Max_Horkheimer' > Wikipedia </a>
+				<br />
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/nV5EBHePKRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 		<?php $auctor='HORKHEIMERmax'; include '../design/poemfind.php'; ?>

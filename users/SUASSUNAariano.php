@@ -32,6 +32,8 @@
 			O assassinato de João Suassuna ocorreu como desdobramento da comoção posterior ao assassinato de João Pessoa, governador da Paraíba e candidato a Vice-Presidente do Brasil na chapa de Getúlio Vargas. Ariano Suassuna atribuía à família Pessoa, a encomenda do assassinato de seu pai, contratando o pistoleiro Miguel Laves de Souza, que atirou na vítima pelas costas, no Rio de Janeiro.[8] Em razão disso, não concordava com a alteração do nome da cidade onde nasceu, de "Parahyba" para "João Pessoa", em homenagem ao governador assassinado.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Ariano_Suassuna' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/WUjcJNtSaqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div class='content'>
 			<?php $auctor='SUASSUNAariano'; include '../design/poemfind.php'; ?>

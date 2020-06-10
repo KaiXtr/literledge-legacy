@@ -44,6 +44,8 @@
 			que mais lucraram no respectivo ano. Tolkien alcançou a quinta posição, com ganhos estimados em 50 milhões de dólares.[14] <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/J._R._R._Tolkien' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/XR-4vMEiQ_U?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='JRRTOLKIEN'; include '../design/poemfind.php'; ?>
 		<?php $user = 'JRRTOLKIEN'; include '../design/auctorbooks.php'; ?>

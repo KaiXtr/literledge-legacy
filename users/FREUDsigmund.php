@@ -33,6 +33,8 @@
 				Suas teorias e seus tratamentos foram controversos na Viena do século XIX, e continuam a ser muito debatidos hoje. Sua teoria é de grande influência na psicologia atual e segue se desenvolvendo através de estudos e prática clínica na área, com psicanalistas que vieram depois dele. Estes criaram suas próprias teorias, mas sempre com base nos pressupostos intrínsecos colocados por Freud, como a noção de inconsciente e transferência.
 				<br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/Sigmund_Freud' > Wikipedia </a>
+				<br />
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/wyZWEtBQzJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div lang='en'>
 				Hot dog yea trup united states uhuuuu rockn roll <br />

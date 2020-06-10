@@ -25,6 +25,8 @@
 				Michel Foucault (pronúncia francesa:IPA: [miʃɛl fuko]); Poitiers, 15 de outubro de 1926 — Paris, 25 de junho de 1984) foi um filósofo, historiador das ideias, teórico social, filólogo, crítico literário e professor da cátedra História dos Sistemas do Pensamento, no célebre Collège de France, de 1970 até 1984 (ano da sua morte)[1]. Suas teorias abordam a relação entre poder e conhecimento e como eles são usados ​​como uma forma de controle social por meio de instituições sociais. Embora muitas vezes seja citado como um pós-estruturalista e pós-modernista, Foucault acabou rejeitando esses rótulos, preferindo classificar seu pensamento como uma história crítica da modernidade. Seu pensamento foi muito influente tanto para grupos acadêmicos, quanto para ativistas.[2]
 				<br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/Michel_Foucault' > Wikipedia </a>
+				<br />
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qzoOhhh4aJg?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 		<?php $auctor='FOUCAULTmichel'; include '../design/poemfind.php'; ?>

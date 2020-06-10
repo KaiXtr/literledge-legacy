@@ -44,6 +44,8 @@
 			em decorrência de um câncer de ovário. Deixou dois filhos e uma vasta obra literária composta de romances, novelas, contos, crônicas, literatura infantil e entrevistas. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Clarice_Lispector' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ohHP1l2EVnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='LISPECTORclarice'; include '../design/poemfind.php'; ?>
 		<?php $user = 'LISPECTORclarice'; include '../design/auctorbooks.php'; ?>

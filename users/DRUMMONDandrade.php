@@ -25,6 +25,8 @@
 			por muitos o mais influente poeta brasileiro do século XX.[1] Drummond foi um dos principais poetas da segunda geração do Modernismo brasileiro.[2] <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Carlos_Drummond_de_Andrade' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/j_OGlOlx4JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='DRUMMONDandrade'; include '../design/poemfind.php'; ?>
 		<?php $user = 'DRUMMONDandrade'; include '../design/auctorbooks.php'; ?>

@@ -45,6 +45,8 @@
 			associado com o militarismo alemão e o nazismo, mas estudiosos posteriores do século XX vêm tentando neutralizar esse equívoco de suas ideias.[7] <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Friedrich_Nietzsche' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Fzp7iCaWNvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='NIETZSCHEfriedrich'; include '../design/poemfind.php'; ?>
 		<?php $user = 'NIETZSCHEfriedrich'; include '../design/auctorbooks.php'; ?>

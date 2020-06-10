@@ -32,6 +32,8 @@
 			Nabokov foi um lepidopterista especialista e compositor de problemas de xadrez. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Vladimir_Nabokov' > Wikipedia </a>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Ldpj_5JNFoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='NABOKOVvladimir'; include '../design/poemfind.php'; ?>
 		<?php $user = 'NABOKOVvladimir'; include '../design/auctorbooks.php'; ?>
