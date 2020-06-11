@@ -68,24 +68,20 @@
 
 <?php
 	if (!isset($_COOKIE['cookieagree'])) {
+		echo "<div id='cookies'>";
 		if ($_COOKIE['lang'] == 'pt') {
-			echo "<div id='cookies' style='visibility: hidden;'>
-					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-					<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendi </button>
-				</div>";
+			echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendi </button>";
 			}
 		if ($_COOKIE['lang'] == 'en') {
-			echo "<div id='cookies' style='visibility: hidden;'>
-					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-					<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> I got it </button>
-				</div>";
+			echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> I got it </button>";
 			}
 		if ($_COOKIE['lang'] == 'es') {
-			echo "<div id='cookies' style='visibility: hidden;'>
-					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-					<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendido </button>
-				</div>";
+			echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendido </button>";
 			}
+		echo "</div>";
 	}
 ?>
 
