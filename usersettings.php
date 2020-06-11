@@ -47,11 +47,11 @@
 								<div class='manlan' lang='en'> <label for='op2'> Security </label> </div>
 								<div class='manlan' lang='es'> <label for='op2'> Seguridad </label> </div>
 							</a> </li>
-							<?php /*<li> <a onclick='set_tab("tab3","tab1","tab2")'> <input id='op3' type='radio' name='edit' value='navigation' />
+							<li> <a onclick='set_tab("tab3","tab1","tab2")'> <input id='op3' type='radio' name='edit' value='navigation' />
 								<div class='manlan' lang='pt'> <label for='op3'> Navegação </label> </div>
 								<div class='manlan' lang='en'> <label for='op3'> Navigation </label> </div>
 								<div class='manlan' lang='es'> <label for='op3'> Navegación </label> </div>
-							</a> </li> */ ?>
+							</a> </li>
 							<li>
 								<div class='manlan' lang='pt'> <input type='submit' class='btpress' value='Salvar' /> </div>
 								<div class='manlan' lang='en'> <input type='submit' class='btpress' value='Save' /> </div>
@@ -228,7 +228,7 @@
 						</div>
 					</div>
 					<div id='tab3' class='optabs' style='display: none;'>
-						
+						<button class='btpress'></button>
 					</div>
 				</form>
 			</div>

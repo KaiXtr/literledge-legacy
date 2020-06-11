@@ -300,13 +300,11 @@
 						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 						else {$lang = $_COOKIE['lang'];}
 
-						$disb = "<div class='brow'>
-									<div class='blabel'>";
-						if ($_COOKIE['lang'] == 'pt') {$disb = $disb."<h1> Livros </h1>";}
-						if ($_COOKIE['lang'] == 'en') {$disb = $disb."<h1> Books </h1>";}
-						if ($_COOKIE['lang'] == 'es') {$disb = $disb."<h1> Libros </h1>";}
-						$disb = $disb."</div>
-									<div class='displaysearch'>";
+						echo "<div class='brow'><div class='blabel'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "<h1> Livros </h1>";}
+						if ($_COOKIE['lang'] == 'en') {echo "<h1> Books </h1>";}
+						if ($_COOKIE['lang'] == 'es') {echo "<h1> Libros </h1>";}
+						echo "</div><div class='displaysearch'>";
 
 						$max = 0;
 						while (($i = $result->fetch_assoc())&&($max < $ofsb + 21)) {
@@ -347,15 +345,14 @@
 								else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
 
 								if ($p == true) {
-									$disb = $disb ."
-										<a href='books/" .$i["id"]. ".php'>
+									echo "<a href='books/" .$i["id"]. ".php'>
 											<button class='thumbs' ".$wrg.">
 												<div class='coverart'> <img  src='media/images/covers/" .$i["id"]. ".jpg' /> </div>
 												<div class='description'>
 												<h2> ".$t[$lang]." </h2>
 												<h3> ".$nm." </h3>";
-													$disb = $disb. file_get_contents('sinopsis/'.$i['id'].'.php');
-											$disb = $disb. "</div>
+												include 'sinopsis/'.$i['id'].'.php';
+											echo "</div>
 											</button>
 										</a>";
 									$max++;
@@ -376,7 +373,7 @@
 								if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
 								}
 						else {$btn = '';}
-						echo $disb ."</div>".$btp.$btn."</div>";
+						echo "</div>".$btp.$btn."</div>";
 						}
 					$conn->close();
 					}

@@ -1,5 +1,5 @@
 <footer class='lowerbar'>
-	<form action='design/langset.php' method='post'>
+	<form action='design/cookieset.php' method='post'>
 		<select id='langbox' name='lang' onchange='this.form.submit();lang_set()'>
 			<?php
 				#$lv = array('pt','en','es','fr','it','de','ru','jp');

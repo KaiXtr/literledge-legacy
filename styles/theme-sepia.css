@@ -1,0 +1,301 @@
+:root {
+	--background: #F9E2D9;
+	--color-thumb: #D8C0A2;
+	--bt-hover: #FFE2BF;
+	--sr-hover: #9E6153;
+	--bt-disab: #F2E7DA;
+	--tx-disab: #D6CCC0;
+	--bg-insi: #F7E7DE;
+	--bg-rect: #FCF7F2;
+	--bg-thmb: #F4D4C3;
+	--bg-dark: #D69A8D;
+	--bg-foot: #996D64;
+	--text-color: #7F4E43;
+	--link-color: #7C0000;
+	--lateral-bar: #D8AA8F;
+	--row-hover: #EFD4B3;
+	--wrng-backg: #BC4440;
+	--wrng-color: #5B090D;
+	--slide-rect: rgba(252,247,242,0.9);
+
+}
+
+body{
+	background-color: var(--background);
+	color: var(--text-color);
+}
+
+a{
+	color: var(--text-color)
+}
+
+a:hover{
+	color: var(--link-color);
+}
+
+a:active{
+	color: var(--link-color);
+}
+
+#cookies{
+	background-color: var(--color-thumb);
+}
+
+.upperbar{
+	background-color: var(--color-thumb);
+}
+
+.upperbar #burgerbut{
+	background-color: var(--color-thumb);
+}
+
+.upperbar #burgerbut:hover{
+	background-color: var(--bt-hover);
+}
+
+.searchbar .searchtext{
+	background-color: var(--bg-dark);
+}
+
+.searchbar .submit{
+	background-color: var(--text-color);
+}
+
+.searchbar .submit:hover{
+	background-color: var(--sr-hover);
+}
+
+.btpress{
+	background-color: var(--color-thumb);
+	color: var(--text-color);
+	border-color: var(--color-thumb);
+}
+
+.btpress:hover{
+	background-color: var(--text-color);
+	color: var(--color-thumb);
+	border-color: var(--text-color);
+}
+
+.btpress:disabled{
+	background-color: var(--bt-disab);
+	color: var(--tx-disab);
+	border-color: var(--bt-disab);
+}
+
+.upperbar #btup{
+	background-color: var(--color-thumb);
+}
+
+.upperbar #btup:hover{
+	background-color: var(--bt-hover);
+}
+
+#profilemenu{
+	background-color: var(--color-thumb);
+}
+
+#lateralbar{
+	background-color: var(--lateral-bar);
+}
+
+#lateralbar hr{
+	border: 1px solid var(--text-color);
+}
+
+#hpslide{
+	background-color: var(--slide-rect);
+}
+
+.login{
+	background-color: var(--bg-rect);
+}
+
+.error{
+	color: red;
+}
+
+.login .passbox .passeye{
+	background-color: white;
+}
+
+.login .passbox .passeye:checked{
+	background-color: red;
+}
+
+.brow{
+	background-color: var(--bg-rect);
+}
+
+#banner{
+	background-color: var(--bg-dark);
+}
+
+.profilepic{
+	border: 5px solid var(--bg-rect);
+}
+
+#profile #username{
+	color: var(--text-color);
+}
+
+#profile #nickname{
+	color: var(--text-color);
+}
+
+#profile #binfobar{
+	background-color:var(--bg-rect);
+}
+
+#bio{
+	background-color: var(--bg-insi);
+}
+
+#reportab {
+	background-color: var(--bg-rect);
+}
+
+#btexit {
+	background-color: var(--bg-rect);
+	border-color: var(--bg-rect);
+}
+
+#btexit:hover {
+	background-color: var(--color-thumb);
+	border-color: var(--color-thumb);
+}
+
+#bookinfo{
+	background-color: var(--bg-rect);
+}
+
+#bookinfo #warning{
+	background-color: var(--wrng-backg);
+	color: var(--wrng-color);
+}
+
+#bookinfo #status #rating{
+	color: white;
+}
+
+#bookinfo #downloads{
+	background-color: var(--bg-insi);
+}
+
+#bookinfo #downloads tr:hover{
+	background-color: var(--color-thumb);
+	color: var(--text-color);
+}
+
+#bookinfo #downloads tr:active{
+	background-color: var(--row-hover);
+}
+
+#bookinfo .thbcritic{
+	background-color: var(--bg-insi);
+}
+
+#bookinfo .thbcritic #coucom{
+	color: red;
+}
+
+.quotepoem{
+	background-color: var(--bg-rect);
+}
+
+.displayresults{
+	background-color: var(--bg-rect);
+}
+
+.thumbs{
+	background-color: var(--bg-insi);
+	border-color: var(--bg-insi);
+}
+
+.thumbs:hover{
+	background-color: var(--bg-thmb);
+	border-color: var(--bg-thmb);
+}
+
+.coverart img{
+	background-color: var(--bg-dark);
+}
+
+.portraits{
+	background-color: var(--bg-insi);
+	border-color: var(--bg-insi);
+}
+
+.portraits:hover{
+	background-color: var(--bg-thmb);
+	border-color: var(--bg-thmb);
+}
+
+.infocontent{
+	background-color:var(--bg-rect);
+}
+.summary{
+	background-color: var(--bg-insi);
+	border-color: var(--bg-insi);
+}
+
+.lowerbar{
+	background-color: var(--bg-dark);
+}
+
+#langbox{
+	background-color: var(--bg-foot);
+	color: var(--bg-dark);
+}
+
+#langbox * :hover{
+	background-color: var(--bg-insi);
+}
+
+.disclaimer{
+	background-color: var(--bg-foot);
+	color: var(--bg-dark);
+}
+
+::placeholder{
+	color: var(--text-color);
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-rect);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--bg-insi);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--bg-thmb);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.searchbar input:-webkit-autofill,
+.searchbar input:-webkit-autofill:hover, 
+.searchbar input:-webkit-autofill:focus, 
+.searchbar input:-webkit-autofill:active  {
+	-webkit-box-shadow: 0 0 0 30px var(--bg-dark) inset !important;
+}
+
+.requestable .dark{
+	background-color: var(--color-thumb);
+}
+
+.requestable tr:hover{
+	background-color: var(--color-thumb);
+	color: var(--text-color);
+}
+
+.requestable tr:active{
+	background-color: var(--row-hover);
+}

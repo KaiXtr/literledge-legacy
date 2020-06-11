@@ -71,19 +71,19 @@
 		if ($_COOKIE['lang'] == 'pt') {
 			echo "<div id='cookies' style='visibility: hidden;'>
 					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-					<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> Entendi </button>
+					<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendi </button>
 				</div>";
 			}
 		if ($_COOKIE['lang'] == 'en') {
 			echo "<div id='cookies' style='visibility: hidden;'>
 					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-					<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> I got it </button>
+					<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> I got it </button>
 				</div>";
 			}
 		if ($_COOKIE['lang'] == 'es') {
 			echo "<div id='cookies' style='visibility: hidden;'>
 					Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
-					<button class='btpress' onclick='window.location.href=".'"design/cookieagree.php"'.";'> Entendido </button>
+					<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendido </button>
 				</div>";
 			}
 	}

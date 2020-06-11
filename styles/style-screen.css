@@ -5,28 +5,23 @@ html{
 }
 
 body{
-	background-color:#F9E2D9;
 	font-family: sans-serif;
 	text-align: left;
-	color: #7F4E43;
 	margin: 0px;
 	overflow-x: hidden;
 }
 
 a{
 	text-decoration: none;
-	color: #7F4E43
 }
 
 a:hover{
 	text-decoration: none;
-	color: #7C0000;
 	cursor: pointer;
 }
 
 a:active{
 	text-decoration: none;
-	color: #7C0000
 }
 
 button:focus, input:focus, select:focus{
@@ -43,7 +38,6 @@ hr{
 }
 
 #fadescreen{
-	background-color: black;
 	width: 100%;
 	height: 100%;
 	z-index: 15;
@@ -54,7 +48,6 @@ hr{
 }
 
 #cookies{
-	background-color: #D8C0A2;
 	padding: 20px;
 	width: 100%;
 	height: 30px;
@@ -69,7 +62,6 @@ hr{
 }
 
 .upperbar{
-	background-color: #D8C0A2;
 	position: fixed;
 	font-size: 30px;
 	padding: 10px;
@@ -86,7 +78,6 @@ hr{
 }
 
 .upperbar #burgerbut{
-	background-color: #D8C0A2;
 	font-size: 30px;
 	margin-right: 30px;
 	padding: 0px;
@@ -101,7 +92,6 @@ hr{
 }
 
 .upperbar #burgerbut:hover{
-	background-color: #FFE2BF;
 	border-radius: 5px;
 }
 
@@ -129,7 +119,6 @@ hr{
 }
 
 .searchbar .searchtext{
-	background-color: #D69A8D;
 	padding-left: 10px;
 	padding-right: 10px;
 	width: 500px;
@@ -139,7 +128,6 @@ hr{
 }
 
 .searchbar .submit{
-	background-color: #7F4E43;
 	margin: 0px;
 	padding: 5px;
 	height: 22px;
@@ -150,16 +138,9 @@ hr{
 	float: right;
 }
 
-.searchbar .submit:hover{
-	background-color: #9E6153;
-}
-
 .btpress{
-	background-color: #D8C0A2;
 	font-weight: bold;
-	color: #7F4E43;
 	margin: 10px;
-	border-color: #D8C0A2;
 	border-style: solid;
 	border-radius: 8px;
 	transition-duration: 0.4s;
@@ -168,21 +149,11 @@ hr{
 	float: right;
 }
 
-.btpress:hover{
-	background-color: #7F4E43;
-	color: #D8C0A2;
-	border-color: #7F4E43;
-}
-
 .btpress:disabled{
-	background-color: #F2E7DA;
-	color: #D6CCC0;
-	border-color: #F2E7DA;
 	cursor: not-allowed;
 }
 
 .upperbar #btup{
-	background-color: #D8C0A2;
 	text-align: center;
 	padding: 5px;
 	width: 30px;
@@ -191,7 +162,6 @@ hr{
 }
 
 .upperbar #btup:hover{
-	background-color: #FFE2BF;
 	border-radius: 5px;
 }
 
@@ -209,7 +179,6 @@ hr{
 }
 
 #profilemenu{
-	background-color: #D8C0A2;
 	text-align: left;
 	font-size: 20px;
 	padding: 10px;
@@ -241,7 +210,6 @@ hr{
 }
 
 #lateralbar{
-	background-color:#D8AA8F;
 	white-space: nowrap;
 	line-height: 20px;
 	position: fixed;
@@ -273,7 +241,6 @@ hr{
 }
 
 #hpslide{
-	background-color: rgba(252,247,242,0.9);
 	font-size: 25px;
 	padding: 20px;
 	width: 700px;
@@ -289,7 +256,6 @@ hr{
 }
 
 .login{
-	background-color:#FCF7F2;
 	text-align: center;
 	font-size: 15px;
 	margin-left: 500px;
@@ -305,7 +271,6 @@ hr{
 }
 
 .error{
-	color: red;
 	margin-right: 80px;
 	float: right;
 }
@@ -359,7 +324,6 @@ hr{
 }
 
 .login .passbox .passeye{
-	background-color: white;
 	background-image: url(media/images/icons/passee.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -373,7 +337,6 @@ hr{
 }
 
 .login .passbox .passeye:checked{
-	background-color: red;
 	margin: 0px;
 }
 
@@ -434,7 +397,6 @@ hr{
 }
 
 .brow{
-	background-color: #FCF7F2;
 	line-height: 5px;
 	margin: 10px;
 	padding: 20px;
@@ -470,7 +432,6 @@ hr{
 }
 
 #banner{
-	background-color: #D69A8D;
 	background-attachment: fixed;
 	background-position: 0px 40px;
 	margin: 0px;
@@ -524,7 +485,6 @@ hr{
 }
 
 #profile #username{
-	color: #FCF7F2;
 	text-align: right;
 	text-shadow: 20px 20px 15px black;
 	font-size: 100px;
@@ -538,7 +498,6 @@ hr{
 }
 
 #profile #nickname{
-	color: #FCF7F2;
 	text-align: right;
 	text-shadow: 10px 10px 15px black;
 	font-weight: lighter;
@@ -556,7 +515,6 @@ hr{
 }
 
 #profile #binfobar{
-	background-color:#FCF7F2;
 	text-align: right;
 	font-size: 30px;
 	padding-top: 10px;
@@ -564,6 +522,10 @@ hr{
 	padding-right: 100px;
 	height: 50px;
 	align-items: center;
+}
+
+#profile #binfobar div{
+	display: inline-block;
 }
 
 #displayimg {
@@ -599,7 +561,6 @@ hr{
 }
 
 #bio{
-	background-color: #F7E7DE;
 	text-align: left;
 	font-size: 20px;
 	padding: 200px;
@@ -609,7 +570,6 @@ hr{
 }
 
 #reportab {
-	background-color: #FCF7F2;
 	padding: 20px;
 	right: 300px;
 	z-index: 20;
@@ -631,18 +591,10 @@ hr{
 }
 
 #btexit {
-	background-color: #FCF7F2;
 	margin: 0px;
-	border-color: #FCF7F2;
-}
-
-#btexit:hover {
-	background-color: #D8C0A2;
-	border-color: #D8C0A2;
 }
 
 #bookinfo{
-	background-color:#FCF7F2;
 	margin-top: 95px;
 	margin-left: 190px;
 	margin-right: 190px;
@@ -682,9 +634,7 @@ hr{
 }
 
 #bookinfo #warning{
-	background-color: #BC4440;
 	font-size: 20px;
-	color: #5B090D;
 	margin-top: 20px;
 	padding: 15px;
 	width: 300px;
@@ -723,7 +673,6 @@ hr{
 				1px 1px 0 #000000;
 	font-size: 40px;
 	font-weight: bold;
-	color: white;
 	width: 150px;
 	height: 90px;
 	padding: 0px; 
@@ -778,7 +727,6 @@ hr{
 }
 
 #bookinfo #downloads{
-	background-color: #F7E7DE;
 	margin-bottom: 10px;
 	width: 1300px;
 }
@@ -791,15 +739,6 @@ hr{
 #bookinfo #downloads tr{
 	transition-duration: 0.2s;
 	cursor: pointer;
-}
-
-#bookinfo #downloads tr:hover{
-	background-color: #D8C0A2;
-	color: #7F4E43;
-}
-
-#bookinfo #downloads tr:active{
-	background-color: #EFD4B3;
 }
 
 #bookinfo #getbooks .btpress{
@@ -817,7 +756,6 @@ hr{
 
 #bookinfo .thbcritic{
 	white-space: normal;
-	background-color: #F7E7DE;
 	font-size: 20px;
 	margin: 10px;
 	padding: 20px;
@@ -852,7 +790,6 @@ hr{
 
 #bookinfo .thbcritic #coucom{
 	font-size: 10px;
-	color: red;
 	float: right;
 }
 
@@ -870,7 +807,6 @@ hr{
 }
 
 .quotepoem{
-	background-color: #F4D4C3;
 	margin-left: 350px; 
 	padding: 30px;
 	width: 600px;
@@ -885,7 +821,6 @@ hr{
 }
 
 .displayresults{
-	background-color:#FCF7F2;
 	line-height: 5px;
 	margin: 10px;
 	padding: 20px;
@@ -895,7 +830,6 @@ hr{
 }
 
 .thumbs{
-	background-color:#F7E7DE;
 	white-space: normal;
 	text-align: left;
 	font-size: 20px;
@@ -904,7 +838,6 @@ hr{
 	padding: 10px;
 	width: 460px;
 	height: 250px;
-	border-color: #F7E7DE;
 	border-style: double;
 	border-radius: 15px;
 	transition-duration: 0.4s;
@@ -913,18 +846,12 @@ hr{
 	overflow-y: hidden;
 }
 
-.thumbs:hover{
-	background-color: #F4D4C3;
-	border-color: #F4D4C3;
-}
-
 .coverart{
 	width: 153px;
 	flex: 0;
 }
 
 .coverart img{
-	background-color:#E1E1E1;
 	height: 230px;
 	border-radius: 15px;
 }
@@ -955,7 +882,6 @@ hr{
 }
 
 .portraits{
-	background-color:#F7E7DE;
 	white-space: normal;
 	text-align: center;
 	font-size: 20px;
@@ -965,17 +891,11 @@ hr{
 	padding: 10px;
 	width: 260px;
 	height: 420px;
-	border-color: #F7E7DE;
 	border-style: double;
 	border-radius: 15px;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	float: left;
-}
-
-.portraits:hover{
-	background-color: #F4D4C3;
-	border-color: #F4D4C3;
 }
 
 .portraits .profilepic{
@@ -992,7 +912,6 @@ hr{
 }
 
 .infocontent{
-	background-color:#FCF7F2;
 	font-size: 20px;
 	margin-left: 190px;
 	margin-right: 190px;
@@ -1004,10 +923,8 @@ hr{
 }
 
 .summary{
-	background-color: #F7E7DE;
 	margin-right: 1140px;
 	width: 600px;
-	border-color: #F7E7DE;
 	border-style: double;
 	border-radius: 15px;
 }
@@ -1073,7 +990,6 @@ hr{
 }
 
 .lowerbar{
-	background-color: #D69A8D;
 	margin: 0px;
 	padding: 0px;
 	padding-top: 40px;
@@ -1084,17 +1000,11 @@ hr{
 }
 
 #langbox{
-	background-color: #996D64;
-	color: #D69A8D;
 	margin-left: 190px;
 	width: 200px;
 	height: 40px;
 	border: none;
 	flex: 0;
-}
-
-#langbox * :hover{
-	background-color: #F7E7DE;
 }
 
 .lowerbarinfo{
@@ -1106,36 +1016,21 @@ hr{
 }
 
 .disclaimer{
-	background-color: #996D64;
 	text-align: center;
 	margin: 0px;
-	color: #D69A8D;
 	padding: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
 }
 
-::placeholder{
-	color: #7F4E43;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track {
-  background: #FCF7F2;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: #F7E7DE;
   border-radius: 10px;
   transition-duration: 4s;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #F4D4C3;
 }
 
 .login.long{
@@ -1145,15 +1040,10 @@ hr{
 }
 
 .requestable{
-	background-color: #F7E7DE;
 	margin-left: 20px;
 	margin-bottom: 10px;
 	width: 1600px;
 	border-collapse: collapse;
-}
-
-.requestable .dark{
-	background-color: #D8C0A2;
 }
 
 .requestable th{
@@ -1164,13 +1054,4 @@ hr{
 .requestable tr{
 	transition-duration: 0.2s;
 	cursor: pointer;
-}
-
-.requestable tr:hover{
-	background-color: #D8C0A2;
-	color: #7F4E43;
-}
-
-.requestable tr:active{
-	background-color: #EFD4B3;
 }

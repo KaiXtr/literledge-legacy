@@ -1,9 +1,5 @@
-<div class='manlan' lang='pt'>
-O herói sem nenhum caráter se aproveita de seus poderes mágicos do amuleto Muiraquitã para viver aventuras.
-</div>
-<div class='manlan' lang='en'>
-The hero with no character enjoy his magic powers from the amulet Muiraquithan to live adventures.
-</div>
-<div class='manlan' lang='es'>
-El héroe sin ningún personaje aprovecha sus poderes mágicos del amuleto Muiraquitã para vivir aventuras.
-</div>
+<?php
+if ($_COOKIE['lang'] == 'pt') {echo "O herói sem nenhum caráter embarca numa jornada pelo Brasil para recuperar o amuleto Muiraquitã";}
+if ($_COOKIE['lang'] == 'en') {echo "The hero without any character embarks on a journey through Brazil to retrieve the Muiraquitã amulet.";}
+if ($_COOKIE['lang'] == 'es') {echo "El héroe sin ningún personaje se embarca en un viaje por Brasil para recuperar el amuleto Muiraquitã.";}
+?>

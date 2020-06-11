@@ -1,9 +1,5 @@
-<div class='manlan' lang='pt'>
-Maquiavel critíca a política e ensina como um príncipe de verdade deve agir.
-</div>
-<div class='manlan' lang='en'>
-Maquiavel criticizes the politics and teach how a real prince needs to act.
-</div>
-<div class='manlan' lang='es'>
-Maquiavelo critica la política y enseña cómo debe actuar un príncipe real.
-</div>
+<?php
+if ($_COOKIE['lang'] == 'pt') {echo "Maquiavel critíca a política e ensina como um príncipe de verdade deve agir.";}
+if ($_COOKIE['lang'] == 'en') {echo "Maquiavel criticizes the politics and teach how a real prince needs to act.";}
+if ($_COOKIE['lang'] == 'es') {echo "Maquiavelo critica la política y enseña cómo debe actuar un príncipe real.";}
+?>

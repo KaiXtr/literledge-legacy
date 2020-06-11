@@ -39,7 +39,10 @@
 									<div class='description'>
 									<h2> ".$t[$lang]." </h2>
 									<h3> ".$nm. " </h3>";
-									$thb = $thb. file_get_contents('../sinopsis/'.$i['id'].'.php');
+									ob_start();
+									$snp = include '../sinopsis/'.$i['id'].'.php';
+									$rtn = ob_get_clean();
+									$thb = $thb.$rtn;
 								$thb = $thb. "</div>
 								</button>
 							</a>";
