@@ -6,7 +6,7 @@
 		$auctorinfo = $conn->query("SELECT b.auctor,b.id,u.nick FROM books as b JOIN users as u ON b.auctor=u.nick WHERE b.id='" .$book. "'");
 		$editioninfo = $conn->query("SELECT b.id,e.* FROM books as b JOIN editions as e ON b.id=e.title WHERE b.id='" .$book. "'");
 		$translation = $conn->query("SELECT * FROM translations WHERE fkey='" .$book. "'");
-		$reviews = $conn->query("SELECT u.name,u.nick,r.* FROM users as u JOIN reviews as r ON u.nick=r.user WHERE r.book='" .$book. "'");
+		$reviews = $conn->query("SELECT u.pt,u.nick,r.* FROM users as u JOIN reviews as r ON u.nick=r.user WHERE r.book='" .$book. "'");
 
 		if ($bookinfo->num_rows > 0) {
 			$b = $bookinfo->fetch_assoc();
@@ -18,9 +18,9 @@
 			if (!isset($_COOKIE['lang'])) {$lang = 'pt';}
 			else {$lang = $_COOKIE['lang'];}
 
-			$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$a['nick']."'");
+			$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a['nick']."'");
 			$n = $find->fetch_assoc();
-			if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+			if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 			else {$nm = $n[$_COOKIE['lang']];}
 			
 			if ($ech == '1') {
@@ -75,9 +75,15 @@
 				}
 				while ($rw = $reviews->fetch_assoc()) {
 					if ((isset($_SESSION['user']))&&($rw['nick'] == $_SESSION['user'])) {$urev = true;}
+
+					$fnms = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$rw['nick']."'");
+					$rn = $fnms->fetch_assoc();
+					if ($rn[$_COOKIE['lang']] == null) {$rwnm = $rn['pt'];}
+					else {$rwnm = $rn[$_COOKIE['lang']];}
+
 					$rws = $rws."<div class='thbcritic'>
 									<div>
-										<a href='users/".$rw['nick'].".php'><h2> ".$rw['name']." </h2></a>
+										<a href='users/".$rw['nick'].".php'><h2> ".$rwnm." </h2></a>
 										<h3><a href='users/".$rw['nick'].".php'> @".$rw['nick']."</a> | ".$rw['datime']." </h3>
 										<div id='cricom'>" .$rw['comment']. "</div>
 									</div>

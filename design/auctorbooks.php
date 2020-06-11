@@ -12,9 +12,9 @@
 			$c = $check->fetch_assoc();
 			if ($c['auctor'] == '1') {
 				if ($profile->num_rows > 0) {
-					$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$user."'");
+					$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$user."'");
 					$n = $find->fetch_assoc();
-					if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+					if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 					else {$nm = $n[$_COOKIE['lang']];}
 
 					$serie = array("");

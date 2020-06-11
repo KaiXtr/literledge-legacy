@@ -22,13 +22,13 @@
 			if (session_status() == PHP_SESSION_NONE) {session_start();}
 			if (isset($_SESSION['user'])) {
 				$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
-				$find = $conn->query("SELECT name FROM users WHERE nick='" .$_SESSION['user']. "';");
+				$find = $conn->query("SELECT pt FROM users WHERE nick='" .$_SESSION['user']. "';");
 				if ($find->num_rows > 0) {
 					$i = $find->fetch_assoc();
 					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload.png' /> </a>
 						<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
 						<div id='profilemenu' style='visibility: hidden;'>
-								<h1> " .$i['name']. " </h1>
+								<h1> " .$i['pt']. " </h1>
 								<h2> " .$_SESSION['user']. " </h2>
 								<ul>
 									<li> <a href='users/" .$_SESSION['user']. ".php'>";

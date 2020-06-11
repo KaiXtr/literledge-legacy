@@ -130,9 +130,9 @@
 								$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
 								$t = $translation->fetch_assoc();
 
-								$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
 								$n = $find->fetch_assoc();
-								if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 								else {$nm = $n[$_COOKIE['lang']];}
 
 								if ($i['warning'] == '0') {$wrg = '';}

@@ -6,9 +6,9 @@
 		<?php
 			require '../account/mysql_connect.php';
 			if ($notcon == null) {
-				$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='BYSSHEshelley'");
+				$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='BYSSHEshelley'");
 				$i = $find->fetch_assoc();
-				if ($i[$_COOKIE['lang']] == null) {$v = $i['name'].' - ';}
+				if ($i[$_COOKIE['lang']] == null) {$v = $i['pt'].' - ';}
 				else {$v = $i[$_COOKIE['lang']].' - ';}
 			}
 			require '../design/metadata.php';
@@ -21,15 +21,11 @@
 
 		<?php $user = 'BYSSHEshelley'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			Percy Bysshe Shelley (Field Place, Horsham, 4 de agosto de 1792 — Mar Lígure, Golfo de Spezia, 8 de julho de 1822) foi uma dos mais importantes poetas românticos ingleses. <br />
-			<br />
-			Shelley é famosa por obras tais como Ozymandias, Ode to the West Wind, To a Skylark, e The Masque of Anarchy, que estão entre os poemas ingleses mais populares e aclamados  <br />
-			pela crítica. Seu maior trabalho, no entanto, foram os longos poemas, entre eles Prometheus Unbound, Alastor, or The Spirit of Solitude, Adonaïs, The Revolt of Islam, <br />
-			e o inacabado The Triumph of Life. The Cenci (1819) e Prometheus Unbound (1820) são peças dramáticas em 5 e 4 atos respectivamente. Ele também escreveu os romances <br />
-			góticos Zastrozzi (1810) e St. Irvyne (1811) e os contos The Assassins (1814) e The Coliseum (1817). <br />
-			<br />
-			Shelley foi famoso por sua associação com John Keats e Lord Byron. A romancista Mary Shelley foi sua segunda esposa. Um dos mais significativos poetas <br />
-			românticos da Inglaterra.<br />
+			Percy Bysshe Shelley (Field Place, Horsham, 4 de agosto de 1792 — Mar Lígure, Golfo de Spezia, 8 de julho de 1822) foi um dos mais importantes poetas românticos ingleses.
+
+			Shelley é famoso por obras tais como Ozymandias, Ode to the West Wind, To a Skylark, e The Masque of Anarchy, que estão entre os poemas ingleses mais populares e aclamados pela crítica. Seu maior trabalho, no entanto, foram os longos poemas, entre eles Prometheus Unbound, Alastor, or The Spirit of Solitude, Adonaïs, The Revolt of Islam, e o inacabado The Triumph of Life. The Cenci (1819) e Prometheus Unbound (1820) são peças dramáticas em 5 e 4 atos respectivamente. Ele também escreveu os romances góticos Zastrozzi (1810) e St. Irvyne (1811) e os contos The Assassins (1814) e The Coliseum (1817).
+
+			Shelley foi famoso por sua associação com John Keats e Lord Byron. A romancista Mary Shelley foi sua segunda esposa. Um dos mais significativos poetas românticos da Inglaterra.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Percy_Bysshe_Shelley' > Wikipedia </a>
 		</div>

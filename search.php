@@ -40,11 +40,11 @@
 					echo "<div class='brow'>";
 					#LETTER FILTER
 					$found = array();
-					$find = $conn->query("SELECT name, auctor FROM users");
+					$find = $conn->query("SELECT pt, auctor FROM users");
 					if ($find->num_rows > 0) {
 						while ($i = $find->fetch_assoc()) {
-							if ((in_array($i['name'][0],$found) == false) && ($i['auctor'] == '1')) {
-								$found[] = stripAccents($i['name'][0]);
+							if ((in_array($i['pt'][0],$found) == false) && ($i['auctor'] == '1')) {
+								$found[] = stripAccents($i['pt'][0]);
 								}
 							}
 						}
@@ -213,8 +213,9 @@
 						}
 					echo "</div>";
 					
-					$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY name");
+					$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY pt");
 					if ($result->num_rows > 0) {
+						#CENTURIES SEARCH
 						if ($search == '$century') {
 							$disp = "<div class='brow'> <div class='blabel'>";
 							if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
@@ -236,6 +237,7 @@
 								};
 							echo $disp ."</div></div>";
 						}
+						#AUCTORS SEARCH
 						else if ($search != '$books') {
 							$disp = "<div class='brow'> <div class='blabel'>";
 							if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
@@ -249,9 +251,9 @@
 							while (($i = $result->fetch_assoc())&&($max < $ofsa + 20)) {
 								if ($max < $ofsa) {$max++;}
 								else {
-									$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
+									$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
 									$n = $find->fetch_assoc();
-									if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+									if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 									else {$nm = $n[$_COOKIE['lang']];}
 
 									$p = false;
@@ -295,6 +297,7 @@
 					}
 
 					if (($search != '$auctors')&&($search != '$century')) {
+						#BOOK SEARCH
 						$result = $conn->query("SELECT b.*, u.nick as auctor FROM books as b JOIN users as u
 								ON b.auctor=u.nick ORDER BY b.name");
 						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
@@ -313,9 +316,9 @@
 								$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
 								$t = $translation->fetch_assoc();
 
-								$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
 								$n = $find->fetch_assoc();
-								if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 								else {$nm = $n[$_COOKIE['lang']];}
 
 								$p = false;
@@ -368,6 +371,44 @@
 						else {$btp = '';}
 						if ($max == $ofsb + 21) {
 							$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb + 21).'","'.($ofsp).'"'.")'>";
+								if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
+								if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}
+								if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
+								}
+						else {$btn = '';}
+						echo "</div>".$btp.$btn."</div>";
+
+						#POEM SEARCH
+						$result = $conn->query("SELECT * FROM poems WHERE auctor='".$search."'");
+
+						echo "<div class='brow'><div class='blabel'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "<h1> Poemas </h1>";}
+						if ($_COOKIE['lang'] == 'en') {echo "<h1> Poems </h1>";}
+						if ($_COOKIE['lang'] == 'es') {echo "<h1> Poémas </h1>";}
+						echo "</div></div><div class='content'>";
+
+						$max = 0;
+						while (($i = $result->fetch_assoc())&&($max < $ofsp + 21)) {
+							if ($max < $ofsp) {$max++;}
+							else {
+								$p = true;
+								if ($p == true) {
+									echo "<blockquote class='quotepoem'>";
+									include 'poems/' .$i['auctor']. '-' .$i['pid']. '.php';
+									echo "</blockquote>";
+									$max++;
+									};
+								};
+							};
+						if ($ofsp > 0) {
+							$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb).'","'.($ofsp - 21).'"'.")'>";
+								if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
+								if ($_COOKIE['lang'] == 'en') {$btp = $btp."Previous";}
+								if ($_COOKIE['lang'] == 'es') {$btp = $btp."Anterior";}
+								}
+						else {$btp = '';}
+						if ($max == $ofsp + 21) {
+							$btn = "<button class='btpress bn' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb).'","'.($ofsp + 21).'"'.")'>";
 								if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
 								if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}
 								if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}

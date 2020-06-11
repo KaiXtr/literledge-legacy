@@ -12,6 +12,7 @@
 	--bg-foot: #996D64;
 	--text-color: #7F4E43;
 	--link-color: #7C0000;
+	--header-color: #FFFFFF;
 	--lateral-bar: #D8AA8F;
 	--row-hover: #EFD4B3;
 	--wrng-backg: #BC4440;
@@ -136,11 +137,11 @@ a:active{
 }
 
 #profile #username{
-	color: var(--text-color);
+	color: var(--header-color);
 }
 
 #profile #nickname{
-	color: var(--text-color);
+	color: var(--header-color);
 }
 
 #profile #binfobar{

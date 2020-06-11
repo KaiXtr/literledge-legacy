@@ -24,9 +24,9 @@
 
 			$bnr = "media/images/banners/" .$i["nick"]. ".jpg";
 
-			$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
+			$find = $conn->query("SELECT ".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
 			$n = $find->fetch_assoc();
-			if ($n[$_COOKIE['lang']] == null) {$nm = $n['name'];}
+			if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 			else {$nm = $n[$_COOKIE['lang']];}
 
 			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';echo "<script type='text/javascript'>namescroll(40,0)</script>";}
@@ -55,7 +55,7 @@
 			$slf = '';
 			$fav = '';
 			if ((isset($_SESSION['user']))&&($_SESSION['user'] == $i['nick'])) {
-				$shelf = $conn->query("SELECT b.id,b.name,u.name as auctor,s.state FROM shelves as s JOIN books as b JOIN users as u
+				$shelf = $conn->query("SELECT b.id,b.name,u.pt,u.".$_COOKIE['lang'].",s.state FROM shelves as s JOIN books as b JOIN users as u
 					ON b.auctor=u.nick and s.book=b.id WHERE s.user='".$i['nick']."'");
 				if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 				else {$lang = $_COOKIE['lang'];}
@@ -74,6 +74,9 @@
 					$fav = $fav."</h1><div class='displaybooks'>";
 
 					while ($s = $shelf->fetch_assoc()) {
+						if ($s[$_COOKIE['lang']] == null) {$nm = $s['pt'];}
+						else {$nm = $s[$_COOKIE['lang']];}
+
 						$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$s['id']."'");
 						$t = $translation->fetch_assoc();
 						$thb = "<a href='books/" .$s["id"]. ".php'>
@@ -81,7 +84,7 @@
 										<div class='coverart'> <img  src='media/images/covers/" .$s["id"]. ".jpg' /> </div>
 										<div class='description'>
 										<h2> ".$t[$lang]." </h2>
-										<h3> ".$s['auctor']." </h3>";
+										<h3> ".$nm." </h3>";
 										$thb = $thb. file_get_contents('../sinopsis/'.$s['id'].'.php');
 									$thb = $thb. "</div>
 									</button>
@@ -93,10 +96,12 @@
 					$fav = $fav. "</div></div>";
 					}
 				}
+			if ($i[$_COOKIE['lang']] == null) {$nm = $i['pt'];}
+			else {$nm = $i[$_COOKIE['lang']];}
 
 			echo "<div id='banner' style='background-image: url(".'"'.$bnr.'"'.")'></div>
 				<div id='profile'>
-					<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' title='" .$i["name"]. "'/>
+					<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' title='" .$nm. "'/>
 					<h1 id='username' ".$hst."> " .$nm. " </h1> " .$v. "
 					<h2 id='nickname'> @" .$i["nick"]. " </h2>
 					<div id='binfobar'>

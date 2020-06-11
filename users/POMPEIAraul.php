@@ -6,9 +6,9 @@
 		<?php
 			require '../account/mysql_connect.php';
 			if ($notcon == null) {
-				$find = $conn->query("SELECT name,".$_COOKIE['lang']." FROM users WHERE nick='POMPEIAraul'");
+				$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='POMPEIAraul'");
 				$i = $find->fetch_assoc();
-				if ($i[$_COOKIE['lang']] == null) {$v = $i['name'].' - ';}
+				if ($i[$_COOKIE['lang']] == null) {$v = $i['pt'].' - ';}
 				else {$v = $i[$_COOKIE['lang']].' - ';}
 			}
 			require '../design/metadata.php';
