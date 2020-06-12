@@ -1,5 +1,16 @@
 <?php
 
+#GENDERS
+if ($_COOKIE['lang'] == 'pt') {
+	$gndlst = array('M'=>'Masculino','F'=>'Feminino','A'=>'Agênero','O'=>'Outro');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$gndlst = array('M'=>'Male','F'=>'Female','A'=>'Agender','O'=>'Other');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$gndlst = array('M'=>'Masculino','F'=>'Feminino','A'=>'Agénero','O'=>'Otro');
+	}
+
 #CENTURIES
 $cenlst = array('10'=>'X','11'=>'XI','12'=>'XII','13'=>'XIII','14'=>'XIV','15'=>'XV','16'=>'XVI','17'=>'XVII','18'=>'XVIII','19'=>'XIX','20'=>'XX');
 
@@ -16,16 +27,16 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #COUNTRIES
 if ($_COOKIE['lang'] == 'pt') {
-	$coulst = array('BRA'=>'Brasil','CZE'=>'Tchéquia','DEN'=>'Dinamarca','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia',
-	'IRL'=>'Irlanda','ITA'=>'Itália','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','USA'=>'Estados Unidos');
+	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolívia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CZE'=>'Tchéquia','COL'=>'Colômbia','DEN'=>'Dinamarca','ECU'=>'Equador','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia','GUY'=>'Guiana',
+	'IRL'=>'Irlanda','ITA'=>'Itália','MEX'=>'México','PER'=>'Peru','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguai','USA'=>'Estados Unidos');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$coulst = array('BRA'=>'Brazil','CZE'=>'Czechia','DEN'=>'Denmak','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece',
-	'IRL'=>'Ireland','ITA'=>'Italy','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','USA'=>'United States');
+	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolivia','BRA'=>'Brazil','CAN'=>'Canada','CHI'=>'Chile','CZE'=>'Czechia','COL'=>'Colombia','DEN'=>'Denmak','ECU'=>'Ecuador','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece','GUY'=>'Guyana',
+	'IRL'=>'Ireland','ITA'=>'Italy','MEX'=>'Mexico','PER'=>'Perú','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'United States');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$coulst = array('BRA'=>'Brasil','CZE'=>'Chequia','DEN'=>'Dinamarca','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia',
-	'IRL'=>'Irlanda','ITA'=>'Italia','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','USA'=>'Estados Unidos');
+	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolivia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CZE'=>'Chequia','COL'=>'Colombia','DEN'=>'Dinamarca','ECU'=>'Ecuador','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia','GUY'=>'Guayana',
+	'IRL'=>'Irlanda','ITA'=>'Italia','MEX'=>'Mexico','PER'=>'Peru','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','SUR'=>'Surinam','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'Estados Unidos');
 	}
 
 #GENRES
@@ -61,12 +72,12 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #LICENSES
 if ($_COOKIE['lang'] == 'pt') {
-	$liclst = array('Public Domain'=>'Domínio Público');
+	$liclst = array('PD'=>'Domínio Público','CR'=>'Todos os direitos reservados');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$liclst = array('Public Domain'=>'Public Domain');
+	$liclst = array('PD'=>'Public Domain','CR'=>'All rights reserved');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$liclst = array('Public Domain'=>'Dominio Publico');
+	$liclst = array('PD'=>'Dominio Publico','CR'=>'Todos los derechos reservados');
 	}
 ?>

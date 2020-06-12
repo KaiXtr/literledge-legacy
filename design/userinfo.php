@@ -55,7 +55,7 @@
 			$slf = '';
 			$fav = '';
 			if ((isset($_SESSION['user']))&&($_SESSION['user'] == $i['nick'])) {
-				$shelf = $conn->query("SELECT b.id,b.name,u.pt,u.".$_COOKIE['lang'].",s.state FROM shelves as s JOIN books as b JOIN users as u
+				$shelf = $conn->query("SELECT b.id,u.pt,u.".$_COOKIE['lang'].",s.state FROM shelves as s JOIN books as b JOIN users as u
 					ON b.auctor=u.nick and s.book=b.id WHERE s.user='".$i['nick']."'");
 				if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 				else {$lang = $_COOKIE['lang'];}

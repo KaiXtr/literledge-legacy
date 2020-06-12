@@ -50,13 +50,7 @@
 						<input type='password' id='pass' class='textbox' name='password' />
 						<button type='button' id='shpass' class='passeye' onclick='showhide("pass","shpass")'></button>
 					</div>
-					<a id='signin' href='recover.php'>
-						<?php
-							if ($_COOKIE['lang'] == 'pt') {echo "Esqueci a senha";}
-							if ($_COOKIE['lang'] == 'en') {echo "I forgot the password";}
-							if ($_COOKIE['lang'] == 'es') {echo "Olvidé la contraseña";}
-						?>
-					</a>
+					<br />
 					<span id='checkbox'>
 						<input type='checkbox' name='remember' />
 						<?php
@@ -65,6 +59,15 @@
 							if ($_COOKIE['lang'] == 'es') {echo "Acuérdate de mim";}
 						?>
 					</span>
+					 | 
+					<a id='signin' href='recover.php'>
+						<?php
+							if ($_COOKIE['lang'] == 'pt') {echo "Esqueci a senha";}
+							if ($_COOKIE['lang'] == 'en') {echo "I forgot the password";}
+							if ($_COOKIE['lang'] == 'es') {echo "Olvidé la contraseña";}
+						?>
+					</a>
+					<br />
 					<input type='submit' class='btpress' /> <br />
 					<a id='signin' href='signin.php'>
 						<?php
@@ -73,7 +76,7 @@
 							if ($_COOKIE['lang'] == 'es') {echo "Crear una cuenta";}
 						?>
 					</a>
-					<button class="g-recaptcha" 
+					<!--<button class="g-recaptcha" 
 					data-sitekey="reCAPTCHA_site_key" 
 					data-callback='onSubmit' 
 					data-action='submit'>Submit</button>
@@ -81,7 +84,7 @@
 						function onSubmit(token) {
 							document.getElementById("demo-form").submit();
 						}
-					</script>
+					</script>-->
 				</form>
 			</div>
 		</div>

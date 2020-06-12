@@ -17,7 +17,7 @@
 	<script type='text/javascript'> lang_set(); </script>
 
 	<ul class='lowerbarinfo'>
-		<li> <a href='https://twitter.com/KaiXtr' target='_blank'> Twitter </a> </li>
+		<li> <a href='contacts' target='_blank'> Email </a> </li>
 		<li> <a href='https://github.com/KaiXtr' target='_blank'> GitHub </a> </li>
 	</ul>
 

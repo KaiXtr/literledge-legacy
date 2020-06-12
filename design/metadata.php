@@ -30,13 +30,11 @@
 <meta name='keywords' content='mattkai, matt, kai, ebooks, epub, livros, digitais, pdf, wikipedia, livro, livros, books, libros, libro, book, liter, ledge, literledge
 literature, knowledge, search, study, pensador, filosofia, sociologia, saraiva, amazon, americanas, gratuito, grátis, free, download, baixar, público, domínio, domain, public,
 resumo, review, autores, escritores, movimentos, ler, escritor' />
-<meta http-equiv='Default-Style' content='sepia'>
 
 <link rel='shortcut icon' type='image/svg+xml' sizes='any' href='favicon.svg' />
 <link rel='stylesheet' type='text/css' media='screen and (min-width: 1000px) and (max-width: 2500px)' href='styles/style-screen.css' />
 <link rel='stylesheet' type='text/css' media='screen and (min-width: 300px) and (max-width: 720px)' href='styles/style-mobile.css' />
-<link rel='stylesheet' type='text/css' media='screen' href='styles/theme-sepia.css' title='sepia' />
-<link rel='alternate stylesheet' type='text/css' media='screen' href='styles/theme-<?php echo $_COOKIE['theme']; ?>.css' title='dark' />
+<link rel='stylesheet' type='text/css' media='screen' href='styles/theme-<?php echo $_COOKIE['theme']; ?>.css' title='<?php echo $_COOKIE['theme']; ?>' />
 
 <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>

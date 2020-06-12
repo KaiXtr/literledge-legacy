@@ -325,7 +325,7 @@ hr{
 }
 
 .login .passbox .passeye{
-	background-image: url(media/images/icons/passee.png);
+	background-image: url(../media/images/icons/passee.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 0px;
@@ -396,6 +396,14 @@ hr{
 	margin-right: 2%;
 }
 
+.content.search .login{
+	margin-left: 23%;
+	margin-bottom: 23%;
+}
+
+.content.search .login ul{
+	text-align: left;
+}
 
 .blabel{
 	line-height: 5px;
@@ -777,6 +785,10 @@ hr{
 #bookinfo #downloads tr{
 	transition-duration: 0.2s;
 	cursor: pointer;
+}
+
+#bookinfo #downloads #nodownloads{
+	cursor: not-allowed;
 }
 
 #bookinfo #getbooks .btpress{

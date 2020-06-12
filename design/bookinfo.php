@@ -56,40 +56,6 @@
 					}
 				else {$ls = '';}
 
-				$rws = '';
-				$urev = false;
-				if ((isset($_SESSION['user']))&&($urev == false)) {
-					$rws = $rws."<div class='thbcritic'>
-									<div>
-										<h2> Publique sua opinião </h2>
-										<br />
-										<form action='account/post_opinion.php' method='post'>
-											<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();'
-											pInputTextArea [(ngModel)]='value' (ngModelChange)='valueChange(value)' maxlength='736'></textarea> <br />
-											<span id='coucom'>0/200</span>
-											<input id='subcom' class='btpress' type='submit' disabled />
-											<input name='book' value='".$b['id']."' style='display: none;' />
-										</form>
-									</div>
-								</div>";
-				}
-				while ($rw = $reviews->fetch_assoc()) {
-					if ((isset($_SESSION['user']))&&($rw['nick'] == $_SESSION['user'])) {$urev = true;}
-
-					$fnms = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$rw['nick']."'");
-					$rn = $fnms->fetch_assoc();
-					if ($rn[$_COOKIE['lang']] == null) {$rwnm = $rn['pt'];}
-					else {$rwnm = $rn[$_COOKIE['lang']];}
-
-					$rws = $rws."<div class='thbcritic'>
-									<div>
-										<a href='users/".$rw['nick'].".php'><h2> ".$rwnm." </h2></a>
-										<h3><a href='users/".$rw['nick'].".php'> @".$rw['nick']."</a> | ".$rw['datime']." </h3>
-										<div id='cricom'>" .$rw['comment']. "</div>
-									</div>
-								</div>";
-				}
-
 				/*$rr = (float) $b['rating'];
 				if ($rr == 10.00) {$rc = 'CDFF66';}
 				if (($rr > 8.00) && ($rr < 10.00)) {$rc = 'FFFB66';}
@@ -266,41 +232,89 @@
 			if ($ech == '2') {
 				$d = '';
 				$red = '';
-				while ($e = $editioninfo->fetch_assoc()) {
-					if ($e['price'] == '0.00') {
-						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$pr = 'gratuito';}
-						if ($_COOKIE['lang'] == 'en') {$pr = 'free';}
-						if ($_COOKIE['lang'] == 'es') {$pr = 'gratuito';}
-					}
-					else {$pr = $e['price'];}
-					$l = "media/books/" .$b["id"]. "-" .$e["id"]. "." .$e["filtyp"];
-					$byt = filesize("../".$l);
-					if ($byt >= 1073741824) {$byt = round($byt/1073741824).' GB';}
-					else if ($byt >= 1048576){$byt = round($byt/1048576).' MB';}
-					else if ($byt >= 1024) {$byt = round($byt/1024).' KB';}
-					else if ($byt > 1) {$byt = $byt.' byt';}
-					else if ($byt == 1) {$byt = $byt.' byt';}
-					else {$byt = '---';}
+				if ($editioninfo->num_rows > 0) {
+					while ($e = $editioninfo->fetch_assoc()) {
+						if ($e['price'] == '0.00') {
+							if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$pr = 'gratuito';}
+							if ($_COOKIE['lang'] == 'en') {$pr = 'free';}
+							if ($_COOKIE['lang'] == 'es') {$pr = 'gratuito';}
+						}
+						else {$pr = $e['price'];}
+						$l = "media/books/" .$b["id"]. "-" .$e["id"]. "." .$e["filtyp"];
+						$byt = filesize("../".$l);
+						if ($byt >= 1073741824) {$byt = round($byt/1073741824).' GB';}
+						else if ($byt >= 1048576){$byt = round($byt/1048576).' MB';}
+						else if ($byt >= 1024) {$byt = round($byt/1024).' KB';}
+						else if ($byt > 1) {$byt = $byt.' byt';}
+						else if ($byt == 1) {$byt = $byt.' byt';}
+						else {$byt = '---';}
 
-					if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
-					$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$b['name'].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
-						<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th><th>".$byt."</th><th>".$pr. "</th>
-						</tr>";
+						if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
+						$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
+							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th><th>".$byt."</th><th>".$pr. "</th>
+							</tr>";
+						}
+					if ($red == '') {$red = $l;}
 					}
-
-				if ($red == '') {$red = $l;}
+				else {
+					$d = "<tr id='nodownloads'><th>";
+					if ($_COOKIE['lang'] == 'pt') {$d = $d."Não há downloads disponíveis";}
+					if ($_COOKIE['lang'] == 'en') {$d = $d."No downloads available";}
+					if ($_COOKIE['lang'] == 'es') {$d = $d."No hay descargas disponibles.";}
+					$d = $d."</th></tr>";
+					}
 				echo "<a name='goto4'></a>
 					<div id='getbooks'>
 						<h1> Downloads </h1>
-						<table id='downloads' cellpadding='0' cellspacing='0'> " .$d. "</table>
-						<a href='".$red."' target='_blank'><button class='btpress'> Ler </button></a>
-						<a href='https://busca.saraiva.com.br/busca?q=".$t[$lang]."' target='_blank'><button class='btpress'> Comprar </button></a>
+						<table id='downloads' cellpadding='0' cellspacing='0'> " .$d. "</table>";
+					if ($red != '') {echo "<a href='".$red."' target='_blank'><button class='btpress'> Ler </button></a>";}
+					echo "<a href='https://busca.saraiva.com.br/busca?q=".$t[$lang]."' target='_blank'><button class='btpress'> Comprar </button></a>
 					</div>
 					<a name='goto5'></a>
 					<div id='opinions'><h1>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Opiniões";}
 						if ($_COOKIE['lang'] == 'en') {echo "Opinions";}
 						if ($_COOKIE['lang'] == 'es') {echo "Opiniónes";}
+
+				$rws = '';
+				$urev = false;
+				if ($reviews->num_rows > 0) {
+					while ($rw = $reviews->fetch_assoc()) {
+						if ((isset($_SESSION['user']))&&($rw['nick'] == $_SESSION['user'])) {$urev = true;}
+
+						$fnms = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$rw['nick']."'");
+						$rn = $fnms->fetch_assoc();
+						if ($rn[$_COOKIE['lang']] == null) {$rwnm = $rn['pt'];}
+						else {$rwnm = $rn[$_COOKIE['lang']];}
+
+						$rws = $rws."<div class='thbcritic'>
+										<div>
+											<a href='users/".$rw['nick'].".php'><h2> ".$rwnm." </h2></a>
+											<h3><a href='users/".$rw['nick'].".php'> @".$rw['nick']."</a> | ".$rw['datime']." </h3>
+											<div id='cricom'>" .$rw['comment']. "</div>
+										</div>
+									</div>";
+						}
+					}
+				if ((isset($_SESSION['user']))&&($urev == false)) {
+					$rws = "<div class='thbcritic'>
+									<div>
+										<h2> Publique sua opinião </h2>
+										<br />
+										<form action='account/post_opinion.php' method='post'>
+											<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();'
+											pInputTextArea [(ngModel)]='value' (ngModelChange)='valueChange(value)' maxlength='736'></textarea> <br />
+											<span id='coucom'>0/200</span>
+											<input id='subcom' class='btpress' type='submit' disabled />
+											<input name='book' value='".$b['id']."' style='display: none;' />
+										</form>
+									</div>
+								</div>".$rws;
+					}
+				if ($rws == '') {
+					$rws = "Nenhuma opinião sobre este livro. <a href='login.php'>Seja o primeiro a opinar!</a>";
+					}
+
 				echo "</h1>".$rws."
 					</div>
 					<div id='tags'>";

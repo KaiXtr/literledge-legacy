@@ -15,6 +15,7 @@
 		$find = $conn->query("SELECT nick, email, password FROM users");
 		if ($find->num_rows > 0) {
 			while ($i = $find->fetch_assoc()) {
+				if ($i['nick'] == 'new_user') {$error = $error .'8';}
 				if ($i['nick'] == $_POST['nick']) {$error = $error .'8';}
 				if ($i['email'] == $_POST['email']) {$error = $error .'9';}
 			}
@@ -23,15 +24,30 @@
 
 	if ($error != '') {
 		session_destroy();
-		header("location: http://localhost/literledge/signin.php?error=" .$error. "");
+		header("location: ".$_SERVER["HTTP_REFERER"]."?error=" .$error. "");
 		}
 	else {
-		$b = $_POST['by']."-".$_POST['bm']."-".$_POST['bd'];
-		$new = "'" .$_POST['name']."','".$_POST['nick']."','".$b."','".$_POST['country']."','','".$_POST['gender']."','0','".$_POST['email']."','".$_POST['password']."',''";
+		$b = $_POST['by']."-";
+		if ($_POST['bm'] < 10) {$b = $b."0".$_POST['bm']."-";}
+		else {$b = $b.$_POST['bm']."-";}
+		if ($_POST['bd'] < 10) {$b = $b."0".$_POST['bd'];}
+		else {$b = $b.$_POST['bd'];}
+
+		$new = "'" .$_POST['name']."',null,null,'".$_POST['nick']."','".$b."',null,'".$_POST['country']."','','".$_POST['gender']."','0','".$_POST['email']."','".$_POST['password']."',''";
 		$conn->query("INSERT INTO users VALUES (".$new.");");
 		$_SESSION['user'] = $_POST['nick'];
 		$_SESSION['password'] = $_POST['password'];
 		$_SESSION['lang'] = substr($_POST['country'],0,2);
+
+		copy('../media/images/profilepics/new_user.jpg','../media/images/profilepics/'.$_POST['nick'].'.jpg');
+		copy('../media/images/banners/new_user.jpg','../media/images/banners/'.$_POST['nick'].'.jpg');
+
+		$htmc = fopen('../users/'.$_POST['nick'].'.php', 'w') or die('Unable to open file!');
+		$cont = file_get_contents('../users/new_user.php');
+		$cont = str_replace('%user%', $_POST['nick'], $cont);
+		fwrite($htmc, $cont);
+		fclose($htmc);
+
 		header("location: http://localhost/literledge/index.php");
 		}
 	$conn->close();

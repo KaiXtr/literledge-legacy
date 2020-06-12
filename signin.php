@@ -16,8 +16,11 @@
 	</head>
 
 	<body>
-		<?php include 'design/header.php' ?>
-		<?php include 'design/lateralbar.php' ?>
+		<?php
+			include 'design/header.php';
+			include 'design/lateralbar.php';
+			include 'design/array_lists.php';
+		?>
 
 		<div class='content'>
 			<div class='login'>
@@ -92,7 +95,7 @@
 							<?php
 								$c = array('M','F','A','O');
 								for ($x = 0; $x < sizeof($c); $x++)
-									{echo "<option>" .$c[$x]. "</option>";}
+									{echo "<option value=".$c[$x].">" .$gndlst[$c[$x]]. "</option>";}
 							?>
 						</select> <br />
 					</div>
@@ -135,9 +138,12 @@
 						</span>
 						<select class='selectbox' name='country'>
 							<?php
-								$c = array('BRA','CAN','FRA','GER','ITA','USA');
+								$c = array();
+								foreach ($coulst as $x => $v) {
+									$c[] = $x;
+								}
 								for ($x = 0; $x < sizeof($c); $x++)
-									{echo "<option>" .$c[$x]. "</option>";}
+									{echo "<option value=".$c[$x].">" .$coulst[$c[$x]]. "</option>";}
 							?>
 						</select> <br />
 					</div> <br />
@@ -181,16 +187,17 @@
 						<input type='password' id='conf' class='textbox' name='confirm' />
 						<button type='button' id='shconf' class='passeye' onclick='showhide("conf","shconf")'></button>
 					</div>
-
+					<br />
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '5') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Aceite os termos e condições";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Aceite os termos e condições";}
 							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Accept the terms of service";}
+							else if ($_COOKIE['lang'] == 'es') {$errl = $errl."Aceptar los términos y condiciones";}
 						}
 						echo $errl ."</span>";
 					?>
-					<span id='checkbox'>
+					<span id='checkbox'><input type='checkbox' name='check' />
 						<?php
 							if ($_COOKIE['lang'] == 'pt') {echo "Li e concordo com os <a href='about.php'> termos e condições";}
 							if ($_COOKIE['lang'] == 'en') {echo "I Agree with <a href='about.php'> terms of service";}

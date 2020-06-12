@@ -15,7 +15,7 @@
 			}
 		if ($u == '') {
 			session_destroy();
-			header("location: http://localhost/literledge/login.php?error=1");
+			header("location: ".$_SERVER["HTTP_REFERER"]."?error=1");
 			}
 		else {
 			$_SESSION['user'] = $u;

@@ -1,2 +1,14 @@
 DirectoryIndex index.php
 ErrorDocument 404 /literledge/not_found.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTP_HOST} \.
+	RewriteCond %{REQUEST_URI} !/maintenance.php$
+	RewriteCond %{REQUEST_URI} !/design/.*$
+	RewriteCond %{REQUEST_URI} !/styles/.*$
+	RewriteCond %{REQUEST_URI} !/media/images/.*$
+	RewriteCond %{REQUEST_URI} !/scripts/.*$
+	RewriteCond %{REQUEST_URI} !/favicon.*$
+	RewriteRule .* /literledge/maintenance.php [R=307,L]
+</IfModule>

@@ -96,8 +96,8 @@
 				require 'account/mysql_connect.php';
 				if ($notcon == null) {
 					require 'design/array_lists.php';
-					$lists = array('SELECT id, name, auctor, warning FROM books ORDER BY readings desc LIMIT 10',
-						'SELECT id, name, auctor, warning FROM books ORDER BY id desc LIMIT 10');
+					$lists = array('SELECT id, auctor, warning FROM books ORDER BY readings desc LIMIT 10',
+						'SELECT id, auctor, warning FROM books ORDER BY id desc LIMIT 10');
 					$names = array($fltlst['Popular'],$fltlst['New']);
 					$index = array(0,1);
 					$x = 2;
@@ -106,14 +106,14 @@
 						if ($r == 0) {
 							$i = array_keys($gnrlst)[random_int(0,sizeof($gnrlst)-1)];
 							if (in_array($gnrlst[$i], $names) == false) {
-								$names[] = $gnrlst[$i];$lists[] = 'SELECT id, name, auctor, warning FROM books WHERE genre="'.$i.'"	 LIMIT 10';
+								$names[] = $gnrlst[$i];$lists[] = 'SELECT id, auctor, warning FROM books WHERE genre="'.$i.'"	 LIMIT 10';
 								$index[] = $x; $x++;
 							}
 						}
 						if ($r == 1) {
 							$i = array_keys($ltslst)[random_int(0,sizeof($ltslst)-1)];
 							if (in_array($ltslst[$i], $names) == false) {
-								$names[] = $ltslst[$i];$lists[] = 'SELECT id, name, auctor, warning FROM books WHERE litschool="'.$i.'" LIMIT 10';
+								$names[] = $ltslst[$i];$lists[] = 'SELECT id, auctor, warning FROM books WHERE litschool="'.$i.'" LIMIT 10';
 								$index[] = $x; $x++;
 							}
 						}

@@ -16,8 +16,11 @@
 	</head>
 
 	<body>
-		<?php include 'design/header.php' ?>
-		<?php include 'design/lateralbar.php' ?>
+		<?php
+			include 'design/header.php';
+			include 'design/lateralbar.php';
+			include 'design/array_lists.php';
+		?>
 
 		<div class='content'>
 			<div class='login proedit'>
@@ -65,20 +68,19 @@
 							<div class='manlan' lang='en'> Profile pic: </div>
 							<div class='manlan' lang='es'> Foto de perfil: </div> <br />
 							<?php echo "<img id='prevpic' class='filprev' src='media/images/profilepics/".$_SESSION['user'].".jpg' />"; ?>
-							<input id='profilepicupload' accept="image/gif, image/jpeg, image/png" name='propic' type='file' onchange='previmg(event,"prevpic");' />
+							<input id='profilepicupload' accept="image/jpeg" name='propic' type='file' onchange='previmg(event,"prevpic");' />
 						</div>
 						<div class='upimg'>
 							Banner: <br />
 							<?php echo "<img id='prevban' class='filprev' src='media/images/banners/".$_SESSION['user'].".jpg' width='384' />"; ?>
-							<input id='bannerupload' accept="image/gif, image/jpeg, image/png" name='banner' type='file' onchange='previmg(event,"prevban");'/>
-						</div>>
-
+							<input id='bannerupload' accept="image/jpeg" name='banner' type='file' onchange='previmg(event,"prevban");'/>
+						</div>
 						<span id='text'>
 							<div class='manlan' lang='pt'> nome </div>
 							<div class='manlan' lang='en'> name </div>
 							<div class='manlan' lang='es'> nombre </div>
 						</span> <br />
-						<?php echo "<input type='text' class='textbox' name='name' value='".$i['name']."' maxLength='30' />"; ?>
+						<?php echo "<input type='text' class='textbox' name='name' value='".$i['pt']."' maxLength='30' />"; ?>
 						<br />
 						<span id='text'> email </span> <br />
 						<?php echo "<input type='text' class='textbox' name='email' value='".$i['email']."' maxLength='30' />"; ?>
@@ -94,9 +96,9 @@
 									$c = array('M','F','A','O');
 									for ($x = 0; $x < sizeof($c); $x++) {
 										if ($i['gender'] == $c[$x])
-											{echo "<option selected>" .$c[$x]. "</option>";}
+											{echo "<option value='".$c[$x]."' selected>".$gndlst[$c[$x]]."</option>";}
 										else
-											{echo "<option>" .$c[$x]. "</option>";}
+											{echo "<option value='".$c[$x]."'>".$gndlst[$c[$x]]."</option>";}
 									}
 								?>
 							</select> <br />
@@ -149,12 +151,15 @@
 							</span>
 							<select class='selectbox' name='country'>
 								<?php
-									$c = array('BRA','CAN','FRA','GER','ITA','USA');
+									$c = array();
+									foreach ($coulst as $x => $v) {
+										$c[] = $x;
+									}
 									for ($x = 0; $x < sizeof($c); $x++) {
 										if ($i['country'] == $c[$x])
-											{echo "<option selected>" .$c[$x]. "</option>";}
+											{echo "<option value='".$c[$x]."' selected>".$coulst[$c[$x]]."</option>";}
 										else
-											{echo "<option>" .$c[$x]. "</option>";}
+											{echo "<option value='".$c[$x]."'>".$coulst[$c[$x]]."</option>";}
 									}
 								?>
 							</select> <br />
@@ -226,9 +231,11 @@
 								<button type='button' id='shconf' class='passeye' onclick='showhide("conf","shconf")'></button>
 							</div>
 						</div>
+						<a href='account/delete_account.php'><button class='btpress' type='button'>Apagar conta</button></a>
 					</div>
 					<div id='tab3' class='optabs' style='display: none;'>
-						<button class='btpress'></button>
+						<input type='radio' name='theme' value='sepia' style='background-color: #F9E2D9;' <?php if($_COOKIE['theme']=='sepia'){echo 'checked';} ?>></button>
+						<input type='radio' name='theme' value='dark' style='background-color: #070707;' <?php if($_COOKIE['theme']=='dark'){echo 'checked';} ?>></button>
 					</div>
 				</form>
 			</div>

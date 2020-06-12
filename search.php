@@ -82,6 +82,8 @@
 						$disp = $disp ."</div> <div class='displaybooks'>";
 
 						$max = 0;
+						$aud = false;
+						$brusers = '';
 						while (($i = $result->fetch_assoc())&&($max < $ofsa + 20)) {
 							if ($max < $ofsa) {$max++;}
 							else {
@@ -94,20 +96,20 @@
 								if (($search != '$auctors')&&($search != '$all')) {
 									preg_match('/' .$search. '/i',$nm,$re);
 									if (sizeof($re) > 0) {$p = true;}}
-								else if ($i['auctor'] == 1) {$p = true;}
 
 								if ((@$flet) && ($nm[0] != $flet)) {$p = false;}
 								if ((@$fcou) && ($i['country'] != $fcou)) {$p = false;}
 								if ((@$fyer) && (substr($i['birth'],0,2) != substr($fyer,0,2) - 1)) {$p = false;}
 								if ($p == true) {
-									$disp = $disp ."<html>
-											<a href='users/" .$i["nick"]. ".php'>
+									$por = "<a href='users/" .$i["nick"]. ".php'>
 												<button class='portraits'>
 													<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' />
 													<h2> " .$nm. " </h2>
 												</button>
-											</a>
-										</html>";
+											</a>";
+									if ($i['auctor'] == 1) {$disp = $disp.$por;}
+									if ($i['auctor'] == 0) {$brusers = $brusers.$por;}
+									$aud = true;
 									$max++;
 									}
 								}
@@ -117,6 +119,7 @@
 							if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
 							if ($_COOKIE['lang'] == 'en') {$btp = $btp."Previous";}
 							if ($_COOKIE['lang'] == 'es') {$btp = $btp."Anterior";}
+							$btp = $btp."</button>";
 							}
 						else{$btp = '';}
 						if ($max == $ofsa + 20) {
@@ -124,27 +127,37 @@
 							if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
 							if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}
 							if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
+							$btn = $btn."</button>";
 							}
 						else {$btn = '';}
-						echo $disp ."</div>".$btp.$btn."<a name='books'></a></div>";
+					if ($aud == true) {echo $disp ."</div>".$btp.$btn."</div>";}
+					}
+				if ($brusers != '') {
+					echo "<div class='brow'><a name='users'></a><div class='blabel'>";
+					if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
+						if ($_COOKIE['lang'] == 'pt') {echo "<h1> Usuários </h1>";}
+						if ($_COOKIE['lang'] == 'en') {echo "<h1> Users </h1>";}
+						if ($_COOKIE['lang'] == 'es') {echo "<h1> Usuarios </h1>";}
+						}
+					echo "</div><div class='displaybooks'>".$brusers."</div></div>";
 					}
 				}
 
 				#BOOK SEARCH
 				$result = $conn->query("SELECT b.*, u.nick as auctor FROM books as b JOIN users as u
-						ON b.auctor=u.nick ORDER BY b.name");
+						ON b.auctor=u.nick");
 				if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 				else {$lang = $_COOKIE['lang'];}
 
 				if ($result->num_rows > 0) {
-					$list = "<div class='brow'><div class='blabel'>";
+					$list = "<div class='brow'><a name='books'></a><div class='blabel'>";
 					if ($_COOKIE['lang'] == 'pt') {$list = $list."<h1> Livros </h1>";}
 					if ($_COOKIE['lang'] == 'en') {$list = $list."<h1> Books </h1>";}
 					if ($_COOKIE['lang'] == 'es') {$list = $list."<h1> Libros </h1>";}
 					$list = $list."</div><div class='displaysearch'>";
 
 					$max = 0;
-					$ech = false;
+					$bod = false;
 					while (($i = $result->fetch_assoc())&&($max < $ofsb + 21)) {
 						if ($max < $ofsb) {$max++;}
 						else {
@@ -193,7 +206,7 @@
 										$list = $list.$sin."</div>
 										</button>
 									</a>";
-								$ech = true;
+								$bod = true;
 								$max++;
 								}
 							}
@@ -203,6 +216,7 @@
 							if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
 							if ($_COOKIE['lang'] == 'en') {$btp = $btp."Previous";}
 							if ($_COOKIE['lang'] == 'es') {$btp = $btp."Anterior";}
+							$btp = $btp."</button>";
 							}
 					else {$btp = '';}
 					if ($max == $ofsb + 21) {
@@ -210,9 +224,10 @@
 							if ($_COOKIE['lang'] == 'pt') {$btn = $btn."Próximo";}
 							if ($_COOKIE['lang'] == 'en') {$btn = $btn."Next";}
 							if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
+							$btn = $btn."</button>";
 							}
 					else {$btn = '';}
-				if ($ech == true) {echo $list."</div></div>".$btp.$btn;}
+				if ($bod == true) {echo $list."</div></div>".$btp.$btn;}
 				}
 
 				#POEM SEARCH
@@ -223,7 +238,7 @@
 				if ($_COOKIE['lang'] == 'en') {$list = $list."<h1> Poems </h1>";}
 				if ($_COOKIE['lang'] == 'es') {$list = $list."<h1> Poemas </h1>";}
 				$list = $list."</div></div></div></a>";
-				$ech = false;
+				$pod = false;
 
 				while ($i = $find->fetch_assoc()) {
 					$p = false;
@@ -236,20 +251,20 @@
 
 					if ($p == true) {
 						$pom = glob('poems/'.$i['nick'].'*.php');
-						$list = $list."<div class='content'>";
-						for ($max=$ofsp;$max < sizeof($pom);$max++) {
-							$cn = file_get_contents($pom[$max]);
-							$inx = substr($cn, strpos($cn, '<h1> ')+5);
-							$inx = substr($inx, 0, strpos($inx, ' </h1>'));
-							$list = $list."<a name='".$inx."'></a><blockquote class='quotepoem'>".$cn."</blockquote>";
-							$poemlst[] = $inx;
-							$ech = true;
+						if (sizeof($pom) > 0) {
+							$list = $list."<div class='content'>";
+							for ($max=$ofsp;$max < sizeof($pom);$max++) {
+								$cn = file_get_contents($pom[$max]);
+								$inx = substr($cn, strpos($cn, '<h1> ')+5);
+								$inx = substr($inx, 0, strpos($inx, ' </h1>'));
+								$list = $list."<a name='".$inx."'></a><blockquote class='quotepoem'>".$cn."</blockquote>";
+								$poemlst[] = $inx;
+								$pod = true;
+								}
+							$list = $list."</div>";
 							}
-						$list = $list."</div>";
 						}
 					}
-				if ($ech == true) {echo $list;}
-
 				if ($ofsp > 0) {
 					$btp = "<button class='btpress bp' onclick='filter_search(".'"'.$search.'","'.($ofsa).'","'.($ofsb).'","'.($ofsp - 21).'"'.")'>";
 						if ($_COOKIE['lang'] == 'pt') {$btp = $btp."Anterior";}
@@ -264,7 +279,32 @@
 						if ($_COOKIE['lang'] == 'es') {$btn = $btn."Siguiente";}
 						}
 				else {$btn = '';}
-				echo "</div>".$btp.$btn;
+				if ($pod == true) {echo $list."</div>".$btp.$btn;}
+
+				#EMPTY SEARCH
+				if (($aud == false)&&($brusers == '')&&($bod == false)) {
+					echo "<div class='login'>";
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "<h1> Nada foi encontrado </h1><ul>
+						<li>Tente pesquisar por palavras mais simples</li>
+						<li>Desative alguns filtros</li>
+						<li>Veja se escreveu corretamente</li></ul>";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "<h1> Nothing was found </h1><ul>
+						<li>Try searching for simpler words</li>
+						<li>Disable some filters</li>
+						<li>See if you wrote it correctly</li></ul>";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "<h1> No se encontró nada </h1><ul>
+						<li>Intenta buscar palabras más simples</li>
+						<li>Deshabilitar algunos filtros</li>
+						<li>Vea si lo escribió correctamente</li></ul>";
+					}
+					echo "</div>";
+					}
+				echo "</div>";
 
 				#FILTERS
 				echo "<div id='filanch'></div><div class='filters'><div class='brow'><h2>";
@@ -282,11 +322,11 @@
 							}
 						}
 					}
-				$find = $conn->query("SELECT name FROM books");
+				$find = $conn->query("SELECT pt FROM translations");
 				if ($find->num_rows > 0) {
 					while ($i = $find->fetch_assoc()) {
-						if (in_array($i['name'][0],$found) == false) {
-							$found[] = $i['name'][0];
+						if (in_array($i['pt'][0],$found) == false) {
+							$found[] = $i['pt'][0];
 							}
 						}
 					}
@@ -435,20 +475,37 @@
 						}
 					echo "</select>";
 					}
-				echo "</div><div class='brow'><h2>";
-				$lnk = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-				if ($_COOKIE['lang'] == 'pt') {echo "Conteúdo";}
-				if ($_COOKIE['lang'] == 'en') {echo "Content";}
-				if ($_COOKIE['lang'] == 'es') {echo "Conteudo";}
-				echo "</h2><ul><li><a href='".$lnk."#auctors'>";
-				if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
-				if ($_COOKIE['lang'] == 'en') {echo "Auctors";}
-				if ($_COOKIE['lang'] == 'es') {echo "Autores";}
-				echo "</a></li><li><a href='".$lnk."#books'>";
-				if ($_COOKIE['lang'] == 'pt') {echo "Livros";}
-				if ($_COOKIE['lang'] == 'en') {echo "Books";}
-				if ($_COOKIE['lang'] == 'es') {echo "Libros";}
-				echo "</a></li></ul></div>";
+				echo "</div>";
+				if (($aud == true)||($brusers != '')||($bod == true)) {
+					echo "<div class='brow'><h2>";
+					$lnk = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+					if ($_COOKIE['lang'] == 'pt') {echo "Conteúdo";}
+					if ($_COOKIE['lang'] == 'en') {echo "Content";}
+					if ($_COOKIE['lang'] == 'es') {echo "Conteudo";}
+					echo "</h2><ul>";
+					if ($aud == true) {
+						echo "<li><a href='".$lnk."#auctors'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
+						if ($_COOKIE['lang'] == 'en') {echo "Auctors";}
+						if ($_COOKIE['lang'] == 'es') {echo "Autores";}
+						echo "</a></li>";
+					}
+					if ($brusers != '') {
+						echo "<li><a href='".$lnk."#users'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Usuários";}
+						if ($_COOKIE['lang'] == 'en') {echo "Users";}
+						if ($_COOKIE['lang'] == 'es') {echo "Usuarios";}
+						echo "</a></li>";
+					}
+					if ($bod == true) {
+						echo "<li><a href='".$lnk."#books'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Livros";}
+						if ($_COOKIE['lang'] == 'en') {echo "Books";}
+						if ($_COOKIE['lang'] == 'es') {echo "Libros";}
+						echo "</a></li>";
+					}
+					echo "</ul></div>";
+				}
 
 				if (sizeof($poemlst) > 0) {
 					echo "<div id='poemlst' class='brow'><a href='".$lnk."#poems'><h2>";
