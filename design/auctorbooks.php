@@ -39,11 +39,8 @@
 									<div class='description'>
 									<h2> ".$t[$lang]." </h2>
 									<h3> ".$nm. " </h3>";
-									ob_start();
-									$snp = include '../sinopsis/'.$i['id'].'.php';
-									$rtn = ob_get_clean();
-									$thb = $thb.$rtn;
-								$thb = $thb. "</div>
+									include '../sinopsis/'.$i['id'].'.php';
+								$thb = $thb.$sin."</div>
 								</button>
 							</a>";
 

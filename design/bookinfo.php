@@ -236,8 +236,8 @@
 						if ($_COOKIE['lang'] == 'en') {echo "License: " .$liclst[$b["license"]];}
 						if ($_COOKIE['lang'] == 'es') {echo "Licencia: " .$liclst[$b["license"]];}
 					echo "</h2>".$wrng."<div id='sinopsis'>";
-							include '../sinopsis/'.$b['id'].'.php';
-					echo "</div>
+						include '../sinopsis/'.$b['id'].'.php';
+					echo $sin."</div>
 							<div class='summary'>
 								<ul>
 									<li> <a href='books/".$b['id'].".php#goto1'> Resenha </a> </li>
@@ -274,9 +274,17 @@
 					}
 					else {$pr = $e['price'];}
 					$l = "media/books/" .$b["id"]. "-" .$e["id"]. "." .$e["filtyp"];
+					$byt = filesize("../".$l);
+					if ($byt >= 1073741824) {$byt = round($byt/1073741824).' GB';}
+					else if ($byt >= 1048576){$byt = round($byt/1048576).' MB';}
+					else if ($byt >= 1024) {$byt = round($byt/1024).' KB';}
+					else if ($byt > 1) {$byt = $byt.' byt';}
+					else if ($byt == 1) {$byt = $byt.' byt';}
+					else {$byt = '---';}
+
 					if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
 					$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$b['name'].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
-						<th>" .$e['filtyp']. "</th><th>" .$e['credit']. "</th><th>" .$e['language']. "</th><th>" .$pr.  "</th>
+						<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th><th>".$byt."</th><th>".$pr. "</th>
 						</tr>";
 					}
 

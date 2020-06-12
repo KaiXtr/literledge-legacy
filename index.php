@@ -145,7 +145,7 @@
 												<h2> ".$t[$lang]." </h2>
 												<h3> ".$nm." </h3>";
 												include 'sinopsis/'.$i['id'].'.php';
-										echo "</div>
+										echo $sin."</div>
 										</button>
 									</a>";
 								}

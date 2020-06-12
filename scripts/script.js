@@ -192,6 +192,18 @@ $(document).ready(function() {
 	$("#openpro").on('click', function () {set_display('profilemenu')});
 });
 
+$(window).scroll(function(e) {
+	var scroller_anchor = $("#filanch").offset().top;
+	var filter_bar = $(".filters").position().top + $(".filters").height();
+		 
+	if (filter_bar >= scroller_anchor && $('.filters').css('position') != 'fixed') { 
+		$('.filters').css('position','fixed');
+		} 
+	else if (filter_bar > scroller_anchor && $('.filters').css('position') != 'relative') {
+		$('.filters').css('position','relative');
+		}
+})
+
 function search_suggest(text) {
 	$.ajax({
 		type: "GET",

@@ -14,6 +14,20 @@ else if ($_COOKIE['lang'] == 'es') {
 	$fltlst = array('New'=>'Nuevo','Popular'=>'Popular','Unknown'=>'Desconocidos');
 	}
 
+#COUNTRIES
+if ($_COOKIE['lang'] == 'pt') {
+	$coulst = array('BRA'=>'Brasil','CZE'=>'Tchéquia','DEN'=>'Dinamarca','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia',
+	'IRL'=>'Irlanda','ITA'=>'Itália','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','USA'=>'Estados Unidos');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$coulst = array('BRA'=>'Brazil','CZE'=>'Czechia','DEN'=>'Denmak','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece',
+	'IRL'=>'Ireland','ITA'=>'Italy','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','USA'=>'United States');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$coulst = array('BRA'=>'Brasil','CZE'=>'Chequia','DEN'=>'Dinamarca','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia',
+	'IRL'=>'Irlanda','ITA'=>'Italia','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','USA'=>'Estados Unidos');
+	}
+
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
 	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo',
