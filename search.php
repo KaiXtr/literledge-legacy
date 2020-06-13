@@ -48,6 +48,8 @@
 				echo "<a name='auctors'></a><div class='content search'>";
 				
 				$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY pt");
+				$brusers = '';
+				$aud = false;
 				if ($result->num_rows > 0) {
 					#CENTURIES SEARCH
 					if ($search == '$century') {
@@ -82,8 +84,6 @@
 						$disp = $disp ."</div> <div class='displaybooks'>";
 
 						$max = 0;
-						$aud = false;
-						$brusers = '';
 						while (($i = $result->fetch_assoc())&&($max < $ofsa + 20)) {
 							if ($max < $ofsa) {$max++;}
 							else {
@@ -97,9 +97,11 @@
 									preg_match('/' .$search. '/i',$nm,$re);
 									if (sizeof($re) > 0) {$p = true;}}
 
+								if ($search == '$auctors') {$p = true;}
 								if ((@$flet) && ($nm[0] != $flet)) {$p = false;}
 								if ((@$fcou) && ($i['country'] != $fcou)) {$p = false;}
 								if ((@$fyer) && (substr($i['birth'],0,2) != substr($fyer,0,2) - 1)) {$p = false;}
+
 								if ($p == true) {
 									$por = "<a href='users/" .$i["nick"]. ".php'>
 												<button class='portraits'>
@@ -227,7 +229,7 @@
 							$btn = $btn."</button>";
 							}
 					else {$btn = '';}
-				if ($bod == true) {echo $list."</div></div>".$btp.$btn;}
+				if ($bod == true) {echo $list."</div></div>".$btn.$btp;}
 				}
 
 				#POEM SEARCH
@@ -314,19 +316,23 @@
 				echo "</h2>";
 				#LETTER FILTER
 				$found = array();
-				$find = $conn->query("SELECT pt, auctor FROM users");
-				if ($find->num_rows > 0) {
-					while ($i = $find->fetch_assoc()) {
-						if ((in_array($i['pt'][0],$found) == false) && ($i['auctor'] == '1')) {
-							$found[] = stripAccents($i['pt'][0]);
+				if ($search != '$books') {
+					$find = $conn->query("SELECT pt, auctor FROM users");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_assoc()) {
+							if ((in_array($i['pt'][0],$found) == false) && ($i['auctor'] == '1')) {
+								$found[] = stripAccents($i['pt'][0]);
+								}
 							}
 						}
 					}
-				$find = $conn->query("SELECT pt FROM translations");
-				if ($find->num_rows > 0) {
-					while ($i = $find->fetch_assoc()) {
-						if (in_array($i['pt'][0],$found) == false) {
-							$found[] = $i['pt'][0];
+				if ($search != '$auctors') {
+					$find = $conn->query("SELECT pt FROM translations");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_assoc()) {
+							if (in_array($i['pt'][0],$found) == false) {
+								$found[] = $i['pt'][0];
+								}
 							}
 						}
 					}
@@ -349,19 +355,23 @@
 					}
 				#COUNTRY FILTER
 				$found = array();
-				$find = $conn->query("SELECT country, auctor FROM users");
-				if ($find->num_rows > 0) {
-					while ($i = $find->fetch_assoc()) {
-						if ((in_array($i['country'],$found) == false) && ($i['auctor'] == '1')) {
-							$found[] = $i['country'];
+				if ($search != '$books') {
+					$find = $conn->query("SELECT country, auctor FROM users");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_assoc()) {
+							if ((in_array($i['country'],$found) == false) && ($i['auctor'] == '1')) {
+								$found[] = $i['country'];
+								}
 							}
 						}
 					}
-				$find = $conn->query("SELECT country FROM books");
-				if ($find->num_rows > 0) {
-					while ($i = $find->fetch_assoc()) {
-						if (in_array($i['country'],$found) == false) {
-							$found[] = $i['country'];
+				if ($search != '$auctors') {
+					$find = $conn->query("SELECT country FROM books");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_assoc()) {
+							if (in_array($i['country'],$found) == false) {
+								$found[] = $i['country'];
+								}
 							}
 						}
 					}

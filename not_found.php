@@ -12,7 +12,7 @@
 
 		<div class='content'>
 			<div class='login'>
-				<img src='favicon.ico' />
+				<img src='favicon.png' />
 				<div class='manlan' lang='pt'>
 					<h1> Não tem nada aqui... </h1>
 					Parece que este endereço não existe aqui, verifique o URL inserido na busca do seu navegador.

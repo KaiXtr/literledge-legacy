@@ -10,7 +10,7 @@
 		?>
 		<form class='searchbar' action='search.php' method='post'>
 			<?php
-				if (isset($_GET['q'])) {$sch = "value='".$_GET['q']."'";} else {$sch = '';}
+				if ((isset($_GET['q']))&&($_GET['q'][0] != '$')) {$sch = "value='".$_GET['q']."'";} else {$sch = '';}
 				echo "<input class='searchtext' type='text' name='search' ".$sch."onchange='search_suggest(this.value)' placeholder='".$vl."...' />
 				<input class='submit' type='image' src='media/images/icons/search.png' alt='".strtolower($vl)."' />";
 				if (isset($_GET['seasugg'])) {

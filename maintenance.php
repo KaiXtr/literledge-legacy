@@ -14,7 +14,7 @@
 	<body>
 		<div class='content'>
 			<div class='login'>
-				<img src='favicon.ico' />
+				<img src='favicon.png' />
 				<?php
 					if ($_COOKIE['lang'] == 'pt') {
 						echo "<h1> Em Manutenção </h1>
