@@ -12,7 +12,7 @@ else if ($_COOKIE['lang'] == 'es') {
 	}
 
 #CENTURIES
-$cenlst = array('10'=>'X','11'=>'XI','12'=>'XII','13'=>'XIII','14'=>'XIV','15'=>'XV','16'=>'XVI','17'=>'XVII','18'=>'XVIII','19'=>'XIX','20'=>'XX');
+$cenlst = array('10'=>'X','11'=>'XI','12'=>'XII','13'=>'XIII','14'=>'XIV','15'=>'XV','16'=>'XVI','17'=>'XVII','18'=>'XVIII','19'=>'XIX','20'=>'XX','21'=>'XXI');
 
 #FILTERS
 if ($_COOKIE['lang'] == 'pt') {
@@ -28,15 +28,15 @@ else if ($_COOKIE['lang'] == 'es') {
 #COUNTRIES
 if ($_COOKIE['lang'] == 'pt') {
 	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolívia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CZE'=>'Tchéquia','COL'=>'Colômbia','DEN'=>'Dinamarca','ECU'=>'Equador','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia','GUY'=>'Guiana',
-	'IRL'=>'Irlanda','ITA'=>'Itália','MEX'=>'México','NED'=>'Países Baixos','PER'=>'Peru','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguai','USA'=>'Estados Unidos');
+	'IRL'=>'Irlanda','ITA'=>'Itália','MEX'=>'México','NED'=>'Países Baixos','PER'=>'Peru','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguai','USA'=>'Estados Unidos','WAL'=>'País de Gales');
 	}
 else if ($_COOKIE['lang'] == 'en') {
 	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolivia','BRA'=>'Brazil','CAN'=>'Canada','CHI'=>'Chile','CZE'=>'Czechia','COL'=>'Colombia','DEN'=>'Denmak','ECU'=>'Ecuador','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece','GUY'=>'Guyana',
-	'IRL'=>'Ireland','ITA'=>'Italy','MEX'=>'Mexico','NED'=>'Netherlands','PER'=>'Perú','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'United States');
+	'IRL'=>'Ireland','ITA'=>'Italy','MEX'=>'Mexico','NED'=>'Netherlands','PER'=>'Perú','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'United States','WAL'=>'Wales');
 	}
 else if ($_COOKIE['lang'] == 'es') {
 	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolivia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CZE'=>'Chequia','COL'=>'Colombia','DEN'=>'Dinamarca','ECU'=>'Ecuador','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia','GUY'=>'Guayana',
-	'IRL'=>'Irlanda','ITA'=>'Italia','MEX'=>'Mexico','NED'=>'Países Bajos','PER'=>'Peru','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','SUR'=>'Surinam','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'Estados Unidos');
+	'IRL'=>'Irlanda','ITA'=>'Italia','MEX'=>'Mexico','NED'=>'Países Bajos','PER'=>'Peru','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','SUR'=>'Surinam','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'Estados Unidos','WAL'=>'Gales');
 	}
 
 #GENRES
@@ -58,16 +58,30 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #LITERARY SCHOOLS
 if ($_COOKIE['lang'] == 'pt') {
-	$ltslst = array('Arcadism'=>'Arcadismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo','Mannerism'=>'Maneirismo',
-	'Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Pre-Modernism'=>'Pré-Modernismo','Realism'=>'Realismo','Troubadorism'=>'Trovadorismo');
+	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo',
+	'Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
+	'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$ltslst = array('Arcadism'=>'Arcadism','Iluminism'=>'Iluminism','Impressionism'=>'Impressionism','Indianism'=>'Indianism','Mannerism'=>'Mannerism',
-	'Modernism'=>'Modernism','Naturalism'=>'Naturalism','Pre-Modernism'=>'Pre-Modernism','Realism'=>'Realism','Troubadorism'=>'Troubadorism');
+	$ltslst = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Iluminism'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
+	'Mannerism'=>'Mannerism','Modernism'=>'Modernism','Naturalism'=>'Naturalism','Parnassianism'=>'Parnassianism','Pre-Modernism'=>'Pre-Modernism','Romanticism'=>'Romanticism',
+	'Realism'=>'Realism','Symbolism'=>'Symbolism','Troubadorism'=>'Troubadorism');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$ltslst = array('Arcadism'=>'Arcadismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo','Mannerism'=>'Manierismo',
-	'Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Pre-Modernism'=>'Pré-Modernismo','Realism'=>'Realismo','Troubadorism'=>'Trovadorismo');
+	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
+	'Mannerism'=>'Manierismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
+	'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
+	}
+
+#ACADEMIES
+if ($_COOKIE['lang'] == 'pt') {
+	$acalst = array('ABL'=>'Academia Brasileira de Letras');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$acalst = array('ABL'=>'Brazilian Academy of Letters');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$acalst = array('ABL'=>'Academia Brasileña de Letras');
 	}
 
 #LICENSES

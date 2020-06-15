@@ -1,4 +1,5 @@
 <?php
+	require 'array_lists.php';
 	require '../account/mysql_connect.php';
 	if ($notcon == null) {
 		$conn->query("SET NAMES 'utf8'");
@@ -21,6 +22,12 @@
 				$d = $d."</span>";
 			}
 			else {$d = '';}
+
+			if ($i['academy'] != null) {
+				$acd = "<div id='academy' style='background-image: url(media/images/icons/" .substr($i["academy"],0,3). ".png);' title='".$acalst[substr($i["academy"],0,3)]."
+				 \nCadeira ".substr($i['academy'],4,2)." - Posição ".substr($i['academy'],7,2)."'>".substr($i['academy'],4,2)."</div>";
+			}
+			else {$acd = '';}
 
 			$bnr = "media/images/banners/" .$i["nick"]. ".jpg";
 
@@ -114,7 +121,7 @@
 							<span> " .$i["hometown"]. " </span>
 							<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
 								<img id='couflag' src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
-							</a>
+							</a>".$acd."
 						</div>
 					</div>
 				</div>".$gly.$slf.$fav;

@@ -48,7 +48,7 @@
 
 
 				if ($b['litschool'] != null) {
-					$ls = "<h2><a href='search.php?q=".'$books'."&s=".strtolower($b["litschool"])."'>";
+					$ls = "<h2><a href='schools/".strtolower($b["litschool"]).".php'>";
 					if ($_COOKIE['lang'] == 'pt') {$ls = $ls."Escola Literária: ".$ltslst[$b["litschool"]];}
 					if ($_COOKIE['lang'] == 'en') {$ls = $ls."Literary School: ".$ltslst[$b["litschool"]];}
 					if ($_COOKIE['lang'] == 'es') {$ls = $ls."Escuela Literaria: ".$ltslst[$b["litschool"]];}

@@ -17,7 +17,13 @@
 	<script type='text/javascript'> lang_set(); </script>
 
 	<ul class='lowerbarinfo'>
-		<li> <a href='contacts' target='_blank'> Email </a> </li>
+		<li> <a href='contacts' target='_blank'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Contatos";}
+				if ($_COOKIE['lang'] == 'en') {echo "Contacts";}
+				if ($_COOKIE['lang'] == 'es') {echo "Contactos";}
+			?>
+		</a> </li>
 		<li> <a href='https://github.com/KaiXtr' target='_blank'> GitHub </a> </li>
 	</ul>
 

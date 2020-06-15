@@ -58,7 +58,7 @@
 			} catch (Exception $e) {
 			    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 			}*/
-			mail($_POST['email'],"Literledge - Recuperação de senha",$body,$headers);
+			if (mail($_POST['email'],"Literledge - Recuperação de senha",$body,$headers)){echo "email sendo encaminhado";};
 			#header("location: http://localhost/literledge/recover.php?w=2");
 		}
 		else {header("location: http://localhost/literledge/recover.php?w=1");}

@@ -481,7 +481,7 @@ hr{
 	background-attachment: fixed;
 	background-position: 0px 40px;
 	margin: 0px;
-	width: 1920px;
+	width: 100%;
 	height: 500px;
 	position: relative;
 }
@@ -560,6 +560,24 @@ hr{
 	to {opacity: 100%; right: 200px;}
 }
 
+#profile #litername{
+	text-align: right;
+	text-shadow: 20px 20px 15px black;
+	font-size: 100px;
+	margin: 0px;
+	top: 340px;
+	left: 200px;
+	height: 30px;
+	animation-name: litername;
+	animation-duration: 3s;
+	position: absolute;
+}
+
+@keyframes litername{
+	from {opacity: 0%; left: 160px;}
+	to {opacity: 100%; left: 200px;}
+}
+
 #profile #binfobar{
 	text-align: right;
 	font-size: 30px;
@@ -572,6 +590,19 @@ hr{
 
 #profile #binfobar div{
 	display: inline-block;
+}
+
+#profile #binfobar #academy{
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 17px;
+	padding-right: 32px;
+	width: 50px;
+	height: 50px;
+	top: 500px;
+	position: absolute;
 }
 
 #displayimg {

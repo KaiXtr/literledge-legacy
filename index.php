@@ -19,7 +19,7 @@
 						<h1> Organize os seus livros lidos </h1>
 						Entre no Literledge para manter uma lista
 						dos livros que estiver lendo e que já leu.
-						O sistema de banco de dados do Literledge
+						O sistema de banco de dados do Literledge	
 						permite te manter organizado com seus
 						livros favoritos.
 					</div>
@@ -106,7 +106,7 @@
 						if ($r == 0) {
 							$i = array_keys($gnrlst)[random_int(0,sizeof($gnrlst)-1)];
 							if (in_array($gnrlst[$i], $names) == false) {
-								$names[] = $gnrlst[$i];$lists[] = 'SELECT id, auctor, warning FROM books WHERE genre="'.$i.'"	 LIMIT 10';
+								$names[] = $gnrlst[$i];$lists[] = 'SELECT id, auctor, warning FROM books WHERE genre="'.$i.'" LIMIT 10';
 								$index[] = $x; $x++;
 							}
 						}

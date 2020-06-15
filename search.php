@@ -51,6 +51,31 @@
 				$brusers = '';
 				$aud = false;
 				if ($result->num_rows > 0) {
+					#LITSCHOOL SEARCH
+					if ($search == '$schools') {
+						$disp = "<div class='brow'> <div class='blabel'>";
+						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
+							if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Escolas Literárias </h1>";}
+							if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Literary Schools </h1>";}
+							if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Escuelas Literarias </h1>";}
+							}
+						$disp = $disp ."</div> <div class='displaybooks'>";
+
+						$cn = array();
+						foreach ($ltslst as $x => $v) {
+							$cn[] = $x;
+						}
+						for ($y = 0; $y < sizeof($cn); $y++) {
+							$disp = $disp ."<html>
+									<a href='schools/".strtolower($cn[$y]).".php'>
+										<button class='portraits'>
+											<h2> " .$ltslst[$cn[$y]]. " </h2>
+										</button>
+									</a>
+								</html>";
+							};
+						echo $disp ."</div></div>";
+					}
 					#CENTURIES SEARCH
 					if ($search == '$century') {
 						$disp = "<div class='brow'> <div class='blabel'>";
@@ -284,7 +309,7 @@
 				if ($pod == true) {echo $list."</div>".$btp.$btn;}
 
 				#EMPTY SEARCH
-				if (($aud == false)&&($brusers == '')&&($bod == false)) {
+				if (($search[0] != '$')&&($aud == false)&&($brusers == '')&&($bod == false)) {
 					echo "<div class='login'>";
 					if ($_COOKIE['lang'] == 'pt') {
 						echo "<h1> Nada foi encontrado </h1><ul>
@@ -421,9 +446,9 @@
 						{echo "Siglo</option>";}
 					for ($x = 0;$x < sizeof($found);$x++) {
 						if ($fyer == $found[$x])
-							{echo "<option value='".$found[$x]."' selected>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
+							{echo "<option value='".($found[$x] + 100)."' selected>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
 						else
-							{echo "<option value='".$found[$x]."'>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
+							{echo "<option value='".($found[$x] + 100)."'>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
 						}
 					echo "</select>";
 					}
