@@ -6,7 +6,7 @@
 		<?php
 			require '../account/mysql_connect.php';
 			if ($notcon == null) {
-				$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='LISPECTORclarice");
+				$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='LISPECTORclarice'");
 				$i = $find->fetch_assoc();
 				if ($i[$_COOKIE['lang']] == null) {$v = $i['pt'].' - ';}
 				else {$v = $i[$_COOKIE['lang']].' - ';}

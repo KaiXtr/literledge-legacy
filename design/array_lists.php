@@ -11,6 +11,20 @@ else if ($_COOKIE['lang'] == 'es') {
 	$gndlst = array('M'=>'Masculino','F'=>'Feminino','A'=>'Agénero','O'=>'Otro');
 	}
 
+#SIGNS
+if ($_COOKIE['lang'] == 'pt') {
+	$zdclst = array('01'=>'Sagitário','02'=>'Capricórnio','03'=>'Aquário','04'=>'Peixes','05'=>'Áries','06'=>'Touro','07'=>'Gêmeos','08'=>'Câncer',
+		'09'=>'Leão','10'=>'Virgem','11'=>'Libra','12'=>'Escorpião');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$zdclst = array('01'=>'Sagittarius','02'=>'Capricorn','03'=>'Aquarius','04'=>'Pisces','05'=>'Aries','06'=>'Taurus','07'=>'Gemini','08'=>'Cancer',
+		'09'=>'Leo','10'=>'Virgo','11'=>'Libra','12'=>'Scorpio');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$zdclst = array('01'=>'Sagitario','02'=>'Capricornio','03'=>'Acuario','04'=>'Piscis','05'=>'Aries','06'=>'Tauro','07'=>'Géminis','08'=>'Cáncer',
+		'09'=>'Leo','10'=>'Virgo','11'=>'Libra','12'=>'Escorpio');
+	}
+
 #CENTURIES
 $cenlst = array('9'=>'X','10'=>'XI','11'=>'XII','12'=>'XIII','13'=>'XIV','14'=>'XV','15'=>'XVI','16'=>'XVII','17'=>'XVIII','18'=>'XIX','19'=>'XX','20'=>'XXI',
 	'1BD'=>'1th','2BD'=>'2th','3BD'=>'3th','4BD'=>'4th','5BD'=>'5th','6BD'=>'6th','7BD'=>'7th','8BD'=>'8th','9BD'=>'9th',);
@@ -83,6 +97,17 @@ else if ($_COOKIE['lang'] == 'en') {
 	}
 else if ($_COOKIE['lang'] == 'es') {
 	$acalst = array('ABL'=>'Academia Brasileña de Letras');
+	}
+
+#BONDS
+if ($_COOKIE['lang'] == 'pt') {
+	$bndlst = array('H'=>'Marido','W'=>'Esposa','S'=>'Filho','D'=>'Filha','F'=>'Amigo');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$bndlst = array('H'=>'Husband','W'=>'Wife','S'=>'Son','D'=>'Daughter','F'=>'Friend');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$bndlst = array('H'=>'Marido','W'=>'Esposa','S'=>'Hijo','D'=>'Hija','F'=>'Amigo');
 	}
 
 #LICENSES

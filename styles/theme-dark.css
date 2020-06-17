@@ -144,6 +144,10 @@ a:active{
 	background-color:var(--bg-rect);
 }
 
+#profile .binfotip{
+	color: var(--header-color);
+}
+
 #bio{
 	background-color: var(--bg-insi);
 }
@@ -230,6 +234,7 @@ a:active{
 .portraits{
 	background-color: var(--bg-insi);
 	border-color: var(--bg-insi);
+	color: var(--text-color);
 }
 
 .portraits:hover{

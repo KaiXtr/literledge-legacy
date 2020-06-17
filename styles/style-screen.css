@@ -1,43 +1,43 @@
-html{
+html {
 	scroll-behavior: smooth;
 	overflow-x: none;
 	overflow-y: scroll;
 }
 
-body{
+body {
 	font-family: sans-serif;
 	text-align: left;
 	margin: 0px;
 	overflow-x: hidden;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-a:hover{
+a:hover {
 	text-decoration: none;
 	cursor: pointer;
 }
 
-a:active{
+a:active {
 	text-decoration: none;
 }
 
-button:focus, input:focus, select:focus{
+button:focus, input:focus, select:focus {
 	outline: 0px;
 }
 
-hr{
+hr {
 	margin-top: 60px;
 }
 
-.manlan{
+.manlan {
 	margin: 0px;
 	padding: 0px;
 }
 
-#fadescreen{
+#fadescreen {
 	background-color: black;
 	width: 100%;
 	height: 100%;
@@ -48,7 +48,7 @@ hr{
 	opacity: 0%;
 }
 
-#cookies{
+#cookies {
 	padding: 20px;
 	width: 100%;
 	height: 30px;
@@ -57,12 +57,12 @@ hr{
 	z-index: 17;
 }
 
-#cookies .btpress{
+#cookies .btpress {
 	margin: 0px;
 	margin-right: 150px;
 }
 
-.upperbar{
+.upperbar {
 	position: fixed;
 	font-size: 30px;
 	padding: 10px;
@@ -71,14 +71,14 @@ hr{
 	top: 0px;
 }
 
-.upperbarcontent{
+.upperbarcontent {
 	margin-left: 190px;
 	margin-right: 190px;
 	display: flex;
 	align-items: center;
 }
 
-.upperbar #burgerbut{
+.upperbar #burgerbut {
 	font-size: 30px;
 	margin-right: 30px;
 	padding: 0px;
@@ -92,24 +92,24 @@ hr{
 	cursor: pointer;
 }
 
-.upperbar #burgerbut:hover{
+.upperbar #burgerbut:hover {
 	border-radius: 5px;
 }
 
-.upperbar #burgerbut:active{
+.upperbar #burgerbut:active {
 	font-size: 22px;
 	padding: 4px;
 	padding-left: 7px;
 	padding-right: 7px;
 }
 
-.upperbar #title{
+.upperbar #title {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	font-weight: bold;
 	margin-left: 10px;
 }
 
-.searchbar{
+.searchbar {
 	margin: 0px;
 	margin-left: 240px;
 	margin-right: 200px;
@@ -119,7 +119,7 @@ hr{
 	display: inline-block;
 }
 
-.searchbar .searchtext{
+.searchbar .searchtext {
 	padding-left: 10px;
 	padding-right: 10px;
 	width: 500px;
@@ -128,7 +128,7 @@ hr{
 	border-radius: 8px 0px 0px 8px;
 }
 
-.searchbar .submit{
+.searchbar .submit {
 	margin: 0px;
 	padding: 5px;
 	height: 22px;
@@ -139,7 +139,7 @@ hr{
 	float: right;
 }
 
-.btpress{
+.btpress {
 	font-weight: bold;
 	margin: 10px;
 	border-style: solid;
@@ -150,11 +150,11 @@ hr{
 	float: right;
 }
 
-.btpress:disabled{
+.btpress:disabled {
 	cursor: not-allowed;
 }
 
-.upperbar #btup{
+.upperbar #btup {
 	text-align: center;
 	padding: 5px;
 	width: 30px;
@@ -162,15 +162,15 @@ hr{
 	transition-duration: 0.2s;
 }
 
-.upperbar #btup:hover{
+.upperbar #btup:hover {
 	border-radius: 5px;
 }
 
-.upperbar #btup:active{
+.upperbar #btup:active {
 	padding: 4px;
 }
 
-.upperbar .profilepic{
+.upperbar .profilepic {
 	margin-left: 100px; 
 	width: 28px;
 	height: 37px;
@@ -179,7 +179,7 @@ hr{
 	cursor: pointer;
 }
 
-#profilemenu{
+#profilemenu {
 	text-align: left;
 	font-size: 20px;
 	padding: 10px;
@@ -194,54 +194,58 @@ hr{
 	opacity: 0%;
 }
 
-#profilemenu h1{
+#profilemenu h1 {
 	font-size: 25px;
 	margin: 5px;
 }
 
-#profilemenu h2{
+#profilemenu h2 {
 	font-style: italic;
 	font-size: 22px;
 	margin: 5px;
 }
 
-#profilemenu ul{
+#profilemenu ul {
 	margin: 0px;
 	list-style: none;
 }
 
-#lateralbar{
+#lateralbar {
 	white-space: nowrap;
 	line-height: 20px;
 	position: fixed;
 	padding-top: 90px;
 	padding-left: 0px;
-	top: 0px;
 	width: 0px;
 	height: 100%;
 	z-index: 8;
 	transition: width 0.5s, visibility 0.5s, padding-left 0.5s, opacity 0.5s;
 	visibility: hidden;
 	opacity: 0%;
+	overflow-x: scroll;
 }
 
-#lateralbar ul{
+#lateralbar::-webkit-scrollbar {
+	display: none;
+}
+
+#lateralbar ul {
 	list-style: none;
 	padding: 0px;
 }
 
-#lateralbar h1{
+#lateralbar h1 {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-#lateralbar hr{
+#lateralbar hr {
 	margin-bottom: 30px;
 	margin-right: 40px;
 	border: 1px solid #7F4E43;
 }
 
-#hpslide{
+#hpslide {
 	font-size: 25px;
 	padding: 20px;
 	width: 700px;
@@ -252,11 +256,11 @@ hr{
 	position: absolute;
 }
 
-#hpslide h1{
+#hpslide h1 {
 	font-size: 32px;
 }
 
-.login{
+.login {
 	text-align: center;
 	font-size: 15px;
 	margin-left: 500px;
@@ -267,25 +271,25 @@ hr{
 	border-radius: 15px;
 }
 
-.login h1{
+.login h1 {
 	font-size: 40px;
 }
 
-.error{
+.error {
 	margin-right: 80px;
 	float: right;
 }
 
-.login #text{
+.login #text {
 	margin-left: 80px;
 	float: left;
 }
 
-.login input{
+.login input {
 	margin: 5px;
 }
 
-.textbox{
+.textbox {
 	font-size: 15px;
 	padding: 10px;
 	width: 300px;
@@ -294,7 +298,7 @@ hr{
 	border-radius: 10px;
 }
 
-.textbox.long{
+.textbox.long {
 	text-align: left;
 	width: 380px;
 	height: 300px;
@@ -303,11 +307,11 @@ hr{
 	resize: none;
 }
 
-.textbox.long:focus{
+.textbox.long:focus {
 	outline: none;
 }
 
-.login .passbox{
+.login .passbox {
 	font-size: 15px;
 	padding: 10px;
 	width: 320px;
@@ -316,7 +320,7 @@ hr{
 	display: inline-flex;
 }
 
-.login .passbox .textbox{
+.login .passbox .textbox {
 	margin: 0px;
 	width: 280px;
 	border: none;
@@ -324,7 +328,7 @@ hr{
 	flex: 4;
 }
 
-.login .passbox .passeye{
+.login .passbox .passeye {
 	background-image: url(../media/images/icons/passee.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -337,26 +341,26 @@ hr{
 	flex: 1;
 }
 
-.login .passbox .passeye:checked{
+.login .passbox .passeye:checked {
 	margin: 0px;
 }
 
-.login .selectrow{
+.login .selectrow {
 	width: 350px;
 	margin: 10px;
 	padding-right: 30px;
 	display: inline-block;
 }
 
-.login .selectrow #text{
+.login .selectrow #text {
 	margin-left: 45px;
 }
 
-.login .selectrow .error{
+.login .selectrow .error {
 	margin-right: 10px;
 }
 
-.selectbox{
+.selectbox {
 	font-size: 15px;
 	margin-left: 10px;
 	height: 40px;
@@ -364,60 +368,60 @@ hr{
 	border-radius: 10px;
 }
 
-.login .selectbox{
+.login .selectbox {
 	float: right;
 }
 
-.login #checkbox{
+.login #checkbox {
 	font-size: 15px;
 }
 
-.login .btpress{
+.login .btpress {
 	font-size: 15px;
 	width: 100px;
 	height: 30px;
 	float: none;
 }
 
-.login #signin{
+.login #signin {
 	text-decoration: underline;
 	font-size: 12px;
 }
 
-.content{
+.content {
 	margin-top: 90px;
 	margin-left: 190px;
 	margin-right: 190px;
 	padding: 10px;
 }
 
-.content.search{
+.content.search {
 	margin-left: 17%;
 	margin-right: 2%;
 }
 
-.content.search .login{
+.content.search .login {
 	margin-left: 23%;
 	margin-bottom: 23%;
 }
 
-.content.search .login ul{
+.content.search .login ul {
 	text-align: left;
 }
 
-.blabel{
+.blabel {
 	line-height: 5px;
 	padding-left: 40px;
 	margin-bottom: 40px;
 }
 
-.brow{
+.brow {
 	margin: 10px;
 	padding: 20px;
 	border-radius: 15px;
 }
 
-.filters{
+.filters {
 	padding: 5px;
 	width: 280px;
 	top: 100px;
@@ -425,39 +429,39 @@ hr{
 	position: fixed;
 }
 
-.filters h2{
+.filters h2 {
 	margin: 5px;
 }
 
-.filters .selectbox{
+.filters .selectbox {
 	margin-bottom: 5px;
 	padding-right: 10px;
 }
 
-.filters ul{
+.filters ul {
 	padding-left: 25px;
 }
 
-.filters #poemlst ul{
+.filters #poemlst ul {
 	padding-left: 5px;
 	max-height: 340px;
 	overflow-y: auto;
 	list-style: none;
 }
 
-.filters #poemlst ul li{
+.filters #poemlst ul li {
 	margin-bottom: 5px;
 }
 
-.brow .bp{
+.brow .bp {
 	float: none;
 }
 
-.brow .bn{
+.brow .bn {
 	float: right;
 }
 
-.displaybooks{
+.displaybooks {
 	margin-top: 10px;
 	margin-left: 40px;
 	overflow-y: hidden;
@@ -465,19 +469,19 @@ hr{
 	white-space: nowrap;
 }
 
-.displaysearch{
+.displaysearch {
 	margin-left: 20px;
 }
 
-.shelf{
+.shelf {
 	margin-top: 100px;
 }
 
-#profile{
+#profile {
 	display: relative;
 }
 
-#banner{
+#banner {
 	background-attachment: fixed;
 	background-position: 0px 40px;
 	margin: 0px;
@@ -486,23 +490,21 @@ hr{
 	position: relative;
 }
 
-.profilepic{
+.profilepic {
 	width: 250px;
 	height: 333px;
 	border: 5px solid #FCF7F2;
 	border-radius: 50%;
 }
 
-#profile .profilepic{
+#profile #propic {
 	top: 250px;
-	bottom: 0px;
 	left: 200px;
-	right: 0px;
 	position: absolute;
 	z-index: 5;
 }
 
-#profile #profilepicupload{
+#profile #profilepicupload {
 	width: 50px;
 	top: 350px;
 	bottom: 0px;
@@ -513,7 +515,7 @@ hr{
 }
 
 
-#profile #vicon{
+#profile #vicon {
 	margin: 0px;
 	top: 350px;
 	bottom: 0px;
@@ -530,7 +532,7 @@ hr{
 	position: absolute;
 }
 
-#profile #username{
+#profile #username {
 	text-align: right;
 	text-shadow: 20px 20px 15px black;
 	font-size: 100px;
@@ -543,7 +545,7 @@ hr{
 	position: absolute;
 }
 
-#profile #nickname{
+#profile #nickname {
 	text-align: right;
 	text-shadow: 10px 10px 15px black;
 	font-weight: lighter;
@@ -555,12 +557,12 @@ hr{
 	position: absolute;
 }
 
-@keyframes nickname{
+@keyframes nickname {
 	from {opacity: 0%; right: 180px;}
 	to {opacity: 100%; right: 200px;}
 }
 
-#profile #litername{
+#profile #litername {
 	text-align: right;
 	text-shadow: 20px 20px 15px black;
 	font-size: 100px;
@@ -573,12 +575,12 @@ hr{
 	position: absolute;
 }
 
-@keyframes litername{
+@keyframes litername {
 	from {opacity: 0%; left: 160px;}
 	to {opacity: 100%; left: 200px;}
 }
 
-#profile #binfobar{
+#profile #binfobar {
 	text-align: right;
 	font-size: 30px;
 	padding-top: 10px;
@@ -586,19 +588,60 @@ hr{
 	padding-right: 100px;
 	height: 50px;
 	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
 }
 
-#profile #binfobar div{
+#profile .binfotip {
+	background-color: rgba(0,0,0,0.4);
+	font-size: 20px;
+	padding: 10px;
+	height: 30px;
+	top: -67px;
+	border-radius: 15px;
+	position: absolute;
+	display: none;
+	vertical-align: middle;
+	align-items: center;
+	z-index: 10;
+}
+
+#profile #tbirth {
+	left: 20px;
+}
+
+#profile #tdeath {
+	left: 200px;
+}
+
+#profile #tcountry {
+	right: -10px;
+}
+
+#profile #bhover:hover #tbirth {
+	display: flex;
+}
+
+#profile #dhover:hover #tdeath {
+	display: flex;
+}
+
+#profile #chover:hover #tcountry {
+	display: flex;
+}
+
+#profile #binfobar div {
+	position: relative;
 	display: inline-block;
 	align-items: center;
 }
 
-#profile #binfobar img{
+#profile #binfobar img {
 	margin-left: 10px;
 	margin-right: 5px;
 }
 
-#profile #binfobar #academy{
+#profile #binfobar #academy {
 	background-repeat: no-repeat;
 	background-position: center;
 	font-size: 15px;
@@ -607,8 +650,41 @@ hr{
 	padding-right: 32px;
 	width: 50px;
 	height: 50px;
-	top: 500px;
+	top: -15px;
 	position: absolute;
+}
+
+#profile #binfobar #academy #tacademy {
+	text-align: left;
+	width: 250px;
+	height: 100px;
+	left: -180px;
+}
+
+#profile #binfobar #academy:hover #tacademy {
+	display: flex;
+}
+
+#profile #bondsbar {
+	text-align: right;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 100px;
+	height: 50px;
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#profile #bondsbar .pormini {
+	top: 0px;
+	left: 0px;
+	position: relative;
+}
+
+#profile #bondsbar .pormini:hover .binfotip {
+	display: flex;
 }
 
 #displayimg {
@@ -635,15 +711,14 @@ hr{
 	z-index: 20;
 }
 
-.uphoto{
+.uphoto {
 	margin: 5px;
-	max-width: 500px;
-	max-height: 300px;
-	min-height: 300px;
+	max-width: 300px;
+	height: 150px;
 	cursor: zoom-in;
 }
 
-#bio{
+#bio {
 	text-align: left;
 	font-size: 20px;
 	padding: 200px;
@@ -664,11 +739,11 @@ hr{
 	opacity: 0%;
 }
 
-#reportab .selectbox{
+#reportab .selectbox {
 	margin-top: 10px;
 }
 
-#reportab .textbox{
+#reportab .textbox {
 	margin-top: 10px; 
 	margin-left: 10px;
 	width: 200px;
@@ -678,7 +753,7 @@ hr{
 	margin: 0px;
 }
 
-#bookinfo{
+#bookinfo {
 	margin-top: 95px;
 	margin-left: 190px;
 	margin-right: 190px;
@@ -686,38 +761,38 @@ hr{
 	border-radius: 15px;
 }
 
-#bookinfo #bookblock{
+#bookinfo #bookblock {
 	display: inline-flex;
 }
 
-#bookinfo #coverart{
+#bookinfo #coverart {
 	width: 466px;
 	height: 700px;
 	border-radius: 30px;
 }
 
-#bookinfo #info{
+#bookinfo #info {
 	margin: 0px;
 	padding: 30px;
 	height: 440px;
 }
 
-#bookinfo #info h1{
+#bookinfo #info h1 {
 	font-size: 70px;
 	width: 500px;
 	margin-top: 0px;
 }
 
-#bookinfo #info h2{
+#bookinfo #info h2 {
 	margin: 0px;
 	margin-bottom: 5px;
 }
 
-#bookinfo #couflag{
+#bookinfo #couflag {
 	height: 25px;
 }
 
-#bookinfo #warning{
+#bookinfo #warning {
 	font-size: 20px;
 	margin-top: 20px;
 	padding: 15px;
@@ -725,22 +800,22 @@ hr{
 	border-radius: 15px;
 }
 
-#bookinfo #info #sinopsis{
+#bookinfo #info #sinopsis {
 	margin: 0px;
 	padding-top: 30px;
 	padding-left: 30px;
 	width: 300px;
 }
 
-#bookinfo #info #sinopsis h2{
+#bookinfo #info #sinopsis h2 {
 	display: none;
 }
 
-#bookinfo #info #sinopsis h3{
+#bookinfo #info #sinopsis h3 {
 	display: none;
 }
 
-#bookinfo #status{
+#bookinfo #status {
 	margin: 0px;
 	padding: 30px;
 	width: 10px;
@@ -749,7 +824,7 @@ hr{
 	position: absolute;
 }
 
-#bookinfo #status #rating{
+#bookinfo #status #rating {
 	text-align: center;
 	text-shadow: -1px -1px 0 #000000,
 				-1px 1px 0 #000000,
@@ -764,20 +839,20 @@ hr{
 	border-radius: 30px;
 }
 
-#bookinfo #status #statistics{
+#bookinfo #status #statistics {
 	text-align: center;
 	margin-top: 10px; 
 	width: 150px;
 	display: inline-block;
 }
 
-#bookinfo #status #ubuttons{
+#bookinfo #status #ubuttons {
 	margin-right: 50px;
 	width: 150px;
 	display: inline-block;
 }
 
-#bookinfo #status #ubuttons input{
+#bookinfo #status #ubuttons input {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 5px;
@@ -786,7 +861,7 @@ hr{
 	float: left;
 }
 
-#bookinfo #status #ubuttons button{
+#bookinfo #status #ubuttons button {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 5px;
@@ -795,54 +870,54 @@ hr{
 	float: left;
 }
 
-#bookinfo .summary{
+#bookinfo .summary {
 	margin-top: 30px;
 	width: 300px;
 }
 
-#bookinfo #review{
+#bookinfo #review {
 	line-height: 25px;
 	font-size: 20px;
 	margin: 100px;
 }
 
-#bookinfo #getbooks{
+#bookinfo #getbooks {
 	margin-left: 100px;
 }
 
-#bookinfo #downloads{
+#bookinfo #downloads {
 	margin-bottom: 10px;
 	width: 1300px;
 }
 
-#bookinfo #downloads th{
+#bookinfo #downloads th {
 	padding: 10px;
 	transition-duration: 0.2s;
 }
 
-#bookinfo #downloads tr{
+#bookinfo #downloads tr {
 	transition-duration: 0.2s;
 	cursor: pointer;
 }
 
-#bookinfo #downloads #nodownloads{
+#bookinfo #downloads #nodownloads {
 	cursor: not-allowed;
 }
 
-#bookinfo #getbooks .btpress{
+#bookinfo #getbooks .btpress {
 	margin-left: 0px; 
 	margin-bottom: 30px; 
 	height: 30px;
 	float: none;
 }
 
-#bookinfo #opinions{
+#bookinfo #opinions {
 	white-space: nowrap;
 	margin: 100px;
 	overflow-x: scroll;
 }
 
-#bookinfo .thbcritic{
+#bookinfo .thbcritic {
 	white-space: normal;
 	font-size: 20px;
 	margin: 10px;
@@ -854,38 +929,38 @@ hr{
 	display: inline-flex;
 }
 
-#bookinfo .thbcritic div{
+#bookinfo .thbcritic div {
 	white-space: normal;
 	word-break: break-word;
 	display: block;
 }
 
-#bookinfo .thbcritic #cricom{
+#bookinfo .thbcritic #cricom {
 	height: 330px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-#bookinfo .thbcritic h2{
+#bookinfo .thbcritic h2 {
 	margin: 0px;
 }
 
-#bookinfo .thbcritic h3{
+#bookinfo .thbcritic h3 {
 	font-size: 12px;
 	margin: 5px;
 	margin-bottom: 20px;
 }
 
-#bookinfo .thbcritic #coucom{
+#bookinfo .thbcritic #coucom {
 	font-size: 10px;
 	float: right;
 }
 
-#bookinfo .thbcritic #subcom{
+#bookinfo .thbcritic #subcom {
 	float: none;
 }
 
-#bookinfo #reportbt{
+#bookinfo #reportbt {
 	padding: 2px;
 	width: 40px;
 	height: 40px;
@@ -894,21 +969,21 @@ hr{
 	position: absolute;
 }
 
-.quotepoem{
+.quotepoem {
 	margin-left: 350px; 
 	padding: 30px;
 	width: 600px;
 	border-radius: 15px;
 }
 
-.quotepoem span{
+.quotepoem span {
 	font-size: 20px;
 	font-weight: normal;
 	font-style: italic;
 	float: right;
 }
 
-.displayresults{
+.displayresults {
 	line-height: 5px;
 	margin: 10px;
 	padding: 20px;
@@ -917,7 +992,7 @@ hr{
 	overflow: auto;
 }
 
-.thumbs{
+.thumbs {
 	white-space: normal;
 	text-align: left;
 	font-size: 20px;
@@ -934,17 +1009,17 @@ hr{
 	overflow-y: hidden;
 }
 
-.coverart{
+.coverart {
 	width: 153px;
 	flex: 0;
 }
 
-.coverart img{
+.coverart img {
 	height: 230px;
 	border-radius: 15px;
 }
 
-.description{
+.description {
 	text-align: left;
 	font-size: 15px;
 	margin-left: 10px;
@@ -954,14 +1029,14 @@ hr{
 	flex: 1;
 }
 
-.description h2{
+.description h2 {
 	font-size: 30px;
 	font-weight: bold;
 	margin: 0px;
 	margin-bottom: 5px; 
 }
 
-.description h3{
+.description h3 {
 	font-size: 18px;
 	font-style: italic;
 	font-weight: lighter;
@@ -969,7 +1044,7 @@ hr{
 	margin-bottom: 5px; 
 }
 
-.portraits{
+.portraits {
 	white-space: normal;
 	text-align: center;
 	font-size: 20px;
@@ -986,7 +1061,7 @@ hr{
 	float: left;
 }
 
-.portraits .profilepic{
+.portraits .profilepic {
 	margin-left: 12px;
 	width: 200px;
 	height: 266px;
@@ -994,36 +1069,56 @@ hr{
 	float: center;
 }
 
-.portraits h2{
+.portraits h2 {
 	font-size: 30px;
 	display: block;
 }
 
-.infocontent{
+.pormini {
+	padding: 0px;
+	width: 38px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+}
+
+.pormini .profilepic {
+	top: 0px;
+	left: 0px;
+	width: 38px;
+	height: 50px;
+	border: none;
+}
+
+.pormini .binfotip{
+	left: -20px;
+}
+
+.infocontent {
 	font-size: 20px;
 	margin-left: 190px;
 	margin-right: 190px;
 	padding: 100px;
 }
 
-.infocontent button{
+.infocontent button {
 	float: left;
 }
 
-.summary{
+.summary {
 	margin-right: 1140px;
 	width: 600px;
 	border-style: double;
 	border-radius: 15px;
 }
 
-.proedit{
+.proedit {
 	margin-left: 190px; 
 	width: 1000px;
 	display: inline-block;
 }
 
-#optlst{
+#optlst {
 	font-size: 30px;
 	line-height: 40px;
 	margin: 0px;
@@ -1032,52 +1127,52 @@ hr{
 	float: left;
 }
 
-#optlst ul{
+#optlst ul {
 	list-style: none;
 }
 
-#optlst .btpress{
+#optlst .btpress {
 	width: 150px;
 }
 
-#optlst input[type='radio']{
+#optlst input[type='radio'] {
 	display: none;
 }
 
-#optlst label{
+#optlst label {
 	cursor: pointer;
 }
 
-.optabs{
+.optabs {
 	width: 800px;
 	margin: 0px;
 	float: left;
 }
 
-.upimg{
+.upimg {
 	display: block;
 	float: left;
 }
 
-.filprev{
+.filprev {
 	border: 3px dotted grey;
 }
 
-.filprev #prevpic{
+.filprev #prevpic {
 	width: 100px;
 	height: 80px;
 }
 
-.filprev #prevban{
+.filprev #prevban {
 	width: 77px;
 	height: 20px;
 }
 
-.passrow{
+.passrow {
 	width: 400px;
 }
 
-.lowerbar{
+.lowerbar {
 	margin: 0px;
 	padding: 0px;
 	padding-top: 40px;
@@ -1087,7 +1182,7 @@ hr{
 	float: none;
 }
 
-#langbox{
+#langbox {
 	margin-left: 190px;
 	width: 200px;
 	height: 40px;
@@ -1095,7 +1190,7 @@ hr{
 	flex: 0;
 }
 
-.lowerbarinfo{
+.lowerbarinfo {
 	margin-left: 190px; 
 	padding-left: 10px;
 	width: 100px;
@@ -1103,7 +1198,7 @@ hr{
 	flex: 1;
 }
 
-.disclaimer{
+.disclaimer {
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
@@ -1121,25 +1216,25 @@ hr{
   transition-duration: 4s;
 }
 
-.login.long{
+.login.long {
 	width: 100%;
 	margin-left: 10px; 
 	margin-right: 20px;
 }
 
-.requestable{
+.requestable {
 	margin-left: 20px;
 	margin-bottom: 10px;
 	width: 1600px;
 	border-collapse: collapse;
 }
 
-.requestable th{
+.requestable th {
 	padding: 10px;
 	transition-duration: 0.2s;
 }
 
-.requestable tr{
+.requestable tr {
 	transition-duration: 0.2s;
 	cursor: pointer;
 }

@@ -8,36 +8,88 @@
 		if ($profile->num_rows > 0) {
 			$i = $profile->fetch_assoc();
 
-			if ($i["auctor"] == '1') {$v = "<img id='vicon' src='media/images/icons/verified.png' />";}
-			else {$v = "";};
-
-			if (strlen($i['birth']) > 7)
-				{$b = substr($i['birth'],8,2). '/'. substr($i['birth'],5,2) .'/'. substr($i['birth'],0,4);}
-			else {$b = $i['birth'];}
-			if (($i['death'] != null)&&($i['auctor'] == '1')) {
-				$d = "<img src='media/images/icons/death.png' height='30' /><span>";
-				if (strlen($i['death']) > 7)
-					{$d = $d.substr($i['death'],8,2). '/'. substr($i['death'],5,2) .'/'. substr($i['death'],0,4);}
-				else {$d = $d.$i['death'];}
-				$d = $d."</span>";
-			}
-			else {$d = '';}
-
-			if ($i['academy'] != null) {
-				$acd = "<div id='academy' style='background-image: url(media/images/icons/" .substr($i["academy"],0,3). ".png);' title='".$acalst[substr($i["academy"],0,3)]."
-				 \nCadeira ".substr($i['academy'],4,2)." - Posição ".substr($i['academy'],7,2)."'>".substr($i['academy'],4,2)."</div>";
-			}
-			else {$acd = '';}
-
-			$bnr = "media/images/banners/" .$i["nick"]. ".jpg";
-
-			$find = $conn->query("SELECT ".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
+			#NAME
+			$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
 			$n = $find->fetch_assoc();
 			if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 			else {$nm = $n[$_COOKIE['lang']];}
 
 			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';echo "<script type='text/javascript'>namescroll(40,0)</script>";}
 			else {$hst = '';echo "<script type='text/javascript'>namescroll(160,200)</script>";}
+
+			#VERIFICATION
+			if ($i["auctor"] == '1') {$v = "<img id='vicon' src='media/images/icons/verified.png' />";}
+			else {$v = "";};
+
+			#BIRTH & DEATH
+			if (strlen($i['birth']) > 7) {
+				$dd = substr($i['birth'],8,2);
+				$mm = substr($i['birth'],5,2);
+				$yy = substr($i['birth'],0,4);
+				$b = $dd.'/'.$mm.'/'.$yy;
+				if ((($dd >= 22)&&($mm == '11'))||(($dd <= 21)&&($mm == '12'))) {$sgn='01';}
+				else if ((($dd >= 22)&&($mm == '12'))||(($dd <= 19)&&($mm == '01'))) {$sgn = '02';}
+				else if ((($dd >= 20)&&($mm == '01'))||(($dd <= 18)&&($mm == '02'))) {$sgn = '03';}
+				else if ((($dd >= 19)&&($mm == '02'))||(($dd <= 20)&&($mm == '03'))) {$sgn = '04';}
+				else if ((($dd >= 21)&&($mm == '03'))||(($dd <= 19)&&($mm == '04'))) {$sgn = '05';}
+				else if ((($dd >= 20)&&($mm == '04'))||(($dd <= 20)&&($mm == '05'))) {$sgn = '06';}
+				else if ((($dd >= 21)&&($mm == '05'))||(($dd <= 20)&&($mm == '06'))) {$sgn = '07';}
+				else if ((($dd >= 21)&&($mm == '06'))||(($dd <= 22)&&($mm == '07'))) {$sgn = '08';}
+				else if ((($dd >= 23)&&($mm == '07'))||(($dd <= 22)&&($mm == '08'))) {$sgn = '09';}
+				else if ((($dd >= 23)&&($mm == '08'))||(($dd <= 22)&&($mm == '09'))) {$sgn = '10';}
+				else if ((($dd >= 23)&&($mm == '09'))||(($dd <= 22)&&($mm == '10'))) {$sgn = '11';}
+				else if ((($dd >= 23)&&($mm == '10'))||(($dd <= 21)&&($mm == '11'))) {$sgn = '12';}
+				$zd = "<a href='https://www.flaticon.com/authors/bqlqn' target='_blank'>
+							<img src='media/images/icons/zodiac/".$sgn.".png' height='30' title='Icons made by Freepik' />
+						</a>".$zdclst[$sgn];
+			}
+			else {$b = $i['birth'];$yy = substr($i['birth'],0,3);$zd = '';}
+
+			if (($i['death'] != null)&&($i['auctor'] == '1')) {
+				$d = "<span id='dhover'><img src='media/images/icons/death.png' height='30' />";
+				if (strlen($i['death']) > 7) {
+					$d = $d.substr($i['death'],8,2).'/'.substr($i['death'],5,2).'/'.substr($i['death'],0,4);
+					$dth = substr($i['death'],0,4);
+				}
+				else {$d = $d.$i['death'];$dth=substr($i['death'],0,3);}
+				$age = abs($dth - $yy);
+				if ($_COOKIE['lang'] == 'pt') {$age = $age." anos";}
+				if ($_COOKIE['lang'] == 'en') {$age = $age." years old";}
+				if ($_COOKIE['lang'] == 'es') {$age = $age." años";}
+				$d = $d."<span id='tdeath' class='binfotip'>".$age."</span></span>";
+			}
+			else {$d = '';$age = '';}
+
+			#ACADEMY
+			if ($i['academy'] != null) {
+				$acd = "<div id='academy' style='background-image: url(media/images/icons/" .substr($i["academy"],0,3). ".png);'>".substr($i['academy'],4,2)."
+				<span id='tacademy' class='binfotip'>".$acalst[substr($i["academy"],0,3)]."<br />Cadeira ".substr($i['academy'],4,2)." - Posição ".substr($i['academy'],7,2)
+				."</span></div>";
+			}
+			else {$acd = '';}
+
+			#BONDS
+			if ($i['bonds'] != null) {
+				$bnds = "<div id='bondsbar'>";
+				$inx = 0;
+					for($x=0;$x<strlen($i['bonds']);$x++) {
+						if ($i['bonds'][$x] == ';') {
+							$nm = substr($i['bonds'],$x-$inx,$inx);
+							$kb = substr($nm,strlen($nm)-2,1);
+							$t = substr($nm,0,strlen($nm)-3);
+							$bnds = $bnds."<a href='users/".$t.".php'>
+									<button class='pormini'>
+										<img class='profilepic' src='media/images/profilepics/" .$t. ".jpg' />
+										<span class='binfotip'>".$bndlst[$kb]."</span>
+									</button>
+								</a>";
+							$inx = 0;
+						}
+						$inx++;
+					}
+				$bnds = $bnds."</div>";
+			}
+			else {$bnds = '';}
 
 			#GALLERY
 			if ($i['auctor'] == '1') {
@@ -106,24 +158,31 @@
 			if ($i[$_COOKIE['lang']] == null) {$nm = $i['pt'];}
 			else {$nm = $i[$_COOKIE['lang']];}
 
-			echo "<div id='banner' style='background-image: url(".'"'.$bnr.'"'.")'></div>
+			echo "<div id='banner' style='background-image: url(".'media/images/banners/'.$i["nick"].'.jpg'.")'></div>
 				<div id='profile'>
-					<img class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' title='" .$nm. "'/>
+					<img  id='propic' class='profilepic' src='media/images/profilepics/" .$i["nick"]. ".jpg' title='" .$nm. "'/>
 					<h1 id='username' ".$hst."> " .$nm. " </h1> " .$v. "
 					<h2 id='nickname'> @" .$i["nick"]. " </h2>
 					<div id='binfobar'>
 						<div>
-							<img src='media/images/icons/birth.png' height='30' />
-							<span> " .$b. " </span>
-							" .$d. "</div>
-						<div>
 							<img src='media/images/icons/gender_" .$i["gender"]. ".png' height='30' />
 							<span> " .$i["hometown"]. " </span>
-							<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
-								<img id='couflag' src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
-							</a>".$acd."
+							<span id='chover'>
+								<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
+									<img src='media/images/icons/flags/" .$i["country"]. ".png' height='30' title='Icons made by Freepik' />
+								</a>
+								<span id='tcountry' class='binfotip'>".$coulst[$i['country']]."</span>
+							</span>".$acd."
 						</div>
-					</div>
+						<div>
+							<span id='bhover'> 
+								<img src='media/images/icons/birth.png' height='30' />
+								" .$b. "
+								<span id='tbirth' class='binfotip'>".$zd."</span>
+							</span>
+							" .$d. "
+						</div>
+					</div>".$bnds."
 				</div>".$gly.$slf.$fav;
 			}
 	}
