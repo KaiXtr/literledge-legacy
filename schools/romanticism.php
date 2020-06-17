@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			O Romantismo é uma escola literária do século XIX. Surge na Alemanha, num movimento chamado Sturm und Drang (tempestade e ímpeto). Esse movimento se baseia na emoção exacerbada e se opõe ao equilíbrio artificial do arcadismo. Da Alemanha, o movimento se espalha pela Inglaterra e França, alcançando toda a Europa.
 

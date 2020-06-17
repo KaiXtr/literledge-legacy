@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			O movimento conhecido como Iluminismo (ou Ilustração) foi um influente processo cultural, social, filosófico e político que tem suas origens ainda no século XVII, com a Revolução Científica possibilitada pela pesquisa efetuada por nomes como René Descartes (1596-1650) e Isaac Newton (1643-1727), mas se desenvolveu plenamente apenas durante o século seguinte. Por tal motivo, os anos 1700 são qualificados como o “Século das Luzes”. Embora a França seja amplamente considerada a nação que liderou o processo de desenvolvimento desta mentalidade, o próprio termo faz referência à palavra alemã Aufklarung, que significa esclarecimento; logo, podemos ver os primeiros sinais do movimento em outras partes da Europa – como o Sacro Império Romano Germânico, Holanda e Inglaterra – antes que o Iluminismo encontrasse terreno mais fértil em França.
 

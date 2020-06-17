@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			Na literatura brasileira, o Indianismo corresponde a uma das tendências literárias mais marcantes do período romântico.
 

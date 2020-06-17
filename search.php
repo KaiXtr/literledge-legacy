@@ -125,7 +125,10 @@
 								if ($search == '$auctors') {$p = true;}
 								if ((@$flet) && ($nm[0] != $flet)) {$p = false;}
 								if ((@$fcou) && ($i['country'] != $fcou)) {$p = false;}
-								if ((@$fyer) && (substr($i['birth'],0,2) != substr($fyer,0,2) - 1)) {$p = false;}
+								if (@$fyer) {
+									if ((substr($fyer,-2,2) != 'BD')&&(substr($i['birth'],0,2) != substr($fyer,0,2))) {$p = false;}
+									else if ($i['birth'][0] != $fyer[0]) {$p = false;}
+								}
 
 								if ($p == true) {
 									$por = "<a href='users/" .$i["nick"]. ".php'>
@@ -215,7 +218,10 @@
 
 							if ((@$flet) && ($t[$lang][0] != $flet)) {$p = false;}
 							if ((@$fcou) && ($i['country'] != $fcou)) {$p = false;}
-							if ((@$fyer) && (substr($i['year'],0,2) != substr($fyer,0,2) - 1)) {$p = false;}
+							if (@$fyer) {
+									if ((substr($fyer,-2,2) != 'BD')&&(substr($i['year'],0,2) != substr($fyer,0,2))) {$p = false;}
+									else if (substr($i['year'],0,1) != substr($fyer,0,1)) {$p = false;}
+								}
 							if ((@$fgen) && (strtolower($i['genre']) != $fgen)) {$p = false;}
 							if ((@$flsc) && (strtolower($i['litschool']) != $flsc)) {$p = false;}
 
@@ -419,19 +425,37 @@
 					}
 				#CENTURY FILTER
 				$found = array();
-				$find = $conn->query("SELECT birth, auctor FROM users");
-				if ($find->num_rows > 0) {
-					while ($i = $find->fetch_assoc()) {
-						if ((in_array(substr($i['birth'],0,2)."00",$found) == false) && ($i['auctor'] == '1')) {
-							$found[] = substr($i['birth'],0,2)."00";
+				if ($search != '$books') {
+					$find = $conn->query("SELECT birth, auctor FROM users");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_assoc()) {
+							if (substr($i['birth'],-3,3) != 'a.c') {
+								if ((in_array(substr($i['birth'],0,2)."00",$found) == false) && ($i['auctor'] == '1')) {
+									$found[] = substr($i['birth'],0,2)."00";
+									}
+								}
+							else {
+								if ((in_array($i['birth'][0]."	BD",$found) == false) && ($i['auctor'] == '1')) {
+									$found[] = $i['birth'][0]."BD";
+									}
+								}
 							}
 						}
 					}
-				$find = $conn->query("SELECT year FROM books");
-				if ($find->num_rows > 0) {
-					while ($i = $find->fetch_assoc()) {
-						if (in_array(substr($i['year'],0,2)."00",$found) == false) {
-							$found[] = substr($i['year'],0,2)."00";
+				if ($search != '$auctors') {
+					$find = $conn->query("SELECT year FROM books");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_assoc()) {
+							if (substr($i['year'],-3,3) != 'a.c') {
+								if (in_array(substr($i['year'],0,2)."00",$found) == false) {
+									$found[] = substr($i['year'],0,2)."00";
+									}
+								}
+							else {
+								if (in_array($i['year'][0]."BD",$found) == false) {
+									$found[] = $i['year'][0]."BD";
+									}
+								}
 							}
 						}
 					}
@@ -445,11 +469,10 @@
 					if ($_COOKIE['lang'] == 'es')
 						{echo "Siglo</option>";}
 					for ($x = 0;$x < sizeof($found);$x++) {
-						if ($fyer == $found[$x])
-							{echo "<option value='".($found[$x] + 100)."' selected>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
-						else
-							{echo "<option value='".($found[$x] + 100)."'>".$cenlst[(substr($found[$x],0,2) + 1)]."</option>";}
-						}
+						if ($fyer == $found[$x]) {$sl = 'selected';} else {$sl = '';}
+						if (substr($found[$x],-2,2) == 'BD') {echo "<option value='".$found[$x]."' ".$sl.">".$cenlst[$found[$x]]." BD</option>";}
+						else {echo "<option value='".$found[$x]."' ".$sl.">".$cenlst[substr($found[$x],0,2)]."</option>";}
+					}
 					echo "</select>";
 					}
 				$found = array();
@@ -511,9 +534,9 @@
 					echo "</select>";
 					}
 				echo "</div>";
+				$lnk = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 				if (($aud == true)||($brusers != '')||($bod == true)) {
 					echo "<div class='brow'><h2>";
-					$lnk = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 					if ($_COOKIE['lang'] == 'pt') {echo "Conteúdo";}
 					if ($_COOKIE['lang'] == 'en') {echo "Content";}
 					if ($_COOKIE['lang'] == 'es') {echo "Conteudo";}

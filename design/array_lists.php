@@ -12,7 +12,8 @@ else if ($_COOKIE['lang'] == 'es') {
 	}
 
 #CENTURIES
-$cenlst = array('10'=>'X','11'=>'XI','12'=>'XII','13'=>'XIII','14'=>'XIV','15'=>'XV','16'=>'XVI','17'=>'XVII','18'=>'XVIII','19'=>'XIX','20'=>'XX','21'=>'XXI');
+$cenlst = array('9'=>'X','10'=>'XI','11'=>'XII','12'=>'XIII','13'=>'XIV','14'=>'XV','15'=>'XVI','16'=>'XVII','17'=>'XVIII','18'=>'XIX','19'=>'XX','20'=>'XXI',
+	'1BD'=>'1th','2BD'=>'2th','3BD'=>'3th','4BD'=>'4th','5BD'=>'5th','6BD'=>'6th','7BD'=>'7th','8BD'=>'8th','9BD'=>'9th',);
 
 #FILTERS
 if ($_COOKIE['lang'] == 'pt') {
@@ -27,31 +28,31 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #COUNTRIES
 if ($_COOKIE['lang'] == 'pt') {
-	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolívia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CZE'=>'Tchéquia','COL'=>'Colômbia','DEN'=>'Dinamarca','ECU'=>'Equador','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia','GUY'=>'Guiana',
+	$coulst = array('ARG'=>'Argentina','AUS'=>'Austrália','BOL'=>'Bolívia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CHN'=>'China','CZE'=>'Tchéquia','COL'=>'Colômbia','DEN'=>'Dinamarca','ECU'=>'Equador','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia','GUY'=>'Guiana',
 	'IRL'=>'Irlanda','ITA'=>'Itália','MEX'=>'México','NED'=>'Países Baixos','PER'=>'Peru','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguai','USA'=>'Estados Unidos','WAL'=>'País de Gales');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolivia','BRA'=>'Brazil','CAN'=>'Canada','CHI'=>'Chile','CZE'=>'Czechia','COL'=>'Colombia','DEN'=>'Denmak','ECU'=>'Ecuador','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece','GUY'=>'Guyana',
+	$coulst = array('ARG'=>'Argentina','AUS'=>'Australia','BOL'=>'Bolivia','BRA'=>'Brazil','CAN'=>'Canada','CHI'=>'Chile','CHN'=>'China','CZE'=>'Czechia','COL'=>'Colombia','DEN'=>'Denmak','ECU'=>'Ecuador','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece','GUY'=>'Guyana',
 	'IRL'=>'Ireland','ITA'=>'Italy','MEX'=>'Mexico','NED'=>'Netherlands','PER'=>'Perú','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'United States','WAL'=>'Wales');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$coulst = array('ARG'=>'Argentina','BOL'=>'Bolivia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CZE'=>'Chequia','COL'=>'Colombia','DEN'=>'Dinamarca','ECU'=>'Ecuador','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia','GUY'=>'Guayana',
+	$coulst = array('ARG'=>'Argentina','AUS'=>'Australia','BOL'=>'Bolivia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CHN'=>'China','CZE'=>'Chequia','COL'=>'Colombia','DEN'=>'Dinamarca','ECU'=>'Ecuador','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia','GUY'=>'Guayana',
 	'IRL'=>'Irlanda','ITA'=>'Italia','MEX'=>'Mexico','NED'=>'Países Bajos','PER'=>'Peru','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','SUR'=>'Surinam','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'Estados Unidos','WAL'=>'Gales');
 	}
 
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
-	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Detective'=>'Investigação','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo',
+	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Detective'=>'Investigação','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo',
 	'Parody'=>'Paródia','Philosophy'=>'Filosofia','Play'=>'Peça','Rhapsody'=>'Rapsódia','Romance'=>'Romance','Sociology'=>'Sociologia','Tale'=>'Conto','Tragedy'=>'Tragédia',
 	'Poetry'=>'Poesia');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$gnrlst = array('Chronicle'=>'Chronicle','Comedy'=>'Comedy','Detective'=>'Detective','Epic'=>'Epic','Fantasy'=>'Fantasy','Horror'=>'Horror','Journalism'=>'Journalism',
+	$gnrlst = array('Chronicle'=>'Chronicle','Comedy'=>'Comedy','Detective'=>'Detective','Document'=>'Document','Drama'=>'Drama','Epic'=>'Epic','Fantasy'=>'Fantasy','Horror'=>'Horror','Journalism'=>'Journalism',
 	'Parody'=>'Parody','Philosophy'=>'Philosophy','Play'=>'Play','Rhapsody'=>'Rhapsody','Romance'=>'Romance','Sociology'=>'Sociology','Tale'=>'Tale',
 	'Tragedy'=>'Tragedy','Poetry'=>'Poetry');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comedia','Detective'=>'Investigación','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Horror','Journalism'=>'Jornalismo',
+	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comedia','Detective'=>'Investigación','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Horror','Journalism'=>'Jornalismo',
 	'Parody'=>'Parodia','Philosophy'=>'Filosofía','Play'=>'Pieza','Rhapsody'=>'Rapsodia','Romance'=>'Romance','Sociology'=>'Sociología','Tale'=>'Conto',
 	'Tragedy'=>'Tragédia','Poetry'=>'Poesía');
 	}

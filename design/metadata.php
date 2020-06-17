@@ -22,6 +22,7 @@
 ?>
 <base href='http://localhost/literledge/' />
 <!--<base href='http://192.168.43.230/literledge/' />-->
+<?php define('BASE_URL','http://localhost/literledge/'); ?>
 
 <meta charset='utf-8' />
 <meta name='refresh' content='60' />

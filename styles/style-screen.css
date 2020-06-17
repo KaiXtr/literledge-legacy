@@ -590,6 +590,12 @@ hr{
 
 #profile #binfobar div{
 	display: inline-block;
+	align-items: center;
+}
+
+#profile #binfobar img{
+	margin-left: 10px;
+	margin-right: 5px;
 }
 
 #profile #binfobar #academy{
@@ -644,6 +650,7 @@ hr{
 	padding-top: 100px;
 	padding-bottom: 50px;
 	position: relative;
+	align-items: center;
 }
 
 #reportab {

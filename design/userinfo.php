@@ -14,7 +14,7 @@
 			if (strlen($i['birth']) > 7)
 				{$b = substr($i['birth'],8,2). '/'. substr($i['birth'],5,2) .'/'. substr($i['birth'],0,4);}
 			else {$b = $i['birth'];}
-			if ($i['auctor'] == '1') {
+			if (($i['death'] != null)&&($i['auctor'] == '1')) {
 				$d = "<img src='media/images/icons/death.png' height='30' /><span>";
 				if (strlen($i['death']) > 7)
 					{$d = $d.substr($i['death'],8,2). '/'. substr($i['death'],5,2) .'/'. substr($i['death'],0,4);}
@@ -92,8 +92,8 @@
 										<div class='description'>
 										<h2> ".$t[$lang]." </h2>
 										<h3> ".$nm." </h3>";
-										$thb = $thb. file_get_contents('../sinopsis/'.$s['id'].'.php');
-									$thb = $thb. "</div>
+										include '../sinopsis/'.$s['id'].'.php';
+									$thb = $thb.$sin."</div>
 									</button>
 								</a>";
 						if ($s['state'] > 0) {$slf = $slf.$thb;}

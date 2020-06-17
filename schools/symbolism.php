@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			O simbolismo foi uma tendência literária que nasceu na França, com as teorias estéticas de Charles Baudelaire, e floresceu principalmente na poesia, em diversas partes do mundo ocidental, no final do século XIX. É o último movimento antes do surgimento do modernismo na literatura, por isso é também considerado pré-moderno.
 

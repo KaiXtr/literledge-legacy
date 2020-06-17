@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			Em 20 de Fevereiro de 1909 foi lançado pelo poeta italiano Felippo Tommaso Marinetti, no jornal francês Le Figaro, o Manifesto Futurista. Este foi o ponta pé inicial para dar início a criação de um movimento de cunho artístico e literário denominado Futurismo. O Futurismo caracterizou-se principalmente pelo rompimento com a arte e a cultura do passado, celebrando o progresso e a tecnologia moderna, a vida urbana, a velocidade e a energia ao ponto de, os mais extremos, exaltarem as armas e a violência. Os integrantes desse estilo foram os grandes divulgadores do movimento, recorrendo a palestras e a publicidade para dar visibilidade a este estilo.
 

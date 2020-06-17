@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			O Impressionismo foi um movimento que se manifestou, especialmente nas artes plásticas no fim do século XIX na França. Os impressionistas rejeitavam as convenções da arte acadêmica vigente na época. As pinturas do Impressionismo captavam as impressões perceptivas de luminosidade, cor e sombra das paisagens, por isso pintavam o mesmo quadro em diferentes horários do dia.
 

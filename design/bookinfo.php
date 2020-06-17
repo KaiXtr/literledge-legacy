@@ -43,7 +43,7 @@
 				}
 
 				if ($b['series'] != null)
-					{$sv = "<h2><a href='search.php?q=".strtolower($b["litschool"])."'>".$b["series"]." • Vol. ".$b["volume"]."</a></h2>";}
+					{$sv = "<h2><a href='search.php?q=".strtolower($b["series"])."'>".$b["series"]." • Vol. ".$b["volume"]."</a></h2>";}
 				else {$sv = '';}
 
 

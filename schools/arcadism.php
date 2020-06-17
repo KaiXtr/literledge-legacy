@@ -16,8 +16,12 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
+			
+			
+			----
+
 			O Arcadismo foi o principal movimento literário do século XVIII. Outros nomes dados ao estilo são Setecentismo ou Neoclassicismo - a partir deste último, inclusive, percebe-se a relação do Arcadismo com valores da cultura clássica, ou seja, valores gregos, romanos e renascentistas. Os escritores árcades são conhecidos por oporem-se ao estilo barroco, inspirando-se em preceitos do Iluminismo.
 
 			Leia mais: Descubra a origem das influências do Arcadismo.

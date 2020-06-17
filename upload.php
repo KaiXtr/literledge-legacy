@@ -73,15 +73,15 @@
 							<div class='manlan' lang='en'> auctor </div>
 							<div class='manlan' lang='es'> autor </div>
 						</span> <br />
-						<input type='text' class='textbox' name='pauctor' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
-						<datalist id='auctors'>
+						<input class='textbox' name='pauctor' list='pauctor' maxLength='30' />
+						<datalist id='pauctor'>
 						<?php
 							require 'account/mysql_connect.php';
 							if ($notcon == null) {
-								$find = $conn->query("SELECT name FROM users");
+								$find = $conn->query("SELECT pt FROM users");
 								if ($find->num_rows > 0) {
 									while ($i = $find->fetch_assoc()) {
-											echo "<option value='".$i['name']."'>";
+											echo "<option value='".$i['pt']."' />";
 										}
 									}
 								$conn->close();

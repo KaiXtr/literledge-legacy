@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			Parnasianismo é uma estética literária do século XIX, contemporânea ao Realismo e ao Naturalismo. Trata-se de uma estética em reação ao sentimentalismo idealizante do romantismo. Em 1871 foi publicado o Parnasse Contemporain, donde surgiu o nome parnasianismo. A publicação contava com escritores de estilos bastante diversos, indo do simples “malabarismo formal (...) ao realismo miúdo da vida cotidiana, passando pela alegoria filosófica e pela poesia histórica e descritiva” ¹. Havia uma tendência em observar o mundo objetivamente, detendo-se em objetos e cenas, abolindo quase totalmente a subjetividade e emotividade do romantismo. Era preciso um rigor formal por meio do verso bem trabalhado com rimas bem elaboradas e raras, ritmo bem marcado (métrica do verso) e um vocabulário raro e preciso, “de efeitos plásticos e sonoros capazes de impressionar os sentidos”¹.
 

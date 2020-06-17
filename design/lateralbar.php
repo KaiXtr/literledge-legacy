@@ -57,6 +57,36 @@
 			?>
 		</a> </li>
 		<li> <hr> </li>
+
+		<li> <h1>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Escolas Literárias";}
+				if ($_COOKIE['lang'] == 'en') {echo "Literary Schools";}
+				if ($_COOKIE['lang'] == 'es') {echo "Escuelas Literarias";}
+			?>
+		</h1> </li>
+		<?php
+			if ($_COOKIE['lang'] == 'pt') {
+				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo',
+				'Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
+				'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
+				}
+			else if ($_COOKIE['lang'] == 'en') {
+				$c = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Iluminism'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
+				'Mannerism'=>'Mannerism','Modernism'=>'Modernism','Naturalism'=>'Naturalism','Parnassianism'=>'Parnassianism','Pre-Modernism'=>'Pre-Modernism','Romanticism'=>'Romanticism',
+				'Realism'=>'Realism','Symbolism'=>'Symbolism','Troubadorism'=>'Troubadorism');
+				}
+			else if ($_COOKIE['lang'] == 'es') {
+				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
+				'Mannerism'=>'Manierismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
+				'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
+				}
+			foreach ($c as $x => $v) {
+				echo "<li><a href='schools/".strtolower($x).".php'> ".$v." </li></a>";
+			}
+		?>
+		<li> <hr> </li>
+
 		<li> <h1>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Literatura";}
@@ -114,6 +144,7 @@
 			?>
 		</a> </li>
 		<li> <hr> </li>
+
 		<li> <h1>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Acadêmico";}

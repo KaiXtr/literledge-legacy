@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			O realismo, movimento estético predominante no mundo ocidental no último quartel do século XIX, surgiu como uma onda de oposição à subjetividade e ao individualismo da tendência artística anterior, o romantismo. Com a intenção de fazer da arte uma representação fidedigna e verossímil da realidade, escritores, pintores, escultores, músicos e dramaturgos privilegiaram a objetividade em suas obras, atentos à veracidade das situações cotidianas.
 

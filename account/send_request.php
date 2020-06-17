@@ -3,10 +3,11 @@
 	if (!isset($_SESSION['user'])) {header("location: http://localhost/literledge/login.php");}
 	if ($notcon == null) {
 		$error = '';
+		echo $_POST['pauctor'];
 		if ($_POST['request'] == 'poem') {
 			if ((isset($_POST['pname']))&&(isset($_POST['pcontent']))&&(isset($_POST['pauctor']))) {
 				if (($_POST['pname'] != '')&&($_POST['pcontent'] != '')&&($_POST['pauctor'] != '')) {
-					$find = $conn->query("SELECT nick FROM users WHERE name='".$_POST['pauctor']."'");
+					$find = $conn->query("SELECT nick FROM users WHERE pt='".$_POST['pauctor']."'");
 					if ($find->num_rows > 0) {
 						$i = $find->fetch_assoc();
 						$cont = 'pname='.$_POST['pname'].';pcontent='.$_POST['pcontent'].';pauctor='.$i['nick'].';';
@@ -19,9 +20,6 @@
 			else {$error = $error.'3';}
 
 			#if ($error != '') {header("location: http://localhost/literledge/upload.php?error=".$error."&t=1");}
-			echo $_POST['pname'];
-			echo $_POST['pcontent'];
-			echo $_POST['pauctor'];
 			}
 		else if ($_POST['request'] == 'book') {
 

@@ -16,7 +16,7 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
-		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>"
+		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
 			É chamado de trovadorismo o primeiro movimento artístico que se deu na poesia europeia, sobretudo a partir dos séculos XI e XII. Composto por cantigas líricas e satíricas, escritas pelos trovadores, que dão nome ao movimento, era um híbrido entre a linguagem poética e a música.
 
