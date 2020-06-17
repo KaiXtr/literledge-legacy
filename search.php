@@ -407,7 +407,12 @@
 						}
 					}
 				if (sizeof($found) > 0) {
-					sort($found);
+					$nam = array();
+					foreach ($found as $val) {
+						$nam[] = $coulst[$val];
+					}
+					array_multisort($nam, SORT_ASC, $found);
+
 					echo "<select id='fcou' class='selectbox' onchange='filter_search(".'"'.$search.'"'.")'><option value='none'>";
 					if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 						{echo "País</option>";}
@@ -460,7 +465,7 @@
 						}
 					}
 				if (sizeof($found) > 0) {
-					rsort($found);
+					rsort($found,SORT_NUMERIC);
 					echo "<select id='fyer' class='selectbox' onchange='filter_search(".'"'.$search.'"'.")'><option value='none'>";
 					if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 						{echo "Século</option>";}
@@ -486,7 +491,12 @@
 						}
 					}
 				if (sizeof($found) > 0) {
-					sort($found);
+					$nam = array();
+					foreach ($found as $val) {
+						if (in_array($gnrlst[$val], $nam)==false) {$nam[] = $gnrlst[$val];}
+					}
+					array_multisort($nam, SORT_ASC, $found);
+
 					echo "<select id='fgen' class='selectbox' onchange='filter_search(".'"'.$search.'"'.")'><option value='none'>";
 					if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 						{echo "Gênero</option>";}
@@ -509,12 +519,17 @@
 				if ($find->num_rows > 0) {
 					while ($i = $find->fetch_assoc()) {
 						if (in_array($i['litschool'],$found) == false) {
-							$found[] = $i['litschool'];
+							if ($i['litschool'] != null) {$found[] = $i['litschool'];}
 							}
 						}
 					}
 				if (sizeof($found) > 0) {
-					sort($found);
+					$nam = array();
+					foreach ($found as $val) {
+						$nam[] = $ltslst[$val];
+					}
+					array_multisort($nam, SORT_ASC, $found);
+					
 					echo "<select id='flsc' class='selectbox' onchange='filter_search(".'"'.$search.'"'.")'><option value='none'>";
 					if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 						{echo "Escola Literária</option>";}
