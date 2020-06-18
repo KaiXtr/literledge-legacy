@@ -19,6 +19,7 @@
 			$list = "<div class='brow'>
 						<div class='blabel'><h1>";
 			if (isset($user)) {
+				$list = "<div class='content'>".$list;
 				if ($_COOKIE['lang'] == 'pt') {$list = $list."Do mesmo autor </h1>";}
 				if ($_COOKIE['lang'] == 'en') {$list = $list."From the same auctor </h1>";}
 				if ($_COOKIE['lang'] == 'es') {$list = $list."Por el mismo auctor </h1>";}
@@ -67,7 +68,7 @@
 					$list = $list.$thb;
 					}
 				}
-			echo "<div class='content'>".$list;
+			echo $list;
 			for ($x=0;$x<sizeof($serie);$x++) {echo $serie[$x]."</div></div>";}
 			echo "</div>";
 			}

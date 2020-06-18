@@ -720,12 +720,17 @@ hr {
 
 #bio {
 	text-align: left;
+	line-height: 30px;
 	font-size: 20px;
 	padding: 200px;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	position: relative;
 	align-items: center;
+}
+
+#bio a{
+	font-weight: bold;
 }
 
 #reportab {
