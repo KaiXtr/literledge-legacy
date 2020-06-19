@@ -38,6 +38,7 @@ hr{
 }
 
 #fadescreen{
+	background-color: black;
 	width: 100%;
 	height: 100%;
 	z-index: 15;
@@ -153,6 +154,10 @@ hr{
 	cursor: not-allowed;
 }
 
+.upperbar .btpress{
+	display: none;
+}
+
 .upperbar #btup{
 	text-align: center;
 	padding: 5px;
@@ -225,12 +230,16 @@ hr{
 	transition: width 1s, visibility 1s, padding-left 1s, opacity 1s;
 	visibility: hidden;
 	opacity: 0%;
+	overflow-x: scroll;
+}
+
+#lateralbar::-webkit-scrollbar {
+	display: none;
 }
 
 #lateralbar ul{
 	list-style: none;
 	padding: 0px;
-	overflow-y: auto; 
 }
 
 #lateralbar h1{
@@ -413,6 +422,39 @@ hr{
 	float: none;
 }
 
+.filters {
+	padding: 5px;
+	width: 280px;
+	top: 100px;
+	left: 30px;
+	position: fixed;
+	display: none;
+}
+
+.filters h2 {
+	margin: 5px;
+}
+
+.filters .selectbox {
+	margin-bottom: 5px;
+	padding-right: 10px;
+}
+
+.filters ul {
+	padding-left: 25px;
+}
+
+.filters #poemlst ul {
+	padding-left: 5px;
+	max-height: 340px;
+	overflow-y: auto;
+	list-style: none;
+}
+
+.filters #poemlst ul li {
+	margin-bottom: 5px;
+}
+
 .brow .bn{
 	float: right;
 }
@@ -443,7 +485,7 @@ hr{
 
 #banner{
 	background-attachment: fixed;
-	background-position: -90px 40px;
+	background-position: -120px 40px;
 	background-size: 700px 200px;
 	margin: 0px;
 	width: 100%;
@@ -458,7 +500,7 @@ hr{
 	border-radius: 50%;
 }
 
-#profile .profilepic{
+#profile #propic{
 	top: 100px;
 	bottom: 0px;
 	left: 10px;
@@ -482,8 +524,7 @@ hr{
 	margin: 0px;
 	top: 350px;
 	bottom: 0px;
-	left: 1750px;
-	right: 0px;
+	right: 10px;
 	-moz-box-shadow: 15px 15px 30px black;
 	-webkit-box-shadow: 15px 15px 30px black;
 	box-shadow: 15px 15px 30px black;
@@ -493,6 +534,7 @@ hr{
 	animation-direction: right;
 	animation-duration: 3s;
 	position: absolute;
+	display: none;
 }
 
 @keyframes username{
@@ -503,12 +545,13 @@ hr{
 #profile #username{
 	word-break: break-word;
 	text-align: right;
+	vertical-align: bottom;
 	text-shadow: 20px 20px 15px black;
-	font-size: 30px;
+	font-size: 35px;
 	margin: 0px;
 	width: 200px;
-	top: 100px;
-	right: 10px;
+	top: 90px;
+	right: 20px;
 	height: 30px;
 	animation-name: username;
 	animation-duration: 3s;
@@ -517,7 +560,7 @@ hr{
 
 @keyframes username{
 	from {opacity: 0%; right: 0px;}
-	to {opacity: 100%; right: 10px;}
+	to {opacity: 100%; right: 20px;}
 }
 
 #profile #nickname{
@@ -526,8 +569,8 @@ hr{
 	font-size: 10px;
 	font-weight: lighter;
 	margin: 5px;
-	top: 160px;
-	right: 10px;
+	top: 190px;
+	right: 20px;
 	animation-name: nickname;
 	animation-direction: right;
 	animation-duration: 3s;
@@ -536,26 +579,141 @@ hr{
 
 @keyframes nickname{
 	from {opacity: 0%; right: 0px;}
-	to {opacity: 100%; right: 10px;}
+	to {opacity: 100%; right: 20px;}
+}
+
+#profile #litername {
+	text-align: right;
+	text-shadow: 10px 10px 15px black;
+	font-size: 35px;
+	margin: 0px;
+	top: 140px;
+	left: 30px;
+	height: 30px;
+	animation-name: litername;
+	animation-duration: 3s;
+	position: absolute;
+}
+
+@keyframes litername {
+	from {opacity: 0%; left: 0px;}
+	to {opacity: 100%; left: 30px;}
 }
 
 #profile #binfobar{
-	text-align: left;
+	text-align: right;
 	font-size: 18px;
 	padding: 10px;
-	padding-top: 40px;
+	padding-top: 20px;
 	height: 80px;
+}
+
+#profile .binfotip {
+	background-color: rgba(0,0,0,0.4);
+	font-size: 20px;
+	padding: 10px;
+	height: 30px;
+	top: -67px;
+	border-radius: 15px;
+	position: absolute;
+	vertical-align: middle;
+	align-items: center;
+	transition: opacity 0.5s;
+	display: flex;
+	z-index: 10;
+	opacity: 0%;
+}
+
+#profile #tbirth {
+	left: 20px;
+}
+
+#profile #tdeath {
+	right: 40px;
+}
+
+#profile #tcountry {
+	right: 40px;
+}
+
+#profile #bhover:hover #tbirth {
+	opacity: 100%;
+}
+
+#profile #dhover:hover #tdeath {
+	opacity: 100%;
+}
+
+#profile #chover:hover #tcountry {
+	opacity: 100%;
+}
+
+#profile #binfobar div {
+	height: 35px;
+	position: relative;
+	display: inline-block;
+	align-items: center;
+}
+
+#profile #binfobar img {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+#profile #binfobar #academy {
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-right: 15px;
+	width: 30px;
+	height: 50px;
+	top: -15px;
+}
+
+#profile #binfobar #academy #tacademy {
+	text-align: left;
+	width: 250px;
+	height: 100px;
+	right: 10px;
+}
+
+#profile #binfobar #academy:hover #tacademy {
+	opacity: 100%;
+}
+
+#profile #bondsbar {
+	text-align: right;
+	font-size: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	height: 50px;
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#profile #bondsbar .pormini {
+	top: 0px;
+	right: 15spx;
+	position: relative;
+}
+
+#profile #bondsbar .pormini:hover .binfotip {
+	opacity: 100%;
 }
 
 #displayimg {
 	background-repeat: no-repeat;
-	background-size: auto 500px;
+	background-size: auto 280px;
 	background-position: center;
 	background-attachment: fixed;
 	width: 400px;
 	height: 600px;
 	top: 20px;
-	left: 10px;
+	left: 0px;
 	position: fixed;
 	transition: visibility 0.25s, opacity 0.25s;
 	visibility: hidden;
@@ -567,7 +725,7 @@ hr{
 	font-size: 22px;
 	width: 80px;
 	height: 50px;
-	top: 600px;
+	bottom: 50px;
 	left: 10px;
 	position: fixed;
 	visibility: hidden;
@@ -577,19 +735,23 @@ hr{
 
 .uphoto{
 	margin: 5px;
-	max-width: 500px;
-	max-height: 300px;
-	min-height: 300px;
+	max-width: 300px;
+	height: 150px;
 	cursor: zoom-in;
 }
 
 #bio{
+	line-height: 30px;
 	text-align: left;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 10px;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	position: relative;
+}
+
+#bio a{
+	font-weight: bold;
 }
 
 #reportab {
@@ -911,6 +1073,7 @@ hr{
 	font-size: 20px;
 	margin: 10px;
 	margin-right: 0px;
+	margin-bottom: 0px;
 	padding: 10px;
 	width: 45%;
 	height: 280px;
@@ -922,7 +1085,7 @@ hr{
 }
 
 .portraits .profilepic{
-	margin: 12px;
+	margin-left: 0px;
 	width: 120px;
 	height: 160px;
 	display: block;
@@ -932,6 +1095,26 @@ hr{
 .portraits h2{
 	font-size: 20px;
 	display: block;
+}
+
+.pormini {
+	padding: 0px;
+	width: 38px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+}
+
+.pormini .profilepic {
+	top: 0px;
+	left: 0px;
+	width: 38px;
+	height: 50px;
+	border: none;
+}
+
+.pormini .binfotip{
+	left: -20px;
 }
 
 .infocontent{
@@ -1015,7 +1198,7 @@ hr{
 .lowerbar{
 	margin: 0px;
 	padding: 0px;
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-bottom: 40px;
 	width: 100%;
 	display: inline-flex;
@@ -1028,10 +1211,11 @@ hr{
 	height: 40px;
 	border: none;
 	flex: 0;
+	display: none;
 }
 
 .lowerbarinfo{
-	margin-left: 10px; 
+	margin-left: 40px; 
 	padding-left: 10px;
 	width: 100px;
 	list-style: none;

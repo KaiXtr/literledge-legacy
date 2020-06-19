@@ -14,7 +14,7 @@
 				if ($_COOKIE['lang'] == 'es') {echo "Tudo";}
 			?>
 		</a> </li>
-		<li> <a >
+		<!--<li> <a >
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Populares";}
 				if ($_COOKIE['lang'] == 'en') {echo "Popular";}
@@ -34,7 +34,7 @@
 				if ($_COOKIE['lang'] == 'en') {echo "Favorite";}
 				if ($_COOKIE['lang'] == 'es') {echo "Favoritos";}
 			?>
-		</a> </li>
+		</a> </li>-->
 		<li> <a href='search.php?q=$auctors'>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Autores";}

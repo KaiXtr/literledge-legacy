@@ -1,5 +1,5 @@
 <?php
-if ($_COOKIE['lang'] == 'pt') {$sin = "Entediado com a morte, um defunto conta sua caótica história de vida.";}
-if ($_COOKIE['lang'] == 'en') {$sin = "Bored with death, a deceased tells his chaotic life story.";}
-if ($_COOKIE['lang'] == 'es') {$sin = "Aburrido de la muerte, un fallecido cuenta su caótica historia de vida.";}
+if ($_COOKIE['lang'] == 'pt') {$sin = "Dr.Frankenstein narra á um capitão de navio sobre sua descoberta científica e a criação do Prometeu Moderno.";}
+if ($_COOKIE['lang'] == 'en') {$sin = "Dr. Frankenstein tells a ship captain about his scientific discovery and the creation of the Modern Prometheus.";}
+if ($_COOKIE['lang'] == 'es') {$sin = "El Dr. Frankenstein le cuenta a un capitán de barco sobre su descubrimiento científico y la creación del Prometeo moderno.";}
 ?>

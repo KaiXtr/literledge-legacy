@@ -203,16 +203,16 @@
 						if ($_COOKIE['lang'] == 'es') {echo "Licencia: " .$liclst[$b["license"]];}
 					echo "</h2>".$wrng."<div id='sinopsis'>";
 						include '../sinopsis/'.$b['id'].'.php';
-					echo $sin."</div>
-							<div class='summary'>
+					echo $sin."</div>";
+					/*		<div class='summary'>
 								<ul>
 									<li> <a href='books/".$b['id'].".php#goto1'> Resenha </a> </li>
 									<li> <a href='books/".$b['id'].".php#goto2'> Sobre o livro </a> </li>
 									<li> <a href='books/".$b['id'].".php#goto3'> Adaptações </a> </li>
 									<li> <a href='books/".$b['id'].".php#goto4'> Downloads </a> </li>
 								</ul>
-							</div>
-						</div>
+							</div>*/
+					echo "</div>
 					</div>
 					<div id='status'>"
 						#<div id='rating' style='background-color: #" .$rc. ";'> <span>" .$b["rating"]. " </span> </div>
@@ -240,8 +240,9 @@
 							if ($_COOKIE['lang'] == 'es') {$pr = 'gratuito';}
 						}
 						else {$pr = $e['price'];}
-						$l = "media/books/" .$b["id"]. "-" .$e["id"]. "." .$e["filtyp"];
-						$byt = filesize("../".$l);
+						$l = $e["link"];
+						#$byt = filesize(substr($l,0,strlen($l)-5));
+						$byt = '---';
 						if ($byt >= 1073741824) {$byt = round($byt/1073741824).' GB';}
 						else if ($byt >= 1048576){$byt = round($byt/1048576).' MB';}
 						else if ($byt >= 1024) {$byt = round($byt/1024).' KB';}
@@ -250,9 +251,11 @@
 						else {$byt = '---';}
 
 						if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
-						$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
-							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th><th>".$byt."</th><th>".$pr. "</th>
+						#$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
+						$d = $d ."<tr onclick='window.location.href=".'"'.$e['link'].'"'.";'>
+							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th><th>".$pr. "</th>
 							</tr>";
+						#inserir isto depois: <th>".$byt."</th>
 						}
 					if ($red == '') {$red = $l;}
 					}
