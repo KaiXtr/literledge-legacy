@@ -18,102 +18,69 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			O Barroco é um estilo que dominou a arquitetura, a pintura, a literatura e a música na Europa do século XVII.
-
-			Por isso, toda a cultura desse período, incluindo costumes, valores e relações sociais, é chamada de "barroca".
-
-			Essa época surgiu no final do Renascimento e manifestava-se através de grande ostentação e extravagância entre os grupos beneficiados pelas riquezas da colonização
-
-			Contexto Histórico: Resumo
-			O Concílio de Trento, realizado de 1545 a 1563, causou grandes reformas no Catolicismo, em resposta à Reforma Protestante de Martinho Lutero. Assim, a autoridade da Igreja de Roma foi vigorosamente reafirmada, depois de perder muitos fiéis.
-
-			A Companhia de Jesus, reconhecida pelo papa em 1540, passa a dominar quase que inteiramente o ensino. Ela exerceu um papel importante na difusão do pensamento católico aprovado no Concílio de Trento.
-
-			A Inquisição que se estabeleceu na Espanha a partir de 1480 e em Portugal a partir de 1536, ameaçava a liberdade de pensamento. O clima era de austeridade e repressão.
-
-			Foi nesse contexto que se desenvolveu o movimento artístico chamado Barroco, numa arte eclesiástica que desejava propagar a fé católica.
-
-			Em nenhuma época se produziu um número tão grande de igrejas e capelas, estátuas de santos e monumentos sepulcrais.
-
-			Em quase todas as partes, a Igreja se associava ao Estado. Assim, a arquitetura barroca, antes só religiosa, surge também na construção de palácios, com o objetivo de causar admiração e poder.
-
-			Características do Barroco
-			As principais características que marcaram o período barroco foram:
-
-			Arte rebuscada e exagerada;
-			Valorização do detalhe;
-			Dualismo e contradições;
-			Obscuridade, complexidade e sensualismo;
-			Barroco literário: cultismo e conceptismo.
-			Veja também: Cultismo e Conceptismo
-			O Barroco na Europa
-			Itália
-			A Itália foi o considerada o berço do Renascimento e da arte barroca onde diversos artistas se destacaram.
-
-			Caravaggio (1571-1610)
-
-			Caracterizado pela rudez de suas obras, Caravaggio pintou temas religiosos onde explorava o contraste entre luz e sombras. Destacam-se: "A Captura de Cristo", "Flagelação de Cristo", "A Morte da Virgem", "A Ceia de Emaús", "Davi com a cabeça de Golias", "Flagelação de Cristo".
-
-			Bernini (1598-1680)
-
-			Bernini foi um escultor e arquiteto italiano. Suas obras encontram-se em Roma e no Vaticano, entre elas: a "Praça de São Pedro", "Catedral de São Pedro", "O Êxtase de Santa Teresa", "Busto de Paulo V" e "Castelo de Santo Ângelo".
-
-			Borromini (1599-1667)
-
-			Francesco Borromini foi arquiteto e escultor italiano. Entre suas obras destacam-se: a "Catedral de São Pedro", "Sant'Agnese in Agone", "Palazzo Spada", "Palazzo Barberini", "Sant'Ivo alla Sapienza" e a "Igreja de San Carlo alle Quattro Fontane".
-
-			Andrea Pozzo (1642-1709)
-
-			Pozzo foi arquiteto, pintor e decorador italiano. Entre suas obras estão: "Glorificação de Santo Inácio", "Anjo da Guarda", "A Apoteose de Hércules", o teto do "Salão Nobre do Palácio Liechtenstein", em Viena, e a "Falsa Cúpula de São Francisco Xavier".
-
-			Espanha
-			A Espanha foi o centro dos poetas barrocos, dos quais se destacaram: Quevedo, Gôngora, Cervantes, Lope de Vega, Calderón, Tirso de Molina, Gracián e Mateo Alemán.
-
-			Eles que fizeram a melhor literatura do século XVII, assimilada pelo resto da Europa a partir da segunda metade do século XVII.
-
-			Portugal
-			Em Portugal o Barroco vai de 1508 a 1756. Padre Antônio Vieira é o principal autor do Barroco literário em Portugal, mas passou a maior parte de sua vida no Brasil.
-
-			Sua Principal obra "Os Sermões", constituem um mundo rico e contraditório. Revelam sua inteligência voltada para as coisas sacras e, simultaneamente, para a vida social portuguesa e brasileira.
-
-			Vieira foi uma espécie de cronista da história imediata. Assim, ele elaborava os sermões dentro da técnica medieval, deslindando as metáforas da linguagem bíblica.
-
-			Além de Vieira, merecem destaque: o padre Manuel Bernardes, D. Francisco Manuel de Melo, Francisco Rodrigues Lobo, soror Mariana Alcoforado e Antônio José da Silva.
-
-			Leia também:
-
-			Barroco em Portugal
-			Sermão da Sexagésima
-			Escolas Literárias
-			O Barroco no Brasil
-			O Barroco no Brasil foi introduzido por intermédio dos jesuítas, no fim do século XVI. Só partir do século XVII, generaliza-se nos grandes centros de produção açucareira, especialmente na Bahia, através das igrejas.
-
-			Passada a fase do Barroco baiano, suntuoso e pesado, o estilo atingiu no século XVIII a província de Minas Gerais. Foi ali que Aleijadinho (1738-1814) elaborou uma arte profundamente nacional.
-
-			Nessa época, não havia no Brasil condições para o desenvolvimento de uma atividade literária propriamente dita. O que se viu foi alguns escritores se espelhando nas fontes estrangeiras, geralmente nos portugueses e espanhóis.
-
-			Principais Autores Barrocos do Brasil
-			Os principais escritores brasileiros desse período foram:
-
-			Bento Teixeira (1561-1618)
-			Gregório de Matos (1633-1696)
-			Manuel Botelho de Oliveira (1636-1711)
-			Frei Vicente de Salvador (1564-1636)
-			Frei Manuel da Santa Maria de Itaparica (1704-1768)
-			Leia mais sobre o Barroco:
-
-			Características do Barroco
-			Estilo Barroco
-			Poesia Barroca
-			A Linguagem do Barroco
-			Pintura Barroca
-			Escultura Barroca
-			Arquitetura Barroca
+			O Barroco surgiu na Itália do século XVII, durante o fim do Renascimento, e engloba as artes da pintura, escultura, literatura, música & arquitetura. Também pode ser chamado de Seiscentecismo, por ser um movimento do século 17. "Barroco" é uma palavra que significa "exagero" ou "absurdo", e era um termo que originalmente era utilizada pelos críticos do Barroco para inferiorizar o movimento artístico. Para muitos o Barroco se trata da fase final do Renascimento, outros o consideram como um movimento a parte. <br />
 			<br />
-			Fonte: <a href='https://www.todamateria.com.br/barroco/' > Wikipedia </a>
+			O Barroco se originou no contexto da Reforma Protestante, graças ás influências humanistas e dos ideais iluministas, que estavam entrando em popularidade, a igreja católica foi duramente criticada por vários setores da sociedade, tanto por intelectuais e burgueses quanto pelos próprios religiosos. Em resposta, a igreja católica criou a Contrarreforma, onde dentro das várias mudanças, promoveu um forte crescimento da propaganda católica dentro da sociedade, através das artes modernas de seu tempo. Foi durante o Barroco que diversos artistas Renascentistas usaram sua arte para promover a religião. <br />
+			<br />
+			Na área da literatura, o Barroco é dividido entre dois tipos de pensamento: o <b>Cultismo</b> e o <b>Conceptismo</b>, o Cultismo ou Gongorismo surgiu por influência do poeta espanhol Luís de Góngora, e sua principal característica é o uso frequente da linguagem culta e de termos rebuscados e ornamentais. Já o Gongorismo, também chamado de Quevedismo, foi inspirado pelo poeta Francisco de Quevedo, também espanhol, e se caracteriza por uma linguagem mais coloquial, didática e pedagógica, com o intuito de ensinar o leitor sobre a fé católica e convencendo-o com argumentos racionais. O Conceptismo faz uso do Silogismo e do Sofismo. <br />
+			<br />
+			Apesar da contribuição da igreja católica no Barroco, os ideais humanistas e antropocêntricos exerceram forte influência sobre o movimento, criando assim uma contradição entre os artistas e apoiadores do Barroco. Uma caracterísitca muito recorrente é o comportamento do homem do Barroco, que manifesta atrevés do dualismo e das antíteses o bem e o mal, o puro e o pecaminoso, o sensual e o espiritual. Ao mesmo tempo que é um homem religioso, também é um homem mundano entregue ás tentações. Por isso o Barroco pode ser entendido como o reflexo do ser humano em dúvida sobre as questões religiosas, vivendo ao mesmo tempo numa sociedade dominada pela igreja católica e pelos pensamentos humanistas. <br />
+			<br />
+			Além disso, há uma supervalorização da juventude, pois no entendimento do Barroco, a vida passa rápido e a felicidade verdadeira só pode ser encontrada na vida após a morte, e por isso deve se aproveitar o melhor que o plano terreno pode oferecer.
+			<br />
+			Dentre a principais características do Barroco se destacam:
+			<ul>
+			<li>O Exagero e o rebuscamento</li>
+			<li>O uso de antíteses e dualismos</li>
+			<li>Complexidade na composição das obras</li>
+			<li>Sensualismo e Erotismo</li>
+			<li>Arte detalhista e com muitos elementos no mesmo espaço</li>
+			<li>Retratação da morte, do castigo e do arrependimento</li>
+			<li>Pessimismo, encontro da verdadeira felicidade apenas após a morte</li>
+			<li>Apelo ao mistiscismo e á religião</li>
+			<li>Fusão do pensamento renascentista e medieval</li>
+			<li>Carpe Diem, aproveitar o momento, uma frase também recorrente no <a href='schools/baroque.php'>Arcadismo.</a></li>
+			</ul>
+			No Brasil, o Barroco veio graças aos jesuítas e a missão evangelista na colônia, e representou a primeira manifestação de arte no Brasil. Pelo fato de ser uma colônia, o Brasil não foi um ambiente propício para a expansão da arte e da literatura, por isso os autores do Barroco no Brasil se espelharam mais nos artistas da Europa. Apesar de surgir na Bahia, o Barroco ganhou mais destaque apenas no século XVIII, em Minas Gerais, onde Aleijadinho iria criar suas mais importantes obras artísticas.
+			<br />
+			Fonte: <a href='https://www.todamateria.com.br/barroco/'> Wikipedia </a>
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Barrocos </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							/*
+							Bento Teixeira (1561-1618)
+							Gregório de Matos (1633-1696)
+							Manuel Botelho de Oliveira (1636-1711)
+							Frei Vicente de Salvador (1564-1636)
+							Frei Manuel da Santa Maria de Itaparica (1704-1768)*/
+							$a = array();
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

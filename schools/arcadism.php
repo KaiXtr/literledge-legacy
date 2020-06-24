@@ -18,7 +18,7 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			O Arcadismo foi um movimento literário que surgiu na Europa no século XVIII, e por isso também é chamado de Setecentismo (escritores do século 17). O Arcadismo faz parte de um movimento artístico maior chamado Neoclassicismo, que também se manifestou na pintura, escutura & arquitetura. A Etimologia da palavra "arcadismo" deriva de um semideus da mitologia grega, Arcas, filho de Zeus & Calisto, que por sua vez, originou o nome Arcádia, uma região no sul da Grécia. Ele se manifestou em países como a França, Itália & Espanha, mas causou maior renovação em Portugal, pois durante este tempo a cidade de Lisboa estava sendo reformada por Marquês de Pombal, depois do grande terremoto de Lisboa de 1755, e no chamado Período Pombalino, foi fundada a Árcadia Lusitana, uma associação literária que visava resgatar os valores renascentistas para Portugal.<br />
+			O Arcadismo foi um movimento literário que surgiu na Europa no século XVIII, e por isso também é chamado de Setecentismo (escritores do século 18). O Arcadismo faz parte de um movimento artístico maior chamado Neoclassicismo, que também se manifestou na pintura, escutura & arquitetura. A Etimologia da palavra "arcadismo" deriva de um semideus da mitologia grega, Arcas, filho de Zeus & Calisto, que por sua vez, originou o nome Arcádia, uma região no sul da Grécia. Ele se manifestou em países como a França, Itália & Espanha, mas causou maior renovação em Portugal, pois durante este tempo a cidade de Lisboa estava sendo reformada por Marquês de Pombal, depois do grande terremoto de Lisboa de 1755, e no chamado Período Pombalino, foi fundada a Árcadia Lusitana, uma associação literária que visava resgatar os valores renascentistas para Portugal.<br />
 			<br />
 			Tanto o Neoclassicismo quanto sua manifestação literária, o Arcadismo, possuem muitas influências da cultura greco-romana, relembrando inclusive os ideais Renascentistas. Diversos gêneros literários da literatura clássica foram reinventados como o gênero Épico, Lírico e Satírico, que eram os gêneros propostos pelo filósofo <a href='users/ARISTOTLE.php'>Aristóteles</a>. A literatura arcadista é conhecida por fazer referência á mitologia grega e suas divindades, utilizando a estética pagã. <br />
 			<br />
@@ -67,7 +67,6 @@
 			</div>
 			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 		</div>
-
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

@@ -12,3 +12,8 @@ ErrorDocument 404 /literledge/not_found.php
 	RewriteCond %{REQUEST_URI} !/favicon.*$
 	RewriteRule .* /literledge/maintenance.php [R=307,L]
 </IfModule>
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule ^.*@(.*)$ literledge/users/$1 [R=301,NC]

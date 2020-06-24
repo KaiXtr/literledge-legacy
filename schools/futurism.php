@@ -18,24 +18,46 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			Em 20 de Fevereiro de 1909 foi lançado pelo poeta italiano Felippo Tommaso Marinetti, no jornal francês Le Figaro, o Manifesto Futurista. Este foi o ponta pé inicial para dar início a criação de um movimento de cunho artístico e literário denominado Futurismo. O Futurismo caracterizou-se principalmente pelo rompimento com a arte e a cultura do passado, celebrando o progresso e a tecnologia moderna, a vida urbana, a velocidade e a energia ao ponto de, os mais extremos, exaltarem as armas e a violência. Os integrantes desse estilo foram os grandes divulgadores do movimento, recorrendo a palestras e a publicidade para dar visibilidade a este estilo.
-
-			O Manifesto Futurista deixou clara a rejeição dos futuristas ao passado e a destruição de tudo o que era velho e venerado, ascendendo espaço para o novo e o vital. Giacomo Balla (1871 – 1958), Carlo Carrà (1881 – 1966) e Umberto Boccioni (1882 – 916) estão entre os principais expoentes desse movimento, além de Gino Severini (1883 – 1966) e Luigi Russolo (1885 -1647).
-
-			Com frequência nas pinturas Futuristas aparecem cores vibrantes e contrastantes, formas geométricas, sobreposição de imagens além do uso do que os futuristas chamavam de linhas de força. O uso desses recursos pretendia dar ideia de uma cena dinâmica, ou seja, o objeto em ação. A ideia de movimento vigoroso e velocidade eram centrais na poética do Futurismo. Os futuristas não estavam interessados em representar um automóvel em suas pinturas, porém representar o movimento do automóvel e a experiência de sua aceleração. Isso era mais importante que detalhar sua forma ou o veículo parado.
-
-			Obra futurista do artista Giacomo Balla.
-
-			Uma das mais impressionantes obras desse movimento artístico é Dinamismo de um cão na coleira de autoria (1912) de Giacomo Balla. Nela, Balla representa uma senhora passeando com seu cachorro onde é possível perceber uma espécie de close-up dos movimentos dos personagens. No quadro de formas simples e precisas, podem-se apreender as diversas pinceladas que dão a sensação de movimento das figuras. O cão assim como à senhora tem inúmeros traços, uns transparente e outros opacos, que compõem as patas, o rabo, a coleira e os pés criando uma magnífica expressão dinâmica do movimento.
-
-			O Futurismo influenciou diversos artistas que mais tarde vieram a fundar outros estilos artísticos como o Cubismo, o Surrealismo e o Dadaísmo. O movimento Futurista durou até aproximadamente a década de 1930, quando foi se esvaziando com a Segunda Guerra Mundial.
-
-			No Brasil influenciou artistas como Anita Malfatti e Oswald de Andrade ainda no começa do século XX, que viram nos ideais nesse movimento a possibilidade de deixar de copiar modelos europeus e construir uma identidade renovando a arte brasileira.
+			O Futurismo surgiu na Itália em 20 de fevereiro de 1909 com a publicação do Manifesto Futurista no jornal francês <b>Le Figaro</b>, pelo poeta italiano Felippo Tommaso Marinetti. Como o próprio nome dá a entender, o movimento futurista se caracterizou principalmente pela exaltação dos avanços tecnológicos da idade contemporânea e a rejeição á arte e a cultura do passado. O Futurismo não só buscava engrandecer a industrialização e a modernização da sociedade, como também buscava valorizar a violência e a guerra, a rapidez e a velocidade da informação, a propaganda como meio de comunicação e o uso de onomatopeias, assim sendo a <b>velocidade</b> a principal característica do Futurismo. <br />
 			<br />
-			Fonte: <a href='https://brasilescola.uol.com.br/literatura/simbolismo.htm' > Wikipedia </a>
+			Por ter enormes tendências nacionalistas e armamentistas, muitos artistas e apoiadores do Futurismo encontraram na guerra, e principalmente no <b>Fascismo</b>, uma concretização do sonho Futurista, principalmente na Itália. Já na Rússia, o Futurismo recebeu grande influência do socialismo.<br />
+			<br />
+			Na literatura, o Futurismo é caracterizado por frases fragmentasas, versos livres e onomatopeias, tudo para expressar a idéia de velocidade. Na pintura futurista, os artistas se preocupam mais com o dinamismo e a ação ao invés da retratação dos objetos propriamente ditos, utilizando cores vibrantes, formas geométricas, colagens e as chamadas <b>Linhas de força</b>. <br />
+			<br />
+			O Futurismo exerceu forte influência na arte contemporânea, inspirando vários artistas e o surgimento de outros movimentos artísticos, como o <b>Surrealismo, Cubismo e Dadaísmo.</b>No Brasil, o Futurismo inspirou artistas Modernistas a deixar de lado o passado e as influências européias para começar a enxergar no futuro uma construção de uma arte totalmente brasileira. O Futurismo só chegou ao seu fim com o início da Segunda Guerra Mundial na década de 30.
+			<br />
+			Fonte: <a href='https://brasilescola.uol.com.br/literatura/futurismo.htm' > Wikipedia </a>
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Barrocos </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							$a = array('PESSOAfernando','OSWALDandrade');
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

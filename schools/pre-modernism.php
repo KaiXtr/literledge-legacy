@@ -18,6 +18,8 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
+			<b>NOTA: Apesar do Pré-Modernismo NÃO SER UMA ESCOLA LITERÁRIA, O Literledge o categoriza como uma para uma melhor experiência dentro do site.</b><br />
+			<br />
 			O Pré-modernismo teve início no começo do século XIX e se estendeu até a Semana de Arte Moderna, em 1922.
 
 			Foi um período que marcou a transição entre o simbolismo e o modernismo, e para muitos estudiosos, não pode ser considerado uma escola literária, isto porque apresenta diversas produções artísticas e literárias distintas.
@@ -73,8 +75,36 @@
 			<br />
 			Fonte: <a href='https://www.infoescola.com/literatura/pre-modernismo/' > Wikipedia </a>
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Pré-Modernistas </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							$a = array('BARRETOlima','GRACAaranha','LOBATOmonteiro');
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>
