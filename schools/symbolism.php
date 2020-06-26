@@ -353,7 +353,6 @@
 			Principais autores europeus: Baudelaire, Mallarmé, Verlaine, Rimbaud;
 			Principais autores brasileiros: Cruz e Sousa, Alphonsus de Guimaraens, Augusto dos Anjos (este último tido como “pós-simbolista” ou “pré-moderno”).
 			<br />
-			Fonte: <a href='https://brasilescola.uol.com.br/literatura/simbolismo.htm' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

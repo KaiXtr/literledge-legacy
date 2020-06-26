@@ -22,7 +22,13 @@
 			<br />
 			O Barroco se originou no contexto da Reforma Protestante, graças ás influências humanistas e dos ideais iluministas, que estavam entrando em popularidade, a igreja católica foi duramente criticada por vários setores da sociedade, tanto por intelectuais e burgueses quanto pelos próprios religiosos. Em resposta, a igreja católica criou a Contrarreforma, onde dentro das várias mudanças, promoveu um forte crescimento da propaganda católica dentro da sociedade, através das artes modernas de seu tempo. Foi durante o Barroco que diversos artistas Renascentistas usaram sua arte para promover a religião. <br />
 			<br />
-			Na área da literatura, o Barroco é dividido entre dois tipos de pensamento: o <b>Cultismo</b> e o <b>Conceptismo</b>, o Cultismo ou Gongorismo surgiu por influência do poeta espanhol Luís de Góngora, e sua principal característica é o uso frequente da linguagem culta e de termos rebuscados e ornamentais. Já o Gongorismo, também chamado de Quevedismo, foi inspirado pelo poeta Francisco de Quevedo, também espanhol, e se caracteriza por uma linguagem mais coloquial, didática e pedagógica, com o intuito de ensinar o leitor sobre a fé católica e convencendo-o com argumentos racionais. O Conceptismo faz uso do Silogismo e do Sofismo. <br />
+			Na área da literatura, o Barroco é dividido entre dois tipos de pensamento: o <b>Cultismo</b> e o <b>Conceptismo</b>. <br />
+			O Cultismo ou Gongorismo surgiu por influência do poeta espanhol Luís de Góngora, e sua principal característica é o uso frequente da linguagem culta e de termos rebuscados e ornamentais.<br />
+			Já o Gongorismo, também chamado de Quevedismo, foi inspirado pelo poeta Francisco de Quevedo, também espanhol, e se caracteriza por uma linguagem mais coloquial, didática e pedagógica, com o intuito de ensinar o leitor sobre a fé católica e convencendo-o com argumentos racionais. O Conceptismo faz uso do Silogismo e do Sofismo.
+			<ul>
+			<li>Sofismo é gerar uma proposição lógica a partir de duas premissas.</li>
+			<li>Silogismo significa criar uma inverdade baseada em argumentos lógicos e omissão de informações.</li>
+			</ul>
 			<br />
 			Apesar da contribuição da igreja católica no Barroco, os ideais humanistas e antropocêntricos exerceram forte influência sobre o movimento, criando assim uma contradição entre os artistas e apoiadores do Barroco. Uma caracterísitca muito recorrente é o comportamento do homem do Barroco, que manifesta atrevés do dualismo e das antíteses o bem e o mal, o puro e o pecaminoso, o sensual e o espiritual. Ao mesmo tempo que é um homem religioso, também é um homem mundano entregue ás tentações. Por isso o Barroco pode ser entendido como o reflexo do ser humano em dúvida sobre as questões religiosas, vivendo ao mesmo tempo numa sociedade dominada pela igreja católica e pelos pensamentos humanistas. <br />
 			<br />
@@ -39,28 +45,21 @@
 			<li>Pessimismo, encontro da verdadeira felicidade apenas após a morte</li>
 			<li>Apelo ao mistiscismo e á religião</li>
 			<li>Fusão do pensamento renascentista e medieval</li>
-			<li>Carpe Diem, aproveitar o momento, uma frase também recorrente no <a href='schools/baroque.php'>Arcadismo.</a></li>
+			<li>Carpe Diem, aproveitar o momento, uma frase também recorrente no <a href='schools/arcadism.php'>Arcadismo.</a></li>
 			</ul>
 			No Brasil, o Barroco veio graças aos jesuítas e a missão evangelista na colônia, e representou a primeira manifestação de arte no Brasil. Pelo fato de ser uma colônia, o Brasil não foi um ambiente propício para a expansão da arte e da literatura, por isso os autores do Barroco no Brasil se espelharam mais nos artistas da Europa. Apesar de surgir na Bahia, o Barroco ganhou mais destaque apenas no século XVIII, em Minas Gerais, onde Aleijadinho iria criar suas mais importantes obras artísticas.
 			<br />
-			Fonte: <a href='https://www.todamateria.com.br/barroco/'> Wikipedia </a>
 		</div>
 		<div class='content'>
 			<div class='brow'>
 				<div class='blabel'>
-					<h1> Escritores Barrocos </h1>
+					<h1> Escritores do Barroco </h1>
 				</div>
 				<div class='displaybooks'>
 					<?php
 						require '../account/mysql_connect.php';
 						if ($notcon == null) {
-							/*
-							Bento Teixeira (1561-1618)
-							Gregório de Matos (1633-1696)
-							Manuel Botelho de Oliveira (1636-1711)
-							Frei Vicente de Salvador (1564-1636)
-							Frei Manuel da Santa Maria de Itaparica (1704-1768)*/
-							$a = array();
+							$a = array('MATOSgregorio','TEIXEIRAbento','BOTELHOoliveira','SALVADORfrei','ITAPARICAfrei');
 							for ($x=0;$x<sizeof($a);$x++) {
 								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
 								$n = $find->fetch_assoc();

@@ -26,12 +26,11 @@
 			<br />
 			O Futurismo exerceu forte influência na arte contemporânea, inspirando vários artistas e o surgimento de outros movimentos artísticos, como o <b>Surrealismo, Cubismo e Dadaísmo.</b>No Brasil, o Futurismo inspirou artistas Modernistas a deixar de lado o passado e as influências européias para começar a enxergar no futuro uma construção de uma arte totalmente brasileira. O Futurismo só chegou ao seu fim com o início da Segunda Guerra Mundial na década de 30.
 			<br />
-			Fonte: <a href='https://brasilescola.uol.com.br/literatura/futurismo.htm' > Wikipedia </a>
 		</div>
 		<div class='content'>
 			<div class='brow'>
 				<div class='blabel'>
-					<h1> Escritores Barrocos </h1>
+					<h1> Escritores Futuristas </h1>
 				</div>
 				<div class='displaybooks'>
 					<?php

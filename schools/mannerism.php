@@ -61,7 +61,6 @@
 			• Parmigianino
 			• Veronese
 			<br />
-			Fonte: <a href='https://www.suapesquisa.com/artesliteratura/maneirismo.htm' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

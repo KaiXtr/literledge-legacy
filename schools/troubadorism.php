@@ -191,7 +191,6 @@
 			Os trovadores oficiais tinham linhagem nobre, incluindo reis, mas havia também os jograis, nascidos nas camadas populares;
 			Apreciada pela corte, a obra trovadoresca foi importante instrumento de consolidação da cultura e do idioma português.
 			<br />
-			Fonte: <a href='https://brasilescola.uol.com.br/literatura/trovadorismo.htm' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

@@ -66,7 +66,6 @@
 			O indianismo denominado “Gonçalvino”, faz referência ao indianismo presente na poesia de Gonçalves Dias.
 			No século XIX, o indianismo foi uma tendência presente nas artes plásticas, dos quais se destacam os pintores brasileiros: Victor Meirelles (1832-1903) e sua famosa obra “Moema” (1866); e Rodolfo Amoedo (1857-1941) e sua obra mais representativa “O Último Tamoio” (1883).
 			<br />
-			Fonte: <a href='https://www.todamateria.com.br/indianismo/' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

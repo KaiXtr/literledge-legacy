@@ -330,7 +330,6 @@
 			Colhe-se antes que venha o mal,
 			Colhe-se antes que chegue o inverno.
 			<br />
-			Fonte: <a href='https://www.infoescola.com/literatura/parnasianismo/' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

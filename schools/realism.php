@@ -116,7 +116,6 @@
 			São grandes nomes do realismo europeu: Gustave Flaubert, Charles Dickens, Fiódor Dostoiévski;
 			São grandes nomes do realismo brasileiro: Aluísio Azevedo, Raul Pompeia, Machado de Assis.
 			<br />
-			Fonte: <a href='https://brasilescola.uol.com.br/literatura/realismo.htm' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

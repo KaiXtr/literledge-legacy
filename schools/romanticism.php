@@ -48,7 +48,6 @@
 			Ultrarromantismo
 			Ultrarromantismo no Brasil
 			<br />
-			Fonte: <a href='https://www.infoescola.com/literatura/romantismo/' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

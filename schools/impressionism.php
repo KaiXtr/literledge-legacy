@@ -31,7 +31,6 @@
 
 			O Impressionismo também teve suas manifestações na música e na literatura. Na música seus nomes mais marcantes foram Debussy e Ravel. Na literatura destacam-se os escritores Marcel Proust, Graça Aranha e Raul Pompeia.
 			<br />
-			Fonte: <a href='https://www.infoescola.com/movimentos-artisticos/impressionismo/' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

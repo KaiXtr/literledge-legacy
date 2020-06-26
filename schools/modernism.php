@@ -109,7 +109,6 @@
 			Presencismo ou Geração de Presença (1927-1940)
 			Neorrealismo (1940-1947)
 			<br />
-			Fonte: <a href='https://www.todamateria.com.br/modernismo-no-brasil/' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 

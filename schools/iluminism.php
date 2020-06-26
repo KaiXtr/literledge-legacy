@@ -38,7 +38,6 @@
 
 			Diferentemente destes dois eventos, entretanto, a Inconfidência falhou, assim como a Conjuração Baiana na década seguinte e a Revolução Pernambucana em 1817. Após a Independência do Brasil em 1822, D. Pedro I outorgaria uma Constituição com fortes influências liberais. De maneira geral, podemos afirmar que a história de todas as nações ocidentais desde então foram fortemente pautadas por ideais e reflexões feitas pelos autores iluministas.
 			<br />
-			Fonte: <a href='https://www.infoescola.com/historia/iluminismo/' > Wikipedia </a>
 		</div>
 		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 
