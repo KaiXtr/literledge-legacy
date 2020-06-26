@@ -36,7 +36,7 @@
 					<?php
 						require '../account/mysql_connect.php';
 						if ($notcon == null) {
-							$a = array('BARRETOlima','GRACAaranha','LOBATOmonteiro');
+							$a = array('BARRETOlima','GRACAaranha','CUNHAeuclides','LOBATOmonteiro');
 							for ($x=0;$x<sizeof($a);$x++) {
 								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
 								$n = $find->fetch_assoc();
