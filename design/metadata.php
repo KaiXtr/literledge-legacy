@@ -33,7 +33,7 @@ literature, knowledge, search, study, pensador, filosofia, sociologia, saraiva, 
 resumo, review, autores, escritores, movimentos, ler, escritor' />
 
 <link rel='shortcut icon' type='image/svg+xml' sizes='any' href='favicon.svg' />
-<link rel='stylesheet' type='text/css' media='screen and (min-width: 1000px) and (max-width: 2500px)' href='styles/style-screen.css' />
+<link rel='stylesheet' type='text/css' media='screen and (min-width: 720px) and (max-width: 2500px)' href='styles/style-screen.css' />
 <link rel='stylesheet' type='text/css' media='screen and (min-width: 300px) and (max-width: 720px)' href='styles/style-mobile.css' />
 <link rel='stylesheet' type='text/css' media='screen' href='styles/theme-<?php echo $_COOKIE['theme']; ?>.css' title='<?php echo $_COOKIE['theme']; ?>' />
 
