@@ -19,9 +19,8 @@
 			?>
 		</form>
 		<?php
-			if (session_status() == PHP_SESSION_NONE) {session_start();}
+			require 'mysql_connect.php';
 			if (isset($_SESSION['user'])) {
-				$conn = new mysqli('localhost', 'root', 'Gu@n@b@r@', 'literledge');
 				$find = $conn->query("SELECT pt FROM users WHERE nick='" .$_SESSION['user']. "';");
 				if ($find->num_rows > 0) {
 					$i = $find->fetch_assoc();

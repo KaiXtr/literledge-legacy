@@ -114,29 +114,32 @@ hr{
 	margin-left: 10px;
 	margin-right: 20px;
 	padding: 0px;
+	width: 80%;
 	height: 30px;
 	border: none;
-	display: inline-block;
+	display: flex;
+	position: sticky;
 }
 
 .searchbar .searchtext{
 	padding-left: 10px;
-	padding-right: 10px;
-	width: 150px;
+	padding-right: 10px;;
 	height: 30px;
 	border: none;
 	border-radius: 8px 0px 0px 8px;
+	flex: 9;
 }
 
 .searchbar .submit{
 	margin: 0px;
 	padding: 5px;
+	width: 22px;
 	height: 22px;
 	border: none;
 	border-radius: 0px 8px 8px 0px;
 	transition-duration: 0.4s;
 	cursor: pointer;
-	float: right;
+	flex: 1;
 }
 
 .btpress{
@@ -176,7 +179,7 @@ hr{
 }
 
 .upperbar .profilepic{
-	margin-left: 0px; 
+	margin-right: 20px;
 	width: 28px;
 	height: 37px;
 	border: none;
@@ -475,10 +478,6 @@ hr{
 	margin-left: 0px;
 }
 
-.shelf{
-	margin-top: 100px;
-}
-
 #profile{
 	display: relative;
 }
@@ -651,7 +650,6 @@ hr{
 #profile #binfobar div {
 	height: 35px;
 	position: relative;
-	display: inline-block;
 	align-items: center;
 }
 
@@ -794,9 +792,10 @@ hr{
 
 #bookinfo #coverart{
 	margin: 10%;
-	width: 300px;
-	height: 440px;
+	width: 80%;
+	height: 70%;
 	border-radius: 30px;
+	position: sticky;
 }
 
 #bookinfo #info{
@@ -814,7 +813,7 @@ hr{
 }
 
 #bookinfo #info h2{
-	font-size: 28px;
+	font-size: 22px;
 	margin: 0px;
 	margin-bottom: 5px;
 }
@@ -941,7 +940,6 @@ hr{
 	margin: 0px;
 	margin-bottom: 10px;
 	padding: 10px;
-	width: 95%;
 	height: 220px;
 	top: 0px;
 	border-radius: 15px;
@@ -953,6 +951,11 @@ hr{
 	white-space: normal;
 	word-break: break-word;
 	display: block;
+}
+
+#bookinfo .thbcritic #texcom{
+	width: 90%;
+	position: sticky;
 }
 
 #bookinfo .thbcritic #cricom{

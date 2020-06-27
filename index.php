@@ -158,5 +158,6 @@
 			?>
 		</div>
 		<?php include 'design/footer.php' ?>
+		<script type='text/javascript'>cut_sinopsis();</script>
 	</body>
 </html>

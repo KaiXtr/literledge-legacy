@@ -21,8 +21,6 @@
 	$devlprs = array('KaiXtr');
 ?>
 <base href='http://localhost/literledge/' />
-<!--<base href='http://192.168.43.230/literledge/' />-->
-
 <meta charset='utf-8' />
 <meta name='refresh' content='60' />
 <meta http-equiv="Content-Language" content="pt, en, es">
@@ -33,7 +31,7 @@ resumo, review, autores, escritores, movimentos, ler, escritor' />
 
 <link rel='shortcut icon' type='image/svg+xml' sizes='any' href='favicon.svg' />
 <link rel='stylesheet' type='text/css' media='screen and (min-width: 720px) and (max-width: 2500px)' href='styles/style-screen.css' />
-<link rel='stylesheet' type='text/css' media='screen and (min-width: 300px) and (max-width: 720px)' href='styles/style-mobile.css' />
+<link rel='stylesheet' type='text/css' media='screen and (min-width: 0px) and (max-width: 720px)' href='styles/style-mobile.css' />
 <link rel='stylesheet' type='text/css' media='screen' href='styles/theme-<?php echo $_COOKIE['theme']; ?>.css' title='<?php echo $_COOKIE['theme']; ?>' />
 
 <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>

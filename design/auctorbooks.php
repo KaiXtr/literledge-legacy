@@ -52,7 +52,7 @@
 								<h2> ".$t[$lang]." </h2>
 								<h3> ".$nm. " </h3>";
 								include '../sinopsis/'.$i['id'].'.php';
-							$thb = $thb.$sin."</div>
+							$thb = $thb."<div class='thbsin'>".$sin."</div></div>
 							</button>
 						</a>";
 
@@ -70,7 +70,7 @@
 				}
 			echo $list;
 			for ($x=0;$x<sizeof($serie);$x++) {echo $serie[$x]."</div></div>";}
-			echo "</div>";
+			echo "</div><script type='text/javascript'>cut_sinopsis();</script>";
 			}
 		$conn->close();
 		}

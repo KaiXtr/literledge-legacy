@@ -187,6 +187,13 @@ function valueChange(value) {
 	this.remainingText = 1000 - value;
 }
 
+function cut_sinopsis() {
+	var txt = document.getElementsByClassName('thbsin');
+	for (var x=0;x<txt.length;x++) {
+		if (txt[x].clientHeight >= 40) {txt[x].textContent = txt[x].textContent.substr(0,80)+'...';}
+	}
+}
+
 $(document).ready(function() {
 	$("#burgerbut").on('click', function () {set_display('lateralbar')});
 	$("#openpro").on('click', function () {set_display('profilemenu')});

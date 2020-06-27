@@ -120,17 +120,17 @@
 				else {$lang = $_COOKIE['lang'];}
 
 				if ($shelf->num_rows > 0) {
-					$slf = "<div class='brow shelf'><h1>";
+					$slf = "<div class='brow shelf'><div class='blabel'><h1>";
 					if ($_COOKIE['lang'] == 'pt') {$slf = $slf."Na sua estante";}
 					if ($_COOKIE['lang'] == 'en') {$slf = $slf."In your shelf";}
 					if ($_COOKIE['lang'] == 'es') {$slf = $slf."En tu estante";}
-					$slf = $slf."</h1><div class='displaybooks'>";
+					$slf = $slf."</h1></div><div class='displaybooks'>";
 
-					$fav = "<div class='brow shelf'><h1>";
+					$fav = "<div class='brow shelf'><div class='blabel'><h1>";
 					if ($_COOKIE['lang'] == 'pt') {$fav = $fav."Favoritos";}
 					if ($_COOKIE['lang'] == 'en') {$fav = $fav."Favorites";}
 					if ($_COOKIE['lang'] == 'es') {$fav = $fav."Favoritos";}
-					$fav = $fav."</h1><div class='displaybooks'>";
+					$fav = $fav."</h1></div><div class='displaybooks'>";
 
 					while ($s = $shelf->fetch_assoc()) {
 						if ($s[$_COOKIE['lang']] == null) {$nm = $s['pt'];}
