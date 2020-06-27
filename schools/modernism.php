@@ -18,100 +18,47 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			O modernismo no Brasil teve como marco inicial a Semana de Arte Moderna, em 1922, momento marcado pela efervescência de novas ideias e modelos.
-
-			Lembre-se que o modernismo foi um movimento cultural, artístico e literário da primeira metade do século XX.
-
-			Ele situa-se entre o Simbolismo e o Pós-Modernismo - a partir dos anos 50 - havendo, ainda, estudiosos que considerem o Pré-Modernismo uma escola literária.
-			Contexto Histórico
-			O Modernismo surge num momento de insatisfação política no Brasil. Isso, em decorrência do aumento da inflação que fazia aumentar a crise e propulsionava greves e protestos.
-
-			A Primeira Guerra Mundial (1914-1918) também trouxe reflexos para a sociedade brasileira.
-
-			Assim, numa tentativa de reestruturar o país politicamente, também o campo das artes - estimulado pelas Vanguardas Europeias - encontra-se a motivação para romper com o tradicionalismo.
-
-			Foi a “Semana de arte moderna” que marca a essa tentativa de mudança artística.
-
-			Características do Modernismo
-			Libertação estética;
-			Ruptura com o tradicionalismo;
-			Experimentações artísticas;
-			Liberdade formal (versos livres, abandono das formas fixas, ausência de pontuação);
-			Linguagem com humor;
-			Valorização do cotidiano.
-			Leia também: Modernismo no Brasil: características e contexto histórico.
-
-			Principais Autores
-			Oswald de Andrade (1890-1954)
-			Mário de Andrade (1893-1945)
-			Manuel Bandeira (1886-1968)
-			Carlos Drummond de Andrade (1902-1987)
-			Rachel de Queiroz (1902-2003)
-			Jorge Amado (1912-2001)
-			Érico Veríssimo (1905-1975)
-			Graciliano Ramos (1892-1953)
-			Vinícius de Moraes (1913-1980)
-			Cecília Meireles (1901-1964)
-			João Cabral de Melo Neto (1920-1999)
-			Clarice Lispector (1920-1977)
-			Guimarães Rosa (1908-1967)
-			Leia também sobre os maiores poetas brasileiros modernos e contemporâneos.
-
-			Fases do Modernismo
-			Primeira Fase do Modernismo (1922-1930)
-			Nesta fase, conhecida como a "Fase Heroica", os artistas buscam a renovação estética inspirada nas vanguardas europeias (cubismo, futurismo, surrealismo).
-			Portanto, este período caracterizou-se por ser o mais radical e também, pela publicação de revistas e de manifestos, bem como pela formação de grupos modernistas.
-
-			Veja também: 8 obras importantes do cubismo
-			Revistas
-			Klaxon (1922), Estética (1924), A Revista (1925), Terra Roxa e Outras Terras (1927) e Revista de Antropofagia (1928).
-
-			Manifestos
-			Manifesto da Poesia Pau-Brasil (1924), Manifesto Antropófago (1928), Manifesto Regionalista (1926) e Manifesto Nhenguaçu Verde-Amarelo (1929).
-
-			Grupos
-			Movimento Pau-Brasil
-			Movimento Antropofágico
-			Grupo modernista-regionalista de Recife
-			Movimento Verde-Amarelo e a Escola da Anta
-			Leia também sobre os Autores da Primeira Fase do Modernismo no Brasil e também sobre a importante pintura de Tarsila do Amaral, Abaporu.
-
-			Veja também: 10 obras modernistas de Tarsila do Amaral
-			Segunda Fase do Modernismo (1930-1945)
-			Chamada de "Fase de Consolidação", este momento é caracterizado por temáticas nacionalistas e regionalistas com predomínio da prosa de ficção.
-			É um momento de amadurecimento. Na década de 30 a poesia brasileira se consolida, o que significa o maior êxito para os modernistas.
-
-			Saiba mais:
-
-			Poesia de 30
-			Autores da Segunda Fase do Modernismo no Brasil
-
-			Terceira Fase do Modernismo (1945-1980)
-			Conhecida como fase "Pós Modernista", não há um consenso a respeito de seu término.
-
-			Isso porque muitos estudiosos afirmam que essa fase termina em 1960, enquanto outros, definem o fim dessa fase nos anos 80.
-
-			Há ainda os que consideram que a terceira fase modernista prolonga-se até os dias atuais.
-
-			Nesse momento, tem-se um predomínio e diversidade da prosa com a prosa urbana, a prosa intimista e a prosa regionalista.
-
-			Além disso, surge um grupo de escritores denominado “Geração de 45”, muitas vezes chamados de neoparnasianos, pois eles buscavam uma poesia mais equilibrada.
-
-			Leia A Linguagem do Modernismo e Escolas Literárias.
-
-			Modernismo em Portugal
-			Em Portugal, a publicação da Revista Orpheu, em 1915, marca o início dessa escola literária.
-			Influenciados pela vanguardas europeias, os artistas portugueses pretendiam escandalizar a burguesia renovando a arte.
-
-			O Modernismo em Portugal pode ser esquematizado da seguinte forma:
-
-			Orfismo ou Geração de Orpheu (1915-1927)
-			Presencismo ou Geração de Presença (1927-1940)
-			Neorrealismo (1940-1947)
+			O Modernismo Brasileiro se iniciou no início do século XX, após a Semana de Arte Moderna de 1922. Era um tempo turbulento no país, o Brasil recém proclamado república enfrentava conflitos e falhou em criar uma identidade nacional para a população, além disso, a Primeira Guerra Mundial estava acontecendo no mundo. Assim, inspirados pelas <b>vanguardas européias</b> que se popularizavam fora do país, vários artistas brasileiros trouxeram a bagagem cultural da Europa para o Brasil numa busca por uma identidade artística única, original, contra a tradição vigente de seu tempo e livre das influências estrangeiras. Embora o Modernismo tenha sido influênciado pela arte européia, o princípio do Modernismo era de transformar tudo o que fosse de fora em algo brasileiro e único, ideal esse que originaria o <b>Movimento Antropofágico</b>. Dentre os mais importantes artistas do Modernismo estão <a href='users/ANDRADEmario'>Mário de Andrade</a>, <a href='users/OSWALDandrade'>Oswald de Andrade</a>, Tarsila do Amaral, Anita Malfatti e Menotti del Picchia. Juntos eles formaram o <b>Grupo dos Cinco.</b><br />
+			<br />
+			Juntamente com os ideais já estabelecidos pelo <a href='schools/pre-modernism.php'>Pré-Modernismo</a>, é feita a Semana de Arte Moderna de 1922, ano em que o Brasil completava 100 anos de sua independência. O evento durou de 13 á 18 de fevereiro e aconteceu no Teatro Municipal de São Paulo. De início, as ideais modernistas tiveram recepção negativa de muitos críticos e vários artistas foram vaiados durante os eventos. O Modernismo brasileiro é marcado pela liberdade estética, quebra das regras impostas sobre a arte, linguagem humorística e informal, ruptura com o passado e muito experimentalismo. O Modernismo é dividido em três fases, cada uma com suas pequenas nuâncias: <br />
+			<br />
+			<b>Fase Heróica (1922-1930): </b>também conhecida como Fase de Destruição, a primeira fase foi a mais radical e inovadora dentre os três. Manifestos e revistas eram publicadas para divulgar os ideais modernistas. Mereçem destaque as revistas Klaxon, Estética, A Revista, Terra Roxa e Outras Terras e a Revista de Antropofagia. Já entre os manifestos estavam o Manifesto Pau-Brasil, o Manifesto Antropófago, o Manifesto Regionalista e o Manifesto Nhengaçu Verde-Amarelo. Todos esses manifestos originaram escolas de arte diferentes que seguiriam rumos separados com o tempo.<br />
+			<br />
+			<b>Fase de Consolidação (1930-1945): </b>na segunda fase do modernismo, o movimento amadurece e estabelece uma consolidação da poesia brasileira, uma grande vitória alcançada pelos Modernistas. Foi o período onde artistas nacionalistas e regionalistas se dividiram: neste tempo, o fascismo se expandiu e a Segunda Guerra Mundial começava, daí surgiu a AIB (Ação Integralista Brasileira), um movimento ufanista que ganhou apoio dos artistas mais nacionalistas, cujo pensamento era de total reprovação á cultura estrangeira e devoto á cultura brasileira. Enquanto os artistas mais regionalistas foram contra o nacionalismo irracional e seguem o pensamento de agregação cultural do Antropofagismo e visão crítica sobre o próprio país. É um período marcado por uma literatura mais pessimista, individualista e psicológica.<br />
+			<br />
+			<b>Pós-Modernismo (1945): </b> uns estudiosos consideram que o Modernismo chega ao seu fim nos anos 60, outros dizem que foi nos anos 80, e ainda outros dizem que o Modernismo perdura até hoje. É a fase menos energética do Modernismo, certos valores que eram combatidos pelos antigos Modernistas voltam á tona como a linguagem formal e a valorização da métrica. Surgem os artistas neoparnasianos, os chamados da geração de 45.
 			<br />
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Modernistas </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							$a = array('ANDRADEmario','BANDEIRAmanuel','OSWALDandrade','CABRALmelo','MEIRELEScecilia','GRACILIANOramos','DRUMMONDandrade','LISPECTORclarice','AMADOjorge','VERISSIMOerico','GUIMARAESrosa','QUEIROZrachel');
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

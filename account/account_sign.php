@@ -48,7 +48,7 @@
 		fwrite($htmc, $cont);
 		fclose($htmc);
 
-		header("location: http://localhost/literledge/index.php");
+		header("location: ".BASE_URL."index.php");
 		}
 	$conn->close();
 ?>

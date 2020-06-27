@@ -24,7 +24,7 @@
 				setcookie('user',$_SESSION['user'],time() + (86400 * 10000), '/');
 				setcookie('password',$_SESSION['password'],time() + (86400 * 10000), '/');
 			}
-			header("location: http://localhost/literledge/index.php");
+			header("location: ".BASE_URL."index.php");
 			}
 		}
 	$conn->close();
