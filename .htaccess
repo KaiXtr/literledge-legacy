@@ -17,3 +17,12 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 RewriteRule ^.*@(.*)$ literledge/users/$1 [R=301,NC]
+RewriteRule ^.*!(.*)$ literledge/books/$1 [R=301,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ %{REQUEST_FILENAME}.php
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ http://literledge.000webhostapp.com/$1 [R,L]

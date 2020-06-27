@@ -73,9 +73,10 @@
 				if (($r >= 10000)&&($r < 10000000)){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-3).'K';}
 				else if ($r >= 10000000){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-6).'M';}
 
-				if ($lang == 'pt') {$shrmsg = "Venha dar uma olhada no livro ".$t[$lang]." no Literledge! https://literledge.com/books/".$b['id'].".php";}
-				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! https://literledge.com/books/".$b['id'].".php";}
-				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! https://literledge.com/books/".$b['id'].".php";}
+				$shurl = 'literledge.000webhostapp.com/!'.$b['id'];
+				if ($lang == 'pt') {$shrmsg = "Venha dar uma olhada no livro ".$t[$lang]." no Literledge! ".$shurl;}
+				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! ".$shurl;}
+				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! ".$shurl;}
 
 				$btns = "<form id='ubuttons' action='account/addtoshelf.php' method='post'>";
 				$ainpt = "<input class='btpress' type='submit' name='add' value='' style='background-image: url(media/images/icons/addto.png);' ";
