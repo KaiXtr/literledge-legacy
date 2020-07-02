@@ -18,22 +18,43 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			O Impressionismo foi um movimento que se manifestou, especialmente nas artes plásticas no fim do século XIX na França. Os impressionistas rejeitavam as convenções da arte acadêmica vigente na época. As pinturas do Impressionismo captavam as impressões perceptivas de luminosidade, cor e sombra das paisagens, por isso pintavam o mesmo quadro em diferentes horários do dia.
-
-			O termo “impressionista” deriva de uma das obras mais significativas obras desse movimento - Impressão: Nascer do Sol, de Monet. Outra explicação diz que o termo foi usado pela primeira vez pelos caluniadores do movimento, que consideravam as obras inacabadas e o nome foi aceito e adotado pelos artistas desse estilo.
-			Paul Cézanne (1839-1906), Edgar Degas (1834-1917), Claude Monet (1840-1926), Camille Pissarro (1830-1903), Pierre-Auguste Renoir (1841-1919) estão entre os principais expoentes do Impressionismo.
-
-			Esses artistas estavam interessados em confinar com a tinta as impressões sensoriais de cor, luz, som e de movimento, por meio de cores claras e brilhantes bem como pinceladas mais livres e distintas. Assim como é do conhecimento de todos, as cores da natureza mudam conforme a luz incidente em determinado horário do dia, e eram essas impressões que os impressionistas queriam capturar. Os impressionistas estudavam muito sobre os efeitos ópticos, para isso usavam com frequência recursos fotográficos. Em função disso preferiam trabalhar ao ar livre, bem como, não se prenderam ao uso da perspectiva e ao uso de modelos. As figuras representadas não possuíam contornos nítidos, as sombras deveriam ser coloridas e as cores deveriam ser usadas puras, evitando a mistura de tonalidades.
-
-			Claude Monet, principal expoente do Impressionismo, costumava afirmar que só é possível conhecer um objeto plenamente se for possível experenciar toda gama de possibilidades e impressões que ele provoca. Ao pintar a tela Catedral de Rouen, Harmonia em azul, de 1893, o artista pintou a catedral trinta vezes, tentando capturar os as variações de cores em sua fachada.
-
-			No Brasil, alguns pintores se destacaram nesse estilo como  Eliseu Visconti, Almeida Júnior, Timótheo da Costa, Henrique Cavaleiro, Vicente do Rego Monteiro e Alfredo Andersen.
-
-			O Impressionismo também teve suas manifestações na música e na literatura. Na música seus nomes mais marcantes foram Debussy e Ravel. Na literatura destacam-se os escritores Marcel Proust, Graça Aranha e Raul Pompeia.
+			O Impressionismo foi um movimento de vanguarda que surgiu no final do século XIX na França, e se manifestou principalmente na pintura e nas artes plásticas. Os impressionistas criticaram os padrões vigentes e buscaram inovações da maneira de se fazer arte. O nome do movimento veio de um crítico de arte, que chamou as pinturas de impressionistas e inacabadas para descrevê-las, isto pois ao invés das pinturas retratarem a realidade com fidelidade, elas passam uma impressão da realidade. Assim, os pintores impressionistas se preocupavam mais com a luz e as sombras da paisagem, por isso pintavam seus quadros em vários horários do dia.<br />
+			<br />
+			Apesar de ter se manifestado na literatura, <b>o Impressionismo não criou uma escola literária,</b> contudo, características da pintura Impressionista pode ser observada na literatura. Os escritores impressionistas tiveram uma preocupação maior em descrever detalhadamente aspectos psicológicos dos personagens e impressões sensorias de uma cena, além de dar mais importância ás emoções dos personagens e ás metáforas. As tramas passaram a dar mais importância á narrativa em detrimento da estrutura, geralmente seguindo assim uma narrativa não-linear. Os principais temas abordados nestas obras envolvem a mente do indivíduo e suas questões psicológicas e introspectivas, como o tempo, as memórias, a frustração e a morte. O tempo é um tema especial para os impressionistas, seguindo a visão de resgatar o tempo perdido, os impressionistas retratam a paisagem fragmentada e momentânea, como algo que deve ser admirado, e não justificado. <br />
+			<br />
+			Por possuir uma linguagem mais difícil de se entender, os livros de caráter impressionista necessitam por sua vez de leitores de caráter intelectual, indo contra a literatura democrática do <a href='schools/realism.php'>Realismo</a> e do <a href='schools/naturalism.php'>Naturalismo</a>.
 			<br />
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Impressionistas </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							$a = array('POMPEIAraul','GRACAaranha','MACHADOassis','QUEIROZeca');
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

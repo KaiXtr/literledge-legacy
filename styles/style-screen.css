@@ -1013,8 +1013,13 @@ hr {
 	overflow-y: hidden;
 }
 
+.brow.home .thumbs {
+	width: 24%;
+}
+
 .coverart {
 	width: 153px;
+	top: 0px;
 	flex: 0;
 }
 

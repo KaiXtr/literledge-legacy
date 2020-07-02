@@ -6,6 +6,7 @@
 		<?php
 			if ((@$_POST['search'] == false)&&(@$_GET['q'] == false)) {header('location: index.php');}
 			else if ((@$_POST['search'] == true)&&($_POST['search'] != '')) {header('location: search.php?q='.$_POST['search']);}
+			#else if ((@$_POST['search'] == true)&&($_POST['search'] != '')) {$search = $_POST['search'];}
 			else {$search = $_GET['q'];}
 			if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 				{$v = 'Busca - ';}

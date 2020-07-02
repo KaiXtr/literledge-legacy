@@ -22,7 +22,7 @@
 			<br />
 			Por ter enormes tendências nacionalistas e armamentistas, muitos artistas e apoiadores do Futurismo encontraram na guerra, e principalmente no <b>Fascismo</b>, uma concretização do sonho Futurista, principalmente na Itália. Já na Rússia, o Futurismo recebeu grande influência do socialismo.<br />
 			<br />
-			Na literatura, o Futurismo é caracterizado por frases fragmentasas, versos livres e onomatopeias, tudo para expressar a idéia de velocidade. Na pintura futurista, os artistas se preocupam mais com o dinamismo e a ação ao invés da retratação dos objetos propriamente ditos, utilizando cores vibrantes, formas geométricas, colagens e as chamadas <b>Linhas de força</b>. <br />
+			Na literatura, o Futurismo é caracterizado por frases fragmentadas, versos livres e onomatopeias, tudo para expressar a idéia de velocidade. Na pintura futurista, os artistas se preocupam mais com o dinamismo e a ação ao invés da retratação dos objetos propriamente ditos, utilizando cores vibrantes, formas geométricas, colagens e as chamadas <b>Linhas de força</b>. <br />
 			<br />
 			O Futurismo exerceu forte influência na arte contemporânea, inspirando vários artistas e o surgimento de outros movimentos artísticos, como o <b>Surrealismo, Cubismo e Dadaísmo.</b>No Brasil, o Futurismo inspirou artistas Modernistas a deixar de lado o passado e as influências européias para começar a enxergar no futuro uma construção de uma arte totalmente brasileira. O Futurismo só chegou ao seu fim com o início da Segunda Guerra Mundial na década de 30.
 			<br />

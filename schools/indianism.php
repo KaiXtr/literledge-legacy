@@ -18,57 +18,43 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			Na literatura brasileira, o Indianismo corresponde a uma das tendências literárias mais marcantes do período romântico.
-
-			Essa tendência foi explorada anteriormente pelo movimento do barroco, com obras de José de Anchieta: Arte de Gramática da Língua mais usada na costa do Brasil, Poema à Virgem e A Cartilha dos Nativos.
-
-			E também no arcadismo, por Basílio da Gama, com sua obra “O Uraguai” (1769).
-
-			Entretanto, foi na primeira geração romântica (1836 a 1852), que o Indianismo trará a tona o tema do índio idealizado, baseada no binômio “nacionalismo-indianismo”.
-
-			O nome dessa tendência remete a figura escolhida para exaltar aspectos nacionais: o índio, considerado o “bom selvagem”, símbolo da inocência e pureza.
-
-			No continente europeu os cavaleiros medievais eram as figuras românticas que representavam o bom herói, idealizado, corajoso e forte. Já no Brasil, a figura romântica do novo herói era a do índio.
-
-			Isso foi essencial para resgatar uma identidade nacional, que ficasse mais próxima do contexto nacional.
-
-			José de Alencar foi um dos mais representativos escritores brasileiros que explorou a mitificação do índio como herói nacional.
-
-			Saiba mais sobre o movimento romântico no país: Romantismo no Brasil
-
-			Contexto Histórico: Resumo
-			Após a independência do Brasil (1822), o país passava por diversas transformações sociais, políticas e econômicas.
-
-			Após a separação da Metrópole, os brasileiros, imbuídos pelo espírito anticolonialista e nacionalista, buscavam uma identidade nacional. Ou seja, genuinamente brasileira e afastada dos moldes europeus.
-
-			Destarte, os artistas passam a buscar temas nacionais com o intuito de criar uma cultura do próprio país, e a partir disso, o índio foi eleito o nosso “herói nacional”.
-
-			Note que essa personalidade idealizada não poderia ser figurada pelo “português” ou o “africano”. O português estava relacionado com a figura do colonizador e explorador das terras, e o africano, com a força escrava utilizada durante muito tempo no Brasil Colonial.
-
-			Para saber mais: Independência do Brasil
-			Principais Características
-			Nacionalismo e ufanismo
-			Sentimentalismo e religiosidade
-			Figura idealizada do índio
-			Índio-herói como o símbolo nacional
-			Língua e costumes indígenas
-			Retorno ao passado histórico
-			Exaltação da natureza e do folclore
-			Influências do medievalismo romântico
-			Principais Autores e Obras
-			Os principais escritores brasileiros da geração indianista foram:
-
-			Gonçalves de Magalhães (1811-1882), obras: A Confederação de Tamoios (1857) e Os Indígenas do Brasil perante a História (1860).
-			Gonçalves Dias (1823-1864), obras: I-Juca- Pirama (1851), Os Timbiras (1857), Canção do Tamoio.
-			José de Alencar (1829-1877), obras: O Guarani (1857), Iracema (1865) e Ubirajara (1874).
-			Curiosidades
-			No romance moderno podemos destacar a tendência indianista no trabalho do escritor brasileiro Mario de Andrade com sua obra notável “Macunaíma” (1928).
-			O indianismo denominado “Gonçalvino”, faz referência ao indianismo presente na poesia de Gonçalves Dias.
-			No século XIX, o indianismo foi uma tendência presente nas artes plásticas, dos quais se destacam os pintores brasileiros: Victor Meirelles (1832-1903) e sua famosa obra “Moema” (1866); e Rodolfo Amoedo (1857-1941) e sua obra mais representativa “O Último Tamoio” (1883).
+			O Indianismo foi uma vertente literária brasileira do período romantista. É caracterizada principalmente pela valorização do indígena na literatura, algo proveniente da figura do <b>"bom selvagem"</b>, ou seja, um ser humano puro e inocente, afastado do ambiente urbano e vivendo em conexão com a natureza, ideal este criado pelo iluminista <a href='users/ROUSSEAUjeanjacques.php'>Jean-Jacques Rousseau</a>. Este é um estilo de vida romantizado desde o Brasil colonial, tanto pelo <a href='schools/romanticism.php'>Romantismo</a>, quanto pelo <a href='schools/arcadism.php'>Arcadismo</a>. O indígena também serve como uma troca da figura do cavaleiro na literatura romântica, um personagem que representa o bom herói, corajoso e honesto.<br />
+			<br />
+			O Indianismo também tratará do <b>nacionalismo brasileiro</b> colocando o indígena como o herói da nação e o verdadeiro brasileiro, ajudando na criação de uma identidade nacional no Brasil imperial, distante dos valores lusitanos dos antigos colonizadores portugueses. Além do indígena, o vocabulário indígena, principalmente dos idiomas tupi-guarani, são amplamente utilizados na literatura indianista, além da retratação do estilo de vida dos indígenas. No geral, o Indianismo também traz várias características do romantismo, como as influências das histórias medievais e o retorno ao passado histórico. Como o Brasil não possuía um passado de cavaleiros e heróis, os personagens que restaram foram os indígenas. <br />
+			<br />
+			A influência do indianismo pode ser vista no <a href='schools/modernism.php'>Modernismo Brasileiro</a>, onde a cultura indígena é novamente retratada como a raíz do povo brasileiro e da identidade nacional, principalmente na obra <a href='books/00000H.php'>Macunaíma</a>, de <a href='users/ANDRADEmario.php'>Mário de Andrade</a>.
 			<br />
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Indianistas </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							$a = array('ALENCARjose','DIASgoncalves');
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

@@ -91,72 +91,49 @@
 		<script type='text/javascript'>
 			slide_show();
 		</script>
-		<div class='content'>
-			<?php
-				require 'account/mysql_connect.php';
-				if ($notcon == null) {
-					require 'design/array_lists.php';
-					$lists = array('SELECT id, auctor, warning FROM books ORDER BY readings desc LIMIT 10',
-						'SELECT id, auctor, warning FROM books ORDER BY id desc LIMIT 10');
-					$names = array($fltlst['Popular'],$fltlst['New']);
-					$index = array(0,1);
-					$x = 2;
-					while ($x < 10) {
-						$r = random_int(0,1);
-						if ($r == 0) {
-							$i = array_keys($gnrlst)[random_int(0,sizeof($gnrlst)-1)];
-							if (in_array($gnrlst[$i], $names) == false) {
-								$names[] = $gnrlst[$i];$lists[] = 'SELECT id, auctor, warning FROM books WHERE genre="'.$i.'" LIMIT 10';
-								$index[] = $x; $x++;
-							}
-						}
-						if ($r == 1) {
-							$i = array_keys($ltslst)[random_int(0,sizeof($ltslst)-1)];
-							if (in_array($ltslst[$i], $names) == false) {
-								$names[] = $ltslst[$i];$lists[] = 'SELECT id, auctor, warning FROM books WHERE litschool="'.$i.'" LIMIT 10';
-								$index[] = $x; $x++;
-							}
-						}
+		<?php
+			require 'design/array_lists.php';
+			require 'account/mysql_connect.php';
+			if ($notcon == null) {
+				echo "<div class='brow home'>";
+				$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
+				if ($result->num_rows > 0) {
+					$list = array();
+					while ($i = $result->fetch_array(MYSQLI_ASSOC)) {
+						$list[] = $i;
 					}
 
-					for ($q=0;$q<sizeof($lists);$q++) {
-						echo "<div class='brow'><div class='blabel'><h1>".$names[$index[$q]]."</h1></div><div class='displaybooks'>";
-						$result = $conn->query($lists[$index[$q]]);
-						if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
-						else {$lang = $_COOKIE['lang'];}
+					if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
+					else {$lang = $_COOKIE['lang'];}
 
-						if ($result->num_rows > 0) {
-							while ($i = $result->fetch_assoc()) {
-								$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$i['id']."'");
-								$t = $translation->fetch_assoc();
+					for ($x=0;$x<sizeof($list);$x++) {
+						$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$list[$x]['id']."'");
+						$t = $translation->fetch_assoc();
 
-								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$i['auctor']."'");
-								$n = $find->fetch_assoc();
-								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
-								else {$nm = $n[$_COOKIE['lang']];}
+						$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$list[$x]['auctor']."'");
+						$n = $find->fetch_assoc();
+						if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+						else {$nm = $n[$_COOKIE['lang']];}
 
-								if ($i['warning'] == '0') {$wrg = '';}
-								else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
+						if ($list[$x]['warning'] == '0') {$wrg = '';}
+						else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
 
-								echo "<a href='books/" .$i["id"]. ".php'>
-										<button class='thumbs' ".$wrg.">
-											<div class='coverart'> <img  src='media/images/covers/" .$i["id"]. ".jpg' /> </div>
-											<div class='description'>
-												<h2> ".$t[$lang]." </h2>
-												<h3> ".$nm." </h3>";
-												include 'sinopsis/'.$i['id'].'.php';
-										echo $sin."</div>
-										</button>
-									</a>";
-								}
-							}
-							echo "</div>
-							</div>";
+						echo "<a href='books/" .$list[$x]["id"]. ".php'>
+								<button class='thumbs' ".$wrg.">
+									<div class='coverart'> <img  src='media/images/covers/" .$list[$x]["id"]. ".jpg' /> </div>
+									<div class='description'>
+										<h2> ".$t[$lang]." </h2>
+										<h3> ".$nm." </h3>";
+										include 'sinopsis/'.$list[$x]['id'].'.php';
+								echo $sin."</div>
+								</button>
+							</a>";
 						}
-						$conn->close();
 					}
-			?>
-		</div>
+					echo "</div>";
+					$conn->close();
+				}
+		?>
 		<?php include 'design/footer.php' ?>
 		<script type='text/javascript'>cut_sinopsis();</script>
 	</body>
