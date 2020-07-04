@@ -10,8 +10,9 @@
 			{$v = 'Recuperar senha - ';}
 		else if ($_COOKIE['lang'] == 'en')
 			{$v = 'Recover password - ';}
+		else if ($_COOKIE['lang'] == 'es')
+			{$v = 'Recuperar la contraseña - ';}
 		include 'design/metadata.php';
-		$qry = $_GET['w'];
 		?>
 	</head>
 
@@ -24,30 +25,30 @@
 				<form action='account/account_recover.php' method='post'>
 					<h1> Recuperar sua senha </h1> <br />
 					<span id='text'>
-						<div class='manlan' lang='pt'> Insira seu email, iremos enviar um link para recuperar sua senha. </div>
-						<div class='manlan' lang='en'> Insert your email, we will send a link to recover your password. </div>
+					<?php
+						if ($_COOKIE['lang'] == 'pt') {echo "Insira seu email, iremos enviar um link para recuperar sua senha.";}
+						if ($_COOKIE['lang'] == 'en') {echo "Insert your email, we will send a link to recover your password.";}
+						if ($_COOKIE['lang'] == 'es') {echo "Inserte su correo electrónico, le enviaremos un enlace para recuperar su contraseña.";}
+					?>
 					</span> <br />
 					<?php
-						if ($qry == '1') {
+						if ($_GET['w'] == '1') {
 							$errl = "<span class='error'>";
-							if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-								{$errl = $errl."Não foi encontrado nenhum usuário com o email inserido.";}
-							else if ($_COOKIE['lang'] == 'en')
-								{$errl = $errl."Not found any user with the inserted email.";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Não foi encontrado nenhum usuário com o email inserido.";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Not found any user with the inserted email.";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."No se ha encontrado ningún usuario con el correo electrónico insertado.";}
 							echo $errl ."</span>";
 							}
-						if ($qry == '2') {
+						if ($_GET['w'] == '2') {
 							$errl = "<span>";
-							if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-								{$errl = $errl."Foi enviado um email para recuperar sua senha";}
-							else if ($_COOKIE['lang'] == 'en')
-								{$errl = $errl."An email to recover your password was send.";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Foi enviado um email para recuperar sua senha";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."An email to recover your password was send.";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Se envió un correo electrónico para recuperar su contraseña.";}
 							echo $errl ."</span>";
 							}
-						if ($qry != '2') {
-							echo "
-							<input type='text'  id='user' class='textbox' name='email' /> <br />
-							<input type='submit' class='btpress' /> <br />";
+						if ($_GET['w'] != '2') {
+							echo "<input type='text'  id='user' class='textbox' name='email' /> <br />
+								<input type='submit' class='btpress' /> <br />";
 						}
 					?>
 				</form>

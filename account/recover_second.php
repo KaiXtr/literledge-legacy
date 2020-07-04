@@ -12,7 +12,7 @@
 
 		<div class='content'>
 			<div class='login'>
-				<form action='http://localhost/literledge/profile_edit.php' method='post'>
+				<form action='account/profile_edit.php' method='post'>
 					<h1> Recuperar sua senha </h1> <br />
 					<?php
 						$errl = "<span class='error'>";

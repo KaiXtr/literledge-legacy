@@ -18,8 +18,13 @@
 		<?php include 'design/lateralbar.php' ?>s
 
 		<div class='login'>
-			<h1> Contato Direto </h1>
-			</a>
+			<h1> Contate-nos</h1>
+			<?php
+				if (@$_GET['t'] == true) {
+					if ($_GET['t'] == 1) {echo 'Obrigado por nos contatar!';}
+					if ($_GET['t'] == 2) {echo 'Não foi possível enviar sua mensagem, tente novamente mais tarde.';}
+				}
+			?>
 			<form action='account/send_email.php' method='post'>
 				<span id='text'> Nome </span> <br />
 				<input type='text' id='user' class='textbox' name='name' /> <br />
@@ -29,9 +34,7 @@
 				<textarea id='user' class='textbox long' name='message'></textarea> <br />
 				<input type='submit' class='btpress' /> <br />
 			</form>
-			</a>
 		</div>
-
 		<?php include 'design/footer.php' ?>
 	</body>
 </html>
