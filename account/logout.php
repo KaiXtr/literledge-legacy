@@ -5,5 +5,5 @@
 	unset($_COOKIE['password']); 
 	setcookie('user', null, -1, '/');
 	setcookie('password', null, -1, '/');
-	header("location: ".BASE_URL."login.php");
+	header("location: ".$base_url."login.php");
 ?>

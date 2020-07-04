@@ -43,5 +43,5 @@
 			$conn->close();
 		}
 
-	if ($error == '') {header("location: http://localhost/literledge/upload.php");}
+	if ($error == '') {header("location: ".$base_url."upload.php");}
 ?>

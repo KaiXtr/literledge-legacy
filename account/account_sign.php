@@ -48,7 +48,7 @@
 		fwrite($htmc, $cont);
 		fclose($htmc);
 
-		header("location: ".BASE_URL."index.php");
+		header("location: ".$base_url."index.php");
 		}
 	$conn->close();
 ?>

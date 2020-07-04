@@ -219,7 +219,7 @@ hr{
 	line-height: 35px;
 }
 
-#lateralbar{
+.sidebar{
 	white-space: nowrap;
 	font-size: 25px;
 	line-height: 35px;
@@ -236,21 +236,21 @@ hr{
 	overflow-x: scroll;
 }
 
-#lateralbar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
 	display: none;
 }
 
-#lateralbar ul{
+.sidebar ul{
 	list-style: none;
 	padding: 0px;
 }
 
-#lateralbar h1{
+.sidebar h1{
 	font-size: 20px;
 	font-weight: bold;
 }
 
-#lateralbar hr{
+.sidebar hr{
 	margin-bottom: 30px;
 	margin-right: 40px;
 	border: 1px solid #7F4E43;
@@ -1122,9 +1122,9 @@ hr{
 
 .infocontent{
 	font-size: 20px;
-	margin-left: 190px;
-	margin-right: 190px;
-	padding: 100px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 20px;
 }
 
 .infocontent button{

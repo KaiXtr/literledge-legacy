@@ -210,7 +210,7 @@ hr {
 	list-style: none;
 }
 
-#lateralbar {
+.sidebar {
 	white-space: nowrap;
 	line-height: 20px;
 	position: fixed;
@@ -225,21 +225,21 @@ hr {
 	overflow-x: scroll;
 }
 
-#lateralbar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
 	display: none;
 }
 
-#lateralbar ul {
+.sidebar ul {
 	list-style: none;
 	padding: 0px;
 }
 
-#lateralbar h1 {
+.sidebar h1 {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-#lateralbar hr {
+.sidebar hr {
 	margin-bottom: 30px;
 	margin-right: 40px;
 	border: 1px solid #7F4E43;

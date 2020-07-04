@@ -5,5 +5,5 @@
 		$conn->query("INSERT INTO reviews (user,book,comment,datime) VALUES ('".$_SESSION['user']."','".$_POST['book']."','".$_POST['comment']."','".date('Y/m/d h:m:s')."');");
 		$conn->close();
 	}
-	header("location: http://localhost/literledge/books/" .$_POST['book']. ".php");
+	header("location: ".$base_url."books/" .$_POST['book']. ".php");
 ?>

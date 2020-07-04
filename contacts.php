@@ -18,12 +18,17 @@
 		<?php include 'design/lateralbar.php' ?>s
 
 		<div class='login'>
-			<h1> Email </h1>
-			<a href='mailto:thekaixtr@gmail.com?subject=SweetWords&body=Please send me a copy of your new program!' target='_top'>
-			Send Feedback
+			<h1> Contato Direto </h1>
 			</a>
-			<a href='https://mail.google.com/mail/u/0/#inbox?compose=new' target='_blank'>
-			Send Feedback
+			<form action='account/send_email.php' method='post'>
+				<span id='text'> Nome </span> <br />
+				<input type='text' id='user' class='textbox' name='name' /> <br />
+				<span id='text'> Email </span> <br />
+				<input type='text' id='user' class='textbox' name='email' /> <br />
+				<span id='text'> Mensagem </span> <br />
+				<textarea id='user' class='textbox long' name='message'></textarea> <br />
+				<input type='submit' class='btpress' /> <br />
+			</form>
 			</a>
 		</div>
 

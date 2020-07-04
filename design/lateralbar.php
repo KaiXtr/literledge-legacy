@@ -1,4 +1,4 @@
-<div id='lateralbar' style='visibility: hidden;'>
+<div id='lateralbar' class='sidebar' style='visibility: hidden;'>
 	<ul>
 		<li> <h1>
 			<?php

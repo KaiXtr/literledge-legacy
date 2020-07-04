@@ -20,7 +20,7 @@
 			$headers .= "Content-Type: text/html; charset=utf-8\n";
 			$body = "<h1> Recupere sua senha <h1>
 					Clique no link abaixo para recuperar sua senha. <br />
-					<a href='http://localhost/literledge/account/recover_second.php'> Recuperar senha </a> <br />
+					<a href='".$base_url."account/recover_second.php'> Recuperar senha </a> <br />
 					<br />";
 			
 
@@ -61,7 +61,7 @@
 			if (mail($_POST['email'],"Literledge - Recuperação de senha",$body,$headers)){echo "email sendo encaminhado";};
 			#header("location: http://localhost/literledge/recover.php?w=2");
 		}
-		else {header("location: http://localhost/literledge/recover.php?w=1");}
+		else {header("location: ".$base_url."recover.php?w=1");}
 	}
 	
 	$conn->close();

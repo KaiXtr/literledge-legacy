@@ -8,43 +8,16 @@
 			{$v = 'Ajuda - ';}
 		else if ($_COOKIE['lang'] == 'en')
 			{$v = 'Help - ';}
-		include 'design/metadata.php'; ?>
+		else if ($_COOKIE['lang'] == 'es')
+			{$v = 'Ayuda - ';}
+		include '../design/metadata.php'; ?>
 	</head>
 
 	<body>
-		<?php include 'design/header.php' ?>
-		<?php include 'design/lateralbar.php' ?>
+		<?php include '../design/header.php' ?>
+		<?php include '../design/helpbar.php' ?>
 
 		<div class='infocontent'>
-			<div class='summary'>
-				<div class='manlan' lang='pt'>
-					<ul>
-						<li> <a href='help.php#ptgoto1'> Qual é o propósito do Literledge? </a> </li>
-						<li> <a href='help.php#ptgoto2'> Qual é a origem dos livros? </a> </li>
-						<li> <a href='help.php#ptgoto3'> O site possui informações confiáveis? </a> </li>
-						<li> <a href='help.php#ptgoto4'> Posso publicar meus livros no site? </a> </li>
-						<li> <a href='help.php#ptgoto5'> Como contribuir com o site? </a> </li>
-						<li> <a href='help.php#ptgoto6'> Como criar uma conta? </a> </li>
-						<li> <a href='help.php#ptgoto7'> Como são feitas as avaliações de livros? </a> </li>
-						<li> <a href='help.php#ptgoto8'> O site possui informações incorretas. </a> </li>
-					</ul>
-				</div>
-				<div class='manlan' lang='en'>
-					<ul>
-						<li> <a href='help.php#engoto1'> What is the purpose of Literledge? </a> </li>
-						<li> <a href='help.php#engoto2'> What is the origin of the books? </a> </li>
-						<li> <a href='help.php#engoto3'> Does the site have reliable information? </a> </li>
-						<li> <a href='help.php#engoto4'> Can I publish my books on the website? </a> </li>
-						<li> <a href='help.php#engoto5'> How to contribute to the site? </a> </li>
-						<li> <a href='help.php#engoto6'> How to create an account? </a> </li>
-						<li> <a href='help.php#engoto7'> How are book reviews done? </a> </li>
-						<li> <a href='help.php#engoto8'> The website has incorrect information. </a> </li>
-					</ul>
-				</div>
-			</div>
-
-			<hr>
-
 			<div class='manlan' lang='pt'>
 				<a name='ptgoto1'></a>
 				<h1> Qual é o propósito do Literledge? </h1>
@@ -133,6 +106,6 @@
 
 		</div>
 
-		<?php include 'design/footer.php' ?>
+		<?php include '../design/footer.php' ?>
 	</body>
 </html>

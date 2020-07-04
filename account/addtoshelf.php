@@ -17,7 +17,7 @@
 				if (isset($_POST['fav'])) {$conn->query("UPDATE shelves SET state='3' WHERE id='".$i['id']."'");}
 				if (isset($_POST['unf'])) {$conn->query("UPDATE shelves SET state='1' WHERE id='".$i['id']."'");}
 				}
-			header("location: ".BASE_URL."books/".$_POST['id'].".php");
+			header("location: ".$base_url."books/".$_POST['id'].".php");
 			}
 		$conn->close();
 		}

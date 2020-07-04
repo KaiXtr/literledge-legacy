@@ -17,13 +17,14 @@
 	<script type='text/javascript'> lang_set(); </script>
 
 	<ul class='lowerbarinfo'>
-		<li> <a href='contacts' target='_blank'>
+		<li> <a href='contacts'>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Contatos";}
 				if ($_COOKIE['lang'] == 'en') {echo "Contacts";}
 				if ($_COOKIE['lang'] == 'es') {echo "Contactos";}
 			?>
 		</a> </li>
+		<li> <a href='https://twitter.com/KaiXtr' target='_blank'> Twitter </a> </li>
 		<li> <a href='https://github.com/KaiXtr' target='_blank'> GitHub </a> </li>
 	</ul>
 
@@ -35,17 +36,21 @@
 				if ($_COOKIE['lang'] == 'es') {echo "Sobre";}
 			?>
 		</a> </li>
-		<?php /*<li> <a href='about.php'>
-			<div class='manlan' lang='pt'> Termos e Condições </div>
-			<div class='manlan' lang='en'> Terms of Service </div>
-			<div class='manlan' lang='es'> Términos y Condiciones </div>
+		<li> <a href='terms.php'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Termos e Condições";}
+				if ($_COOKIE['lang'] == 'en') {echo "Terms of Service";}
+				if ($_COOKIE['lang'] == 'es') {echo "Términos y Condiciones";}
+			?>
 		</a> </li>
-		<li> <a href='about.php'>
-			<div class='manlan' lang='pt'> Política de Privacidade </div>
-			<div class='manlan' lang='en'> Privacy and security </div>
-			<div class='manlan' lang='es'> Política de Privacidad </div>
-		</a> </li>*/ ?>
-		<li> <a href='help.php'>
+		<li> <a href='privacy.php'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Política de Privacidade";}
+				if ($_COOKIE['lang'] == 'en') {echo "Privacy Police";}
+				if ($_COOKIE['lang'] == 'es') {echo "Política de Privacidad";}
+			?>
+		</a> </li>
+		<li> <a href='help/summary.php'>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Ajuda";}
 				if ($_COOKIE['lang'] == 'en') {echo "Help";}
