@@ -18,86 +18,13 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			O simbolismo foi uma tendência literária que nasceu na França, com as teorias estéticas de Charles Baudelaire, e floresceu principalmente na poesia, em diversas partes do mundo ocidental, no final do século XIX. É o último movimento antes do surgimento do modernismo na literatura, por isso é também considerado pré-moderno.
+			O Simbolismo foi uma escola literária de origem Francesa que nasceu no final do século XIX. Teve grande influência principalmente para a poesia, mas também contribuiu para a prosa, por ser o último movimento literário criado antes do Modernismo, é considerado um movimento <b>pré-moderno.</b> O nome vem da principal premissa do simbolismo, que é resgatar a simbologia e a linguagem universal, através de palavras que mesmo fora de um contexto, todos possam entender. Os simbolistas estudam a natureza e decifram sua essência e seu comportamento além do material, se preocupando mais com o estado espiritual das coisas e se afastando tanto da objetividade do <a href='schools/realism.php'>Realismo</a> quanto as representações animalescas do <a href='schools/naturalism.php'>Naturalismo.</a><br />
+			<br />
+			Assim como vários movimentos literários de seu tempo, o Simbolismo também foi fortemente influenciado pela filosofia <b>Positivista</b> de Augusto Comte e pelas crescentes descobertas científicas de Charles Darwin, e viveu no contexto da Segunda Revolução Industrial e seus efeitos na sociedade. Assim como o Realismo e o Naturalismo, o Simbolismo também observa a realidade criada pela industrialização e pela urbanização e as injustiças sociais causadas pelos mesmos, uma realidade que contradiz a idéia de progresso das fábricas e avanços tecnológicos. Como os simbolistas tem um enfoque maior na esfera espiritual, eles buscam uma reconectividade entre o terreno e o celestial, o céu e a terra, o bem e o mal, buscando o resgate de uma humanidade deteriorada, por conta disto eram chamados de <i>decadentistas</i> e <i>malditos</i>. Os simbolistas criticaram os ideais racionalistas e cientificistas de seu tempo, pois em meio á tantos avanços tecnológicos e estudos científicos, algo estava faltando: os valores transcendentais e a existência individual, segundo eles. <br />
+			<br />
+			Na poesia simbolista, a característica mais comum é a abordagem da <b>temática psicológica, espiritual e religiosa</b>, que envolve não só as religiões judaico-cristãs, mas também as tradições e crenças orientais. Através de descrições sombrias, antíteses e contradições, o jogo de palavras cria uma conexão entre o terreno e o celestial, algo já praticado no período do <a href='schools/baroque.php'>Barroco</a>. A idéia de <b>vazio e silêncio</b> é constantemente apresentada nos poemas simbolistas através de rupturas sintáticas, espaços vazios, reticências e pausas. Além disto, sinestesias são muito utilizadas, ou seja, descrições do empírico e das sensações dos 5 sentidos, que vão além de uma simples descrição de objetos materiais, mas dos símbolos da natureza e.
+			---
 
-			Como o nome aponta, a poesia simbolista propunha um resgate dos símbolos, isto é, de uma linguagem que compreendesse uma universalidade. O poeta é, aqui, um decifrador dos símbolos que compõem a natureza ao seu redor. Contra a superficialidade material do corpo, a objetividade do realismo e as descrições animalescas do naturalismo, o simbolismo quer mergulhar no espírito, que se relaciona a algo maior, a uma instância coletiva universal, a uma transcendência.
-			Contexto histórico
-			A literatura simbolista foi uma reação às correntes cientificistas e positivistas do último quartel do século XIX. A Europa vivenciava a ebulição da Segunda Revolução Industrial, que trazia consigo, além do capitalismo financeiro, as ideologias do empirismo e do determinismo. Trata-se de uma concepção técnico analítica do mundo, em que a realidade é apreendida apenas pela quantificação e análise de dados, em prol do desenvolvimento da técnica.
-
-			Havia um otimismo predominante no avanço da indústria, expresso na ideia do progresso. Os simbolistas, entretanto, percebem no surgimento das metrópoles, acompanhado da miséria, da sujeira industrial e da exploração da força de trabalho, uma decadência desesperada, uma morbidez que nada tem de progressista.
-
-			Por isso, direcionam sua lírica não para as descrições objetivas, mas para uma tentativa de conciliação entre matéria e espírito, tentativa de resgate de uma humanidade deteriorada. Por essa postura, foram também chamados “decadentistas” e “malditos”.
-
-			Os simbolistas questionaram as conclusões racionalistas e mecânicas em voga na época, pois elas não davam espaço à existência do sujeito, servindo apenas como combustível para a ascensão da burguesia industrial. Buscavam algo além do materialismo e além do empirismo: um sentido de universalidade, que seria recuperado por meio da linguagem poética. Buscavam, ao contrário da impessoalidade numérica e tecnológica, os valores transcendentais — o Bom, o Verdadeiro, o Belo.
-
-			Características do simbolismo
-
-			Uso de pausas, reticências, espaços em branco e rupturas sintáticas para representar o silêncio metafísico;
-			Sinestesia: construção de versos que descrevem sons, aromas e cores, pois os cinco sentidos são instrumentos de captação dos símbolos ao redor;
-			Temáticas voltadas à interioridade humana, ao êxtase do espírito;
-			Vocabulário etéreo e remissões ao Nada e ao Absoluto;
-			Presença comum de antíteses e oposições, graças às tentativas de encarnar o que é divino e espiritualizar o que é terreno: o poema é a forma de conciliação entre os planos material e espiritual;
-			Entendimento da poesia como uma visão da existência;
-			Presença da religiosidade, não somente cristã como também oriental, compondo a busca simbolista da transcendência;
-			Descrições crepusculares, presença simultânea de luz e sombra;
-			Imagens sombrias, lúgubres, decadentes;
-			Afrouxamento do rigor métrico parnasiano, dando espaço para metrificações irregulares e versos livres;
-			Conceito musical do poema.
-			O poema “Correspondências”, de Charles Baudelaire, tem no seu próprio título a ideia central do simbolismo: a linguagem simbolista pretende estabelecer uma correspondência entre o plano material e o plano transcendental, entre o divino e o profano.
-
-			Correspondências
-
-			A Natureza é um templo vivo em que os pilares
-			Deixam filtrar não raro insólitos enredos;
-			O homem o cruza em meio a um bosque de segredos
-			Que ali o espreitam com seus olhos familiares.
-
-			Como ecos longos que à distância se matizam
-			Numa vertiginosa e lúgubre unidade,
-			Tão vasta quanto a noite e quanto a claridade,
-			Os sons, as cores e os perfumes se harmonizam.
-
-			Há aromas frescos como a carne dos infantes,
-			Doces como o oboé, verdes como a campina,
-			E outros, já dissolutos, ricos e triunfantes,
-
-			Com a fluidez daquilo que jamais termina,
-			Como o almíscar, o incenso e as resinas do Oriente,
-			Que a glória exaltam dos sentidos e da mente.
-
-			(Charles Baudelaire, As flores do mal, 1857, trad. Ivan Junqueira)
-
-			A evocação da espiritualidade está presente já no primeiro verso, em que a Natureza, iniciada em letra maiúscula, como uma entidade, é caracterizada como um templo vivo, ou seja, há uma vida espiritual oculta por trás da existência material das coisas. O homem cruza esse templo vivo em meio a um bosque de símbolos. E esses símbolos olham os homens com familiaridade — pois aqueles geralmente são convencionais, isto é, existem por causa de seu sentido coletivo.
-
-			O poeta fala em ecos, sons, cores e perfumes: é a presença da captação sinestésica dos símbolos. A linguagem poética é a decifradora, a que estabelece uma ponte, uma correspondência entre o mundo material e o mundo do espírito. A referência ao almíscar, incenso e resinas do Oriente também retoma essa sensibilidade sinestésica, bem como faz referência a um universo espiritual, que faz uso dessa prática aromática como contato com o transcendental.
-
-			É possível verificar as típicas características simbolistas também em Cruz e Sousa, principal expoente brasileiro do movimento:
-
-			Imortal atitude
-
-			Abre os olhos à Vida e fica mudo!
-			Oh! Basta crer indefinidamente
-			Para ficar iluminado tudo
-			De uma luz imortal e transcendente.
-
-			Crer é sentir, como secreto escudo,
-			A alma risonha, lúcida, vidente...
-			E abandonar o sujo deus cornudo,
-			O sátiro da Carne impenitente.
-
-			Abandonar os lânguidos rugidos,
-			O infinito gemido dos gemidos
-			Que vai no lodo a carne chafurdando.
-
-			Erguer os olhos, levantar os braços
-			Para o eterno Silêncio dos Espaços
-			e no Silêncio emudecer olhando...
-
-			(Cruz e Sousa, Últimos sonetos, 1905)
-
-			O poema começa com a sugestão ao sentido da visão: abrindo os olhos à Vida (também o recurso das letras maiúsculas como evocação simbólica do vocábulo), tudo se ilumina, tudo tende à transcendência. A segunda estrofe equipara a fé à sensibilidade, e despreza o aspecto material, carnal da existência, preferindo a exaltação do espírito — a alma risonha abandona “o sujo deus cornudo”, “sátiro da Carne”.
-
-			Na terceira estrofe, Cruz e Sousa passa a descrever emanações sensoriais auditivas — rugidos e gemidos da existência mortal fazem oposição ao “eterno Silêncio dos Espaços” que aparece na última estrofe, seguindo a cadência de antíteses e paradoxos simbolista.
 
 			Simbolismo na Europa
 			É na França da última metade do século XIX que surge o simbolismo, caracterizado por ser uma escola de “poetas malditos” e “decadentes”, boêmios, frequentadores da noite parisiense e não raro apresentando comportamentos escandalosos.
