@@ -26,9 +26,11 @@
 					<h1> Recuperar sua senha </h1> <br />
 					<span id='text'>
 					<?php
-						if ($_COOKIE['lang'] == 'pt') {echo "Insira seu email, iremos enviar um link para recuperar sua senha.";}
-						if ($_COOKIE['lang'] == 'en') {echo "Insert your email, we will send a link to recover your password.";}
-						if ($_COOKIE['lang'] == 'es') {echo "Inserte su correo electrónico, le enviaremos un enlace para recuperar su contraseña.";}
+						if ($_GET['w'] != '2') {
+							if ($_COOKIE['lang'] == 'pt') {echo "Insira seu email, iremos enviar um link para recuperar sua senha.";}
+							if ($_COOKIE['lang'] == 'en') {echo "Insert your email, we will send a link to recover your password.";}
+							if ($_COOKIE['lang'] == 'es') {echo "Inserte su correo electrónico, le enviaremos un enlace para recuperar su contraseña.";}
+						}
 					?>
 					</span> <br />
 					<?php

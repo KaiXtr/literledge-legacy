@@ -17,7 +17,7 @@
 		<?php include '../design/header.php' ?>
 		<?php include '../design/helpbar.php' ?>
 
-		<div class='infocontent'>
+		<div class='infocontent help'>
 			<div class='manlan' lang='pt'>
 				<a name='ptgoto1'></a>
 				<h1> Qual é o propósito do Literledge? </h1>

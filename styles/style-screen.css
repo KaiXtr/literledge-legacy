@@ -72,8 +72,8 @@ hr {
 }
 
 .upperbarcontent {
-	margin-left: 190px;
-	margin-right: 190px;
+	margin-left: 10%;
+	margin-right: 10%;
 	display: flex;
 	align-items: center;
 }
@@ -111,8 +111,8 @@ hr {
 
 .searchbar {
 	margin: 0px;
-	margin-left: 240px;
-	margin-right: 200px;
+	margin-left: 15%;
+	margin-right: 15%;
 	padding: 0px;
 	height: 30px;
 	border: none;
@@ -215,13 +215,10 @@ hr {
 	line-height: 20px;
 	position: fixed;
 	padding-top: 90px;
-	padding-left: 0px;
-	width: 0px;
+	padding-left: 40px;
+	width: 300px;
 	height: 100%;
 	z-index: 8;
-	transition: width 0.5s, visibility 0.5s, padding-left 0.5s, opacity 0.5s;
-	visibility: hidden;
-	opacity: 0%;
 	overflow-x: scroll;
 }
 
@@ -245,6 +242,14 @@ hr {
 	border: 1px solid #7F4E43;
 }
 
+#lateralbar {
+	padding-left: 0px;
+	width: 0px;
+	transition: width 0.5s, visibility 0.5s, padding-left 0.5s, opacity 0.5s;
+	visibility: hidden;
+	opacity: 0%;
+}
+
 #hpslide {
 	font-size: 25px;
 	padding: 20px;
@@ -263,7 +268,7 @@ hr {
 .login {
 	text-align: center;
 	font-size: 15px;
-	margin-left: 500px;
+	margin-left: 30%;
 	margin-top: 100px;
 	margin-bottom: 130px;
 	padding: 50px;
@@ -300,7 +305,7 @@ hr {
 
 .textbox.long {
 	text-align: left;
-	width: 380px;
+	width: 300px;
 	height: 300px;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -309,6 +314,10 @@ hr {
 
 .textbox.long:focus {
 	outline: none;
+}
+
+.textbox.long#texcom {
+	width: 300px;
 }
 
 .login .passbox {
@@ -1114,6 +1123,11 @@ hr {
 	float: left;
 }
 
+.infocontent.help {
+	margin-left: 300px;
+	margin-right: 0px;
+}
+
 .summary {
 	margin-right: 1140px;
 	width: 600px;
@@ -1218,11 +1232,11 @@ hr {
 	width: 100%;
 }
 
-::-webkit-scrollbar {
+div::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb {
   border-radius: 10px;
   transition-duration: 4s;
 }

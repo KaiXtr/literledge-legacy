@@ -15,7 +15,7 @@
 
 	<body>
 		<?php include 'design/header.php' ?>
-		<?php include 'design/lateralbar.php' ?>s
+		<?php include 'design/lateralbar.php' ?>
 
 		<div class='login'>
 			<h1> Contate-nos</h1>

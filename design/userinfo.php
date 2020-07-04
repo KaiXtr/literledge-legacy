@@ -43,15 +43,15 @@
 							<img src='media/images/icons/zodiac/".$sgn.".png' height='30' title='Icons made by Freepik' />
 						</a>".$zdclst[$sgn];
 			}
-			else {$b = $i['birth'];$yy = substr($i['birth'],0,3);$zd = '';}
+			else {$b = $i['birth'];$yy = substr($i['birth'],0,4);$zd = '';}
 
 			if (($i['death'] != null)&&($i['auctor'] == '1')) {
 				$d = "<span id='dhover'><img src='media/images/icons/death.png' height='30' />";
 				if (strlen($i['death']) > 7) {
 					$d = $d.substr($i['death'],8,2).'/'.substr($i['death'],5,2).'/'.substr($i['death'],0,4);
-					$dth = substr($i['death'],0,4);
+					$dth = substr($i['death'],0,5);
 				}
-				else {$d = $d.$i['death'];$dth=substr($i['death'],0,3);}
+				else {$d = $d.$i['death'];$dth=substr($i['death'],0,5);}
 				$age = abs($dth - $yy);
 				if ($_COOKIE['lang'] == 'pt') {$age = $age." anos";}
 				if ($_COOKIE['lang'] == 'en') {$age = $age." years old";}

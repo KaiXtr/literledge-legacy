@@ -96,11 +96,11 @@ a:active{
 	background-color: var(--color-thumb);
 }
 
-#lateralbar{
+.sidebar{
 	background-color: var(--lateral-bar);
 }
 
-#lateralbar hr{
+.sidebar hr{
 	border: 1px solid var(--text-color);
 }
 
@@ -272,15 +272,15 @@ a:active{
 	color: var(--text-color);
 }
 
-::-webkit-scrollbar-track {
+div::-webkit-scrollbar-track {
 	background: var(--bg-rect);
 }
 
-::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb {
 	background: var(--bg-insi);
 }
 
-::-webkit-scrollbar-thumb:hover {
+div::-webkit-scrollbar-thumb:hover {
 	background: var(--bg-thmb);
 }
 

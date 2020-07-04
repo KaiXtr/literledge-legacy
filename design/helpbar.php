@@ -1,4 +1,4 @@
-<div id='lateralbar' class='sidebar'>
+<div id='helpbar' class='sidebar'>
 	<ul>
 		<li> <h1>
 			<?php

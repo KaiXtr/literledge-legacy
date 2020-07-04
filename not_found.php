@@ -12,19 +12,21 @@
 
 		<div class='content'>
 			<div class='login'>
-				<img src='favicon.png' />
-				<div class='manlan' lang='pt'>
-					<h1> Não tem nada aqui... </h1>
-					Parece que este endereço não existe aqui, verifique o URL inserido na busca do seu navegador.
-				</div>
-				<div class='manlan' lang='es'>
-					<h1> There's nothing here... </h1>
-					It looks like this address doesn't exist here, check the URL entered in your browser search.
-				</div>
-				<div class='manlan' lang='en'>
-					<h1> No hay nada aquí... </h1>
-					Parece que esta dirección no existe aquí, verifique la URL ingresada en la búsqueda de su navegador.
-				</div>
+				<img src='media/images/icons/logo.png' />
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "<h1> Não tem nada aqui... </h1>
+						Parece que este endereço não existe aqui, verifique o URL inserido na busca do seu navegador.";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "<h1> There's nothing here... </h1>
+					It looks like this address doesn't exist here, check the URL entered in your browser search.";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "<h1> No hay nada aquí... </h1>
+					Parece que esta dirección no existe aquí, verifique la URL ingresada en la búsqueda de su navegador.";
+					}
+				?>
 			</div>
 		</div>
 
