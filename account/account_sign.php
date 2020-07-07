@@ -33,7 +33,7 @@
 		if ($_POST['bd'] < 10) {$b = $b."0".$_POST['bd'];}
 		else {$b = $b.$_POST['bd'];}
 
-		$new = "'" .$_POST['name']."',null,null,'".$_POST['nick']."','".$b."',null,'".$_POST['country']."','','".$_POST['gender']."','0','".$_POST['email']."','".$_POST['password']."',''";
+		$new = "'" .$_POST['name']."',null,null,'".$_POST['nick']."','".$b."',null,'".$_POST['country']."','','".$_POST['gender']."','-1','".$_POST['email']."','".$_POST['password']."',''";
 		$conn->query("INSERT INTO users VALUES (".$new.");");
 		$_SESSION['user'] = $_POST['nick'];
 		$_SESSION['password'] = $_POST['password'];
