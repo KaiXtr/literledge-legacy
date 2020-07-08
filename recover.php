@@ -5,7 +5,7 @@
 	<head>
 		<?php
 		if (session_status() == PHP_SESSION_NONE) {session_start();}
-		if (isset($_SESSION['user'])) {header("location: login.php");}
+		if (isset($_SESSION['user'])) {header("location: index.php");}
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 			{$v = 'Recuperar senha - ';}
 		else if ($_COOKIE['lang'] == 'en')

@@ -18,39 +18,49 @@
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($lts); ?>.jpg")'></div>
 		<?php echo "<div id='profile'> <h1 id='litername'> ".$ltslst[$lts]." </h1> </div>"; ?>
 		<div id='bio'>
-			O Romantismo é uma escola literária do século XIX. Surge na Alemanha, num movimento chamado Sturm und Drang (tempestade e ímpeto). Esse movimento se baseia na emoção exacerbada e se opõe ao equilíbrio artificial do arcadismo. Da Alemanha, o movimento se espalha pela Inglaterra e França, alcançando toda a Europa.
-
-			A estética romântica é burguesa por excelência. Seu contexto histórico nos remete à Revolução Francesa que levou a burguesia ao poder. Era preciso uma arte que fomentasse o espírito burguês. Assim, o homem romântico defendia uma estética totalmente oposta à árcade (considerada estética da nobreza) valorizando a expressão do sentimento em oposição à valorização da razão; a inspiração poética em detrimento ao convencionalismo amoroso árcade. Os românticos não viam mais a natureza como objeto de imitação, como os árcades, mas sim como objeto de inspiração. Dar vazão ao sentimento era fundamental.
-
-			Os burgueses defendiam que a partir do esforço individual era possível se obter sucesso; o mesmo pensamento ocorria com o romântico que defendia a subjetividade e a individualidade como algo a ser defendido nas artes. Apenas os temas que expressassem o sentimento individual eram valorizados. Contraditoriamente, como esses sentimentos eram universais (amor, traição, por exemplo), o romantismo torna-se uma estética que prega o sentimento individual de forma universalizada. Assim, o romantismo valorizou muito os romances epistolares – que tinham feições de cartas, como se a ficção fosse real e que traziam a os segredos da intimidade, relacionamentos amoroso íntimos, mas sentimentos universais. Vale ressaltar que o romance é um gênero burguês por excelência e apenas no romantismo se torna amplamente difundido. Era o romance o gênero textual capaz de dar vazão ao ideal burguês.
-
-			Outra consequência pós-Revolução francesa foi o escapismo e a utopia. Os revolucionários se desencantaram com as consequências da revolução francesa e suas promessas de sucesso não cumpridas – não houve muitas mudanças sociais com a Revolução. Essa frustração levou o homem romântico a ansiar pela fuga de sua realidade (escapismo), por um mundo melhor e perfeito – utópico – que só era possível no passado histórico (medievalismo e historicismo).
-
-			Em Portugal, assim como toda a Europa, o romantismo ganha espaço por conta de uma necessidade de renovação. O principal nome do Romantismo lusitano foi Almeida Garret que traz o novo pensamento artístico para Portugal por meio de seu contato com Lord Byron.
-
-			Características do Romantismo
-			Oposição ao clássico, dando vazão ao sentimento;
-			Oposição ao clássico, sem exigência de poemas de forma fixa ou métrica regular;
-			Valorização do indivíduo que passa a ser o centro das atenções;
-			Sentimentalismo, Subjetivismo, Egocentrismo;
-			Exaltação da nação e da natureza;
-			Valorização do passado histórico (medievalismo e historicismo);
-			Criação de símbolos nacionais;
-			Saudosismo, valorização da infância como ideal (valorização do passado);
-			Idealização da mulher e das relações amorosas;
-			Fuga da realidade (escapismo).
-			Leia também:
-
-			Romantismo no Brasil
-			Escritores do Romantismo
-			Romantismo alemão
-			Escritores do Romantismo alemão
-			Ultrarromantismo
-			Ultrarromantismo no Brasil
+			O Romantismo surgiu na Alemanha do século XIX no movimento Sturm und Drang (Tempestade e Ímpeto, em português), e se espalhou por toda a Europa. O Romantismo surge no contexto do início da idade contemporânea, da revolução francesa e a ascenção da classe burguesa no poder. A etimologia de seu nome vem da cidade de Roma e os idiomas românicos, isso pois os livros eram escritos em suas línguas locais, ao invés do latim. A burguesia buscou influenciar o mundo através da ideologia e da arte, e assim surge uma estética literária que valorizou os ideais da burguesia e as emoções, oposta ao Clacissimo e ao <a href='schools/arcadism.php'>Arcadismo</a>, considerado arte da nobreza. Na literatura romântica, três temas principais são aboradados: <b>o amor, a fé e a nação</b>, sendo que o nacionalismo é uma característca recorrente dos românticos. <br />
+			<br />
+			Uma característica fundamental do Romantismo, é o uso e abuso das <b>emoções universais</b>, sentimentos que podem ser compreendidos por quaisquer pessoas do mundo, sejam eles tristeza, amor, ódio ou muitos outros. As histórias românticas exploram esses temas de tal forma que se parecem com fatos reais, através de uma escrita semelhante á de uma carta ou diário. O Romantismo buscou idéias originais em detrimento das influênicas greco-romanas e clássicas vigentes até então, por isso a <b>meritocracia e a individualidade</b> são valorizados no romantismo, pois os artistas mais valorizados são os que expressam suas emoções, idéias e sentimentos, e também são exaltadas como características dos heróis românticos, se eles correrem atrás de seus sonhos, tudo é possível. Dessa maneira, a trama das histórias passaram a ser <b>Egocêntricas</b>, centradas no protagonista, para ele, tudo sempre irá dar certo e tudo gira em torno de suas convicções, os personagens das tramas também são idealizados e distorcidos, é criada a idealização da mulher perfeita e a figura dos vilões.<br />
+			<br />
+			Outra grande característica do Romantismo é o <b>escapismo e a utopia</b>, através da imaginação dos escritores românticos é possível escrever um mundo ideal e perfeito, diferente da realidade dura e difícil, assim, muitos autores buscaram essa utopia nos contos de cavalaria dos tempos medievais. Uma grande influência para esse pensamento utópico do romantismo foi a Revolução Francesa, pois após a deilusão dos revolucionários burgueses com o regime instaurado por Robespiérre, eles buscaram na arte o sonho do mundo burguês. O Romantismo é dividido em três fases: <br />
+			<br />
+			<b>Romantismo Ultrassentimental:</b> nessa fase, a literatura romântica aborda o sofrimento do protagonista apaixonado e depressivo, e exalta o sentimentalismo exacerbado. Na Alemanha, Johann Goethe foi o autor mais expressivo.<br />
+			<br />
+			<b>Romantismo Social:</b> nessa fase, as mazelas e injustiças sociais passaram a ser abordadas, mas sem deixar de possuir as características românticas, o maior representante dessa fase foi o francês <a href='schools/HUGOvictor.php'>Victor Hugo</a>.<br />
+			<br />
+			<b>Romantismo Nacionalista:</b> nessa fase, o amor pela pátria, a relatação de fatos históricos e a criação de símbolos nacionais foi uma característica recorrente, levando a criação do <a href='schools/indianism.php'>Indianismo</a> no Brasil.<br />
 			<br />
 		</div>
-		<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		<div class='content'>
+			<div class='brow'>
+				<div class='blabel'>
+					<h1> Escritores Românticos </h1>
+				</div>
+				<div class='displaybooks'>
+					<?php
+						require '../account/mysql_connect.php';
+						if ($notcon == null) {
+							$a = array('HUGOvictor','ALENCARjose','DIASgoncalves');
+							for ($x=0;$x<sizeof($a);$x++) {
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$a[$x]."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+								else {$nm = $n[$_COOKIE['lang']];}
 
+								echo "<a href='users/".$a[$x].".php'>
+										<button class='portraits'>
+											<img class='profilepic' src='media/images/profilepics/".$a[$x].".jpg' />
+											<h2> ".$nm." </h2>
+										</button>
+									</a>";
+								}
+							$conn->close();
+							}
+					?>
+				</div>
+			</div>
+			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
+		</div>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

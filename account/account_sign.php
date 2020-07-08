@@ -20,7 +20,6 @@
 				if ($i['email'] == $_POST['email']) {$error = $error .'9';}
 			}
 		}
-	}
 
 	if ($error != '') {
 		session_destroy();
@@ -48,7 +47,16 @@
 		fwrite($htmc, $cont);
 		fclose($htmc);
 
-		header("location: ".$base_url."index.php");
+		$headers = "From: Literledge <literledge@gmail.com>\r\n";
+		$headers .= "Content-Type: text/html; charset=utf-8\n";
+		$body = "<div style='font-size: 25px;'>
+					<h1>Confirmação de conta</h1>
+					<a href='".$base_url."account/account_verification.php'>clique aqui para confirmar sua conta</a>
+				</div>";
+		mail($_POST['email'],"Confirme sua conta",$body,$headers);
+
+		header("location: ".$base_url."confirmation.php");
 		}
 	$conn->close();
+	}
 ?>

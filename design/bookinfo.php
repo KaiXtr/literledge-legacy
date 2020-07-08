@@ -78,84 +78,95 @@
 				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! ".$shurl;}
 				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! ".$shurl;}
 
-				$btns = "<form id='ubuttons' action='account/addtoshelf.php' method='post'>";
-				$ainpt = "<input class='btpress' type='submit' name='add' value='' style='background-image: url(media/images/icons/addto.png);' ";
-				$rinpt = "<input class='btpress' type='submit' name='rem' value='' style='background-image: url(media/images/icons/remshelf.png);' ";
-				$finpt = "<input class='btpress' type='submit' name='fav' value='' style='background-image: url(media/images/icons/fav.png);' ";
-				$uinpt = "<input class='btpress' type='submit' name='unf' value='' style='background-image: url(media/images/icons/unfav.png);' ";
-				$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
-				<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
-
+				$btns = "";
 				if (isset($_SESSION['user'])) {
-					$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."'");
-					if ($find->num_rows == 0) {
-						$btns = $btns ."
-							<div class='manlan' lang='pt'>
-								".$ainpt." alt='adicionar livro á sua estante' />
-								".$finpt." alt='adicionar livro aos favoritos' />
-								".$shrbt."
-							</div>
-							<div class='manlan' lang='en'>
-								".$ainpt." alt='add book to your shelf' />
-								".$finpt." alt='add book to favorites' />
-								".$shrbt."
-							</div>
-							<div class='manlan' lang='es'>
-								".$ainpt." alt='agregar libro a sua estante' />
-								".$finpt." alt='agregar libro a los favoritos' />
-								".$shrbt."
-							</div>";
-						}
-					else {
+					$ys = false;
+					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
+					if ($find->num_rows > 0) {
 						$i = $find->fetch_assoc();
-						if ($i['state'] == 3) {
-							$btns = $btns."
+						if ($i['auctor'] == '0') {$ys = true;}
+					}
+
+					if ($ys == true) {
+						$btns = "<form id='ubuttons' action='account/addtoshelf.php' method='post'>";
+						$ainpt = "<input class='btpress' type='submit' name='add' value='' style='background-image: url(media/images/icons/addto.png);' ";
+						$rinpt = "<input class='btpress' type='submit' name='rem' value='' style='background-image: url(media/images/icons/remshelf.png);' ";
+						$finpt = "<input class='btpress' type='submit' name='fav' value='' style='background-image: url(media/images/icons/fav.png);' ";
+						$uinpt = "<input class='btpress' type='submit' name='unf' value='' style='background-image: url(media/images/icons/unfav.png);' ";
+						$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
+						<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
+
+						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."'");
+						if ($find->num_rows == 0) {
+							$btns = $btns ."
 								<div class='manlan' lang='pt'>
-									".$rinpt." alt='remover livro da sua estante' />
-									".$uinpt." alt='remover livro dos favoritos' />
-									".$shrbt."
-								</div>
-								<div class='manlan' lang='en'>
-									".$rinpt." alt='remove book from your shelf' />
-									".$uinpt." alt='remove book from favorites' />
-									".$shrbt."
-								</div>
-								<div class='manlan' lang='es'>
-									".$ainpt." alt='sacar libro de tu estante' />
-									".$finpt." alt='sacar libro dos favoritos' />
-									".$shrbt."
-								</div>";
-								}
-						else {
-							$btns = $btns."
-								<div class='manlan' lang='pt'>
-									".$rinpt." alt='remover livro da sua estante' />
+									".$ainpt." alt='adicionar livro á sua estante' />
 									".$finpt." alt='adicionar livro aos favoritos' />
 									".$shrbt."
 								</div>
 								<div class='manlan' lang='en'>
-									".$rinpt." alt='remove book from your shelf' />
+									".$ainpt." alt='add book to your shelf' />
 									".$finpt." alt='add book to favorites' />
 									".$shrbt."
 								</div>
 								<div class='manlan' lang='es'>
-									".$ainpt." alt='sacar libro de tu estante' />
+									".$ainpt." alt='agregar libro a sua estante' />
 									".$finpt." alt='agregar libro a los favoritos' />
 									".$shrbt."
 								</div>";
-								}
+							}
+						else {
+							$i = $find->fetch_assoc();
+							if ($i['state'] == 3) {
+								$btns = $btns."
+									<div class='manlan' lang='pt'>
+										".$rinpt." alt='remover livro da sua estante' />
+										".$uinpt." alt='remover livro dos favoritos' />
+										".$shrbt."
+									</div>
+									<div class='manlan' lang='en'>
+										".$rinpt." alt='remove book from your shelf' />
+										".$uinpt." alt='remove book from favorites' />
+										".$shrbt."
+									</div>
+									<div class='manlan' lang='es'>
+										".$ainpt." alt='sacar libro de tu estante' />
+										".$finpt." alt='sacar libro dos favoritos' />
+										".$shrbt."
+									</div>";
+									}
+							else {
+								$btns = $btns."
+									<div class='manlan' lang='pt'>
+										".$rinpt." alt='remover livro da sua estante' />
+										".$finpt." alt='adicionar livro aos favoritos' />
+										".$shrbt."
+									</div>
+									<div class='manlan' lang='en'>
+										".$rinpt." alt='remove book from your shelf' />
+										".$finpt." alt='add book to favorites' />
+										".$shrbt."
+									</div>
+									<div class='manlan' lang='es'>
+										".$ainpt." alt='sacar libro de tu estante' />
+										".$finpt." alt='agregar libro a los favoritos' />
+										".$shrbt."
+									</div>";
+									}
+							}
 						}
 					}
 				$btns = $btns."<input name='id' value='".$b['id']."' style='display: none;' /></form>";
 				
 				echo "<div id='reportab' style='visibility: hidden;'>
-						<button id='btexit' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>";
+						<form action='account/send_report.php?l=".$b['id']."' method='post'>
+							<button id='btexit' class='btpress' type='button' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>";
 
 						if ($_COOKIE['lang'] == 'pt') {
 							echo "<h1> Reportar Erro </h1>
 							Se você encontrou algum erro, por favor, <br />
 							envie sua contribuição aos desenvolvedores. <br />
-							<select class='selectbox'>
+							<select class='selectbox' name='retyp'>
 								<option value='er1'> Erro de Ortografia </option>
 								<option value='er2'> Informações Incorretas </option>
 								<option value='er3'> Não mostra a página como deveria </option>";
@@ -164,7 +175,7 @@
 							echo "<h1> Report Error </h1>
 							If you found any mistake, please <br />
 							send your contribution to the developers. <br />
-							<select class='selectbox'>
+							<select class='selectbox' name='retyp'>
 							<option value='er1'> Spelling Error </option>
 							<option value='er2'> Incorrect Information </option>
 							<option value='er3'> Don't show the page as it should </option>";
@@ -173,15 +184,16 @@
 							echo "<h1> Informar error </h1>
 							Si encuentra algún error, por favor <br />
 							envíe su contribución a los desarrolladores. <br />
-							<select class='selectbox'>
+							<select class='selectbox' name='retyp'>
 							<option value='er1'> Error de ortografía </option>
 							<option value='er2'> Información incorrecta </option>
 							<option value='er3'> No mostrar la página como debería </option>";
 							}
 
 					echo "</select> <br />
-							<input class='textbox' type='text' /> <br />
+							<input class='textbox' type='text' name='retxt' /> <br />
 							<input class='btpress' type='submit' />
+						</form>
 					</div>
 					<div id='bookblock'>
 						<button id='reportbt' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/report.png' /></button>
@@ -301,7 +313,15 @@
 						}
 					}
 				if ((isset($_SESSION['user']))&&($urev == false)) {
-					$rws = "<div class='thbcritic'>
+					$ys = false;
+					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
+					if ($find->num_rows > 0) {
+						$i = $find->fetch_assoc();
+						if ($i['auctor'] == '0') {$ys = true;}
+					}
+
+					if ($ys == true) {
+						$rws = "<div class='thbcritic'>
 									<div>
 										<h2> Publique sua opinião </h2>
 										<br />
@@ -314,6 +334,7 @@
 										</form>
 									</div>
 								</div>".$rws;
+						}
 					}
 				if ($rws == '') {
 					$rws = "Nenhuma opinião sobre este livro. <a href='login.php'>Seja o primeiro a opinar!</a>";
