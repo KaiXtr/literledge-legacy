@@ -23,6 +23,11 @@
 			}
 		}
 
+		$verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LcXVK8ZAAAAAO5wyj5ab97kjrX4FXLYDoROG4BI&response='
+			.$_POST['g-recaptcha-response']);
+		$responseData = json_decode($verifyResponse);
+		if (!$responseData->success) {$error = $error.'0';}
+
 	if ($error != '') {
 		session_destroy();
 		header("location: ".$base_url."signin.php?error=" .$error. "");
@@ -34,7 +39,8 @@
 		if ($_POST['bd'] < 10) {$b = $b."0".$_POST['bd'];}
 		else {$b = $b.$_POST['bd'];}
 
-		$new = "'" .$_POST['name']."',null,null,'".$_POST['nick']."','".$b."',null,'".$_POST['country']."','','".$_POST['gender']."','-1','".$_POST['email']."','".$_POST['password']."',''";
+		$code = md5(rand(0,1000));
+		$new = "'".$_POST['name']."',null,null,'".$_POST['nick']."','".$b."',null,'".$_POST['country']."','','".$_POST['gender']."','-1',null,'".$_POST['email']."','".$_POST['password']."','".$code."',''";
 		$conn->query("INSERT INTO users VALUES (".$new.");");
 		$_SESSION['user'] = $_POST['nick'];
 		$_SESSION['password'] = $_POST['password'];
@@ -49,11 +55,6 @@
 		fwrite($htmc, $cont);
 		fclose($htmc);
 
-		$code = md5(rand(0,1000));
-		$code = '';
-		while (strlen($code) < 6){
-			$code .= random_int(0, 9);
-		}
 		$headers = "From: Literledge <literledge@gmail.com>\r\n";
 		$headers .= "Content-Type: text/html; charset=utf-8\n";
 		$body = "<div style='font-size: 25px;'>
@@ -61,7 +62,6 @@
 					<a href='".$base_url."account/account_verification.php?t=".$code."'>clique aqui para confirmar sua conta.</a>
 				</div>";
 		mail($_POST['email'],"Confirme sua conta",$body,$headers);
-
 		header("location: ".$base_url."confirmation.php");
 		}
 	$conn->close();

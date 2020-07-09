@@ -13,6 +13,7 @@
 		include 'design/metadata.php';
 		if (@$_GET['error'] == true) {$error = $_GET['error'];} else {$error = '';}
 		if (isset($_SESSION['user'])) {header('location: index.php');} ?>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 
 	<body>
@@ -31,9 +32,14 @@
 					<?php
 						$errl = "<span class='error'>";
 						if ($error == '1') {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Dados incorretos";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Incorrect credentials";}
-							else if ($_COOKIE['lang'] == 'es') {$errl = $errl."Dados incorrectos";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Dados incorretos";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Incorrect credentials";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Dados incorrectos";}
+						}
+						if ($error == '2') {
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Faça o teste reCaptcha";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Take the reCaptcha test";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Toma la prueba reCaptcha";}
 						}
 						echo $errl ."</span>";
 					?>
@@ -50,6 +56,8 @@
 						<input type='password' id='pass' class='textbox' name='password' />
 						<button type='button' id='shpass' class='passeye' onclick='showhide("pass","shpass")'></button>
 					</div>
+					<br />
+					<div class="g-recaptcha" data-sitekey="6LcXVK8ZAAAAAJrra9Cn34FMr-NvkRlbz8f8p-IZ" style='width: 304px; margin-left: 16%;'></div>
 					<br />
 					<span id='checkbox'>
 						<input type='checkbox' name='remember' />
@@ -76,15 +84,6 @@
 							if ($_COOKIE['lang'] == 'es') {echo "Crear una cuenta";}
 						?>
 					</a>
-					<!--<button class="g-recaptcha" 
-					data-sitekey="reCAPTCHA_site_key" 
-					data-callback='onSubmit' 
-					data-action='submit'>Submit</button>
-					<script>
-						function onSubmit(token) {
-							document.getElementById("demo-form").submit();
-						}
-					</script>-->
 				</form>
 			</div>
 		</div>

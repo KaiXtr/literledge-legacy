@@ -13,6 +13,7 @@
 		include 'design/metadata.php';
 		if (@$_GET['error'] == true) {$error = $_GET['error'];} else {$error = '';}
 		if (isset($_SESSION['user'])) {header('location: index.php');} ?>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 
 	<body>
@@ -196,6 +197,16 @@
 						<button type='button' id='shconf' class='passeye' onclick='showhide("conf","shconf")'></button>
 					</div>
 					<br />
+					<?php
+						$errl = "<span class='error'>";
+						if (strpos($error, '0') != false) {
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Faça o teste reCaptcha";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Take the reCaptcha test";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Toma la prueba reCaptcha";}
+						}
+						echo $errl ."</span> <br />";
+					?>
+					<div class="g-recaptcha" data-sitekey="6LcXVK8ZAAAAAJrra9Cn34FMr-NvkRlbz8f8p-IZ" style='width: 304px; margin-left: 16%;'></div>
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '5') != false) {
