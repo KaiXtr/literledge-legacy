@@ -82,8 +82,8 @@
 				if (isset($_SESSION['user'])) {
 					$ys = false;
 					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
-					if ($find->num_rows > 0) {
-						$i = $find->fetch_assoc();
+					if ($check->num_rows > 0) {
+						$i = $check->fetch_assoc();
 						if ($i['auctor'] == '0') {$ys = true;}
 					}
 

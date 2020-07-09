@@ -99,6 +99,26 @@ function show_image(src) {
 	}
 }
 
+function passbar(){
+	var obj = document.getElementById('passbar');
+	var lin = obj.getContext("2d");
+	var txt = document.getElementById('pass').value;
+	lin.beginPath();
+	lin.fillStyle = 'white';
+	lin.rect(0,0,96,10);
+	lin.fill();
+	lin.beginPath();
+	var chk = 0;
+	if (/[a-z]/.test(txt)) {chk++;}
+	if (/[A-Z]/.test(txt)) {chk++;}
+	if (/[0-9]/.test(txt)) {chk++;}
+	if (chk == 1) {lin.fillStyle = 'red';}
+	if (chk == 2) {lin.fillStyle = 'orange';}
+	if (chk == 3) {lin.fillStyle = 'green';}
+	lin.rect(0,0,txt.length*12,10);
+	lin.fill();
+}
+
 function showhide(target,btn){
 	var obj = document.getElementById(target);
 	var but = document.getElementById(btn);

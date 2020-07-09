@@ -34,12 +34,14 @@
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '6') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Preencha um email válido";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert a valid email";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Preencha um email válido";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert a valid email";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Rellene un correo electrónico válido";}
 						}
 						if (strpos($error, '9') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Este email já está em uso";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."This email is already being used";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Este email já está em uso";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."This email is already being used";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Este correo electrónico ya está en uso";}
 						}
 						echo $errl ."</span>";
 					?>
@@ -49,8 +51,9 @@
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '3') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Preencha seu nome";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert your name";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Preencha seu nome";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert your name";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Escribe tu nombre";}
 						}
 						echo $errl ."</span>";
 					?>
@@ -65,12 +68,14 @@
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '4') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Preencha seu nick";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert your nick";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Preencha seu nick";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert your nick";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Completa tu nick";}
 						}
 						if (strpos($error, '8') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Este nick já está em uso";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."This nick is already being used";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Este nick já está em uso";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."This nick is already being used";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Este nick ya está en uso";}
 						}
 						echo $errl ."</span>";
 					?>
@@ -151,8 +156,9 @@
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '1') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."A senha é muito fraca";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Password is too weak";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."A senha é muito fraca";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Password is too weak";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."La contraseña es demasiado débil";}
 						}
 						echo $errl ."</span>";
 					?>
@@ -164,15 +170,17 @@
 						?>
 					</span> <br />
 					<div class='passbox'>
-						<input type='password' id='pass' class='textbox' name='password' />
+						<input type='password' id='pass' class='textbox' name='password' onkeyup='passbar();' />
 						<button type='button' id='shpass' class='passeye' onclick='showhide("pass","shpass")'></button>
-					</div>
+					</div> <br />
+					<canvas id='passbar' width='96' height='10'></canvas>
 
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '2') != false) {
-							if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."As senhas não se coincidem";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Passwords don't match";}
+							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."As senhas não se coincidem";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Passwords don't match";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Las contraseñas no coinciden";}
 						}
 						echo $errl ."</span>";
 					?>
@@ -192,16 +200,16 @@
 						$errl = "<span class='error'>";
 						if (strpos($error, '5') != false) {
 							if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Aceite os termos e condições";}
-							else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Accept the terms of service";}
-							else if ($_COOKIE['lang'] == 'es') {$errl = $errl."Aceptar los términos y condiciones";}
+							if ($_COOKIE['lang'] == 'en') {$errl = $errl."Accept the terms of service";}
+							if ($_COOKIE['lang'] == 'es') {$errl = $errl."Aceptar los términos y condiciones";}
 						}
-						echo $errl ."</span>";
+						echo $errl ."</span> <br />";
 					?>
 					<span id='checkbox'><input type='checkbox' name='check' />
 						<?php
-							if ($_COOKIE['lang'] == 'pt') {echo "Li e concordo com os <a href='about.php'> termos e condições";}
-							if ($_COOKIE['lang'] == 'en') {echo "I Agree with <a href='about.php'> terms of service";}
-							if ($_COOKIE['lang'] == 'es') {echo "Leí y Acepto los <a href='about.php'> términos y condiciones";}
+							if ($_COOKIE['lang'] == 'pt') {echo "Li e concordo com os <u><a href='terms.php' target='_blank'> termos e condições</a></u>";}
+							if ($_COOKIE['lang'] == 'en') {echo "I Agree with <u><a href='terms.php' target='_blank'> terms of service</a></u>";}
+							if ($_COOKIE['lang'] == 'es') {echo "Leí y Acepto los <u><a href='terms.php' target='_blank'> términos y condiciones</a></u>";}
 						?>
 					</span> <br />
 					<?php

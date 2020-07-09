@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 19-Jun-2020 às 05:14
+-- Tempo de geração: 08-Jul-2020 às 23:46
 -- Versão do servidor: 10.3.16-MariaDB
 -- versão do PHP: 7.3.12
 
@@ -140,7 +140,11 @@ INSERT INTO `books` (`id`, `auctor`, `year`, `genre`, `country`, `litschool`, `s
 ('00002G', 'BOYNEjohn', '2006', 'Romance', 'IRL', NULL, NULL, 0, 'CR', '#nazismo#holocausto#pijama#riscas#listrado#striped#boy#garoto#menino#judeus#juvenil', 0, 0, 0),
 ('00002H', 'HEMINGWAYernest', '1940', 'Romance', 'USA', NULL, NULL, 0, 'PD', '#hemin#ernest#emingway#sinos#dobram#por#quem#porquem#se#os#whom#bells#tholls#war#spain#civil#espanhola', 0, 0, 0),
 ('00002I', 'MANNthomas', '1924', 'Romance', 'GER', NULL, NULL, 0, 'PD', '#mont#mountain#magic#encantada#magica#thomas#mann', 0, 0, 0),
-('00002J', 'STRITAdurao', '1781', 'Epic', 'BRA', 'Arcadism', NULL, 0, 'PD', '#arcadism#indio#indigena#bahia#colonia#colonizador#padre#santo#rita#durao#luso#lusitano#epico', 0, 0, 0);
+('00002J', 'STRITAdurao', '1781', 'Epic', 'BRA', 'Arcadism', NULL, 0, 'PD', '#arcadism#indio#indigena#bahia#colonia#colonizador#padre#santo#rita#durao#luso#lusitano#epico', 0, 0, 0),
+('00002K', 'KIPLINGrudyard', '1894', 'Tale', 'ENG', NULL, NULL, 0, 'PD', '#mogli#selva#jungle#forest#india#disney#menino', 0, 0, 0),
+('00002L', 'DEFOEdaniel', '1719', 'Romance', 'ENG', 'Romanticism', NULL, 0, 'PD', '#robinson#crusoe#survival#island#lost#friday#sea#beach', 0, 0, 0),
+('00002M', 'PYLEhoward', '1883', 'Novel', 'USA', NULL, NULL, 0, 'PD', '#robin#hood#bow#arrow#disney#tuck#john#lion#king#forest', 0, 0, 0),
+('00002N', 'SCOTTwalter', '1820', 'Romance', 'ENG', NULL, NULL, 0, 'PD', '#ivanhoe#king#lion#heart#ricardo#coracao#leao#historico', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -335,7 +339,15 @@ INSERT INTO `editions` (`title`, `language`, `credit`, `link`, `filtyp`, `price`
 ('00002J', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/tnl6jvrssy6ncom/00002J-01.pdf?dl=0', 'pdf', 0.00, '01', 172),
 ('00001O', 'PT', 'ebooksbrasil', 'https://www.dropbox.com/s/9gn4biqdik8w3wi/00001O-00.epub?dl=0', 'epub', 0.00, '00', 175),
 ('00000I', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/h2ab0arggebwy38/00000I-01.pdf?dl=0', 'pdf', 0.00, '01', 176),
-('00000J', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/q7pgwm8l25iomfj/00000J-01.pdf?dl=0', 'pdf', 0.00, '01', 177);
+('00000J', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/q7pgwm8l25iomfj/00000J-01.pdf?dl=0', 'pdf', 0.00, '01', 177),
+('00002K', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/flh2ugc58ky5ll2/00002K-00.epub?dl=0', 'epub', 0.00, '00', 178),
+('00002K', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/wbqzah439lzkdky/00002K-01.pdf?dl=0', 'pdf', 0.00, '01', 179),
+('00002L', 'PT', 'Biblioteca Digital Soares Basto', 'https://www.dropbox.com/s/1c3ubqkcnio68pj/00002L-00.epub?dl=0', 'epub', 0.00, '00', 180),
+('00002L', 'PT', 'Biblioteca Digital Soares Basto', 'https://www.dropbox.com/s/2xwej2d0udawjvj/00002L-01.pdf?dl=0', 'pdf', 0.00, '01', 181),
+('00002M', 'PT', 'baixarsoftware.com', 'https://www.dropbox.coms/15frfirorxrykia/00002M-00.epub?dl=0', 'epub', 0.00, '00', 182),
+('00002M', 'PT', 'baixarsoftware.com', 'https://www.dropbox.com/s/pcjuki80unmoqbr/00002M-01.pdf?dl=0', 'pdf', 0.00, '01', 183),
+('00002N', 'PT', 'cabana-on', 'https://www.dropbox.com/s/9uvtnthwv0l3zfg/00002N-00.epub?dl=0', 'epub', 0.00, '00', 184),
+('00002N', 'PT', 'cabana-on', 'https://www.dropbox.com/s/8m2joe9bmcgrzva/00002N-01.pdf?dl=0', 'pdf', 0.00, '01', 185);
 
 -- --------------------------------------------------------
 
@@ -370,6 +382,13 @@ CREATE TABLE `reviews` (
   `comment` text DEFAULT NULL,
   `datime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `reviews`
+--
+
+INSERT INTO `reviews` (`id`, `user`, `book`, `comment`, `datime`) VALUES
+(4, 'KaiXtr', '000003', 'Eu vejo muito as pessoas falando sobre esse livro, mas nunca tinha parado pra ler ele de verdade, agora que eu conheço eu não quero saber de outra coisa. É muito diferente de qualquer coisa que jà vi. ', '2020-06-27 04:06:40');
 
 -- --------------------------------------------------------
 
@@ -508,7 +527,11 @@ INSERT INTO `translations` (`fkey`, `pt`, `en`, `es`, `id`) VALUES
 ('00002G', 'O Menino do pijama listrado', 'The Boy in the Striped Pyjamas', 'El Niño con el pijama de rayas', 89),
 ('00002H', 'Por Quem os Sinos se Dobram', 'For Whom the Bells Tolls', 'Por Quién Doblan las Campanas', 90),
 ('00002I', 'A Montanha Mágica', 'The Magic Mountain', 'La Montaña Mágica', 91),
-('00002J', 'Caramuru', 'Caramuru', 'Caramuru', 92);
+('00002J', 'Caramuru', 'Caramuru', 'Caramuru', 92),
+('00002K', 'O Livro da Selva', 'The Jungle Book', 'El Libro de la Selva', 94),
+('00002L', 'Robinson Crusoe', 'Robinson Crusoe', 'Robinson Crusoe', 95),
+('00002M', 'As Aventuras de Robin Hood', 'The Merry Adventures of Robin Hood', 'Las Alegres Aventuras de Robin Hood', 96),
+('00002N', 'Ivanhoé', 'Ivanhoe', 'Ivanhoe', 97);
 
 -- --------------------------------------------------------
 
@@ -530,6 +553,7 @@ CREATE TABLE `users` (
   `academy` varchar(10) DEFAULT NULL,
   `email` tinytext NOT NULL,
   `password` varchar(30) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `code` varchar(32) DEFAULT NULL,
   `bonds` tinytext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -537,116 +561,135 @@ CREATE TABLE `users` (
 -- Extraindo dados da tabela `users`
 --
 
-INSERT INTO `users` (`pt`, `en`, `es`, `nick`, `birth`, `death`, `country`, `hometown`, `gender`, `auctor`, `academy`, `email`, `password`, `bonds`) VALUES
-('Esopo', 'Aesop', 'Esopo', 'AESOP', '620 a.c', '1877-12-12', 'GRE', 'Trácia', 'M', 1, NULL, 'aesop@literledge.com', 'Gu@n@b@r@', NULL),
-('José de Alencar', NULL, NULL, 'ALENCARjose', '1829-05-01', '1877-12-12', 'BRA', 'Messejana - CE', 'M', 1, 'ABL-23-00', 'alencar.jose@literledge.com', 'Gu@n@b@r@', NULL),
-('Dante Alighieri', NULL, NULL, 'ALIGHIERIdante', '1265-06-20', '1875-09-04', 'ITA', 'Florença', 'M', 1, NULL, 'alighieri.dante@literledge.com', 'Gu@n@b@r@', NULL),
-('Edgar Allan Poe', NULL, NULL, 'ALLANpoe', '1809-01-19', '1849-10-07', 'USA', 'Boston - Massachusetts', 'M', 1, NULL, 'edgar.allan.poe@literledge.com', 'Gu@n@b@r@', NULL),
-('Jorge Amado', NULL, NULL, 'AMADOjorge', '1912-08-10', '2001-08-01', 'BRA', 'Itabuna - BA', 'M', 1, 'ABL-23-05', 'amado.jorge@literledge.com', 'Gu@n@b@r@', NULL),
-('Hans Christian Andersen', NULL, NULL, 'ANDERSENhans', '1805-04-02', '1875-08-04', 'DEN', 'Odense', 'M', 1, NULL, 'andersen.hans@literledge.com', 'Gu@n@b@r@', NULL),
-('Mário de Andrade', NULL, NULL, 'ANDRADEmario', '1893-12-09', '1945-02-25', 'BRA', 'São Paulo - SP', 'M', 1, NULL, 'andrade.mario@literledge.com', 'Gu@n@b@r@', NULL),
-('Manuel Antônio de Almeida', NULL, NULL, 'ANTONIOalmeida', '1830-11-17', '1861-11-28', 'BRA', 'Rio de Janeiro - RJ', 'M', 1, 'ABL-28-00', 'manuel.antonio.almeida@literledge.com', 'Gu@n@b@r@', NULL),
-('Tomás Antônio Gonzaga', NULL, NULL, 'ANTONIOgonzaga', '1744-08-11', '1810', 'BRA', 'Miragaia - Portugal', 'M', 1, 'ABL-37-00', 'tomas.antonio.gonzaga@literledge.com', 'Gu@n@b@r@', NULL),
-('Aristóteles', 'Aristotle', 'Aristóteles', 'ARISTOTLE', '384 a.c', '322 a.c', 'GRE', 'Estalgira - Calcídica', 'M', 1, NULL, 'aristotle@literledge.com', 'Gu@n@b@r@', NULL),
-('Jane Austen', NULL, NULL, 'AUSTENjane', '1775-12-16', '1817-07-18', 'ENG', 'Hampshire', 'F', 1, NULL, 'austen.jane@literledge.com', 'Gu@n@b@r@', NULL),
-('Aluísio Azevedo', NULL, NULL, 'AZEVEDOaluisio', '1857-04-14', '1913-01-21', 'BRA', 'São Luís - MA', 'M', 1, 'ABL-04-01', 'azevedo.aluisio@literledge.com', 'Gu@n@b@r@', NULL),
-('Manuel Bandeira', NULL, NULL, 'BANDEIRAmanuel', '1886-04-19', '1968-10-13', 'BRA', 'Recife - PE', 'M', 1, 'ABL-24-03', 'bandeira.manuel@literledge.com', 'Gu@n@b@r@', NULL),
-('Lima Barreto', NULL, NULL, 'BARRETOlima', '1881-05-13', '1922-11-01', 'BRA', 'Rio de Janeiro', 'M', 1, NULL, 'barreto.lima@literledge.com', 'Gu@n@b@r@', NULL),
-('Basílio da Gama', NULL, NULL, 'BASILIOgama', '1741-04-08', '1740-04-10', 'BRA', 'São José do Rio das Mortes - M', 'M', 1, 'ABL-04-00', 'basilio.gama@literledge.com', 'Gu@n@b@r@', NULL),
-('Simone de Beauvoir', NULL, NULL, 'BEAUVOIRsimone', '1908-01-09', '1986-04-14', 'FRA', 'Paris', 'M', 1, NULL, 'simone.beauvoir@literledge.com', 'Gu@n@b@r@', 'SARTREjeanpaul[H];'),
-('Olavo Bilac', NULL, NULL, 'BILAColavo', '1865-12-16', '1918-12-28', 'BRA', 'Rio de Janeiro - RJ', 'M', 1, 'ABL-15-01', 'bilac.olavo@literledge.com', 'Gu@n@b@r@', NULL),
-('Maria Barbosa du Bocage', NULL, NULL, 'BOCAGEbarbosa', '1765-09-15', '1805-12-21', 'POR', 'Setúbal', 'M', 1, NULL, 'bocage.barbosa@literledge.com', 'Gu@n@b@r@', NULL),
-('Raul Bopp', NULL, NULL, 'BOPPraul', '1898-08-04', '1984-06-02', 'BRA', 'Itaara - RS', 'M', 1, NULL, '', 'Gu@n@b@r@', NULL),
-('John Boyne', NULL, NULL, 'BOYNEjohn', '1971-04-30', NULL, 'IRL', 'Dublin - Leinster', 'M', 1, NULL, 'boyne.john@literledge.com', 'Gu@n@b@r@', NULL),
-('Charlotte Brontë', NULL, NULL, 'BRONTEcharlotte', '1816-04-21', '1855-03-31', 'ENG', 'Thornton - York', 'F', 1, NULL, 'bronte.charlotte@literledge.com', 'Gu@n@b@r@', NULL),
-('Percy Bysshe Shelley', NULL, NULL, 'BYSSHEshelley', '1792-08-04', '1822-07-08', 'ENG', 'Field Place - Horsham', 'M', 1, NULL, 'bysshe.shelley@literledge.com', 'Gu@n@b@r@', NULL),
-('João Cabral de Melo Neto', NULL, NULL, 'CABRALmelo', '1920-01-09', '1999-10-09', 'BRA', 'Recife - PE', 'M', 1, 'ABL-37-05', 'cabral.melo.neto@literledge.com', 'Gu@n@b@r@', NULL),
-('Luís de Camões', NULL, NULL, 'CAMOESluis', '1524', '1580-06-10', 'POR', 'Lisboa', 'M', 1, NULL, 'camoes.luis@literledge.com', 'Gu@n@b@r@', NULL),
-('Lewis Carroll', NULL, NULL, 'CARROLLlewis', '1832-01-27', '1898-01-14', 'ENG', 'Chesire', 'M', 1, NULL, 'carroll.lewis@literledge.com', 'Gu@n@b@r@', NULL),
-('Miguel de Cervantes', NULL, NULL, 'CERVANTESmiguel', '1547-07-29', '1616-04-22', 'ESP', 'Alcalá de Henares - Castela', 'M', 1, NULL, 'cervantes.miguel@literledge.com', 'Gu@n@b@r@', NULL),
-('Agatha Christie', NULL, NULL, 'CHRISTIEagatha', '1890-07-15', '1976-01-12', 'ENG', 'Devon', 'M', 1, NULL, 'christie.agatha@literledge.com', 'Gu@n@b@r@', NULL),
-('Sir Arthur Conan Doyle', NULL, NULL, 'CONANdoyle', '1859-05-2w', '1930-07-07', 'SCO', 'Edimburg', 'M', 1, NULL, 'conan.doyle@literledge.com', 'Gu@n@b@r@', NULL),
-('C. S. Lewis', NULL, NULL, 'CSLEWIS', '1898-11-29', '1963-11-22', 'IRL', 'Belfast', 'M', 1, NULL, 'c.s.lewis@literledge.com', 'Gu@n@b@r@', NULL),
-('Euclides de Cunha', NULL, NULL, 'CUNHAeuclides', '1886-01-20', '1909', 'BRA', 'Cantagalo - RJ', 'M', 1, 'ABL-07-02', 'cunha.euclides@literledge.com', 'Gu@n@b@r@', NULL),
-('Roald Dahl', NULL, NULL, 'DAHLroald', '1916-09-13', '1990-11-23', 'WAL', 'Llandaff - South Glamorgan', 'M', 1, NULL, 'dahl.roald@literledge.com', 'Gu@n@b@r@', NULL),
-('Angela Davis', NULL, NULL, 'DAVISangela', '1944-01-26', '', 'USA', 'Birmingham - Alabama', 'F', 1, NULL, 'davis.angela@literledge.com', 'Gu@n@b@r@', NULL),
-('René Descartes', NULL, NULL, 'DESCARTESrene', '1596-03-31', '1650-02-11', 'FRA', 'Descartes - Indre-et-Loire', 'M', 1, NULL, 'descartes.rene@literledge.com', 'Gu@n@b@r@', NULL),
-('Gonçalves Dias', NULL, NULL, 'DIASgoncalves', '1823-08-10', '1864-11-03', 'BRA', 'Caxias - MA', 'M', 1, 'ABL-15-00', 'dias.goncalves@literledge.com', 'Gu@n@b@r@', NULL),
-('Charles Dickens', NULL, NULL, 'DICKENScharles', '1812-02-07', '1870-06-09', 'ENG', 'Landport - Hampshire', 'M', 1, NULL, 'dickens.charles@literledge.com', 'Gu@n@b@r@', NULL),
-('Emily Dickinson', NULL, NULL, 'DICKINSONemily', '1830-12-10', '1886-03-15', 'USA', 'Amherst - Massachusetts', 'F', 1, NULL, 'dickinson.emily@literledge.com', 'Gu@n@b@r@', NULL),
-('Carlos Drummond de Andrade', NULL, NULL, 'DRUMMONDandrade', '1902-02-30', '1987-08-17', 'BRA', 'Itabira - MG', 'M', 1, NULL, 'drummond.andrade@literledge.com', 'Gu@n@b@r@', NULL),
-('Alexandre Dumas', NULL, NULL, 'DUMASalexandre', '1802-06-24', '1870-12-05', 'FRA', 'Villers-Cotterêts - Aisne', 'M', 1, NULL, 'dumas.alexandre@literledge.com', 'Gu@n@b@r@', NULL),
-('Émile Durkheim', NULL, NULL, 'DURKHEIMemile', '1858-04-15', '1917-11-15', 'FRA', 'Épinal - Lorena', 'M', 1, NULL, 'durkheim.emile@literledge.com', 'Gu@n@b@r@', NULL),
-('Umberto Eco', NULL, NULL, 'ECOumberto', '1932-01-05', '2016-02-19', 'ITA', 'Alessandria - Piedmont', 'M', 1, NULL, 'umberto.eco@literledge.com', 'Gu@n@b@r@', NULL),
-('George Eliot', NULL, NULL, 'ELIOTgeorge', '1819-11-22', '1880-12-22', 'ENG', 'Nuneaton - Warwickshire', 'F', 1, NULL, 'eliot.george@literledge.com', 'Gu@n@b@r@', NULL),
-('Friedrich Engels', NULL, NULL, 'ENGELSfriedrich', '1820-11-28', '1895-08-05', 'GER', 'Wuppertal - Renânia do Norte-V', 'M', 1, NULL, 'engels.friedrich@literledge.com', 'Gu@n@b@r@', NULL),
-('Boris Fausto', NULL, NULL, 'FAUSTOboris', '1930-12-08', NULL, 'BRA', 'São Paulo - SP', 'M', 1, NULL, 'fausto.boris@literledge.com', 'Gu@n@b@r@', NULL),
-('Maria Firmina dos Reis', NULL, NULL, 'FIRMINAreis', '1822-03-11', '1917-11-11', 'BRA', 'São Luís - MA', 'F', 1, NULL, 'maria.firmina.reis@literledge.com', 'Gu@n@b@r@', NULL),
-('Jean de La Fontaine', NULL, NULL, 'FONTAINEjean', '1621-07-08', '1695-04-13', 'FRA', 'Château-Thierry - Champagne', 'M', 1, NULL, 'lafontaine.jean@literledge.com', 'Gu@n@b@r@', NULL),
-('Michel Foucault', NULL, NULL, 'FOUCAULTmichel', '1926-10-15', '1984-06-25', 'FRA', 'Poitiers', 'M', 1, NULL, 'foucault.michel@literledge.com', 'Gu@n@b@r@', NULL),
-('Anne Frank', NULL, NULL, 'FRANKanne', '1929-06-12', '1945-02-XX', 'GER', 'Frankfurt am Main', 'F', 1, NULL, 'frank.anne@literledge.com', 'Gu@n@b@r@', NULL),
-('L. Frank Baum', NULL, NULL, 'FRANKbaum', '1856-05-15', '1919-05-06', 'USA', 'Chittenango - NY', 'M', 1, NULL, 'frank.baum@literledge.com', 'Gu@n@b@r@', NULL),
-('Paulo Freire', NULL, NULL, 'FREIREpaulo', '1921-09-19', '1997-02-05', 'BRA', 'Recife - PE', 'M', 1, NULL, 'paulo.freire@literledge.com', 'Gu@n@b@r@', NULL),
-('Sigmund Freud', NULL, NULL, 'FREUDsigmund', '1856-05-06', '1939-09-23', 'CZE', 'Freiberg in M?hren - Moravia', 'M', 1, NULL, 'sigmund.freud@literledge.com', 'Gu@n@b@r@', NULL),
-('Graça Aranha', NULL, NULL, 'GRACAaranha', '1868-06-21', '1931-01-26', 'BRA', 'São Luís - MA', 'M', 1, 'ABL-38-01', 'graca.aranha@literledge.com', 'Gu@n@b@r@', NULL),
-('Graciliano Ramos', NULL, NULL, 'GRACILIANOramos', '1892-10-27', '1953-03-20', 'BRA', 'Quebrângulo - AL', 'M', 1, NULL, 'graciliano.ramos@literledge.com', 'Gu@n@b@r@', NULL),
-('Irmãos Grimm', 'Grimm Brothers', 'Hermanos Grimm', 'GRIMMbros', '1785-01-04-1786-02-24', '1863-09-20 1859-12-16', 'GER', 'Hanau - Hesse-Darmstadt', 'M', 1, NULL, 'grimm.bros@literledge.com', 'Gu@n@b@r@', NULL),
-('Bernardo Guimarães', NULL, NULL, 'GUIMARAESbernardo', '1825-08-15', '1884-03-10', 'BRA', 'Ouro Preto - MG', 'M', 1, 'ABL-05-00', 'bernardo.guimaraes@literledge.com', 'Gu@n@b@r@', NULL),
-('Guimarães Rosa', NULL, NULL, 'GUIMARAESrosa', '1908-06-27', '1967-11-19', 'BRA', 'Rio de Janeiro - RJ', 'M', 1, 'ABL-02-03', 'guimaraes.rosa@literledge.com', 'Gu@n@b@r@', NULL),
-('Thomas Hardy', NULL, NULL, 'HARDYthomas', '1840-06-02', '1928-01-11', 'ENG', 'Max Gate', 'M', 1, NULL, 'hardy.thomas@literledge.com', 'Gu@n@b@r@', NULL),
-('Friedrich Hegel', NULL, NULL, 'HEGELfriedrich', '1770-08-27', '1831-11-14', 'GER', 'Estungarda - Württemberg', 'M', 1, NULL, 'hegel.friedrich@literledge.com', 'Gu@n@b@r@', NULL),
-('Ernest Hemingway', NULL, NULL, 'HEMINGWAYernest', '1899-06-21', '1961-06-02', 'USA', 'Oak Park - Illinois', 'M', 1, NULL, 'hemingway.ernest@literledge.com', 'Gu@n@b@r@', NULL),
-('Thomas Hobbes', NULL, NULL, 'HOBBESthomas', '1588-04-05', '1679-12-04', 'ENG', 'Malmesbury - Wiltshire', 'M', 1, NULL, 'hobbes.thomas@literledge.com', 'Gu@n@b@r@', NULL),
-('Homero', 'Homer', 'Homero', 'HOMERUS', '928 a.c', '898 a.c', 'GRE', 'Esmirna', 'M', 1, NULL, 'homerus@literledge.com', 'Gu@n@b@r@', NULL),
-('Max Horkheimer', NULL, NULL, 'HORKHEIMERmax', '1895-02-14', '1973-07-07', 'GER', 'Esturgada', 'M', 1, NULL, 'horkheimer.max@literledge.com', 'Gu@n@b@r@', NULL),
-('H.P. Lovecraft', NULL, NULL, 'HPLOVECRAFT', '1890-08-20', '1937-03-15', 'USA', 'Providence - Rhode Island', 'M', 1, NULL, 'h.p.lovecraft@literledge.com', 'Gu@n@b@r@', NULL),
-('Victor Hugo', NULL, NULL, 'HUGOvictor', '1802-02-26', '1885-05-22', 'FRA', 'Besançon - Doubs', 'M', 1, NULL, 'hugo.victor@literledge.com', 'Gu@n@b@r@', NULL),
-('David Hume', NULL, NULL, 'HUMEdavid', '1711-05-07', '1776-08-25', 'SCO', 'Edimburgo', 'M', 1, NULL, 'hume.david@literledge.com', 'Gu@n@b@r@', NULL),
-('Henry James', NULL, NULL, 'JAMEShenry', '1843-04-15', '1916-02-28', 'USA', 'New York', 'M', 1, NULL, 'james.henry@literledge.com', 'Gu@n@b@r@', NULL),
-('J. K. Rowling', NULL, NULL, 'JKROWLING', '1965-07-31', NULL, 'ENG', 'Yate - Gloucestershire', 'F', 1, NULL, 'jkrowling@literledge.com', 'Gu@n@b@r@', NULL),
-('J. R. R. Tolkien', NULL, NULL, 'JRRTOLKIEN', '1892-01-03', '1973-09-02', 'ENG', 'Bloemfontain', 'M', 1, NULL, 'j.r.r.tolkien@literledge.com', 'Gu@n@b@r@', NULL),
-('Carl Gustav Jung', NULL, NULL, 'JUNGgustav', '1875-07-26', '1961-06-06', 'SUI', 'Kesswil - Turg?via', 'M', 1, NULL, 'carl.gustav.jung@literledge.com', 'Gu@n@b@r@', NULL),
-('Franz Kafka', NULL, NULL, 'KAFKAfranz', '1883-06-03', '1924-06-03', 'CZE', 'Praga - Boémia', 'M', 1, NULL, 'kafka.franz@literledge.com', 'Gu@n@b@r@', NULL),
-('Matt Kai', NULL, NULL, 'KaiXtr', '2003-03-15', NULL, 'BRA', 'Belém - PA', 'M', 0, NULL, 'ewertonmatheus2113@gmail.com', 'M@ch@d0B@rret0', NULL),
-('Immanuel Kant', NULL, NULL, 'KANTimmanuel', '1724-04-22', '1804-02-12', 'GER', 'Könisberg - Prússia', 'M', 1, NULL, 'kant.immanuel@literledge.com', 'Gu@n@b@r@', NULL),
-('Sören Kierkegaard', NULL, NULL, 'KIERKEGAARDsoren', '1813-05-05', '1855-11-11', 'DEN', 'Copenhague', 'M', 1, NULL, 'kierkegaard.soren@literledge.com', 'Gu@n@b@r@', NULL),
-('Paulo Leminski', NULL, NULL, 'LEMINSKIpaulo', '1944-08-24', '1989-06-07', 'BRA', 'Curitiba - PR', 'M', 1, NULL, 'leminski.paulo@literledge.com', 'Gu@n@b@r@', NULL),
-('Clarice Lispector', NULL, NULL, 'LISPECTORclarice', '1920-12-10', '1977-12-09', 'BRA', 'Chechelnyk', 'F', 1, NULL, 'lispector.clarice@literledge.com', 'Gu@n@b@r@', NULL),
-('Monteiro Lobato', NULL, NULL, 'LOBATOmonteiro', '1882-04-18', '1948-06-04', 'BRA', 'Taubaté - SP', 'M', 1, NULL, 'lobato.monteiro@literledge.com', 'Gu@n@b@r@', NULL),
-('John Locke', NULL, NULL, 'LOCKEjohn', '1632-08-29', '1704-10-28', 'ENG', 'Wrington - Somerset', 'M', 1, NULL, 'locke.john@literledge.com', 'Gu@n@b@r@', NULL),
-('Machado de Assis', NULL, NULL, 'MACHADOassis', '1839-06-21', '1908-09-29', 'BRA', 'Rio de Janeiro', 'M', 1, 'ABL-23-01', 'machado.assis@literledge.com', 'Gu@n@b@r@', NULL),
-('Nicolau Maquiavel', 'Niccolò Machiavelli', 'Nicolau Maquiavel', 'MACHIAVELLIniccolo', '1469-05-03', '1527-06-21', 'ITA', 'Florença', 'M', 1, NULL, 'machiavelli.niccolo@literledge', 'Gu@n@b@r@', NULL),
-('Thomas Mann', NULL, NULL, 'MANNthomas', '1875-06-06', '1955-08-12', 'GER', ' Lübeck - Schleswig-Holstein', 'M', 1, NULL, 'mann.thomas@literledge.com', 'Gu@n@b@r@', NULL),
-('Cláudio Manuel da Costa', NULL, NULL, 'MANUELcosta', '1729-06-05', '1789-07-04', 'BRA', 'Mariana - MG', 'M', 1, NULL, 'claudio.manuel.costa@literledge.com', 'Gu@n@b@r@', NULL),
-('Karl Marx', NULL, NULL, 'MARXkarl', '1818-05-05', '1883-03-14', 'GER', 'Tréveris - Prússia', 'M', 1, NULL, 'marx.karl@literledge.com', 'Gu@n@b@r@', NULL),
-('Cecília Meirelles', NULL, NULL, 'MEIRELEScecilia', '1901-11-07', '1964-11-09', 'BRA', 'Rio de Janeiro - RJ', 'F', 1, NULL, 'meireles.cecilia@literledge.com', 'Gu@n@b@r@', NULL),
-('Herman Melville', NULL, NULL, 'MELVILLEherman', '1819-08-01', '1891-09-28', 'USA', 'New York', 'M', 1, NULL, 'melville.herman@literledge.com', 'Gu@n@b@r@', NULL),
-('Montesquieu', NULL, NULL, 'MONTESQUIEU', '1689-01-18', '1755-02-10', 'FRA', 'Brède - Gironde', 'M', 1, NULL, 'montesquieu@literledge.com', 'Gu@n@b@r@', NULL),
-('Vladimir Nabokov', NULL, NULL, 'NABOKOVvladimir', '1899-04-22', '1977-06-02', 'RUS', 'S?o Petesburgo', 'M', 1, NULL, 'nabokov.vladimir@literledge.com', 'Gu@n@b@r@', NULL),
-('Friedrich Nietzsche', NULL, NULL, 'NIETZSCHEfriedrich', '1844-10-15', '1900-08-25', 'GER', 'Saxônia - Prússia', 'M', 1, NULL, 'nietzsche.friedrich@literledge.com', 'Gu@n@b@r@', NULL),
-('George Orwell', NULL, NULL, 'ORWELLgeorge', '1903-06-25', '1950-01-21', 'ENG', 'Motihari - Bihar', 'M', 1, NULL, 'orwell.george@literledge.com', 'Gu@n@b@r@', NULL),
-('Oswald de Andrade', NULL, NULL, 'OSWALDandrade', '1890-01-11', '1954-10-22', 'BRA', 'São Paulo - SP', 'M', 1, NULL, 'oswald.andrade@literledge.com', 'Gu@n@b@r@', NULL),
-('Fernando Pessoa', NULL, NULL, 'PESSOAfernando', '1888-06-13', '1935-11-30', 'POR', 'Lisboa - POR', 'M', 1, NULL, 'pessoa.fernando@literledge.com', 'Gu@n@b@r@', NULL),
-('Platão', 'Plato', 'Platón', 'PLATO', '428 a.c', '348 a.c', 'GRE', 'Atenas', 'M', 1, NULL, 'plato@literledge.com', 'Gu@n@b@r@', NULL),
-('Raul Pompéia', NULL, NULL, 'POMPEIAraul', '1863-04-12', '1895-12-25', 'BRA', 'Angra dos Reis - RJ', 'M', 1, 'ABL-03-00', 'pompeia.raul@literledge.com', 'Gu@n@b@r@', NULL),
-('Rachel de Queiroz', NULL, NULL, 'QUEIROZrachel', '1910-11-17', '2003-11-04', 'BRA', 'Rio de Janeiro - RJ', 'F', 1, 'ABL-05-05', 'dias.goncalves@literledge.com', 'Gu@n@b@r@', NULL),
-('Darcy Ribeiro', NULL, NULL, 'RIBEIROdarcy', '1922-10-26', '1997-02-17', 'BRA', 'Monte Claros - MG', 'M', 1, 'ABL-11-07', 'ribeiro.darcy@literledge.com', 'Gu@n@b@r@', NULL),
-('Jean-Jacques Rousseau', NULL, NULL, 'ROUSSEAUjeanjacques', '1712-06-28', '1778-07-02', 'SUI', 'Genebra', 'M', 1, NULL, 'rousseau.jeanjacques@literledge.com', 'Gu@n@b@r@', NULL),
-('Antoine de Saint-Exupéry', NULL, NULL, 'SAINTexupery', '1900-06-29', '1944-07-31', 'FRA', 'Lyon', 'M', 1, NULL, 'saint.exupery@literledge.com', 'Gu@n@b@r@', NULL),
-('Jean-Paul Sartre', NULL, NULL, 'SARTREjeanpaul', '1905-06-21', '1980-04-15', 'FRA', 'Paris', 'M', 1, NULL, 'jean.paul.sartre@literledge.com', 'Gu@n@b@r@', 'BEAUVOIRsimone[W];'),
-('Arthur Schopenhauer', NULL, NULL, 'SCHOPENHAUERarthur', '1788-02-22', '1860-09-21', 'POL', 'Danzig', 'M', 1, NULL, 'arthur.schopenhauer@literledge.com', 'Gu@n@b@r@', NULL),
-('William Shakespeare', NULL, NULL, 'SHAKESPEAREwilliam', '1564-04-23', '1616-04-23', 'ENG', 'Stratford-Upon-Avon', 'M', 1, NULL, 'shakespeare.william@literledge.com', 'Gu@n@b@r@', NULL),
-('Mary Shelley', NULL, NULL, 'SHELLEYmary', '1797-08-30', '1851-02-01', 'ENG', 'Londres', 'F', 1, NULL, 'shelley.mary@literledge.com', 'Gu@n@b@r@', NULL),
-('Santa Rita Durão', NULL, NULL, 'STRITAdurao', '1722', '1784', 'POR', 'Lisboa', 'M', 1, NULL, 'st.rita.durao@literledge.com', 'Gu@n@b@r@', NULL),
-('Ariano Suassuna', NULL, NULL, 'SUASSUNAariano', '1927-06-16', '2014-06-23', 'BRA', 'Cidade da Parahyba - PB', 'M', 1, 'ABL-32-06', 'suassuna.ariano@literledge.com', 'Gu@n@b@r@', NULL),
-('Sun Tzu', NULL, NULL, 'SUNtzu', '544 a.c', '496 a.c', 'CHN', 'Qi', 'M', 1, NULL, 'sun.tzu@literledge.com', 'Gu@n@b@r@', NULL),
-('Mark Twain', NULL, NULL, 'TWAINmark', '1835-11-30', '1910-04-21', 'USA', 'Florida - Missouri', 'M', 1, NULL, 'twain.mark@literledge.com', 'Gu@n@b@r@', NULL),
-('Érico Veríssimo', NULL, NULL, 'VERISSIMOerico', '1905-12-17', '1975-11-28', 'BRA', 'Porto Alegre - RS', 'M', 1, NULL, 'verissimo.erico@literledge.com', 'Gu@n@b@r@', NULL),
-('Júlio Verne', 'Jules Verne', 'Júlio Verne', 'VERNEjules', '1878-02-08', '1905-03-24', 'FRA', 'Nantes - Pays de La Loire', 'M', 1, NULL, 'verne.jules@literledge.com', 'Gu@n@b@r@', NULL),
-('Gil Vicente', NULL, NULL, 'VICENTEgil', '1465', '1536', 'POR', 'Sem consenso', 'M', 1, NULL, 'vicente.gil@literledge.com', 'Gu@n@b@r@', NULL),
-('Max Weber', NULL, NULL, 'WEBERmax', '1864-04-21', '1920-06-14', 'GER', 'Erfurt - Prússia', 'M', 1, NULL, 'weber.max@literledge.com', 'Gu@n@b@r@', NULL),
-('Virginia Woolf', NULL, NULL, 'WOOLFvirginia', '1882-01-25', '1941-03-28', 'ENG', 'Kensington - Middlesex', 'F', 1, NULL, 'woolf.virginia@literledge.com', 'Gu@n@b@r@', NULL),
-('Markus Zusak', NULL, NULL, 'ZUSAKmarkus', '1975-06-23', NULL, 'AUS', 'Sydney', 'M', 1, NULL, 'zusak.markus@literledge.com', 'Gu@n@b@r@', NULL);
+INSERT INTO `users` (`pt`, `en`, `es`, `nick`, `birth`, `death`, `country`, `hometown`, `gender`, `auctor`, `academy`, `email`, `password`, `code`, `bonds`) VALUES
+('Esopo', 'Aesop', 'Esopo', 'AESOP', '620 a.c', '1877-12-12', 'GRE', 'Trácia', 'M', 1, NULL, 'aesop@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('José de Alencar', NULL, NULL, 'ALENCARjose', '1829-05-01', '1877-12-12', 'BRA', 'Messejana - CE', 'M', 1, 'ABL-23-00', 'alencar.jose@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Dante Alighieri', NULL, NULL, 'ALIGHIERIdante', '1265-06-20', '1875-09-04', 'ITA', 'Florença', 'M', 1, NULL, 'alighieri.dante@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Edgar Allan Poe', NULL, NULL, 'ALLANpoe', '1809-01-19', '1849-10-07', 'USA', 'Boston - Massachusetts', 'M', 1, NULL, 'edgar.allan.poe@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Jorge Amado', NULL, NULL, 'AMADOjorge', '1912-08-10', '2001-08-01', 'BRA', 'Itabuna - BA', 'M', 1, 'ABL-23-05', 'amado.jorge@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Hans Christian Andersen', NULL, NULL, 'ANDERSENhans', '1805-04-02', '1875-08-04', 'DEN', 'Odense', 'M', 1, NULL, 'andersen.hans@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Mário de Andrade', NULL, NULL, 'ANDRADEmario', '1893-12-09', '1945-02-25', 'BRA', 'São Paulo - SP', 'M', 1, NULL, 'andrade.mario@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Augusto dos Anjos', NULL, NULL, 'ANJOSaugusto', '1884-04-20', '1914-11-12', 'BRA', 'Sapé - PB', 'M', 1, 'APL-01-00', 'anjos.augusto@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Manuel Antônio de Almeida', NULL, NULL, 'ANTONIOalmeida', '1830-11-17', '1861-11-28', 'BRA', 'Rio de Janeiro - RJ', 'M', 1, 'ABL-28-00', 'manuel.antonio.almeida@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Tomás Antônio Gonzaga', NULL, NULL, 'ANTONIOgonzaga', '1744-08-11', '1810', 'BRA', 'Miragaia - Portugal', 'M', 1, 'ABL-37-00', 'tomas.antonio.gonzaga@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Aristóteles', 'Aristotle', 'Aristóteles', 'ARISTOTLE', '384 a.c', '322 a.c', 'GRE', 'Estalgira - Calcídica', 'M', 1, NULL, 'aristotle@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Jane Austen', NULL, NULL, 'AUSTENjane', '1775-12-16', '1817-07-18', 'ENG', 'Hampshire', 'F', 1, NULL, 'austen.jane@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Aluísio Azevedo', NULL, NULL, 'AZEVEDOaluisio', '1857-04-14', '1913-01-21', 'BRA', 'São Luís - MA', 'M', 1, 'ABL-04-01', 'azevedo.aluisio@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Manuel Bandeira', NULL, NULL, 'BANDEIRAmanuel', '1886-04-19', '1968-10-13', 'BRA', 'Recife - PE', 'M', 1, 'ABL-24-03', 'bandeira.manuel@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Lima Barreto', NULL, NULL, 'BARRETOlima', '1881-05-13', '1922-11-01', 'BRA', 'Rio de Janeiro', 'M', 1, NULL, 'barreto.lima@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Basílio da Gama', NULL, NULL, 'BASILIOgama', '1741-04-08', '1740-04-10', 'BRA', 'São José do Rio das Mortes - M', 'M', 1, 'ABL-04-00', 'basilio.gama@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Charles Baudelaire', NULL, NULL, 'BAUDELAIREcharles', '1821-04-09', '1867-08-31', 'FRA', 'Paris', 'M', 1, NULL, 'baudelaire.charles@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Simone de Beauvoir', NULL, NULL, 'BEAUVOIRsimone', '1908-01-09', '1986-04-14', 'FRA', 'Paris', 'M', 1, NULL, 'simone.beauvoir@literledge.com', 'Gu@n@b@r@', NULL, 'SARTREjeanpaul[H];'),
+('Olavo Bilac', NULL, NULL, 'BILAColavo', '1865-12-16', '1918-12-28', 'BRA', 'Rio de Janeiro - RJ', 'M', 1, 'ABL-15-01', 'bilac.olavo@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Maria Barbosa du Bocage', NULL, NULL, 'BOCAGEbarbosa', '1765-09-15', '1805-12-21', 'POR', 'Setúbal', 'M', 1, NULL, 'bocage.barbosa@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Raul Bopp', NULL, NULL, 'BOPPraul', '1898-08-04', '1984-06-02', 'BRA', 'Itaara - RS', 'M', 1, NULL, '', 'Gu@n@b@r@', NULL, NULL),
+('Manuel Botelho de Oliveira', NULL, NULL, 'BOTELHOoliveira', '1636', '1711-01-05', 'BRA', 'Salvador - BA', 'M', 1, NULL, 'manuel.botelho.oliveira@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('John Boyne', NULL, NULL, 'BOYNEjohn', '1971-04-30', NULL, 'IRL', 'Dublin - Leinster', 'M', 1, NULL, 'boyne.john@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Charlotte Brontë', NULL, NULL, 'BRONTEcharlotte', '1816-04-21', '1855-03-31', 'ENG', 'Thornton - York', 'F', 1, NULL, 'bronte.charlotte@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Percy Bysshe Shelley', NULL, NULL, 'BYSSHEshelley', '1792-08-04', '1822-07-08', 'ENG', 'Field Place - Horsham', 'M', 1, NULL, 'bysshe.shelley@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('João Cabral de Melo Neto', NULL, NULL, 'CABRALmelo', '1920-01-09', '1999-10-09', 'BRA', 'Recife - PE', 'M', 1, 'ABL-37-05', 'cabral.melo.neto@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Luís de Camões', NULL, NULL, 'CAMOESluis', '1524', '1580-06-10', 'POR', 'Lisboa', 'M', 1, NULL, 'camoes.luis@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Lewis Carroll', NULL, NULL, 'CARROLLlewis', '1832-01-27', '1898-01-14', 'ENG', 'Chesire', 'M', 1, NULL, 'carroll.lewis@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Miguel de Cervantes', NULL, NULL, 'CERVANTESmiguel', '1547-07-29', '1616-04-22', 'ESP', 'Alcalá de Henares - Castela', 'M', 1, NULL, 'cervantes.miguel@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Agatha Christie', NULL, NULL, 'CHRISTIEagatha', '1890-07-15', '1976-01-12', 'ENG', 'Devon', 'M', 1, NULL, 'christie.agatha@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Sir Arthur Conan Doyle', NULL, NULL, 'CONANdoyle', '1859-05-2w', '1930-07-07', 'SCO', 'Edimburg', 'M', 1, NULL, 'conan.doyle@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Raimundo Correia', NULL, NULL, 'CORREIAraimundo', '1859-05-13', '1911-09-13', 'BRA', 'São Luís - MA', 'M', 1, 'ABL-05-01', 'correia.raimundo@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Cruz e Sousa', NULL, NULL, 'CRUZsousa', '1861-11-24', '1898-03-19', 'BRA', 'Florianópolis - SC', 'M', 1, NULL, 'cruz.sousa@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('C. S. Lewis', NULL, NULL, 'CSLEWIS', '1898-11-29', '1963-11-22', 'IRL', 'Belfast', 'M', 1, NULL, 'c.s.lewis@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Euclides de Cunha', NULL, NULL, 'CUNHAeuclides', '1886-01-20', '1909', 'BRA', 'Cantagalo - RJ', 'M', 1, 'ABL-07-02', 'cunha.euclides@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Roald Dahl', NULL, NULL, 'DAHLroald', '1916-09-13', '1990-11-23', 'WAL', 'Llandaff - South Glamorgan', 'M', 1, NULL, 'dahl.roald@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Angela Davis', NULL, NULL, 'DAVISangela', '1944-01-26', '', 'USA', 'Birmingham - Alabama', 'F', 1, NULL, 'davis.angela@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Daniel Defoe', NULL, NULL, 'DEFOEdaniel', '1660', '1731-04-21', 'ENG', 'Londres', 'M', 1, NULL, 'defoe.daniel@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('René Descartes', NULL, NULL, 'DESCARTESrene', '1596-03-31', '1650-02-11', 'FRA', 'Descartes - Indre-et-Loire', 'M', 1, NULL, 'descartes.rene@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Gonçalves Dias', NULL, NULL, 'DIASgoncalves', '1823-08-10', '1864-11-03', 'BRA', 'Caxias - MA', 'M', 1, 'ABL-15-00', 'dias.goncalves@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Charles Dickens', NULL, NULL, 'DICKENScharles', '1812-02-07', '1870-06-09', 'ENG', 'Landport - Hampshire', 'M', 1, NULL, 'dickens.charles@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Emily Dickinson', NULL, NULL, 'DICKINSONemily', '1830-12-10', '1886-03-15', 'USA', 'Amherst - Massachusetts', 'F', 1, NULL, 'dickinson.emily@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('António Dinis da Cruz e Silva', NULL, NULL, 'DINIScruzesilva', '1731-07-04', '1799-10-05', 'POR', 'Lisboa', 'M', 1, NULL, 'dinis.cruz.silva@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Carlos Drummond de Andrade', NULL, NULL, 'DRUMMONDandrade', '1902-02-30', '1987-08-17', 'BRA', 'Itabira - MG', 'M', 1, NULL, 'drummond.andrade@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Alexandre Dumas', NULL, NULL, 'DUMASalexandre', '1802-06-24', '1870-12-05', 'FRA', 'Villers-Cotterêts - Aisne', 'M', 1, NULL, 'dumas.alexandre@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Émile Durkheim', NULL, NULL, 'DURKHEIMemile', '1858-04-15', '1917-11-15', 'FRA', 'Épinal - Lorena', 'M', 1, NULL, 'durkheim.emile@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Umberto Eco', NULL, NULL, 'ECOumberto', '1932-01-05', '2016-02-19', 'ITA', 'Alessandria - Piedmont', 'M', 1, NULL, 'umberto.eco@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('George Eliot', NULL, NULL, 'ELIOTgeorge', '1819-11-22', '1880-12-22', 'ENG', 'Nuneaton - Warwickshire', 'F', 1, NULL, 'eliot.george@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Friedrich Engels', NULL, NULL, 'ENGELSfriedrich', '1820-11-28', '1895-08-05', 'GER', 'Wuppertal - Renânia do Norte-V', 'M', 1, NULL, 'engels.friedrich@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Boris Fausto', NULL, NULL, 'FAUSTOboris', '1930-12-08', NULL, 'BRA', 'São Paulo - SP', 'M', 1, NULL, 'fausto.boris@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Maria Firmina dos Reis', NULL, NULL, 'FIRMINAreis', '1822-03-11', '1917-11-11', 'BRA', 'São Luís - MA', 'F', 1, NULL, 'maria.firmina.reis@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Gustave Flaubert', NULL, NULL, 'FLAUBERTgustave', '1821-12-12', '1880-05-08', 'FRA', 'Rouen - Normandia', 'M', 1, NULL, 'flaubert.gustave@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Jean de La Fontaine', NULL, NULL, 'FONTAINEjean', '1621-07-08', '1695-04-13', 'FRA', 'Château-Thierry - Champagne', 'M', 1, NULL, 'lafontaine.jean@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Michel Foucault', NULL, NULL, 'FOUCAULTmichel', '1926-10-15', '1984-06-25', 'FRA', 'Poitiers', 'M', 1, NULL, 'foucault.michel@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Anne Frank', NULL, NULL, 'FRANKanne', '1929-06-12', '1945-02-XX', 'GER', 'Frankfurt am Main', 'F', 1, NULL, 'frank.anne@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('L. Frank Baum', NULL, NULL, 'FRANKbaum', '1856-05-15', '1919-05-06', 'USA', 'Chittenango - NY', 'M', 1, NULL, 'frank.baum@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Paulo Freire', NULL, NULL, 'FREIREpaulo', '1921-09-19', '1997-02-05', 'BRA', 'Recife - PE', 'M', 1, NULL, 'paulo.freire@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Sigmund Freud', NULL, NULL, 'FREUDsigmund', '1856-05-06', '1939-09-23', 'CZE', 'Freiberg in M?hren - Moravia', 'M', 1, NULL, 'sigmund.freud@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Gilka Machado', NULL, NULL, 'GILKAmachado', '1893', '1980', 'BRA', 'Rio de Janeiro - RJ', 'F', 1, NULL, 'gilka.machado@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Graça Aranha', NULL, NULL, 'GRACAaranha', '1868-06-21', '1931-01-26', 'BRA', 'São Luís - MA', 'M', 1, 'ABL-38-01', 'graca.aranha@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Graciliano Ramos', NULL, NULL, 'GRACILIANOramos', '1892-10-27', '1953-03-20', 'BRA', 'Quebrângulo - AL', 'M', 1, NULL, 'graciliano.ramos@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Irmãos Grimm', 'Grimm Brothers', 'Hermanos Grimm', 'GRIMMbros', '1785-01-04-1786-02-24', '1863-09-20 1859-12-16', 'GER', 'Hanau - Hesse-Darmstadt', 'M', 1, NULL, 'grimm.bros@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Bernardo Guimarães', NULL, NULL, 'GUIMARAESbernardo', '1825-08-15', '1884-03-10', 'BRA', 'Ouro Preto - MG', 'M', 1, 'ABL-05-00', 'bernardo.guimaraes@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Guimarães Rosa', NULL, NULL, 'GUIMARAESrosa', '1908-06-27', '1967-11-19', 'BRA', 'Rio de Janeiro - RJ', 'M', 1, 'ABL-02-03', 'guimaraes.rosa@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Thomas Hardy', NULL, NULL, 'HARDYthomas', '1840-06-02', '1928-01-11', 'ENG', 'Max Gate', 'M', 1, NULL, 'hardy.thomas@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Friedrich Hegel', NULL, NULL, 'HEGELfriedrich', '1770-08-27', '1831-11-14', 'GER', 'Estungarda - Württemberg', 'M', 1, NULL, 'hegel.friedrich@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Ernest Hemingway', NULL, NULL, 'HEMINGWAYernest', '1899-06-21', '1961-06-02', 'USA', 'Oak Park - Illinois', 'M', 1, NULL, 'hemingway.ernest@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Thomas Hobbes', NULL, NULL, 'HOBBESthomas', '1588-04-05', '1679-12-04', 'ENG', 'Malmesbury - Wiltshire', 'M', 1, NULL, 'hobbes.thomas@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Homero', 'Homer', 'Homero', 'HOMERUS', '928 a.c', '898 a.c', 'GRE', 'Esmirna', 'M', 1, NULL, 'homerus@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Max Horkheimer', NULL, NULL, 'HORKHEIMERmax', '1895-02-14', '1973-07-07', 'GER', 'Esturgada', 'M', 1, NULL, 'horkheimer.max@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('H.P. Lovecraft', NULL, NULL, 'HPLOVECRAFT', '1890-08-20', '1937-03-15', 'USA', 'Providence - Rhode Island', 'M', 1, NULL, 'h.p.lovecraft@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Victor Hugo', NULL, NULL, 'HUGOvictor', '1802-02-26', '1885-05-22', 'FRA', 'Besançon - Doubs', 'M', 1, NULL, 'hugo.victor@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('David Hume', NULL, NULL, 'HUMEdavid', '1711-05-07', '1776-08-25', 'SCO', 'Edimburgo', 'M', 1, NULL, 'hume.david@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Manuel de Santa Maria', NULL, NULL, 'ITAPARICAfrei', '1704', '1768', 'BRA', 'Itaparica - BA', 'M', 1, NULL, 'frei.itaparica@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Henry James', NULL, NULL, 'JAMEShenry', '1843-04-15', '1916-02-28', 'USA', 'New York', 'M', 1, NULL, 'james.henry@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('J. K. Rowling', NULL, NULL, 'JKROWLING', '1965-07-31', NULL, 'ENG', 'Yate - Gloucestershire', 'F', 1, NULL, 'jkrowling@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('J. R. R. Tolkien', NULL, NULL, 'JRRTOLKIEN', '1892-01-03', '1973-09-02', 'ENG', 'Bloemfontain', 'M', 1, NULL, 'j.r.r.tolkien@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Carl Gustav Jung', NULL, NULL, 'JUNGgustav', '1875-07-26', '1961-06-06', 'SUI', 'Kesswil - Turg?via', 'M', 1, NULL, 'carl.gustav.jung@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Franz Kafka', NULL, NULL, 'KAFKAfranz', '1883-06-03', '1924-06-03', 'CZE', 'Praga - Boémia', 'M', 1, NULL, 'kafka.franz@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Matt Kai', NULL, NULL, 'KaiXtr', '2003-03-15', NULL, 'BRA', 'Belém - PA', 'M', -1, NULL, 'ewertonmatheus2113@gmail.com', 'M@ch@d0B@rret0', NULL, NULL),
+('Immanuel Kant', NULL, NULL, 'KANTimmanuel', '1724-04-22', '1804-02-12', 'GER', 'Könisberg - Prússia', 'M', 1, NULL, 'kant.immanuel@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Sören Kierkegaard', NULL, NULL, 'KIERKEGAARDsoren', '1813-05-05', '1855-11-11', 'DEN', 'Copenhague', 'M', 1, NULL, 'kierkegaard.soren@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Rudyard Kipling', NULL, NULL, 'KIPLINGrudyard', '1865-12-30', '1936-01-18', 'ENG', 'Bombaim - Maharashtra', 'M', 1, NULL, 'kipling.rudyard@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Paulo Leminski', NULL, NULL, 'LEMINSKIpaulo', '1944-08-24', '1989-06-07', 'BRA', 'Curitiba - PR', 'M', 1, NULL, 'leminski.paulo@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Clarice Lispector', NULL, NULL, 'LISPECTORclarice', '1920-12-10', '1977-12-09', 'BRA', 'Chechelnyk', 'F', 1, NULL, 'lispector.clarice@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Monteiro Lobato', NULL, NULL, 'LOBATOmonteiro', '1882-04-18', '1948-06-04', 'BRA', 'Taubaté - SP', 'M', 1, NULL, 'lobato.monteiro@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('John Locke', NULL, NULL, 'LOCKEjohn', '1632-08-29', '1704-10-28', 'ENG', 'Wrington - Somerset', 'M', 1, NULL, 'locke.john@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Machado de Assis', NULL, NULL, 'MACHADOassis', '1839-06-21', '1908-09-29', 'BRA', 'Rio de Janeiro', 'M', 1, 'ABL-23-01', 'machado.assis@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Nicolau Maquiavel', 'Niccolò Machiavelli', 'Nicolau Maquiavel', 'MACHIAVELLIniccolo', '1469-05-03', '1527-06-21', 'ITA', 'Florença', 'M', 1, NULL, 'machiavelli.niccolo@literledge', 'Gu@n@b@r@', NULL, NULL),
+('Thomas Mann', NULL, NULL, 'MANNthomas', '1875-06-06', '1955-08-12', 'GER', ' Lübeck - Schleswig-Holstein', 'M', 1, NULL, 'mann.thomas@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Cláudio Manuel da Costa', NULL, NULL, 'MANUELcosta', '1729-06-05', '1789-07-04', 'BRA', 'Mariana - MG', 'M', 1, NULL, 'claudio.manuel.costa@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Karl Marx', NULL, NULL, 'MARXkarl', '1818-05-05', '1883-03-14', 'GER', 'Tréveris - Prússia', 'M', 1, NULL, 'marx.karl@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Gregório de Matos', NULL, NULL, 'MATOSgregorio', '1636-12-23', '1696-11-26', 'BRA', 'Salvador - BA', 'M', 1, 'ABL-16-00', 'matos.gregorio@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Cecília Meirelles', NULL, NULL, 'MEIRELEScecilia', '1901-11-07', '1964-11-09', 'BRA', 'Rio de Janeiro - RJ', 'F', 1, NULL, 'meireles.cecilia@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Herman Melville', NULL, NULL, 'MELVILLEherman', '1819-08-01', '1891-09-28', 'USA', 'New York', 'M', 1, NULL, 'melville.herman@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Montesquieu', NULL, NULL, 'MONTESQUIEU', '1689-01-18', '1755-02-10', 'FRA', 'Brède - Gironde', 'M', 1, NULL, 'montesquieu@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Vladimir Nabokov', NULL, NULL, 'NABOKOVvladimir', '1899-04-22', '1977-06-02', 'RUS', 'S?o Petesburgo', 'M', 1, NULL, 'nabokov.vladimir@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Friedrich Nietzsche', NULL, NULL, 'NIETZSCHEfriedrich', '1844-10-15', '1900-08-25', 'GER', 'Saxônia - Prússia', 'M', 1, NULL, 'nietzsche.friedrich@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Alberto de Oliveira', NULL, NULL, 'OLIVEIRAalberto', '1857-04-28', '1937-01-19', 'BRA', 'Saquarema - RJ', 'M', 1, NULL, 'oliveira.alberto@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('George Orwell', NULL, NULL, 'ORWELLgeorge', '1903-06-25', '1950-01-21', 'ENG', 'Motihari - Bihar', 'M', 1, NULL, 'orwell.george@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Oswald de Andrade', NULL, NULL, 'OSWALDandrade', '1890-01-11', '1954-10-22', 'BRA', 'São Paulo - SP', 'M', 1, NULL, 'oswald.andrade@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Fernando Pessoa', NULL, NULL, 'PESSOAfernando', '1888-06-13', '1935-11-30', 'POR', 'Lisboa - POR', 'M', 1, NULL, 'pessoa.fernando@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Platão', 'Plato', 'Platón', 'PLATO', '428 a.c', '348 a.c', 'GRE', 'Atenas', 'M', 1, NULL, 'plato@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Raul Pompéia', NULL, NULL, 'POMPEIAraul', '1863-04-12', '1895-12-25', 'BRA', 'Angra dos Reis - RJ', 'M', 1, 'ABL-03-00', 'pompeia.raul@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Howard Pyle', NULL, NULL, 'PYLEhoward', '1853-05-03', '1911-09-11', 'USA', 'Wilmington - Delaware', 'M', 1, NULL, 'pyle.howardd@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Eça de Queiroz', NULL, NULL, 'QUEIROZeca', '1845-1125', '1900-08-16', 'POR', 'Póvoa de Varzim', 'M', 1, NULL, 'queiroz.eca@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Rachel de Queiroz', NULL, NULL, 'QUEIROZrachel', '1910-11-17', '2003-11-04', 'BRA', 'Rio de Janeiro - RJ', 'F', 1, 'ABL-05-05', 'dias.goncalves@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Darcy Ribeiro', NULL, NULL, 'RIBEIROdarcy', '1922-10-26', '1997-02-17', 'BRA', 'Monte Claros - MG', 'M', 1, 'ABL-11-07', 'ribeiro.darcy@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Jean-Jacques Rousseau', NULL, NULL, 'ROUSSEAUjeanjacques', '1712-06-28', '1778-07-02', 'SUI', 'Genebra', 'M', 1, NULL, 'rousseau.jeanjacques@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Antoine de Saint-Exupéry', NULL, NULL, 'SAINTexupery', '1900-06-29', '1944-07-31', 'FRA', 'Lyon', 'M', 1, NULL, 'saint.exupery@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Vicente do Salvador', NULL, NULL, 'SALVADORfrei', '1564', '1636-1639', 'BRA', 'Salvador - BA', 'M', 1, NULL, 'vicente.salvador@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Jean-Paul Sartre', NULL, NULL, 'SARTREjeanpaul', '1905-06-21', '1980-04-15', 'FRA', 'Paris', 'M', 1, NULL, 'jean.paul.sartre@literledge.com', 'Gu@n@b@r@', NULL, 'BEAUVOIRsimone[W];'),
+('Arthur Schopenhauer', NULL, NULL, 'SCHOPENHAUERarthur', '1788-02-22', '1860-09-21', 'POL', 'Danzig', 'M', 1, NULL, 'arthur.schopenhauer@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Walter Scott', NULL, NULL, 'SCOTTwalter', '1771-08-15', '1832-09-21', 'SCO', 'Edimburgo', 'M', 1, NULL, 'scott.walter@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('William Shakespeare', NULL, NULL, 'SHAKESPEAREwilliam', '1564-04-23', '1616-04-23', 'ENG', 'Stratford-Upon-Avon', 'M', 1, NULL, 'shakespeare.william@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Mary Shelley', NULL, NULL, 'SHELLEYmary', '1797-08-30', '1851-02-01', 'ENG', 'Londres', 'F', 1, NULL, 'shelley.mary@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Santa Rita Durão', NULL, NULL, 'STRITAdurao', '1722', '1784', 'POR', 'Lisboa', 'M', 1, NULL, 'st.rita.durao@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Ariano Suassuna', NULL, NULL, 'SUASSUNAariano', '1927-06-16', '2014-06-23', 'BRA', 'Cidade da Parahyba - PB', 'M', 1, 'ABL-32-06', 'suassuna.ariano@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Sun Tzu', NULL, NULL, 'SUNtzu', '544 a.c', '496 a.c', 'CHN', 'Qi', 'M', 1, NULL, 'sun.tzu@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Bento Teixeira', NULL, NULL, 'TEIXEIRAbento', '1561', '1600', 'BRA', 'Pernambuco', 'M', 1, NULL, 'teixeira.bento@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Mark Twain', NULL, NULL, 'TWAINmark', '1835-11-30', '1910-04-21', 'USA', 'Florida - Missouri', 'M', 1, NULL, 'twain.mark@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Érico Veríssimo', NULL, NULL, 'VERISSIMOerico', '1905-12-17', '1975-11-28', 'BRA', 'Porto Alegre - RS', 'M', 1, NULL, 'verissimo.erico@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Júlio Verne', 'Jules Verne', 'Júlio Verne', 'VERNEjules', '1878-02-08', '1905-03-24', 'FRA', 'Nantes - Pays de La Loire', 'M', 1, NULL, 'verne.jules@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Gil Vicente', NULL, NULL, 'VICENTEgil', '1465', '1536', 'POR', 'Sem consenso', 'M', 1, NULL, 'vicente.gil@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Max Weber', NULL, NULL, 'WEBERmax', '1864-04-21', '1920-06-14', 'GER', 'Erfurt - Prússia', 'M', 1, NULL, 'weber.max@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Virginia Woolf', NULL, NULL, 'WOOLFvirginia', '1882-01-25', '1941-03-28', 'ENG', 'Kensington - Middlesex', 'F', 1, NULL, 'woolf.virginia@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Émile Zola', NULL, NULL, 'ZOLAemile', '1840-04-02', '1902-09-29', 'FRA', 'Paris - Île de France', 'M', 1, NULL, 'zola.emile@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('Markus Zusak', NULL, NULL, 'ZUSAKmarkus', '1975-06-23', NULL, 'AUS', 'Sydney', 'M', 1, NULL, 'zusak.markus@literledge.com', 'Gu@n@b@r@', NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -711,7 +754,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `editions`
 --
 ALTER TABLE `editions`
-  MODIFY `ked` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=178;
+  MODIFY `ked` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=186;
 
 --
 -- AUTO_INCREMENT de tabela `requests`
@@ -723,7 +766,7 @@ ALTER TABLE `requests`
 -- AUTO_INCREMENT de tabela `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `shelves`
@@ -735,7 +778,7 @@ ALTER TABLE `shelves`
 -- AUTO_INCREMENT de tabela `translations`
 --
 ALTER TABLE `translations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 
 --
 -- Restrições para despejos de tabelas

@@ -5,7 +5,6 @@
 	<head>
 		<?php
 		if (session_status() == PHP_SESSION_NONE) {session_start();}
-		if (isset($_SESSION['user'])) {header("location: login.php");}
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
 			{$v = 'Confirmação da conta - ';}
 		else if ($_COOKIE['lang'] == 'en')
@@ -23,15 +22,19 @@
 		<div class='content'>
 			<div class='login'>
 				<h1> Confirmação de conta</h1> <br />
-				<span id='text'>
 				<?php
-					if ($_GET['w'] != '2') {
-						if ($_COOKIE['lang'] == 'pt') {echo "Enviamos um link para seu email para confirmar sua conta.";}
-						if ($_COOKIE['lang'] == 'en') {echo "We sent a link to your email to confirm your account.";}
-						if ($_COOKIE['lang'] == 'es') {echo "Enviamos un enlace a su correo electrónico para confirmar su cuenta.";}
+					if (@$_GET['e'] == false) {
+						if ($_COOKIE['lang'] == 'pt') {echo "Enviamos um código para seu email para confirmar sua conta.";}
+						if ($_COOKIE['lang'] == 'en') {echo "We sent a code to your email to confirm your account.";}
+						if ($_COOKIE['lang'] == 'es') {echo "Enviamos un código a su correo electrónico para confirmar su cuenta.";}
+					}
+					else if ($_GET['e'] == '1') {
+						if ($_COOKIE['lang'] == 'pt') {echo "O código para confirmação de conta expirou, clique aqui para reenviar o código.";}
+						if ($_COOKIE['lang'] == 'en') {echo "The account verification code has expired, click here to resend the code.";}
+						if ($_COOKIE['lang'] == 'es') {echo "El código de verificación de la cuenta ha caducado, haga clic aquí para reenviar el código.";}
 					}
 				?>
-				</span> <br />
+				<br />
 			</div>
 		</div>
 

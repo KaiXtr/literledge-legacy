@@ -21,7 +21,7 @@
 		<?php
 			require 'mysql_connect.php';
 			if (isset($_SESSION['user'])) {
-				$find = $conn->query("SELECT pt FROM users WHERE nick='" .$_SESSION['user']. "';");
+				$find = $conn->query("SELECT pt FROM users WHERE nick='".$_SESSION['user']."'");
 				if ($find->num_rows > 0) {
 					$i = $find->fetch_assoc();
 					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload.png' /> </a>
