@@ -1,7 +1,7 @@
 <?php
 	require 'mysql_connect.php';
 	if ($notcon == null) {
-	$ys = false
+	$ys = false;
 	$check = $conn->query("SELECT code FROM users WHERE nick='".$_SESSION['user']."'");
 	if ($check->num_rows > 0){
 		$i = $check->fetch_assoc();

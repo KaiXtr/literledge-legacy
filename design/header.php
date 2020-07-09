@@ -28,7 +28,7 @@
 						<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
 						<div id='profilemenu' style='visibility: hidden;'>
 								<h1> " .$i['pt']. " </h1>
-								<h2> " .$_SESSION['user']. " </h2>
+								<h2> @" .$_SESSION['user']. " </h2>
 								<ul>
 									<li> <a href='users/" .$_SESSION['user']. ".php'>";
 											if ($_COOKIE['lang'] == 'pt') {echo "Perfil";}
