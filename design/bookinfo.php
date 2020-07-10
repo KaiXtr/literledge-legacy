@@ -107,7 +107,7 @@
 						$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
 						<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
 
-						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."' and state > 0");
+						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."' and state > '0'");
 						if ($find->num_rows == 0) {
 							$btns = $btns ."
 								<div class='manlan' lang='pt'>

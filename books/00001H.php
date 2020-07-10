@@ -6,7 +6,7 @@
 		<?php
 			require '../account/mysql_connect.php';
 			if ($notcon == null) {
-				$find = $conn->query("SELECT ".$_COOKIE['lang']." FROM translations WHERE fkey=00001H'");
+				$find = $conn->query("SELECT ".$_COOKIE['lang']." FROM translations WHERE fkey='00001H'");
 				$i = $find->fetch_assoc();
 				$v = $i[$_COOKIE['lang']].' - ';
 			}
