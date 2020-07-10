@@ -8,12 +8,10 @@
 		if (($fuser->num_rows > 0)||($fbook->num_rows > 0)) {
 			$shelf = $conn->query("SELECT * FROM shelves WHERE user='".$_SESSION['user']."' and book='".$_POST['id']."' and state > '0'");
 			if ($shelf->num_rows == 0) {
-				echo 'add';
 				if (isset($_POST['add'])) {$conn->query("INSERT INTO shelves (user,book,state) VALUES ('".$_SESSION['user']."','".$_POST['id']."','1')");}
 				if (isset($_POST['fav'])) {$conn->query("INSERT INTO shelves (user,book,state) VALUES ('".$_SESSION['user']."','".$_POST['id']."','3')");}
 				}
 			else {
-				echo 'rem';
 				$i = $shelf->fetch_assoc();
 				if (isset($_POST['rem'])) {$conn->query("DELETE FROM shelves WHERE id='".$i['id']."' and state != '0'");}
 				if (isset($_POST['fav'])) {$conn->query("UPDATE shelves SET state='3' WHERE id='".$i['id']."' and state != '0'");}
