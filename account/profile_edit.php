@@ -1,6 +1,6 @@
 <?php
 	require 'mysql_connect.php';
-	if (!isset($_SESSION['user'])) {header("location: http://localhost/literledge/login.php");}
+	if (!isset($_SESSION['user'])) {header("location: ".$base_url."login.php");}
 	if ($notcon == null) {
 		$error = '';
 		if ($_POST['edit'] == 'account') {
@@ -35,7 +35,7 @@
 			if ($error == '') {
 				
 				}
-			else {header("location: http://localhost/literledge/usersettings.php?error=".$error."&t=1");}
+			else {header("location: ".$base_url."usersettings.php?error=".$error."&t=1");}
 			}
 		if ($_POST['edit'] == 'security') {
 			if (($_POST['oldpassword'] == '')&&($_POST['newpassword'] == '')&&($_POST['confirm'] == '')) {
@@ -46,13 +46,16 @@
 				if (($_POST['oldpassword'] == $_POST['newpassword'])||($_POST['newpassword'] == $_SESSION['password'])) {$error = $error.'2';}
 				if ($_POST['newpassword'] != $_POST['confirm']) {$error = $error.'3';}
 				if (strlen($_POST['newpassword']) < 8) {$error = $error.'4';}
+				if (preg_match("/[a-z]/", $_POST['newpassword']) == 0)  {$error = $error .'4';}
+				if (preg_match("/[A-Z]/", $_POST['newpassword']) == 0)  {$error = $error .'4';}
+				if (preg_match("/[0-9]/", $_POST['newpassword']) == 0)  {$error = $error .'4';}
 				if (($_POST['oldpassword'] == '')||($_POST['newpassword'] == '')||($_POST['confirm'] == '')) {$error = $error.'5';}
 
 				if ($error == '') {
 					$conn->query("UPDATE users SET password='".$_POST['newpassword']."' WHERE nick='".$_SESSION['user']."';");
 					$_SESSION['password'] = $_POST['newpassword'];
 					}
-				else {header("location: http://localhost/literledge/usersettings.php?error=".$error."&t=2");}
+				else {header("location: ".$base_url."usersettings.php?error=".$error."&t=2");}
 				}
 			}
 		if ($_POST['edit'] == 'navigation') {

@@ -170,19 +170,23 @@
 							<?php
 								$errl = "<span class='error'>";
 								if (strpos($error, '1') != false) {
-									if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Senha incorreta";}
-									else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Incorrect password";}
+									if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Senha incorreta";}
+									if ($_COOKIE['lang'] == 'en') {$errl = $errl."Incorrect password";}
+									if ($_COOKIE['lang'] == 'es') {$errl = $errl."Contraseña incorrecta";}
 								}
 								if (strpos($error, '5') != false) {
-									if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."Preencha os campos vazios";}
-									else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert the empty fields";}
+									if ($_COOKIE['lang'] == 'pt') {$errl = $errl."Preencha os campos vazios";}
+									if ($_COOKIE['lang'] == 'en') {$errl = $errl."Insert the empty fields";}
+									if ($_COOKIE['lang'] == 'es') {$errl = $errl."Rellene los campos vacios";}
 								}
 								echo $errl ."</span>";
 							?>
 							<span id='text'>
-								<div class='manlan' lang='pt'> senha antiga </div>
-								<div class='manlan' lang='en'> old password </div>
-								<div class='manlan' lang='es'> contraseña anterior </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "senha antiga";}
+								if ($_COOKIE['lang'] == 'en') {echo "old password";}
+								if ($_COOKIE['lang'] == 'es') {echo "contraseña anterior";}
+							?>
 							</span> <br />
 							<div class='passbox'>
 								<input type='password' id='newp' class='textbox' name='oldpassword' />
@@ -193,38 +197,46 @@
 							<?php
 								$errl = "<span class='error'>";
 								if (strpos($error, '2') != false) {
-									if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."A senha é igual a antiga";}
-									else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Password is the same as the old one";}
+									if ($_COOKIE['lang'] == 'pt') {$errl = $errl."A senha é igual a antiga";}
+									if ($_COOKIE['lang'] == 'en') {$errl = $errl."Password is the same as the old one";}
+									if ($_COOKIE['lang'] == 'es') {$errl = $errl."La contraseña es la misma que la anterior.";}
 								}
 								if (strpos($error, '4') != false) {
-									if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."A senha é muito fraca";}
-									else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Password is too weak";}
+									if ($_COOKIE['lang'] == 'pt') {$errl = $errl."A senha é muito fraca";}
+									if ($_COOKIE['lang'] == 'en') {$errl = $errl."Password is too weak";}
+									if ($_COOKIE['lang'] == 'es') {$errl = $errl."La contraseña es demasiado débil";}
 								}
 								echo $errl ."</span>";
 							?>
 							<span id='text'>
-								<div class='manlan' lang='pt'> senha nova </div>
-								<div class='manlan' lang='en'> new password </div>
-								<div class='manlan' lang='es'> nueva contraseña </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "senha nova";}
+								if ($_COOKIE['lang'] == 'en') {echo "new password";}
+								if ($_COOKIE['lang'] == 'es') {echo "nueva contraseña";}
+							?>
 							</span> <br />
 							<div class='passbox'>
-								<input type='password' id='pass' class='textbox' name='newpassword' />
+								<input type='password' id='pass' class='textbox' name='newpassword' onkeyup='passbar();' />
 								<button type='button' id='shpass' class='passeye' onclick='showhide("pass","shpass")'></button>
 							</div>
+							<canvas id='passbar' width='96' height='10'></canvas>
 						</div>
 						<div class='passrow'>
 							<?php
 								$errl = "<span class='error'>";
 								if (strpos($error, '3') != false) {
-									if ((!isset($_COOKIE['lang'])) || ($_COOKIE['lang'] == 'pt')) {$errl = $errl."As senhas não coincidem";}
-									else if ($_COOKIE['lang'] == 'en') {$errl = $errl."Passwords don't match";}
+									if ($_COOKIE['lang'] == 'pt') {$errl = $errl."As senhas não coincidem";}
+									if ($_COOKIE['lang'] == 'en') {$errl = $errl."Passwords don't match";}
+									if ($_COOKIE['lang'] == 'es') {$errl = $errl."Las contraseñas no coinciden";}
 								}
 								echo $errl ."</span>";
 							?>
 							<span id='text'>
-								<div class='manlan' lang='pt'> confirme a senha </div>
-								<div class='manlan' lang='en'> confirm the password </div>
-								<div class='manlan' lang='es'> confirma la contraseña </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "confirme a senha";}
+								if ($_COOKIE['lang'] == 'en') {echo "confirm the password";}
+								if ($_COOKIE['lang'] == 'es') {echo "confirma la contraseña";}
+							?>
 							</span> <br />
 							<div class='passbox'>
 								<input type='password' id='conf' class='textbox' name='confirm' />

@@ -175,7 +175,6 @@
 						<button type='button' id='shpass' class='passeye' onclick='showhide("pass","shpass")'></button>
 					</div> <br />
 					<canvas id='passbar' width='96' height='10'></canvas>
-
 					<?php
 						$errl = "<span class='error'>";
 						if (strpos($error, '2') != false) {

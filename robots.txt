@@ -1,0 +1,19 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /account/
+Disallow: /design/
+Disallow: /poems/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /sinopsis/
+Disallow: /.gitattributes
+Disallow: /.htaccess
+Disallow: /favicon.svg
+Disallow: /LICENSE
+Disallow: /README.md
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: http://literledge.000webhostapp.com/sitemap.xml

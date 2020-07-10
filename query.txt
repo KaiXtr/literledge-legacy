@@ -1,8 +1,0 @@
-INSERT INTO users VALUES ('',null,null,'TEST','1XXX','1XXX','XXX','','M','1',null,'@literledge.com','Gu@n@b@r@',null);
-
-INSERT INTO books VALUES ('0000XX','TEST','1XXX','','XXX',null,null,'0','PD','#','0','0','0');
-
-INSERT INTO translations (fkey,pt,en,es) VALUES ('0000XX','','','');
-
-INSERT INTO editions (title,language,credit,filtyp,price,id) VALUES ('0000XX','PT','','epub','0.00','00');
-INSERT INTO editions (title,language,credit,filtyp,price,id) VALUES ('0000XX','PT','','pdf','0.00','01');
