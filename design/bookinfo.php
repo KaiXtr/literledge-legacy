@@ -24,6 +24,7 @@
 			else {$nm = $n[$_COOKIE['lang']];}
 			
 			if ($ech == '1') {
+				#WARNING
 				$wrng = '';
 				if ($b['warning'] == '1') {
 					$wrng = "<div id='warning'>";
@@ -42,11 +43,12 @@
 					$wrng = $wrng."</div>";
 				}
 
+				#SERIES AND VOLUMES
 				if ($b['series'] != null)
 					{$sv = "<h2><a href='search.php?q=".strtolower($b["series"])."'>".$b["series"]." • Vol. ".$b["volume"]."</a></h2>";}
 				else {$sv = '';}
 
-
+				#LITERARY SCHOOLS
 				if ($b['litschool'] != null) {
 					$ls = "<h2><a href='schools/".strtolower($b["litschool"]).".php'>";
 					if ($_COOKIE['lang'] == 'pt') {$ls = $ls."Escola Literária: ".$ltslst[$b["litschool"]];}
@@ -65,6 +67,7 @@
 				if (($rr > 0.00) && ($rr <= 2.00)) {$rc = '8C0300';}
 				if ($rr == 0.00) {$rc = '000000';}*/
 
+				#STASTISTICS
 				$v = (int) $b['visualizations'];
 				if (($v >= 10000)&&($v < 10000000)){$sl = strlen($b['visualizations']); $v = substr($b['visualizations'],0,$sl-3).'K';}
 				else if ($v >= 10000000){$sl = strlen($b['visualizations']); $v = substr($b['visualizations'],0,$sl-6).'M';}
@@ -73,6 +76,7 @@
 				if (($r >= 10000)&&($r < 10000000)){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-3).'K';}
 				else if ($r >= 10000000){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-6).'M';}
 
+				#SHARING
 				$shurl = 'literledge.000webhostapp.com/!'.$b['id'];
 				if ($lang == 'pt') {$shrmsg = "Venha dar uma olhada no livro ".$t[$lang]." no Literledge! ".$shurl;}
 				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! ".$shurl;}
@@ -80,6 +84,7 @@
 
 				$btns = "";
 				if (isset($_SESSION['user'])) {
+					#SHELF BUTTONS
 					$ys = false;
 					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
 					if ($check->num_rows > 0) {
@@ -88,6 +93,12 @@
 					}
 
 					if ($ys == true) {
+						$shelf = $conn->query("SELECT * FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b['id']."' and state='0'");
+						$quant = $conn->query("SELECT * FROM shelves WHERE user='".$_SESSION['user']."' and state='0'");
+						if ($shelf->num_rows > 0) {$conn->query("DELETE FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b['id']."' and state='0'");}
+						if ($quant->num_rows > 20) {$conn->query("DELETE FROM shelves WHERE user='".$_SESSION['user']."' and state='0' LIMIT ".($quant->num_rows-20));}
+						$conn->query("INSERT INTO shelves (user,book,state) VALUES ('".$_SESSION['user']."','".$b['id']."','0')");
+
 						$btns = "<form id='ubuttons' action='account/addtoshelf.php' method='post'>";
 						$ainpt = "<input class='btpress' type='submit' name='add' value='' style='background-image: url(media/images/icons/addto.png);' ";
 						$rinpt = "<input class='btpress' type='submit' name='rem' value='' style='background-image: url(media/images/icons/remshelf.png);' ";
@@ -96,7 +107,7 @@
 						$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
 						<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
 
-						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."'");
+						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."' and state > 0");
 						if ($find->num_rows == 0) {
 							$btns = $btns ."
 								<div class='manlan' lang='pt'>

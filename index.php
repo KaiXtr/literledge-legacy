@@ -96,43 +96,120 @@
 			require 'account/mysql_connect.php';
 			if ($notcon == null) {
 				echo "<div class='brow home'>";
-				$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
-				if ($result->num_rows > 0) {
-					$list = array();
-					while ($i = $result->fetch_array(MYSQLI_ASSOC)) {
-						$list[] = $i;
+				#RECOMENDATION FEED
+				if (@$_SESSION['user']) {
+					$result = $conn->query("SELECT book, state FROM shelves WHERE user='".$_SESSION['user']."' and state > 0");
+					if ($result->num_rows > 0){
+						$alst = array();
+						$glst = array();
+						$llst = array();
+						$tlst = array();
+						while ($i = $result->fetch_assoc()){
+							$bdata = $conn->query("SELECT auctor,genre,litschool,tags FROM books WHERE id='".$i['book']."'");
+							$b = $bdata->fetch_assoc();
+							$alst[] = $b['auctor'];
+							$glst[] = $b['genre'];
+							$llst[] = $b['litschool'];
+							$tg = 0;
+							for($x=0;$x<strlen($b['tags']);$x++) {
+								if ($b['tags'][$x] == '#') {
+									$t = substr(substr($b['tags'],$x-$tg,$tg),1);
+									$tlst[] = $t;
+									$tg = 0;
+								}
+								$tg++;
+							}
+						}
+						sort($alst);
+						sort($glst);
+						sort($llst);
+						sort($tlst);
+						$list = array();
+
+						for ($x=0;$x<sizeof($alst);$x++) {
+							$aqry = $conn->query("SELECT id,auctor,warning FROM books WHERE auctor='".$alst[$x]."'");
+							if ($aqry->num_rows > 0) {
+								while ($i = $aqry->fetch_array(MYSQLI_ASSOC)) {
+									if (in_array($i, $list) == false) {$list[] = $i;}
+								}
+							}
+						}
+						for ($x=0;$x<sizeof($glst);$x++) {
+							$gqry = $conn->query("SELECT id,auctor,warning FROM books WHERE genre='".$glst[$x]."'");
+							if ($gqry->num_rows > 0) {
+								while ($i = $gqry->fetch_array(MYSQLI_ASSOC)) {
+									if (in_array($i, $list) == false) {$list[] = $i;}
+								}
+							}
+						}
+						for ($x=0;$x<sizeof($llst);$x++) {
+							$lqry = $conn->query("SELECT id,auctor,warning FROM books WHERE litschool='".$llst[$x]."'");
+							if ($lqry->num_rows > 0) {
+								while ($i = $lqry->fetch_array(MYSQLI_ASSOC)) {
+									if (in_array($i, $list) == false) {$list[] = $i;}
+								}
+							}
+						}
+						for ($x=0;$x<sizeof($tlst);$x++) {
+							$tqry = $conn->query("SELECT id,auctor,warning FROM books WHERE tags REGEXP '#".$tlst[$x]."'");
+							if ($tqry->num_rows > 0) {
+								while ($i = $tqry->fetch_array(MYSQLI_ASSOC)) {
+									if (in_array($i, $list) == false) {$list[] = $i;}
+								}
+							}
+						}
+						$list = array_slice($list, 0, 52);
 					}
-
-					if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
-					else {$lang = $_COOKIE['lang'];}
-
-					for ($x=0;$x<sizeof($list);$x++) {
-						$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$list[$x]['id']."'");
-						$t = $translation->fetch_assoc();
-
-						$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$list[$x]['auctor']."'");
-						$n = $find->fetch_assoc();
-						if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
-						else {$nm = $n[$_COOKIE['lang']];}
-
-						if ($list[$x]['warning'] == '0') {$wrg = '';}
-						else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
-
-						echo "<a href='books/" .$list[$x]["id"]. ".php'>
-								<button class='thumbs' ".$wrg.">
-									<div class='coverart'> <img  src='media/images/covers/" .$list[$x]["id"]. ".jpg' /> </div>
-									<div class='description'>
-										<h2> ".$t[$lang]." </h2>
-										<h3> ".$nm." </h3>";
-										include 'sinopsis/'.$list[$x]['id'].'.php';
-								echo $sin."</div>
-								</button>
-							</a>";
+					else {
+						$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
+						if ($result->num_rows > 0) {
+							$list = array();
+							while ($i = $result->fetch_array(MYSQLI_ASSOC)) {
+								$list[] = $i;
+							}
 						}
 					}
-					echo "</div>";
-					$conn->close();
 				}
+				#RANDOM FEED
+				else {
+					$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
+					if ($result->num_rows > 0) {
+						$list = array();
+						while ($i = $result->fetch_array(MYSQLI_ASSOC)) {
+							$list[] = $i;
+						}
+					}
+				}
+
+				if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
+				else {$lang = $_COOKIE['lang'];}
+
+				for ($x=0;$x<sizeof($list);$x++) {
+					$translation = $conn->query("SELECT * FROM translations WHERE fkey='".$list[$x]['id']."'");
+					$t = $translation->fetch_assoc();
+
+					$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$list[$x]['auctor']."'");
+					$n = $find->fetch_assoc();
+					if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
+					else {$nm = $n[$_COOKIE['lang']];}
+
+					if ($list[$x]['warning'] == '0') {$wrg = '';}
+					else {$wrg = "style='background-color: #BC4440;color: #5B090D;'";}
+
+					echo "<a href='books/" .$list[$x]["id"]. ".php'>
+							<button class='thumbs' ".$wrg.">
+								<div class='coverart'> <img  src='media/images/covers/" .$list[$x]["id"]. ".jpg' /> </div>
+								<div class='description'>
+									<h2> ".$t[$lang]." </h2>
+									<h3> ".$nm." </h3>";
+									include 'sinopsis/'.$list[$x]['id'].'.php';
+							echo $sin."</div>
+							</button>
+						</a>";
+				}
+			echo "</div>";
+			$conn->close();
+			}
 		?>
 		<?php include 'design/footer.php' ?>
 		<script type='text/javascript'>cut_sinopsis();</script>

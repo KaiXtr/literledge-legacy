@@ -115,7 +115,7 @@
 			$fav = '';
 			if ((isset($_SESSION['user']))&&($_SESSION['user'] == $i['nick'])) {
 				$shelf = $conn->query("SELECT b.id,u.pt,u.".$_COOKIE['lang'].",s.state FROM shelves as s JOIN books as b JOIN users as u
-					ON b.auctor=u.nick and s.book=b.id WHERE s.user='".$i['nick']."'");
+					ON b.auctor=u.nick and s.book=b.id WHERE s.user='".$i['nick']."' ORDER BY s.id desc");
 				if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt')) {$lang='pt';}
 				else {$lang = $_COOKIE['lang'];}
 
@@ -131,6 +131,12 @@
 					if ($_COOKIE['lang'] == 'en') {$fav = $fav."Favorites";}
 					if ($_COOKIE['lang'] == 'es') {$fav = $fav."Favoritos";}
 					$fav = $fav."</h1></div><div class='displaybooks'>";
+
+					$htc = "<div class='brow shelf'><div class='blabel'><h1>";
+					if ($_COOKIE['lang'] == 'pt') {$htc = $htc."Histórico";}
+					if ($_COOKIE['lang'] == 'en') {$htc = $htc."Historic";}
+					if ($_COOKIE['lang'] == 'es') {$htc = $htc."Histórico";}
+					$htc = $htc."</h1></div><div class='displaybooks'>";
 
 					while ($s = $shelf->fetch_assoc()) {
 						if ($s[$_COOKIE['lang']] == null) {$nm = $s['pt'];}
@@ -150,9 +156,11 @@
 								</a>";
 						if ($s['state'] > 0) {$slf = $slf.$thb;}
 						if ($s['state'] == 3) {$fav = $fav.$thb;}
+						if ($s['state'] == 0) {$htc = $htc.$thb;}
 						}
 					$slf = $slf. "</div></div>";
 					$fav = $fav. "</div></div>";
+					$htc = $htc. "</div></div>";
 					}
 				}
 			if ($i[$_COOKIE['lang']] == null) {$nm = $i['pt'];}
@@ -183,7 +191,7 @@
 							" .$d. "
 						</div>
 					</div>".$bnds."
-				</div>".$gly.$slf.$fav;
+				</div>".$gly.$slf.$fav.$htc;
 			}
 	}
 	$conn->close();
