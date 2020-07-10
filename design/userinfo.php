@@ -14,8 +14,20 @@
 			if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 			else {$nm = $n[$_COOKIE['lang']];}
 
-			if (strlen($nm) > 20) {$hst = 'style="transform:scale(0.7,1);right: 0px;"';echo "<script type='text/javascript'>namescroll(40,0)</script>";}
-			else {$hst = '';echo "<script type='text/javascript'>namescroll(160,200)</script>";}
+			if (strlen($nm) > 20) {
+				$hst = 'style="transform:scale(0.7,1);right: 0px;"';
+				echo "<script type='text/javascript'>
+					if ($(window).width() > 720) {namescroll(40,0);}
+					else {namescroll(-20,0);}
+				</script>";
+			}
+			else {
+				$hst = '';
+				echo "<script type='text/javascript'>
+					if ($(window).width() > 720) {namescroll(160,200);}
+					else {namescroll(0,20);}
+				</script>";
+			}
 
 			#VERIFICATION
 			if ($i["auctor"] == '1') {$v = "<img id='vicon' src='media/images/icons/verified.png' />";}
@@ -52,7 +64,7 @@
 					$dth = substr($i['death'],0,5);
 				}
 				else {$d = $d.$i['death'];$dth=substr($i['death'],0,5);}
-				$age = abs($dth - $yy);
+				$age = abs($dth) - abs($yy);
 				if ($_COOKIE['lang'] == 'pt') {$age = $age." anos";}
 				if ($_COOKIE['lang'] == 'en') {$age = $age." years old";}
 				if ($_COOKIE['lang'] == 'es') {$age = $age." años";}
@@ -113,6 +125,7 @@
 			#SHELVES
 			$slf = '';
 			$fav = '';
+			$htc = '';
 			if ((isset($_SESSION['user']))&&($_SESSION['user'] == $i['nick'])) {
 				$shelf = $conn->query("SELECT b.id,u.pt,u.".$_COOKIE['lang'].",s.state FROM shelves as s JOIN books as b JOIN users as u
 					ON b.auctor=u.nick and s.book=b.id WHERE s.user='".$i['nick']."' ORDER BY s.id desc");
@@ -191,7 +204,13 @@
 							" .$d. "
 						</div>
 					</div>".$bnds."
-				</div>".$gly.$slf.$fav.$htc;
+				</div>".$gly.$slf.$fav.$htc
+				."<script type='text/javascript'>
+					if ($(window).width() < 720) {
+						if ($('#username').height() == '80') {document.getElementById('username').style.top = '100px';}
+						if ($('#username').height() >= '120') {document.getElementById('username').style.top = '60px';}
+					}
+				</script>";
 			}
 	}
 	$conn->close();

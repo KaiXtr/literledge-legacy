@@ -423,10 +423,14 @@ hr {
 }
 
 .blabel {
-	line-height: 5px;
+	line-height: 35px;
 	padding-top: 20px;
 	padding-left: 20px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.blabel h1{
+	margin: 0px;
 }
 
 .brow {
@@ -440,37 +444,51 @@ hr {
 	float: none;
 }
 
-.filters  {
+#filters  {
 	padding: 5px;
-	width: 280px;
 	top: 100px;
-	left: 30px;
+	left: 10px;
+	transition: visibility 0.5s, opacity 0.5s;
 	position: fixed;
-	display: none;
+	visibility: hidden;
+	opacity: 0%;
+	z-index: 16;
 }
 
-.filters h2  {
-	margin: 5px;
+#filters .brow{
+	line-height: 15px;
+	padding: 15px;
 }
 
-.filters .selectbox  {
+#filters h2 {
+	margin: 10px;
+}
+
+#filters .selectbox {
 	margin-bottom: 5px;
 	padding-right: 10px;
 }
 
-.filters ul  {
+#filters .brow ul {
 	padding-left: 25px;
 }
 
-.filters #poemlst ul  {
+#filters #poemlst ul {
 	padding-left: 5px;
 	max-height: 340px;
 	overflow-y: auto;
 	list-style: none;
 }
 
-.filters #poemlst ul li  {
+#filters #poemlst ul li {
 	margin-bottom: 5px;
+}
+
+#filtbut {
+	position: fixed;
+	right: 10px;
+	top: 50px;
+	z-index: 17;
 }
 
 .brow .bn {
@@ -482,7 +500,6 @@ hr {
 }
 
 .displaybooks {
-	margin-top: 10px;
 	margin-left: 10px;
 	overflow-y: hidden;
 	overflow-x: scroll;
@@ -551,39 +568,29 @@ hr {
 	display: none;
 }
 
-@keyframes username {
-	from  {opacity: 0%}
-	to  {opacity: 100%}
-}
-
 #profile #username {
 	word-break: break-word;
 	text-align: right;
-	vertical-align: bottom;
-	text-shadow: 20px 20px 15px black;
+	text-shadow: 10px 10px 10px black;
 	font-size: 35px;
 	margin: 0px;
 	width: 200px;
-	top: 90px;
+	top: 130px;
 	right: 20px;
-	height: 30px;
 	animation-name: username;
 	animation-duration: 3s;
+	animation-direction: right;
 	position: absolute;
 }
 
-@keyframes username {
-	from  {opacity: 0%; right: 0px;}
-	to  {opacity: 100%; right: 20px;}
-}
 
 #profile #nickname {
 	text-align: right;
-	text-shadow: 10px 10px 15px black;
-	font-size: 10px;
-	font-weight: lighter;
+	text-shadow: 7px 7px 5px black;
+	font-size: 15px;
+	font-weight: normal;
 	margin: 5px;
-	top: 190px;
+	top: 180px;
 	right: 20px;
 	animation-name: nickname;
 	animation-direction: right;
@@ -1011,9 +1018,9 @@ hr {
 
 .quotepoem {
 	font-size: 15px;
-	margin-left: 10px; 
+	margin-left: 10px;
+	margin-right: 10px;
 	padding: 30px;
-	width: 280px;
 	border-radius: 15px;
 }
 
@@ -1038,6 +1045,7 @@ hr {
 	text-align: left;
 	font-size: 20px;
 	margin: 10px;
+	margin-top: 0px;
 	margin-right: 0px;
 	padding: 10px;
 	width: 95%;
@@ -1091,7 +1099,7 @@ hr {
 	font-size: 20px;
 	margin: 10px;
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-top: 0px;
 	padding: 10px;
 	width: 45%;
 	height: 280px;

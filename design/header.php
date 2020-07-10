@@ -1,6 +1,6 @@
 <header class='upperbar'>
 	<div class='upperbarcontent'>
-		<button id='burgerbut'> ☰ </button>
+		<button id='burgerbut'><img src='media/images/icons/burger.png' /></button>
 		<a href='index.php'> <img id='logo' src='media/images/icons/logo.png' /> </a>
 		<a id='title' href='index.php'> Literledge </a>
 		<?php
@@ -27,26 +27,26 @@
 					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload.png' /> </a>
 						<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
 						<div id='profilemenu' style='visibility: hidden;'>
-								<h1> " .$i['pt']. " </h1>
-								<h2> @" .$_SESSION['user']. " </h2>
-								<ul>
-									<li> <a href='users/" .$_SESSION['user']. ".php'>";
-											if ($_COOKIE['lang'] == 'pt') {echo "Perfil";}
-											if ($_COOKIE['lang'] == 'en') {echo "Profile";}
-											if ($_COOKIE['lang'] == 'es') {echo "Perfil";}
-									echo "</a></li>
-									<li> <a href='usersettings.php'>";
-											if ($_COOKIE['lang'] == 'pt') {echo "Ajustes";}
-											if ($_COOKIE['lang'] == 'en') {echo "Settings";}
-											if ($_COOKIE['lang'] == 'es') {echo "Definiciones";}
-									echo "</a> </li>
-									<li> <a href='account/logout.php'>";
-											if ($_COOKIE['lang'] == 'pt') {echo "Sair";}
-											if ($_COOKIE['lang'] == 'en') {echo "Log out";}
-											if ($_COOKIE['lang'] == 'es') {echo "Salir";}
-									echo "</a> </li>
-								</ul>
-							</div>";
+							<h1> " .$i['pt']. " </h1>
+							<h2> @" .$_SESSION['user']. " </h2>
+							<ul>
+								<li> <a href='users/" .$_SESSION['user']. ".php'>";
+										if ($_COOKIE['lang'] == 'pt') {echo "Perfil";}
+										if ($_COOKIE['lang'] == 'en') {echo "Profile";}
+										if ($_COOKIE['lang'] == 'es') {echo "Perfil";}
+								echo "</a></li>
+								<li> <a href='usersettings.php'>";
+										if ($_COOKIE['lang'] == 'pt') {echo "Ajustes";}
+										if ($_COOKIE['lang'] == 'en') {echo "Settings";}
+										if ($_COOKIE['lang'] == 'es') {echo "Definiciones";}
+								echo "</a> </li>
+								<li> <a href='account/logout.php'>";
+										if ($_COOKIE['lang'] == 'pt') {echo "Sair";}
+										if ($_COOKIE['lang'] == 'en') {echo "Log out";}
+										if ($_COOKIE['lang'] == 'es') {echo "Salir";}
+								echo "</a> </li>
+							</ul>
+						</div>";
 					}
 				}
 			else {

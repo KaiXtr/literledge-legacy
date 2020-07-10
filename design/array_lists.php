@@ -56,17 +56,17 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
-	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Detective'=>'Investigação','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo',
+	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Detective'=>'Investigação','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo','Novel'=>'Novela',
 	'Parody'=>'Paródia','Philosophy'=>'Filosofia','Play'=>'Peça','Rhapsody'=>'Rapsódia','Romance'=>'Romance','Sociology'=>'Sociologia','Tale'=>'Conto','Tragedy'=>'Tragédia',
 	'Poetry'=>'Poesia');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$gnrlst = array('Chronicle'=>'Chronicle','Comedy'=>'Comedy','Detective'=>'Detective','Document'=>'Document','Drama'=>'Drama','Epic'=>'Epic','Fantasy'=>'Fantasy','Horror'=>'Horror','Journalism'=>'Journalism',
+	$gnrlst = array('Chronicle'=>'Chronicle','Comedy'=>'Comedy','Detective'=>'Detective','Document'=>'Document','Drama'=>'Drama','Epic'=>'Epic','Fantasy'=>'Fantasy','Horror'=>'Horror','Journalism'=>'Journalism','Novel'=>'Novel',
 	'Parody'=>'Parody','Philosophy'=>'Philosophy','Play'=>'Play','Rhapsody'=>'Rhapsody','Romance'=>'Romance','Sociology'=>'Sociology','Tale'=>'Tale',
 	'Tragedy'=>'Tragedy','Poetry'=>'Poetry');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comedia','Detective'=>'Investigación','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Horror','Journalism'=>'Jornalismo',
+	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comedia','Detective'=>'Investigación','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Horror','Journalism'=>'Jornalismo','Novel'=>'Novela',
 	'Parody'=>'Parodia','Philosophy'=>'Filosofía','Play'=>'Pieza','Rhapsody'=>'Rapsodia','Romance'=>'Romance','Sociology'=>'Sociología','Tale'=>'Conto',
 	'Tragedy'=>'Tragédia','Poetry'=>'Poesía');
 	}

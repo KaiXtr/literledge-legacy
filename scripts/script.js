@@ -49,6 +49,20 @@ function set_display(target){
 			obj.style.opacity = '0%';
 			}
 		}
+	else if (target == 'filters') {
+		if (obj.style.visibility == 'hidden') {
+			obj.style.visibility = 'visible';
+			obj.style.opacity = '100%';
+			fad.style.visibility = 'visible';
+			fad.style.opacity = '50%';
+			}
+		else {
+			obj.style.visibility = 'hidden';
+			obj.style.opacity = '0%';
+			fad.style.visibility = 'hidden';
+			fad.style.opacity = '0%';
+			}
+		}
 	else if (target == 'reportab') {
 		if (obj.style.visibility == 'hidden') {
 			obj.style.visibility = 'visible';
@@ -217,6 +231,7 @@ function cut_sinopsis() {
 $(document).ready(function() {
 	$("#burgerbut").on('click', function () {set_display('lateralbar')});
 	$("#openpro").on('click', function () {set_display('profilemenu')});
+	$("#filtbut").on('click', function () {set_display('filters')});
 });
 
 /*
