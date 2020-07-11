@@ -84,7 +84,7 @@ hr {
 	padding: 0px;
 	padding-left: 4px;
 	padding-right: 4px;
-	width: 35px;
+	width: 40px;
 	height: 40px;
 	vertical-align: middle;
 	border: none;
@@ -94,13 +94,6 @@ hr {
 
 .upperbar #burgerbut:hover {
 	border-radius: 5px;
-}
-
-.upperbar #burgerbut:active {
-	font-size: 22px;
-	padding: 4px;
-	padding-left: 7px;
-	padding-right: 7px;
 }
 
 .upperbar #title {
@@ -316,7 +309,7 @@ hr {
 	outline: none;
 }
 
-.textbox.long#texcom {
+.login .textbox.long {
 	width: 300px;
 }
 
@@ -932,7 +925,7 @@ hr {
 	overflow-x: scroll;
 }
 
-#bookinfo .thbcritic {
+.thbcritic {
 	white-space: normal;
 	font-size: 20px;
 	margin: 10px;
@@ -944,35 +937,62 @@ hr {
 	display: inline-flex;
 }
 
-#bookinfo .thbcritic div {
+.thbcritic div {
 	white-space: normal;
 	word-break: break-word;
 	display: block;
 }
 
-#bookinfo .thbcritic #cricom {
+.thbcritic #texcom {
+	width: 380px;
+}
+
+.thbcritic #cricom {
+	font-style: italic;
 	height: 330px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-#bookinfo .thbcritic h2 {
+.thbcritic h2 {
 	margin: 0px;
 }
 
-#bookinfo .thbcritic h3 {
+.thbcritic h3 {
 	font-size: 12px;
 	margin: 5px;
 	margin-bottom: 20px;
 }
 
-#bookinfo .thbcritic #coucom {
+.thbcritic .cribts button {
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 5px;
+	width: 34px;
+	height: 34px;
+	float: right;
+}
+
+.thbcritic #coucom {
 	font-size: 10px;
 	float: right;
 }
 
-#bookinfo .thbcritic #subcom {
+.thbcritic #subcom {
 	float: none;
+}
+
+#cridel {
+	font-size: 25px;
+	padding: 20px;
+	top: 300px;
+	left: 25%;
+	z-index: 20;
+	transition: visibility 1s, opacity 1s;
+	border-radius: 15px;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0%;
 }
 
 #bookinfo #reportbt {

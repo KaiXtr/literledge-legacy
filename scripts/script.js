@@ -79,6 +79,30 @@ function set_display(target){
 			fad.style.opacity = '0%';
 			}
 		}
+	else if (target == 'cridit') {
+		if (obj.style.display == 'none') {
+			document.getElementById('criopi').style.display = 'none';
+			obj.style.display = 'block';
+			}
+		else {
+			document.getElementById('criopi').style.display = 'block';
+			obj.style.display = 'none';
+			}
+		}
+	else if (target == 'cridel') {
+		if (obj.style.visibility == 'hidden') {
+			obj.style.visibility = 'visible';
+			obj.style.opacity = '100%';
+			fad.style.visibility = 'visible';
+			fad.style.opacity = '50%';
+			}
+		else {
+			obj.style.visibility = 'hidden';
+			obj.style.opacity = '0%';
+			fad.style.visibility = 'hidden';
+			fad.style.opacity = '0%';
+			}
+		}
 	else if (target == 'cookies') {
 		if (obj.style.visibility == 'visible') {
 			obj.style.visibility = 'hidden';
@@ -232,6 +256,10 @@ $(document).ready(function() {
 	$("#burgerbut").on('click', function () {set_display('lateralbar')});
 	$("#openpro").on('click', function () {set_display('profilemenu')});
 	$("#filtbut").on('click', function () {set_display('filters')});
+	$("#btcridit").on('click', function () {set_display('cridit')});
+	$("#btcridel").on('click', function () {set_display('cridel')});
+	$("#btcriditexit").on('click', function () {set_display('cridit')});
+	$("#btcridelexit").on('click', function () {set_display('cridel')});
 });
 
 /*

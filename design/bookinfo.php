@@ -299,9 +299,10 @@
 					</div>
 					<a name='goto5'></a>
 					<div id='opinions'><h1>";
-						if ($_COOKIE['lang'] == 'pt') {echo "Opiniões";}
-						if ($_COOKIE['lang'] == 'en') {echo "Opinions";}
-						if ($_COOKIE['lang'] == 'es') {echo "Opiniónes";}
+					if ($_COOKIE['lang'] == 'pt') {echo "Opiniões";}
+					if ($_COOKIE['lang'] == 'en') {echo "Opinions";}
+					if ($_COOKIE['lang'] == 'es') {echo "Opiniónes";}
+					echo "</h1>";
 
 				$rws = '';
 				$urev = false;
@@ -314,20 +315,70 @@
 						if ($rn[$_COOKIE['lang']] == null) {$rwnm = $rn['pt'];}
 						else {$rwnm = $rn[$_COOKIE['lang']];}
 
-						$rws = $rws."<div class='thbcritic'>
-										<div>
+						if ((@$_SESSION['user'])&&($rw['nick'] == $_SESSION['user'])) {
+							echo "<div id='cridel' style='visibility: hidden'>
+								<form action='account/post_opinion.php?a=2' method='post'>";
+							if ($_COOKIE['lang'] == 'pt') {
+								echo "Você quer mesmo remover sua opinião? <br />
+								<button type='submit' class='btpress'> Sim </button>
+								<button type='button' id='btcridelexit' class='btpress'> Não </button>";
+							}
+							if ($_COOKIE['lang'] == 'en') {
+								echo "Do you really want to remove your opinion? <br />
+								<button type='submit' class='btpress'> Yes </button>
+								<button type='button' id='btcridelexit' class='btpress'> No </button>";
+							}
+							if ($_COOKIE['lang'] == 'es') {
+								echo "¿De verdad quieres eliminar tu opinión? <br />
+								<button type='submit' class='btpress'> Sí </button>
+								<button type='button' id='btcridelexit' class='btpress'> No </button>";
+							}
+							echo "<input name='book' value='".$b['id']."' style='display: none' /></form></div>";
+							$rws = "<div class='thbcritic'>
+										<div id='criopi'>
+											<div class='cribts'>
+												<button id='btcridel' class='btpress' style='background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png)' >
+												</button>
+												<button id='btcridit' class='btpress' style='background-image: url(media/images/icons/cridit-".$_COOKIE['theme'].".png)' >
+												</button>
+											</div>
 											<a href='users/".$rw['nick'].".php'><h2> ".$rwnm." </h2></a>
 											<h3><a href='users/".$rw['nick'].".php'> @".$rw['nick']."</a> | ".$rw['datime']." </h3>
 											<div id='cricom'>" .$rw['comment']. "</div>
 										</div>
-									</div>";
+										<div id='cridit' style='display: none'>
+											<div class='cribts'>
+												<button id='btcriditexit' class='btpress' style='background-image: url(media/images/icons/exit.png)' >
+												</button>
+											</div>
+											<h2> Edite sua opinião </h2>
+											<br />
+											<form action='account/post_opinion.php?a=1' method='post'>
+												<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();' maxlength='736'>".$rw['comment']."</textarea>
+												<br />
+												<span id='coucom'>0/200</span>
+												<input id='subcom' class='btpress' type='submit' disabled />
+												<input name='book' value='".$b['id']."' style='display: none;' />
+											</form>
+										</div>
+									</div>".$rws;
+							}
+						else {
+							$rws = $rws."<div class='thbcritic'>
+											<div>
+												<a href='users/".$rw['nick'].".php'><h2> ".$rwnm." </h2></a>
+												<h3><a href='users/".$rw['nick'].".php'> @".$rw['nick']."</a> | ".$rw['datime']." </h3>
+												<div id='cricom'>" .$rw['comment']. "</div>
+											</div>
+										</div>";
+									}
 						}
 					}
 				if ((isset($_SESSION['user']))&&($urev == false)) {
 					$ys = false;
 					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
-					if ($find->num_rows > 0) {
-						$i = $find->fetch_assoc();
+					if ($check->num_rows > 0) {
+						$i = $check->fetch_assoc();
 						if ($i['auctor'] == '0') {$ys = true;}
 					}
 
@@ -336,9 +387,8 @@
 									<div>
 										<h2> Publique sua opinião </h2>
 										<br />
-										<form action='account/post_opinion.php' method='post'>
-											<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();'
-											pInputTextArea [(ngModel)]='value' (ngModelChange)='valueChange(value)' maxlength='736'></textarea> <br />
+										<form action='account/post_opinion.php?a=0' method='post'>
+											<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();' maxlength='736'></textarea> <br />
 											<span id='coucom'>0/200</span>
 											<input id='subcom' class='btpress' type='submit' disabled />
 											<input name='book' value='".$b['id']."' style='display: none;' />
@@ -351,8 +401,7 @@
 					$rws = "Nenhuma opinião sobre este livro. <a href='login.php'>Seja o primeiro a opinar!</a>";
 					}
 
-				echo "</h1>".$rws."
-					</div>
+				echo $rws."</div>
 					<div id='tags'>";
 					$tg = 0;
 					for($x=0;$x<strlen($b['tags']);$x++) {

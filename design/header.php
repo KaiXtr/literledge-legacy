@@ -1,7 +1,7 @@
 <header class='upperbar'>
 	<div class='upperbarcontent'>
-		<button id='burgerbut'><img src='media/images/icons/burger.png' /></button>
-		<a href='index.php'> <img id='logo' src='media/images/icons/logo.png' /> </a>
+		<button id='burgerbut'><img src='media/images/icons/burger-<?php echo $_COOKIE['theme']; ?>.png' /></button>
+		<a href='index.php'> <img id='logo' src='media/images/icons/logo-<?php echo $_COOKIE['theme']; ?>.png' /> </a>
 		<a id='title' href='index.php'> Literledge </a>
 		<?php
 			if ($_COOKIE['lang'] == 'pt') {$vl = 'Buscar';}
@@ -12,7 +12,7 @@
 			<?php
 				if ((isset($_GET['q']))&&($_GET['q'][0] != '$')) {$sch = "value='".$_GET['q']."'";} else {$sch = '';}
 				echo "<input class='searchtext' type='text' name='search' ".$sch."onchange='search_suggest(this.value)' placeholder='".$vl."...' />
-				<input class='submit' type='image' src='media/images/icons/search.png' alt='".strtolower($vl)."' />";
+				<input class='submit' type='image' src='media/images/icons/search-".$_COOKIE['theme'].".png' alt='".strtolower($vl)."' />";
 				if (isset($_GET['seasugg'])) {
 					mainInfo($_GET['seasugg']);
 				}
@@ -24,7 +24,7 @@
 				$find = $conn->query("SELECT pt FROM users WHERE nick='".$_SESSION['user']."'");
 				if ($find->num_rows > 0) {
 					$i = $find->fetch_assoc();
-					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload.png' /> </a>
+					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload-".$_COOKIE['theme'].".png' /> </a>
 						<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
 						<div id='profilemenu' style='visibility: hidden;'>
 							<h1> " .$i['pt']. " </h1>

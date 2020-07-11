@@ -200,12 +200,16 @@ a:active{
 	background-color: var(--bg-insi);
 }
 
-#bookinfo .thbcritic{
+.thbcritic{
 	background-color: var(--bg-insi);
 }
 
-#bookinfo .thbcritic #coucom{
+.thbcritic #coucom{
 	color: red;
+}
+
+#cridel {
+	background-color: var(--bg-rect);
 }
 
 .quotepoem{

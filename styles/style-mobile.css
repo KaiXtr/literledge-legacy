@@ -83,7 +83,7 @@ hr {
 	padding: 0px;
 	padding-left: 4px;
 	padding-right: 4px;
-	width: 35px;
+	width: 40px;
 	height: 40px;
 	vertical-align: middle;
 	border: none;
@@ -93,13 +93,6 @@ hr {
 
 .upperbar #burgerbut:hover {
 	border-radius: 5px;
-}
-
-.upperbar #burgerbut:active {
-	font-size: 22px;
-	padding: 4px;
-	padding-left: 7px;
-	padding-right: 7px;
 }
 
 .upperbar #title {
@@ -177,7 +170,7 @@ hr {
 }
 
 .upperbar .profilepic {
-	margin-right: 20px;
+	margin-left: 10px;
 	width: 28px;
 	height: 37px;
 	border: none;
@@ -334,8 +327,8 @@ hr {
 	outline: none;
 }
 
-.textbox.long#texcom {
-	width: 155%;
+.login .textbox.long {
+	width: 85%;
 }
 
 .login .passbox {
@@ -434,7 +427,6 @@ hr {
 }
 
 .brow {
-	line-height: 5px;
 	margin: 5px;
 	padding: 0px;
 	border-radius: 15px;
@@ -956,10 +948,11 @@ hr {
 	margin-bottom: 30px;
 }
 
-#bookinfo .thbcritic {
+.thbcritic {
 	white-space: normal;
 	font-size: 22px;
 	margin: 0px;
+	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 10px;
 	height: 220px;
@@ -968,42 +961,66 @@ hr {
 	display: inline-flex;
 }
 
-#bookinfo .thbcritic div {
+.thbcritic div {
 	font-size: 15px;
 	white-space: normal;
 	word-break: break-word;
 	display: block;
 }
 
-#bookinfo .thbcritic #texcom {
+.thbcritic .cribts button {
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+
+.thbcritic #texcom {
 	width: 90%;
 	position: sticky;
 }
 
-#bookinfo .thbcritic #cricom {
+.thbcritic #cricom {
 	font-size: 20px;
+	font-style: italic;
 	height: 110px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-#bookinfo .thbcritic h2 {
+.thbcritic h2 {
 	margin: 0px;
 }
 
-#bookinfo .thbcritic h3 {
+.thbcritic h3 {
 	font-size: 12px;
 	margin: 5px;
 	margin-bottom: 20px;
 }
 
-#bookinfo .thbcritic #coucom {
+.thbcritic #coucom {
 	font-size: 10px;
 	float: right;
 }
 
-#bookinfo .thbcritic #subcom {
+.thbcritic #subcom {
 	float: none;
+}
+
+#cridel {
+	font-size: 25px;
+	padding: 20px;
+	width: 90%;
+	top: 300px;
+	left: 5px;
+	z-index: 20;
+	transition: visibility 1s, opacity 1s;
+	border-radius: 15px;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0%;
 }
 
 #bookinfo #reportbt {
@@ -1168,7 +1185,7 @@ hr {
 
 .proedit {
 	margin-left: 0px; 
-	width: 1000px;
+	width: 100%;
 	display: inline-block;
 }
 
@@ -1183,6 +1200,7 @@ hr {
 
 #optlst ul {
 	list-style: none;
+	display: inline-block;
 }
 
 #optlst .btpress {
@@ -1218,8 +1236,8 @@ hr {
 }
 
 .filprev #prevban {
-	width: 77px;
-	height: 20px;
+	width: 38px;
+	height: 10px;
 }
 
 .passrow {

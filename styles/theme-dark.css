@@ -9,11 +9,11 @@
 	--bg-rect: #282828;
 	--bg-thmb: #4C4C4C;
 	--bg-dark: #333333;
-	--bg-foot: #444444;
+	--bg-foot: #262626;
 	--text-color: #C6C6C6;
 	--link-color: #ADD2FF;
 	--header-color: #FFFFFF;
-	--lateral-bar: #3F3F3F;
+	--lateral-bar: #282828;
 	--row-hover: #686868;
 	--wrng-backg: #BC4440;
 	--wrng-color: #5B090D;
@@ -43,15 +43,15 @@ a:active{
 }
 
 .upperbar{
-	background-color: var(--color-thumb);
+	background-color: var(--bg-rect);
 }
 
 .upperbar #burgerbut{
-	background-color: var(--color-thumb);
+	background-color: var(--bg-rect);
 }
 
 .upperbar #burgerbut:hover{
-	background-color: var(--bt-hover);
+	background-color: var(--color-thumb);
 }
 
 .searchbar .searchtext{
@@ -59,7 +59,7 @@ a:active{
 }
 
 .searchbar .submit{
-	background-color: var(--text-color);
+	background-color: var(--color-thumb);
 }
 
 .searchbar .submit:hover{
@@ -85,15 +85,15 @@ a:active{
 }
 
 .upperbar #btup{
-	background-color: var(--color-thumb);
+	background-color: var(--bt-rect);
 }
 
 .upperbar #btup:hover{
-	background-color: var(--bt-hover);
+	background-color: var(--color-thumb);
 }
 
 #profilemenu{
-	background-color: var(--color-thumb);
+	background-color: var(--bg-rect);
 }
 
 .sidebar{
@@ -114,6 +114,16 @@ a:active{
 
 .error{
 	color: red;
+}
+
+.selectbox{
+	background-color: var(--bg-dark);
+	color: var(--text-color);
+}
+
+.login .textbox{
+	background-color: var(--bg-dark);
+	color: var(--text-color);
 }
 
 .login .passbox .passeye{
@@ -141,7 +151,7 @@ a:active{
 }
 
 #profile #binfobar{
-	background-color:var(--bg-rect);
+	background-color:var(--bg-insi);
 }
 
 #profile .binfotip{
@@ -200,12 +210,21 @@ a:active{
 	background-color: var(--bg-insi);
 }
 
-#bookinfo .thbcritic{
+.thbcritic{
 	background-color: var(--bg-insi);
 }
 
-#bookinfo .thbcritic #coucom{
+.thbcritic .textbox{
+	background-color: var(--bg-rect);
+	color: var(--text-color);
+}
+
+.thbcritic #coucom{
 	color: red;
+}
+
+#cridel {
+	background-color: var(--bg-rect);
 }
 
 .quotepoem{
@@ -256,7 +275,7 @@ a:active{
 
 #langbox{
 	background-color: var(--bg-foot);
-	color: var(--bg-dark);
+	color: var(--bg-thmb);
 }
 
 #langbox * :hover{
@@ -265,7 +284,7 @@ a:active{
 
 .disclaimer{
 	background-color: var(--bg-foot);
-	color: var(--bg-dark);
+	color: var(--bg-thmb);
 }
 
 ::placeholder{

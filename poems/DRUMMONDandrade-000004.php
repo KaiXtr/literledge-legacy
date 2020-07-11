@@ -1,10 +1,10 @@
 <h1> Que pode uma criatura </h1>
-Que pode uma criatura senão,
-entre outras criaturas, amar?
-amar e esquecer,
-amar e malamar,
-amar, desamar, amar?
-sempre, e até de olhos vidrados, amar?
+Que pode uma criatura senão, <br />
+entre outras criaturas, amar? <br />
+amar e esquecer, <br />
+amar e malamar, <br />
+amar, desamar, amar? <br />
+sempre, e até de olhos vidrados, amar? <br />
 <br />
 <span> Carlos Drummond de Andrade </span>
 <br />

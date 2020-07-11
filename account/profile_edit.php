@@ -67,5 +67,5 @@
 			$conn->close();
 		}
 
-	if ($error == '') {header("location: ".$base_url."users/" .$_SESSION['user']. ".php");}
+	if ($error == '') {header("location: ".$base_url."users/".$_SESSION['user'].".php");}
 ?>

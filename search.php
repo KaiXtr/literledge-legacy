@@ -590,14 +590,14 @@
 					if ($_COOKIE['lang'] == 'pt') {echo "Poemas";}
 					if ($_COOKIE['lang'] == 'en') {echo "Poems";}
 					if ($_COOKIE['lang'] == 'es') {echo "Poemas";}
-					echo "</h2></a><ul>";
+					echo "</h2></a><div><ul>";
 					for ($x=0;$x<sizeof($poemlst);$x++) {
 						echo "<li><a href='".$lnk."#".$poemlst[$x]."' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.");}'>".$poemlst[$x]."</a></li>";
 					}
-					echo "</ul></div>";
+					echo "</ul></div></div>";
 				}
 				echo "</div>
-					<button id='filtbut' class='btpress'><img src='media/images/icons/filters.png' /><button/>";
+					<button id='filtbut' class='btpress'><img src='media/images/icons/filters-".$_COOKIE['theme'].".png' /></button>";
 
 				$conn->close();
 				}

@@ -58,7 +58,7 @@
 			else {$b = $i['birth'];$yy = substr($i['birth'],0,4);$zd = '';}
 
 			if (($i['death'] != null)&&($i['auctor'] == '1')) {
-				$d = "<span id='dhover'><img src='media/images/icons/death.png' height='30' />";
+				$d = "<span id='dhover'><img src='media/images/icons/death-".$_COOKIE['theme'].".png' height='30' />";
 				if (strlen($i['death']) > 7) {
 					$d = $d.substr($i['death'],8,2).'/'.substr($i['death'],5,2).'/'.substr($i['death'],0,4);
 					$dth = substr($i['death'],0,5);
@@ -176,6 +176,37 @@
 					$htc = $htc. "</div></div>";
 					}
 				}
+
+			#OPINIONS
+			$opn = '';
+			if ((isset($_SESSION['user']))&&($_SESSION['user'] == $i['nick'])) {
+
+				$opn .= "<div class='brow shelf'><div class='blabel'><h1>";
+				if ($_COOKIE['lang'] == 'pt') {$opn .= "Opiniões";}
+				if ($_COOKIE['lang'] == 'en') {$opn .= "Opinions";}
+				if ($_COOKIE['lang'] == 'es') {$opn .= "Opiniónes";}
+				$opn .= "</h1></div><div class='displaybooks'>";
+
+				$find = $conn->query("SELECT * FROM reviews WHERE user='".$_SESSION['user']."'");
+				if ($find->num_rows > 0) {
+					while ($rw = $find->fetch_assoc()) {
+						$fnms = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM translations WHERE fkey='".$rw['book']."'");
+						$rn = $fnms->fetch_assoc();
+						if ($rn[$_COOKIE['lang']] == null) {$rwnm = $rn['pt'];}
+						else {$rwnm = $rn[$_COOKIE['lang']];}
+
+						$opn = $opn."<div class='thbcritic'>
+										<div>
+											<a href='books/".$rw['book'].".php'><h2> ".$rwnm." </h2></a>
+											<h3> ".$rw['datime']." </h3>
+											<div id='cricom'>" .$rw['comment']. "</div>
+										</div>
+									</div>";
+					}
+				}
+				$opn .= "</div></div>";
+			}
+
 			if ($i[$_COOKIE['lang']] == null) {$nm = $i['pt'];}
 			else {$nm = $i[$_COOKIE['lang']];}
 
@@ -186,7 +217,7 @@
 					<h2 id='nickname'> @" .$i["nick"]. " </h2>
 					<div id='binfobar'>
 						<div>
-							<img src='media/images/icons/gender_" .$i["gender"]. ".png' height='30' />
+							<img src='media/images/icons/gender_" .$i["gender"]. "-".$_COOKIE['theme'].".png' height='30' />
 							<span> " .$i["hometown"]. " </span>
 							<span id='chover'>
 								<a href='https://www.flaticon.com/authors/freepik' target='_blank'>
@@ -197,14 +228,14 @@
 						</div>
 						<div>
 							<span id='bhover'> 
-								<img src='media/images/icons/birth.png' height='30' />
+								<img src='media/images/icons/birth-".$_COOKIE['theme'].".png' height='30' />
 								" .$b. "
 								<span id='tbirth' class='binfotip'>".$zd."</span>
 							</span>
 							" .$d. "
 						</div>
 					</div>".$bnds."
-				</div>".$gly.$slf.$fav.$htc
+				</div>".$gly.$slf.$fav.$htc.$opn
 				."<script type='text/javascript'>
 					if ($(window).width() < 720) {
 						if ($('#username').height() == '80') {document.getElementById('username').style.top = '100px';}
