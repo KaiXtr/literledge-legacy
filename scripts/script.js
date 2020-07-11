@@ -66,14 +66,12 @@ function set_display(target){
 	else if (target == 'reportab') {
 		if (obj.style.visibility == 'hidden') {
 			obj.style.visibility = 'visible';
-			obj.style.height = '250px';
 			obj.style.opacity = '100%';
 			fad.style.visibility = 'visible';
 			fad.style.opacity = '50%';
 			}
 		else {
 			obj.style.visibility = 'hidden';
-			obj.style.height = '0px';
 			obj.style.opacity = '0%';
 			fad.style.visibility = 'hidden';
 			fad.style.opacity = '0%';

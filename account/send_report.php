@@ -1,13 +1,16 @@
 <?php
 	require 'mysql_connect.php';
 	if ($notcon == null) {
+		$err = array('er1'=>'Erro gramatical','er2'=>'Informação incorreta','er3'=>'Erro geral');
 		$headers = "From: no-reply <no-reply>\r\n";
 		$headers .= "Content-Type: text/html; charset=utf-8\n";
 		$body = "<div style='font-size: 25px;'>
-					<h1>Erro reportado em ".$_POST['link']."</h1>
-					".$_POST['message']."
+					<h1>Um erro foi reportado</h1>
+					<h3>Tipo de erro: ".$err[$_POST['retyp']]."</h3>
+					".$_POST['retxt']."<br />
+					<a href='".$base_url."books/".$_GET['l'].".php'>Clique aqui para examinar</a>
 				</div>";
-		mail('literledge@gmail.com',"Um erro foi reportado.",$body,$headers);
+		mail('literledge@gmail.com',$err[$_POST['retyp']]." reportado",$body,$headers);
 		header("location: ".$base_url."books/".$_GET['l'].".php");
 		$conn->close();
 	}

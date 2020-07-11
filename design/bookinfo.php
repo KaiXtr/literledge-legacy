@@ -202,7 +202,7 @@
 							}
 
 					echo "</select> <br />
-							<input class='textbox' type='text' name='retxt' /> <br />
+							<textarea class='textbox long' name='retxt' maxlength='1000'></textarea><br />
 							<input class='btpress' type='submit' />
 						</form>
 					</div>

@@ -781,10 +781,9 @@ hr {
 	margin-top: 10px;
 }
 
-#reportab .textbox {
+#reportab .textbox.long {
 	margin-top: 10px; 
 	margin-left: 10px;
-	width: 200px;
 }
 
 #btexit  {

@@ -46,7 +46,11 @@
 			require 'account/mysql_connect.php';
 			if ($notcon == null) {
 				require 'design/array_lists.php';
-				echo "<a name='auctors'></a><div class='content search'>";
+				echo "<div class='content search'><div class='brow'><div class='blabel'><h1>";
+				if ($_COOKIE['lang'] == 'pt') {echo "Resultados para ";}
+				if ($_COOKIE['lang'] == 'en') {echo "Results for ";}
+				if ($_COOKIE['lang'] == 'es') {echo "Resultados para ";}
+				echo $search."</h1></div></div>";
 				
 				$result = $conn->query("SELECT nick, auctor, birth, country FROM users ORDER BY pt");
 				$brusers = '';
@@ -54,13 +58,13 @@
 				if ($result->num_rows > 0) {
 					#LITSCHOOL SEARCH
 					if ($search == '$schools') {
-						$disp = "<div class='brow'> <div class='blabel'>";
+						$disp = "<div class='brow'><a name='auctors'><div class='blabel'>";
 						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
 							if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Escolas Literárias </h1>";}
 							if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Literary Schools </h1>";}
 							if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Escuelas Literarias </h1>";}
 							}
-						$disp = $disp ."</div> <div class='displaybooks'>";
+						$disp = $disp ."</div></a><div class='displaybooks'>";
 
 						$cn = array();
 						foreach ($ltslst as $x => $v) {
@@ -101,13 +105,13 @@
 					}
 					#AUCTORS SEARCH
 					else if ($search != '$books') {
-						$disp = "<div class='brow'> <div class='blabel'>";
+						$disp = "<div class='brow'> <div class='blabel'><h1>";
 						if (($search != '$auctors') || ($search != '$century') || ($search != '$schools')) {
-							if ($_COOKIE['lang'] == 'pt') {$disp = $disp."<h1> Autores </h1>";}
-							if ($_COOKIE['lang'] == 'en') {$disp = $disp."<h1> Auctors </h1>";}
-							if ($_COOKIE['lang'] == 'es') {$disp = $disp."<h1> Autores </h1>";}
+							if ($_COOKIE['lang'] == 'pt') {$disp = $disp."Autores";}
+							if ($_COOKIE['lang'] == 'en') {$disp = $disp."Auctors";}
+							if ($_COOKIE['lang'] == 'es') {$disp = $disp."Autores";}
 							}
-						$disp = $disp ."</div> <div class='displaybooks'>";
+						$disp .= "</h1></div><div class='displaybooks'>";
 
 						$max = 0;
 						while (($i = $result->fetch_assoc())&&($max < $ofsa + 20)) {
