@@ -112,6 +112,14 @@ function set_display(target){
 			fad.style.opacity = '0%';
 			}
 		}
+	else {
+		if (obj.style.display == 'none') {
+			obj.style.display = 'block';
+			}
+		else {
+			obj.style.display = 'none';
+			}
+		}
 	}
 
 function show_image(src) {
