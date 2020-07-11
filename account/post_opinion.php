@@ -1,7 +1,7 @@
 <?php
 	require 'mysql_connect.php';
 	if (!isset($_SESSION['user'])) {header("location: ".$base_url."/login.php");}
-	if ($notcon == null){
+	else if ($notcon == null){
 		if ($_GET['a'] == '0') {
 			if ((isset($_POST['book']))&&(strlen($_POST['comment']) > 200)&&(strlen($_POST['comment']) < 783)&&(isset($_POST['comment']))){
 				$conn->query("INSERT INTO reviews (user,book,comment,datime) VALUES

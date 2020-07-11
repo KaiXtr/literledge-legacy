@@ -73,11 +73,11 @@
 				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendi </button>";
 			}
 		if ($_COOKIE['lang'] == 'en') {
-			echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+			echo "This site uses cookies to provide a better experience within the site. <br />
 				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> I got it </button>";
 			}
 		if ($_COOKIE['lang'] == 'es') {
-			echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+			echo "Este sitio utiliza cookies para proporcionar una mejor experiencia dentro del sitio. <br />
 				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendido </button>";
 			}
 		echo "</div>";

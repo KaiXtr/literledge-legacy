@@ -67,6 +67,11 @@
 			</div>
 			<?php $schl = $lts; include '../design/auctorbooks.php'; ?>
 		</div>
+		<!--<div class='brow'>
+			Referências Biliográficas
+			<br />
+			<i>• <a href='https://pt.wikipedia.org/wiki/Arcadismo'>Wikipedia</a> • <a href='https://www.infoescola.com/literatura/arcadismo/'>Infoescola</a> • <a href='http://www.soliteratura.com.br/arcadismo/'>Só Literatura</a></i>
+		</div>-->
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>
