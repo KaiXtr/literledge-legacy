@@ -1,7 +1,7 @@
 <?php
 	if ($_COOKIE['lang'] == 'pt') {
 		$shwpm = '<h1> O Vento e O Sol </h1>
-		"O vento e o sol estavam disputando qual dos dois era o mais forte. <br />
+		O vento e o sol estavam disputando qual dos dois era o mais forte. <br />
 		De repente, viram um viajante que vinha caminhando. <br />
 		- Sei como decidir nosso caso. Aquele que coseguir fazer <br />
 		o viajante tirar o casaco, será o mais forte. Você começa, <br />

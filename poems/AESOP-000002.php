@@ -1,40 +1,33 @@
 <?php
 	if ($_COOKIE['lang'] == 'pt') {
-		$shwpm = '<h1> O Fazendeiro, seu Filho e o Burro </h1>
-		"Um fazendeiro e seu filho viajavam para o mercado, <br />
-		levando consigo um burro. Na estrada, encontraram umas <br />
-		moças salientes, que riram e zombaram deles: <br />
-		- Já viram que bobos? Andando a pé, quando deviam montar no burro? <br />
-		O fazendeiro, então, ordenou ao filho: <br />
-		- Monte no burro, pois não devemos parecer ridículos. <br />
-		O filho assim o fez. <br />
+		$shwpm = '<h1> O Cavalo e o Burro </h1>
+		Um príncipe, resolveu sair com seu  cavalo, ricamente enfeitado de <br />
+		seda e ouro de muito valor. Com a clina escovada e ferraduras galantes, <br />
+		ia pelo caminho o cavalo se esnobando! <br />
 		<br />
-		Daí a pouco, passaram por uma aldeia. À porta de uma estalagem <br />
-		estavam uns velhos que comentaram: <br />
-		- Ali vai um exemplo da geração moderna: o rapaz, muito bem <br />
-		refestelado no animal, enquanto o velho pai caminha, com suas pernas fatigadas. <br />
-		- Talvez eles tenham razão, meu filho, disse o pai. Ficaria melhor <br />
-		se eu montasse e você fosse a pé. <br />
-		Trocaram então as posições. <br />
+		Ao pararem junto ao rio para que pudessem tomar água, o orgulhoso <br />
+		cavalo da realeza, chacoteava de um burro trabalhador, o qual <br />
+		carregado de legumes, mau podia se mover, para beber água. <br />
+		– Não sei por que deixam esses burros em meu caminho! Como se <br />
+		não bastasse! Vá logo saindo da frente, animal inconveniente! <br />
+		Por que não me cedes o lugar para que eu passe? <br />
 		<br />
-		Alguns quilometros adiante, encontraram camponesas <br />
-		passeando, as quais disseram: <br />
-		- A crueldade de alguns pais para com os filhos é tremenda! <br />
-		Aquele preguiçoso, muito bem instalado no burro, enquanto <br />
-		o pobre filho gasta as pernas. <br />
-		- Suba na garupa, meu filho. Não quero parecer cruel, pediu o pai. <br />
-		Assim, ambos montados no burro, entraram no mercado da cidade. <br />
+		O pobre Burro calou-se e suportou a ofensa. <br />
+		Alguns dias depois, o Cavalo torceu uma pata e começou a mancar. <br />
+		O seu dono retirou-lhe por isso os ricos arreios e pôs-lhe uma <br />
+		albarda para servir como animal de carga. <br />
 		<br />
-		- Oh!! Gritaram outros fazendeiros que se encontravam lá. <br />
-		Pobre burro, maltratado, carregando uma dupla carga! <br />
-		Não se trata um animal desta maneira. Os dois precisavam ser presos. <br />
-		Deviam carregar o burro às costas, em vez de este carregá-los. <br />
+		O Burro encontrou-o então carregado de esterco, e disse-lhe: <br />
+		— Onde vais, irmão? Onde está a tua soberba? Porque não pedes <br />
+		agora que me arrede, como fazias noutro tempo? Sente agora como <br />
+		é ter o peso nos ombros? <br />
+		Humilhado com a cabeça baixa, o cavalo nada respondia, <br />
+		entretanto, uma grande lição aprendia! <br />
 		<br />
-		O fazendeiro e o filho saltaram do animal e carregaram-no. <br />
-		Quando atravessavam uma ponte, o burro, que não estava se sentindo confortável, <br />
-		começou a escoicear com tanta energia que os dois caíram na água." <br />
-		<br />
-		Moral: Quem a todos quer ouvir, por ninguém é ouvido. <br />';
+		Moral: Que ninguém despreze os pequenos e pobres, por se ver <br />
+		bem alimentado e bem vestido ou com honras e ofícios; porque se <br />
+		mudam as venturas e estados, e a soberba passada não serve mais <br />
+		que de vergonha e injúria presente. <br />';
 	}
 	if ($_COOKIE['lang'] == 'en') {
 		$shwpm = '<h1> The Horse and The Loaded Ass </h1>
