@@ -12,7 +12,7 @@
 
 		<div class='content'>
 			<div class='login'>
-				<img src='media/images/icons/logo.png' />
+				<img src='media/images/icons/logo-<?php echo $_COOKIE['theme'] ?>.png' />
 				<?php
 					if ($_COOKIE['lang'] == 'pt') {
 						echo "<h1> Não tem nada aqui... </h1>

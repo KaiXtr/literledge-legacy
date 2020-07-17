@@ -218,14 +218,14 @@
 								</a> • <a href='users/" .$b["auctor"]. ".php'>" .$nm. "</a> • " .$b["year"]. "
 							</h2>
 							" .$sv. "<h2><a href='search.php?q=".'$books'."&g=".strtolower($b["genre"])."'>";
-						if ($_COOKIE['lang'] == 'pt') {echo "Gênero: " .$gnrlst[$b["genre"]];}
-						if ($_COOKIE['lang'] == 'en') {echo "Genre: " .$gnrlst[$b["genre"]];}
-						if ($_COOKIE['lang'] == 'es') {echo "Género: " .$gnrlst[$b["genre"]];}
-					echo "</a></h2>" .$ls. "<h2>";
-						if ($_COOKIE['lang'] == 'pt') {echo "Liçenca: " .$liclst[$b["license"]];}
-						if ($_COOKIE['lang'] == 'en') {echo "License: " .$liclst[$b["license"]];}
-						if ($_COOKIE['lang'] == 'es') {echo "Licencia: " .$liclst[$b["license"]];}
-					echo "</h2><h2>CDD: ".$liclst[$b["cdd"]]."</h2>".$wrng."<div id='sinopsis'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Gênero: ";}
+						if ($_COOKIE['lang'] == 'en') {echo "Genre: ";}
+						if ($_COOKIE['lang'] == 'es') {echo "Género: ";}
+					echo $gnrlst[$b["genre"][0]]." - ".$gnrlst[$b["genre"]]."</a></h2>" .$ls. "<h2>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Liçenca: ";}
+						if ($_COOKIE['lang'] == 'en') {echo "License: ";}
+						if ($_COOKIE['lang'] == 'es') {echo "Licencia: ";}
+					echo $liclst[$b["license"]]."</h2><h2>CDD: ".$b["cdd"]."</h2>".$wrng."<div id='sinopsis'>";
 					include '../sinopsis/'.$b['id'].'.php';
 					echo $sin."</div>";
 					/*		<div class='summary'>

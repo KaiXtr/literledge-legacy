@@ -67,17 +67,17 @@
 		</h1> </li>
 		<?php
 			if ($_COOKIE['lang'] == 'pt') {
-				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo',
+				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo',
 				'Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
 				'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
 				}
 			else if ($_COOKIE['lang'] == 'en') {
-				$c = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Iluminism'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
+				$c = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Enlightment'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
 				'Mannerism'=>'Mannerism','Modernism'=>'Modernism','Naturalism'=>'Naturalism','Parnassianism'=>'Parnassianism','Pre-Modernism'=>'Pre-Modernism','Romanticism'=>'Romanticism',
 				'Realism'=>'Realism','Symbolism'=>'Symbolism','Troubadorism'=>'Troubadorism');
 				}
 			else if ($_COOKIE['lang'] == 'es') {
-				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
+				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
 				'Mannerism'=>'Manierismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
 				'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
 				}
