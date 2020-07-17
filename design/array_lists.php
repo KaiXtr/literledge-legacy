@@ -56,34 +56,37 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
-	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comédia','Detective'=>'Investigação','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Terror','Journalism'=>'Jornalismo','Novel'=>'Novela',
-	'Parody'=>'Paródia','Philosophy'=>'Filosofia','Play'=>'Peça','Rhapsody'=>'Rapsódia','Romance'=>'Romance','Sociology'=>'Sociologia','Tale'=>'Conto','Tragedy'=>'Tragédia',
-	'Poetry'=>'Poesia');
+	$gnrlst = array('N'=>'Narrativo','L'=>'Lírico','D'=>'Dramático',
+	'NEC'=>'Épico','NEP'=>'Épopéia','NTL'=>'Conto','NFB'=>'Fábula','NCC'=>'Crônica','NES'=>'Ensaio','NRM'=>'Romance','NNV'=>'Novela',
+	'LSN'=>'Soneto','LHK'=>'Haicai','LEG'=>'Elegia','LOD'=>'Óde','LEC'=>'Écloga','LBL'=>'Balada','LRN'=>'Rondó','LHM'=>'Hino','LID'=>'Idílio','LST'=>'Sátira','LVL'=>'Vilancete'
+	,'LEP'=>'Epitalâmio','DAC'=>'Auto','DCM'=>'Comédia','DTG'=>'Tragédia','DCT'=>'Tragicomédia','DFS'=>'Farsa','NOL'=>'Não-Literário');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$gnrlst = array('Chronicle'=>'Chronicle','Comedy'=>'Comedy','Detective'=>'Detective','Document'=>'Document','Drama'=>'Drama','Epic'=>'Epic','Fantasy'=>'Fantasy','Horror'=>'Horror','Journalism'=>'Journalism','Novel'=>'Novel',
-	'Parody'=>'Parody','Philosophy'=>'Philosophy','Play'=>'Play','Rhapsody'=>'Rhapsody','Romance'=>'Romance','Sociology'=>'Sociology','Tale'=>'Tale',
-	'Tragedy'=>'Tragedy','Poetry'=>'Poetry');
+	$gnrlst = array('N'=>'Narrative','L'=>'Lyrical','D'=>'Dramatic',
+	'NEC'=>'Epic','NEP'=>'Epopeia','NTL'=>'Tale','NFB'=>'Fable','NCC'=>'Chronicle','NES'=>'Essay','NRM'=>'Romance','NNV'=>'Novel',
+	'LSN'=>'Sonnet','LHK'=>'Haikai','LEG'=>'Elegy','LOD'=>'Ode','LEC'=>'Eclogue','LBL'=>'Ballad','LRN'=>'Rondo','LHM'=>'Hymn','LID'=>'Idyll','LST'=>'Satire','LVL'=>'Vilancete'
+	,'LEP'=>'Epitalamium','DAC'=>'Act','DCM'=>'Comedy','DTG'=>'Tragedy','DCT'=>'Tragicomedy','DFS'=>'Humbug','NOL'=>'Non-Literary');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$gnrlst = array('Chronicle'=>'Crônica','Comedy'=>'Comedia','Detective'=>'Investigación','Document'=>'Documento','Drama'=>'Drama','Epic'=>'Épico','Fantasy'=>'Fantasia','Horror'=>'Horror','Journalism'=>'Jornalismo','Novel'=>'Novela',
-	'Parody'=>'Parodia','Philosophy'=>'Filosofía','Play'=>'Pieza','Rhapsody'=>'Rapsodia','Romance'=>'Romance','Sociology'=>'Sociología','Tale'=>'Conto',
-	'Tragedy'=>'Tragédia','Poetry'=>'Poesía');
+	$gnrlst = array('N'=>'Narrativo','L'=>'Lírico','D'=>'Dramático',
+	'NEC'=>'Épico','NEP'=>'Epopea','NTL'=>'Cuento','NFB'=>'Fábula','NCC'=>'Crónica','NES'=>'Ensayo','NRM'=>'Romance','NNV'=>'Novela',
+	'LSN'=>'Soneto','LHK'=>'Haikai','LEG'=>'Elegía','LOD'=>'Ode','LEC'=>'Égloga','LBL'=>'Balada','LRN'=>'Rondó','LHM'=>'Himno','LID'=>'Idilio','LST'=>'Sátira',
+	'LVL'=>'Vilancete','LEP'=>'Epitalamio','DAC'=>'Auto','DCM'=>'Comedia','DTG'=>'Tragedia','DCT'=>'Tragicomedia','DFS'=>'Farsa','NOL'=>'No-Literario');
 	}
 
 #LITERARY SCHOOLS
 if ($_COOKIE['lang'] == 'pt') {
-	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo',
-	'Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
-	'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
+	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impressionismo',
+	'Indianism'=>'Indianismo','Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo',
+	'Pre-Modernism'=>'Pré-Modernismo','Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$ltslst = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Iluminism'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
+	$ltslst = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Enlightment'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
 	'Mannerism'=>'Mannerism','Modernism'=>'Modernism','Naturalism'=>'Naturalism','Parnassianism'=>'Parnassianism','Pre-Modernism'=>'Pre-Modernism','Romanticism'=>'Romanticism',
 	'Realism'=>'Realism','Symbolism'=>'Symbolism','Troubadorism'=>'Troubadorism');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Iluminism'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
+	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
 	'Mannerism'=>'Manierismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
 	'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
 	}

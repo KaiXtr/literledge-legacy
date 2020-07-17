@@ -5,7 +5,7 @@
 	<head>
 		<?php
 			require '../design/array_lists.php';
-			$lts = 'Iluminism';
+			$lts = 'Enlightment';
 			$v = $ltslst[$lts].' - ';
 			require '../design/metadata.php';
 		?>

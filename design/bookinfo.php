@@ -225,8 +225,8 @@
 						if ($_COOKIE['lang'] == 'pt') {echo "Liçenca: " .$liclst[$b["license"]];}
 						if ($_COOKIE['lang'] == 'en') {echo "License: " .$liclst[$b["license"]];}
 						if ($_COOKIE['lang'] == 'es') {echo "Licencia: " .$liclst[$b["license"]];}
-					echo "</h2>".$wrng."<div id='sinopsis'>";
-						include '../sinopsis/'.$b['id'].'.php';
+					echo "</h2><h2>CDD: ".$liclst[$b["cdd"]]."</h2>".$wrng."<div id='sinopsis'>";
+					include '../sinopsis/'.$b['id'].'.php';
 					echo $sin."</div>";
 					/*		<div class='summary'>
 								<ul>

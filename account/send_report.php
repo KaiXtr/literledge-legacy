@@ -2,8 +2,8 @@
 	require 'mysql_connect.php';
 	if ($notcon == null) {
 		$err = array('er1'=>'Erro gramatical','er2'=>'Informação incorreta','er3'=>'Erro geral');
-		$headers = "From: no-reply <no-reply>\r\n";
-		$headers .= "Content-Type: text/html; charset=utf-8\n";
+		$headers = "From: no-reply <no-reply>\r\n
+		Content-Type: text/html; charset=utf-8\n";
 		$body = "<div style='font-size: 25px;'>
 					<h1>Um erro foi reportado</h1>
 					<h3>Tipo de erro: ".$err[$_POST['retyp']]."</h3>

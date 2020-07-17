@@ -292,10 +292,15 @@
 						if (sizeof($pom) > 0) {
 							$list = $list."<div class='content'>";
 							for ($max=$ofsp;$max < sizeof($pom);$max++) {
-								$cn = file_get_contents($pom[$max]);
-								$inx = substr($cn, strpos($cn, '<h1> ')+5);
+								$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='".$i['nick']."'");
+								$n = $find->fetch_assoc();
+								if ($n[$_COOKIE['lang']] == null) {$pnm = $n['pt'];}
+								else {$pnm = $n[$_COOKIE['lang']];}
+
+								include $pom[$max];
+								$inx = substr($shwpm, strpos($shwpm, '<h1> ')+5);
 								$inx = substr($inx, 0, strpos($inx, ' </h1>'));
-								$list = $list."<a name='".$inx."'></a><blockquote class='quotepoem'>".$cn."</blockquote>";
+								$list = $list."<a name='".$inx."'></a><blockquote class='quotepoem'>".$shwpm."</blockquote>";
 								$poemlst[] = $inx;
 								$pod = true;
 								}
