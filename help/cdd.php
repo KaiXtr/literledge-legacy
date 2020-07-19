@@ -18,693 +18,729 @@
 		<?php include '../design/helpbar.php' ?>
 
 		<div class='infocontent help'>
-			000 – Generalidades
-			001 – Conhecimento  / Teoria
-			001.4 – Métodos de estudo / Metodologia / Pesquisa
-			001.42 – Pesquisa científica
-			001.94 – Mistérios e fatos misteriosos / Pirâmides : mistérios, poderes
-			001.942 – Discos voadores / Óvnis, etc
-			001.944 – Monstros e temas relacionados
-			002 – O Livro
-			003 – Sistemas
-			004 – Ciência da computação
-			004.03 – Dicionário de computação
-			004.07 – Computação – Estudo e ensino
-			004.678 – Internet
-			005 – Programação de computadores
-			006 – Métodos especiais de computação
-
+			<h1>Classificação Decimal de Dewey</h1>
+			<br />
+			<ul>
+			<li><a href='help/cdd#000'>Generalidades</a></li>
+			<li><a href='help/cdd#100'>Filosofia</a></li>
+			<li><a href='help/cdd#200'>Religião</a></li>
+			<li><a href='help/cdd#300'>Ciências Sociais</a></li>
+			<li><a href='help/cdd#400'>Línguas</a></li>
+			<li><a href='help/cdd#500'>Ciências Puras</a></li>
+			<li><a href='help/cdd#600'>Ciências Aplicadas</a></li>
+			<li><a href='help/cdd#700'>Artes</a></li>
+			<li><a href='help/cdd#800'>Literatura</a></li>
+			<li><a href='help/cdd#900'>História & Geografia</a></li>
+			</ul>
+			<br />
+			<hr>
+			<br />
+			<a name='000'></a>
+			<h1>Generalidades</h1>
+			<br />
+			000 – Generalidades <br />
+			001 – Conhecimento  / Teoria <br />
+			001.4 – Métodos de estudo / Metodologia / Pesquisa <br />
+			001.42 – Pesquisa científica <br />
+			001.94 – Mistérios e fatos misteriosos / Pirâmides : mistérios, poderes <br />
+			001.942 – Discos voadores / Óvnis, etc <br />
+			001.944 – Monstros e temas relacionados <br />
+			002 – O Livro <br />
+			003 – Sistemas <br />
+			004 – Ciência da computação <br />
+			004.03 – Dicionário de computação <br />
+			004.07 – Computação – Estudo e ensino <br />
+			004.678 – Internet <br />
+			005 – Programação de computadores <br />
+			006 – Métodos especiais de computação <br />
+			<br />
 			010 – Bibliografias
-
-			011 – Bibliografias gerais
-			012 – Bibliografias e catálogos individuais
-			013 – Bibliografias e catálogos de autores por classes específicas ( por local
-			         de residência, por assunto, etc.)
-			014 – Bibliografias e catálogos de trabalhos anônimos ou com pseudônimos
-			015 – Bibliografia e catálogos de trabalhos de lugares específicos
-			016 – Bibliografia e catálogo de trabalhos de  assuntos específicos
-			016.981 1 – Bibliografia de BH
-			017 – Catálogos de bibliotecas privadas, públicas, leilões, vendas
-			018 – Catálogos arranjados por autor, assunto, data, registro. Etc.
-			019 – Catálogos dicionário
-			          Arquivos e técnicas de arquivo
-			020 – Biblioteca e ciência da informação
-			          Livro, história, impressão
-			021 – Conexão, relacionamento entre bibliotecas, arquivos e centros de
-			           informação
-			022 – Administração de planta física ( prédios, iluminação, ventilação,
-			          aquecimento, ar condicionado, equipamento, mobiliário)
-			023 – Administração de pessoal
-			025 – Operações e  rotinas de bibliotecas, arquivos e centros de informação
-			           Documentação
-			025.1 – Administração
-			025.2 – Aquisição e desenvolvimento da coleção
-			025.3 – Análise bibliográfica e controle ( catalogação, classificação,
-			              indexação e armazenamento da informação)
-			025.4 – Análises de assuntos e controle  ( CDD / CDU / Library of Congress
-			             Classification / Bliss’s Bibliografic Classification / Ranganathan’s
-			              Colon  Classification)
-			025.5 – Serviços aos usuários ( Referência / Serviços de informação /
-			             Disseminação seletiva da informação / Informação cooperativa /
-			             Atendimento aos leitores / Instrução de uso e orientação
-			             bibliográfica    )
-			025.6 – Serviços de circulação interna e com outras bibliotecas
-			025.7 – Preparação e armazenamento / Conservação e restauração
-			025.8 – Manutenção e preservação das coleções ( Organização  das coleções,
-			             segurança e preservação do acervo)
-			026 – Bibliotecas, arquivos, centros de informação voltados para assuntos
-			          específicos
-			027- Bibliotecas , arquivos e centros de informação em geral
-			027.1 – Bibliotecas familiares e privadas
-			027.2 – Bibliotecas semi-privadas
-			027.3 – Bibliotecas comerciais
-			027.4 – Bibliotecas públicas
-			027.5 – Bibliotecas governamentais
-			027.6 – Bibliotecas para grupos ou organizações específicas
-			027.7 – Bibliotecas colegiais e universitárias
-			027.8 – Bibliotecas escolares
-			028 – Uso de outros meios de informação
-
-			028.5 – Literatura infanto-juvenil
-
-			030 – Enciclopédias gerais
-			031 – Americanas
-			032 – Inglesas
-			033 – Alemãs
-			034 – Francesas
-			035 – Italianas
-			036 – Espanholas e portuguesas
-			036.1 – Enciclopédias em espanhol
-			036.9 – Almanaques / Livros do ano / Livros de fatos variados/ Livros de
-			          curiosidades./ Guinness  / Enciclopédias gerais em português
-			R 036.981 – Brasileiras
-			037 – Línguas eslavas
-			038 – Línguas escandinavas
-			039 – Outras línguas
-
+			<br />
+			011 – Bibliografias gerais <br />
+			012 – Bibliografias e catálogos individuais <br />
+			013 – Bibliografias e catálogos de autores por classes específicas <br />
+				( por local de residência, por assunto, etc.) <br />
+			014 – Bibliografias e catálogos de trabalhos anônimos ou com pseudônimos <br />
+			015 – Bibliografia e catálogos de trabalhos de lugares específicos <br />
+			016 – Bibliografia e catálogo de trabalhos de  assuntos específicos <br />
+			016.981 1 – Bibliografia de BH <br />
+			017 – Catálogos de bibliotecas privadas, públicas, leilões, vendas <br />
+			018 – Catálogos arranjados por autor, assunto, data, registro. Etc. <br />
+			019 – Catálogos dicionário <br />
+			          Arquivos e técnicas de arquivo <br />
+			020 – Biblioteca e ciência da informação <br />
+			          Livro, história, impressão <br />
+			021 – Conexão, relacionamento entre bibliotecas, arquivos e centros de <br />
+			           informação <br />
+			022 – Administração de planta física ( prédios, iluminação, ventilação, <br />
+			          aquecimento, ar condicionado, equipamento, mobiliário) <br />
+			023 – Administração de pessoal <br />
+			025 – Operações e  rotinas de bibliotecas, arquivos e centros de informação <br />
+			           Documentação <br />
+			025.1 – Administração <br />
+			025.2 – Aquisição e desenvolvimento da coleção <br />
+			025.3 – Análise bibliográfica e controle ( catalogação, classificação, <br />
+			              indexação e armazenamento da informação) <br />
+			025.4 – Análises de assuntos e controle  ( CDD / CDU / Library of Congress <br />
+			             Classification / Bliss’s Bibliografic Classification / Ranganathan’s <br />
+			              Colon  Classification) <br />
+			025.5 – Serviços aos usuários ( Referência / Serviços de informação / <br />
+			             Disseminação seletiva da informação / Informação cooperativa / <br />
+			             Atendimento aos leitores / Instrução de uso e orientação <br />
+			             bibliográfica    ) <br />
+			025.6 – Serviços de circulação interna e com outras bibliotecas <br />
+			025.7 – Preparação e armazenamento / Conservação e restauração <br />
+			025.8 – Manutenção e preservação das coleções ( Organização  das coleções, <br />
+			             segurança e preservação do acervo) <br />
+			026 – Bibliotecas, arquivos, centros de informação voltados para assuntos <br />
+			          específicos <br />
+			027- Bibliotecas , arquivos e centros de informação em geral <br />
+			027.1 – Bibliotecas familiares e privadas <br />
+			027.2 – Bibliotecas semi-privadas <br />
+			027.3 – Bibliotecas comerciais <br />
+			027.4 – Bibliotecas públicas <br />
+			027.5 – Bibliotecas governamentais <br />
+			027.6 – Bibliotecas para grupos ou organizações específicas <br />
+			027.7 – Bibliotecas colegiais e universitárias <br />
+			027.8 – Bibliotecas escolares <br />
+			028 – Uso de outros meios de informação <br />
+			<br />
+			028.5 – Literatura infanto-juvenil <br />
+			<br />
+			030 – Enciclopédias gerais <br />
+			031 – Americanas <br />
+			032 – Inglesas <br />
+			033 – Alemãs <br />
+			034 – Francesas <br />
+			035 – Italianas <br />
+			036 – Espanholas e portuguesas <br />
+			036.1 – Enciclopédias em espanhol <br />
+			036.9 – Almanaques / Livros do ano / Livros de fatos variados/ Livros de <br />
+			          curiosidades./ Guinness  / Enciclopédias gerais em português <br />
+			R 036.981 – Brasileiras <br />
+			037 – Línguas eslavas <br />
+			038 – Línguas escandinavas <br />
+			039 – Outras línguas <br />
+			<br />
 			050 – Publicações seriadas
-
-
-			060 – Organizações gerais (academias, fundações, associações, conferências,      
-			           congressos)
-
-			069 –  Museologia
-			069.1 – Serviços de organização do acervo
-			069.132 – Acervo
-			069.15 – Programas educacionais, incluindo leituras, aulas e viagens
-			069.16 – Programas recreativos ( programas musicais, apresentações teatrais)
-			069.17 –  Serviços especiais para deficientes
-			069.2 – Organização da planta física ( localização, planejamento do prédio,
-			             salas especiais, sistemas de comunicação, luz, ventilação, etc)
-			069.3 – Equipamentos, mobiliário, audiovisual
-			069.4 – Preparação das coleções do museu
-			069.5 – Exposições e exibições do acervo
-
-			070 – Documentários, mídia educacional, jornalismo e publicidade
-			070.4 – Jornalismo
-			070.403 – Dicionários de jornalismo
-
-			080 – Coleções gerais: ensaios, entrevistas, endereços, etc.
-
-			090 – Manuscritos , livros raros e outros tipos de materiais raros
-			091 – Manuscritos
-			092 – Livros manuscritos
-			093 – Incunábulos
-			094 – Livros impressos ( Primeiras impressões, edições especiais)
-			095 – Livros com encadernações raras
-			096 – Livros notáveis pelas ilustrações ou materiais com que foram
-			          confeccionados
-			097 – Livros notáveis pela origem ou por seus proprietários
-			098 – Trabalhos proibidos ( ou pela religião ou pelo governo), Falsificações
-			099 – Livros famosos pelo formato
-
-			100 – Filosofia
-
-			101 – História, fundamentos e teoria
-			102 – Miscelânea
-			103 – Dicionários e enciclopédias de filosofia
-			104 – Tópicos especiais
-			105 – Publicações seriadas
-			106 – Organização e desenvolvimento
-			107 – Ensino da filosofia / Educação e pesquisa
-			109 – Historia  da filosofia
-
-			110 – Metafísica
-			111 – Existência / Realidade ( essência, substância, universalidade, finito e
-			          infinito) Propriedades do “ser”: unidade, bondade e maldade, beleza)
-			113 – Cosmologia ( filosofia da natureza, da vida)
-			114 – Espaço
-			115 – Tempo
-			116 – Escolha
-			117 – Estrutura
-			118 – Força e energia
-			119 – Número e quantidade
-
-			120 – Epistemologia, gênero humano, causalidade
-			121 – Epistemologia ( teoria do conhecimento)
-			121.2 – Possibilidade e limite do conhecimento
-			121.3 – Origem, significado do conhecimento (percepção e sensação)
-			121.4 – Estrutura do conhecimento
-			121.5 – Dúvida e negação
-			121.6 – Natureza da indagação (certeza, probabilidade, evidência, critério
-			             significado, interpretação, hermenêutica)
-			121.7 – Crença
-			121.8 – Valores / Teoria dos valores
-			122 – Causalidade
-			123 – Determinismo e indeterminismo  (contingência)
-			123.3 – Probabilidade, possibilidade, oportunidade
-			123.5 – Liberdade
-			123.7 – Necessidade
-			124 – Teleologia
-			126 – Ego (personalidade, consciência)
-			127 – Inconsciência, subconsciência
-			128 – Gênero humano
-			128.1 – Alma
-			128.2 – Mente, pensamento
-			128.3 – Atributos e faculdades (razão, racionalidade, emoção, vontade)
-			            (Schopenhauer)
-			128.4 – Ações humanas e experiências -  Antropologia filosófica
-			128.46 – Amor
-			128.5 – Morte
-			128.6 – Corpo
-			129 – Origem e destino da alma ( imortalidade, encarnação, reencarnação)
-
-			130 – Fenômenos paranormais
-			131 – Parapsicologia e métodos ocultos para conseguir, bem-estar, felicidade
-			          e sucesso
-			132 – Psiquiatria alternativa
-			133 – Parapsicologia e ocultismo (Magia , símbolos, aparições, adivinhações,
-			           numerologia, demonologia, feitiçaria)
-			133.5 – Astrologia
-			133.54 – Horóscopo
-			133.6 – Quiromancia
-			133.8 – Fenômenos físicos  (telepatia, clarividência, premonição, hipnose,
-			             magnetismo animal, percepção de animais, aura)
-			133.9 – Espiritismo / Espiritualismo ( Mediunidade, reencarnação, levitação,
-			             materialização)
-			133.93 – Obras psicografadas
-			135 – Sonhos e mistérios ( Cabalismo, Rosacruz, Hermetismo)
-			137 – Psicografia
-
-			140 – Escolas filosóficas específicas
-			141 – Idealismo
-			141.2 – Platonismo
-			141.3 – Transcendentalismo
-			141.4 – Individualismo
-			141.5 – Personalismo
-			141.6 – Romancismo
-			142 – Filosofia crítica (Kantinismo, fenomenologia)
-			142.78 – Existencialismo
-			143 – Bergsonismo e intuicionismo
-			144 – Humanismo (Pragmatismo, instrumentalismo, utilitarismo)
-			145 – Sensacionalismo
-			146 –  Naturalismo
-			146.3 – Materialismo
-			146.4 – Positivismo (Contismo, empiricismo, atomismo, mecanismo,
-			             evolucionismo)
-			147 – Panteísmo
-			148 – Dogmatismo, ecleticismo, liberalismo, sincretismo, tradicionalismo
-			149 – Outros sistemas filosóficos : Construtivismo, objetivismo, relativismo
-			149.1 –  Nominalismo e Conceptualismo
-			149.2 – Realismo
-			149.3 – Misticismo
-			149.5 – Otimismo
-			149.6 – Pessimismo
-			149.7 – Racionalismo (Agnosticismo )
-			149.8 – Niilismo
-			149.9 – Outros : Estruturalismo, Pós-modernismo
-
-			150 – Psicologia
-
-			150.1 – Teoria e filosofia
-			150.195 – Sistemas psicoanalíticos / Psicoanálise
-			150.195 2 –  Sistema Freudiano
-			150.195 3 – Sistema Adleriano
-			150.195 4 – Sistema Jungiano
-			150.195 7 – Sistema Neopsicoanalítico
-			150.198 – Outros
-			150.287 – Testes
-			150.3 – Dicionário de psicologia
-			150.7 – Psicologia – Estudo e ensino
-			150.724 – Pesquisas experimentais
-
-			152.1 – Percepção sensorial
-			152.3 – Movimentos e função motora ( reflexo, coordenação, locomoção)
-			152.4 – Emoções e sentimentos
-			152.41 – Amor e afeição
-			152.42 – Prazer, felicidade , alegria
-			152.43 – Humor
-			152.46 – Medo / ansiedade / preocupação
-			152.47 – Raiva, frustração, agressão
-			152.48 – Ciúme, inveja
-
-			153 – Processos mentais e inteligência / Psicologia cognitiva
-			153.1 – Memória e aprendizagem
-			153.2 – Formação e associação de idéias
-			153.3 – Imaginação e criatividade
-			153.4 – Intuição, pensamento, valor, julgamento
-			153.42 – Pensamento
-			153.43 – Raciocínio
-			153.44 – Intuição
-			153.45 – Valor
-			153.46 – Julgamento
-			153.6 – Comunicação
-			153.7 – Percepção
-			153.8 – Vontade, força de vontade
-			153.9 – Inteligência e atitudes
-			153.93 – Testes de inteligência e personalidade
-			153.94 – Testes de aptidão e vocacionais
-
-			154 – Subconsciente e estados e processos alterados
-			154.2 – Subconsciente ( Id, Ego e Superego)
-			154.3 – Sonhos , fantasias , devaneios
-			154.4 – Estados alterados da consciência ( por uso de drogas, alucinações)
-			154.6 – Fenômenos do sono
-			154.63 – Sonhos
-			154.64 – Sonambulismo
-			154.7 – Hipnotismo
-
-			155 – Psicologia diferencial
-			155.2 – Psicologia individual  / Personalidade
-			155.22 – Diferenças individuais
-			155.23 – Traços determinantes de caráter  ou personalidade ( altruísmo,
-			                dependência, extroversão, introversão, julgamento moral,
-			                perfeccionismo, etc.)
-			155.24 – Adaptação e ajustamento ( atitudes em relação ao outro e a si)
-			155.25 – Desenvolvimento e modificação de caráter e personalidade
-			               ( maturidade, controle próprio, etc. )
-			155.3 – Psicologia sexual
-			155.4 – Psicologia infantil   /   do desenvolvimento
-			155.413 – Processos mentais /  Inteligência
-			155.45 – Crianças excepcionais
-			155.5 – Psicologia do adolescente
-			155.6 – Psicologia do adulto
-			155.632 – Homens
-			155.633 – Mulheres
-			155.7 – Psicologia evolutiva / Evolução da mentalidade / Comportamento
-			             genético
-			155.8 – Étnico-psicologia e psicologia nacional
-			155.9 – Psicologia – Influencia do ambiente
-			155.904 – Stress
-			155.91 – Influência de acontecimentos e condições físicas ( estímulos
-			               sensoriais, doenças, desfiguramentos, etc)
-			155.92 – Influência de acontecimentos sociais
-			155.93 – Influência de situações específicas ( divorcio, catástrofes, acidentes)
-			155.937 – Psicologia – influencia da morte
-			155.94 – Influência da comunidade ou de casa ( comunidades rurais, urbanas)
-			155.95 – Influência dos vestuários / Moda, história   /   evolução das roupas
-			155.96 – Influência de acontecimentos restritivos como prisões
-			              Vida  subterrânea ( em minas, túneis, cavernas)
-			              Vida marinha e submarinha – Psicologia marinha
-			              Vida aérea – Psicologia da aviação
-			              Vida espacial – Psicologia espacial
-
-			156 – Psicologia comparada
-
-			158 – Psicologia aplicada
-			158.1 –  do Comportamento
-			              Auto ajuda / Aperfeiçoamento pessoal / Equilíbrio pessoal
-			158.125 – Meditação transcendental
-			158.128 – Meditação
-			158.2 – Relações humanas / Valores éticos (amizade, cooperação, diálogo,
-			             respeito, responsabilidade, etc.)
-			158.3 – Aconselhamento psicológico
-			158.4 – Chefia
-			158.5 – Negociação
-			158.6 – Interesse vocacional – Orientação vocacional
-			158.7 – Psicologia industrial (  Stress do trabalho )
-			158.9 – Sistemas e escolas de psicologia aplicada
-
-			160 – Lógica / Dialética
-			161 – Indução
-			162 – Dedução
-			165 – Enganos e origem do erro / Contradição / Ficção e paradoxos
-			166 – Silogismo
-			167 – Hipóteses
-			168 – Argumento e persuasão
-			169 – Analogia
-
-			170 – Ética / Moral
-			171 – Sistemas éticos
-			172 – Ética política
-			173 – Ética familiar
-			174 – Ética profissional / Ocupacional
-			174.1 – Clero
-			174.2 – Médico
-			174.25 – Projeto Genoma – aspectos morais e éticos
-			174.3 – Advogado
-			174.4 – Negócios
-			174.9 – Outras profissões
-			175 – Ética da comunicação e recreação
-			176 – Ética no sexo e reprodução ( prostituição, pornografia e obscenidade,
-			          inclusive na literatura)
-			177 – Ética nas relações sociais / Ética social  /  Fofocas
-			177.1 – Cortesia, hospitalidade, polidez
-			177.2 – Conversação
-			177.3 – Verdade, mentira, bajulação, calúnia
-			177.4 – Aparência pessoal
-			177.5 – Escravidão e trabalho forçado
-			177.6 – Amor / Amizade
-			178 – Ética no consumo (abstinência, gula, álcool, tabaco, drogas )
-			179 – Outras  (classificar aqui crueldade)
-			179.1 –Respeito pela vida e natureza
-			179.2 –Tratamento à criança
-			179.3 – Tratamento aos animais
-			179.4 – Experiências com animais
-			179.5 – Blasfêmia, profanação, obscenidade
-			179.6 – Coragem , covardia
-			179.7 – Respeito e desrespeito à vida humana ( genocídio, homicídio,
-			             suicídio, pena de morte, duelo, eutanásia )
-			179.8 – Vícios , faltas e defeitos ( ira, fraude, cobiça, inveja, ódio, aversão,
-			             ciúme, desconfiança, orgulho, vaidade e preguiça)
-			179.9 – Virtudes / Valores ( alegria, gentileza, gratidão, honestidade,
-			              humildade, modéstia, paciência, prudência, autocontrole,
-			              autoconfiança, tolerância ) Caráter
-
-			180 – Filosofias antiga, medieval e ocidental
-			181 – Filosofia oriental (Leste e sul da Ásia, China e Coreia , Japão, Egito,
-			          Palestina, Israel, Índia, Irã, Iraque, Síria e Líbano, Arábia)
-			181.45 – Yoga
-			182 – Filosofia grega pré-Sócrates
-			183 – Filosofia grega
-			183.2 – Filosofia de Sócrates
-			184 – Filosofia de Platão
-			185 – Filosofia de Aristóteles
-			186 – Filosofia séptica e neoplatônica
-			187 – Filosofia epicurista
-			188 – Filosofia estóica
-			189 – Filosofia medieval ocidental
-			190 – Filosofia ocidental moderna
-			191 – Filosofia americana e canadense
-			192 – Filosofia inglesa
-			193 – Filosofia austríaca e alemã ( Schopenhauer, ...
-			194 – Filosofia francesa ( Rousseau, Jean-Jacques...
-			195 – Filosofia italiana
-			196 – Filosofia espanhola e portuguesa
-			197 – Filosofia russa e países soviéticos
-			198 – Filosofia escandinava
-			199 – Outras
-
-			200 – Religião
-
-			200.1 – Valores, princípios
-			200.3 – Dicionários e enciclopédias de religiões
-
-			200.19 – Psicologia religiosa
-			200.71 – Educação
-			200.9 – História – Atlas Bíblico
-			210 – Filosofia e teoria da religião
-			211 – Conceitos de Deus  / Fé ( classificar aqui  trabalhos sobre Deus e a Fé)
-			          ( Panteísmo, Teísmo, Racionalismo, Deísmo, Humanismo,
-			          Agnosticismo)
-			211.8 – Ateísmo
-			212 – Existência, conhecimento e atributos  de Deus
-			213 – Criação e evolução do homem
-			215 – Ciência e religião
-			218 – Gênero humano (incluindo imortalidade )
-
-			220 – Bíblia
-			220.7 – Estudo da Bíblia
-			220.9 – Bíblia – Atlas histórico / Descrição e geografia bíblicas
-			220.93 – Arqueologia bíblica
-			221 – Antigo Testamento
-			222 – Livros históricos do AT ( Pentateuco, Gênesis, Êxodo, Levítico,
-			          Números, Deuteronômio, Josué, Juizes, Rute, Samuel, Reis, Crônicas,  
-			          Esdras, Neemias, Ester)
-			223 – Livros poéticos do  AT (Jó, Eclesiastes)
-			223.2 – Salmos
-			223.7 – Provérbios
-			223.9 – Cantos de Salomão (Cântico dos Cânticos)
-			224 – Livros proféticos do AT (Isaías, Geremias, Lamentações, Esequiel,
-			          Daniel, Oséias, Joel, Amós, Profetas Menores)
-			225 – Novo Testamento
-			226 – Evangelhos e Atos dos Apóstolos
-			226.2 – Evangelho de Mateus
-			226.3 – de Marcos
-			226.4 – de Lucas
-			226.5 – de João
-			226.6 – Atos dos Apóstolos
-			226.7 – Milagres
-			226.8 – Parábolas
-			226.9 – Sermão da Montanha
-			226.96 – Pai Nosso
-			227 – Epístolas
-			227.1 – Aos Romanos
-			227.2 –Aos Coríntios I
-			227.3 – Aos Coríntios II
-			227.4 – Aos Gálatas
-			227.5 – Aos Efésios
-			227.6 – Aos Filipenses
-			227.7 – Aos Colossences
-			227.8 – Outras epístolas de São Paulo
-			227.81 – Aos Tessalonissenses I
-			227.82 – Aos Tessalonissenses II
-			227.83 – A Timóteo I
-			227.84 – A Timóteo II
-			227.85 – A Tito
-			227.86 – A Filemon
-			227.87 –Aos Hebreus
-			227.9 – Epístolas católicas
-			227.91 – Tiago
-			227.92 – Pedro I
-			227.93 – Pedro II
-			227.94 – João I
-			227.95 – João II
-			227.96 – João III
-			227.97 – Judas
-			228 – Apocalípse
-			229 – Trabalhos Apócrifos, Pseudoepígrafos, Intertestamentais
-
-			230 – Cristianismo / Teologia Cristã / Mitologia cristã
-			230.007 – Educação, pesquisa
-			231 – Deus  -  Modos do conhecimento de Deus como Fé / Razão /  Tradição
-			231.1 – Santíssima Trindade
-			232 – Jesus Cristo, sua vida  e sua família  -  Cristologia
-			232.1 – Encarnação
-			232.3 – Cristo como Redentor
-			232.4 – Sacrifício de Cristo
-			232.5 – Ressurreição
-			232.8 – Divindade e humanidade
-			232.9 – Família e vida de Jesus
-			232.901 – Vida de Jesus
-			232.903 – Caráter e personalidade de Jesus
-			232.91 – Maria como Mãe de Jesus ( Mariologia)
-			232.911 – Imaculada Conceição
-			232.912 – Anunciação
-			232.913 – Virgindade
-			232.914 – Assunção
-			232.915 – Santidade e virtudes – Milagres de Nossa Senhora
-			232.92 – Nascimento e infância de Jesus
-			232.93 – Família de Maria
-			232.932 – José
-			232.94 – João Batista
-			232.95 – Vida pública
-			232.955 – Milagres de Jesus
-			232.96 – Paixão e Morte
-			232.964 – Sepultamento  / Santo Sudário
-			232.97 – Ressurreição
-
-			233 – Gênero Humano (Criação , natureza divina, tentação, liberdade de
-			          escolha e pecado )
-			234 – Salvação e graça / Santificação
-			234.1 – Tipos e significados da graça
-			234.16 –  Pelos sacramentos
-			234.2 – Fé e esperança
-			234.3 – Redenção
-			234.4 – Regeneração
-			234.5 – Arrependimento e perdão
-			234.6 – Obediência
-			234.7 – Absolvição
-			234.8 – Santificação e santidade
-			234.9 – Predestinação e livre arbítrio
-			235 – Vida espiritual
-			235.2 – Santos
-			235.3 – Anjos
-			235.4 – Demônio
-			236 – Escatologia ( Morte, vida eterna, céu, purgatório, inferno)
-			238 – Credos, confissão das faltas  /  Promessas
-			239 – Polêmicas (Argumentações sobre dogmas cristãos: virgindade,
-			          SS. Trindade, etc.)
-
-			240 – Moral cristã e teologia da devoção (Consciência, virtudes, códigos de
-			          conduta, vícios, Pecado)
-			241 – Teologia moral
-			241.1 – Consciência
-			241.2 – Leis e bases da moralidade
-			241.3 – Pecado e vícios
-			241.4 – Virtudes
-			241.5 – Códigos de conduta ( Dez Mandamentos, Sermão da Montanha )
-			241.6 – Questões morais específicas  / Ética, moral, sexualidade religiosas
-			             (relacionamento conjugal, controle de natalidade, namoro, noivado
-			             casamento, família) - ver também 392.4 e 392.5
-			242 – Orações / Preces / Literatura devota / Textos de meditação e
-			          contemplação )
-			242.2 – Orações de uso diário
-			242.3 – Orações de uso no ano litúrgico / festas religiosas / Símbolos
-			242.332 – Advento
-			242.335 – Natal
-			242.34 – Quaresma
-			232.35 – Semana Santa
-			242.36 – Páscoa / Ascensão
-			242.37 – Outras festas / Dias de Santos
-			242.38 – Pentecostes
-			242.5 – Preces e meditações baseadas na Bíblia
-			243 – Escritos evangélicos para pessoas e para famílias
-			246 – Uso da arte no cristianismo
-			246.5 – Ícones,  símbolos , incenso, velas, cruzes, crucifixos, cores e luzes
-			246.7 – Dramatizações
-			246.75 – Músicas
-			247 – Mobiliário religioso
-			248 – Cristãos: experiência, prática, vida, misticismo, conversão, cultos e
-			          testemunhos
-			248.2 – Experiências religiosas (Misticismo, conversão)
-			248.3 – Cultos, preces, meditações e contemplações
-			             Prática religiosa
-			            Amor a Deus
-			248.4 – Vida e práticas cristãs  /  Reflexões  /  Mensagens / Espiritualidade    
-			             Guias para a vida familiar cristã
-			248.5 - Testemunhos
-			248.8 – Guias de vida para cristãos por classes específicas :
-			248.82 – Crianças
-			248.83 – Jovens
-			248.84 – Adultos
-			248.842 – Homens
-			248.842 1 – Pais
-			248.843 – Mulheres
-			248.843 1 – Mães
-			248.844 – Casais
-			248.846 – Pessoas separadas, divorciadas
-			248.85 – Velhos
-			248.86 – Doentes, deficientes
-			248.88 – Classes ocupacionais
-			248.894 2 –  Padres  /  Vocações
-			248.894 3 – Freiras  /  Vocações
-			249 – Observância católica na vida familiar: preces, ritos, cerimônias
-			           familiares
-
-			250 – Ordens religiosas e igrejas locais
-			251 – Práticas
-			252 – Sermões
-			253 – Trabalho pastoral
-			253.78 – Pelo rádio e televisão
-			254 – Administração da paróquia
-			255 – Congregações religiosas ( p/ homens e p/ mulheres)
-			258 – Assistência religiosa / Pastoral
-			259 – Campanhas/ Cuidados /Campanha da Fraternidade
-
-			260 – Teologia social e eclesiástica / Organização do Cristianismo
-			261 – Papel da Igreja na sociedade ( Igreja x Outras religiões / Igreja x
-			          Política / Igreja x Problemas sócio- econômicos  como fome, crimes,
-			          ecologia, racismo, sexo, guerras, etc.
-			261.7 – Cristianismo e política
-			              Cristianismo e direitos civis
-			261.72 – Liberdade religiosa
-			261.73 – Teocracia ( Supremacia da Igreja sobre o governo civil)
-			262 – A Igreja
-			262.006 – Administração, organização
-			262.1 – Função e autoridade dos chefes da Igreja
-			262.12 – Bispos, arcebispos, etc.  Conferencias de bispos
-			262.13 – Papa ( infabilidade, mandato)
-			262.135 – Colégio de cardeais
-			262.14 – Clero local / Paróquias
-			262.5 – Concílios
-			262.7 – Relação de Deus com a Igreja / Comunicação de Santos
-			262.9 – Normas e leis e disciplina da Igreja
-			262.91 – Encíclicas, decretos papais
-			262.92 – Códigos antigos
-			262.93 – Códigos novos
-			262.94 – Códigos novos
-			263 – Observância dos dias e tempos próprios da Igreja / Celebrações
-			263.3 – Domingo
-			263.9 – Dias e tempos do ano religioso
-			263.912 – Advento
-			263.915 – Natal
-			263.92 – Quaresma
-			263.93 – Páscoa e Ascensão
-			263.94 – Pentecostes
-			263.97 – Outras festas
-			263.98 – Dias santos
-			264 – Cerimônias / Ritos / Liturgia
-			264.023 – Missais - Textos
-			264.1 – Preces / Breviários
-			264.2 – Músicas  / Cantos / Hinos
-			264.3 – Missa  / Eucaristia
-			264.36 – Primeira Eucaristia
-			265 – Sacramentos
-			265.1 – Batismo
-			265.2 – Crisma
-			265.4 – Ordem                                                                                            
-			265.5 –  Matrimônio /Casamento
-			265.6 –Penitência / Confissão
-			265.7 – Eucaristia
-			265.8 – Extrema unção
-			265.9 – Outros
-			265.94 – Exorcismo                                                      
-			266 –Missões / Comunidade   Eclesial de Base / Evangelização
-			267 – Grupos de trabalhos religiosos  / Encontro de casais, Jovens, etc.
-			268 – Ensino Religioso  /   Catequese     ( Pista – Religião – Estudo e ensino)
-			269 – Conversão / Renovação
-
-			270 – História do cristianismo e igreja cristã
-			270.6 – Reforma protestante com enfoque religioso ( ver tb. 940.23)
-			271 – Ordens e congregações na Hist. da Igreja - Para homens: (Católicas)
-			271.1 – Beneditinos
-			271.125 – Trapistas
-			271.2 – Dominicanos
-			271.3 – Franciscanos
-			271.36 – Capuchinhos
-			271.4 – Agostinianos
-			271.5 – Cléricos regulares
-			271.53 – Jesuítas
-			271.6 – Redentoristas e Passionistas
-			271.7 – Outras ordens católicas
-			271.73 – Carmelitas
-			271.76 – Oblatas
-			271.77 – Lazaristas
-			271.79 – Outras ordens católicas para homens (Ordens militares, Cruz de
-			               Malta, Templários)      
-			271.8 – Ordens não católicas romanas
-			271.83 –Anglicanos
-			271.9 – Congregações e ordens católicas romanas para mulheres
-			271.98 – Ordens não católicas romanas
-			272 – Perseguições religiosas na história da Igreja  / Inquisição/ Mártires
-			273 – Controvérsias e heresias na história da Igreja
-			278 – História da igreja
-
-			280 – Denominações e seitas de igrejas cristãs
-			282 – Igreja Católica Romana
-			282.03 – Dicionários e enciclopédias da doutrina católica
-			283 – Igreja Anglicana
-			284 – Igreja Protestante
-			285 – Igreja Presbiteriana
-			286 – Igrejas Batista, Adventista, Discípulo de Cristo, do Sétimo Dia
-			287 – Igreja Metodista
-			289 – Outras: Universal, Últimos dias, Nova Jerusalém, Quakers, etc
-
+			<br />
+			<br />
+			060 – Organizações gerais (academias, fundações, associações, conferências, <br />
+			           congressos) <br />
+			<br />
+			069 –  Museologia <br />
+			069.1 – Serviços de organização do acervo <br />
+			069.132 – Acervo <br />
+			069.15 – Programas educacionais, incluindo leituras, aulas e viagens <br />
+			069.16 – Programas recreativos ( programas musicais, apresentações teatrais) <br />
+			069.17 –  Serviços especiais para deficientes <br />
+			069.2 – Organização da planta física ( localização, planejamento do prédio, <br />
+			             salas especiais, sistemas de comunicação, luz, ventilação, etc) <br />
+			069.3 – Equipamentos, mobiliário, audiovisual <br />
+			069.4 – Preparação das coleções do museu <br />
+			069.5 – Exposições e exibições do acervo <br />
+			<br />
+			070 – Documentários, mídia educacional, jornalismo e publicidade <br />
+			070.4 – Jornalismo <br />
+			070.403 – Dicionários de jornalismo <br />
+			<br />
+			080 – Coleções gerais: ensaios, entrevistas, endereços, etc. <br />
+			<br />
+			090 – Manuscritos , livros raros e outros tipos de materiais raros <br />
+			091 – Manuscritos <br />
+			092 – Livros manuscritos <br />
+			093 – Incunábulos <br />
+			094 – Livros impressos ( Primeiras impressões, edições especiais) <br />
+			095 – Livros com encadernações raras <br />
+			096 – Livros notáveis pelas ilustrações ou materiais com que foram <br />
+			          confeccionados <br />
+			097 – Livros notáveis pela origem ou por seus proprietários <br />
+			098 – Trabalhos proibidos ( ou pela religião ou pelo governo), Falsificações <br />
+			099 – Livros famosos pelo formato <br />
+			<br />
+			<hr>
+			<br />
+			<a name='100'></a>
+			<h1>Filosofia</h1>
+			<br />
+			100 – Filosofia <br />
+			<br />
+			101 – História, fundamentos e teoria <br />
+			102 – Miscelânea <br />
+			103 – Dicionários e enciclopédias de filosofia <br />
+			104 – Tópicos especiais <br />
+			105 – Publicações seriadas <br />
+			106 – Organização e desenvolvimento <br />
+			107 – Ensino da filosofia / Educação e pesquisa <br />
+			109 – Historia  da filosofia <br />
+			<br />
+			110 – Metafísica <br />
+			111 – Existência / Realidade ( essência, substância, universalidade, finito e <br />
+			          infinito) Propriedades do “ser”: unidade, bondade e maldade, beleza) <br />
+			113 – Cosmologia ( filosofia da natureza, da vida) <br />
+			114 – Espaço <br />
+			115 – Tempo <br />
+			116 – Escolha <br />
+			117 – Estrutura <br />
+			118 – Força e energia <br />
+			119 – Número e quantidade <br />
+			<br />
+			120 – Epistemologia, gênero humano, causalidade <br />
+			121 – Epistemologia ( teoria do conhecimento) <br />
+			121.2 – Possibilidade e limite do conhecimento <br />
+			121.3 – Origem, significado do conhecimento (percepção e sensação) <br />
+			121.4 – Estrutura do conhecimento <br />
+			121.5 – Dúvida e negação <br />
+			121.6 – Natureza da indagação (certeza, probabilidade, evidência, critério <br />
+			             significado, interpretação, hermenêutica) <br />
+			121.7 – Crença <br />
+			121.8 – Valores / Teoria dos valores <br />
+			122 – Causalidade <br />
+			123 – Determinismo e indeterminismo  (contingência) <br />
+			123.3 – Probabilidade, possibilidade, oportunidade <br />
+			123.5 – Liberdade <br />
+			123.7 – Necessidade <br />
+			124 – Teleologia <br />
+			126 – Ego (personalidade, consciência) <br />
+			127 – Inconsciência, subconsciência <br />
+			128 – Gênero humano <br />
+			128.1 – Alma <br />
+			128.2 – Mente, pensamento <br />
+			128.3 – Atributos e faculdades (razão, racionalidade, emoção, vontade) <br />
+			            (Schopenhauer) <br />
+			128.4 – Ações humanas e experiências -  Antropologia filosófica <br />
+			128.46 – Amor <br />
+			128.5 – Morte <br />
+			128.6 – Corpo <br />
+			129 – Origem e destino da alma ( imortalidade, encarnação, reencarnação) <br />
+			<br />
+			130 – Fenômenos paranormais <br />
+			131 – Parapsicologia e métodos ocultos para conseguir, bem-estar, felicidade <br />
+			          e sucesso <br />
+			132 – Psiquiatria alternativa <br />
+			133 – Parapsicologia e ocultismo (Magia , símbolos, aparições, adivinhações, <br />
+			           numerologia, demonologia, feitiçaria) <br />
+			133.5 – Astrologia <br />
+			133.54 – Horóscopo <br />
+			133.6 – Quiromancia <br />
+			133.8 – Fenômenos físicos  (telepatia, clarividência, premonição, hipnose, <br />
+			             magnetismo animal, percepção de animais, aura) <br />
+			133.9 – Espiritismo / Espiritualismo ( Mediunidade, reencarnação, levitação, <br />
+			             materialização) <br />
+			133.93 – Obras psicografadas <br />
+			135 – Sonhos e mistérios ( Cabalismo, Rosacruz, Hermetismo) <br />
+			137 – Psicografia <br />
+			<br />
+			140 – Escolas filosóficas específicas <br />
+			141 – Idealismo <br />
+			141.2 – Platonismo <br />
+			141.3 – Transcendentalismo <br />
+			141.4 – Individualismo <br />
+			141.5 – Personalismo <br />
+			141.6 – Romancismo <br />
+			142 – Filosofia crítica (Kantinismo, fenomenologia) <br />
+			142.78 – Existencialismo <br />
+			143 – Bergsonismo e intuicionismo <br />
+			144 – Humanismo (Pragmatismo, instrumentalismo, utilitarismo) <br />
+			145 – Sensacionalismo <br />
+			146 –  Naturalismo <br />
+			146.3 – Materialismo <br />
+			146.4 – Positivismo (Contismo, empiricismo, atomismo, mecanismo, <br />
+			             evolucionismo) <br />
+			147 – Panteísmo <br />
+			148 – Dogmatismo, ecleticismo, liberalismo, sincretismo, tradicionalismo <br />
+			149 – Outros sistemas filosóficos : Construtivismo, objetivismo, relativismo <br />
+			149.1 –  Nominalismo e Conceptualismo <br />
+			149.2 – Realismo <br />
+			149.3 – Misticismo <br />
+			149.5 – Otimismo <br />
+			149.6 – Pessimismo <br />
+			149.7 – Racionalismo (Agnosticismo) <br />
+			149.8 – Niilismo <br />
+			149.9 – Outros : Estruturalismo, Pós-modernismo <br />
+			<br />
+			150 – Psicologia <br />
+			<br />
+			150.1 – Teoria e filosofia <br />
+			150.195 – Sistemas psicoanalíticos / Psicoanálise <br />
+			150.195 2 –  Sistema Freudiano <br />
+			150.195 3 – Sistema Adleriano <br />
+			150.195 4 – Sistema Jungiano <br />
+			150.195 7 – Sistema Neopsicoanalítico <br />
+			150.198 – Outros <br />
+			150.287 – Testes <br />
+			150.3 – Dicionário de psicologia <br />
+			150.7 – Psicologia – Estudo e ensino <br />
+			150.724 – Pesquisas experimentais <br />
+			<br />
+			152.1 – Percepção sensorial <br />
+			152.3 – Movimentos e função motora ( reflexo, coordenação, locomoção) <br />
+			152.4 – Emoções e sentimentos <br />
+			152.41 – Amor e afeição <br />
+			152.42 – Prazer, felicidade , alegria <br />
+			152.43 – Humor <br />
+			152.46 – Medo / ansiedade / preocupação <br />
+			152.47 – Raiva, frustração, agressão <br />
+			152.48 – Ciúme, inveja <br />
+			<br />
+			153 – Processos mentais e inteligência / Psicologia cognitiva <br />
+			153.1 – Memória e aprendizagem <br />
+			153.2 – Formação e associação de idéias <br />
+			153.3 – Imaginação e criatividade <br />
+			153.4 – Intuição, pensamento, valor, julgamento <br />
+			153.42 – Pensamento <br />
+			153.43 – Raciocínio <br />
+			153.44 – Intuição <br />
+			153.45 – Valor <br />
+			153.46 – Julgamento <br />
+			153.6 – Comunicação <br />
+			153.7 – Percepção <br />
+			153.8 – Vontade, força de vontade <br />
+			153.9 – Inteligência e atitudes <br />
+			153.93 – Testes de inteligência e personalidade <br />
+			153.94 – Testes de aptidão e vocacionais <br />
+			<br />
+			154 – Subconsciente e estados e processos alterados <br />
+			154.2 – Subconsciente ( Id, Ego e Superego) <br />
+			154.3 – Sonhos , fantasias , devaneios <br />
+			154.4 – Estados alterados da consciência ( por uso de drogas, alucinações) <br />
+			154.6 – Fenômenos do sono <br />
+			154.63 – Sonhos <br />
+			154.64 – Sonambulismo <br />
+			154.7 – Hipnotismo <br />
+			<br />
+			155 – Psicologia diferencial <br />
+			155.2 – Psicologia individual  / Personalidade <br />
+			155.22 – Diferenças individuais <br />
+			155.23 – Traços determinantes de caráter  ou personalidade ( altruísmo, <br />
+			                dependência, extroversão, introversão, julgamento moral, <br />
+			                perfeccionismo, etc.) <br />
+			155.24 – Adaptação e ajustamento ( atitudes em relação ao outro e a si) <br />
+			155.25 – Desenvolvimento e modificação de caráter e personalidade <br />
+			               ( maturidade, controle próprio, etc. ) <br />
+			155.3 – Psicologia sexual <br />
+			155.4 – Psicologia infantil   /   do desenvolvimento <br />
+			155.413 – Processos mentais /  Inteligência <br />
+			155.45 – Crianças excepcionais <br />
+			155.5 – Psicologia do adolescente <br />
+			155.6 – Psicologia do adulto <br />
+			155.632 – Homens <br />
+			155.633 – Mulheres <br />
+			155.7 – Psicologia evolutiva / Evolução da mentalidade / Comportamento <br />
+			             genético <br />
+			155.8 – Étnico-psicologia e psicologia nacional <br />
+			155.9 – Psicologia – Influencia do ambiente <br />
+			155.904 – Stress <br />
+			155.91 – Influência de acontecimentos e condições físicas ( estímulos <br />
+			               sensoriais, doenças, desfiguramentos, etc) <br />
+			155.92 – Influência de acontecimentos sociais <br />
+			155.93 – Influência de situações específicas ( divorcio, catástrofes, acidentes) <br />
+			155.937 – Psicologia – influencia da morte <br />
+			155.94 – Influência da comunidade ou de casa ( comunidades rurais, urbanas) <br />
+			155.95 – Influência dos vestuários / Moda, história   /   evolução das roupas <br />
+			155.96 – Influência de acontecimentos restritivos como prisões <br />
+			              Vida  subterrânea ( em minas, túneis, cavernas) <br />
+			              Vida marinha e submarinha – Psicologia marinha <br />
+			              Vida aérea – Psicologia da aviação <br />
+			              Vida espacial – Psicologia espacial <br />
+			<br />
+			156 – Psicologia comparada <br />
+			<br />
+			158 – Psicologia aplicada <br />
+			158.1 –  do Comportamento <br />
+			              Auto ajuda / Aperfeiçoamento pessoal / Equilíbrio pessoal <br />
+			158.125 – Meditação transcendental <br />
+			158.128 – Meditação <br />
+			158.2 – Relações humanas / Valores éticos (amizade, cooperação, diálogo, <br />
+			             respeito, responsabilidade, etc.) <br />
+			158.3 – Aconselhamento psicológico <br />
+			158.4 – Chefia <br />
+			158.5 – Negociação <br />
+			158.6 – Interesse vocacional – Orientação vocacional <br />
+			158.7 – Psicologia industrial (  Stress do trabalho ) <br />
+			158.9 – Sistemas e escolas de psicologia aplicada <br />
+			<br />
+			160 – Lógica / Dialética <br />
+			161 – Indução <br />
+			162 – Dedução <br />
+			165 – Enganos e origem do erro / Contradição / Ficção e paradoxos <br />
+			166 – Silogismo <br />
+			167 – Hipóteses <br />
+			168 – Argumento e persuasão <br />
+			169 – Analogia <br />
+			<br />
+			170 – Ética / Moral <br />
+			171 – Sistemas éticos <br />
+			172 – Ética política <br />
+			173 – Ética familiar <br />
+			174 – Ética profissional / Ocupacional <br />
+			174.1 – Clero <br />
+			174.2 – Médico <br />
+			174.25 – Projeto Genoma – aspectos morais e éticos <br />
+			174.3 – Advogado <br />
+			174.4 – Negócios <br />
+			174.9 – Outras profissões <br />
+			175 – Ética da comunicação e recreação <br />
+			176 – Ética no sexo e reprodução ( prostituição, pornografia e obscenidade, <br />
+			          inclusive na literatura) <br />
+			177 – Ética nas relações sociais / Ética social  /  Fofocas <br />
+			177.1 – Cortesia, hospitalidade, polidez <br />
+			177.2 – Conversação <br />
+			177.3 – Verdade, mentira, bajulação, calúnia <br />
+			177.4 – Aparência pessoal <br />
+			177.5 – Escravidão e trabalho forçado <br />
+			177.6 – Amor / Amizade <br />
+			178 – Ética no consumo (abstinência, gula, álcool, tabaco, drogas ) <br />
+			179 – Outras  (classificar aqui crueldade) <br />
+			179.1 –Respeito pela vida e natureza <br />
+			179.2 –Tratamento à criança <br />
+			179.3 – Tratamento aos animais <br />
+			179.4 – Experiências com animais <br />
+			179.5 – Blasfêmia, profanação, obscenidade <br />
+			179.6 – Coragem , covardia <br />
+			179.7 – Respeito e desrespeito à vida humana ( genocídio, homicídio, <br />
+			             suicídio, pena de morte, duelo, eutanásia ) <br />
+			179.8 – Vícios , faltas e defeitos ( ira, fraude, cobiça, inveja, ódio, aversão, <br />
+			             ciúme, desconfiança, orgulho, vaidade e preguiça) <br />
+			179.9 – Virtudes / Valores ( alegria, gentileza, gratidão, honestidade, <br />
+			              humildade, modéstia, paciência, prudência, autocontrole, <br />
+			              autoconfiança, tolerância ) Caráter <br />
+			<br />
+			180 – Filosofias antiga, medieval e ocidental <br />
+			181 – Filosofia oriental (Leste e sul da Ásia, China e Coreia , Japão, Egito, <br />
+			          Palestina, Israel, Índia, Irã, Iraque, Síria e Líbano, Arábia) <br />
+			181.45 – Yoga <br />
+			182 – Filosofia grega pré-Sócrates <br />
+			183 – Filosofia grega <br />
+			183.2 – Filosofia de Sócrates <br />
+			184 – Filosofia de Platão <br />
+			185 – Filosofia de Aristóteles <br />
+			186 – Filosofia séptica e neoplatônica <br />
+			187 – Filosofia epicurista <br />
+			188 – Filosofia estóica <br />
+			189 – Filosofia medieval ocidental <br />
+			190 – Filosofia ocidental moderna <br />
+			191 – Filosofia americana e canadense <br />
+			192 – Filosofia inglesa <br />
+			193 – Filosofia austríaca e alemã ( Schopenhauer, ... ) <br />
+			194 – Filosofia francesa ( Rousseau, Jean-Jacques... ) <br />
+			195 – Filosofia italiana <br />
+			196 – Filosofia espanhola e portuguesa <br />
+			197 – Filosofia russa e países soviéticos <br />
+			198 – Filosofia escandinava <br />
+			199 – Outras <br />
+			<br />
+			<hr>
+			<br />
+			<a name='200'></a>
+			<h1>Religião</h1>
+			<br />
+			200 – Religião <br />
+			<br />
+			200.1 – Valores, princípios <br />
+			200.3 – Dicionários e enciclopédias de religiões <br />
+			<br />
+			200.19 – Psicologia religiosa <br />
+			200.71 – Educação <br />
+			200.9 – História – Atlas Bíblico <br />
+			210 – Filosofia e teoria da religião <br />
+			211 – Conceitos de Deus  / Fé ( classificar aqui  trabalhos sobre Deus e a Fé) <br />
+				( Panteísmo, Teísmo, Racionalismo, Deísmo, Humanismo, <br />
+				Agnosticismo) <br />
+			211.8 – Ateísmo <br />
+			212 – Existência, conhecimento e atributos  de Deus <br />
+			213 – Criação e evolução do homem <br />
+			215 – Ciência e religião <br />
+			218 – Gênero humano (incluindo imortalidade ) <br />
+			<br />
+			220 – Bíblia <br />
+			220.7 – Estudo da Bíblia <br />
+			220.9 – Bíblia – Atlas histórico / Descrição e geografia bíblicas <br />
+			220.93 – Arqueologia bíblica <br />
+			221 – Antigo Testamento <br />
+			222 – Livros históricos do AT ( Pentateuco, Gênesis, Êxodo, Levítico, <br />
+			          Números, Deuteronômio, Josué, Juizes, Rute, Samuel, Reis, Crônicas, <br />
+			          Esdras, Neemias, Ester) <br />
+			223 – Livros poéticos do  AT (Jó, Eclesiastes) <br />
+			223.2 – Salmos <br />
+			223.7 – Provérbios <br />
+			223.9 – Cantos de Salomão (Cântico dos Cânticos) <br />
+			224 – Livros proféticos do AT (Isaías, Geremias, Lamentações, Esequiel, <br />
+			          Daniel, Oséias, Joel, Amós, Profetas Menores) <br />
+			225 – Novo Testamento <br />
+			226 – Evangelhos e Atos dos Apóstolos <br />
+			226.2 – Evangelho de Mateus <br />
+			226.3 – de Marcos <br />
+			226.4 – de Lucas <br />
+			226.5 – de João <br />
+			226.6 – Atos dos Apóstolos <br />
+			226.7 – Milagres <br />
+			226.8 – Parábolas <br />
+			226.9 – Sermão da Montanha <br />
+			226.96 – Pai Nosso <br />
+			227 – Epístolas <br />
+			227.1 – Aos Romanos <br />
+			227.2 –Aos Coríntios I <br />
+			227.3 – Aos Coríntios II <br />
+			227.4 – Aos Gálatas <br />
+			227.5 – Aos Efésios <br />
+			227.6 – Aos Filipenses <br />
+			227.7 – Aos Colossences <br />
+			227.8 – Outras epístolas de São Paulo <br />
+			227.81 – Aos Tessalonissenses I <br />
+			227.82 – Aos Tessalonissenses II <br />
+			227.83 – A Timóteo I <br />
+			227.84 – A Timóteo II <br />
+			227.85 – A Tito <br />
+			227.86 – A Filemon <br />
+			227.87 –Aos Hebreus <br />
+			227.9 – Epístolas católicas <br />
+			227.91 – Tiago <br />
+			227.92 – Pedro I <br />
+			227.93 – Pedro II <br />
+			227.94 – João I <br />
+			227.95 – João II <br />
+			227.96 – João III <br />
+			227.97 – Judas <br />
+			228 – Apocalípse <br />
+			229 – Trabalhos Apócrifos, Pseudoepígrafos, Intertestamentais <br />
+			<br />
+			230 – Cristianismo / Teologia Cristã / Mitologia cristã <br />
+			230.007 – Educação, pesquisa <br />
+			231 – Deus  -  Modos do conhecimento de Deus como Fé / Razão /  Tradição <br />
+			231.1 – Santíssima Trindade <br />
+			232 – Jesus Cristo, sua vida  e sua família  -  Cristologia <br />
+			232.1 – Encarnação <br />
+			232.3 – Cristo como Redentor <br />
+			232.4 – Sacrifício de Cristo <br />
+			232.5 – Ressurreição <br />
+			232.8 – Divindade e humanidade <br />
+			232.9 – Família e vida de Jesus <br />
+			232.901 – Vida de Jesus <br />
+			232.903 – Caráter e personalidade de Jesus <br />
+			232.91 – Maria como Mãe de Jesus ( Mariologia) <br />
+			232.911 – Imaculada Conceição <br />
+			232.912 – Anunciação <br />
+			232.913 – Virgindade <br />
+			232.914 – Assunção <br />
+			232.915 – Santidade e virtudes – Milagres de Nossa Senhora <br />
+			232.92 – Nascimento e infância de Jesus <br />
+			232.93 – Família de Maria <br />
+			232.932 – José <br />
+			232.94 – João Batista <br />
+			232.95 – Vida pública <br />
+			232.955 – Milagres de Jesus <br />
+			232.96 – Paixão e Morte <br />
+			232.964 – Sepultamento  / Santo Sudário <br />
+			232.97 – Ressurreição <br />
+			<br />
+			233 – Gênero Humano (Criação , natureza divina, tentação, liberdade de <br />
+			          escolha e pecado ) <br />
+			234 – Salvação e graça / Santificação <br />
+			234.1 – Tipos e significados da graça <br />
+			234.16 –  Pelos sacramentos <br />
+			234.2 – Fé e esperança <br />
+			234.3 – Redenção <br />
+			234.4 – Regeneração <br />
+			234.5 – Arrependimento e perdão <br />
+			234.6 – Obediência <br />
+			234.7 – Absolvição <br />
+			234.8 – Santificação e santidade <br />
+			234.9 – Predestinação e livre arbítrio <br />
+			235 – Vida espiritual <br />
+			235.2 – Santos <br />
+			235.3 – Anjos <br />
+			235.4 – Demônio <br />
+			236 – Escatologia ( Morte, vida eterna, céu, purgatório, inferno) <br />
+			238 – Credos, confissão das faltas  /  Promessas <br />
+			239 – Polêmicas (Argumentações sobre dogmas cristãos: virgindade, <br />
+			          SS. Trindade, etc.) <br />
+			<br />
+			240 – Moral cristã e teologia da devoção (Consciência, virtudes, códigos de <br />
+			          conduta, vícios, Pecado) <br />
+			241 – Teologia moral <br />
+			241.1 – Consciência <br />
+			241.2 – Leis e bases da moralidade <br />
+			241.3 – Pecado e vícios <br />
+			241.4 – Virtudes <br />
+			241.5 – Códigos de conduta ( Dez Mandamentos, Sermão da Montanha ) <br />
+			241.6 – Questões morais específicas  / Ética, moral, sexualidade religiosas <br />
+			             (relacionamento conjugal, controle de natalidade, namoro, noivado <br />
+			             casamento, família) - ver também 392.4 e 392.5 <br />
+			242 – Orações / Preces / Literatura devota / Textos de meditação e <br />
+			          contemplação ) <br />
+			242.2 – Orações de uso diário <br />
+			242.3 – Orações de uso no ano litúrgico / festas religiosas / Símbolos <br />
+			242.332 – Advento <br />
+			242.335 – Natal <br />
+			242.34 – Quaresma <br />
+			232.35 – Semana Santa <br />
+			242.36 – Páscoa / Ascensão <br />
+			242.37 – Outras festas / Dias de Santos <br />
+			242.38 – Pentecostes <br />
+			242.5 – Preces e meditações baseadas na Bíblia <br />
+			243 – Escritos evangélicos para pessoas e para famílias <br />
+			246 – Uso da arte no cristianismo <br />
+			246.5 – Ícones,  símbolos , incenso, velas, cruzes, crucifixos, cores e luzes <br />
+			246.7 – Dramatizações <br />
+			246.75 – Músicas <br />
+			247 – Mobiliário religioso <br />
+			248 – Cristãos: experiência, prática, vida, misticismo, conversão, cultos e <br />
+			          testemunhos <br />
+			248.2 – Experiências religiosas (Misticismo, conversão) <br />
+			248.3 – Cultos, preces, meditações e contemplações <br />
+			             Prática religiosa <br />
+			            Amor a Deus <br />
+			248.4 – Vida e práticas cristãs  /  Reflexões  /  Mensagens / Espiritualidade <br />
+			             Guias para a vida familiar cristã <br />
+			248.5 - Testemunhos <br />
+			248.8 – Guias de vida para cristãos por classes específicas : <br />
+			248.82 – Crianças <br />
+			248.83 – Jovens <br />
+			248.84 – Adultos <br />
+			248.842 – Homens <br />
+			248.842 1 – Pais <br />
+			248.843 – Mulheres <br />
+			248.843 1 – Mães <br />
+			248.844 – Casais <br />
+			248.846 – Pessoas separadas, divorciadas <br />
+			248.85 – Velhos <br />
+			248.86 – Doentes, deficientes <br />
+			248.88 – Classes ocupacionais <br />
+			248.894 2 –  Padres  /  Vocações <br />
+			248.894 3 – Freiras  /  Vocações <br />
+			249 – Observância católica na vida familiar: preces, ritos, cerimônias <br />
+			           familiares <br />
+			<br />
+			250 – Ordens religiosas e igrejas locais <br />
+			251 – Práticas <br />
+			252 – Sermões <br />
+			253 – Trabalho pastoral <br />
+			253.78 – Pelo rádio e televisão <br />
+			254 – Administração da paróquia <br />
+			255 – Congregações religiosas ( p/ homens e p/ mulheres) <br />
+			258 – Assistência religiosa / Pastoral <br />
+			259 – Campanhas/ Cuidados /Campanha da Fraternidade <br />
+			<br />
+			260 – Teologia social e eclesiástica / Organização do Cristianismo <br />
+			261 – Papel da Igreja na sociedade ( Igreja x Outras religiões / Igreja x <br />
+			          Política / Igreja x Problemas sócio- econômicos  como fome, crimes, <br />
+			          ecologia, racismo, sexo, guerras, etc. <br />
+			261.7 – Cristianismo e política <br />
+			              Cristianismo e direitos civis <br />
+			261.72 – Liberdade religiosa <br />
+			261.73 – Teocracia ( Supremacia da Igreja sobre o governo civil) <br />
+			262 – A Igreja <br />
+			262.006 – Administração, organização <br />
+			262.1 – Função e autoridade dos chefes da Igreja <br />
+			262.12 – Bispos, arcebispos, etc.  Conferencias de bispos <br />
+			262.13 – Papa ( infabilidade, mandato) <br />
+			262.135 – Colégio de cardeais <br />
+			262.14 – Clero local / Paróquias <br />
+			262.5 – Concílios <br />
+			262.7 – Relação de Deus com a Igreja / Comunicação de Santos <br />
+			262.9 – Normas e leis e disciplina da Igreja <br />
+			262.91 – Encíclicas, decretos papais <br />
+			262.92 – Códigos antigos <br />
+			262.93 – Códigos novos <br />
+			262.94 – Códigos novos <br />
+			263 – Observância dos dias e tempos próprios da Igreja / Celebrações <br />
+			263.3 – Domingo <br />
+			263.9 – Dias e tempos do ano religioso <br />
+			263.912 – Advento <br />
+			263.915 – Natal <br />
+			263.92 – Quaresma <br />
+			263.93 – Páscoa e Ascensão <br />
+			263.94 – Pentecostes <br />
+			263.97 – Outras festas <br />
+			263.98 – Dias santos <br />
+			264 – Cerimônias / Ritos / Liturgia <br />
+			264.023 – Missais - Textos <br />
+			264.1 – Preces / Breviários <br />
+			264.2 – Músicas  / Cantos / Hinos <br />
+			264.3 – Missa  / Eucaristia <br />
+			264.36 – Primeira Eucaristia <br />
+			265 – Sacramentos <br />
+			265.1 – Batismo <br />
+			265.2 – Crisma <br />
+			265.4 – Ordem <br />                                                                                         
+			265.5 –  Matrimônio /Casamento <br />
+			265.6 –Penitência / Confissão <br />
+			265.7 – Eucaristia <br />
+			265.8 – Extrema unção <br />
+			265.9 – Outros <br />
+			265.94 – Exorcismo <br />                                                  
+			266 –Missões / Comunidade   Eclesial de Base / Evangelização <br />
+			267 – Grupos de trabalhos religiosos  / Encontro de casais, Jovens, etc. <br />
+			268 – Ensino Religioso  /   Catequese     ( Pista – Religião – Estudo e ensino) <br />
+			269 – Conversão / Renovação <br />
+			<br />
+			270 – História do cristianismo e igreja cristã <br />
+			270.6 – Reforma protestante com enfoque religioso ( ver tb. 940.23) <br />
+			271 – Ordens e congregações na Hist. da Igreja - Para homens: (Católicas) <br />
+			271.1 – Beneditinos <br />
+			271.125 – Trapistas <br />
+			271.2 – Dominicanos <br />
+			271.3 – Franciscanos <br />
+			271.36 – Capuchinhos <br />
+			271.4 – Agostinianos <br />
+			271.5 – Cléricos regulares <br />
+			271.53 – Jesuítas <br />
+			271.6 – Redentoristas e Passionistas <br />
+			271.7 – Outras ordens católicas <br />
+			271.73 – Carmelitas <br />
+			271.76 – Oblatas <br />
+			271.77 – Lazaristas <br />
+			271.79 – Outras ordens católicas para homens (Ordens militares, Cruz de <br />
+			               Malta, Templários) <br />
+			271.8 – Ordens não católicas romanas <br />
+			271.83 –Anglicanos <br />
+			271.9 – Congregações e ordens católicas romanas para mulheres <br />
+			271.98 – Ordens não católicas romanas <br />
+			272 – Perseguições religiosas na história da Igreja  / Inquisição/ Mártires <br />
+			273 – Controvérsias e heresias na história da Igreja <br />
+			278 – História da igreja <br />
+			<br />
+			280 – Denominações e seitas de igrejas cristãs <br />
+			282 – Igreja Católica Romana <br />
+			282.03 – Dicionários e enciclopédias da doutrina católica <br />
+			283 – Igreja Anglicana <br />
+			284 – Igreja Protestante <br />
+			285 – Igreja Presbiteriana <br />
+			286 – Igrejas Batista, Adventista, Discípulo de Cristo, do Sétimo Dia <br />
+			287 – Igreja Metodista <br />
+			289 – Outras: Universal, Últimos dias, Nova Jerusalém, Quakers, etc <br />
+			<br />
 			290 – Outras religiões
-			291 – Religiões comparadas (Comparações diversas com política, com
-			          sociedade, com problemas sócio- econômicos, etc.)
-			291.09 – Religiões - História
-			291.2 – Doutrinas ( classificar aqui doutrinas polêmicas como espiritismo,
-			             animalismo, deuses do mal, do bem, espíritos, etc.)
-			291.23 – Escatologia ( incluindo morte, fim do mundo, imortalidade, outros
-			               mundos, Ressurreição)
-			291.237 – Reencarnação
-
-			292 – Religiões clássicas
-			292.07 – Religião romana
-			292.08 – Religião grega
-			292.13 - Mitologia
-			293 – Religiões germânicas
-			294 – Religiões indianas ( Budismo, Jainismo, Hinduísmo, Sikhismo)
-			295 – Zoroastrismo, Mazdaismo, Parseeismo
-			296 – Judismo
-			297 – Islamismo, Babismo, Crença em Bahai
-			299 – Outras religiões :Africanas, asiáticas, nativas, etc
-			          (Umbandismo, macumba, Candomblé, Voodooismo, Ras Tafari, etc.)
-
-			300 – Ciências sociais
-
+			291 – Religiões comparadas (Comparações diversas com política, com <br />
+			          sociedade, com problemas sócio- econômicos, etc.) <br />
+			291.09 – Religiões - História <br />
+			291.2 – Doutrinas ( classificar aqui doutrinas polêmicas como espiritismo, <br />
+			             animalismo, deuses do mal, do bem, espíritos, etc.) <br />
+			291.23 – Escatologia ( incluindo morte, fim do mundo, imortalidade, outros <br />
+			               mundos, Ressurreição) <br />
+			291.237 – Reencarnação <br />
+			<br />
+			292 – Religiões clássicas <br />
+			292.07 – Religião romana <br />
+			292.08 – Religião grega <br />
+			292.13 - Mitologia <br />
+			293 – Religiões germânicas <br />
+			294 – Religiões indianas ( Budismo, Jainismo, Hinduísmo, Sikhismo) <br />
+			295 – Zoroastrismo, Mazdaismo, Parseeismo <br />
+			296 – Judismo <br />
+			297 – Islamismo, Babismo, Crença em Bahai <br />
+			299 – Outras religiões :Africanas, asiáticas, nativas, etc <br />
+			          (Umbandismo, macumba, Candomblé, Voodooismo, Ras Tafari, etc.) <br />
+			<br />
+			<hr>
+			<br />
+			<a name='300'></a>
+			<h1>Ciências Sociais</h1>
+			<br />
+			300 – Ciências sociais <br />
+			<br />
+			<pre>
 			300.3 – Dicionários e enciclopédias de ciências sociais
 			300.7 – Ciências Sociais – Estudo e ensino
 			301 – Sociologia  - Antropologia - Política cultural / ideologia      
@@ -5348,7 +5384,7 @@
 			998 – Hist. de Ilhas do Ártico e Antártica
 			998.2 – Groenlândia
 			999 – Hist. de Mundos extraterrestres
-
+			</pre>
 			<div class='manlan' lang='pt'> <button class='btpress' onClick='top_scroll()'> Voltar ao topo </button> </div>
 			<div class='manlan' lang='en'> <button class='btpress' onClick='top_scroll()'> Go back to top </button> </div>
 
