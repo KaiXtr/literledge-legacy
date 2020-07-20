@@ -20,138 +20,21 @@
 		<div id='bio'>
 		<?php
 			if ($_COOKIE['lang'] == 'pt') {
-				echo "O que foi - definição
-
-				O maneirismo foi um movimento artístico, que se desenvolveu no continente europeu no século XVI. Teve início na Itália, por volta de 1515, desenvolvendo-se, principalmente, as áreas da pintura, escultura e arquitetura.
-
-				Durante muito tempo, historiadores da arte entenderam que este movimento nada mais era do que a fase decadente do Renascimento (período final). Porém, atualmente o maneirismo é identificado como um estilo artístico original e autônomo, embora apresente muitas características semelhantes ao Renascimento. Vale destacar também que o maneirismo é considerado, por muitos especialistas de artes plásticas, a fase germinal do Barroco.
-
-				Principais características
-
-				- Rompimento com o estilo clássico de beleza idealizada.
-				- Retratação de figuras em formato alongado e serpenteado.
-				- Uso de cores que não representam fielmente a natureza. As cores usadas em grande parte das obras maneiristas são frias, estranhas e artificiais.
-				- Presença da multiplicidade de pontos de vista, recurso muito utilizado nas esculturas.
-				- Valorização dos conhecimentos intelectuais na elaboração das obras de arte.
-				- Presença de beleza, elegância, graça e características ornamentais.
-				- Desconsideração da proporcionalidade e perspectiva.
-				- Destaque para os efeitos subjetivos e presença de expressões emocionais fortes.
-
-				Principais artistas e suas obras principais:
-
-				- Giambologna: escultor flamengo, autor de A fonte de Netuno e O rapto das sabinas.
-				- Giorgio Vasari: pintor maneirista italiano, autor de Perseu liberta Andrômeda.
-				- Parmigianino: pintor italiano, autor de Madona com longo pescoço.
-				- Paolo Veronese: pintor italiano, autor de Sabedoria e força e Lucrécia.
-				- El Greco: pintor e escultor grego, autor de A morte da Virgem, O Enterro do Conde de Orgaz e Adoração dos magos.
-				- Jacopo Sansovino: arquiteto italiano, cujo trabalho mais importante foi a Biblioteca Marciana (localizada na cidade de Veneza).
-				- Andrea Palladio: arquiteto italiano responsável pela Igreja de San Giorgio Maggiori (em Veneza) e pelo Teatro Olímpico (em Vicenza).
-				- Agnolo Bronzino: pintor maneirista italiano, autor de Alegoria do triunfo de Vênus e Alegoria da Felicidade.
-				- Frederico Barocci: pintor italiano, autor de A Madonna do povo.
-				- Jacopino del Conte: pintor italiano, autor de A pregação de João Batista, Sagrada Família e Retrato de Michelangelo.
-				- Leon Battista Alberti: arquiteto italiano, responsável pela Igreja de São Sebastião (em Mantova) e Basílica de Sant’Andrea (em Mantova).
-
-				Curiosidade (origem do nome):
-				- A palavra maneirismo deriva do termo “maniera”, que foi muito usado pelo artista maneirista italiano Giorgio Vasari, para fazer referência às seguintes qualidades artísticas: leveza, graça e sofisticação.
-
-				MANEIRISMO
-				Temas Relacionados
-				• Artes Plásticas
-				• Barroco
-				• El Greco
-				• Obras de arte do Maneirismo
-				• Parmigianino
-				• Veronese
+				echo "O Maneirismo foi um movimento artístico que englobou a pintura, arquitetura e literatura, surgiu na Itália do século XVI por volta de 1515. Foi considerada por muito tempo nada além da fase final do Renascimento, e também é considerada a fase que originou o <a href='schools/baroque.php'>Barroco</a>. Atualmente o Maneirismo é considerado uma estética autêntica e com suas próprias características, embora compartilhe várias semelhanças com ambas as estéticas mencionadas anteriormente. A Etimologia de Maneirismo surgiu do artista italiano Giorgio Vasari, que se utilizou da palavra <b>maniera</b>(maneira) para expressar graça, leveza e sofisticação ás obras Maneiristas. <br />
+				<br />
+				Muitas características das pinturas maneiristas influenciariam fortemente o Barroco, a emoção é um destaque nas obras, que através de cores frias, multiplicidade dos pontos de fuga e presença de ornamentos, as pinturas refletem uma ambientação estranhamente elegante e escura. Perspectiva e regras no geral não são prioridade no Maneirismo, pois este movimento artístico rompeu com o Classicismo e os ideais de beleza vigentes, preferindo retratar formas distorcidas e deformadas.
 				<br />";
 			}
 			if ($_COOKIE['lang'] == 'en') {
-				echo "O que foi - definição
-
-				O maneirismo foi um movimento artístico, que se desenvolveu no continente europeu no século XVI. Teve início na Itália, por volta de 1515, desenvolvendo-se, principalmente, as áreas da pintura, escultura e arquitetura.
-
-				Durante muito tempo, historiadores da arte entenderam que este movimento nada mais era do que a fase decadente do Renascimento (período final). Porém, atualmente o maneirismo é identificado como um estilo artístico original e autônomo, embora apresente muitas características semelhantes ao Renascimento. Vale destacar também que o maneirismo é considerado, por muitos especialistas de artes plásticas, a fase germinal do Barroco.
-
-				Principais características
-
-				- Rompimento com o estilo clássico de beleza idealizada.
-				- Retratação de figuras em formato alongado e serpenteado.
-				- Uso de cores que não representam fielmente a natureza. As cores usadas em grande parte das obras maneiristas são frias, estranhas e artificiais.
-				- Presença da multiplicidade de pontos de vista, recurso muito utilizado nas esculturas.
-				- Valorização dos conhecimentos intelectuais na elaboração das obras de arte.
-				- Presença de beleza, elegância, graça e características ornamentais.
-				- Desconsideração da proporcionalidade e perspectiva.
-				- Destaque para os efeitos subjetivos e presença de expressões emocionais fortes.
-
-				Principais artistas e suas obras principais:
-
-				- Giambologna: escultor flamengo, autor de A fonte de Netuno e O rapto das sabinas.
-				- Giorgio Vasari: pintor maneirista italiano, autor de Perseu liberta Andrômeda.
-				- Parmigianino: pintor italiano, autor de Madona com longo pescoço.
-				- Paolo Veronese: pintor italiano, autor de Sabedoria e força e Lucrécia.
-				- El Greco: pintor e escultor grego, autor de A morte da Virgem, O Enterro do Conde de Orgaz e Adoração dos magos.
-				- Jacopo Sansovino: arquiteto italiano, cujo trabalho mais importante foi a Biblioteca Marciana (localizada na cidade de Veneza).
-				- Andrea Palladio: arquiteto italiano responsável pela Igreja de San Giorgio Maggiori (em Veneza) e pelo Teatro Olímpico (em Vicenza).
-				- Agnolo Bronzino: pintor maneirista italiano, autor de Alegoria do triunfo de Vênus e Alegoria da Felicidade.
-				- Frederico Barocci: pintor italiano, autor de A Madonna do povo.
-				- Jacopino del Conte: pintor italiano, autor de A pregação de João Batista, Sagrada Família e Retrato de Michelangelo.
-				- Leon Battista Alberti: arquiteto italiano, responsável pela Igreja de São Sebastião (em Mantova) e Basílica de Sant’Andrea (em Mantova).
-
-				Curiosidade (origem do nome):
-				- A palavra maneirismo deriva do termo “maniera”, que foi muito usado pelo artista maneirista italiano Giorgio Vasari, para fazer referência às seguintes qualidades artísticas: leveza, graça e sofisticação.
-
-				MANEIRISMO
-				Temas Relacionados
-				• Artes Plásticas
-				• Barroco
-				• El Greco
-				• Obras de arte do Maneirismo
-				• Parmigianino
-				• Veronese
+				echo "Mannerism was an artistic movement that encompassed painting, architecture and literature, it emerged in 16th century Italy around 1515. It was considered for a long time nothing more than the final phase of the Renaissance, and it is also considered the phase that originated the <a href='schools/baroque.php'>Baroque</a>. Currently, Mannerism is considered an authentic aesthetic and with its own characteristics, although it shares several similarities with both aesthetics mentioned above. The Etymology of Mannerism emerged from the Italian artist Giorgio Vasari, who used the word <b>maniera</b>(way) to express grace, lightness and sophistication to Mannerist works. <br />
+				<br />
+				Many characteristics of Mannerist paintings would strongly influence the Baroque, emotion is a highlight in the works, which through cold colors, multiplicity of vanishing points and the presence of ornaments, the paintings reflect a strangely elegant and dark environment. Perspective and rules in general are not a priority in Mannerism, as this artistic movement broke with Classicism and the prevailing beauty ideals, preferring to portray distorted and deformed forms.
 				<br />";
 			}
 			if ($_COOKIE['lang'] == 'es') {
-				echo "O que foi - definição
-
-				O maneirismo foi um movimento artístico, que se desenvolveu no continente europeu no século XVI. Teve início na Itália, por volta de 1515, desenvolvendo-se, principalmente, as áreas da pintura, escultura e arquitetura.
-
-				Durante muito tempo, historiadores da arte entenderam que este movimento nada mais era do que a fase decadente do Renascimento (período final). Porém, atualmente o maneirismo é identificado como um estilo artístico original e autônomo, embora apresente muitas características semelhantes ao Renascimento. Vale destacar também que o maneirismo é considerado, por muitos especialistas de artes plásticas, a fase germinal do Barroco.
-
-				Principais características
-
-				- Rompimento com o estilo clássico de beleza idealizada.
-				- Retratação de figuras em formato alongado e serpenteado.
-				- Uso de cores que não representam fielmente a natureza. As cores usadas em grande parte das obras maneiristas são frias, estranhas e artificiais.
-				- Presença da multiplicidade de pontos de vista, recurso muito utilizado nas esculturas.
-				- Valorização dos conhecimentos intelectuais na elaboração das obras de arte.
-				- Presença de beleza, elegância, graça e características ornamentais.
-				- Desconsideração da proporcionalidade e perspectiva.
-				- Destaque para os efeitos subjetivos e presença de expressões emocionais fortes.
-
-				Principais artistas e suas obras principais:
-
-				- Giambologna: escultor flamengo, autor de A fonte de Netuno e O rapto das sabinas.
-				- Giorgio Vasari: pintor maneirista italiano, autor de Perseu liberta Andrômeda.
-				- Parmigianino: pintor italiano, autor de Madona com longo pescoço.
-				- Paolo Veronese: pintor italiano, autor de Sabedoria e força e Lucrécia.
-				- El Greco: pintor e escultor grego, autor de A morte da Virgem, O Enterro do Conde de Orgaz e Adoração dos magos.
-				- Jacopo Sansovino: arquiteto italiano, cujo trabalho mais importante foi a Biblioteca Marciana (localizada na cidade de Veneza).
-				- Andrea Palladio: arquiteto italiano responsável pela Igreja de San Giorgio Maggiori (em Veneza) e pelo Teatro Olímpico (em Vicenza).
-				- Agnolo Bronzino: pintor maneirista italiano, autor de Alegoria do triunfo de Vênus e Alegoria da Felicidade.
-				- Frederico Barocci: pintor italiano, autor de A Madonna do povo.
-				- Jacopino del Conte: pintor italiano, autor de A pregação de João Batista, Sagrada Família e Retrato de Michelangelo.
-				- Leon Battista Alberti: arquiteto italiano, responsável pela Igreja de São Sebastião (em Mantova) e Basílica de Sant’Andrea (em Mantova).
-
-				Curiosidade (origem do nome):
-				- A palavra maneirismo deriva do termo “maniera”, que foi muito usado pelo artista maneirista italiano Giorgio Vasari, para fazer referência às seguintes qualidades artísticas: leveza, graça e sofisticação.
-
-				MANEIRISMO
-				Temas Relacionados
-				• Artes Plásticas
-				• Barroco
-				• El Greco
-				• Obras de arte do Maneirismo
-				• Parmigianino
-				• Veronese
+				echo "El manierismo fue un movimiento artístico que abarcó la pintura, la arquitectura y la literatura, surgió en la Italia del siglo XVI alrededor de 1515. Se consideró durante mucho tiempo nada más que la fase final del Renacimiento, y también se considera la fase que originó la <a href='schools/baroque.php'>Barroco</a>. Actualmente, el manierismo se considera una estética auténtica y con sus propias características, aunque comparte varias similitudes con ambas estéticas mencionadas anteriormente. La Etimología del Manierismo surgió del artista italiano Giorgio Vasari, quien usó la palabra <b>maniera</b>(manera) para expresar gracia, ligereza y sofisticación a las obras manieristas. <br />
+				<br />
+				Muchas características de las pinturas manieristas influirían fuertemente en el barroco, la emoción es un elemento destacado en las obras, que a través de colores fríos, multiplicidad de puntos de fuga y la presencia de adornos, las pinturas reflejan un ambiente extrañamente elegante y oscuro. La perspectiva y las reglas en general no son una prioridad en el manierismo, ya que este movimiento artístico rompió con el clasicismo y los ideales de belleza prevalecientes, prefiriendo retratar formas distorsionadas y deformadas.
 				<br />";
 			}
 		?>

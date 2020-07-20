@@ -519,13 +519,34 @@
 					if ($_COOKIE['lang'] == 'es')
 						{echo "Género</option>";}
 
+					echo "<optgroup label='".$gnrlst['N']."'>";
 					for ($x = 0;$x < sizeof($found);$x++) {
-						if ($fgen == strtolower($found[$x]))
-							{echo "<option value='".strtolower($found[$x])."'selected>".$gnrlst[$found[$x]]."</option>";}
-						else
-							{echo "<option value='".strtolower($found[$x])."'>".$gnrlst[$found[$x]]."</option>";}
+						if ($found[$x][0] == 'N') {
+							if ($fgen == strtolower($found[$x]))
+								{echo "<option value='".strtolower($found[$x])."'selected>".$gnrlst[$found[$x]]."</option>";}
+							else
+								{echo "<option value='".strtolower($found[$x])."'>".$gnrlst[$found[$x]]."</option>";}
+							}
 						}
-					echo "</select>";
+					echo "</optgroup><optgroup label='".$gnrlst['L']."'>";
+					for ($x = 0;$x < sizeof($found);$x++) {
+						if ($found[$x][0] == 'L') {
+							if ($fgen == strtolower($found[$x]))
+								{echo "<option value='".strtolower($found[$x])."'selected>".$gnrlst[$found[$x]]."</option>";}
+							else
+								{echo "<option value='".strtolower($found[$x])."'>".$gnrlst[$found[$x]]."</option>";}
+							}
+						}
+					echo "</optgroup><optgroup label='".$gnrlst['D']."'>";
+					for ($x = 0;$x < sizeof($found);$x++) {
+						if ($found[$x][0] == 'D') {
+							if ($fgen == strtolower($found[$x]))
+								{echo "<option value='".strtolower($found[$x])."'selected>".$gnrlst[$found[$x]]."</option>";}
+							else
+								{echo "<option value='".strtolower($found[$x])."'>".$gnrlst[$found[$x]]."</option>";}
+							}
+						}
+					echo "</optgroup></select>";
 					}
 				#LITSCHOOL FILTER
 				$found = array();
