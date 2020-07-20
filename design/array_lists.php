@@ -2,127 +2,127 @@
 
 #GENDERS
 if ($_COOKIE['lang'] == 'pt') {
-$gndlst = array(', Masculino,  Feminino,  Agênero,  Outro');
-}
+	$gndlst = array('M'=>'Masculino','F'=>'Feminino','A'=>'Agênero','O'=>'Outro');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$gndlst = array(', Male,  Female,  Agender,  Other');
-}
+	$gndlst = array('M'=>'Male','F'=>'Female','A'=>'Agender','O'=>'Other');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$gndlst = array(', Masculino,  Feminino,  Agénero,  Otro');
-}
+	$gndlst = array('M'=>'Masculino','F'=>'Feminino','A'=>'Agénero','O'=>'Otro');
+	}
 
 #SIGNS
 if ($_COOKIE['lang'] == 'pt') {
-$zdclst = array('01'=>'Sagitário','02'=>'Capricórnio','03'=>'Aquário','04'=>'Peixes','05'=>'Áries','06'=>'Touro','07'=>'Gêmeos','08'=>'Câncer',
-'09'=>'Leão','10'=>'Virgem','11'=>'Libra','12'=>'Escorpião');
-}
+	$zdclst = array('01'=>'Sagitário','02'=>'Capricórnio','03'=>'Aquário','04'=>'Peixes','05'=>'Áries','06'=>'Touro','07'=>'Gêmeos','08'=>'Câncer',
+		'09'=>'Leão','10'=>'Virgem','11'=>'Libra','12'=>'Escorpião');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$zdclst = array('01'=>'Sagittarius','02'=>'Capricorn','03'=>'Aquarius','04'=>'Pisces','05'=>'Aries','06'=>'Taurus','07'=>'Gemini','08'=>'Cancer',
-'09'=>'Leo','10'=>'Virgo','11'=>'Libra','12'=>'Scorpio');
-}
+	$zdclst = array('01'=>'Sagittarius','02'=>'Capricorn','03'=>'Aquarius','04'=>'Pisces','05'=>'Aries','06'=>'Taurus','07'=>'Gemini','08'=>'Cancer',
+		'09'=>'Leo','10'=>'Virgo','11'=>'Libra','12'=>'Scorpio');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$zdclst = array('01'=>'Sagitario','02'=>'Capricornio','03'=>'Acuario','04'=>'Piscis','05'=>'Aries','06'=>'Tauro','07'=>'Géminis','08'=>'Cáncer',
-'09'=>'Leo','10'=>'Virgo','11'=>'Libra','12'=>'Escorpio');
-}
+	$zdclst = array('01'=>'Sagitario','02'=>'Capricornio','03'=>'Acuario','04'=>'Piscis','05'=>'Aries','06'=>'Tauro','07'=>'Géminis','08'=>'Cáncer',
+		'09'=>'Leo','10'=>'Virgo','11'=>'Libra','12'=>'Escorpio');
+	}
 
 #CENTURIES
 $cenlst = array('9'=>'X','10'=>'XI','11'=>'XII','12'=>'XIII','13'=>'XIV','14'=>'XV','15'=>'XVI','16'=>'XVII','17'=>'XVIII','18'=>'XIX','19'=>'XX','20'=>'XXI',
-'1B, 1th','2B, 2th','3B, 3th','4B, 4th','5B, 5th','6B, 6th','7B, 7th','8B, 8th','9B, 9th',);
+	'1BD'=>'1th','2BD'=>'2th','3BD'=>'3th','4BD'=>'4th','5BD'=>'5th','6BD'=>'6th','7BD'=>'7th','8BD'=>'8th','9BD'=>'9th',);
 
 #FILTERS
 if ($_COOKIE['lang'] == 'pt') {
-$fltlst = array('Ne, Novo, opula, Popular, nknow, Desconhecidos');
-}
+	$fltlst = array('New'=>'Novo','Popular'=>'Popular','Unknown'=>'Desconhecidos');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$fltlst = array('Ne, New, opula, Popular, nknow, Unknown');
-}
+	$fltlst = array('New'=>'New','Popular'=>'Popular','Unknown'=>'Unknown');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$fltlst = array('Ne, Nuevo, opula, Popular, nknow, Desconocidos');
-}
+	$fltlst = array('New'=>'Nuevo','Popular'=>'Popular','Unknown'=>'Desconocidos');
+	}
 
 #COUNTRIES
 if ($_COOKIE['lang'] == 'pt') {
-$coulst = array('AR, Argentina, U, Austrália, O, Bolívia, R, Brasil, A, Canadá, H, Chile, H, China, Z, Tchéquia, O, Colômbia, E, Dinamarca, C, Equador, N, Inglaterra, S, Espanha, R, França, E, Alemanha, R, Grécia, U, Guiana',
-'IR, Irlanda, T, Itália, E, México, E, Países Baixos, E, Peru, O, Polônia, O, Portugal, U, Rússia, C, Escócia, U, Suíça, U, Suriname, E, Venezuela, R, Uruguai, S, Estados Unidos, A, País de Gales');
-}
+	$coulst = array('ARG'=>'Argentina','AUS'=>'Austrália','BOL'=>'Bolívia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CHN'=>'China','CZE'=>'Tchéquia','COL'=>'Colômbia','DEN'=>'Dinamarca','ECU'=>'Equador','ENG'=>'Inglaterra','ESP'=>'Espanha','FRA'=>'França','GER'=>'Alemanha','GRE'=>'Grécia','GUY'=>'Guiana',
+	'IRL'=>'Irlanda','ITA'=>'Itália','MEX'=>'México','NED'=>'Países Baixos','PER'=>'Peru','POL'=>'Polônia','POR'=>'Portugal','RUS'=>'Rússia','SCO'=>'Escócia','SUI'=>'Suíça','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguai','USA'=>'Estados Unidos','WAL'=>'País de Gales');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$coulst = array('AR, Argentina, U, Australia, O, Bolivia, R, Brazil, A, Canada, H, Chile, H, China, Z, Czechia, O, Colombia, E, Denmak, C, Ecuador, N, England, S, Spain, R, France, E, Germany, R, Greece, U, Guyana',
-'IR, Ireland, T, Italy, E, Mexico, E, Netherlands, E, Perú, O, Poland, O, Portugal, U, Russia, C, Scotland, U, Switzerland, U, Suriname, E, Venezuela, R, Uruguay, S, United States, A, Wales');
-}
+	$coulst = array('ARG'=>'Argentina','AUS'=>'Australia','BOL'=>'Bolivia','BRA'=>'Brazil','CAN'=>'Canada','CHI'=>'Chile','CHN'=>'China','CZE'=>'Czechia','COL'=>'Colombia','DEN'=>'Denmak','ECU'=>'Ecuador','ENG'=>'England','ESP'=>'Spain','FRA'=>'France','GER'=>'Germany','GRE'=>'Greece','GUY'=>'Guyana',
+	'IRL'=>'Ireland','ITA'=>'Italy','MEX'=>'Mexico','NED'=>'Netherlands','PER'=>'Perú','POL'=>'Poland','POR'=>'Portugal','RUS'=>'Russia','SCO'=>'Scotland','SUI'=>'Switzerland','SUR'=>'Suriname','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'United States','WAL'=>'Wales');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$coulst = array('AR, Argentina, U, Australia, O, Bolivia, R, Brasil, A, Canadá, H, Chile, H, China, Z, Chequia, O, Colombia, E, Dinamarca, C, Ecuador, N, Inglaterra, S, España, R, Francia, E, Alemania, R, Grecia, U, Guayana',
-'IR, Irlanda, T, Italia, E, Mexico, E, Países Bajos, E, Peru, O, Polonia, O, Portugal, U, Rusia, C, Escocia, U, Suiza, U, Surinam, E, Venezuela, R, Uruguay, S, Estados Unidos, A, Gales');
-}
+	$coulst = array('ARG'=>'Argentina','AUS'=>'Australia','BOL'=>'Bolivia','BRA'=>'Brasil','CAN'=>'Canadá','CHI'=>'Chile','CHN'=>'China','CZE'=>'Chequia','COL'=>'Colombia','DEN'=>'Dinamarca','ECU'=>'Ecuador','ENG'=>'Inglaterra','ESP'=>'España','FRA'=>'Francia','GER'=>'Alemania','GRE'=>'Grecia','GUY'=>'Guayana',
+	'IRL'=>'Irlanda','ITA'=>'Italia','MEX'=>'Mexico','NED'=>'Países Bajos','PER'=>'Peru','POL'=>'Polonia','POR'=>'Portugal','RUS'=>'Rusia','SCO'=>'Escocia','SUI'=>'Suiza','SUR'=>'Surinam','VEN'=>'Venezuela','URU'=>'Uruguay','USA'=>'Estados Unidos','WAL'=>'Gales');
+	}
 
 #GENRES
 if ($_COOKIE['lang'] == 'pt') {
-$gnrlst = array(', Narrativo,  Lírico,  Dramático',
-'NE, Épico, E, Épopéia, T, Conto, F, Fábula, C, Crônica, E, Ensaio, R, Romance, N, Novela',
-'LS, Soneto, H, Haicai, E, Elegia, O, Óde, E, Écloga, B, Balada, R, Rondó, H, Hino, I, Idílio, S, Sátira, V, Vilancete'
-,'LE, Epitalâmio, A, Auto, C, Comédia, T, Tragédia, C, Tragicomédia, F, Farsa, O, Não-Literário');
-}
+	$gnrlst = array('N'=>'Narrativo','L'=>'Lírico','D'=>'Dramático',
+	'NEC'=>'Épico','NEP'=>'Épopéia','NTL'=>'Conto','NFB'=>'Fábula','NCC'=>'Crônica','NES'=>'Ensaio','NRM'=>'Romance','NNV'=>'Novela',
+	'LSN'=>'Soneto','LHK'=>'Haicai','LEG'=>'Elegia','LOD'=>'Óde','LEC'=>'Écloga','LBL'=>'Balada','LRN'=>'Rondó','LHM'=>'Hino','LID'=>'Idílio','LST'=>'Sátira','LVL'=>'Vilancete'
+	,'LEP'=>'Epitalâmio','DAC'=>'Auto','DCM'=>'Comédia','DTG'=>'Tragédia','DCT'=>'Tragicomédia','DFS'=>'Farsa','NOL'=>'Não-Literário');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$gnrlst = array(', Narrative,  Lyrical,  Dramatic',
-'NE, Epic, E, Epopeia, T, Tale, F, Fable, C, Chronicle, E, Essay, R, Romance, N, Novel',
-'LS, Sonnet, H, Haikai, E, Elegy, O, Ode, E, Eclogue, B, Ballad, R, Rondo, H, Hymn, I, Idyll, S, Satire, V, Vilancete'
-,'LE, Epitalamium, A, Act, C, Comedy, T, Tragedy, C, Tragicomedy, F, Humbug, O, Non-Literary');
-}
+	$gnrlst = array('N'=>'Narrative','L'=>'Lyrical','D'=>'Dramatic',
+	'NEC'=>'Epic','NEP'=>'Epopeia','NTL'=>'Tale','NFB'=>'Fable','NCC'=>'Chronicle','NES'=>'Essay','NRM'=>'Romance','NNV'=>'Novel',
+	'LSN'=>'Sonnet','LHK'=>'Haikai','LEG'=>'Elegy','LOD'=>'Ode','LEC'=>'Eclogue','LBL'=>'Ballad','LRN'=>'Rondo','LHM'=>'Hymn','LID'=>'Idyll','LST'=>'Satire','LVL'=>'Vilancete'
+	,'LEP'=>'Epitalamium','DAC'=>'Act','DCM'=>'Comedy','DTG'=>'Tragedy','DCT'=>'Tragicomedy','DFS'=>'Humbug','NOL'=>'Non-Literary');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$gnrlst = array(', Narrativo,  Lírico,  Dramático',
-'NE, Épico, E, Epopea, T, Cuento, F, Fábula, C, Crónica, E, Ensayo, R, Romance, N, Novela',
-'LS, Soneto, H, Haikai, E, Elegía, O, Ode, E, Égloga, B, Balada, R, Rondó, H, Himno, I, Idilio, S, Sátira',
-'LV, Vilancete, E, Epitalamio, A, Auto, C, Comedia, T, Tragedia, C, Tragicomedia, F, Farsa, O, No-Literario');
-}
+	$gnrlst = array('N'=>'Narrativo','L'=>'Lírico','D'=>'Dramático',
+	'NEC'=>'Épico','NEP'=>'Epopea','NTL'=>'Cuento','NFB'=>'Fábula','NCC'=>'Crónica','NES'=>'Ensayo','NRM'=>'Romance','NNV'=>'Novela',
+	'LSN'=>'Soneto','LHK'=>'Haikai','LEG'=>'Elegía','LOD'=>'Ode','LEC'=>'Égloga','LBL'=>'Balada','LRN'=>'Rondó','LHM'=>'Himno','LID'=>'Idilio','LST'=>'Sátira',
+	'LVL'=>'Vilancete','LEP'=>'Epitalamio','DAC'=>'Auto','DCM'=>'Comedia','DTG'=>'Tragedia','DCT'=>'Tragicomedia','DFS'=>'Farsa','NOL'=>'No-Literario');
+	}
 
 #LITERARY SCHOOLS
 if ($_COOKIE['lang'] == 'pt') {
-$ltslst = array('Arcadis, Arcadismo, aroqu, Barroco, uturis, Futurismo, nlightmen, Iluminismo, mpressionis, Impressionismo',
-'Indianis, Indianismo, anneris, Maneirismo, odernis, Modernismo, aturalis, Naturalismo, arnassianis, Parnasianismo',
-'Pre-Modernis, Pré-Modernismo, omanticis, Romantismo, ealis, Realismo, ymbolis, Simbolismo, roubadoris, Trovadorismo');
-}
+	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impressionismo',
+	'Indianism'=>'Indianismo','Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo',
+	'Pre-Modernism'=>'Pré-Modernismo','Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$ltslst = array('Arcadis, Arcadism, aroqu, Baroque, uturis, Futurism, nlightmen, Enlightment, mpressionis, Impressionism, ndianis, Indianism',
-'Manneris, Mannerism, odernis, Modernism, aturalis, Naturalism, arnassianis, Parnassianism, re-Modernis, Pre-Modernism, omanticis, Romanticism',
-'Realis, Realism, ymbolis, Symbolism, roubadoris, Troubadorism');
-}
+	$ltslst = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Enlightment'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
+	'Mannerism'=>'Mannerism','Modernism'=>'Modernism','Naturalism'=>'Naturalism','Parnassianism'=>'Parnassianism','Pre-Modernism'=>'Pre-Modernism','Romanticism'=>'Romanticism',
+	'Realism'=>'Realism','Symbolism'=>'Symbolism','Troubadorism'=>'Troubadorism');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$ltslst = array('Arcadis, Arcadismo, aroqu, Barroco, uturis, Futurismo, nlightmen, Iluminismo, mpressionis, Impresionismo, ndianis, Indianismo',
-'Manneris, Manierismo, odernis, Modernismo, aturalis, Naturalismo, arnassianis, Parnasianismo, re-Modernis, Pré-Modernismo',
-'Romanticis, Romantismo, ealis, Realismo, ymbolis, Simbolismo, roubadoris, Trovadorismo');
-}
+	$ltslst = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
+	'Mannerism'=>'Manierismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
+	'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
+	}
 
 #ACADEMIES
 if ($_COOKIE['lang'] == 'pt') {
-$acalst = array('AB, Academia Brasileira de Letras, P, Academia Paraibana de Letras');
-}
+	$acalst = array('ABL'=>'Academia Brasileira de Letras','APL'=>'Academia Paraibana de Letras');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$acalst = array('AB, Brazilian Academy of Letters, P, Paraíba Academy of Letters');
-}
+	$acalst = array('ABL'=>'Brazilian Academy of Letters','APL'=>'Paraíba Academy of Letters');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$acalst = array('AB, Academia Brasileña de Letras, P, Academia Paraibana de Letras');
-}
+	$acalst = array('ABL'=>'Academia Brasileña de Letras','APL'=>'Academia Paraibana de Letras');
+	}
 
 #BONDS
 if ($_COOKIE['lang'] == 'pt') {
-$bndlst = array(', Marido,  Esposa,  Filho,  Filha,  Amigo');
-}
+	$bndlst = array('H'=>'Marido','W'=>'Esposa','S'=>'Filho','D'=>'Filha','F'=>'Amigo');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$bndlst = array(', Husband,  Wife,  Son,  Daughter,  Friend');
-}
+	$bndlst = array('H'=>'Husband','W'=>'Wife','S'=>'Son','D'=>'Daughter','F'=>'Friend');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$bndlst = array(', Marido,  Esposa,  Hijo,  Hija,  Amigo');
-}
+	$bndlst = array('H'=>'Marido','W'=>'Esposa','S'=>'Hijo','D'=>'Hija','F'=>'Amigo');
+	}
 
 #LICENSES
 if ($_COOKIE['lang'] == 'pt') {
-$liclst = array('P, Domínio Público, , Todos os direitos reservados');
-}
+	$liclst = array('PD'=>'Domínio Público','CR'=>'Todos os direitos reservados');
+	}
 else if ($_COOKIE['lang'] == 'en') {
-$liclst = array('P, Public Domain, , All rights reserved');
-}
+	$liclst = array('PD'=>'Public Domain','CR'=>'All rights reserved');
+	}
 else if ($_COOKIE['lang'] == 'es') {
-$liclst = array('P, Dominio Publico, , Todos los derechos reservados');
-}
+	$liclst = array('PD'=>'Dominio Publico','CR'=>'Todos los derechos reservados');
+	}
 
 #CDD
 if ($_COOKIE['lang'] == 'pt') {
