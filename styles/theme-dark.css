@@ -321,6 +321,7 @@ input:-webkit-autofill:active  {
 	background-color: var(--color-thumb);
 }
 
+/*
 .requestable tr:hover{
 	background-color: var(--color-thumb);
 	color: var(--text-color);
@@ -328,4 +329,4 @@ input:-webkit-autofill:active  {
 
 .requestable tr:active{
 	background-color: var(--row-hover);
-}
+}*/

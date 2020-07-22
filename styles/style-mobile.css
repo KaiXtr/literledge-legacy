@@ -169,6 +169,10 @@ hr {
 	padding: 4px;
 }
 
+.upperbar #btreq {
+	display: none;
+}
+
 .upperbar .profilepic {
 	margin-left: 10px;
 	width: 28px;

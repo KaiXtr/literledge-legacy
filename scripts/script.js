@@ -291,3 +291,17 @@ function search_suggest(text) {
 		}
 	});
 };
+
+function datalist_value(e) {
+	var input = e.target;
+	var options = document.querySelectorAll('#' + input.getAttribute('list') + ' option');
+	var hiddenInput = document.getElementById(input.id + '-hidden').value;
+	hiddenInput = input.value;
+	for(var i = 0; i < options.length; i++) {
+		var option = options[i];
+		if (option.innerText == input.value) {
+			hiddenInput = option.getAttribute('data-value');
+			break;
+		}
+	}
+}

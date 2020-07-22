@@ -21,11 +21,12 @@
 		<?php
 			require 'mysql_connect.php';
 			if (isset($_SESSION['user'])) {
-				$find = $conn->query("SELECT pt FROM users WHERE nick='".$_SESSION['user']."'");
+				$find = $conn->query("SELECT pt,auctor FROM users WHERE nick='".$_SESSION['user']."'");
 				if ($find->num_rows > 0) {
 					$i = $find->fetch_assoc();
-					echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload-".$_COOKIE['theme'].".png' /> </a>
-						<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
+					if ($i['auctor'] == '2') {echo "<a id='btreq' href='requests.php'> <img src='media/images/icons/requests-".$_COOKIE['theme'].".png' /> </a>";}
+					if ($i['auctor'] != '-1') {echo "<a id='btup' href='upload.php'> <img src='media/images/icons/upload-".$_COOKIE['theme'].".png' /> </a>";}
+					echo "<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' />
 						<div id='profilemenu' style='visibility: hidden;'>
 							<h1> " .$i['pt']. " </h1>
 							<h2> @" .$_SESSION['user']. " </h2>

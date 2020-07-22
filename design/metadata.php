@@ -17,8 +17,6 @@
 		$_SESSION['user'] = $_COOKIE['user'];
 		$_SESSION['password'] = $_COOKIE['password'];
 		}
-
-	$devlprs = array('KaiXtr');
 ?>
 <base href='http://localhost/literledge/' />
 <meta charset='utf-8' />

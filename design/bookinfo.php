@@ -277,9 +277,9 @@
 						if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
 						#$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
 						$d = $d ."<tr onclick='window.location.href=".'"'.$e['link'].'"'.";'>
-							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th><th>".$pr. "</th>
+							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th>
 							</tr>";
-						#inserir isto depois: <th>".$byt."</th>
+						#inserir isto depois: <th>".$pr. "</th> <th>".$byt."</th>
 						}
 					if ($red == '') {$red = $l;}
 					}

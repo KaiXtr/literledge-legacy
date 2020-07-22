@@ -73,24 +73,42 @@
 							<div class='manlan' lang='en'> auctor </div>
 							<div class='manlan' lang='es'> autor </div>
 						</span> <br />
-						<input class='textbox' name='pauctor' list='pauctor' maxLength='30' />
-						<datalist id='pauctor'>
+						<input id='auct' class='textbox' list='dtlst' maxLength='30' />
+						<datalist id='dtlst'>
 						<?php
 							require 'account/mysql_connect.php';
 							if ($notcon == null) {
-								$find = $conn->query("SELECT pt FROM users");
+								$find = $conn->query("SELECT pt,nick FROM users");
 								if ($find->num_rows > 0) {
 									while ($i = $find->fetch_assoc()) {
-											echo "<option value='".$i['pt']."' />";
+											echo "<option data-value='".$i['nick']."'>".$i['pt']."</option>";
 										}
 									}
 								$conn->close();
 								}
-							if (isset($_GET['seasugg'])) {
-								mainInfo($_GET['seasugg']);
-							}
 						?>
 						</datalist>
+						<input id='auct-hidden' type='hidden' name='pauctor' />
+						<script type='text/javascript'>
+							document.querySelector('input[list]').addEventListener('input', function(e) {
+								var input = e.target,
+									list = input.getAttribute('list'),
+									options = document.querySelectorAll('#' + list + ' option'),
+									hiddenInput = document.getElementById(input.id + '-hidden'),
+									inputValue = input.value;
+
+								hiddenInput.value = inputValue;
+
+								for(var i = 0; i < options.length; i++) {
+									var option = options[i];
+
+									if (option.innerText == inputValue) {
+										hiddenInput.value = option.getAttribute('data-value');
+										break;
+									}
+								}
+							});
+						</script>
 					</div>
 					<div id='tab2' class='optabs' style='display: none;'>
 						<span id='text'>
@@ -98,7 +116,7 @@
 							<div class='manlan' lang='en'> auctor </div>
 							<div class='manlan' lang='es'> autor </div>
 						</span> <br />
-						<input type='text' class='textbox' name='pauctor' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
+						<input type='text' class='textbox' name='bauctor' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
 						<datalist id='auctors'>
 						<?php
 							require 'account/mysql_connect.php';
@@ -111,9 +129,6 @@
 									}
 								$conn->close();
 								}
-							if (isset($_GET['seasugg'])) {
-								mainInfo($_GET['seasugg']);
-							}
 						?>
 						</datalist>
 					</div>

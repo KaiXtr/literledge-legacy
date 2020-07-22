@@ -44,7 +44,7 @@
 						echo $errl ."</span>";
 					?>
 					<span id='text'> email </span> <br />
-					<input type='text'  id='user' class='textbox' name='user' /> <br />
+					<input type='text' id='user' class='textbox' name='user' /> <br />
 					<span id='text'>
 						<?php
 							if ($_COOKIE['lang'] == 'pt') {echo "senha";}
