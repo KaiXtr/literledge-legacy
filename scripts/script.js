@@ -281,27 +281,103 @@ $(window).scroll(function(e) {
 		}
 })*/
 
-function search_suggest(text) {
-	$.ajax({
-		type: "GET",
-		url: "upload.php",
-		data: "seasugg=" + text,
-		success: function(result) {
-			$("#somewhere").html(result);
-		}
-	});
+function search_suggest() {
+	var search = document.getElementById('srcbar').value;
+	var list = document.getElementById('srclst');
+	list.innerHTML = "<option>yes</option>";
 };
 
-function datalist_value(e) {
-	var input = e.target;
+function datalist_value(n) {
+	var input = document.getElementById('auct'+n);
+	var hidden = document.getElementById('auct'+n+'-hidden');
 	var options = document.querySelectorAll('#' + input.getAttribute('list') + ' option');
-	var hiddenInput = document.getElementById(input.id + '-hidden').value;
-	hiddenInput = input.value;
 	for(var i = 0; i < options.length; i++) {
 		var option = options[i];
-		if (option.innerText == input.value) {
-			hiddenInput = option.getAttribute('data-value');
+		if (option.innerHTML == input.value) {
+			hidden.value = option.getAttribute('data-value');
 			break;
 		}
 	}
 }
+
+function add_rowpom(txt, rowcount) {
+	var titles = [];
+	var nicks = [];
+	var names = [];
+	var contents = [];
+	var countries = [];
+	var genres = [];
+	var litschools = [];
+	var rid = [];
+
+	if (rowcount > 0) {
+		for (var x=0;x<rowcount;x++) {
+			titles.push(document.getElementById('ptitl'+x).value);
+			nicks.push(document.getElementById('auct'+x).value);
+			names.push(document.getElementById('auct'+x+'-hidden').value);
+			contents.push(document.getElementById('pcont'+x).value);
+			countries.push(document.getElementById('pcountry'+x).value);
+			genres.push(document.getElementById('pgenre'+x).value);
+			litschools.push(document.getElementById('plitschool'+x).value);
+			rid.push(document.getElementById('rid'+x).value);
+		}
+	}
+
+	var text = txt;
+	text = text.split('%lid%').join(rowcount);
+	document.getElementById('wrpm').innerHTML += text;
+	
+	if (rowcount > 0) {
+		for (var x=0;x<titles.length;x++) {
+			document.getElementById('ptitl'+x).value = titles[x];
+			document.getElementById('auct'+x).value = nicks[x];
+			document.getElementById('auct'+x+'-hidden').value = names[x];
+			document.getElementById('pcont'+x).value = contents[x];
+			document.getElementById('pcountry'+x).value = countries[x];
+			document.getElementById('pgenre'+x).value = genres[x];
+			document.getElementById('plitschool'+x).value = litschools[x];
+			document.getElementById('rid'+x).value = rid[x];
+		}
+	}
+};
+
+function add_rowbok(txt, rowcount) {
+	var titles = [];
+	var nicks = [];
+	var names = [];
+	var contents = [];
+	var countries = [];
+	var genres = [];
+	var litschools = [];
+	var rid = [];
+
+	if (rowcount > 0) {
+		for (var x=0;x<rowcount;x++) {
+			titles.push(document.getElementById('ptitl'+x).value);
+			nicks.push(document.getElementById('bauct'+x).value);
+			names.push(document.getElementById('bauct'+x+'-hidden').value);
+			contents.push(document.getElementById('pcont'+x).value);
+			countries.push(document.getElementById('pcountry'+x).value);
+			genres.push(document.getElementById('pgenre'+x).value);
+			litschools.push(document.getElementById('plitschool'+x).value);
+			rid.push(document.getElementById('rid'+x).value);
+		}
+	}
+
+	var text = txt;
+	text = text.split('%lid%').join(rowcount);
+	document.getElementById('wrbk').innerHTML += text;
+	
+	if (rowcount > 0) {
+		for (var x=0;x<titles.length;x++) {
+			document.getElementById('ptitl'+x).value = titles[x];
+			document.getElementById('bauct'+x).value = nicks[x];
+			document.getElementById('bauct'+x+'-hidden').value = names[x];
+			document.getElementById('pcont'+x).value = contents[x];
+			document.getElementById('pcountry'+x).value = countries[x];
+			document.getElementById('pgenre'+x).value = genres[x];
+			document.getElementById('plitschool'+x).value = litschools[x];
+			document.getElementById('rid'+x).value = rid[x];
+		}
+	}
+};

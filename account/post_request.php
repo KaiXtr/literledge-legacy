@@ -4,9 +4,10 @@
 	if ($notcon == null) {
 		$error = '';
 		#POEM REQUEST
+		print_r($_POST);
 		if ($_POST['request'] == 'poem') {
 			for ($x=0;$x<sizeof($_POST['pname']);$x++) {
-				if ((@$_POST['pblsh'][$x])&&($_POST['pblsh'][$x] == 'on')&&($_POST['pname'] != '')&&($_POST['pcontent'] != '')&&($_POST['pauctor'] != '')) {
+				if ((@$_POST['pblsh'][$x])&&($_POST['pblsh'][$x] == 'on')&&($_POST['pname'] != '')&&($_POST['pcontent'] != '')&&(@$_POST['pauctor'])) {
 					if ((@$_POST['rid'][$x])&&($_POST['rid'][$x] != '')) {
 						$conn->query("DELETE FROM requests WHERE rid='".$_POST['rid'][$x]."'");
 					}
@@ -23,6 +24,11 @@
 						if ($inx[1] == sizeof($ltrs)) {$inx[0]++;$inx[1] = 0;}
 						$pid = $ltrs[$inx[0]].$ltrs[$inx[1]].$ltrs[$inx[2]].$ltrs[$inx[3]].$ltrs[$inx[4]].$ltrs[$inx[5]];
 					}
+					if ($_POST['plitschool'][$x] == 'null') {$plitschool = $_POST['plitschool'][$x];}
+					else {$plitschool = "'".$_POST['plitschool'][$x]."'";}
+
+					$conn->query("INSERT INTO poems (auctor,id,country,genre,litschool) VALUES
+						('".$_POST['pauctor'][$x]."','".$pid."','".$_POST['pcountry'][$x]."','".$_POST['pgenre'][$x]."',".$plitschool.")");
 					echo '../poems/'.$_POST['pauctor'][$x].'-'.$pid.'.php';
 					$htmc = fopen('../poems/'.$_POST['pauctor'][$x].'-'.$pid.'.php', 'w') or die('Unable to open file!');
 					$cont = '<?php'.PHP_EOL.'$shwpm = "<h1> '.$_POST['pname'][$x].' </h1>'.PHP_EOL.
@@ -61,5 +67,5 @@
 			$conn->close();
 		}
 
-	if ($error == '') {header("location: ".$base_url."requests.php");}
+	#if ($error == '') {header("location: ".$base_url."requests.php");}
 ?>

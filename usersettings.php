@@ -31,12 +31,6 @@
 							$find = $conn->query("SELECT * FROM users WHERE nick='" .$_SESSION['user']. "'");
 							if ($find->num_rows > 0) {$i = $find->fetch_assoc();}
 						}
-
-						if (@$_GET['t']) {
-							if ($_GET['t'] == '1') {echo "<script type='text/javascript'> set_tab('tab1','tab2','tab3'); </script>";}
-							if ($_GET['t'] == '2') {echo "<script type='text/javascript'> set_tab('tab2','tab1','tab3'); </script>";}
-							if ($_GET['t'] == '3') {echo "<script type='text/javascript'> set_tab('tab3','tab1','tab3'); </script>";}
-						}
 					?>
 					<div id='optlst'>
 						<ul>
@@ -250,6 +244,13 @@
 						<input type='radio' name='theme' value='dark' style='background-color: #070707;' <?php if($_COOKIE['theme']=='dark'){echo 'checked';} ?>></button>
 					</div>
 				</form>
+				<?php
+					if (@$_GET['t']) {
+						if ($_GET['t'] == '1') {echo "<script type='text/javascript'> set_tab('tab1','tab2','tab3'); </script>";}
+						if ($_GET['t'] == '2') {echo "<script type='text/javascript'> set_tab('tab2','tab1','tab3'); </script>";}
+						if ($_GET['t'] == '3') {echo "<script type='text/javascript'> set_tab('tab3','tab1','tab3'); </script>";}
+					}
+				?>
 			</div>
 		</div>
 		<?php $conn->close(); ?>

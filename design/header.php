@@ -11,11 +11,10 @@
 		<form class='searchbar' action='search.php' method='post'>
 			<?php
 				if ((isset($_GET['q']))&&($_GET['q'][0] != '$')) {$sch = "value='".$_GET['q']."'";} else {$sch = '';}
-				echo "<input class='searchtext' type='text' name='search' ".$sch."onchange='search_suggest(this.value)' placeholder='".$vl."...' />
+				echo "<input id='srcbar' class='searchtext' type='text' list='srclst' name='search' ".$sch."oninput='search_suggest()' placeholder='".$vl."...' />
+				<datalist id='srclst'>
+				</datalist>
 				<input class='submit' type='image' src='media/images/icons/search-".$_COOKIE['theme'].".png' alt='".strtolower($vl)."' />";
-				if (isset($_GET['seasugg'])) {
-					mainInfo($_GET['seasugg']);
-				}
 			?>
 		</form>
 		<?php
