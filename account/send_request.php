@@ -3,7 +3,6 @@
 	if (!isset($_SESSION['user'])) {header("location: ".$base_url."login.php");}
 	if ($notcon == null) {
 		$error = '';
-		print_r($_POST);
 		#POEM REQUEST
 		if ($_POST['request'] == 'poem') {
 			$find = $conn->query("SELECT nick FROM users WHERE nick='".$_POST['pauctor']."'");
@@ -53,27 +52,25 @@
 				}
 				else {header("location: ".$base_url."upload.php?error=".$error."3&t=1");}
 			}
-			}
+		}
 
 		#AUCTOR REQUEST
 		else if ($_POST['request'] == 'auctor') {
-			if (isset($_POST['aname'])) {
-				if ($_POST['aname'] != '') {
-					$find = $conn->query("SELECT name FROM users WHERE name='".$_POST['pauctor']."';");
-					if ($find->num_rows == 0) {
-						$cont = 'aname='.$_POST['aname'].';';
-						$conn->query("INSERT INTO requests(user,req) VALUES ('".$_SESSION['user']."','".$cont."');");
-					}
-					else {$error = $error.'1';}
-				}
-				else {$error = $error.'2';}
-			}
-			else {$error = $error.'3';}
+			if (($_POST['aname'] == '')||($_POST['acountry'] == '')) {$error = $error.'1';}
+			if ((!isset($_POST['aname']))||(!isset($_POST['acountry']))) {$error = $error.'1';}
 
 			if ($error != '') {header("location: ".$base_url."upload.php?error=".$error."&t=3");}
+			else {
+				$cont = 'aname='.$_POST['aname'].';acountry='.$_POST['acountry'].';';
+				$chk = $conn->query("SELECT req FROM requests WHERE req='".$cont."'");
+				if ($chk->num_rows == 0) {
+					$conn->query("INSERT INTO requests(user,req) VALUES ('".$_SESSION['user']."','".$cont."')");
+				}
+				else {header("location: ".$base_url."upload.php?error=".$error."2&t=1");}
 			}
-			$conn->close();
 		}
+		$conn->close();
+	}
 
-	#if ($error == '') {header("location: ".$base_url."upload.php");}
+	if ($error == '') {header("location: ".$base_url."upload.php");}
 ?>

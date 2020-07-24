@@ -89,7 +89,7 @@
 					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
 					if ($check->num_rows > 0) {
 						$i = $check->fetch_assoc();
-						if ($i['auctor'] == '0') {$ys = true;}
+						if ($i['auctor'] != '-1') {$ys = true;}
 					}
 
 					if ($ys == true) {
@@ -379,7 +379,7 @@
 					$check = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
 					if ($check->num_rows > 0) {
 						$i = $check->fetch_assoc();
-						if ($i['auctor'] == '0') {$ys = true;}
+						if ($i['auctor'] != '-1') {$ys = true;}
 					}
 
 					if ($ys == true) {

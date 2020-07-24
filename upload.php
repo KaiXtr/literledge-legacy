@@ -52,7 +52,7 @@
 							<label for='op3'>
 							<?php
 								if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
-								if ($_COOKIE['lang'] == 'en') {echo "Auctores";}
+								if ($_COOKIE['lang'] == 'en') {echo "Auctors";}
 								if ($_COOKIE['lang'] == 'es') {echo "Autores";}
 							?>
 							</label>
@@ -135,6 +135,25 @@
 						<input id='auct0-hidden' type='hidden' name='pauctor' />
 					</div>
 					<div id='tab2' class='optabs' style='display: none;'>
+						<?php
+							$errl = "<span class='error'>";
+							if (strpos($error, '1') != false) {
+								if ($_COOKIE['lang'] == 'pt') {$errl .= "O autor deste livro não está registrado no site.";}
+								if ($_COOKIE['lang'] == 'en') {$errl .= "The author of this book is not registered on the site.";}
+								if ($_COOKIE['lang'] == 'es') {$errl .= "El autor de este libro no está registrado en el sitio.";}
+							}
+							if (strpos($error, '2') != false) {
+								if ($_COOKIE['lang'] == 'pt') {$errl .= "Preencha os campos vazios.";}
+								if ($_COOKIE['lang'] == 'en') {$errl .= "Fill in the empty fields.";}
+								if ($_COOKIE['lang'] == 'es') {$errl .= "Rellene los campos vacíos.";}
+							}
+							if (strpos($error, '3') != false) {
+								if ($_COOKIE['lang'] == 'pt') {$errl .= "Um pedido para este poema já foi registrado";}
+								if ($_COOKIE['lang'] == 'en') {$errl .= "A request for this poem has already been registered";}
+								if ($_COOKIE['lang'] == 'es') {$errl .= "Ya se ha registrado una solicitud para este poema.";}
+							}
+							echo $errl ."</span>";
+						?>
 						<span id='text'>
 						<?php
 							if ($_COOKIE['lang'] == 'pt') {echo "nome";}
@@ -193,6 +212,20 @@
 						<input id='auct1-hidden' type='hidden' name='bauctor' />
 					</div>
 					<div id='tab3' class='optabs' style='display: none;'>
+						<?php
+							$errl = "<span class='error'>";
+							if (strpos($error, '1') != false) {
+								if ($_COOKIE['lang'] == 'pt') {$errl .= "Preencha os campos vazios.";}
+								if ($_COOKIE['lang'] == 'en') {$errl .= "Fill in the empty fields.";}
+								if ($_COOKIE['lang'] == 'es') {$errl .= "Rellene los campos vacíos.";}
+							}
+							if (strpos($error, '2') != false) {
+								if ($_COOKIE['lang'] == 'pt') {$errl .= "Um pedido para este poema já foi registrado";}
+								if ($_COOKIE['lang'] == 'en') {$errl .= "A request for this poem has already been registered";}
+								if ($_COOKIE['lang'] == 'es') {$errl .= "Ya se ha registrado una solicitud para este poema.";}
+							}
+							echo $errl ."</span>";
+						?>
 						<span id='text'>
 						<?php
 							if ($_COOKIE['lang'] == 'pt') {echo "autor";}
@@ -200,24 +233,22 @@
 							if ($_COOKIE['lang'] == 'es') {echo "autor";}
 						?>
 						</span> <br />
-						<input type='text' class='textbox' name='aname' list='auctors' maxLength='30' onchange='search_suggest(this.value)' />
-						<datalist id='auctors'>
+						<input type='text' class='textbox' name='aname' maxLength='30' />
+						<br />
+						<span id='text'>
 						<?php
-							require 'account/mysql_connect.php';
-							if ($notcon == null) {
-								$find = $conn->query("SELECT name FROM users");
-								if ($find->num_rows > 0) {
-									while ($i = $find->fetch_assoc()) {
-											echo "<option value='".$i['name']."'>";
-										}
-									}
-								$conn->close();
-								}
-							if (isset($_GET['seasugg'])) {
-								mainInfo($_GET['seasugg']);
+							if ($_COOKIE['lang'] == 'pt') {echo "país";}
+							if ($_COOKIE['lang'] == 'en') {echo "country";}
+							if ($_COOKIE['lang'] == 'es') {echo "país";}
+						?>
+						</span> <br />
+						<select class='selectbox' name='acountry'>
+						<?php
+							foreach ($coulst as $x => $v) {
+								{echo "<option value=".$x.">" .$coulst[$x]. "</option>";}
 							}
 						?>
-						</datalist>
+						</select>
 					</div>
 					<?php
 						if (@$_GET['t']) {

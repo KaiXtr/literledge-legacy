@@ -242,8 +242,13 @@ function namescroll(rpf,rpt) {
 	document.styleSheets[0].addRule('@keyframes username','from {opacity: 0%; right: '+rpf+'px;} to {opacity: 100%; right: '+rpt+'px;}');
 }
 
-function previmg(event,target) {
-	var obj = document.getElementById(target);
+function previmg(event,target,c=0) {
+	console.log(event.target.name);
+	if (c == 0) {var obj = document.getElementById(target);}
+	if (c == 1) {var obj = document.getElementById('bprev'+target);}
+	if (c == 2) {var obj = document.getElementById('apprev'+target);}
+	if (c == 3) {var obj = document.getElementById('abprev'+target);}
+	console.log(obj);
 	obj.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -281,11 +286,12 @@ $(window).scroll(function(e) {
 		}
 })*/
 
+/*
 function search_suggest() {
 	var search = document.getElementById('srcbar').value;
 	var list = document.getElementById('srclst');
 	list.innerHTML = "<option>yes</option>";
-};
+};*/
 
 function datalist_value(n) {
 	var input = document.getElementById('auct'+n);
@@ -300,7 +306,7 @@ function datalist_value(n) {
 	}
 }
 
-function add_rowpom(txt, rowcount) {
+function add_rowpom(txt) {
 	var titles = [];
 	var nicks = [];
 	var names = [];
@@ -308,10 +314,10 @@ function add_rowpom(txt, rowcount) {
 	var countries = [];
 	var genres = [];
 	var litschools = [];
-	var rid = [];
+	var prid = [];
 
-	if (rowcount > 0) {
-		for (var x=0;x<rowcount;x++) {
+	if (rowpomcount > 0) {
+		for (var x=0;x<rowpomcount;x++) {
 			titles.push(document.getElementById('ptitl'+x).value);
 			nicks.push(document.getElementById('auct'+x).value);
 			names.push(document.getElementById('auct'+x+'-hidden').value);
@@ -319,15 +325,15 @@ function add_rowpom(txt, rowcount) {
 			countries.push(document.getElementById('pcountry'+x).value);
 			genres.push(document.getElementById('pgenre'+x).value);
 			litschools.push(document.getElementById('plitschool'+x).value);
-			rid.push(document.getElementById('rid'+x).value);
+			prid.push(document.getElementById('prid'+x).value);
 		}
 	}
 
 	var text = txt;
-	text = text.split('%lid%').join(rowcount);
+	text = text.split('%lid%').join(rowpomcount);
 	document.getElementById('wrpm').innerHTML += text;
 	
-	if (rowcount > 0) {
+	if (rowpomcount > 0) {
 		for (var x=0;x<titles.length;x++) {
 			document.getElementById('ptitl'+x).value = titles[x];
 			document.getElementById('auct'+x).value = nicks[x];
@@ -336,48 +342,172 @@ function add_rowpom(txt, rowcount) {
 			document.getElementById('pcountry'+x).value = countries[x];
 			document.getElementById('pgenre'+x).value = genres[x];
 			document.getElementById('plitschool'+x).value = litschools[x];
-			document.getElementById('rid'+x).value = rid[x];
+			document.getElementById('prid'+x).value = prid[x];
 		}
 	}
+	rowpomcount++;
 };
 
-function add_rowbok(txt, rowcount) {
-	var titles = [];
+function add_rowbok(txt) {
+	var covers = [];
+	var titlespt = [];
+	var titlesen = [];
+	var titleses = [];
 	var nicks = [];
 	var names = [];
-	var contents = [];
+	var years = [];
 	var countries = [];
 	var genres = [];
 	var litschools = [];
-	var rid = [];
+	var series = [];
+	var volumes = [];
+	var licenses = [];
+	var cdds = [];
+	var tags = [];
+	var sinopsis = [];
+	var binfo = [];
+	var brid = [];
 
-	if (rowcount > 0) {
-		for (var x=0;x<rowcount;x++) {
-			titles.push(document.getElementById('ptitl'+x).value);
+	if (rowbokcount > 0) {
+		for (var x=0;x<rowbokcount;x++) {
+			titlespt.push(document.getElementById('bnamept'+x).value);
+			titlesen.push(document.getElementById('bnameen'+x).value);
+			titleses.push(document.getElementById('bnamees'+x).value);
 			nicks.push(document.getElementById('bauct'+x).value);
 			names.push(document.getElementById('bauct'+x+'-hidden').value);
-			contents.push(document.getElementById('pcont'+x).value);
-			countries.push(document.getElementById('pcountry'+x).value);
-			genres.push(document.getElementById('pgenre'+x).value);
-			litschools.push(document.getElementById('plitschool'+x).value);
-			rid.push(document.getElementById('rid'+x).value);
+			years.push(document.getElementById('byear'+x).value);
+			countries.push(document.getElementById('bcountry'+x).value);
+			genres.push(document.getElementById('bgenre'+x).value);
+			litschools.push(document.getElementById('blitschool'+x).value);
+			series.push(document.getElementById('bseries'+x).value);
+			volumes.push(document.getElementById('bvolume'+x).value);
+			licenses.push(document.getElementById('blicense'+x).value);
+			cdds.push(document.getElementById('bcdd'+x).value);
+			tags.push(document.getElementById('btags'+x).value);
+			sinopsis.push(document.getElementById('bsinopsis'+x).value);
+			binfo.push(document.getElementById('binfo'+x).value);
+			brid.push(document.getElementById('brid'+x).value);
 		}
 	}
 
 	var text = txt;
-	text = text.split('%lid%').join(rowcount);
+	text = text.split('%lid%').join(rowbokcount);
 	document.getElementById('wrbk').innerHTML += text;
 	
-	if (rowcount > 0) {
-		for (var x=0;x<titles.length;x++) {
-			document.getElementById('ptitl'+x).value = titles[x];
+	if (rowbokcount > 0) {
+		for (var x=0;x<titlespt.length;x++) {
+			document.getElementById('bnamept'+x).value = titlespt[x];
+			document.getElementById('bnameen'+x).value = titlesen[x];
+			document.getElementById('bnamees'+x).value = titleses[x];
 			document.getElementById('bauct'+x).value = nicks[x];
 			document.getElementById('bauct'+x+'-hidden').value = names[x];
-			document.getElementById('pcont'+x).value = contents[x];
-			document.getElementById('pcountry'+x).value = countries[x];
-			document.getElementById('pgenre'+x).value = genres[x];
-			document.getElementById('plitschool'+x).value = litschools[x];
-			document.getElementById('rid'+x).value = rid[x];
+			document.getElementById('byear'+x).value = years[x];
+			document.getElementById('bcountry'+x).value = countries[x];
+			document.getElementById('bgenre'+x).value = genres[x];
+			document.getElementById('blitschool'+x).value = litschools[x];
+			document.getElementById('bseries'+x).value = series[x];
+			document.getElementById('bvolume'+x).value = volumes[x];
+			document.getElementById('blicense'+x).value = licenses[x];
+			document.getElementById('bcdd'+x).value = cdds[x];
+			document.getElementById('btags'+x).value = tags[x];
+			document.getElementById('bsinopsis'+x).value = sinopsis[x];
+			document.getElementById('binfo'+x).value = binfo[x];
+			document.getElementById('brid'+x).value = brid[x];
 		}
 	}
+	rowbokcount++;
 };
+
+function add_rowuse(txt) {
+	var namespt = [];
+	var namesen = [];
+	var nameses = [];
+	var nicks = [];
+	var births = [];
+	var deaths = [];
+	var country = [];
+	var hometown = [];
+	var gender = [];
+	var emails = [];
+	var academies = [];
+	var bonds = [];
+	var propic = [];
+	var banner = [];
+	var bio = [];
+	var arid = [];
+
+	if (rowusecount > 0) {
+		for (var x=0;x<rowusecount;x++) {
+			namespt.push(document.getElementById('anamept'+x).value);
+			namesen.push(document.getElementById('anameen'+x).value);
+			nameses.push(document.getElementById('anamees'+x).value);
+			nicks.push(document.getElementById('anick'+x).value);
+			births.push(document.getElementById('abirth'+x).value);
+			deaths.push(document.getElementById('adeath'+x).value);
+			country.push(document.getElementById('acountry'+x).value);
+			hometown.push(document.getElementById('ahometown'+x).value);
+			gender.push(document.getElementById('agender'+x).value);
+			emails.push(document.getElementById('aemail'+x).value);
+			academies.push(document.getElementById('aacademy'+x).value);
+			bonds.push(document.getElementById('abonds'+x).value);
+			propic.push(document.getElementById('apropic'+x).value);
+			banner.push(document.getElementById('abanner'+x).value);
+			bio.push(document.getElementById('abio'+x).value);
+			arid.push(document.getElementById('arid'+x).value);
+		}
+	}
+
+	var text = txt;
+	text = text.split('%lid%').join(rowusecount);
+	document.getElementById('wrat').innerHTML += text;
+	
+	if (rowusecount > 0) {
+		for (var x=0;x<namespt.length;x++) {
+			document.getElementById('anamept'+x).value = namespt[x];
+			document.getElementById('anameen'+x).value = namesen[x];
+			document.getElementById('anamees'+x).value = nameses[x];
+			document.getElementById('anick'+x).value = nicks[x];
+			document.getElementById('abirth'+x).value = births[x];
+			document.getElementById('adeath'+x).value = deaths[x];
+			document.getElementById('acountry'+x).value = country[x];
+			document.getElementById('ahometown'+x).value = hometown[x];
+			document.getElementById('agender'+x).value = gender[x];
+			document.getElementById('aemail'+x).value = emails[x];
+			document.getElementById('aacademy'+x).value = academies[x];
+			document.getElementById('abonds'+x).value = bonds[x];
+			document.getElementById('apropic'+x).value = propic[x];
+			document.getElementById('abanner'+x).value = banner[x];
+			document.getElementById('abio'+x).value = bio[x];
+			document.getElementById('arid'+x).value = arid[x];
+		}
+	}
+	rowusecount++;
+};
+
+function drag_image(event, tid) {
+	var dot, eventDoc, doc, body, pageX, pageY;
+
+	event = event || window.event;
+	if (event.pageX == null && event.clientX != null) {
+		eventDoc = (event.target && event.target.ownerDocument) || document;
+		doc = eventDoc.documentElement;
+		body = eventDoc.body;
+
+		event.pageX = event.clientX +
+			(doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+			(doc && doc.clientLeft || body && body.clientLeft || 0);
+		event.pageY = event.clientY +
+			(doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+			(doc && doc.clientTop  || body && body.clientTop  || 0 );
+	}
+
+	mousePos = {
+		x: event.pageX,
+		y: event.pageY
+	};
+
+	var oldx = document.getElementById('bprev'+tid).style.left;
+	var oldy = document.getElementById('bprev'+tid).style.top;
+	document.getElementById('bprev'+tid).style.left = event.pageX+'px';
+	document.getElementById('bprev'+tid).style.top = event.pageY+'px';
+}
