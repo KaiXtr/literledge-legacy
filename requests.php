@@ -208,7 +208,7 @@
 								<img id='bprev%lid%' style='width: 333px; height: 500px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								</div>
 								<input id='bcover%lid%' accept='image/jpeg' name='bcover[]' type='file' onchange='previmg(event,%lid%,1)' /></th>
-								<th style='width: 100px'>
+								<th>
 									<input id='bnamept%lid%' type='text' class='textbox' name='bnamept[]' value='%bname%' placeholder='PT name*'/>
 									<input id='bnameen%lid%' type='text' class='textbox' name='bnameen[]' value='%bname%' placeholder='EN name*'/>
 									<input id='bnamees%lid%' type='text' class='textbox' name='bnamees[]' value='%bname%' placeholder='ES name*'/>
@@ -218,7 +218,7 @@
 										".$optlst."
 									</datalist>
 									<input id='bauct%lid%-hidden' type='hidden' name='bauctor[]' value='%bnick%' />
-									<input id='byear%lid%' type='text' class='textbox' name='byear[]' value='%byear%' placeholder='year*' style='width: 35px' />
+									<input id='byear%lid%' type='text' class='textbox' name='byear[]' value='%byear%' placeholder='year*' style='width: 35px' /><br />
 									<select class='selectbox' id='bcountry%lid%' name='bcountry[]' style='width: 100px;margin-top: 5px'>
 										".$optcou."
 									</select>
@@ -229,7 +229,7 @@
 										".$optlts."
 									</select>
 									<input id='bseries%lid%' type='text' class='textbox' name='bseries[]' style='width: 210px;margin-right: 0px' placeholder='series' />
-									<input id='bvolume%lid%' type='text' class='textbox' name='bvolume[]' style='width: 50px' value='0' placeholder='volume*' />
+									<input id='bvolume%lid%' type='text' class='textbox' name='bvolume[]' style='width: 50px' value='0' placeholder='volume*' /><br />
 									<select class='selectbox' id='blicense%lid%' name='blicense[]'>
 										".$optlic."
 									</select>
@@ -237,13 +237,25 @@
 									<input id='btags%lid%' type='text' class='textbox' name='btags[]' placeholder='tags*' /> <br />
 									<input id='brid%lid%' type='hidden' name='brid[]' value='%brid%' />
 								</th>
-								<th><textarea id='bsinopsis%lid%' class='textbox long' name='bsinopsis[]' style='width: 200px;'
-								placeholder='sinopsis(plain text)*' spellcheck='false' maxLength='200'></textarea></th>
-								<th><textarea id='binfo%lid%' class='textbox long' name='binfo[]' style='width: 400px;' placeholder='book info(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								<th>
+								<textarea id='bsinopsispt%lid%' class='textbox long' name='bsinopsispt[]' style='width: 400px;height: 100px;margin-bottom: 10px'
+								placeholder='sinopsis PT(plain text)*' spellcheck='false' maxLength='200'></textarea><br />
+								<textarea id='bsinopsisen%lid%' class='textbox long' name='bsinopsisen[]' style='width: 400px;;height: 100px;margin-bottom: 10px'
+								placeholder='sinopsis EN(plain text)*' spellcheck='false' maxLength='200'></textarea><br />
+								<textarea id='bsinopsises%lid%' class='textbox long' name='bsinopsises[]' style='width: 400px;;height: 100px;margin-bottom: 10px'
+								placeholder='sinopsis ES(plain text)*' spellcheck='false' maxLength='200'></textarea>
 								</th>
 								<th><a href='account/delete_request.php?d=%brid%'><input type='button' class='btpress'
 									style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
 									background-repeat: no-repeat; background-position: center;' /></a></th>
+								</tr>
+								<tr>
+								<th colspan='2'><textarea id='binfopt%lid%' class='textbox long' name='binfopt[]' style='width: 500px;' placeholder='book info PT(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								</th>
+								<th><textarea id='binfoen%lid%' class='textbox long' name='binfoen[]' style='width: 500px;' placeholder='book info EN(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								</th>
+								<th colspan='2'><textarea id='binfoes%lid%' class='textbox long' name='binfoes[]' style='width: 500px;' placeholder='book info ES(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								</th>
 								</tr>";
 						$rowuse = "<tr>
 								<th style='width: 100px;'><input id='pblsh3%lid%' type='checkbox' name='pblsh3[]' /></th>
@@ -273,7 +285,11 @@
 									<input id='abonds%lid%' type='text' class='textbox' name='abonds[]' placeholder='bonds (nick[X];)' /><br />
 									<input id='arid%lid%' type='hidden' name='arid[]' value='%arid%' />
 								</th>
-								<th><textarea id='abio%lid%' class='textbox long' name='abio[]' style='width: 800px;' placeholder='biography (html)*'></textarea></th>
+								<th>
+								<textarea id='abiopt%lid%' class='textbox long' name='abiopt[]' style='width: 800px;height: 150px;margin-bottom: 10px' placeholder='bio PT(html)*'></textarea>
+								<textarea id='abioen%lid%' class='textbox long' name='abioen[]' style='width: 800px;height: 150px;margin-bottom: 10px' placeholder='bio EN(html)*'></textarea>
+								<textarea id='abioes%lid%' class='textbox long' name='abioes[]' style='width: 800px;height: 150px;margin-bottom: 10px' placeholder='bio ES(html)*'></textarea>
+								</th>
 								<th><a href='account/delete_request.php?d=%arid%'><input type='button' class='btpress'
 									style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
 									background-repeat: no-repeat; background-position: center;' /></a></th>

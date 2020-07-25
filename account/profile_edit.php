@@ -4,16 +4,25 @@
 	if ($notcon == null) {
 		$error = '';
 		if ($_POST['edit'] == 'account') {
+			function resizeImage($file,$name,$path,$newW,$newH) {
+				$imgprp = getimagesize($file);
+				$typ = $imgprp[2];
+				$oldW = $imgprp[0];
+				$oldH = $imgprp[1];
+				if ($typ == IMAGETYPE_JPEG) {
+					$imgsrc = imagecreatefromjpeg($file);
+					$imgrez = imagecreatetruecolor($newW,$newH);
+					imagecopyresampled($imgrez,$imgsrc,0,0,0,0,$newW,$newH,$oldW,$oldH);
+					return imagejpeg($imgrez,$path.'.jpg');
+				}
+				else {return null;}
+			}
 			if ((isset($_FILES['propic']['name']))&&($_FILES['propic']['name'] != '')) {
-				$img = imagecreatefromjpeg($_FILES['propic']['tmp_name']);
-				$new = imagecrop($img, ['x'=>0,'y'=>0,'width'=>250,'height'=>230]);
-				rename($new, "../media/images/profilepics/" .$_SESSION['user'].".jpg");
+				resize_image($_FILES['propic']['tmp_name'],"../media/images/profilepics/".$_SESSION['user'],250,333);
 				}
 
 			if ((isset($_FILES['banner']['name']))&&($_FILES['banner']['name'] != '')) {
-				$img = imagecreatefromjpeg($_FILES['banner']['tmp_name']);
-				$new = imagecrop($img, ['x'=>0,'y'=>0,'width'=>250,'height'=>230]);
-				rename($new, "../media/images/banners/" .$_SESSION['user'].".jpg");
+				resize_image($_FILES['banner']['tmp_name'],"../media/images/banners/".$_SESSION['user'],1920,500);
 				}
 
 			if ((isset($_POST['name']))&&($_POST['name'] != ''))

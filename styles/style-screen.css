@@ -1278,6 +1278,14 @@ hr {
 	border-collapse: collapse;
 }
 
+.requestable .selectbox {
+	float: none;
+}
+
+.requestable .textbox.long {
+	float: none;
+}
+
 .requestable th {
 	padding: 10px;
 	transition-duration: 0;
@@ -1286,7 +1294,6 @@ hr {
 .requestable tr {
 	transition-duration: 0;
 	cursor: default;
-}
 
 div::-webkit-scrollbar {
 	width: 8px;

@@ -2,6 +2,35 @@
 	require 'mysql_connect.php';
 	if (!isset($_SESSION['user'])) {header("location: ".$base_url."login.php");}
 	if ($notcon == null) {
+		function resizeImage($file,$name,$path,$newW,$newH) {
+			$imgprp = getimagesize($file);
+			$typ = $imgprp[2];
+			$oldW = $imgprp[0];
+			$oldH = $imgprp[1];
+			if ($typ == IMAGETYPE_JPEG) {
+				$imgsrc = imagecreatefromjpeg($file);
+				$imgrez = imagecreatetruecolor($newW,$newH);
+				imagecopyresampled($imgrez,$imgsrc,0,0,0,0,$newW,$newH,$oldW,$oldH);
+				return imagejpeg($imgrez,$path.'.jpg');
+			}
+			else {return null;}
+		}
+		function generate_id($path) {
+			$pid = '000000';
+			$ltrs = array('0','1','2','3','4','5','6','7','8','9',
+				'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+			$inx = array(0,0,0,0,0,0);
+			while (file_exists($path.$pid.'.php') == true) {
+				if ($inx[5] < sizeof($ltrs)) {$inx[5]++;}
+				if ($inx[5] == sizeof($ltrs)) {$inx[4]++;$inx[5] = 0;}
+				if ($inx[4] == sizeof($ltrs)) {$inx[3]++;$inx[4] = 0;}
+				if ($inx[3] == sizeof($ltrs)) {$inx[2]++;$inx[3] = 0;}
+				if ($inx[2] == sizeof($ltrs)) {$inx[1]++;$inx[2] = 0;}
+				if ($inx[1] == sizeof($ltrs)) {$inx[0]++;$inx[1] = 0;}
+				$pid = $ltrs[$inx[0]].$ltrs[$inx[1]].$ltrs[$inx[2]].$ltrs[$inx[3]].$ltrs[$inx[4]].$ltrs[$inx[5]];
+			}
+			return $pid;
+		}
 		$error = '';
 		#POEM REQUEST
 		if ($_POST['request'] == 'poem') {
@@ -25,19 +54,8 @@
 						if ((@$_POST['prid'][$x])&&($_POST['prid'][$x] != '')) {
 							$conn->query("DELETE FROM requests WHERE rid='".$_POST['prid'][$x]."'");
 						}
-						$pid = '000000';
-						$ltrs = array('0','1','2','3','4','5','6','7','8','9',
-							'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
-						$inx = array(0,0,0,0,0,0);
-						while (file_exists('../poems/'.$_POST['pauctor'][$x].'-'.$pid.'.php') == true) {
-							if ($inx[5] < sizeof($ltrs)) {$inx[5]++;}
-							if ($inx[5] == sizeof($ltrs)) {$inx[4]++;$inx[5] = 0;}
-							if ($inx[4] == sizeof($ltrs)) {$inx[3]++;$inx[4] = 0;}
-							if ($inx[3] == sizeof($ltrs)) {$inx[2]++;$inx[3] = 0;}
-							if ($inx[2] == sizeof($ltrs)) {$inx[1]++;$inx[2] = 0;}
-							if ($inx[1] == sizeof($ltrs)) {$inx[0]++;$inx[1] = 0;}
-							$pid = $ltrs[$inx[0]].$ltrs[$inx[1]].$ltrs[$inx[2]].$ltrs[$inx[3]].$ltrs[$inx[4]].$ltrs[$inx[5]];
-						}
+
+						$pid = generate_id('../poems/'.$_POST['pauctor'][$x].'-');
 						if ($_POST['plitschool'][$x] == 'null') {$plitschool = $_POST['plitschool'][$x];}
 						else {$plitschool = "'".$_POST['plitschool'][$x]."'";}
 
@@ -74,54 +92,40 @@
 						if ((@$_POST['brid'][$x])&&($_POST['brid'][$x] != '')) {
 							$conn->query("DELETE FROM requests WHERE rid='".$_POST['brid'][$x]."'");
 						}
-						$pid = '000000';
-						$ltrs = array('0','1','2','3','4','5','6','7','8','9',
-							'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
-						$inx = array(0,0,0,0,0,0);
-						while (file_exists('../books/'.$pid.'.php') == true) {
-							if ($inx[5] < sizeof($ltrs)) {$inx[5]++;}
-							if ($inx[5] == sizeof($ltrs)) {$inx[4]++;$inx[5] = 0;}
-							if ($inx[4] == sizeof($ltrs)) {$inx[3]++;$inx[4] = 0;}
-							if ($inx[3] == sizeof($ltrs)) {$inx[2]++;$inx[3] = 0;}
-							if ($inx[2] == sizeof($ltrs)) {$inx[1]++;$inx[2] = 0;}
-							if ($inx[1] == sizeof($ltrs)) {$inx[0]++;$inx[1] = 0;}
-							$pid = $ltrs[$inx[0]].$ltrs[$inx[1]].$ltrs[$inx[2]].$ltrs[$inx[3]].$ltrs[$inx[4]].$ltrs[$inx[5]];
-						}
+
+						$pid = generate_id('../books/');
 						if ($_POST['blitschool'][$x] == 'null') {$blitschool = 'null';}
 						else {$blitschool = "'".$_POST['blitschool'][$x]."'";}
 						if ($_POST['bseries'][$x] == '') {$bseries = 'null';}
 						else {$bseries = "'".$_POST['bseries'][$x]."'";}
 						$btags = str_replace(' ', '#', $_POST['btags'][$x]);
 
-						$musql = "'".$pid."','".$_POST['bauctor'][$x]."','".$_POST['byear'][$x]."','".$_POST['bgenre'][$x]."',
+						$conn->query("INSERT INTO books VALUES ('".$pid."','".$_POST['bauctor'][$x]."','".$_POST['byear'][$x]."','".$_POST['bgenre'][$x]."',
 							'".$_POST['bcountry'][$x]."',".$blitschool.",".$bseries.",'".$_POST['bvolume'][$x]."','".$_POST['blicense'][$x]."',
-							'".$_POST['bcdd'][$x]."','".$btags."','0','0','0'";
-						echo $musql;
-						$conn->query("INSERT INTO books VALUES (".$musql.")");
+							'".$_POST['bcdd'][$x]."','".$btags."','0','0','0')");
 						$conn->query("INSERT INTO translations (fkey,pt,en,es) VALUES ('".$pid."',
 							'".$_POST['bnamept'][$x]."','".$_POST['bnameen'][$x]."','".$_POST['bnamees'][$x]."')");
 
-						move_uploaded_file($_FILES['bcover']['tmp_name'][$x],"../media/images/covers/".$pid.".jpg");
-						list($imgW,$imgH) = getimagesize("../media/images/covers/".$pid.".jpg");
-						$img = imagecreatefromjpeg("../media/images/covers/".$pid.".jpg");
-						$new = imagecreatetruecolor(333, 500);
-						imagecopyresized($new, $img, 0, 0, 0, 0, 333, 500, $imgW, $imgH);
-						#rename($new, "../media/images/covers/".$pid.".jpg");
+						resize_image($_FILES['bcover']['tmp_name'][$x],"../media/images/covers/".$pid,333,500);
 
-						$binfo = str_replace('"', '\"', $_POST['binfo'][$x]);
+						$binfopt = str_replace('"', '\"', $_POST['binfopt'][$x]);
+						$binfoen = str_replace('"', '\"', $_POST['binfoen'][$x]);
+						$binfoes = str_replace('"', '\"', $_POST['binfoes'][$x]);
 						$htmc = fopen('../books/'.$pid.'.php', 'w') or die('Unable to open file!');
 						$cont = file_get_contents('../books/new_book.php');
 						$cont = str_replace('%bid%', $pid, $cont);
 						$cont = str_replace('%bauctor%', $_POST['bauctor'][$x], $cont);
-						$cont = str_replace('%binfopt%', $binfo, $cont);
-						$cont = str_replace('%binfoen%', $binfo, $cont);
-						$cont = str_replace('%binfoes%', $binfo, $cont);
+						$cont = str_replace('%binfopt%', $binfopt, $cont);
+						$cont = str_replace('%binfoen%', $binfoen, $cont);
+						$cont = str_replace('%binfoes%', $binfoes, $cont);
 						fwrite($htmc, $cont);
 						fclose($htmc);
 
-						$bsinopsis = str_replace(PHP_EOL, ' ', $_POST['bsinopsis'][$x]);
+						$bsinopsispt = str_replace(PHP_EOL, ' ', $_POST['bsinopsispt'][$x]);
+						$bsinopsisen = str_replace(PHP_EOL, ' ', $_POST['bsinopsisen'][$x]);
+						$bsinopsises = str_replace(PHP_EOL, ' ', $_POST['bsinopsises'][$x]);
 						$htmc = fopen('../sinopsis/'.$pid.'.php', 'w') or die('Unable to open file!');
-						$cont = "<?php".PHP_EOL.'if ($_COOKIE["lang"] == "pt") {$sin = "'.$bsinopsis.'";}'.PHP_EOL.'if ($_COOKIE["lang"] == "en") {$sin = "'.$bsinopsis.'";}'.PHP_EOL.'if ($_COOKIE["lang"] == "es") {$sin = "'.$bsinopsis.'";}'.PHP_EOL.'?>';
+						$cont = "<?php".PHP_EOL.'if ($_COOKIE["lang"] == "pt") {$sin = "'.$bsinopsispt.'";}'.PHP_EOL.'if ($_COOKIE["lang"] == "en") {$sin = "'.$bsinopsisen.'";}'.PHP_EOL.'if ($_COOKIE["lang"] == "es") {$sin = "'.$bsinopsises.'";}'.PHP_EOL.'?>';
 						fwrite($htmc, $cont);
 						fclose($htmc);
 					}
@@ -160,27 +164,18 @@
 							'".$_POST['abirth'][$x]."',".$adeath.",'".$_POST['acountry'][$x]."','".$_POST['ahometown'][$x]."','".$_POST['agender'][$x]."',
 							'1',".$aacademy.",'".$_POST['aemail'][$x]."','Gu@n@b@r@',null,".$abonds.")");
 
-						move_uploaded_file($_FILES['apropic']['tmp_name'][$x],"../media/images/profilepics/".$_POST['anick'][$x].".jpg");
-						list($imgW,$imgH) = getimagesize("../media/images/profilepics/".$_POST['anick'][$x].".jpg");
-						$img = imagecreatefromjpeg("../media/images/profilepics/".$_POST['anick'][$x].".jpg");
-						$new = imagecreatetruecolor(250, 333);
-						imagecopyresized($new, $img, 0, 0, 0, 0, 250, 333, $imgW, $imgH);
-						#rename($new, "../media/images/covers/".$pid.".jpg");
+						resize_image($_FILES['apropic']['tmp_name'][$x],"../media/images/profilepics/".$_POST['anick'][$x],250,333);
+						resize_image($_FILES['abanner']['tmp_name'][$x],"../media/images/banners/".$_POST['anick'][$x],1920,500);
 
-						move_uploaded_file($_FILES['abanner']['tmp_name'][$x],"../media/images/banners/".$_POST['anick'][$x].".jpg");
-						list($imgW,$imgH) = getimagesize("../media/images/banners/".$_POST['anick'][$x].".jpg");
-						$img = imagecreatefromjpeg("../media/images/banners/".$_POST['anick'][$x].".jpg");
-						$new = imagecreatetruecolor(1920, 500);
-						imagecopyresized($new, $img, 0, 0, 0, 0, 1920, 500, $imgW, $imgH);
-						#rename($new, "../media/images/banners/".$_POST['anick'][$x].".jpg");
-
-						$abio = str_replace('"', '\"', $_POST['abio'][$x]);
+						$abiopt = str_replace('"', '\"', $_POST['abiopt'][$x]);
+						$abioen = str_replace('"', '\"', $_POST['abioen'][$x]);
+						$abioes = str_replace('"', '\"', $_POST['abioes'][$x]);
 						$htmc = fopen('../users/'.$_POST['anick'][$x].'.php', 'w') or die('Unable to open file!');
 						$cont = file_get_contents('../users/new_auctor.php');
 						$cont = str_replace('%user%', $_POST['anick'][$x], $cont);
-						$cont = str_replace('%abiopt%', $abio, $cont);
-						$cont = str_replace('%abioen%', $abio, $cont);
-						$cont = str_replace('%abioes%', $abio, $cont);
+						$cont = str_replace('%abiopt%', $abiopt, $cont);
+						$cont = str_replace('%abioen%', $abioen, $cont);
+						$cont = str_replace('%abioes%', $abioes, $cont);
 						fwrite($htmc, $cont);
 						fclose($htmc);
 					}
@@ -189,5 +184,5 @@
 		}
 		$conn->close();
 	}
-	#if ($error == '') {header("location: ".$base_url."requests.php");}
+	if ($error == '') {header("location: ".$base_url."requests.php");}
 ?>

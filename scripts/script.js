@@ -378,8 +378,12 @@ function add_rowbok(txt) {
 	var licenses = [];
 	var cdds = [];
 	var tags = [];
-	var sinopsis = [];
-	var binfo = [];
+	var sinopsispt = [];
+	var sinopsisen = [];
+	var sinopsises = [];
+	var binfopt = [];
+	var binfoen = [];
+	var binfoes = [];
 	var brid = [];
 	var pblsh = [];
 
@@ -399,8 +403,12 @@ function add_rowbok(txt) {
 			licenses.push(document.getElementById('blicense'+x).value);
 			cdds.push(document.getElementById('bcdd'+x).value);
 			tags.push(document.getElementById('btags'+x).value);
-			sinopsis.push(document.getElementById('bsinopsis'+x).value);
-			binfo.push(document.getElementById('binfo'+x).value);
+			sinopsispt.push(document.getElementById('bsinopsispt'+x).value);
+			sinopsisen.push(document.getElementById('bsinopsisen'+x).value);
+			sinopsises.push(document.getElementById('bsinopsises'+x).value);
+			binfopt.push(document.getElementById('binfopt'+x).value);
+			binfoen.push(document.getElementById('binfoen'+x).value);
+			binfoes.push(document.getElementById('binfoes'+x).value);
 			brid.push(document.getElementById('brid'+x).value);
 			pblsh.push(document.getElementById('pblsh2'+x).value);
 		}
@@ -426,8 +434,12 @@ function add_rowbok(txt) {
 			document.getElementById('blicense'+x).value = licenses[x];
 			document.getElementById('bcdd'+x).value = cdds[x];
 			document.getElementById('btags'+x).value = tags[x];
-			document.getElementById('bsinopsis'+x).value = sinopsis[x];
-			document.getElementById('binfo'+x).value = binfo[x];
+			document.getElementById('bsinopsispt'+x).value = sinopsispt[x];
+			document.getElementById('bsinopsisen'+x).value = sinopsisen[x];
+			document.getElementById('bsinopsises'+x).value = sinopsises[x];
+			document.getElementById('binfopt'+x).value = binfopt[x];
+			document.getElementById('binfoen'+x).value = binfoen[x];
+			document.getElementById('binfoes'+x).value = binfoes[x];
 			document.getElementById('brid'+x).value = brid[x];
 			document.getElementById('pblsh2'+x).value = pblsh[x];
 		}
@@ -450,7 +462,9 @@ function add_rowuse(txt) {
 	var bonds = [];
 	var propic = [];
 	var banner = [];
-	var bio = [];
+	var biopt = [];
+	var bioen = [];
+	var bioes = [];
 	var arid = [];
 	var pblsh = [];
 
@@ -470,7 +484,9 @@ function add_rowuse(txt) {
 			bonds.push(document.getElementById('abonds'+x).value);
 			propic.push(document.getElementById('apropic'+x).value);
 			banner.push(document.getElementById('abanner'+x).value);
-			bio.push(document.getElementById('abio'+x).value);
+			biopt.push(document.getElementById('abiopt'+x).value);
+			bioen.push(document.getElementById('abioen'+x).value);
+			bioes.push(document.getElementById('abioes'+x).value);
 			arid.push(document.getElementById('arid'+x).value);
 			pblsh.push(document.getElementById('pblsh3'+x).value);
 		}
@@ -496,7 +512,9 @@ function add_rowuse(txt) {
 			document.getElementById('abonds'+x).value = bonds[x];
 			document.getElementById('apropic'+x).value = propic[x];
 			document.getElementById('abanner'+x).value = banner[x];
-			document.getElementById('abio'+x).value = bio[x];
+			document.getElementById('abiopt'+x).value = biopt[x];
+			document.getElementById('abioen'+x).value = bioen[x];
+			document.getElementById('abioes'+x).value = bioes[x];
 			document.getElementById('arid'+x).value = arid[x];
 			document.getElementById('pblsh3'+x).value = pblsh[x];
 		}

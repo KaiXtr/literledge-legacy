@@ -1295,6 +1295,15 @@ hr {
 	margin-bottom: 10px;
 	width: 1600px;
 	border-collapse: collapse;
+	column-count: 1;
+}
+
+.requestable .selectbox {
+	float: none;
+}
+
+.requestable .textbox.long {
+	float: none;
 }
 
 .requestable th {
