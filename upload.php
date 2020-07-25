@@ -117,7 +117,7 @@
 							if ($_COOKIE['lang'] == 'es') {echo "autor";}
 						?>
 						</span> <br />
-						<input id='auct0' class='textbox' list='dtlst0' maxLength='30' oninput='datalist_value(0)' />
+						<input id='auct0' class='textbox' list='dtlst0' maxLength='30' oninput='datalist_value(0,1)' />
 						<datalist id='dtlst0'>
 						<?php
 							require 'account/mysql_connect.php';
@@ -137,17 +137,17 @@
 					<div id='tab2' class='optabs' style='display: none;'>
 						<?php
 							$errl = "<span class='error'>";
-							if (strpos($error, '1') != false) {
+							if (strpos($error, '5') != false) {
 								if ($_COOKIE['lang'] == 'pt') {$errl .= "O autor deste livro não está registrado no site.";}
 								if ($_COOKIE['lang'] == 'en') {$errl .= "The author of this book is not registered on the site.";}
 								if ($_COOKIE['lang'] == 'es') {$errl .= "El autor de este libro no está registrado en el sitio.";}
 							}
-							if (strpos($error, '2') != false) {
+							if (strpos($error, '6') != false) {
 								if ($_COOKIE['lang'] == 'pt') {$errl .= "Preencha os campos vazios.";}
 								if ($_COOKIE['lang'] == 'en') {$errl .= "Fill in the empty fields.";}
 								if ($_COOKIE['lang'] == 'es') {$errl .= "Rellene los campos vacíos.";}
 							}
-							if (strpos($error, '3') != false) {
+							if (strpos($error, '7') != false) {
 								if ($_COOKIE['lang'] == 'pt') {$errl .= "Um pedido para este poema já foi registrado";}
 								if ($_COOKIE['lang'] == 'en') {$errl .= "A request for this poem has already been registered";}
 								if ($_COOKIE['lang'] == 'es') {$errl .= "Ya se ha registrado una solicitud para este poema.";}
@@ -194,7 +194,7 @@
 							if ($_COOKIE['lang'] == 'es') {echo "autor";}
 						?>
 						</span> <br />
-						<input id='auct1' class='textbox' list='dtlst1' maxLength='30' oninput='datalist_value(1)' />
+						<input id='auct1' class='textbox' list='dtlst1' maxLength='30' oninput='datalist_value(1,1)' />
 						<datalist id='dtlst1'>
 						<?php
 							require 'account/mysql_connect.php';
@@ -214,12 +214,12 @@
 					<div id='tab3' class='optabs' style='display: none;'>
 						<?php
 							$errl = "<span class='error'>";
-							if (strpos($error, '1') != false) {
+							if (strpos($error, '8') != false) {
 								if ($_COOKIE['lang'] == 'pt') {$errl .= "Preencha os campos vazios.";}
 								if ($_COOKIE['lang'] == 'en') {$errl .= "Fill in the empty fields.";}
 								if ($_COOKIE['lang'] == 'es') {$errl .= "Rellene los campos vacíos.";}
 							}
-							if (strpos($error, '2') != false) {
+							if (strpos($error, '9') != false) {
 								if ($_COOKIE['lang'] == 'pt') {$errl .= "Um pedido para este poema já foi registrado";}
 								if ($_COOKIE['lang'] == 'en') {$errl .= "A request for this poem has already been registered";}
 								if ($_COOKIE['lang'] == 'es') {$errl .= "Ya se ha registrado una solicitud para este poema.";}
@@ -254,7 +254,7 @@
 						if (@$_GET['t']) {
 							if ($_GET['t'] == '1') {echo "<script type='text/javascript'> set_tab('tab1','tab2','tab3'); </script>";}
 							if ($_GET['t'] == '2') {echo "<script type='text/javascript'> set_tab('tab2','tab1','tab3'); </script>";}
-							if ($_GET['t'] == '3') {echo "<script type='text/javascript'> set_tab('tab3','tab1','tab3'); </script>";}
+							if ($_GET['t'] == '3') {echo "<script type='text/javascript'> set_tab('tab3','tab1','tab2'); </script>";}
 						}
 					?>
 				</form>

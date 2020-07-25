@@ -23,7 +23,6 @@
 						include $fil[$x];
 						$txt = str_replace('<br />', '', $shwpm);
 						similar_text($txt, $_POST['pcontent'], $prc);
-						echo $shwpm.'<br /><hr><br /> X <br /><hr><br />'.$_POST['pcontent'].' = '.$prc;
 						if (intval($prc) >= 80) {$can = false;break;}
 					}
 					if ($can == true)
@@ -37,9 +36,9 @@
 		#BOOK REQUEST
 		else if ($_POST['request'] == 'book') {
 			$find = $conn->query("SELECT nick FROM users WHERE nick='".$_POST['bauctor']."'");
-			if ($find->num_rows == 0) {$error = $error.'1';}
-			if (($_POST['bname'] == '')||($_POST['byear'] == '')||($_POST['bcountry'] == '')||($_POST['bauctor'] == '')) {$error = $error.'2';}
-			if ((!isset($_POST['bname']))||(!isset($_POST['byear']))||(!isset($_POST['bcountry']))||(!isset($_POST['bauctor']))) {$error = $error.'2';}
+			if ($find->num_rows == 0) {$error = $error.'5';}
+			if (($_POST['bname'] == '')||($_POST['byear'] == '')||($_POST['bcountry'] == '')||($_POST['bauctor'] == '')) {$error = $error.'6';}
+			if ((!isset($_POST['bname']))||(!isset($_POST['byear']))||(!isset($_POST['bcountry']))||(!isset($_POST['bauctor']))) {$error = $error.'6';}
 
 			if ($error != '') {header("location: ".$base_url."upload.php?error=".$error."&t=2");}
 			else {
@@ -50,14 +49,14 @@
 				if ($chk1->num_rows == 0) {
 					$conn->query("INSERT INTO requests(user,req) VALUES ('".$_SESSION['user']."','".$cont."')");
 				}
-				else {header("location: ".$base_url."upload.php?error=".$error."3&t=1");}
+				else {header("location: ".$base_url."upload.php?error=".$error."7&t=1");}
 			}
 		}
 
 		#AUCTOR REQUEST
 		else if ($_POST['request'] == 'auctor') {
-			if (($_POST['aname'] == '')||($_POST['acountry'] == '')) {$error = $error.'1';}
-			if ((!isset($_POST['aname']))||(!isset($_POST['acountry']))) {$error = $error.'1';}
+			if (($_POST['aname'] == '')||($_POST['acountry'] == '')) {$error = $error.'8';}
+			if ((!isset($_POST['aname']))||(!isset($_POST['acountry']))) {$error = $error.'8';}
 
 			if ($error != '') {header("location: ".$base_url."upload.php?error=".$error."&t=3");}
 			else {
@@ -66,7 +65,7 @@
 				if ($chk->num_rows == 0) {
 					$conn->query("INSERT INTO requests(user,req) VALUES ('".$_SESSION['user']."','".$cont."')");
 				}
-				else {header("location: ".$base_url."upload.php?error=".$error."2&t=1");}
+				else {header("location: ".$base_url."upload.php?error=".$error."9&t=1");}
 			}
 		}
 		$conn->close();

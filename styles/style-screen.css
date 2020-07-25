@@ -132,6 +132,10 @@ hr {
 	float: right;
 }
 
+#srcbar::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
 .btpress {
 	font-weight: bold;
 	margin: 10px;
@@ -223,10 +227,10 @@ hr {
 	white-space: nowrap;
 	line-height: 20px;
 	position: fixed;
-	padding-top: 90px;
-	padding-left: 40px;
-	width: 300px;
-	height: 100%;
+	margin-top: 60px;
+	padding-top: 30px;
+	padding-bottom: 200px;
+	height: 91%;
 	z-index: 8;
 	overflow-x: scroll;
 }
@@ -823,18 +827,10 @@ hr {
 }
 
 #bookinfo #info #sinopsis {
+	font-size: 28px;
 	margin: 0px;
 	padding-top: 30px;
-	padding-left: 30px;
 	width: 300px;
-}
-
-#bookinfo #info #sinopsis h2 {
-	display: none;
-}
-
-#bookinfo #info #sinopsis h3 {
-	display: none;
 }
 
 #bookinfo #status {
@@ -1268,15 +1264,6 @@ hr {
 	width: 100%;
 }
 
-div::-webkit-scrollbar {
-  width: 8px;
-}
-
-div::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  transition-duration: 4s;
-}
-
 .login.long {
 	width: 100%;
 	margin-top: 60px;
@@ -1299,4 +1286,13 @@ div::-webkit-scrollbar-thumb {
 .requestable tr {
 	transition-duration: 0;
 	cursor: default;
+}
+
+div::-webkit-scrollbar {
+	width: 8px;
+}
+
+div::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	transition-duration: 4s;
 }

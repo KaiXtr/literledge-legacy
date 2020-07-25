@@ -13,17 +13,18 @@
 			<?php
 				$srcsgs = '';
 				function stripacc($s) {
-					$nw = strtolower($s);
-					$nw = str_replace('Á','a', $nw);
+					$nw = str_replace('Á','a', $s);
 					$nw = str_replace('Â','a', $nw);
 					$nw = str_replace('Ã','a', $nw);
 					$nw = str_replace('á','a', $nw);
 					$nw = str_replace('â','a', $nw);
 					$nw = str_replace('ã','a', $nw);
+					$nw = str_replace('ç','c', $nw);
 					$nw = str_replace('É','e', $nw);
 					$nw = str_replace('Ê','e', $nw);
 					$nw = str_replace('é','e', $nw);
 					$nw = str_replace('ê','e', $nw);
+					$nw = str_replace('ë','e', $nw);
 					$nw = str_replace('Í','i', $nw);
 					$nw = str_replace('Î','i', $nw);
 					$nw = str_replace('í','i', $nw);
@@ -40,6 +41,7 @@
 					$nw = str_replace('Û','u', $nw);
 					$nw = str_replace('ú','u', $nw);
 					$nw = str_replace('û','u', $nw);
+					$nw = strtolower($nw);
 					return $nw;
 				}
 				$find = $conn->query("SELECT pt FROM users");
@@ -47,11 +49,13 @@
 				$find = $conn->query("SELECT pt FROM translations");
 				while ($i = $find->fetch_assoc()) {$srcsgs .= '<option data-value="'.$i['pt'].'">'.stripacc($i['pt']).'</option>';}
 				if ((isset($_GET['q']))&&($_GET['q'][0] != '$')) {$sch = "value='".$_GET['q']."'";} else {$sch = '';}
-				echo "<input id='srcbar' class='searchtext' type='text' list='srclst' name='search' ".$sch." placeholder='".$vl."...' autocomplete='off' />
+				echo "<input id='srcbar' class='searchtext' type='text' list='srclst' ".$sch." placeholder='".$vl."...' autocomplete='off'
+					onchange='datalist_value(null,0)' />
 				<template id='sgslst'>
 					".$srcsgs."
 				</template>
 				<datalist id='srclst'></datalist>
+				<input id='srcbar-hidden' type='hidden' name='search' ".$sch." />
 				<input class='submit' type='image' src='media/images/icons/search-".$_COOKIE['theme'].".png' alt='".strtolower($vl)."' />";
 			?>
 		</form>
@@ -63,7 +67,7 @@
 				while (results.children.length) results.removeChild(results.firstChild);
 				var inputVal = new RegExp(search.value.trim(), 'i');
 				var clonedOptions = template.cloneNode(true);
-				var set = Array.prototype.reduce.call(clonedOptions.children, function searchFilter(frag, el) {
+				var set = Array.prototype.reduce.call(clonedOptions.children, function (frag, el) {
 					if (inputVal.test(el.textContent) && frag.children.length < 10) frag.appendChild(el);
 					return frag;
 				}, document.createDocumentFragment());

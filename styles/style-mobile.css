@@ -1283,6 +1283,32 @@ hr {
 	width: 100%;
 }
 
+.login.long {
+	width: 100%;
+	margin-top: 60px;
+	margin-left: 10px; 
+	margin-right: 20px;
+}
+
+.requestable {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 1600px;
+	border-collapse: collapse;
+}
+
+.requestable th {
+	padding: 10px;
+	width: 100%;
+	transition-duration: 0;
+	display: block;
+}
+
+.requestable tr {
+	transition-duration: 0;
+	cursor: default;
+}
+
 div::-webkit-scrollbar  {
   width: 8px;
 }

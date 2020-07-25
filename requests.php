@@ -48,41 +48,47 @@
 				?>
 				<div id='optlst'>
 					<ul>
-						<li> <a onclick='set_tab("tab1","tab2","tab3")'> <input id='op1' type='radio' name='request' value='poem' checked='true' />
-						<label for='op1'>
 						<?php
-							if ($_COOKIE['lang'] == 'pt') {echo "Poemas";}
-							if ($_COOKIE['lang'] == 'en') {echo "Poems";}
-							if ($_COOKIE['lang'] == 'es') {echo "Poémas";}
+							$chk1 = "checked='true'";
+							if (@$_GET['t']) {
+								if ($_GET['t'] != '1') {$chk1 = "";}
+							}
+							echo "<li> <a onclick='set_tab(\"tab1\",\"tab2\",\"tab3\")'> <input id='op1' type='radio' name='request' value='poem' ".$chk1." />
+							<label for='op1'>";
+								if ($_COOKIE['lang'] == 'pt') {echo "Poemas";}
+								if ($_COOKIE['lang'] == 'en') {echo "Poems";}
+								if ($_COOKIE['lang'] == 'es') {echo "Poémas";}
+							$chk2 = "";
+							if (@$_GET['t']) {
+								if ($_GET['t'] == '2') {$chk2 = "checked='true'";}
+							}
+							echo "</label>
+							</a> </li>
+							<li> <a onclick='set_tab(\"tab2\",\"tab1\",\"tab3\")'> <input id='op2' type='radio' name='request' value='book' ".$chk2." />
+							<label for='op2'>";
+								if ($_COOKIE['lang'] == 'pt') {echo "Livros";}
+								if ($_COOKIE['lang'] == 'en') {echo "Books";}
+								if ($_COOKIE['lang'] == 'es') {echo "Libros";}
+							$chk3 = "";
+							if (@$_GET['t']) {
+								if ($_GET['t'] == '3') {$chk3 = "checked='true'";}
+							}
+							echo "</label>
+							</a> </li>
+							<li> <a onclick='set_tab(\"tab3\",\"tab1\",\"tab2\")'> <input id='op3' type='radio' name='request' value='auctor' ".$chk3." />
+							<label for='op3'>";
+								if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
+								if ($_COOKIE['lang'] == 'en') {echo "Auctores";}
+								if ($_COOKIE['lang'] == 'es') {echo "Autores";}
+							echo "</label>
+							</a> </li>
+							<li>";
+								if ($_COOKIE['lang'] == 'pt') {$lbl = "Publicar";}
+								if ($_COOKIE['lang'] == 'en') {$lbl = "Publish";}
+								if ($_COOKIE['lang'] == 'es') {$lbl = "Publíca";}
+								echo "<input type='submit' class='btpress' value='".$lbl."' />";
+							echo "</li>";
 						?>
-						</label>
-						</a> </li>
-						<li> <a onclick='set_tab("tab2","tab1","tab3")'> <input id='op2' type='radio' name='request' value='book' />
-						<label for='op2'>
-						<?php
-							if ($_COOKIE['lang'] == 'pt') {echo "Livros";}
-							if ($_COOKIE['lang'] == 'en') {echo "Books";}
-							if ($_COOKIE['lang'] == 'es') {echo "Libros";}
-						?>
-						</label>
-						</a> </li>
-						<li> <a onclick='set_tab("tab3","tab1","tab2")'> <input id='op3' type='radio' name='request' value='auctor' />
-						<label for='op3'>
-						<?php
-							if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
-							if ($_COOKIE['lang'] == 'en') {echo "Auctores";}
-							if ($_COOKIE['lang'] == 'es') {echo "Autores";}
-						?>
-						</label>
-						</a> </li>
-						<li>
-						<?php
-							if ($_COOKIE['lang'] == 'pt') {$lbl = "Publicar";}
-							if ($_COOKIE['lang'] == 'en') {$lbl = "Publish";}
-							if ($_COOKIE['lang'] == 'es') {$lbl = "Publíca";}
-							echo "<input type='submit' class='btpress' value='".$lbl."' />";
-						?>
-						</li>
 					</ul>
 				</div>
 				<?php
@@ -90,9 +96,44 @@
 					require 'design/array_lists.php';
 					if ($notcon == null) {
 						$find = $conn->query("SELECT * FROM requests");
-						$tb1 = "<div id='tab1' class='optabs' style='display: block;'><table id='wrpm' class='requestable'>";
-						$tb2 = "<div id='tab2' class='optabs' style='display: none;'><table id='wrbk' class='requestable'>";
-						$tb3 = "<div id='tab3' class='optabs' style='display: none;'><table id='wrat' class='requestable'>";
+						$tb1 = "<div id='tab1' class='optabs' style='display: block;'><table id='wrpm' class='requestable'><tr><span class='error'>";
+						if (strpos($error, '1')) {
+							if ($_COOKIE['lang'] == 'pt') {$tb1 .= "O autor deste poema não está registrado no site.";}
+							if ($_COOKIE['lang'] == 'en') {$tb1 .= "The author of this poem is not registered on the site.";}
+							if ($_COOKIE['lang'] == 'es') {$tb1 .= "El autor de este poema no está registrado en el sitio.";}
+						}
+						if (strpos($error, '2')) {
+							if ($_COOKIE['lang'] == 'pt') {$tb1 .= "Preencha os campos vazios.";}
+							if ($_COOKIE['lang'] == 'en') {$tb1 .= "Fill in the empty fields.";}
+							if ($_COOKIE['lang'] == 'es') {$tb1 .= "Rellene los campos vacíos.";}
+						}
+						if (strpos($error, '3')) {
+							if ($_COOKIE['lang'] == 'pt') {$tb1 .= "Este poema já está registrado.";}
+							if ($_COOKIE['lang'] == 'en') {$tb1 .= "This poem is already registered.";}
+							if ($_COOKIE['lang'] == 'es') {$tb1 .= "Este poema ya está registrado.";}
+						}
+						$tb1 .= "</span></tr>";
+
+						$tb2 = "<div id='tab2' class='optabs' style='display: none;'><table id='wrbk' class='requestable'><tr><span class='error'>";
+						if (strpos($error, '4')) {
+							if ($_COOKIE['lang'] == 'pt') {$tb2 .= "O autor deste livro não está registrado no site.";}
+							if ($_COOKIE['lang'] == 'en') {$tb2 .= "The author of this book is not registered on the site.";}
+							if ($_COOKIE['lang'] == 'es') {$tb2 .= "El autor de este libro no está registrado en el sitio.";}
+						}
+						if (strpos($error, '5')) {
+							if ($_COOKIE['lang'] == 'pt') {$tb2 .= "Preencha os campos vazios.";}
+							if ($_COOKIE['lang'] == 'en') {$tb2 .= "Fill in the empty fields.";}
+							if ($_COOKIE['lang'] == 'es') {$tb2 .= "Rellene los campos vacíos.";}
+						}
+						$tb2 .= "</span></tr>";
+
+						$tb3 = "<div id='tab3' class='optabs' style='display: none;'><table id='wrat' class='requestable'><tr><span class='error'>";
+						if (strpos($error, '6')) {
+							if ($_COOKIE['lang'] == 'pt') {$tb3 .= "Preencha os campos vazios.";}
+							if ($_COOKIE['lang'] == 'en') {$tb3 .= "Fill in the empty fields.";}
+							if ($_COOKIE['lang'] == 'es') {$tb3 .= "Rellene los campos vacíos.";}
+						}
+						$tb3 .= "</span></tr>";
 
 						$lind = $conn->query("SELECT pt,nick FROM users");
 						$optlst = '';
@@ -135,11 +176,11 @@
 							{$optgnd .= "<option value=".$x.">" .$gndlst[$x]. "</option>";}
 						}
 						$rowpom = "<tr>
-								<th style='width: 100px;'><input id='pblsh%lid%' type='checkbox' name='pblsh[]' /></th>
+								<th style='width: 100px;'><input id='pblsh1%lid%' type='checkbox' name='pblsh1[]' /></th>
 								<th style='width: 100px;'>
-									<input id='ptitl%lid%' type='text' class='textbox' name='pname[]' value='%ptitl%' placeholder='name' /><br />
-									<input id='auct%lid%' type='text' class='textbox' value='%pname%' list='dtlst%lid%' maxLength='30' placeholder='auctor'
-									 oninput='datalist_value(%lid%)' />
+									<input id='ptitl%lid%' type='text' class='textbox' name='pname[]' value='%ptitl%' placeholder='name*' /><br />
+									<input id='auct%lid%' type='text' class='textbox' value='%pname%' list='dtlst%lid%' maxLength='30' placeholder='auctor*'
+									 oninput='datalist_value(%lid%,1)' />
 									<datalist id='dtlst%lid%'>
 										".$optlst."
 									</datalist>
@@ -156,28 +197,28 @@
 									<input id='prid%lid%' type='hidden' name='prid[]' value='%prid%' />
 								</th>
 								<th><textarea id='pcont%lid%' class='textbox long' name='pcontent[]' style='width: 800px;'
-								placeholder='content(plain text)'>%pcont%</textarea></th>
+								placeholder='content(plain text)*'>%pcont%</textarea></th>
 								<th><a href='account/delete_request.php?d=%prid%'><input type='button' class='btpress'
 									style='background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
 									background-repeat: no-repeat; background-position: center;' /></a></th>
 								</tr>";
 						$rowbok = "<tr>
-								<th style='width: 100px;'><input id='pblsh%lid%' type='checkbox' name='pblsh[]' /></th>
+								<th style='width: 100px;'><input id='pblsh2%lid%' type='checkbox' name='pblsh2[]' /></th>
 								<th><div id='bimgdrg%lid%' class='filprev' style='width: 333px; height: 500px;' onclick='drag_image(event,%lid%)'>
 								<img id='bprev%lid%' style='width: 333px; height: 500px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								</div>
 								<input id='bcover%lid%' accept='image/jpeg' name='bcover[]' type='file' onchange='previmg(event,%lid%,1)' /></th>
 								<th style='width: 100px'>
-									<input id='bnamept%lid%' type='text' class='textbox' name='bnamept[]' value='%bname%' placeholder='PT name'/>
-									<input id='bnameen%lid%' type='text' class='textbox' name='bnameen[]' value='%bname%' placeholder='EN name'/>
-									<input id='bnamees%lid%' type='text' class='textbox' name='bnamees[]' value='%bname%' placeholder='ES name'/>
-									<input id='bauct%lid%' type='text' class='textbox' value='%bauctor%' list='dtlst%lid%' maxLength='30' placeholder='auctor'
-									oninput='datalist_value(%lid%)' style='width: 230px;margin-right: 0px' />
+									<input id='bnamept%lid%' type='text' class='textbox' name='bnamept[]' value='%bname%' placeholder='PT name*'/>
+									<input id='bnameen%lid%' type='text' class='textbox' name='bnameen[]' value='%bname%' placeholder='EN name*'/>
+									<input id='bnamees%lid%' type='text' class='textbox' name='bnamees[]' value='%bname%' placeholder='ES name*'/>
+									<input id='bauct%lid%' type='text' class='textbox' value='%bauctor%' list='dtlst%lid%' maxLength='30' placeholder='auctor*'
+									oninput='datalist_value(%lid%,2)' style='width: 230px;margin-right: 0px' />
 									<datalist id='dtlst%lid%'>
 										".$optlst."
 									</datalist>
 									<input id='bauct%lid%-hidden' type='hidden' name='bauctor[]' value='%bnick%' />
-									<input id='byear%lid%' type='text' class='textbox' name='byear[]' value='%byear%' placeholder='year' style='width: 35px' />
+									<input id='byear%lid%' type='text' class='textbox' name='byear[]' value='%byear%' placeholder='year*' style='width: 35px' />
 									<select class='selectbox' id='bcountry%lid%' name='bcountry[]' style='width: 100px;margin-top: 5px'>
 										".$optcou."
 									</select>
@@ -188,25 +229,24 @@
 										".$optlts."
 									</select>
 									<input id='bseries%lid%' type='text' class='textbox' name='bseries[]' style='width: 210px;margin-right: 0px' placeholder='series' />
-									<input id='bvolume%lid%' type='text' class='textbox' name='bvolume[]' style='width: 50px' value='0' placeholder='volume' />
+									<input id='bvolume%lid%' type='text' class='textbox' name='bvolume[]' style='width: 50px' value='0' placeholder='volume*' />
 									<select class='selectbox' id='blicense%lid%' name='blicense[]'>
 										".$optlic."
 									</select>
-									<input id='bcdd%lid%' type='text' class='textbox' name='bcdd[]' style='width: 80px;margin: 0px;' placeholder='cdd' />
-									<input id='btags%lid%' type='text' class='textbox' name='btags[]' placeholder='tags' /> <br />
+									<input id='bcdd%lid%' type='text' class='textbox' name='bcdd[]' style='width: 80px;margin: 0px;' placeholder='cdd*' />
+									<input id='btags%lid%' type='text' class='textbox' name='btags[]' placeholder='tags*' /> <br />
 									<input id='brid%lid%' type='hidden' name='brid[]' value='%brid%' />
 								</th>
 								<th><textarea id='bsinopsis%lid%' class='textbox long' name='bsinopsis[]' style='width: 200px;'
-								placeholder='sinopsis(plain text)' spellcheck='false' maxLength='200'></textarea></th>
-								<th><textarea id='binfo%lid%' class='textbox long' name='binfo[]' style='width: 400px;' placeholder='book info(html)' spellcheck='false'></textarea>
+								placeholder='sinopsis(plain text)*' spellcheck='false' maxLength='200'></textarea></th>
+								<th><textarea id='binfo%lid%' class='textbox long' name='binfo[]' style='width: 400px;' placeholder='book info(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
 								</th>
 								<th><a href='account/delete_request.php?d=%brid%'><input type='button' class='btpress'
 									style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
 									background-repeat: no-repeat; background-position: center;' /></a></th>
 								</tr>";
-								/*<a name='goto1'></a>\n<h1> Resenha </h1>\n<hr>\n<a name='goto2'></a>\n<h1> Personagens </h1>\n<ul>\n<li><b>name: </b>info.</li>\n</ul>\n<hr>\n<a name='goto3'></a>\n<h1> Adaptações </h1>\n<a href='link' target='_blank'> filme </a>\n<hr>*/
 						$rowuse = "<tr>
-								<th style='width: 100px;'><input id='pblsh%lid%' type='checkbox' name='pblsh[]' /></th>
+								<th style='width: 100px;'><input id='pblsh3%lid%' type='checkbox' name='pblsh3[]' /></th>
 								<th><div id='aprodrg%lid%' class='filprev' style='width: 250px; height: 333px;' onclick='drag_image(event,%lid%)'>
 								<img id='apprev%lid%' style='width: 250px; height: 333px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								<input id='apropic%lid%' accept='image/jpeg' name='apropic[]' type='file' onchange='previmg(event,%lid%,2)' /></div><br />
@@ -215,25 +255,25 @@
 								</div>
 								<input id='abanner%lid%' accept='image/jpeg' name='abanner[]' type='file' onchange='previmg(event,%lid%,3)' /></th>
 								<th style='width: 100px;'>
-									<input id='anamept%lid%' type='text' class='textbox' name='anamept[]' value='%aname%' placeholder='PT name' /><br />
+									<input id='anamept%lid%' type='text' class='textbox' name='anamept[]' value='%aname%' placeholder='PT name*' /><br />
 									<input id='anameen%lid%' type='text' class='textbox' name='anameen[]' placeholder='EN name (only if differ from PT name)' /><br />
 									<input id='anamees%lid%' type='text' class='textbox' name='anamees[]' placeholder='ES name (only if differ from PT name)' /><br />
-									<input id='anick%lid%' type='text' class='textbox' name='anick[]' placeholder='nick' style='width: 200px' />
+									<input id='anick%lid%' type='text' class='textbox' name='anick[]' placeholder='nick*' onchange='email_autofill(%lid%)' style='width: 200px' />
 									<select class='selectbox' id='agender%lid%' name='agender[]'>
 										".$optgnd."
 									</select><br />
-									<input id='abirth%lid%' type='text' class='textbox' name='abirth[]' placeholder='birth (XXXX-XX-XX)' style='width: 130px' />
+									<input id='abirth%lid%' type='text' class='textbox' name='abirth[]' placeholder='birth (XXXX-XX-XX)*' style='width: 130px' />
 									<input id='adeath%lid%' type='text' class='textbox' name='adeath[]' placeholder='death (XXXX-XX-XX)' style='width: 130px' /><br />
 									<select class='selectbox' id='acountry%lid%' name='acountry[]'>
 										".$optcou."
 									</select>
-									<input id='ahometown%lid%' type='text' class='textbox' name='ahometown[]' placeholder='hometown' style='width: 160px' /><br />
+									<input id='ahometown%lid%' type='text' class='textbox' name='ahometown[]' placeholder='hometown*' style='width: 160px' autocomplete='off' /><br />
 									<input id='aacademy%lid%' type='text' class='textbox' name='aacademy[]' placeholder='academy (ACC-XX-XX)' /><br />
-									<input id='aemail%lid%' type='text' class='textbox' name='aemail[]' placeholder='email' value='@literledge.com' /><br />
+									<input id='aemail%lid%' type='text' class='textbox' name='aemail[]' placeholder='email*' value='@literledge.com' /><br />
 									<input id='abonds%lid%' type='text' class='textbox' name='abonds[]' placeholder='bonds (nick[X];)' /><br />
 									<input id='arid%lid%' type='hidden' name='arid[]' value='%arid%' />
 								</th>
-								<th><textarea id='abio%lid%' class='textbox long' name='abio[]' style='width: 800px;' placeholder='biography (html)'></textarea></th>
+								<th><textarea id='abio%lid%' class='textbox long' name='abio[]' style='width: 800px;' placeholder='biography (html)*'></textarea></th>
 								<th><a href='account/delete_request.php?d=%arid%'><input type='button' class='btpress'
 									style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
 									background-repeat: no-repeat; background-position: center;' /></a></th>
@@ -374,7 +414,7 @@
 				if (@$_GET['t']) {
 					if ($_GET['t'] == '1') {echo "<script type='text/javascript'> set_tab('tab1','tab2','tab3'); </script>";}
 					if ($_GET['t'] == '2') {echo "<script type='text/javascript'> set_tab('tab2','tab1','tab3'); </script>";}
-					if ($_GET['t'] == '3') {echo "<script type='text/javascript'> set_tab('tab3','tab1','tab3'); </script>";}
+					if ($_GET['t'] == '3') {echo "<script type='text/javascript'> set_tab('tab3','tab1','tab2'); </script>";}
 				}
 			?>
 		</div>

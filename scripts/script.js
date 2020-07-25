@@ -243,12 +243,10 @@ function namescroll(rpf,rpt) {
 }
 
 function previmg(event,target,c=0) {
-	console.log(event.target.name);
 	if (c == 0) {var obj = document.getElementById(target);}
 	if (c == 1) {var obj = document.getElementById('bprev'+target);}
 	if (c == 2) {var obj = document.getElementById('apprev'+target);}
 	if (c == 3) {var obj = document.getElementById('abprev'+target);}
-	console.log(obj);
 	obj.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -293,17 +291,30 @@ function search_suggest() {
 	list.innerHTML = "<option>yes</option>";
 };*/
 
-function datalist_value(n) {
-	var input = document.getElementById('auct'+n);
-	var hidden = document.getElementById('auct'+n+'-hidden');
+function datalist_value(n,c) {
+	if (c == 0) {
+		var input = document.getElementById('srcbar');
+		var hidden = document.getElementById('srcbar-hidden');
+	}
+	if (c == 1) {
+		var input = document.getElementById('auct'+n);
+		var hidden = document.getElementById('auct'+n+'-hidden');
+	}
+	if (c == 2) {
+		var input = document.getElementById('bauct'+n);
+		var hidden = document.getElementById('bauct'+n+'-hidden');
+	}
 	var options = document.querySelectorAll('#' + input.getAttribute('list') + ' option');
-	for(var i = 0; i < options.length; i++) {
+	var chk = false;
+	for (var i = 0; i < options.length; i++) {
 		var option = options[i];
 		if (option.innerHTML == input.value) {
 			hidden.value = option.getAttribute('data-value');
+			chk = true;
 			break;
 		}
 	}
+	if (chk == false) {hidden.value = input.value;}
 }
 
 function add_rowpom(txt) {
@@ -315,6 +326,7 @@ function add_rowpom(txt) {
 	var genres = [];
 	var litschools = [];
 	var prid = [];
+	var pblsh = [];
 
 	if (rowpomcount > 0) {
 		for (var x=0;x<rowpomcount;x++) {
@@ -326,6 +338,7 @@ function add_rowpom(txt) {
 			genres.push(document.getElementById('pgenre'+x).value);
 			litschools.push(document.getElementById('plitschool'+x).value);
 			prid.push(document.getElementById('prid'+x).value);
+			pblsh.push(document.getElementById('pblsh1'+x).value);
 		}
 	}
 
@@ -343,6 +356,7 @@ function add_rowpom(txt) {
 			document.getElementById('pgenre'+x).value = genres[x];
 			document.getElementById('plitschool'+x).value = litschools[x];
 			document.getElementById('prid'+x).value = prid[x];
+			document.getElementById('pblsh1'+x).value = pblsh[x];
 		}
 	}
 	rowpomcount++;
@@ -367,6 +381,7 @@ function add_rowbok(txt) {
 	var sinopsis = [];
 	var binfo = [];
 	var brid = [];
+	var pblsh = [];
 
 	if (rowbokcount > 0) {
 		for (var x=0;x<rowbokcount;x++) {
@@ -387,6 +402,7 @@ function add_rowbok(txt) {
 			sinopsis.push(document.getElementById('bsinopsis'+x).value);
 			binfo.push(document.getElementById('binfo'+x).value);
 			brid.push(document.getElementById('brid'+x).value);
+			pblsh.push(document.getElementById('pblsh2'+x).value);
 		}
 	}
 
@@ -413,6 +429,7 @@ function add_rowbok(txt) {
 			document.getElementById('bsinopsis'+x).value = sinopsis[x];
 			document.getElementById('binfo'+x).value = binfo[x];
 			document.getElementById('brid'+x).value = brid[x];
+			document.getElementById('pblsh2'+x).value = pblsh[x];
 		}
 	}
 	rowbokcount++;
@@ -435,6 +452,7 @@ function add_rowuse(txt) {
 	var banner = [];
 	var bio = [];
 	var arid = [];
+	var pblsh = [];
 
 	if (rowusecount > 0) {
 		for (var x=0;x<rowusecount;x++) {
@@ -454,6 +472,7 @@ function add_rowuse(txt) {
 			banner.push(document.getElementById('abanner'+x).value);
 			bio.push(document.getElementById('abio'+x).value);
 			arid.push(document.getElementById('arid'+x).value);
+			pblsh.push(document.getElementById('pblsh3'+x).value);
 		}
 	}
 
@@ -479,6 +498,7 @@ function add_rowuse(txt) {
 			document.getElementById('abanner'+x).value = banner[x];
 			document.getElementById('abio'+x).value = bio[x];
 			document.getElementById('arid'+x).value = arid[x];
+			document.getElementById('pblsh3'+x).value = pblsh[x];
 		}
 	}
 	rowusecount++;
@@ -510,4 +530,17 @@ function drag_image(event, tid) {
 	var oldy = document.getElementById('bprev'+tid).style.top;
 	document.getElementById('bprev'+tid).style.left = event.pageX+'px';
 	document.getElementById('bprev'+tid).style.top = event.pageY+'px';
+}
+
+function email_autofill(lid) {
+	var nick = document.getElementById('anick'+lid);
+	var autofill = '';
+	if (nick.value.match(/([A-Z]['A-Z]+|\b[A-Z]\b)/g) != null) {
+		autofill += nick.value.match(/([A-Z]['A-Z]+|\b[A-Z]\b)/g)[0].toLowerCase();
+	}
+	autofill += '.';
+	if (nick.value.match(/([a-z]['a-z]+|\b[a-z]\b)/g) != null) {
+		autofill += nick.value.match(/([a-z]['a-z]+|\b[a-z]\b)/g)[0];
+	}
+	document.getElementById('aemail'+lid).value = autofill+'@literledge.com';
 }

@@ -1,3 +1,4 @@
+<?php include 'array_lists.php'; ?>
 <div id='lateralbar' class='sidebar' style='visibility: hidden;'>
 	<ul>
 		<li> <h1>
@@ -57,7 +58,6 @@
 			?>
 		</a> </li>
 		<li> <hr> </li>
-
 		<li> <h1>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Escolas Literárias";}
@@ -66,161 +66,43 @@
 			?>
 		</h1> </li>
 		<?php
-			if ($_COOKIE['lang'] == 'pt') {
-				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impressionismo','Indianism'=>'Indianismo',
-				'Mannerism'=>'Maneirismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
-				'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
-				}
-			else if ($_COOKIE['lang'] == 'en') {
-				$c = array('Arcadism'=>'Arcadism','Baroque'=>'Baroque','Futurism'=>'Futurism','Enlightment'=>'Enlightment','Impressionism'=>'Impressionism','Indianism'=>'Indianism',
-				'Mannerism'=>'Mannerism','Modernism'=>'Modernism','Naturalism'=>'Naturalism','Parnassianism'=>'Parnassianism','Pre-Modernism'=>'Pre-Modernism','Romanticism'=>'Romanticism',
-				'Realism'=>'Realism','Symbolism'=>'Symbolism','Troubadorism'=>'Troubadorism');
-				}
-			else if ($_COOKIE['lang'] == 'es') {
-				$c = array('Arcadism'=>'Arcadismo','Baroque'=>'Barroco','Futurism'=>'Futurismo','Enlightment'=>'Iluminismo','Impressionism'=>'Impresionismo','Indianism'=>'Indianismo',
-				'Mannerism'=>'Manierismo','Modernism'=>'Modernismo','Naturalism'=>'Naturalismo','Parnassianism'=>'Parnasianismo','Pre-Modernism'=>'Pré-Modernismo',
-				'Romanticism'=>'Romantismo','Realism'=>'Realismo','Symbolism'=>'Simbolismo','Troubadorism'=>'Trovadorismo');
-				}
-			foreach ($c as $x => $v) {
+			foreach ($ltslst as $x => $v) {
 				echo "<li><a href='schools/".strtolower($x).".php'> ".$v." </li></a>";
 			}
 		?>
 		<li> <hr> </li>
-
+		<?php
+			echo "<li><h1>".$gnrlst['N']."</h1></li>";
+			foreach ($gnrlst as $x => $v) {
+				if (($x[0] == 'N')&&($x != 'N')) {echo '<li><a href="search.php?q=$all&g='.strtolower($x).'"> '.$v.' </li></a>';}
+			}
+			echo "<li> <hr> </li>";
+			echo "<li><h1>".$gnrlst['L']."</h1></li>";
+			foreach ($gnrlst as $x => $v) {
+				if (($x[0] == 'L')&&($x != 'L')) {echo '<li><a href="search.php?q=$all&g='.strtolower($x).'"> '.$v.' </li></a>';}
+			}
+			echo "<li> <hr> </li>";
+			echo "<li><h1>".$gnrlst['D']."</h1></li>";
+			foreach ($gnrlst as $x => $v) {
+				if (($x[0] == 'D')&&($x != 'D')) {echo '<li><a href="search.php?q=$all&g='.strtolower($x).'"> '.$v.' </li></a>';}
+			}
+			echo "<li> <hr> </li>";
+		?>
 		<li> <h1>
 			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Literatura";}
-				if ($_COOKIE['lang'] == 'en') {echo "Literature";}
-				if ($_COOKIE['lang'] == 'es') {echo "Literatura";}
+				if ($_COOKIE['lang'] == 'pt') {echo "Países";}
+				if ($_COOKIE['lang'] == 'en') {echo "Countries";}
+				if ($_COOKIE['lang'] == 'es') {echo "Países";}
 			?>
 		</h1> </li>
-		<li> <a href='search.php?q=$books&g=adventure'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Aventura";}
-				if ($_COOKIE['lang'] == 'en') {echo "Adventure";}
-				if ($_COOKIE['lang'] == 'es') {echo "Aventura";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=romance'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Romance";}
-				if ($_COOKIE['lang'] == 'en') {echo "Romance";}
-				if ($_COOKIE['lang'] == 'es') {echo "Romance";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=mystery'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Mistério";}
-				if ($_COOKIE['lang'] == 'en') {echo "Mystery";}
-				if ($_COOKIE['lang'] == 'es') {echo "Misterio";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=everyday'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Cotidiano";}
-				if ($_COOKIE['lang'] == 'en') {echo "Everyday";}
-				if ($_COOKIE['lang'] == 'es') {echo "Día a dia";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=drama'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Drama";}
-				if ($_COOKIE['lang'] == 'en') {echo "Drama";}
-				if ($_COOKIE['lang'] == 'es') {echo "Drama";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=horror'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Terror";}
-				if ($_COOKIE['lang'] == 'en') {echo "Horror";}
-				if ($_COOKIE['lang'] == 'es') {echo "Horror";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=poetry'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Poesia";}
-				if ($_COOKIE['lang'] == 'en') {echo "Poetry";}
-				if ($_COOKIE['lang'] == 'es') {echo "Poesía";}
-			?>
-		</a> </li>
-		<li> <hr> </li>
-
-		<li> <h1>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Acadêmico";}
-				if ($_COOKIE['lang'] == 'en') {echo "Academic";}
-				if ($_COOKIE['lang'] == 'es') {echo "Académico";}
-			?>
-		</h1> </li>
-		<li> <a href='search.php?q=$books&g=mathematics'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Matemática";}
-				if ($_COOKIE['lang'] == 'en') {echo "Mathematics";}
-				if ($_COOKIE['lang'] == 'es') {echo "Matemáticas";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=biology'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Biologia";}
-				if ($_COOKIE['lang'] == 'en') {echo "Biology";}
-				if ($_COOKIE['lang'] == 'es') {echo "Biología";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=chemistry'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Química";}
-				if ($_COOKIE['lang'] == 'en') {echo "Chemistry";}
-				if ($_COOKIE['lang'] == 'es') {echo "Química";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=physics'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Física";}
-				if ($_COOKIE['lang'] == 'en') {echo "Physics";}
-				if ($_COOKIE['lang'] == 'es') {echo "Física";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=computation'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Computação";}
-				if ($_COOKIE['lang'] == 'en') {echo "Computacion";}
-				if ($_COOKIE['lang'] == 'es') {echo "Computación";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=history'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "História";}
-				if ($_COOKIE['lang'] == 'en') {echo "History";}
-				if ($_COOKIE['lang'] == 'es') {echo "Historia";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=geography'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Geografia";}
-				if ($_COOKIE['lang'] == 'en') {echo "Geography";}
-				if ($_COOKIE['lang'] == 'es') {echo "Geografía";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=philosophy'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Filosofia";}
-				if ($_COOKIE['lang'] == 'en') {echo "Philosophy";}
-				if ($_COOKIE['lang'] == 'es') {echo "Filosofía";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=sociology'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Sociologia";}
-				if ($_COOKIE['lang'] == 'en') {echo "Sociology";}
-				if ($_COOKIE['lang'] == 'es') {echo "Sociología";}
-			?>
-		</a> </li>
-		<li> <a href='search.php?q=$books&g=arts'>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Artes";}
-				if ($_COOKIE['lang'] == 'en') {echo "Arts";}
-				if ($_COOKIE['lang'] == 'es') {echo "Letras";}
-			?>
-		</a> </li>
+		<?php
+			foreach ($coulst as $x => $v) {
+				echo '<li><a href="search.php?q=$all&c='.$x.'"> '.$v.' </li></a>';
+			}
+		?>
+		<li><br /></li>
+		<li><br /></li>
+		<li><br /></li>
+		<li><br /></li>
 	</ul>
 </div>
