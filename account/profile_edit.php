@@ -4,7 +4,7 @@
 	if ($notcon == null) {
 		$error = '';
 		if ($_POST['edit'] == 'account') {
-			function resizeImage($file,$name,$path,$newW,$newH) {
+			function resize_image($file,$path,$newW,$newH) {
 				$imgprp = getimagesize($file);
 				$typ = $imgprp[2];
 				$oldW = $imgprp[0];

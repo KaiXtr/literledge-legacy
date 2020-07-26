@@ -13,24 +13,39 @@
 			include '../design/metadata.php'; 
 		?>
 	</head>
-
 	<body>
 		<?php include '../design/header.php' ?>
 		<?php include '../design/lateralbar.php' ?>
-
 		<div id='bookinfo'>
 			<?php $book = '%bid%'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
 				<?php
-					if ($_COOKIE['lang'] == 'pt') {echo "%binfopt%";}
-					if ($_COOKIE['lang'] == 'en') {echo "%binfoen%";}
-					if ($_COOKIE['lang'] == 'es') {echo "%binfoes%";}
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "%binfopt%";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "%binfoen%";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "%binfoes%";
+					}
 				?>
 			</div>
 			<?php $book = '%bid%'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>
 		<?php $user = '%bauctor%'; include '../design/auctorbooks.php'; ?>
-
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>
+
+<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "\2";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "binfoen";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "binfoes";
+					}
+				?>

@@ -3,16 +3,30 @@
 <html>
 	<!--Então você gosta de usar o botão inspecionar né...?-->
 	<head>
-		<?php session_start();
-		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Contribuir - ';}
-		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Contribute - ';}
-		include 'design/metadata.php';
-		if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
-		if (!isset($_SESSION['user'])) {header('location: login.php');} ?>
+		<?php
+			require 'account/mysql_connect.php';
+			if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
+				{$v = 'Contribuir - ';}
+			else if ($_COOKIE['lang'] == 'en')
+				{$v = 'Contribute - ';}
+			else if ($_COOKIE['lang'] == 'es')
+				{$v = 'Contribuir - ';}
+			include 'design/metadata.php';
+			if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
+			if (!isset($_SESSION['user'])) {header('location: login.php');}
+			else {
+				$find = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
+				if ($find->num_rows == 0)
+					{header('location: '.$_SERVER["HTTP_REFERER"]);}
+				else {
+					$i = $find->fetch_assoc();
+					if ($i['auctor'] != '2') {
+						header('location: '.$_SERVER["HTTP_REFERER"]);
+					}
+				}
+			}
+		?>
 	</head>
-
 	<body>
 		<?php include 'design/header.php' ?>
 		<?php include 'design/lateralbar.php' ?>

@@ -2,7 +2,7 @@
 	require 'mysql_connect.php';
 	if (!isset($_SESSION['user'])) {header("location: ".$base_url."login.php");}
 	if ($notcon == null) {
-		function resizeImage($file,$name,$path,$newW,$newH) {
+		function resize_image($file,$path,$newW,$newH) {
 			$imgprp = getimagesize($file);
 			$typ = $imgprp[2];
 			$oldW = $imgprp[0];
@@ -63,9 +63,12 @@
 							('".$_POST['pauctor'][$x]."','".$pid."','".$_POST['pcountry'][$x]."','".$_POST['pgenre'][$x]."',".$plitschool.")");
 
 						$htmc = fopen('../poems/'.$_POST['pauctor'][$x].'-'.$pid.'.php', 'w') or die('Unable to open file!');
-						$cont = '<?php'.PHP_EOL.'$shwpm = "<h1> '.$_POST['pname'][$x].' </h1>'.PHP_EOL.
-								str_replace(PHP_EOL, '<br />'.PHP_EOL, $_POST['pcontent'][$x])
-								.'<br />'.PHP_EOL.'<span> ".$pnm." </span>'.PHP_EOL.'<br />";'.PHP_EOL.'?>';
+						$cont = '<?php'
+						.PHP_EOL.'	$shwpm = "<h1> '.$_POST['pname'][$x].' </h1>'
+						.PHP_EOL.'	'.str_replace(PHP_EOL, '<br />'.PHP_EOL, $_POST['pcontent'][$x]).'<br />'
+						.PHP_EOL.'	<span> ".$pnm." </span>'
+						.PHP_EOL.'	<br />";'
+						.PHP_EOL.'?>';
 						fwrite($htmc, $cont);
 						fclose($htmc);
 					}
@@ -81,8 +84,8 @@
 					||($_POST['bnamept'][$x] == '')||($_POST['bauctor'][$x] == '')||($_POST['byear'][$x] == '')
 					||(!isset($_POST['bvolume'][$x]))||(!isset($_POST['bcdd'][$x]))||(!isset($_POST['btags'][$x]))
 					||($_POST['bvolume'][$x] == '')||($_POST['bcdd'][$x] == '')||($_POST['btags'][$x] == '')
-					||(!isset($_POST['bsinopsis'][$x]))||(!isset($_POST['binfo'][$x]))
-					||($_POST['bsinopsis'][$x] == '')||($_POST['binfo'][$x] == '')
+					||(!isset($_POST['bsinopsispt'][$x]))||(!isset($_POST['binfopt'][$x]))
+					||($_POST['bsinopsispt'][$x] == '')||($_POST['binfopt'][$x] == '')
 					||(!isset($_FILES['bcover']['tmp_name'][$x]))||($_FILES['bcover']['tmp_name'][$x] == '')) {$error .= '4';}
 					$find = $conn->query("SELECT nick FROM users WHERE nick='".$_POST['bauctor'][$x]."'");
 					if ($find->num_rows == 0) {$error .= '5';}
@@ -124,8 +127,15 @@
 						$bsinopsispt = str_replace(PHP_EOL, ' ', $_POST['bsinopsispt'][$x]);
 						$bsinopsisen = str_replace(PHP_EOL, ' ', $_POST['bsinopsisen'][$x]);
 						$bsinopsises = str_replace(PHP_EOL, ' ', $_POST['bsinopsises'][$x]);
+						$bsinopsispt = str_replace('"', '\"', $bsinopsispt);
+						$bsinopsisen = str_replace('"', '\"', $bsinopsisen);
+						$bsinopsises = str_replace('"', '\"', $bsinopsises);
 						$htmc = fopen('../sinopsis/'.$pid.'.php', 'w') or die('Unable to open file!');
-						$cont = "<?php".PHP_EOL.'if ($_COOKIE["lang"] == "pt") {$sin = "'.$bsinopsispt.'";}'.PHP_EOL.'if ($_COOKIE["lang"] == "en") {$sin = "'.$bsinopsisen.'";}'.PHP_EOL.'if ($_COOKIE["lang"] == "es") {$sin = "'.$bsinopsises.'";}'.PHP_EOL.'?>';
+						$cont = "<?php"
+						.PHP_EOL.'	if ($_COOKIE["lang"] == "pt") {$sin = "'.$bsinopsispt.'";}'
+						.PHP_EOL.'	if ($_COOKIE["lang"] == "en") {$sin = "'.$bsinopsisen.'";}'
+						.PHP_EOL.'	if ($_COOKIE["lang"] == "es") {$sin = "'.$bsinopsises.'";}'
+						.PHP_EOL.'?>';
 						fwrite($htmc, $cont);
 						fclose($htmc);
 					}
@@ -137,8 +147,8 @@
 		else if ($_POST['request'] == 'auctor') {
 			for ($x=0;$x<sizeof($_POST['pblsh3']);$x++) {
 				if ((@$_POST['pblsh3'][$x])&&($_POST['pblsh3'][$x] == 'on')) {
-					if ((!isset($_POST['anamept'][$x]))||(!isset($_POST['anick'][$x]))||(!isset($_POST['abio'][$x]))
-					||($_POST['anamept'][$x] == '')||($_POST['anick'][$x] == '')||($_POST['abio'][$x] == '')
+					if ((!isset($_POST['anamept'][$x]))||(!isset($_POST['anick'][$x]))||(!isset($_POST['abiopt'][$x]))
+					||($_POST['anamept'][$x] == '')||($_POST['anick'][$x] == '')||($_POST['abiopt'][$x] == '')
 					||(!isset($_POST['abirth'][$x]))||(!isset($_POST['ahometown'][$x]))||(!isset($_POST['aemail'][$x]))
 					||($_POST['abirth'][$x] == '')||($_POST['ahometown'][$x] == '')||($_POST['aemail'][$x] == '')
 					||(!isset($_FILES['apropic']['tmp_name'][$x]))||(!isset($_FILES['abanner']['tmp_name'][$x]))

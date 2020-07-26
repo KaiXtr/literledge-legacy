@@ -4,28 +4,27 @@
 	<!--Então você gosta de usar o botão inspecionar né...?-->
 	<head>
 		<?php
-		require 'design/mysql_connect.php';
-		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Pedidos - ';}
-		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Requests - ';}
-		else if ($_COOKIE['lang'] == 'es')
-			{$v = 'Pedidos - ';}
-		include 'design/metadata.php';
-		if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
-		if (!isset($_SESSION['user']))
-			{header('location: '.$_SERVER["HTTP_REFERER"]);}
-		else {
-			$find = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
-			if ($find->num_rows == 0)
-				{header('location: '.$_SERVER["HTTP_REFERER"]);}
+			require 'design/mysql_connect.php';
+			if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
+				{$v = 'Pedidos - ';}
+			else if ($_COOKIE['lang'] == 'en')
+				{$v = 'Requests - ';}
+			else if ($_COOKIE['lang'] == 'es')
+				{$v = 'Pedidos - ';}
+			include 'design/metadata.php';
+			if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
+			if (!isset($_SESSION['user'])) {header('location: '.$_SERVER["HTTP_REFERER"]);}
 			else {
-				$i = $find->fetch_assoc();
-				if ($i['auctor'] != '2') {
-					header('location: '.$_SERVER["HTTP_REFERER"]);
+				$find = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
+				if ($find->num_rows == 0)
+					{header('location: '.$_SERVER["HTTP_REFERER"]);}
+				else {
+					$i = $find->fetch_assoc();
+					if ($i['auctor'] != '2') {
+						header('location: '.$_SERVER["HTTP_REFERER"]);
+					}
 				}
 			}
-		}
 		?>
 	</head>
 	<body>
@@ -178,29 +177,28 @@
 						$rowpom = "<tr>
 								<th style='width: 100px;'><input id='pblsh1%lid%' type='checkbox' name='pblsh1[]' /></th>
 								<th style='width: 100px;'>
-									<input id='ptitl%lid%' type='text' class='textbox' name='pname[]' value='%ptitl%' placeholder='name*' /><br />
-									<input id='auct%lid%' type='text' class='textbox' value='%pname%' list='dtlst%lid%' maxLength='30' placeholder='auctor*'
-									 oninput='datalist_value(%lid%,1)' />
-									<datalist id='dtlst%lid%'>
-										".$optlst."
-									</datalist>
-									<input id='auct%lid%-hidden' type='hidden' name='pauctor[]' value='%pnick%' />
-									<select class='selectbox' id='pcountry%lid%' name='pcountry[]'>
-										".$optcou."
-									</select>
-									<select class='selectbox' id='pgenre%lid%' name='pgenre[]'>
-										".$optgnr."
-									</select>
-									<select class='selectbox' id='plitschool%lid%' name='plitschool[]'>
-										".$optlts."
-									</select>
-									<input id='prid%lid%' type='hidden' name='prid[]' value='%prid%' />
+								<input id='ptitl%lid%' type='text' class='textbox' name='pname[]' value='%ptitl%' placeholder='name*' /><br />
+								<input id='auct%lid%' type='text' class='textbox' value='%pname%' list='dtlst%lid%' maxLength='30' placeholder='auctor*'
+								 oninput='datalist_value(%lid%,1)' />
+								<datalist id='dtlst%lid%'>
+									".$optlst."
+								</datalist>
+								<input id='auct%lid%-hidden' type='hidden' name='pauctor[]' value='%pnick%' />
+								<select class='selectbox' id='pcountry%lid%' name='pcountry[]'>
+									".$optcou."
+								</select>
+								<select class='selectbox' id='pgenre%lid%' name='pgenre[]'>
+									".$optgnr."
+								</select>
+								<select class='selectbox' id='plitschool%lid%' name='plitschool[]'>
+									".$optlts."
+								</select>
+								<input id='prid%lid%' type='hidden' name='prid[]' value='%prid%' />
 								</th>
-								<th><textarea id='pcont%lid%' class='textbox long' name='pcontent[]' style='width: 800px;'
-								placeholder='content(plain text)*'>%pcont%</textarea></th>
-								<th><a href='account/delete_request.php?d=%prid%'><input type='button' class='btpress'
-									style='background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
-									background-repeat: no-repeat; background-position: center;' /></a></th>
+								<th>
+								<textarea id='pcont%lid%' class='textbox long' name='pcontent[]' style='width: 800px;' placeholder='content(plain text)*'>%pcont%</textarea></th>
+								<th>
+								<a href='account/delete_request.php?d=%prid%'><input type='button' class='btpress' style='background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png); background-repeat: no-repeat; background-position: center;' /></a></th>
 								</tr>";
 						$rowbok = "<tr>
 								<th style='width: 100px;'><input id='pblsh2%lid%' type='checkbox' name='pblsh2[]' /></th>
@@ -209,90 +207,91 @@
 								</div>
 								<input id='bcover%lid%' accept='image/jpeg' name='bcover[]' type='file' onchange='previmg(event,%lid%,1)' /></th>
 								<th>
-									<input id='bnamept%lid%' type='text' class='textbox' name='bnamept[]' value='%bname%' placeholder='PT name*'/>
-									<input id='bnameen%lid%' type='text' class='textbox' name='bnameen[]' value='%bname%' placeholder='EN name*'/>
-									<input id='bnamees%lid%' type='text' class='textbox' name='bnamees[]' value='%bname%' placeholder='ES name*'/>
-									<input id='bauct%lid%' type='text' class='textbox' value='%bauctor%' list='dtlst%lid%' maxLength='30' placeholder='auctor*'
-									oninput='datalist_value(%lid%,2)' style='width: 230px;margin-right: 0px' />
-									<datalist id='dtlst%lid%'>
-										".$optlst."
-									</datalist>
-									<input id='bauct%lid%-hidden' type='hidden' name='bauctor[]' value='%bnick%' />
-									<input id='byear%lid%' type='text' class='textbox' name='byear[]' value='%byear%' placeholder='year*' style='width: 35px' /><br />
-									<select class='selectbox' id='bcountry%lid%' name='bcountry[]' style='width: 100px;margin-top: 5px'>
-										".$optcou."
-									</select>
-									<select class='selectbox' id='bgenre%lid%' name='bgenre[]' style='width: 100px;margin-top: 5px'>
-										".$optgnr."
-									</select>
-									<select class='selectbox' id='blitschool%lid%' name='blitschool[]' style='width: 100px;margin-top: 5px'>
-										".$optlts."
-									</select>
-									<input id='bseries%lid%' type='text' class='textbox' name='bseries[]' style='width: 210px;margin-right: 0px' placeholder='series' />
-									<input id='bvolume%lid%' type='text' class='textbox' name='bvolume[]' style='width: 50px' value='0' placeholder='volume*' /><br />
-									<select class='selectbox' id='blicense%lid%' name='blicense[]'>
-										".$optlic."
-									</select>
-									<input id='bcdd%lid%' type='text' class='textbox' name='bcdd[]' style='width: 80px;margin: 0px;' placeholder='cdd*' />
-									<input id='btags%lid%' type='text' class='textbox' name='btags[]' placeholder='tags*' /> <br />
-									<input id='brid%lid%' type='hidden' name='brid[]' value='%brid%' />
+								<input id='bnamept%lid%' type='text' class='textbox' name='bnamept[]' value='%bname%' placeholder='PT name*'/>
+								<input id='bnameen%lid%' type='text' class='textbox' name='bnameen[]' value='%bname%' placeholder='EN name*'/>
+								<input id='bnamees%lid%' type='text' class='textbox' name='bnamees[]' value='%bname%' placeholder='ES name*'/>
+								<input id='bauct%lid%' type='text' class='textbox' value='%bauctor%' list='dtlst%lid%' maxLength='30' placeholder='auctor*'
+								oninput='datalist_value(%lid%,2)' style='width: 230px;margin-right: 0px' />
+								<datalist id='dtlst%lid%'>
+									".$optlst."
+								</datalist>
+								<input id='bauct%lid%-hidden' type='hidden' name='bauctor[]' value='%bnick%' />
+								<input id='byear%lid%' type='text' class='textbox' name='byear[]' value='%byear%' placeholder='year*' style='width: 35px' /><br />
+								<select class='selectbox' id='bcountry%lid%' name='bcountry[]' style='width: 100px;margin-top: 5px'>
+									".$optcou."
+								</select>
+								<select class='selectbox' id='bgenre%lid%' name='bgenre[]' style='width: 100px;margin-top: 5px'>
+									".$optgnr."
+								</select>
+								<select class='selectbox' id='blitschool%lid%' name='blitschool[]' style='width: 100px;margin-top: 5px'>
+									".$optlts."
+								</select><br />
+								<input id='bseries%lid%' type='text' class='textbox' name='bseries[]' style='width: 210px;margin-right: 0px' placeholder='series' />
+								<input id='bvolume%lid%' type='text' class='textbox' name='bvolume[]' style='width: 50px' value='0' placeholder='volume*' /><br />
+								<select class='selectbox' id='blicense%lid%' name='blicense[]'>
+									".$optlic."
+								</select>
+								<input id='bcdd%lid%' type='text' class='textbox' name='bcdd[]' style='width: 80px;margin: 0px;' placeholder='cdd*' />
+								<input id='btags%lid%' type='text' class='textbox' name='btags[]' placeholder='tags*' /> <br />
+								<input id='brid%lid%' type='hidden' name='brid[]' value='%brid%' />
 								</th>
 								<th>
-								<textarea id='bsinopsispt%lid%' class='textbox long' name='bsinopsispt[]' style='width: 400px;height: 100px;margin-bottom: 10px'
+								<textarea id='bsinopsispt%lid%' class='textbox long' name='bsinopsispt[]' style='width: 500px;height: 100px;margin-bottom: 10px'
 								placeholder='sinopsis PT(plain text)*' spellcheck='false' maxLength='200'></textarea><br />
-								<textarea id='bsinopsisen%lid%' class='textbox long' name='bsinopsisen[]' style='width: 400px;;height: 100px;margin-bottom: 10px'
+								<textarea id='bsinopsisen%lid%' class='textbox long' name='bsinopsisen[]' style='width: 500px;;height: 100px;margin-bottom: 10px'
 								placeholder='sinopsis EN(plain text)*' spellcheck='false' maxLength='200'></textarea><br />
-								<textarea id='bsinopsises%lid%' class='textbox long' name='bsinopsises[]' style='width: 400px;;height: 100px;margin-bottom: 10px'
+								<textarea id='bsinopsises%lid%' class='textbox long' name='bsinopsises[]' style='width: 500px;;height: 100px;margin-bottom: 10px'
 								placeholder='sinopsis ES(plain text)*' spellcheck='false' maxLength='200'></textarea>
 								</th>
-								<th><a href='account/delete_request.php?d=%brid%'><input type='button' class='btpress'
-									style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
-									background-repeat: no-repeat; background-position: center;' /></a></th>
+								<th>
+								<a href='account/delete_request.php?d=%brid%'><input type='button' class='btpress' style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png); background-repeat: no-repeat; background-position: center;' /></a></th>
 								</tr>
 								<tr>
-								<th colspan='2'><textarea id='binfopt%lid%' class='textbox long' name='binfopt[]' style='width: 500px;' placeholder='book info PT(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								<th colspan='2'>
+								<textarea id='binfopt%lid%' class='textbox long' name='binfopt[]' style='width: 450px;' placeholder='book info PT(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
 								</th>
-								<th><textarea id='binfoen%lid%' class='textbox long' name='binfoen[]' style='width: 500px;' placeholder='book info EN(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								<th>
+								<textarea id='binfoen%lid%' class='textbox long' name='binfoen[]' style='width: 450px;' placeholder='book info EN(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
 								</th>
-								<th colspan='2'><textarea id='binfoes%lid%' class='textbox long' name='binfoes[]' style='width: 500px;' placeholder='book info ES(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
+								<th colspan='2'>
+								<textarea id='binfoes%lid%' class='textbox long' name='binfoes[]' style='width: 450px;' placeholder='book info ES(html)*' spellcheck='false'><a name='goto1'></a> <h1> Resenha </h1> <hr> <a name='goto2'></a> <h1> Personagens </h1> <ul> <li><b>name: </b>info.</li> </ul> <hr> <a name='goto3'></a> <h1> Adaptações </h1> <a href='link' target='_blank'> filme </a> <hr></textarea>
 								</th>
 								</tr>";
 						$rowuse = "<tr>
-								<th style='width: 100px;'><input id='pblsh3%lid%' type='checkbox' name='pblsh3[]' /></th>
-								<th><div id='aprodrg%lid%' class='filprev' style='width: 250px; height: 333px;' onclick='drag_image(event,%lid%)'>
-								<img id='apprev%lid%' style='width: 250px; height: 333px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
+								<th><input id='pblsh3%lid%' type='checkbox' name='pblsh3[]' /></th>
+								<th><div id='aprodrg%lid%' class='filprev' style='width: 333px; height: 500px;' onclick='drag_image(event,%lid%)'>
+								<img id='apprev%lid%' style='width: 333px; height: 500px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								<input id='apropic%lid%' accept='image/jpeg' name='apropic[]' type='file' onchange='previmg(event,%lid%,2)' /></div><br />
-								<div id='abandrg%lid%' class='filprev' style='width: 192px; height: 50px;' onclick='drag_image(event,%lid%)'>
-								<img id='abprev%lid%' style='width: 192px; height: 50px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
+								<div id='abandrg%lid%' class='filprev' style='width: 333px; height: 87px;' onclick='drag_image(event,%lid%)'>
+								<img id='abprev%lid%' style='width: 333px; height: 87px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								</div>
 								<input id='abanner%lid%' accept='image/jpeg' name='abanner[]' type='file' onchange='previmg(event,%lid%,3)' /></th>
-								<th style='width: 100px;'>
-									<input id='anamept%lid%' type='text' class='textbox' name='anamept[]' value='%aname%' placeholder='PT name*' /><br />
-									<input id='anameen%lid%' type='text' class='textbox' name='anameen[]' placeholder='EN name (only if differ from PT name)' /><br />
-									<input id='anamees%lid%' type='text' class='textbox' name='anamees[]' placeholder='ES name (only if differ from PT name)' /><br />
-									<input id='anick%lid%' type='text' class='textbox' name='anick[]' placeholder='nick*' onchange='email_autofill(%lid%)' style='width: 200px' />
-									<select class='selectbox' id='agender%lid%' name='agender[]'>
-										".$optgnd."
-									</select><br />
-									<input id='abirth%lid%' type='text' class='textbox' name='abirth[]' placeholder='birth (XXXX-XX-XX)*' style='width: 130px' />
-									<input id='adeath%lid%' type='text' class='textbox' name='adeath[]' placeholder='death (XXXX-XX-XX)' style='width: 130px' /><br />
-									<select class='selectbox' id='acountry%lid%' name='acountry[]'>
-										".$optcou."
-									</select>
-									<input id='ahometown%lid%' type='text' class='textbox' name='ahometown[]' placeholder='hometown*' style='width: 160px' autocomplete='off' /><br />
-									<input id='aacademy%lid%' type='text' class='textbox' name='aacademy[]' placeholder='academy (ACC-XX-XX)' /><br />
-									<input id='aemail%lid%' type='text' class='textbox' name='aemail[]' placeholder='email*' value='@literledge.com' /><br />
-									<input id='abonds%lid%' type='text' class='textbox' name='abonds[]' placeholder='bonds (nick[X];)' /><br />
-									<input id='arid%lid%' type='hidden' name='arid[]' value='%arid%' />
+								<th>
+								<input id='anamept%lid%' type='text' class='textbox' name='anamept[]' value='%aname%' placeholder='PT name*' /><br />
+								<input id='anameen%lid%' type='text' class='textbox' name='anameen[]' placeholder='EN name (only if differ from PT name)' /><br />
+								<input id='anamees%lid%' type='text' class='textbox' name='anamees[]' placeholder='ES name (only if differ from PT name)' /><br />
+								<input id='anick%lid%' type='text' class='textbox' name='anick[]' placeholder='nick*' onchange='email_autofill(%lid%)' style='width: 190px' />
+								<select class='selectbox' id='agender%lid%' name='agender[]' style='margin-left: 0px'>
+									".$optgnd."
+								</select><br />
+								<input id='abirth%lid%' type='text' class='textbox' name='abirth[]' placeholder='birth (xxxx-xx-xx)*' style='width: 130px' />
+								<input id='adeath%lid%' type='text' class='textbox' name='adeath[]' placeholder='death (xxxx-xx-xx)' style='width: 130px' /><br />
+								<select class='selectbox' id='acountry%lid%' name='acountry[]' style='width: 120px'>
+									".$optcou."
+								</select>
+								<input id='ahometown%lid%' type='text' class='textbox' name='ahometown[]' placeholder='hometown*' style='width: 160px' autocomplete='off' /><br />
+								<input id='aacademy%lid%' type='text' class='textbox' name='aacademy[]' placeholder='academy (ACC-XX-XX)' /><br />
+								<input id='aemail%lid%' type='text' class='textbox' name='aemail[]' placeholder='email*' value='@literledge.com' /><br />
+								<input id='abonds%lid%' type='text' class='textbox' name='abonds[]' placeholder='bonds (nick[X];)' /><br />
+								<input id='arid%lid%' type='hidden' name='arid[]' value='%arid%' />
 								</th>
 								<th>
 								<textarea id='abiopt%lid%' class='textbox long' name='abiopt[]' style='width: 800px;height: 150px;margin-bottom: 10px' placeholder='bio PT(html)*'></textarea>
 								<textarea id='abioen%lid%' class='textbox long' name='abioen[]' style='width: 800px;height: 150px;margin-bottom: 10px' placeholder='bio EN(html)*'></textarea>
 								<textarea id='abioes%lid%' class='textbox long' name='abioes[]' style='width: 800px;height: 150px;margin-bottom: 10px' placeholder='bio ES(html)*'></textarea>
 								</th>
-								<th><a href='account/delete_request.php?d=%arid%'><input type='button' class='btpress'
-									style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png);
-									background-repeat: no-repeat; background-position: center;' /></a></th>
+								<th>
+								<a href='account/delete_request.php?d=%arid%'><input type='button' class='btpress' style='width: 40px;background-image: url(media/images/icons/cridel-".$_COOKIE['theme'].".png); background-repeat: no-repeat; background-position: center;' /></a></th>
 								</tr>";
 						$rowpomcount = 0;
 						$rowbokcount = 0;
