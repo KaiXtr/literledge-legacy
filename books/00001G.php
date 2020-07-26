@@ -21,7 +21,9 @@
 		<div id='bookinfo'>
 			<?php $book = '00001G'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.[1]
@@ -30,7 +32,33 @@
 
 					Em 1986, foi adaptado ao cinema dirigida por Jean-Jacques Annaud.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.[1]
+
+					Em 1981, esta obra ganhou o Premio Strega.
+
+					Em 1986, foi adaptado ao cinema dirigida por Jean-Jacques Annaud.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.[1]
+
+					Em 1981, esta obra ganhou o Premio Strega.
+
+					Em 1986, foi adaptado ao cinema dirigida por Jean-Jacques Annaud.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00001G'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

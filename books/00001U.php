@@ -21,14 +21,38 @@
 		<div id='bookinfo'>
 			<?php $book = '00001U'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					O Mulato é o segundo romance de Aluísio Azevedo, escrito no ano de 1881. Foi responsável pelo início do naturalismo no Brasil.
 
 					Denúncia do preconceito racial na sociedade maranhense e da corrupção do clero, o livro irritou os comprovincianos de Aluísio a ponto de o escritor resolver mudar-se para a Corte, onde faria sucesso. Encontra-se atualmente em domínio público de acordo com as leis autorais do Brasil.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Mulato é o segundo romance de Aluísio Azevedo, escrito no ano de 1881. Foi responsável pelo início do naturalismo no Brasil.
+
+					Denúncia do preconceito racial na sociedade maranhense e da corrupção do clero, o livro irritou os comprovincianos de Aluísio a ponto de o escritor resolver mudar-se para a Corte, onde faria sucesso. Encontra-se atualmente em domínio público de acordo com as leis autorais do Brasil.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Mulato é o segundo romance de Aluísio Azevedo, escrito no ano de 1881. Foi responsável pelo início do naturalismo no Brasil.
+
+					Denúncia do preconceito racial na sociedade maranhense e da corrupção do clero, o livro irritou os comprovincianos de Aluísio a ponto de o escritor resolver mudar-se para a Corte, onde faria sucesso. Encontra-se atualmente em domínio público de acordo com as leis autorais do Brasil.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00001U'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

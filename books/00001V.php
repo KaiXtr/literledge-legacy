@@ -21,12 +21,32 @@
 		<div id='bookinfo'>
 			<?php $book = '00001V'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					Marília de Dirceu é o título da obra poética máxima de Tomás Antônio Gonzaga, integrante do Arcadismo.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Marília de Dirceu é o título da obra poética máxima de Tomás Antônio Gonzaga, integrante do Arcadismo.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Marília de Dirceu é o título da obra poética máxima de Tomás Antônio Gonzaga, integrante do Arcadismo.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00001V'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

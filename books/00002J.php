@@ -21,16 +21,44 @@
 		<div id='bookinfo'>
 			<?php $book = '00002J'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					Caramuru. Poema Épico do Descobrimento da Bahia é um poema épico do frei Santa Rita Durão, escrito em 1781.
 
-					Conta a história de Diogo Álvares Correia, o "Caramuru", um náufrago português que viveu entre os Tupinambás. O livro alude também a sua esposa, Catarina Paraguaçu, como visionária capaz de prever as guerras contra os neerlandeses. Os escritos seguem a inspiração de Luís Vaz de Camões, utilizando-se de sonhos e previsões, e tem grande valor por incluir informações sobre os povos indígenas brasileiros.
+					Conta a história de Diogo Álvares Correia, o \"Caramuru\", um náufrago português que viveu entre os Tupinambás. O livro alude também a sua esposa, Catarina Paraguaçu, como visionária capaz de prever as guerras contra os neerlandeses. Os escritos seguem a inspiração de Luís Vaz de Camões, utilizando-se de sonhos e previsões, e tem grande valor por incluir informações sobre os povos indígenas brasileiros.
 
 					Além de relatar a trajetória de Caramuru, refere outros fatos da história do Brasil. É uma obra essencial para o estudo da literatura brasileira arcadista.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Caramuru. Poema Épico do Descobrimento da Bahia é um poema épico do frei Santa Rita Durão, escrito em 1781.
+
+					Conta a história de Diogo Álvares Correia, o \"Caramuru\", um náufrago português que viveu entre os Tupinambás. O livro alude também a sua esposa, Catarina Paraguaçu, como visionária capaz de prever as guerras contra os neerlandeses. Os escritos seguem a inspiração de Luís Vaz de Camões, utilizando-se de sonhos e previsões, e tem grande valor por incluir informações sobre os povos indígenas brasileiros.
+
+					Além de relatar a trajetória de Caramuru, refere outros fatos da história do Brasil. É uma obra essencial para o estudo da literatura brasileira arcadista.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Caramuru. Poema Épico do Descobrimento da Bahia é um poema épico do frei Santa Rita Durão, escrito em 1781.
+
+					Conta a história de Diogo Álvares Correia, o \"Caramuru\", um náufrago português que viveu entre os Tupinambás. O livro alude também a sua esposa, Catarina Paraguaçu, como visionária capaz de prever as guerras contra os neerlandeses. Os escritos seguem a inspiração de Luís Vaz de Camões, utilizando-se de sonhos e previsões, e tem grande valor por incluir informações sobre os povos indígenas brasileiros.
+
+					Além de relatar a trajetória de Caramuru, refere outros fatos da história do Brasil. É uma obra essencial para o estudo da literatura brasileira arcadista.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00002J'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

@@ -21,12 +21,32 @@
 		<div id='bookinfo'>
 			<?php $book = '000028'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					The Sign of the Four (em português O signo dos quatro) é um romance policial escrito por Sir Arthur Conan Doyle, publicado originalmente pela Lippincott’s Magazine em fevereiro de 1890, sendo a primeira edição em formato de livro publicada em outubro do mesmo ano. É a segunda história da saga do detetive Sherlock Holmes.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					The Sign of the Four (em português O signo dos quatro) é um romance policial escrito por Sir Arthur Conan Doyle, publicado originalmente pela Lippincott’s Magazine em fevereiro de 1890, sendo a primeira edição em formato de livro publicada em outubro do mesmo ano. É a segunda história da saga do detetive Sherlock Holmes.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					The Sign of the Four (em português O signo dos quatro) é um romance policial escrito por Sir Arthur Conan Doyle, publicado originalmente pela Lippincott’s Magazine em fevereiro de 1890, sendo a primeira edição em formato de livro publicada em outubro do mesmo ano. É a segunda história da saga do detetive Sherlock Holmes.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '000028'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

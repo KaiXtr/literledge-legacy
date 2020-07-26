@@ -21,14 +21,16 @@
 		<div id='bookinfo'>
 			<?php $book = '000018'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					A Metamorfose (Die Verwandlung em alemão) é uma novela escrita por Franz Kafka, publicada pela primeira vez em 1915.
 
 					Veio a ser o texto mais conhecido, estudado e citado da obra de Kafka. Apesar de ter sido publicada em 1915, foi escrita em novembro de 1912 e concluída em vinte dias.
 
-					Em 7 de dezembro de 1912, Kafka escrevia à sua noiva, Felice Bauer: "Minha pequena história está terminada".
+					Em 7 de dezembro de 1912, Kafka escrevia à sua noiva, Felice Bauer: \"Minha pequena história está terminada\".
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -36,7 +38,45 @@
 					<li><b>: </b>.</li>
 					</ul>
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					A Metamorfose (Die Verwandlung em alemão) é uma novela escrita por Franz Kafka, publicada pela primeira vez em 1915.
+
+					Veio a ser o texto mais conhecido, estudado e citado da obra de Kafka. Apesar de ter sido publicada em 1915, foi escrita em novembro de 1912 e concluída em vinte dias.
+
+					Em 7 de dezembro de 1912, Kafka escrevia à sua noiva, Felice Bauer: \"Minha pequena história está terminada\".
+					<hr>
+					<a name='goto2'></a>
+					<h1> Personagens </h1>
+					<ul>
+					<li><b>: </b>.</li>
+					</ul>
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					A Metamorfose (Die Verwandlung em alemão) é uma novela escrita por Franz Kafka, publicada pela primeira vez em 1915.
+
+					Veio a ser o texto mais conhecido, estudado e citado da obra de Kafka. Apesar de ter sido publicada em 1915, foi escrita em novembro de 1912 e concluída em vinte dias.
+
+					Em 7 de dezembro de 1912, Kafka escrevia à sua noiva, Felice Bauer: \"Minha pequena história está terminada\".
+					<hr>
+					<a name='goto2'></a>
+					<h1> Personagens </h1>
+					<ul>
+					<li><b>: </b>.</li>
+					</ul>
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '000018'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

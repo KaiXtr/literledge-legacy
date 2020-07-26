@@ -21,14 +21,38 @@
 		<div id='bookinfo'>
 			<?php $book = '000024'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					The Fellowship of the Ring (br: A Sociedade do Anel / pt: A Irmandade do Anel) é o primeiro volume da trilogia O Senhor dos Anéis, escrita pelo professor e filólogo britânico J. R. R. Tolkien. Narra o início da história do Um Anel, tendo como principal aspecto a formação de uma Sociedade que deveria levar o Anel para a Montanha da Perdição a fim de destrui-lo.
 
 					O livro é dividido em dois: o primeiro conta a história desde O Condado até a chegada em Valfenda, já o segundo conta da decisão de se criar uma Sociedade para levar o Anel até Mordor até o momento em que a sociedade se desfaz nas Cataratas de Rauros.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					The Fellowship of the Ring (br: A Sociedade do Anel / pt: A Irmandade do Anel) é o primeiro volume da trilogia O Senhor dos Anéis, escrita pelo professor e filólogo britânico J. R. R. Tolkien. Narra o início da história do Um Anel, tendo como principal aspecto a formação de uma Sociedade que deveria levar o Anel para a Montanha da Perdição a fim de destrui-lo.
+
+					O livro é dividido em dois: o primeiro conta a história desde O Condado até a chegada em Valfenda, já o segundo conta da decisão de se criar uma Sociedade para levar o Anel até Mordor até o momento em que a sociedade se desfaz nas Cataratas de Rauros.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					The Fellowship of the Ring (br: A Sociedade do Anel / pt: A Irmandade do Anel) é o primeiro volume da trilogia O Senhor dos Anéis, escrita pelo professor e filólogo britânico J. R. R. Tolkien. Narra o início da história do Um Anel, tendo como principal aspecto a formação de uma Sociedade que deveria levar o Anel para a Montanha da Perdição a fim de destrui-lo.
+
+					O livro é dividido em dois: o primeiro conta a história desde O Condado até a chegada em Valfenda, já o segundo conta da decisão de se criar uma Sociedade para levar o Anel até Mordor até o momento em que a sociedade se desfaz nas Cataratas de Rauros.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '000024'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

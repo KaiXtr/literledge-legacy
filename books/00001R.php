@@ -21,12 +21,32 @@
 		<div id='bookinfo'>
 			<?php $book = '00001R'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas[1][2][3][4] do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.[5]
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas[1][2][3][4] do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.[5]
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas[1][2][3][4] do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.[5]
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00001R'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

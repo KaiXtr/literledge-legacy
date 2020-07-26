@@ -21,14 +21,38 @@
 		<div id='bookinfo'>
 			<?php $book = '00002B'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					Charlie and the Chocolate Factory (Brasil: A Fantástica Fábrica de Chocolate /Portugal: Charlie e a Fábrica de Chocolate) é um livro infantil de autoria do escritor galês Roald Dahl, escrito em 1964.	
 
 					Charlie and the Chocolate Factory foi publicado pela primeira vez nos Estados Unidos pela Alfred A. Knopf, Inc. em 1964 e no Reino Unido por George Allen & Unwin, onze meses depois. O livro foi adaptado em dois grandes filmes: Willy Wonka & the Chocolate Factory em 1971, e Charlie and the Chocolate Factory em 2005. A sequência do livro, Charlie and the Great Glass Elevator, foi escrita por Roald Dahl em 1971 e publicada em 1972. Dahl também planejou escrever um terceiro livro da série, mas nunca terminou.[1]
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Charlie and the Chocolate Factory (Brasil: A Fantástica Fábrica de Chocolate /Portugal: Charlie e a Fábrica de Chocolate) é um livro infantil de autoria do escritor galês Roald Dahl, escrito em 1964.	
+
+					Charlie and the Chocolate Factory foi publicado pela primeira vez nos Estados Unidos pela Alfred A. Knopf, Inc. em 1964 e no Reino Unido por George Allen & Unwin, onze meses depois. O livro foi adaptado em dois grandes filmes: Willy Wonka & the Chocolate Factory em 1971, e Charlie and the Chocolate Factory em 2005. A sequência do livro, Charlie and the Great Glass Elevator, foi escrita por Roald Dahl em 1971 e publicada em 1972. Dahl também planejou escrever um terceiro livro da série, mas nunca terminou.[1]
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Charlie and the Chocolate Factory (Brasil: A Fantástica Fábrica de Chocolate /Portugal: Charlie e a Fábrica de Chocolate) é um livro infantil de autoria do escritor galês Roald Dahl, escrito em 1964.	
+
+					Charlie and the Chocolate Factory foi publicado pela primeira vez nos Estados Unidos pela Alfred A. Knopf, Inc. em 1964 e no Reino Unido por George Allen & Unwin, onze meses depois. O livro foi adaptado em dois grandes filmes: Willy Wonka & the Chocolate Factory em 1971, e Charlie and the Chocolate Factory em 2005. A sequência do livro, Charlie and the Great Glass Elevator, foi escrita por Roald Dahl em 1971 e publicada em 1972. Dahl também planejou escrever um terceiro livro da série, mas nunca terminou.[1]
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00002B'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

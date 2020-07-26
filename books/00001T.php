@@ -21,16 +21,44 @@
 		<div id='bookinfo'>
 			<?php $book = '00001T'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					O Auto da Barca do Inferno (ou Auto da Moralidade) é uma complexa alegoria dramática de Gil Vicente, representada pela primeira vez em 1517. É a primeira parte da chamada trilogia das Barcas (sendo que a segunda e a terceira são respetivamente o Auto da Barca do Purgatório e o Auto da Barca da Glória).
 
 					Os especialistas classificam-na como moralidade, mesmo que muitas vezes se aproxime da farsa. Ela proporciona uma amostra do que era a sociedade lisboeta das décadas iniciais do século XVI, embora alguns dos assuntos que cobre sejam pertinentes na atualidade.
 
-					Diz-se "Barca do Inferno", porque quase todos os candidatos às duas barcas em cena – a do Inferno, com o seu Diabo, e a da Glória, com o Anjo – seguem na segunda. De facto, contudo, ela é muito mais o auto do julgamento das almas.
+					Diz-se \"Barca do Inferno\", porque quase todos os candidatos às duas barcas em cena – a do Inferno, com o seu Diabo, e a da Glória, com o Anjo – seguem na segunda. De facto, contudo, ela é muito mais o auto do julgamento das almas.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Auto da Barca do Inferno (ou Auto da Moralidade) é uma complexa alegoria dramática de Gil Vicente, representada pela primeira vez em 1517. É a primeira parte da chamada trilogia das Barcas (sendo que a segunda e a terceira são respetivamente o Auto da Barca do Purgatório e o Auto da Barca da Glória).
+
+					Os especialistas classificam-na como moralidade, mesmo que muitas vezes se aproxime da farsa. Ela proporciona uma amostra do que era a sociedade lisboeta das décadas iniciais do século XVI, embora alguns dos assuntos que cobre sejam pertinentes na atualidade.
+
+					Diz-se \"Barca do Inferno\", porque quase todos os candidatos às duas barcas em cena – a do Inferno, com o seu Diabo, e a da Glória, com o Anjo – seguem na segunda. De facto, contudo, ela é muito mais o auto do julgamento das almas.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					O Auto da Barca do Inferno (ou Auto da Moralidade) é uma complexa alegoria dramática de Gil Vicente, representada pela primeira vez em 1517. É a primeira parte da chamada trilogia das Barcas (sendo que a segunda e a terceira são respetivamente o Auto da Barca do Purgatório e o Auto da Barca da Glória).
+
+					Os especialistas classificam-na como moralidade, mesmo que muitas vezes se aproxime da farsa. Ela proporciona uma amostra do que era a sociedade lisboeta das décadas iniciais do século XVI, embora alguns dos assuntos que cobre sejam pertinentes na atualidade.
+
+					Diz-se \"Barca do Inferno\", porque quase todos os candidatos às duas barcas em cena – a do Inferno, com o seu Diabo, e a da Glória, com o Anjo – seguem na segunda. De facto, contudo, ela é muito mais o auto do julgamento das almas.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00001T'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

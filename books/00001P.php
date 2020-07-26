@@ -21,12 +21,32 @@
 		<div id='bookinfo'>
 			<?php $book = '00001P'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					As Aventuras de Tom Sawyer (no original: The Adventures of Tom Sawyer) é um livro infanto juvenil publicado em 1876 pelo escritor estadunidense Mark Twain. O livro conta as aventuras do rapaz Tom Sawyer que vive com sua tia Polly, o irmão Sid e o amigo Huckleberry Finn.
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					As Aventuras de Tom Sawyer (no original: The Adventures of Tom Sawyer) é um livro infanto juvenil publicado em 1876 pelo escritor estadunidense Mark Twain. O livro conta as aventuras do rapaz Tom Sawyer que vive com sua tia Polly, o irmão Sid e o amigo Huckleberry Finn.
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					As Aventuras de Tom Sawyer (no original: The Adventures of Tom Sawyer) é um livro infanto juvenil publicado em 1876 pelo escritor estadunidense Mark Twain. O livro conta as aventuras do rapaz Tom Sawyer que vive com sua tia Polly, o irmão Sid e o amigo Huckleberry Finn.
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '00001P'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

@@ -21,7 +21,9 @@
 		<div id='bookinfo'>
 			<?php $book = '000015'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {
+						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
 					Canaã[1] é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.[2]
@@ -36,7 +38,45 @@
 					<li><b>Maria: </b>.</li>
 					</ul>
 					<hr>
-				</div>
+						";
+					}
+					if ($_COOKIE['lang'] == 'en') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Canaã[1] é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.[2]
+
+					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.[3]
+					<hr>
+					<a name='goto2'></a>
+					<h1> Personagens </h1>
+					<ul>
+					<li><b>Milkau: </b>.</li>
+					<li><b>Lentz: </b>.</li>
+					<li><b>Maria: </b>.</li>
+					</ul>
+					<hr>
+						";
+					}
+					if ($_COOKIE['lang'] == 'es') {
+						echo "
+					<a name='goto1'></a>
+					<h1> Resenha </h1>
+					Canaã[1] é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.[2]
+
+					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.[3]
+					<hr>
+					<a name='goto2'></a>
+					<h1> Personagens </h1>
+					<ul>
+					<li><b>Milkau: </b>.</li>
+					<li><b>Lentz: </b>.</li>
+					<li><b>Maria: </b>.</li>
+					</ul>
+					<hr>
+						";
+					}
+				?>
 			</div>
 			<?php $book = '000015'; $ech = '2'; include '../design/bookinfo.php'; ?>
 		</div>

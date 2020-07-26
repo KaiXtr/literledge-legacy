@@ -276,7 +276,7 @@
 
 						if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
 						#$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
-						$d = $d ."<tr onclick='window.location.href=".'"'.$e['link'].'"'.";'>
+						$d = $d ."<tr onclick='window.location.href=".'"https://dl.dropboxusercontent.com/'.$e['link'].'"'.";'>
 							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th>
 							</tr>";
 						#inserir isto depois: <th>".$pr. "</th> <th>".$byt."</th>
@@ -383,22 +383,26 @@
 					}
 
 					if ($ys == true) {
-						$rws = "<div class='thbcritic'>
-									<div>
-										<h2> Publique sua opinião </h2>
-										<br />
-										<form action='account/post_opinion.php?a=0' method='post'>
-											<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();' maxlength='736'></textarea> <br />
-											<span id='coucom'>0/200</span>
-											<input id='subcom' class='btpress' type='submit' disabled />
-											<input name='book' value='".$b['id']."' style='display: none;' />
-										</form>
-									</div>
-								</div>".$rws;
+						$comrws = "<div class='thbcritic'><div><h2>";
+						if ($_COOKIE['lang'] == 'pt') {$comrws .= "Publique sua opinião";}
+						if ($_COOKIE['lang'] == 'en') {$comrws .= "Publish your opinion";}
+						if ($_COOKIE['lang'] == 'es') {$comrws .= "Publica tu opinión";}
+						$rws = $comrws."</h2>
+								<br />
+								<form action='account/post_opinion.php?a=0' method='post'>
+									<textarea id='texcom' class='textbox long' name='comment' oninput='char_count();' maxlength='736'></textarea> <br />
+									<span id='coucom'>0/200</span>
+									<input id='subcom' class='btpress' type='submit' disabled />
+									<input name='book' value='".$b['id']."' style='display: none;' />
+								</form>
+							</div>
+						</div>".$rws;
 						}
 					}
 				if ($rws == '') {
-					$rws = "Nenhuma opinião sobre este livro. <a href='login.php'>Seja o primeiro a opinar!</a>";
+					if ($_COOKIE['lang'] == 'pt') {$rws = "Nenhuma opinião sobre este livro. <a href='login.php'>Seja o primeiro a opinar!</a>";}
+					if ($_COOKIE['lang'] == 'en') {$rws = "No opinions about this book. <a href='login.php'>Be the first to post!</a>";}
+					if ($_COOKIE['lang'] == 'es') {$rws = "No hay opiniones sobre este libro. <a href='login.php'>¡Sé el primero en publicar!</a>";}
 					}
 
 				echo $rws."</div>

@@ -133,13 +133,13 @@ else if ($_COOKIE['lang'] == 'es') {
 
 #LICENSES
 if ($_COOKIE['lang'] == 'pt') {
-	$liclst = array('PD'=>'Domínio Público','CR'=>'Todos os direitos reservados');
+	$liclst = array('PD'=>'Domínio Público','CR'=>'Todos os direitos reservados','CC'=>'Creative Commons');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$liclst = array('PD'=>'Public Domain','CR'=>'All rights reserved');
+	$liclst = array('PD'=>'Public Domain','CR'=>'All rights reserved','CC'=>'Creative Commons');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$liclst = array('PD'=>'Dominio Publico','CR'=>'Todos los derechos reservados');
+	$liclst = array('PD'=>'Dominio Publico','CR'=>'Todos los derechos reservados','CC'=>'Creative Commons');
 	}
 
 #CDD
