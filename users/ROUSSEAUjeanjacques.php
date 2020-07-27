@@ -21,15 +21,41 @@
 
 		<?php $user = 'ROUSSEAUjeanjacques'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Jean-Jacques Rousseau, também conhecido como J.J. Rousseau ou simplesmente Rousseau (Genebra, 28 de junho de 1712 — Ermenonville, 2 de julho de 1778), foi um importante filósofo, teórico político, escritor e compositor autodidata genebrino. É considerado um dos principais filósofos do iluminismo e um precursor do romantismo.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Jean-Jacques Rousseau, também conhecido como J.J. Rousseau ou simplesmente Rousseau (Genebra, 28 de junho de 1712 — Ermenonville, 2 de julho de 1778), foi um importante filósofo, teórico político, escritor e compositor autodidata genebrino. É considerado um dos principais filósofos do iluminismo e um precursor do romantismo.
 
-				Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
+			Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
 
-				Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
-			</div>
+			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Jean-Jacques Rousseau, também conhecido como J.J. Rousseau ou simplesmente Rousseau (Genebra, 28 de junho de 1712 — Ermenonville, 2 de julho de 1778), foi um importante filósofo, teórico político, escritor e compositor autodidata genebrino. É considerado um dos principais filósofos do iluminismo e um precursor do romantismo.
+
+			Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
+
+			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Jean-Jacques Rousseau, também conhecido como J.J. Rousseau ou simplesmente Rousseau (Genebra, 28 de junho de 1712 — Ermenonville, 2 de julho de 1778), foi um importante filósofo, teórico político, escritor e compositor autodidata genebrino. É considerado um dos principais filósofos do iluminismo e um precursor do romantismo.
+
+			Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
+
+			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='ROUSSEAUjeanjacques'; include '../design/poemfind.php'; ?>
 		<?php $user = 'ROUSSEAUjeanjacques'; include '../design/auctorbooks.php'; ?>

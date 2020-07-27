@@ -21,11 +21,35 @@
 
 		<?php $user = 'HUGOvictor'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Victor-Marie Hugo (Besançon, 26 de fevereiro de 1802 — Paris, 22 de maio de 1885) foi um romancista, poeta, dramaturgo, ensaísta, artista, estadista e ativista <br />
 			pelos direitos humanos francês de grande atuação política em seu país. É autor de Les Misérables e de Notre-Dame de Paris, entre diversas outras obras clássicas <br />
 			de fama e renome mundial. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Victor_Hugo' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Victor-Marie Hugo (Besançon, 26 de fevereiro de 1802 — Paris, 22 de maio de 1885) foi um romancista, poeta, dramaturgo, ensaísta, artista, estadista e ativista <br />
+			pelos direitos humanos francês de grande atuação política em seu país. É autor de Les Misérables e de Notre-Dame de Paris, entre diversas outras obras clássicas <br />
+			de fama e renome mundial. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Victor_Hugo' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Victor-Marie Hugo (Besançon, 26 de fevereiro de 1802 — Paris, 22 de maio de 1885) foi um romancista, poeta, dramaturgo, ensaísta, artista, estadista e ativista <br />
+			pelos direitos humanos francês de grande atuação política em seu país. É autor de Les Misérables e de Notre-Dame de Paris, entre diversas outras obras clássicas <br />
+			de fama e renome mundial. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Victor_Hugo' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='HUGOvictor'; include '../design/poemfind.php'; ?>
 		<?php $user = 'HUGOvictor'; include '../design/auctorbooks.php'; ?>

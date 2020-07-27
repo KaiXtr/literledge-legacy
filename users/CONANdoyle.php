@@ -21,6 +21,9 @@
 
 		<?php $user = 'CONANdoyle'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Arthur Ignatius Conan Doyle KGStJ, DL (Edimburgo, 22 de maio de 1859 — Crowborough, 7 de julho de 1930) foi um escritor e médico britânico, nascido na Escócia, <br />
 			mundialmente famoso por suas 60 histórias sobre o detetive Sherlock Holmes,[1] consideradas uma grande inovação no campo da literatura criminal. <br />
 			Foi um renomado e prolífico escritor cujos trabalhos incluem histórias de ficção científica, novelas históricas, peças e romances, poesias e obras de não-ficção. <br />
@@ -29,6 +32,33 @@
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Arthur_Conan_Doyle' > Wikipedia </a>
 			<br />
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Arthur Ignatius Conan Doyle KGStJ, DL (Edimburgo, 22 de maio de 1859 — Crowborough, 7 de julho de 1930) foi um escritor e médico britânico, nascido na Escócia, <br />
+			mundialmente famoso por suas 60 histórias sobre o detetive Sherlock Holmes,[1] consideradas uma grande inovação no campo da literatura criminal. <br />
+			Foi um renomado e prolífico escritor cujos trabalhos incluem histórias de ficção científica, novelas históricas, peças e romances, poesias e obras de não-ficção. <br />
+			<br />
+			Arthur Conan Doyle viveu e escreveu parte de suas obras em Southsea, um bairro elegante de Portsmouth. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Arthur_Conan_Doyle' > Wikipedia </a>
+			<br />
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Arthur Ignatius Conan Doyle KGStJ, DL (Edimburgo, 22 de maio de 1859 — Crowborough, 7 de julho de 1930) foi um escritor e médico britânico, nascido na Escócia, <br />
+			mundialmente famoso por suas 60 histórias sobre o detetive Sherlock Holmes,[1] consideradas uma grande inovação no campo da literatura criminal. <br />
+			Foi um renomado e prolífico escritor cujos trabalhos incluem histórias de ficção científica, novelas históricas, peças e romances, poesias e obras de não-ficção. <br />
+			<br />
+			Arthur Conan Doyle viveu e escreveu parte de suas obras em Southsea, um bairro elegante de Portsmouth. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Arthur_Conan_Doyle' > Wikipedia </a>
+			<br />
+					";
+				}
+			?>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/XWjgt9PzYEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='CONANdoyle'; include '../design/poemfind.php'; ?>

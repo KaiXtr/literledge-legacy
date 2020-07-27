@@ -21,12 +21,38 @@
 
 		<?php $user = 'CERVANTESmiguel'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Miguel de Cervantes Saavedra[a] (Alcalá de Henares, 29 de setembro de 1547 – Madrid, 22 de abril de 1616)[1] foi um romancista, dramaturgo e poeta castelhano. <br />
 			A sua obra-prima, Dom Quixote, muitas vezes considerada o primeiro romance moderno,[2] é um clássico da literatura ocidental e é regularmente considerada um dos melhores <br />
 			romances já escritos.[3] O seu trabalho é considerado entre os mais importantes em toda a literatura,[3] e sua influência sobre a língua castelhana tem sido tão grande <br />
 			que o castelhano é frequentemente chamado de La lengua de Cervantes (A língua de Cervantes).[4] <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Miguel_de_Cervantes' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Miguel de Cervantes Saavedra[a] (Alcalá de Henares, 29 de setembro de 1547 – Madrid, 22 de abril de 1616)[1] foi um romancista, dramaturgo e poeta castelhano. <br />
+			A sua obra-prima, Dom Quixote, muitas vezes considerada o primeiro romance moderno,[2] é um clássico da literatura ocidental e é regularmente considerada um dos melhores <br />
+			romances já escritos.[3] O seu trabalho é considerado entre os mais importantes em toda a literatura,[3] e sua influência sobre a língua castelhana tem sido tão grande <br />
+			que o castelhano é frequentemente chamado de La lengua de Cervantes (A língua de Cervantes).[4] <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Miguel_de_Cervantes' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Miguel de Cervantes Saavedra[a] (Alcalá de Henares, 29 de setembro de 1547 – Madrid, 22 de abril de 1616)[1] foi um romancista, dramaturgo e poeta castelhano. <br />
+			A sua obra-prima, Dom Quixote, muitas vezes considerada o primeiro romance moderno,[2] é um clássico da literatura ocidental e é regularmente considerada um dos melhores <br />
+			romances já escritos.[3] O seu trabalho é considerado entre os mais importantes em toda a literatura,[3] e sua influência sobre a língua castelhana tem sido tão grande <br />
+			que o castelhano é frequentemente chamado de La lengua de Cervantes (A língua de Cervantes).[4] <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Miguel_de_Cervantes' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='CERVANTESmiguel'; include '../design/poemfind.php'; ?>
 		<?php $user = 'CERVANTESmiguel'; include '../design/auctorbooks.php'; ?>

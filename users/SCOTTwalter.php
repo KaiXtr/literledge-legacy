@@ -21,15 +21,47 @@
 
 		<?php $user = 'SCOTTwalter'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Sir Walter Scott, PRSE (Edimburgo, 15 de agosto de 1771 – 21 de setembro de 1832) foi o criador do verdadeiro romance histórico. É certo que, pouco antes dele, alguns autores, entre os quais avultou Maria Edgeworth com o seu curioso «Castelo de Rackrent», tinham procurado dar uma feição definitiva a essa modalidade literária, mas o público e a crítica não compreenderam a intenção.
 
 			Walter Scott nasceu em Edimburgo e era filho de um advogado. Seu pai destinou-lhe a carreira de Direito, mas ele depressa a trocou pelos entusiasmos da literatura e pela adoração das antiguidades.
 
-			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma "causa morta", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
+			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
 
 			Possuidor de uma energia inesgotável, ele escreveu sem descanso, oferecendo-nos obra sobre obra.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Walter_Scott' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Sir Walter Scott, PRSE (Edimburgo, 15 de agosto de 1771 – 21 de setembro de 1832) foi o criador do verdadeiro romance histórico. É certo que, pouco antes dele, alguns autores, entre os quais avultou Maria Edgeworth com o seu curioso «Castelo de Rackrent», tinham procurado dar uma feição definitiva a essa modalidade literária, mas o público e a crítica não compreenderam a intenção.
+
+			Walter Scott nasceu em Edimburgo e era filho de um advogado. Seu pai destinou-lhe a carreira de Direito, mas ele depressa a trocou pelos entusiasmos da literatura e pela adoração das antiguidades.
+
+			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
+
+			Possuidor de uma energia inesgotável, ele escreveu sem descanso, oferecendo-nos obra sobre obra.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Walter_Scott' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Sir Walter Scott, PRSE (Edimburgo, 15 de agosto de 1771 – 21 de setembro de 1832) foi o criador do verdadeiro romance histórico. É certo que, pouco antes dele, alguns autores, entre os quais avultou Maria Edgeworth com o seu curioso «Castelo de Rackrent», tinham procurado dar uma feição definitiva a essa modalidade literária, mas o público e a crítica não compreenderam a intenção.
+
+			Walter Scott nasceu em Edimburgo e era filho de um advogado. Seu pai destinou-lhe a carreira de Direito, mas ele depressa a trocou pelos entusiasmos da literatura e pela adoração das antiguidades.
+
+			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
+
+			Possuidor de uma energia inesgotável, ele escreveu sem descanso, oferecendo-nos obra sobre obra.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Walter_Scott' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='SCOTTwalter'; include '../design/poemfind.php'; ?>
 		<?php $user = 'SCOTTwalter'; include '../design/auctorbooks.php'; ?>

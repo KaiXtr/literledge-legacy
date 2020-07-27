@@ -21,9 +21,29 @@
 
 		<?php $user = 'FLAUBERTgustave'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Gustave Flaubert (Rouen, 12 de dezembro de 1821[1] – Croisset, 8 de maio de 1880 [2]) foi um escritor francês. Prosador importante, Flaubert marcou a literatura francesa pela profundidade de suas análises psicológicas, pelo seu senso de realidade, pela sua lucidez sobre o comportamento social, e pela força de seu estilo em grandes romances, tais como Madame Bovary (1857), A Educação Sentimental (1869), Salammbô (1862), mais os seus contos, nomeadamente os Trois contes (1877).
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Gustave_Flaubert'> Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Gustave Flaubert (Rouen, 12 de dezembro de 1821[1] – Croisset, 8 de maio de 1880 [2]) foi um escritor francês. Prosador importante, Flaubert marcou a literatura francesa pela profundidade de suas análises psicológicas, pelo seu senso de realidade, pela sua lucidez sobre o comportamento social, e pela força de seu estilo em grandes romances, tais como Madame Bovary (1857), A Educação Sentimental (1869), Salammbô (1862), mais os seus contos, nomeadamente os Trois contes (1877).
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Gustave_Flaubert'> Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Gustave Flaubert (Rouen, 12 de dezembro de 1821[1] – Croisset, 8 de maio de 1880 [2]) foi um escritor francês. Prosador importante, Flaubert marcou a literatura francesa pela profundidade de suas análises psicológicas, pelo seu senso de realidade, pela sua lucidez sobre o comportamento social, e pela força de seu estilo em grandes romances, tais como Madame Bovary (1857), A Educação Sentimental (1869), Salammbô (1862), mais os seus contos, nomeadamente os Trois contes (1877).
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Gustave_Flaubert'> Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='FLAUBERTgustave'; include '../design/poemfind.php'; ?>
 		<?php $user = 'FLAUBERTgustave'; include '../design/auctorbooks.php'; ?>

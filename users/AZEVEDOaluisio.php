@@ -21,10 +21,32 @@
 
 		<?php $user = 'AZEVEDOaluisio'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Aluísio Tancredo Gonçalves de Azevedo (São Luís, 14 de abril de 1857 — Buenos Aires, 21 de janeiro de 1913) foi um romancista, contista, cronista, diplomata, <br />
 			caricaturista e jornalista brasileiro; além de desenhista e pintor. <br />
 			 <br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Aluísio_Azevedo' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Aluísio Tancredo Gonçalves de Azevedo (São Luís, 14 de abril de 1857 — Buenos Aires, 21 de janeiro de 1913) foi um romancista, contista, cronista, diplomata, <br />
+			caricaturista e jornalista brasileiro; além de desenhista e pintor. <br />
+			 <br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Aluísio_Azevedo' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Aluísio Tancredo Gonçalves de Azevedo (São Luís, 14 de abril de 1857 — Buenos Aires, 21 de janeiro de 1913) foi um romancista, contista, cronista, diplomata, <br />
+			caricaturista e jornalista brasileiro; além de desenhista e pintor. <br />
+			 <br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Aluísio_Azevedo' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='AZEVEDOaluisio'; include '../design/poemfind.php'; ?>
 		<?php $user = 'AZEVEDOaluisio'; include '../design/auctorbooks.php'; ?>

@@ -21,20 +21,41 @@
 
 		<?php $user = 'BOYNEjohn'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				John Boyne (Dublin, 30 de abril de 1971) é um escritor irlandês, famoso pelo best-seller The Boy in The Stripped Pyjamas: A Fable.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			John Boyne (Dublin, 30 de abril de 1971) é um escritor irlandês, famoso pelo best-seller The Boy in The Stripped Pyjamas: A Fable.
 
-				Estudou língua inglesa no Trinity College, e Literatura Criativa na Universidade de East Anglia, onde foi galardoado com o prêmio Curtis Brown. Começou a escrever histórias aos 19 anos e teve o primeiro romance publicado dez anos depois.[1] Trabalhou numa livraria dos 25 aos 32 anos.[2]
+			Estudou língua inglesa no Trinity College, e Literatura Criativa na Universidade de East Anglia, onde foi galardoado com o prêmio Curtis Brown. Começou a escrever histórias aos 19 anos e teve o primeiro romance publicado dez anos depois.[1] Trabalhou numa livraria dos 25 aos 32 anos.[2]
 
-				Boyne lançou recentemente o seu sétimo romance - The House of Special Purpose, ou O Palácio de Inverno na edição brasileira -, assim como uma quantidade de contos que foram publicados em várias antologias e transmitidos por rádio e televisão. Os seus romances foram publicados em 30 idiomas. The Boy in the Striped Pyjamas (Brasil: O menino do pijama listrado /Portugal: O Rapaz do Pijama às Riscas)é um Best Seller em Nova York e uma adaptação para o cinema começou a ser filmada em abril de 2007. Boyne reside em Dublin.
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/John_Boyne' > Wikipedia </a>
-			</div>
-			<div class='manlan' lang='en'>
-				Hot dog yea trup united states uhuuuu rockn roll <br />
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Esopo' > Wikipedia </a>
-			</div>
+			Boyne lançou recentemente o seu sétimo romance - The House of Special Purpose, ou O Palácio de Inverno na edição brasileira -, assim como uma quantidade de contos que foram publicados em várias antologias e transmitidos por rádio e televisão. Os seus romances foram publicados em 30 idiomas. The Boy in the Striped Pyjamas (Brasil: O menino do pijama listrado /Portugal: O Rapaz do Pijama às Riscas)é um Best Seller em Nova York e uma adaptação para o cinema começou a ser filmada em abril de 2007. Boyne reside em Dublin.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/John_Boyne' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			John Boyne (Dublin, 30 de abril de 1971) é um escritor irlandês, famoso pelo best-seller The Boy in The Stripped Pyjamas: A Fable.
+
+			Estudou língua inglesa no Trinity College, e Literatura Criativa na Universidade de East Anglia, onde foi galardoado com o prêmio Curtis Brown. Começou a escrever histórias aos 19 anos e teve o primeiro romance publicado dez anos depois.[1] Trabalhou numa livraria dos 25 aos 32 anos.[2]
+
+			Boyne lançou recentemente o seu sétimo romance - The House of Special Purpose, ou O Palácio de Inverno na edição brasileira -, assim como uma quantidade de contos que foram publicados em várias antologias e transmitidos por rádio e televisão. Os seus romances foram publicados em 30 idiomas. The Boy in the Striped Pyjamas (Brasil: O menino do pijama listrado /Portugal: O Rapaz do Pijama às Riscas)é um Best Seller em Nova York e uma adaptação para o cinema começou a ser filmada em abril de 2007. Boyne reside em Dublin.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/John_Boyne' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			John Boyne (Dublin, 30 de abril de 1971) é um escritor irlandês, famoso pelo best-seller The Boy in The Stripped Pyjamas: A Fable.
+
+			Estudou língua inglesa no Trinity College, e Literatura Criativa na Universidade de East Anglia, onde foi galardoado com o prêmio Curtis Brown. Começou a escrever histórias aos 19 anos e teve o primeiro romance publicado dez anos depois.[1] Trabalhou numa livraria dos 25 aos 32 anos.[2]
+
+			Boyne lançou recentemente o seu sétimo romance - The House of Special Purpose, ou O Palácio de Inverno na edição brasileira -, assim como uma quantidade de contos que foram publicados em várias antologias e transmitidos por rádio e televisão. Os seus romances foram publicados em 30 idiomas. The Boy in the Striped Pyjamas (Brasil: O menino do pijama listrado /Portugal: O Rapaz do Pijama às Riscas)é um Best Seller em Nova York e uma adaptação para o cinema começou a ser filmada em abril de 2007. Boyne reside em Dublin.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/John_Boyne' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='BOYNEjohn'; include '../design/poemfind.php'; ?>
 		<?php $user = 'BOYNEjohn'; include '../design/auctorbooks.php'; ?>

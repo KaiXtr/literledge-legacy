@@ -21,12 +21,38 @@
 
 		<?php $user = 'CARROLLlewis'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Charles Lutwidge Dodgson, mais conhecido pelo seu pseudônimo Lewis Carroll (Daresbury, 27 de janeiro de 1832 — Guildford, 14 de Janeiro de 1898), foi um romancista, <br />
 			contista, fabulista, poeta, desenhista, fotógrafo, matemático e reverendo anglicano britânico. Lecionou matemática no Christ College, em Oxford. <br />
 			É autor do clássico livro Alice no País das Maravilhas, além de outros poemas escritos em estilo nonsense ao longo de sua carreira literária, que são <br />
 			considerados políticos, em função das fusões e da disposição espacial das palavras, como precursores da poesia de vanguarda. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Lewis_Carroll' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Charles Lutwidge Dodgson, mais conhecido pelo seu pseudônimo Lewis Carroll (Daresbury, 27 de janeiro de 1832 — Guildford, 14 de Janeiro de 1898), foi um romancista, <br />
+			contista, fabulista, poeta, desenhista, fotógrafo, matemático e reverendo anglicano britânico. Lecionou matemática no Christ College, em Oxford. <br />
+			É autor do clássico livro Alice no País das Maravilhas, além de outros poemas escritos em estilo nonsense ao longo de sua carreira literária, que são <br />
+			considerados políticos, em função das fusões e da disposição espacial das palavras, como precursores da poesia de vanguarda. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Lewis_Carroll' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Charles Lutwidge Dodgson, mais conhecido pelo seu pseudônimo Lewis Carroll (Daresbury, 27 de janeiro de 1832 — Guildford, 14 de Janeiro de 1898), foi um romancista, <br />
+			contista, fabulista, poeta, desenhista, fotógrafo, matemático e reverendo anglicano britânico. Lecionou matemática no Christ College, em Oxford. <br />
+			É autor do clássico livro Alice no País das Maravilhas, além de outros poemas escritos em estilo nonsense ao longo de sua carreira literária, que são <br />
+			considerados políticos, em função das fusões e da disposição espacial das palavras, como precursores da poesia de vanguarda. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Lewis_Carroll' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='CARROLLlewis'; include '../design/poemfind.php'; ?>
 		<?php $user = 'CARROLLlewis'; include '../design/auctorbooks.php'; ?>

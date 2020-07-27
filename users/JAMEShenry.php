@@ -21,13 +21,35 @@
 
 		<?php $user = 'JAMEShenry'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Henry James, Jr., OM (Nova Iorque, 15 de abril de 1843 — Londres, 28 de fevereiro de 1916) foi um escritor nascido nos Estados Unidos e naturalizado britânico. Uma das principais figuras do realismo na literatura do século XIX. Autor de alguns dos romances, contos e críticas literárias mais importantes da literatura de língua inglesa.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Henry James, Jr., OM (Nova Iorque, 15 de abril de 1843 — Londres, 28 de fevereiro de 1916) foi um escritor nascido nos Estados Unidos e naturalizado britânico. Uma das principais figuras do realismo na literatura do século XIX. Autor de alguns dos romances, contos e críticas literárias mais importantes da literatura de língua inglesa.
 
-				Filho do teólogo Henry James Senior e irmão do médico, filósofo e psicólogo William James.
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Henry_James' > Wikipedia </a>
-			</div>
+			Filho do teólogo Henry James Senior e irmão do médico, filósofo e psicólogo William James.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Henry_James' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Henry James, Jr., OM (Nova Iorque, 15 de abril de 1843 — Londres, 28 de fevereiro de 1916) foi um escritor nascido nos Estados Unidos e naturalizado britânico. Uma das principais figuras do realismo na literatura do século XIX. Autor de alguns dos romances, contos e críticas literárias mais importantes da literatura de língua inglesa.
+
+			Filho do teólogo Henry James Senior e irmão do médico, filósofo e psicólogo William James.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Henry_James' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Henry James, Jr., OM (Nova Iorque, 15 de abril de 1843 — Londres, 28 de fevereiro de 1916) foi um escritor nascido nos Estados Unidos e naturalizado britânico. Uma das principais figuras do realismo na literatura do século XIX. Autor de alguns dos romances, contos e críticas literárias mais importantes da literatura de língua inglesa.
+
+			Filho do teólogo Henry James Senior e irmão do médico, filósofo e psicólogo William James.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Henry_James' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='JAMEShenry'; include '../design/poemfind.php'; ?>
 		<?php $user = 'JAMEShenry'; include '../design/auctorbooks.php'; ?>

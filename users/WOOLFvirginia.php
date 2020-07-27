@@ -21,15 +21,41 @@
 
 		<?php $user = 'WOOLFvirginia'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Adeline Virginia Woolf, nascida Adeline Virginia Stephen (Kensington, Middlesex, 25 de janeiro de 1882 — Lewes, Sussex, 28 de março de 1941), foi uma escritora, ensaísta e editora britânica, conhecida como uma das mais proeminentes figuras do modernismo.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Adeline Virginia Woolf, nascida Adeline Virginia Stephen (Kensington, Middlesex, 25 de janeiro de 1882 — Lewes, Sussex, 28 de março de 1941), foi uma escritora, ensaísta e editora britânica, conhecida como uma das mais proeminentes figuras do modernismo.
 
-				Estreou-se na literatura em 1915 com o romance The Voyage Out, que abriu o caminho para a sua carreira como escritora e uma série de obras notáveis. Morreu em 1941, tendo cometido suicídio.
+			Estreou-se na literatura em 1915 com o romance The Voyage Out, que abriu o caminho para a sua carreira como escritora e uma série de obras notáveis. Morreu em 1941, tendo cometido suicídio.
 
-				Woolf foi membro do Grupo de Bloomsbury e desempenhou um papel de significância dentro da sociedade literária londrina durante o período entre guerras. Seus trabalhos mais famosos incluem os romances Mrs. Dalloway (1925), To the Lighthouse (1927), Orlando: A Biography (1928), e o livro-ensaio A Room of One's Own (1929), onde encontra-se a famosa citação "Uma mulher deve ter dinheiro e um teto todo seu se ela quiser escrever ficção".
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Virginia_Woolf' > Wikipedia </a>
-			</div>
+			Woolf foi membro do Grupo de Bloomsbury e desempenhou um papel de significância dentro da sociedade literária londrina durante o período entre guerras. Seus trabalhos mais famosos incluem os romances Mrs. Dalloway (1925), To the Lighthouse (1927), Orlando: A Biography (1928), e o livro-ensaio A Room of One's Own (1929), onde encontra-se a famosa citação \"Uma mulher deve ter dinheiro e um teto todo seu se ela quiser escrever ficção\".
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Virginia_Woolf' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Adeline Virginia Woolf, nascida Adeline Virginia Stephen (Kensington, Middlesex, 25 de janeiro de 1882 — Lewes, Sussex, 28 de março de 1941), foi uma escritora, ensaísta e editora britânica, conhecida como uma das mais proeminentes figuras do modernismo.
+
+			Estreou-se na literatura em 1915 com o romance The Voyage Out, que abriu o caminho para a sua carreira como escritora e uma série de obras notáveis. Morreu em 1941, tendo cometido suicídio.
+
+			Woolf foi membro do Grupo de Bloomsbury e desempenhou um papel de significância dentro da sociedade literária londrina durante o período entre guerras. Seus trabalhos mais famosos incluem os romances Mrs. Dalloway (1925), To the Lighthouse (1927), Orlando: A Biography (1928), e o livro-ensaio A Room of One's Own (1929), onde encontra-se a famosa citação \"Uma mulher deve ter dinheiro e um teto todo seu se ela quiser escrever ficção\".
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Virginia_Woolf' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Adeline Virginia Woolf, nascida Adeline Virginia Stephen (Kensington, Middlesex, 25 de janeiro de 1882 — Lewes, Sussex, 28 de março de 1941), foi uma escritora, ensaísta e editora britânica, conhecida como uma das mais proeminentes figuras do modernismo.
+
+			Estreou-se na literatura em 1915 com o romance The Voyage Out, que abriu o caminho para a sua carreira como escritora e uma série de obras notáveis. Morreu em 1941, tendo cometido suicídio.
+
+			Woolf foi membro do Grupo de Bloomsbury e desempenhou um papel de significância dentro da sociedade literária londrina durante o período entre guerras. Seus trabalhos mais famosos incluem os romances Mrs. Dalloway (1925), To the Lighthouse (1927), Orlando: A Biography (1928), e o livro-ensaio A Room of One's Own (1929), onde encontra-se a famosa citação \"Uma mulher deve ter dinheiro e um teto todo seu se ela quiser escrever ficção\".
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Virginia_Woolf' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='WOOLFvirginia'; include '../design/poemfind.php'; ?>
 		<?php $user = 'WOOLFvirginia'; include '../design/auctorbooks.php'; ?>

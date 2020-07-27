@@ -21,9 +21,29 @@
 
 		<?php $user = 'POMPEIAraul'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Raul Pompeia[1] (Angra dos Reis, 12 de abril de 1863 — Rio de Janeiro, 25 de dezembro de 1895) foi um escritor brasileiro, conhecido por sua obra O Ateneu. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Raul_Pompeia' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Raul Pompeia[1] (Angra dos Reis, 12 de abril de 1863 — Rio de Janeiro, 25 de dezembro de 1895) foi um escritor brasileiro, conhecido por sua obra O Ateneu. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Raul_Pompeia' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Raul Pompeia[1] (Angra dos Reis, 12 de abril de 1863 — Rio de Janeiro, 25 de dezembro de 1895) foi um escritor brasileiro, conhecido por sua obra O Ateneu. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Raul_Pompeia' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='POMPEIAraul'; include '../design/poemfind.php'; ?>
 		<?php $user = 'POMPEIAraul'; include '../design/auctorbooks.php'; ?>

@@ -21,11 +21,35 @@
 
 		<?php $user = 'BOCAGEbarbosa'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			<div class='manlan' lang='pt'>
 				Manuel Maria de Barbosa l'Hedois du Bocage (Setúbal, 15 de setembro de 1765 – Lisboa, Mercês, 21 de dezembro de 1805) foi um poeta nacional português e, possivelmente, o maior representante do arcadismo lusitano.[1] Embora ícone deste movimento literário, é uma figura inserida num período de transição do estilo clássico para o estilo romântico que terá forte presença na literatura portuguesa do século XIX.[2] Era primo em segundo grau do zoólogo José Vicente Barbosa du Bocage.
 				<br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_Maria_Barbosa_du_Bocage' > Wikipedia </a>
 			</div>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			<div class='manlan' lang='pt'>
+				Manuel Maria de Barbosa l'Hedois du Bocage (Setúbal, 15 de setembro de 1765 – Lisboa, Mercês, 21 de dezembro de 1805) foi um poeta nacional português e, possivelmente, o maior representante do arcadismo lusitano.[1] Embora ícone deste movimento literário, é uma figura inserida num período de transição do estilo clássico para o estilo romântico que terá forte presença na literatura portuguesa do século XIX.[2] Era primo em segundo grau do zoólogo José Vicente Barbosa du Bocage.
+				<br />
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_Maria_Barbosa_du_Bocage' > Wikipedia </a>
+			</div>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			<div class='manlan' lang='pt'>
+				Manuel Maria de Barbosa l'Hedois du Bocage (Setúbal, 15 de setembro de 1765 – Lisboa, Mercês, 21 de dezembro de 1805) foi um poeta nacional português e, possivelmente, o maior representante do arcadismo lusitano.[1] Embora ícone deste movimento literário, é uma figura inserida num período de transição do estilo clássico para o estilo romântico que terá forte presença na literatura portuguesa do século XIX.[2] Era primo em segundo grau do zoólogo José Vicente Barbosa du Bocage.
+				<br />
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_Maria_Barbosa_du_Bocage' > Wikipedia </a>
+			</div>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='BOCAGEbarbosa'; include '../design/poemfind.php'; ?>
 		<?php $user = 'BOCAGEbarbosa'; include '../design/auctorbooks.php'; ?>

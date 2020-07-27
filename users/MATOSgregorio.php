@@ -21,9 +21,29 @@
 
 		<?php $user = 'MATOSgregorio'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Gregório de Matos Guerra (Salvador, 23 de dezembro de 1636 – Recife, 26 de novembro de 1696), alcunhado de Boca do Inferno ou Boca de Brasa, foi um advogado e poeta do Brasil Colônia. É considerado um dos maiores poetas do barroco em Portugal e no Brasil e o mais importante poeta satírico da literatura em língua portuguesa no período colonial. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Greg%C3%B3rio_de_Matos' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Gregório de Matos Guerra (Salvador, 23 de dezembro de 1636 – Recife, 26 de novembro de 1696), alcunhado de Boca do Inferno ou Boca de Brasa, foi um advogado e poeta do Brasil Colônia. É considerado um dos maiores poetas do barroco em Portugal e no Brasil e o mais importante poeta satírico da literatura em língua portuguesa no período colonial. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Greg%C3%B3rio_de_Matos' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Gregório de Matos Guerra (Salvador, 23 de dezembro de 1636 – Recife, 26 de novembro de 1696), alcunhado de Boca do Inferno ou Boca de Brasa, foi um advogado e poeta do Brasil Colônia. É considerado um dos maiores poetas do barroco em Portugal e no Brasil e o mais importante poeta satírico da literatura em língua portuguesa no período colonial. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Greg%C3%B3rio_de_Matos' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='MATOSgregorio'; include '../design/poemfind.php'; ?>
 		<?php $user = 'MATOSgregorio'; include '../design/auctorbooks.php'; ?>

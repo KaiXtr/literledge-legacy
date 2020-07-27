@@ -21,9 +21,29 @@
 
 		<?php $user = 'ZOLAemile'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Émile Zola (Paris, 2 de abril de 1840 — Paris, 29 de setembro de 1902) foi um consagrado escritor francês, considerado criador e representante mais expressivo da escola literária naturalista além de uma importante figura libertária da França. Foi presumivelmente assassinado por desconhecidos em 1902, quatro anos depois de ter publicado o famoso artigo J'accuse, em que acusa os responsáveis pelo processo fraudulento de que Alfred Dreyfus foi vítima.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/%C3%89mile_Zola' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Émile Zola (Paris, 2 de abril de 1840 — Paris, 29 de setembro de 1902) foi um consagrado escritor francês, considerado criador e representante mais expressivo da escola literária naturalista além de uma importante figura libertária da França. Foi presumivelmente assassinado por desconhecidos em 1902, quatro anos depois de ter publicado o famoso artigo J'accuse, em que acusa os responsáveis pelo processo fraudulento de que Alfred Dreyfus foi vítima.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/%C3%89mile_Zola' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Émile Zola (Paris, 2 de abril de 1840 — Paris, 29 de setembro de 1902) foi um consagrado escritor francês, considerado criador e representante mais expressivo da escola literária naturalista além de uma importante figura libertária da França. Foi presumivelmente assassinado por desconhecidos em 1902, quatro anos depois de ter publicado o famoso artigo J'accuse, em que acusa os responsáveis pelo processo fraudulento de que Alfred Dreyfus foi vítima.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/%C3%89mile_Zola' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='ZOLAemile'; include '../design/poemfind.php'; ?>
 		<?php $user = 'ZOLAemile'; include '../design/auctorbooks.php'; ?>

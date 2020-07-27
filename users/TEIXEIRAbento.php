@@ -21,11 +21,35 @@
 
 		<?php $user = 'TEIXEIRAbento'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Bento Teixeira (Porto, ca. 1561 - Pernambuco ou Lisboa, 1600[1]) foi um poeta luso-brasileiro, cuja única obra, o poema épico Prosopopeia, é referida como o marco inicial do barroco na literatura brasileira.
 
 			De biografia nebulosa, poucos fatos podem ser atestados sobre sua vida e obra. Chegou-se a lhe atribuir duas outras obras, mais tarde de autoria revisada [1].
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Bento_Teixeira' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Bento Teixeira (Porto, ca. 1561 - Pernambuco ou Lisboa, 1600[1]) foi um poeta luso-brasileiro, cuja única obra, o poema épico Prosopopeia, é referida como o marco inicial do barroco na literatura brasileira.
+
+			De biografia nebulosa, poucos fatos podem ser atestados sobre sua vida e obra. Chegou-se a lhe atribuir duas outras obras, mais tarde de autoria revisada [1].
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Bento_Teixeira' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Bento Teixeira (Porto, ca. 1561 - Pernambuco ou Lisboa, 1600[1]) foi um poeta luso-brasileiro, cuja única obra, o poema épico Prosopopeia, é referida como o marco inicial do barroco na literatura brasileira.
+
+			De biografia nebulosa, poucos fatos podem ser atestados sobre sua vida e obra. Chegou-se a lhe atribuir duas outras obras, mais tarde de autoria revisada [1].
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Bento_Teixeira' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='TEIXEIRAbento'; include '../design/poemfind.php'; ?>
 		<?php $user = 'TEIXEIRAbento'; include '../design/auctorbooks.php'; ?>

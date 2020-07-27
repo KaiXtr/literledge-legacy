@@ -21,22 +21,47 @@
 
 		<?php $user = 'MANUELcosta'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Cláudio Manuel da Costa (Vila do Ribeirão do Carmo, Minas Gerais, 5 de junho de 1729 — Vila Rica, Minas Gerais, 4 de julho de 1789) foi um advogado, minerador e poeta brasileiro no Brasil Colônia.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Cláudio Manuel da Costa (Vila do Ribeirão do Carmo, Minas Gerais, 5 de junho de 1729 — Vila Rica, Minas Gerais, 4 de julho de 1789) foi um advogado, minerador e poeta brasileiro no Brasil Colônia.
 
-				Destacou-se pela sua obra poética e pelo seu envolvimento na Inconfidência Mineira. Foi também advogado de prestígio, fazendeiro abastado, cidadão ilustre, pensador de mente aberta e amigo do Aleijadinho, a quem teria possibilitado o acesso às bibliotecas clandestinas que seriam mais tarde apreendidas aos Inconfidentes.[1][2][3]
+			Destacou-se pela sua obra poética e pelo seu envolvimento na Inconfidência Mineira. Foi também advogado de prestígio, fazendeiro abastado, cidadão ilustre, pensador de mente aberta e amigo do Aleijadinho, a quem teria possibilitado o acesso às bibliotecas clandestinas que seriam mais tarde apreendidas aos Inconfidentes.[1][2][3]
 
-				Como poeta, transitou entre o Barroco - marca dos seus escritos de juventude, enquanto era estudante de Cânones na Universidade de Coimbra (1749) - e o arcadismo - a partir do seu contato com o iluminismo, que concebia práticas mais racionais nas belas-letras.[4]
+			Como poeta, transitou entre o Barroco - marca dos seus escritos de juventude, enquanto era estudante de Cânones na Universidade de Coimbra (1749) - e o arcadismo - a partir do seu contato com o iluminismo, que concebia práticas mais racionais nas belas-letras.[4]
 
-				Especula-se que tenha traduzido A Riqueza das Nações e a Teoria dos Sentimentos Morais, de Adam Smith, para o português.[5][6] Há quem afirme ter tido ligações com os Illuminati, sociedade secreta de cunho iluminista criada na Baviera e que teria influenciado inúmeras revoluções.[7]
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Cl%C3%A1udio_Manuel_da_Costa' > Wikipedia </a>
-			</div>
-			<div class='manlan' lang='en'>
-				Hot dog yea trup united states uhuuuu rockn roll <br />
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Esopo' > Wikipedia </a>
-			</div>
+			Especula-se que tenha traduzido A Riqueza das Nações e a Teoria dos Sentimentos Morais, de Adam Smith, para o português.[5][6] Há quem afirme ter tido ligações com os Illuminati, sociedade secreta de cunho iluminista criada na Baviera e que teria influenciado inúmeras revoluções.[7]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Cl%C3%A1udio_Manuel_da_Costa' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Cláudio Manuel da Costa (Vila do Ribeirão do Carmo, Minas Gerais, 5 de junho de 1729 — Vila Rica, Minas Gerais, 4 de julho de 1789) foi um advogado, minerador e poeta brasileiro no Brasil Colônia.
+
+			Destacou-se pela sua obra poética e pelo seu envolvimento na Inconfidência Mineira. Foi também advogado de prestígio, fazendeiro abastado, cidadão ilustre, pensador de mente aberta e amigo do Aleijadinho, a quem teria possibilitado o acesso às bibliotecas clandestinas que seriam mais tarde apreendidas aos Inconfidentes.[1][2][3]
+
+			Como poeta, transitou entre o Barroco - marca dos seus escritos de juventude, enquanto era estudante de Cânones na Universidade de Coimbra (1749) - e o arcadismo - a partir do seu contato com o iluminismo, que concebia práticas mais racionais nas belas-letras.[4]
+
+			Especula-se que tenha traduzido A Riqueza das Nações e a Teoria dos Sentimentos Morais, de Adam Smith, para o português.[5][6] Há quem afirme ter tido ligações com os Illuminati, sociedade secreta de cunho iluminista criada na Baviera e que teria influenciado inúmeras revoluções.[7]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Cl%C3%A1udio_Manuel_da_Costa' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Cláudio Manuel da Costa (Vila do Ribeirão do Carmo, Minas Gerais, 5 de junho de 1729 — Vila Rica, Minas Gerais, 4 de julho de 1789) foi um advogado, minerador e poeta brasileiro no Brasil Colônia.
+
+			Destacou-se pela sua obra poética e pelo seu envolvimento na Inconfidência Mineira. Foi também advogado de prestígio, fazendeiro abastado, cidadão ilustre, pensador de mente aberta e amigo do Aleijadinho, a quem teria possibilitado o acesso às bibliotecas clandestinas que seriam mais tarde apreendidas aos Inconfidentes.[1][2][3]
+
+			Como poeta, transitou entre o Barroco - marca dos seus escritos de juventude, enquanto era estudante de Cânones na Universidade de Coimbra (1749) - e o arcadismo - a partir do seu contato com o iluminismo, que concebia práticas mais racionais nas belas-letras.[4]
+
+			Especula-se que tenha traduzido A Riqueza das Nações e a Teoria dos Sentimentos Morais, de Adam Smith, para o português.[5][6] Há quem afirme ter tido ligações com os Illuminati, sociedade secreta de cunho iluminista criada na Baviera e que teria influenciado inúmeras revoluções.[7]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Cl%C3%A1udio_Manuel_da_Costa' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='MANUELcosta'; include '../design/poemfind.php'; ?>
 		<?php $user = 'MANUELcosta'; include '../design/auctorbooks.php'; ?>

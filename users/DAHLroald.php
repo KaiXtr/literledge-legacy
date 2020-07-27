@@ -21,9 +21,29 @@
 
 		<?php $user = 'DAHLroald'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Roald Dahl (Llandaff, 13 de Setembro de 1916 — Oxford, 23 de Novembro de 1990) foi um escritor britânico nascido no País de Gales, filho de noruegueses. Atingiu notoriedade na década de 1940 por suas obras para adultos e crianças e tornou-se um dos escritores mais aclamados do mundo. É conhecido principalmente por seus livros infantis, entre os quais figuram Charlie e a Fábrica de Chocolate, Matilda, As Bruxas, O Bom Gigante Amigo e James e o Pêssego Gigante. Várias de suas obras foram adaptadas para o cinema.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Roald_Dahl' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Roald Dahl (Llandaff, 13 de Setembro de 1916 — Oxford, 23 de Novembro de 1990) foi um escritor britânico nascido no País de Gales, filho de noruegueses. Atingiu notoriedade na década de 1940 por suas obras para adultos e crianças e tornou-se um dos escritores mais aclamados do mundo. É conhecido principalmente por seus livros infantis, entre os quais figuram Charlie e a Fábrica de Chocolate, Matilda, As Bruxas, O Bom Gigante Amigo e James e o Pêssego Gigante. Várias de suas obras foram adaptadas para o cinema.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Roald_Dahl' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Roald Dahl (Llandaff, 13 de Setembro de 1916 — Oxford, 23 de Novembro de 1990) foi um escritor britânico nascido no País de Gales, filho de noruegueses. Atingiu notoriedade na década de 1940 por suas obras para adultos e crianças e tornou-se um dos escritores mais aclamados do mundo. É conhecido principalmente por seus livros infantis, entre os quais figuram Charlie e a Fábrica de Chocolate, Matilda, As Bruxas, O Bom Gigante Amigo e James e o Pêssego Gigante. Várias de suas obras foram adaptadas para o cinema.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Roald_Dahl' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='DAHLroald'; include '../design/poemfind.php'; ?>
 		<?php $user = 'DAHLroald'; include '../design/auctorbooks.php'; ?>

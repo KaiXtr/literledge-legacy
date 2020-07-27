@@ -21,11 +21,35 @@
 
 		<?php $user = 'BRONTEcharlotte'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			<div class='manlan' lang='pt'>
 				Charlotte Brontë (Thornton, 21 de Abril de 1816 — Haworth, 31 de Março de 1855) foi uma escritora e poetisa inglesa, a mais velha das três irmãs Brontë que chegaram à idade adulta e cujos romances são dos mais conhecidos da literatura inglesa. Nasceu em Thornton, oeste de Bradford, West Yorkshire, Reino Unido no dia 21 de abril de 1816. Escreveu o seu romance mais conhecido, Jane Eyre com o pseudônimo Currer Bell.[1]
 				<br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/Charlotte_Bront%C3%AB' > Wikipedia </a>
 			</div>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			<div class='manlan' lang='pt'>
+				Charlotte Brontë (Thornton, 21 de Abril de 1816 — Haworth, 31 de Março de 1855) foi uma escritora e poetisa inglesa, a mais velha das três irmãs Brontë que chegaram à idade adulta e cujos romances são dos mais conhecidos da literatura inglesa. Nasceu em Thornton, oeste de Bradford, West Yorkshire, Reino Unido no dia 21 de abril de 1816. Escreveu o seu romance mais conhecido, Jane Eyre com o pseudônimo Currer Bell.[1]
+				<br />
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Charlotte_Bront%C3%AB' > Wikipedia </a>
+			</div>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			<div class='manlan' lang='pt'>
+				Charlotte Brontë (Thornton, 21 de Abril de 1816 — Haworth, 31 de Março de 1855) foi uma escritora e poetisa inglesa, a mais velha das três irmãs Brontë que chegaram à idade adulta e cujos romances são dos mais conhecidos da literatura inglesa. Nasceu em Thornton, oeste de Bradford, West Yorkshire, Reino Unido no dia 21 de abril de 1816. Escreveu o seu romance mais conhecido, Jane Eyre com o pseudônimo Currer Bell.[1]
+				<br />
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Charlotte_Bront%C3%AB' > Wikipedia </a>
+			</div>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='BRONTEcharlotte'; include '../design/poemfind.php'; ?>
 		<?php $user = 'BRONTEcharlotte'; include '../design/auctorbooks.php'; ?>

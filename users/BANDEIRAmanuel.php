@@ -21,11 +21,35 @@
 
 		<?php $user = 'BANDEIRAmanuel'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Manuel Carneiro de Sousa Bandeira Filho (Recife, 19 de abril de 1886 — Rio de Janeiro, 13 de outubro de 1968) foi um poeta, crítico literário e de arte, professor de  <br />literatura e tradutor brasileiro. <br />
 			 <br />
-			É considerado como parte da geração de 1922 do modernismo no Brasil. Seu poema "Os Sapos" foi o abre-alas da Semana de Arte Moderna. Juntamente com escritores como João  <br />Cabral de Melo Neto, Gilberto Freyre, Clarice Lispector e Joaquim Cardozo, entre outros, representa o melhor da produção literária do estado de Pernambuco. <br />
+			É considerado como parte da geração de 1922 do modernismo no Brasil. Seu poema \"Os Sapos\" foi o abre-alas da Semana de Arte Moderna. Juntamente com escritores como João  <br />Cabral de Melo Neto, Gilberto Freyre, Clarice Lispector e Joaquim Cardozo, entre outros, representa o melhor da produção literária do estado de Pernambuco. <br />
 			 <br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_Bandeira' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Manuel Carneiro de Sousa Bandeira Filho (Recife, 19 de abril de 1886 — Rio de Janeiro, 13 de outubro de 1968) foi um poeta, crítico literário e de arte, professor de  <br />literatura e tradutor brasileiro. <br />
+			 <br />
+			É considerado como parte da geração de 1922 do modernismo no Brasil. Seu poema \"Os Sapos\" foi o abre-alas da Semana de Arte Moderna. Juntamente com escritores como João  <br />Cabral de Melo Neto, Gilberto Freyre, Clarice Lispector e Joaquim Cardozo, entre outros, representa o melhor da produção literária do estado de Pernambuco. <br />
+			 <br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_Bandeira' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Manuel Carneiro de Sousa Bandeira Filho (Recife, 19 de abril de 1886 — Rio de Janeiro, 13 de outubro de 1968) foi um poeta, crítico literário e de arte, professor de  <br />literatura e tradutor brasileiro. <br />
+			 <br />
+			É considerado como parte da geração de 1922 do modernismo no Brasil. Seu poema \"Os Sapos\" foi o abre-alas da Semana de Arte Moderna. Juntamente com escritores como João  <br />Cabral de Melo Neto, Gilberto Freyre, Clarice Lispector e Joaquim Cardozo, entre outros, representa o melhor da produção literária do estado de Pernambuco. <br />
+			 <br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_Bandeira' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='BANDEIRAmanuel'; include '../design/poemfind.php'; ?>
 		<?php $user = 'BANDEIRAmanuel'; include '../design/auctorbooks.php'; ?>

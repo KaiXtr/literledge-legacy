@@ -21,11 +21,35 @@
 
 		<?php $user = 'FRANKbaum'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Lyman Frank Baum, mais conhecido como L. Frank Baum (Chittenango, 15 de maio de 1856 — Hollywood, 6 de maio de 1919), foi um escritor, editor, ator, roteirista, <br />
 			produtor de cinema e teosofista norte-americano. Foi criador de um dos mais populares livros escritos na literatura americana infantil, O Mágico de Oz. <br />
 			Em 1897, tornou-se membro da Sociedade Teosófica, incorporando frequentemente em seus livros temas e símbolos desta doutrina. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/L._Frank_Baum' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Lyman Frank Baum, mais conhecido como L. Frank Baum (Chittenango, 15 de maio de 1856 — Hollywood, 6 de maio de 1919), foi um escritor, editor, ator, roteirista, <br />
+			produtor de cinema e teosofista norte-americano. Foi criador de um dos mais populares livros escritos na literatura americana infantil, O Mágico de Oz. <br />
+			Em 1897, tornou-se membro da Sociedade Teosófica, incorporando frequentemente em seus livros temas e símbolos desta doutrina. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/L._Frank_Baum' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Lyman Frank Baum, mais conhecido como L. Frank Baum (Chittenango, 15 de maio de 1856 — Hollywood, 6 de maio de 1919), foi um escritor, editor, ator, roteirista, <br />
+			produtor de cinema e teosofista norte-americano. Foi criador de um dos mais populares livros escritos na literatura americana infantil, O Mágico de Oz. <br />
+			Em 1897, tornou-se membro da Sociedade Teosófica, incorporando frequentemente em seus livros temas e símbolos desta doutrina. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/L._Frank_Baum' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='FRANKbaum'; include '../design/poemfind.php'; ?>
 		<?php $user = 'FRANKbaum'; include '../design/auctorbooks.php'; ?>

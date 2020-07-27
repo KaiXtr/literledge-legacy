@@ -21,13 +21,32 @@
 
 		<?php $user = 'AUSTENjane'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 				Jane Austen (Steventon, Inglaterra, 16 de dezembro de 1775—Winchester, Inglaterra, 18 de julho de 1817) foi uma escritora inglesa. A ironia que utilizou para descrever as personagens de seus romances a coloca entre os clássicos, haja vista sua aceitação, inclusive na atualidade, sendo constantemente objeto de estudo acadêmico, e alcançando um público bastante amplo.[1]
 
 				Nascida em Steventon, Hampshire, de uma família pertencente à nobreza agrária, sua situação e ambiente serviram de contexto para todas as suas obras, cujo tema gira em torno do casamento da protagonista. A inocência das obras de Austen é apenas aparente, e pode ser interpretada de várias maneiras.
 				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Jane_Austen' > Wikipedia </a>
-			</div>
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Jane_Austen' > Wikipedia </a>";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+				Jane Austen (Steventon, Inglaterra, 16 de dezembro de 1775—Winchester, Inglaterra, 18 de julho de 1817) foi uma escritora inglesa. A ironia que utilizou para descrever as personagens de seus romances a coloca entre os clássicos, haja vista sua aceitação, inclusive na atualidade, sendo constantemente objeto de estudo acadêmico, e alcançando um público bastante amplo.[1]
+
+				Nascida em Steventon, Hampshire, de uma família pertencente à nobreza agrária, sua situação e ambiente serviram de contexto para todas as suas obras, cujo tema gira em torno do casamento da protagonista. A inocência das obras de Austen é apenas aparente, e pode ser interpretada de várias maneiras.
+				<br />
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Jane_Austen' > Wikipedia </a>";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+				Jane Austen (Steventon, Inglaterra, 16 de dezembro de 1775—Winchester, Inglaterra, 18 de julho de 1817) foi uma escritora inglesa. A ironia que utilizou para descrever as personagens de seus romances a coloca entre os clássicos, haja vista sua aceitação, inclusive na atualidade, sendo constantemente objeto de estudo acadêmico, e alcançando um público bastante amplo.[1]
+
+				Nascida em Steventon, Hampshire, de uma família pertencente à nobreza agrária, sua situação e ambiente serviram de contexto para todas as suas obras, cujo tema gira em torno do casamento da protagonista. A inocência das obras de Austen é apenas aparente, e pode ser interpretada de várias maneiras.
+				<br />
+				Fonte: <a href='https://pt.wikipedia.org/wiki/Jane_Austen' > Wikipedia </a>";
+				}
+			?>
 		</div>
 		<?php $auctor='AUSTENjane'; include '../design/poemfind.php'; ?>
 		<?php $user = 'AUSTENjane'; include '../design/auctorbooks.php'; ?>

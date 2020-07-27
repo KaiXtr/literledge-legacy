@@ -21,16 +21,29 @@
 
 		<?php $user = 'STRITAdurao'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Frei José de Santa Rita Durão (Cata Preta, 1722 — Lisboa, 1784) foi um religioso agostiniano luso-brasileiro[1][2], orador e poeta que fez a sua carreira e escreveu a sua obra em Portugal e no Brasil colonial. É considerado um dos precursores do indianismo no Brasil. Seu poema épico Caramuru é a primeira obra narrativa escrita a ter, como tema, o habitante nativo do Brasil; foi escrita ao estilo de Luís de Camões, imitando um poeta clássico assim como faziam os outros neoclássicos (árcades).
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Santa_Rita_Dur%C3%A3o' > Wikipedia </a>
-			</div>
-			<div class='manlan' lang='en'>
-				Hot dog yea trup united states uhuuuu rockn roll <br />
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Esopo' > Wikipedia </a>
-			</div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Frei José de Santa Rita Durão (Cata Preta, 1722 — Lisboa, 1784) foi um religioso agostiniano luso-brasileiro[1][2], orador e poeta que fez a sua carreira e escreveu a sua obra em Portugal e no Brasil colonial. É considerado um dos precursores do indianismo no Brasil. Seu poema épico Caramuru é a primeira obra narrativa escrita a ter, como tema, o habitante nativo do Brasil; foi escrita ao estilo de Luís de Camões, imitando um poeta clássico assim como faziam os outros neoclássicos (árcades).
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Santa_Rita_Dur%C3%A3o' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Frei José de Santa Rita Durão (Cata Preta, 1722 — Lisboa, 1784) foi um religioso agostiniano luso-brasileiro[1][2], orador e poeta que fez a sua carreira e escreveu a sua obra em Portugal e no Brasil colonial. É considerado um dos precursores do indianismo no Brasil. Seu poema épico Caramuru é a primeira obra narrativa escrita a ter, como tema, o habitante nativo do Brasil; foi escrita ao estilo de Luís de Camões, imitando um poeta clássico assim como faziam os outros neoclássicos (árcades).
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Santa_Rita_Dur%C3%A3o' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Frei José de Santa Rita Durão (Cata Preta, 1722 — Lisboa, 1784) foi um religioso agostiniano luso-brasileiro[1][2], orador e poeta que fez a sua carreira e escreveu a sua obra em Portugal e no Brasil colonial. É considerado um dos precursores do indianismo no Brasil. Seu poema épico Caramuru é a primeira obra narrativa escrita a ter, como tema, o habitante nativo do Brasil; foi escrita ao estilo de Luís de Camões, imitando um poeta clássico assim como faziam os outros neoclássicos (árcades).
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Santa_Rita_Dur%C3%A3o' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='STRITAdurao'; include '../design/poemfind.php'; ?>
 		<?php $user = 'STRITAdurao'; include '../design/auctorbooks.php'; ?>

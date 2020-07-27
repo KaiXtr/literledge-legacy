@@ -21,11 +21,29 @@
 
 		<?php $user = 'MELVILLEhenry'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Herman Melville (Nova Iorque, 1º de agosto de 1819—Nova Iorque, 28 de setembro de 1891) foi um escritor, poeta e ensaísta estadunidense. Embora tenha obtido grande sucesso no início de sua carreira, sua popularidade foi decaindo ao longo dos anos. Faleceu quase completamente esquecido, sem conhecer o sucesso que sua mais importante obra, o romance Moby Dick, alcançaria no século XX. O livro, dividido em três volumes, foi publicado em 1851 com o título de A baleia e não obteve sucesso de crítica, tendo sido considerado o principal motivo para o declínio da carreira do autor.
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Herman_Melville' > Wikipedia </a>
-			</div>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Herman Melville (Nova Iorque, 1º de agosto de 1819—Nova Iorque, 28 de setembro de 1891) foi um escritor, poeta e ensaísta estadunidense. Embora tenha obtido grande sucesso no início de sua carreira, sua popularidade foi decaindo ao longo dos anos. Faleceu quase completamente esquecido, sem conhecer o sucesso que sua mais importante obra, o romance Moby Dick, alcançaria no século XX. O livro, dividido em três volumes, foi publicado em 1851 com o título de A baleia e não obteve sucesso de crítica, tendo sido considerado o principal motivo para o declínio da carreira do autor.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Herman_Melville' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Herman Melville (Nova Iorque, 1º de agosto de 1819—Nova Iorque, 28 de setembro de 1891) foi um escritor, poeta e ensaísta estadunidense. Embora tenha obtido grande sucesso no início de sua carreira, sua popularidade foi decaindo ao longo dos anos. Faleceu quase completamente esquecido, sem conhecer o sucesso que sua mais importante obra, o romance Moby Dick, alcançaria no século XX. O livro, dividido em três volumes, foi publicado em 1851 com o título de A baleia e não obteve sucesso de crítica, tendo sido considerado o principal motivo para o declínio da carreira do autor.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Herman_Melville' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Herman Melville (Nova Iorque, 1º de agosto de 1819—Nova Iorque, 28 de setembro de 1891) foi um escritor, poeta e ensaísta estadunidense. Embora tenha obtido grande sucesso no início de sua carreira, sua popularidade foi decaindo ao longo dos anos. Faleceu quase completamente esquecido, sem conhecer o sucesso que sua mais importante obra, o romance Moby Dick, alcançaria no século XX. O livro, dividido em três volumes, foi publicado em 1851 com o título de A baleia e não obteve sucesso de crítica, tendo sido considerado o principal motivo para o declínio da carreira do autor.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Herman_Melville' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='MELVILLEhenry'; include '../design/poemfind.php'; ?>
 		<?php $user = 'MELVILLEhenry'; include '../design/auctorbooks.php'; ?>

@@ -21,11 +21,35 @@
 
 		<?php $user = 'DRUMMONDandrade'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Carlos Drummond de Andrade (Itabira, 31 de outubro de 1902 — Rio de Janeiro, 17 de agosto de 1987) foi um poeta, contista e cronista brasileiro, considerado <br />
 			por muitos o mais influente poeta brasileiro do século XX.[1] Drummond foi um dos principais poetas da segunda geração do Modernismo brasileiro.[2] <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Carlos_Drummond_de_Andrade' > Wikipedia </a>
 			<br />
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Carlos Drummond de Andrade (Itabira, 31 de outubro de 1902 — Rio de Janeiro, 17 de agosto de 1987) foi um poeta, contista e cronista brasileiro, considerado <br />
+			por muitos o mais influente poeta brasileiro do século XX.[1] Drummond foi um dos principais poetas da segunda geração do Modernismo brasileiro.[2] <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Carlos_Drummond_de_Andrade' > Wikipedia </a>
+			<br />
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Carlos Drummond de Andrade (Itabira, 31 de outubro de 1902 — Rio de Janeiro, 17 de agosto de 1987) foi um poeta, contista e cronista brasileiro, considerado <br />
+			por muitos o mais influente poeta brasileiro do século XX.[1] Drummond foi um dos principais poetas da segunda geração do Modernismo brasileiro.[2] <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Carlos_Drummond_de_Andrade' > Wikipedia </a>
+			<br />
+					";
+				}
+			?>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/j_OGlOlx4JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='DRUMMONDandrade'; include '../design/poemfind.php'; ?>

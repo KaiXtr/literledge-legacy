@@ -21,13 +21,35 @@
 
 		<?php $user = 'DICKENScharles'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Charles John Huffam Dickens (Landport, 7 de fevereiro de 1812 — Higham, 9 de junho de 1870) foi o mais popular dos romancistas ingleses da era vitoriana.[1] No início de sua atividade literária também adotou o apelido Boz. A fama dos seus romances e contos, tanto durante a sua vida como depois, até aos dias de hoje, só aumentou. Apesar de os seus romances não serem considerados, pelos parâmetros atuais, muito realistas, Dickens contribuiu em grande parte para a introdução da crítica social na literatura de ficção inglesa.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Charles John Huffam Dickens (Landport, 7 de fevereiro de 1812 — Higham, 9 de junho de 1870) foi o mais popular dos romancistas ingleses da era vitoriana.[1] No início de sua atividade literária também adotou o apelido Boz. A fama dos seus romances e contos, tanto durante a sua vida como depois, até aos dias de hoje, só aumentou. Apesar de os seus romances não serem considerados, pelos parâmetros atuais, muito realistas, Dickens contribuiu em grande parte para a introdução da crítica social na literatura de ficção inglesa.
 
-				Entre os seus maiores clássicos estão David Copperfield e Oliver Twist.[1]
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Charles_Dickens' > Wikipedia </a>
-			</div>
+			Entre os seus maiores clássicos estão David Copperfield e Oliver Twist.[1]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Charles_Dickens' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Charles John Huffam Dickens (Landport, 7 de fevereiro de 1812 — Higham, 9 de junho de 1870) foi o mais popular dos romancistas ingleses da era vitoriana.[1] No início de sua atividade literária também adotou o apelido Boz. A fama dos seus romances e contos, tanto durante a sua vida como depois, até aos dias de hoje, só aumentou. Apesar de os seus romances não serem considerados, pelos parâmetros atuais, muito realistas, Dickens contribuiu em grande parte para a introdução da crítica social na literatura de ficção inglesa.
+
+			Entre os seus maiores clássicos estão David Copperfield e Oliver Twist.[1]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Charles_Dickens' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Charles John Huffam Dickens (Landport, 7 de fevereiro de 1812 — Higham, 9 de junho de 1870) foi o mais popular dos romancistas ingleses da era vitoriana.[1] No início de sua atividade literária também adotou o apelido Boz. A fama dos seus romances e contos, tanto durante a sua vida como depois, até aos dias de hoje, só aumentou. Apesar de os seus romances não serem considerados, pelos parâmetros atuais, muito realistas, Dickens contribuiu em grande parte para a introdução da crítica social na literatura de ficção inglesa.
+
+			Entre os seus maiores clássicos estão David Copperfield e Oliver Twist.[1]
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Charles_Dickens' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='DICKENScharles'; include '../design/poemfind.php'; ?>
 		<?php $user = 'DICKENScharles'; include '../design/auctorbooks.php'; ?>

@@ -21,11 +21,35 @@
 
 		<?php $user = 'BASILIOgama'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			José Basílio da Gama (São José do Rio das Mortes, 8 de abril de 1741 — Lisboa, 31 de julho de 1795) foi um poeta luso-brasileiro <br />
 			que escrevia sob o pseudónimo Termindo Sipílio. Célebre por seu poema épico O Uraguai, de 1769, e investido como patrono da cadeira <br />
 			4 da Academia Brasileira de Letras.[1] <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Basílio_da_Gama' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			José Basílio da Gama (São José do Rio das Mortes, 8 de abril de 1741 — Lisboa, 31 de julho de 1795) foi um poeta luso-brasileiro <br />
+			que escrevia sob o pseudónimo Termindo Sipílio. Célebre por seu poema épico O Uraguai, de 1769, e investido como patrono da cadeira <br />
+			4 da Academia Brasileira de Letras.[1] <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Basílio_da_Gama' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			José Basílio da Gama (São José do Rio das Mortes, 8 de abril de 1741 — Lisboa, 31 de julho de 1795) foi um poeta luso-brasileiro <br />
+			que escrevia sob o pseudónimo Termindo Sipílio. Célebre por seu poema épico O Uraguai, de 1769, e investido como patrono da cadeira <br />
+			4 da Academia Brasileira de Letras.[1] <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Basílio_da_Gama' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='BASILIOgama'; include '../design/poemfind.php'; ?>
 		<?php $user = 'BASILIOgama'; include '../design/auctorbooks.php'; ?>

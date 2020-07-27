@@ -21,11 +21,35 @@
 
 		<?php $user = 'OLIVEIRAalberto'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Antônio Mariano Alberto de Oliveira (Saquarema, 28 de abril de 1857 — Niterói, 19 de Janeiro de 1937), mais conhecido pelo pseudônimo Alberto de Oliveira, foi um poeta, professor e farmacêutico brasileiro. Figura como líder do Parnasianismo brasileiro, na famosa tríade Alberto de Oliveira, Raimundo Correia e Olavo Bilac.
 
 			Foi secretário estadual de educação, membro honorário da Academia de Ciências de Lisboa e imortal fundador da Academia Brasileira de Letras. Adotou o nome literário Alberto de Oliveira no livro de estréia, após várias modificações dispersas nos jornais.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Ant%C3%B4nio_Mariano_de_Oliveira'> Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Antônio Mariano Alberto de Oliveira (Saquarema, 28 de abril de 1857 — Niterói, 19 de Janeiro de 1937), mais conhecido pelo pseudônimo Alberto de Oliveira, foi um poeta, professor e farmacêutico brasileiro. Figura como líder do Parnasianismo brasileiro, na famosa tríade Alberto de Oliveira, Raimundo Correia e Olavo Bilac.
+
+			Foi secretário estadual de educação, membro honorário da Academia de Ciências de Lisboa e imortal fundador da Academia Brasileira de Letras. Adotou o nome literário Alberto de Oliveira no livro de estréia, após várias modificações dispersas nos jornais.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Ant%C3%B4nio_Mariano_de_Oliveira'> Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Antônio Mariano Alberto de Oliveira (Saquarema, 28 de abril de 1857 — Niterói, 19 de Janeiro de 1937), mais conhecido pelo pseudônimo Alberto de Oliveira, foi um poeta, professor e farmacêutico brasileiro. Figura como líder do Parnasianismo brasileiro, na famosa tríade Alberto de Oliveira, Raimundo Correia e Olavo Bilac.
+
+			Foi secretário estadual de educação, membro honorário da Academia de Ciências de Lisboa e imortal fundador da Academia Brasileira de Letras. Adotou o nome literário Alberto de Oliveira no livro de estréia, após várias modificações dispersas nos jornais.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Ant%C3%B4nio_Mariano_de_Oliveira'> Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='OLIVEIRAalberto'; include '../design/poemfind.php'; ?>
 		<?php $user = 'OLIVEIRAalberto'; include '../design/auctorbooks.php'; ?>

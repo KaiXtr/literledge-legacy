@@ -21,12 +21,38 @@
 
 		<?php $user = 'BOPPraul'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Raul Bopp (Vila Pinhal, 4 de agosto de 1898 — Rio de Janeiro, 2 de junho de 1984) foi um poeta modernista e diplomata brasileiro. <br />
 			 <br />
 			Participou da Semana de Arte Moderna ao lado dos amigos Tarsila do Amaral e Oswald de Andrade. Seu livro Cobra Norato é considerado o mais importante do  <br />
 			Movimento Antropófago. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Raul_Bopp' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Raul Bopp (Vila Pinhal, 4 de agosto de 1898 — Rio de Janeiro, 2 de junho de 1984) foi um poeta modernista e diplomata brasileiro. <br />
+			 <br />
+			Participou da Semana de Arte Moderna ao lado dos amigos Tarsila do Amaral e Oswald de Andrade. Seu livro Cobra Norato é considerado o mais importante do  <br />
+			Movimento Antropófago. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Raul_Bopp' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Raul Bopp (Vila Pinhal, 4 de agosto de 1898 — Rio de Janeiro, 2 de junho de 1984) foi um poeta modernista e diplomata brasileiro. <br />
+			 <br />
+			Participou da Semana de Arte Moderna ao lado dos amigos Tarsila do Amaral e Oswald de Andrade. Seu livro Cobra Norato é considerado o mais importante do  <br />
+			Movimento Antropófago. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Raul_Bopp' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='BOPPraul'; include '../design/poemfind.php'; ?>
 		<?php $user = 'BOPPraul'; include '../design/auctorbooks.php'; ?>

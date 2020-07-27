@@ -21,21 +21,41 @@
 
 		<?php $user = 'RIBEIROdarcy'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
-			<div class='manlan' lang='pt'>
-				Darcy Ribeiro[nota 1] (Montes Claros, 26 de outubro de 1922 — Brasília, 17 de fevereiro de 1997) foi um antropólogo, escritor e político brasileiro, conhecido por seu foco em relação aos indígenas e à educação no país.
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
+			Darcy Ribeiro[nota 1] (Montes Claros, 26 de outubro de 1922 — Brasília, 17 de fevereiro de 1997) foi um antropólogo, escritor e político brasileiro, conhecido por seu foco em relação aos indígenas e à educação no país.
 
-				Suas ideias de identidade latino-americana influenciaram vários estudiosos latino-americanos posteriores. Como Ministro da Educação do Brasil realizou profundas reformas, o que o levou a ser convidado a participar de reformas universitárias no Chile, Peru, Venezuela, México e Uruguai, depois de deixar o Brasil devido à ditadura militar de 1964.
+			Suas ideias de identidade latino-americana influenciaram vários estudiosos latino-americanos posteriores. Como Ministro da Educação do Brasil realizou profundas reformas, o que o levou a ser convidado a participar de reformas universitárias no Chile, Peru, Venezuela, México e Uruguai, depois de deixar o Brasil devido à ditadura militar de 1964.
 
-				Foi casado com a etnóloga e antropóloga Berta Gleizer Ribeiro, até 1974.
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Darcy_Ribeiro' > Wikipedia </a>
-			</div>
-			<div class='manlan' lang='en'>
-				Hot dog yea trup united states uhuuuu rockn roll <br />
-				<br />
-				Fonte: <a href='https://pt.wikipedia.org/wiki/Esopo' > Wikipedia </a>
-			</div>
+			Foi casado com a etnóloga e antropóloga Berta Gleizer Ribeiro, até 1974.
 			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Darcy_Ribeiro' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Darcy Ribeiro[nota 1] (Montes Claros, 26 de outubro de 1922 — Brasília, 17 de fevereiro de 1997) foi um antropólogo, escritor e político brasileiro, conhecido por seu foco em relação aos indígenas e à educação no país.
+
+			Suas ideias de identidade latino-americana influenciaram vários estudiosos latino-americanos posteriores. Como Ministro da Educação do Brasil realizou profundas reformas, o que o levou a ser convidado a participar de reformas universitárias no Chile, Peru, Venezuela, México e Uruguai, depois de deixar o Brasil devido à ditadura militar de 1964.
+
+			Foi casado com a etnóloga e antropóloga Berta Gleizer Ribeiro, até 1974.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Darcy_Ribeiro' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Darcy Ribeiro[nota 1] (Montes Claros, 26 de outubro de 1922 — Brasília, 17 de fevereiro de 1997) foi um antropólogo, escritor e político brasileiro, conhecido por seu foco em relação aos indígenas e à educação no país.
+
+			Suas ideias de identidade latino-americana influenciaram vários estudiosos latino-americanos posteriores. Como Ministro da Educação do Brasil realizou profundas reformas, o que o levou a ser convidado a participar de reformas universitárias no Chile, Peru, Venezuela, México e Uruguai, depois de deixar o Brasil devido à ditadura militar de 1964.
+
+			Foi casado com a etnóloga e antropóloga Berta Gleizer Ribeiro, até 1974.
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Darcy_Ribeiro' > Wikipedia </a>
+					";
+				}
+			?>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/6r7QDo9yHJk?start=141" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<?php $auctor='RIBEIROdarcy'; include '../design/poemfind.php'; ?>

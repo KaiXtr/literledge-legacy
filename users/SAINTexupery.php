@@ -21,11 +21,35 @@
 
 		<?php $user = 'SAINTexupery'; include '../design/userinfo.php'; ?>
 		<div id='bio'>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {
+					echo "
 			Antoine Jean-Baptiste Marie Roger Foscolombe, Conde de Saint-Exupéry, popularmente conhecido como Antoine de Saint-Exupéry <br />
 			(Lyon, 29 de junho de 1900 — litoral sul da França, 31 de julho de 1944) foi um escritor, ilustrador e piloto francês, terceiro filho do conde <br />
 			Jean Saint-Exupéry e da condessa Marie Foscolombe. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Antoine_de_Saint-Exupéry' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'en') {
+					echo "
+			Antoine Jean-Baptiste Marie Roger Foscolombe, Conde de Saint-Exupéry, popularmente conhecido como Antoine de Saint-Exupéry <br />
+			(Lyon, 29 de junho de 1900 — litoral sul da França, 31 de julho de 1944) foi um escritor, ilustrador e piloto francês, terceiro filho do conde <br />
+			Jean Saint-Exupéry e da condessa Marie Foscolombe. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Antoine_de_Saint-Exupéry' > Wikipedia </a>
+					";
+				}
+				if ($_COOKIE['lang'] == 'es') {
+					echo "
+			Antoine Jean-Baptiste Marie Roger Foscolombe, Conde de Saint-Exupéry, popularmente conhecido como Antoine de Saint-Exupéry <br />
+			(Lyon, 29 de junho de 1900 — litoral sul da França, 31 de julho de 1944) foi um escritor, ilustrador e piloto francês, terceiro filho do conde <br />
+			Jean Saint-Exupéry e da condessa Marie Foscolombe. <br />
+			<br />
+			Fonte: <a href='https://pt.wikipedia.org/wiki/Antoine_de_Saint-Exupéry' > Wikipedia </a>
+					";
+				}
+			?>
 		</div>
 		<?php $auctor='SAINTexupery'; include '../design/poemfind.php'; ?>
 		<?php $user = 'SAINTexupery'; include '../design/auctorbooks.php'; ?>

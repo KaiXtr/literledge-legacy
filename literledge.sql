@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Tempo de geração: 21-Jul-2020 às 20:50
--- Versão do servidor: 10.3.16-MariaDB
--- versão do PHP: 7.3.12
+-- Host: 127.0.0.1
+-- Tempo de geração: 27-Jul-2020 às 02:00
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `id14098734_literledge`
+-- Banco de dados: `literledge`
 --
 
 -- --------------------------------------------------------
@@ -169,186 +168,284 @@ CREATE TABLE `editions` (
 --
 
 INSERT INTO `editions` (`title`, `language`, `credit`, `link`, `filtyp`, `price`, `id`, `ked`) VALUES
-('000000', 'PT', 'Project Gutenberg', 'https://www.dropbox.com/s/7r2a20ikwdyk7me/000000-00.epub?dl=0', 'epub', 0.00, '00', 1),
-('000001', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/i8i6nz8tjer8f90/000001-00.epub?dl=0', 'epub', 0.00, '00', 2),
-('000001', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/j1mf1gqsjapds94/000001-01.pdf?dl=0', 'pdf', 0.00, '01', 3),
-('000002', 'PT', 'Project Gutenberg', 'https://www.dropbox.com/s/jhhpazejtvz5h2h/000002-00.epub?dl=0', 'epub', 0.00, '00', 4),
-('000003', 'PT', 'Project Gutenberg', 'https://www.dropbox.com/s/r45hv5366j2hlvu/000003-00.epub?dl=0', 'epub', 0.00, '00', 5),
-('000004', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/cr2nlm948x21il2/000004-00.epub?dl=0', 'epub', 0.00, '00', 6),
-('000004', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/3kxq7m46vcryool/000004-01.pdf?dl=0', 'pdf', 0.00, '01', 7),
-('000005', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/u5c1pmp9k3ybfez/000005-00.epub?dl=0', 'epub', 0.00, '00', 8),
-('000005', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/x0b6fy3ey1oa8rm/000005-01.pdf?dl=0', 'pdf', 0.00, '01', 9),
-('000006', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/r4eoyml1u53m4iz/000006-00.epub?dl=0', 'epub', 0.00, '00', 10),
-('000006', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/k1n5l2n70wlu05r/000006-01.pdf?dl=0', 'pdf', 0.00, '01', 11),
-('000007', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/tdyihkodeaa8vka/000007-00.epub?dl=0', 'epub', 0.00, '00', 12),
-('000007', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/svx98d32psx9w8g/000007-01.pdf?dl=0', 'pdf', 0.00, '01', 13),
-('000008', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/9sfoqoxp3j12z43/000008-00.epub?dl=0', 'epub', 0.00, '00', 14),
-('000008', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/2hwbohi18g9lchv/000008-01.pdf?dl=0', 'pdf', 0.00, '01', 15),
-('000009', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/wvsrqgicsqvv2u7/000009-00.epub?dl=0', 'epub', 0.00, '00', 16),
-('000009', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/wscwa70b5feztno/000009-01.pdf?dl=0', 'pdf', 0.00, '01', 17),
-('00000A', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/a24ruycwt5ig1qe/00000A-00.epub?dl=0', 'epub', 0.00, '00', 18),
-('00000A', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/s9i3tqgs032oe8q/00000A-01.pdf?dl=0', 'pdf', 0.00, '01', 19),
-('00000B', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/d9a4j8yzynz2ijn/00000B-00.epub?dl=0', 'epub', 0.00, '00', 20),
-('00000B', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/gf8ma6fu5i9n0sz/00000B-01.pdf?dl=0', 'pdf', 0.00, '01', 21),
-('00000C', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/7gca02qglj75ugf/00000C-00.epub?dl=0', 'epub', 0.00, '00', 22),
-('00000C', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/i132yqqcbn88hwo/00000C-01.pdf?dl=0', 'pdf', 0.00, '01', 23),
-('00000D', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/14mirnij8g4vc31/00000D-00.epub?dl=0', 'epub', 0.00, '00', 24),
-('00000D', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/hfkbxg9nd1qehm8/00000D-01.pdf?dl=0', 'pdf', 0.00, '01', 25),
-('00000E', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/tcgua422rrfg243/00000E-00.epub?dl=0', 'epub', 0.00, '00', 26),
-('00000E', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/xi6wlpzmbwhexsi/00000E-01.pdf?dl=0', 'pdf', 0.00, '01', 27),
-('00000F', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/j07w4dta8mqqc07/00000F-00.epub?dl=0', 'epub', 0.00, '00', 28),
-('00000F', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/vgyutyqius281il/00000F-01.pdf?dl=0', 'pdf', 0.00, '01', 29),
-('00000G', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/d28krda1q3by47e/00000G-00.epub?dl=0', 'epub', 0.00, '00', 30),
-('00000G', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/jg7yqa4dukuq1kp/00000G-01.pdf?dl=0', 'pdf', 0.00, '01', 31),
-('00000H', 'PT', 'Instituto Federal Fluminense', 'https://www.dropbox.com/s/zvkeqz6a519n5gg/00000H-00.epub?dl=0', 'epub', 0.00, '00', 32),
-('00000H', 'PT', 'Instituto Federal Fluminense', 'https://www.dropbox.com/s/ahy4shkh1mk9mch/00000H-01.pdf?dl=0', 'pdf', 0.00, '01', 33),
-('00000I', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/fl5fexzrzfblea2/00000I-00.epub?dl=0', 'epub', 0.00, '00', 34),
-('00000J', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/m587zej89l4u6rj/00000J-00.epub?dl=0', 'epub', 0.00, '00', 36),
-('00000K', 'PT', 'eLivros', 'https://www.dropbox.com/s/93c32d7etjz58eh/00000K-00.epub?dl=0', 'epub', 0.00, '00', 38),
-('00000K', 'PT', 'eLivros', 'https://www.dropbox.com/s/nega024179ea0li/00000K-01.pdf?dl=0', 'pdf', 0.00, '01', 39),
-('00000L', 'PT', 'dhnet.org', 'https://www.dropbox.com/s/eosuq2jraften0d/00000L-00.epub?dl=0', 'epub', 0.00, '00', 40),
-('00000L', 'PT', 'dhnet.org', 'https://www.dropbox.com/s/d89qmnhu3d4xyhw/00000L-01.pdf?dl=0', 'pdf', 0.00, '01', 41),
-('00000M', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/4z6pn04uxh0pfny/00000M-00.epub?dl=0', 'epub', 0.00, '00', 42),
-('00000M', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/isldi9lhs9iqmrd/00000M-01.pdf?dl=0', 'pdf', 0.00, '01', 43),
-('00000N', 'PT', 'LeLivros', 'https://www.dropbox.com/s/c3ocy1wj5inv8sm/00000N-00.epub?dl=0', 'epub', 0.00, '00', 44),
-('00000N', 'PT', 'LeLivros', 'https://www.dropbox.com/s/d1dijnrkitmf5gi/00000N-01.pdf?dl=0', 'pdf', 0.00, '01', 45),
-('00000O', 'PT', 'eLivros', 'https://www.dropbox.com/s/xssztw8w0cgyeqh/00000O-00.epub?dl=0', 'epub', 0.00, '00', 46),
-('00000O', 'PT', 'eLivros', 'https://www.dropbox.com/s/5xxgbe67ldtjuu3/00000O-01.pdf?dl=0', 'pdf', 0.00, '01', 47),
-('00000P', 'PT', 'eLivros', 'https://www.dropbox.com/s/66kqa7r7pyr5zmc/00000P-00.epub?dl=0', 'epub', 0.00, '00', 48),
-('00000P', 'PT', 'eLivros', 'https://www.dropbox.com/s/x7m0ol2yqevnqrf/00000P-01.pdf?dl=0', 'pdf', 0.00, '01', 49),
-('00000Q', 'PT', 'Filosofia Nerd', 'https://www.dropbox.com/s/unuxcl3wx0xktkk/00000Q-00.epub?dl=0', 'epub', 0.00, '00', 50),
-('00000Q', 'PT', 'Filosofia Nerd', 'https://www.dropbox.com/s/xm5r71yyybjdeuq/00000Q-01.pdf?dl=0', 'pdf', 0.00, '01', 51),
-('00000R', 'PT', 'Coletivo Contra Corrente', 'https://www.dropbox.com/s/chhtavqq5lc8010/00000R-00.epub?dl=0', 'epub', 0.00, '00', 52),
-('00000R', 'PT', 'Coletivo Contra Corrente', 'https://www.dropbox.com/s/39p22aizn58eu9u/00000R-01.pdf?dl=0', 'pdf', 0.00, '01', 53),
-('00000S', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/oxud4551e69w4eq/00000S-00.epub?dl=0', 'epub', 0.00, '00', 54),
-('00000S', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/jdymjy0qy6bzgf5/00000S-01.pdf?dl=0', 'pdf', 0.00, '01', 55),
-('00000T', 'PT', 'Baixe.net', 'https://www.dropbox.com/s/90e6dcrcun02m7c/00000T-00.epub?dl=0', 'epub', 0.00, '00', 56),
-('00000T', 'PT', 'Baixe.net', 'https://www.dropbox.com/s/89k20cnoy77r676/00000T-01.pdf?dl=0', 'pdf', 0.00, '01', 57),
-('00000U', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/31yvgyqa5a2mw6y/00000U-00.epub?dl=0', 'epub', 0.00, '00', 58),
-('00000U', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/hhcme49iwr5vfar/00000U-01.pdf?dl=0', 'pdf', 0.00, '01', 59),
-('00000V', 'PT', 'Sweetdreamside.wordpress', 'https://www.dropbox.com/s/hl4preyfrhkrmc7/00000V-00.epub?dl=0', 'epub', 0.00, '00', 60),
-('00000V', 'PT', 'Sweetdreamside.wordpress', 'https://www.dropbox.com/s/ucaq1mz33x7lkxj/00000V-01.pdf?dl=0', 'pdf', 0.00, '01', 61),
-('00000W', 'PT', 'eLivros', 'https://www.dropbox.com/s/4lw6lt5ifdvvwz2/00000W-00.epub?dl=0', 'epub', 0.00, '00', 62),
-('00000W', 'PT', 'eLivros', 'https://www.dropbox.com/s/i7lrec43hc0o884/00000W-01.pdf?dl=0', 'pdf', 0.00, '01', 63),
-('00000X', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/n3cglriu4u8p69c/00000X-00.epub?dl=0', 'epub', 0.00, '00', 64),
-('00000X', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/d8b9gy4z52xzo3h/00000X-01.pdf?dl=0', 'pdf', 0.00, '01', 65),
-('00000Y', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/9gf6u8mh0g16iyz/00000Y-00.epub?dl=0', 'epub', 0.00, '00', 66),
-('00000Y', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/s6kbvyoztcvgudy/00000Y-01.pdf?dl=0', 'pdf', 0.00, '01', 67),
-('00000Z', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/ysxq9ut4q95hnzy/00000Z-00.epub?dl=0', 'epub', 0.00, '00', 68),
-('00000Z', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/t3p36e6uqpjn6aa/00000Z-01.pdf?dl=0', 'pdf', 0.00, '01', 69),
-('000010', 'PT', 'Universidade da Amazônia', 'https://www.dropbox.com/s/xyi1a4ea8lruj9u/000010-00.epub?dl=0', 'epub', 0.00, '00', 70),
-('000010', 'PT', 'Universidade da Amazônia', 'https://www.dropbox.com/s/lflcfr18qjyq4fm/000010-01.PDF?dl=0', 'pdf', 0.00, '01', 71),
-('000011', 'PT', 'EBC.com.br', 'https://www.dropbox.com/s/n97swmhl8fkjstw/000011-00.epub?dl=0', 'epub', 0.00, '00', 72),
-('000011', 'PT', 'EBC.com.br', 'https://www.dropbox.com/s/nrf1spozmb9zf3g/000011-01.pdf?dl=0', 'pdf', 0.00, '01', 73),
-('000012', 'PT', 'EBC.com.br', 'https://www.dropbox.com/s/0433zsbx4lkla7c/000012-00.epub?dl=0', 'epub', 0.00, '00', 74),
-('000012', 'PT', 'EBC.com.br', 'https://www.dropbox.com/s/di6v1rxibbw2qej/000012-01.pdf?dl=0', 'pdf', 0.00, '01', 75),
-('000013', 'PT', 'EBC.com.br', 'https://www.dropbox.com/s/66zm5cmotvprz6z/000013-00.epub?dl=0', 'epub', 0.00, '00', 76),
-('000013', 'PT', 'EBC.com.br', 'https://www.dropbox.com/s/s786tcwv5b1mo5t/000013-01.pdf?dl=0', 'pdf', 0.00, '01', 77),
-('000000', 'EN', 'EPDF.pub', 'https://www.dropbox.com/s/fm3eytadsbqqta0/000000-01.epub?dl=0', 'epub', 0.00, '01', 78),
-('000000', 'EN', 'EPDF.pub', 'https://www.dropbox.com/s/9n8rpjrlsvcy3zl/000000-02.pdf?dl=0', 'pdf', 0.00, '02', 79),
-('000000', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/t8lejjxkd1o8vxe/000000-03.epub?dl=0', 'epub', 0.00, '03', 80),
-('000000', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/nimluf29r7trk4s/000000-04.pdf?dl=0', 'pdf', 0.00, '04', 81),
-('000002', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/1rmrgzh1oea8upj/000002-03.epub?dl=0', 'epub', 0.00, '03', 82),
-('000002', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/hq9m8erwmsn284e/000002-04.pdf?dl=0', 'pdf', 0.00, '04', 83),
-('000003', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/e1j4qthd1r1nav1/000003-03.epub?dl=0', 'epub', 0.00, '03', 84),
-('000003', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/onpiykta47t7c67/000003-04.pdf?dl=0', 'pdf', 0.00, '04', 85),
-('000009', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/pe0fz83qx0s6ybt/000009-04.epub?dl=0', 'epub', 0.00, '04', 86),
-('000009', 'ES', 'Hola Ebook', 'https://www.dropbox.com/s/6rofh1hyt85geaa/000009-05.pdf?dl=0', 'pdf', 0.00, '05', 87),
-('000014', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/4whkr3uj5wrl16k/000014-00.epub?dl=0', 'epub', 0.00, '00', 88),
-('000014', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 'https://www.dropbox.com/s/s9sic5c2c5p37br/000014-01.pdf?dl=0', 'pdf', 0.00, '01', 89),
-('000015', 'PT', 'Link Livros', 'https://www.dropbox.com/s/0y5p7v0h1p6ll4o/000015-00.epub?dl=0', 'epub', 0.00, '00', 90),
-('000015', 'PT', 'Link Livros', 'https://www.dropbox.com/s/91z5b3yhdroz6zk/000015-01.pdf?dl=0', 'pdf', 0.00, '01', 91),
-('000016', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/0yxanrcznwfoyeu/000016-00.epub?dl=0', 'epub', 0.00, '00', 92),
-('000016', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/4s9ykioud98o89x/000016-01.pdf?dl=0', 'pdf', 0.00, '01', 93),
-('000017', 'PT', 'elivros.love', 'https://www.dropbox.com/s/pt6zxslyy3rjn69/000017-00.epub?dl=0', 'epub', 0.00, '00', 94),
-('000017', 'PT', 'elivros.love', 'https://www.dropbox.com/s/9y4wrv0cu5cc33l/000017-01.pdf?dl=0', 'pdf', 0.00, '01', 95),
-('000018', 'PT', 'Universidade da Amazônia', 'https://www.dropbox.com/s/dn6n69zktfatrhv/000018-00.epub?dl=0', 'epub', 0.00, '00', 96),
-('000018', 'PT', 'Universidade da Amazônia', 'https://www.dropbox.com/s/yp6uuhy1dkvp2n2/000018-01.pdf?dl=0', 'pdf', 0.00, '01', 97),
-('000019', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/lvqixja6431h35g/000019-00.epub?dl=0', 'epub', 0.00, '00', 98),
-('000019', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/j7oowdhzpfvaqrb/000019-01.pdf?dl=0', 'pdf', 0.00, '01', 99),
-('00001A', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/b9zcbgonztj8yxu/00001A-00.epub?dl=0', 'epub', 0.00, '00', 100),
-('00001A', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/b9zcbgonztj8yxu/00001A-00.epub?dl=0', 'pdf', 0.00, '01', 101),
-('00001B', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/u594yvldcwwyzsl/00001B-00.epub?dl=0', 'epub', 0.00, '00', 102),
-('00001B', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/fq9llkjlyrrr5rj/00001B-01.pdf?dl=0', 'pdf', 0.00, '01', 103),
-('00001C', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/mdn74pxl58nvfdf/00001C-00.epub?dl=0', 'epub', 0.00, '00', 104),
-('00001C', 'PT', 'Farofa Filosófica', 'https://www.dropbox.com/s/hhw7go5mgbxd8z0/00001C-01.pdf?dl=0', 'pdf', 0.00, '01', 105),
-('00001D', 'PT', 'Universidade da Amazônia', 'https://www.dropbox.com/s/0z2sstkutrra0yj/00001D-00.epub?dl=0', 'epub', 0.00, '00', 107),
-('00001D', 'PT', 'Universidade da Amazônia', 'https://www.dropbox.com/s/puuj2798s4o5o6z/00001D-01.pdf?dl=0', 'pdf', 0.00, '01', 108),
-('00001E', 'PT', 'Paz e Terra', 'https://www.dropbox.com/s/09ep16l1n3s0ep0/00001E-00.epub?dl=0', 'epub', 0.00, '00', 109),
-('00001E', 'PT', 'Paz e Terra', 'https://www.dropbox.com/s/efwqk7pj432ancj/00001E-01.pdf?dl=0', 'pdf', 0.00, '01', 110),
-('00001F', 'PT', 'Companhia das Letras', 'https://www.dropbox.com/s/o98qgu1jjoae746/00001F-00.epub?dl=0', 'epub', 0.00, '00', 111),
-('00001F', 'PT', 'Companhia das Letras', 'https://www.dropbox.com/s/txbk80zscrowu3q/00001F-01.pdf?dl=0', 'pdf', 0.00, '01', 112),
-('00001G', 'PT', 'eLivros', 'https://www.dropbox.com/s/mg4i12ohb8tcpho/00001G-00.epub?dl=0', 'epub', 0.00, '00', 113),
-('00001G', 'PT', 'eLivros', 'https://www.dropbox.com/s/w6hivuuue5fyi4g/00001G-01.pdf?dl=0', 'pdf', 0.00, '01', 114),
-('00001H', 'PT', 'Editora Zahar', 'https://www.dropbox.com/s/o4p9c6fsxz24hg6/00001H-00.epub?dl=0', 'epub', 0.00, '00', 115),
-('00001H', 'PT', 'Editora Zahar', 'https://www.dropbox.com/s/xonsxkznzz4q69r/00001H-01.pdf?dl=0', 'pdf', 0.00, '01', 116),
-('00001I', 'PT', 'LeLivros', 'https://www.dropbox.com/s/vfzdusy90w9m6it/00001I-00.epub?dl=0', 'epub', 0.00, '00', 117),
-('00001J', 'PT', 'LeLivros', 'https://www.dropbox.com/s/qzj3ggktxrktly6/00001J-00.epub?dl=0', 'epub', 0.00, '00', 118),
-('00001K', 'PT', 'UTFPR', 'https://www.dropbox.com/s/hxy1jpb11t7a5cp/00001K-00.epub?dl=0', 'epub', 0.00, '00', 119),
-('00001K', 'PT', 'UTFPR', 'https://www.dropbox.com/s/u5or6erw5236xtr/00001K-01.pdf?dl=0', 'pdf', 0.00, '01', 120),
-('00001L', 'PT', 'Digital Source', 'https://www.dropbox.com/s/cfhxgw83wrx6yhu/00001L-00.epub?dl=0', 'epub', 0.00, '00', 121),
-('00001L', 'PT', 'Digital Source', 'https://www.dropbox.com/s/br0y7qerwbdm3r2/00001L-01.pdf?dl=0', 'pdf', 0.00, '01', 122),
-('00001M', 'PT', 'Recicla Leitores', 'https://www.dropbox.com/s/xwyrq6iow2cxls0/00001M-00.epub?dl=0', 'epub', 0.00, '00', 123),
-('00001M', 'PT', 'Recicla Leitores', 'https://www.dropbox.com/s/bkqr4k8dglxdzny/00001M-01.pdf?dl=0', 'pdf', 0.00, '01', 124),
-('00001N', 'PT', 'Academia Brasileira de Letras', 'https://www.dropbox.com/s/8h58k68bxkchadp/00001N-00.epub?dl=0', 'epub', 0.00, '00', 125),
-('00001N', 'PT', 'Academia Brasileira de Letras', 'https://www.dropbox.com/s/i1zm8mwmhtk374f/00001N-01.pdf?dl=0', 'pdf', 0.00, '01', 126),
-('', 'PT', 'ebooksbrasil', 'https://www.dropbox.com/s/', 'epub', 0.00, '00', 127),
-('00001O', 'PT', 'ebooksbrasil', 'https://www.dropbox.com/s/rm0w3yygiw01lm3/00001O-01.pdf?dl=0', 'pdf', 0.00, '01', 128),
-('00001P', 'PT', 'Ediora Rideel', 'https://www.dropbox.com/s/iax3sbmyd3y2n7y/00001P-00.epub?dl=0', 'epub', 0.00, '00', 129),
-('00001P', 'PT', 'Ediora Rideel', 'https://www.dropbox.com/s/zxzuhaj7arffwl6/00001P-01.pdf?dl=0', 'pdf', 0.00, '01', 130),
-('00001Q', 'PT', 'Estante Digital', 'https://www.dropbox.com/s/bgbrd0naqpdax9q/00001Q-00.epub?dl=0', 'epub', 0.00, '00', 131),
-('00001Q', 'PT', 'Estante Digital', 'https://www.dropbox.com/s/4tfbueozhqifzjo/00001Q-01.pdf?dl=0', 'pdf', 0.00, '01', 132),
-('00001R', 'PT', 'Secretaria de Eduação e do Esporte do Paraná', 'https://www.dropbox.com/s/pf1n6ot36m8da94/00001R-00.epub?dl=0', 'epub', 0.00, '00', 133),
-('00001R', 'PT', 'Secretaria de Eduação e do Esporte do Paraná', 'https://www.dropbox.com/s/3iz6du77t831q17/00001R-01.pdf?dl=0', 'pdf', 0.00, '01', 134),
-('00001S', 'PT', 'LeLivros', 'https://www.dropbox.com/s/dup6f1ejpk1s04d/00001S-00.epub?dl=0', 'epub', 0.00, '00', 135),
-('00001S', 'PT', 'LeLivros', 'https://www.dropbox.com/s/77vavan1xqydsd6/00001S-01.pdf?dl=0', 'pdf', 0.00, '01', 136),
-('00001T', 'PT', 'Luso Livros', 'https://www.dropbox.com/s/1wte34nhwuz2rak/00001T-00.epub?dl=0', 'epub', 0.00, '00', 137),
-('00001T', 'PT', 'Luso Livros', 'https://www.dropbox.com/s/63ma2qrb8ucwtcz/00001T-01.pdf?dl=0', 'pdf', 0.00, '01', 138),
-('00001U', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/lxyg6owp5stlxn5/00001U-00.epub?dl=0', 'epub', 0.00, '00', 139),
-('00001U', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/a74g5tn0v18f668/00001U-01.pdf?dl=0', 'pdf', 0.00, '01', 140),
-('00001V', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/2thfncqj2d2s6zb/00001V-00.epub?dl=0', 'epub', 0.00, '00', 141),
-('00001V', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/ffiwu4twp2gpo8y/00001V-01.pdf?dl=0', 'pdf', 0.00, '01', 142),
-('000023', 'PT', 'leLivros', 'https://www.dropbox.com/s/p5i4udq65vi8hog/000023-00.epub?dl=0', 'epub', 0.00, '00', 143),
-('000023', 'PT', 'leLivros', 'https://www.dropbox.com/s/t0my9w8vmbhayck/000023-01.pdf?dl=0', 'pdf', 0.00, '01', 144),
-('000024', 'PT', 'eLivros', 'https://www.dropbox.com/s/93qs2rm6zdcoikd/000024-00.epub?dl=0', 'epub', 0.00, '00', 145),
-('000024', 'PT', 'eLivros', 'https://www.dropbox.com/s/lnnqa0uev9btalt/000024-01.pdf?dl=0', 'pdf', 0.00, '01', 146),
-('000025', 'PT', 'eLivros', 'https://www.dropbox.com/s/jicdjvh3d4flx3q/000025-00.epub?dl=0', 'epub', 0.00, '00', 147),
-('000025', 'PT', 'eLivros', 'https://www.dropbox.com/s/7gof47rgrs388t7/000025-01.pdf?dl=0', 'pdf', 0.00, '01', 148),
-('000026', 'PT', 'eLivros', 'https://www.dropbox.com/s/ech1xgilqpi4fkf/000026-00.epub?dl=0', 'epub', 0.00, '00', 149),
-('000026', 'PT', 'eLivros', 'https://www.dropbox.com/s/3yi90p0j5c1wmvj/000026-01.pdf?dl=0', 'pdf', 0.00, '01', 150),
-('000027', 'PT', 'Kbook', 'https://www.dropbox.com/s/dxy2ab3l6ms525o/000027-00.epub?dl=0', 'epub', 0.00, '00', 151),
-('000027', 'PT', 'Kbook', 'https://www.dropbox.com/s/86qur7wzdwo20bu/000027-01.pdf?dl=0', 'pdf', 0.00, '01', 152),
-('000028', 'PT', 'cabana-on', 'https://www.dropbox.com/s/764hzlhoo0c7zyp/000028-00.epub?dl=0', 'epub', 0.00, '00', 153),
-('000028', 'PT', 'cabana-on', 'https://www.dropbox.com/s/3c0arx67uvcwf3q/000028-01.pdf?dl=0', 'pdf', 0.00, '01', 154),
-('000029', 'PT', 'leLivros', 'https://www.dropbox.com/s/qb7a0ftf20qk7r3/000029-00.epub?dl=0', 'epub', 0.00, '00', 155),
-('000029', 'PT', 'leLivros', 'https://www.dropbox.com/s/m8c23wyr9uemfkr/000029-01.pdf?dl=0', 'pdf', 0.00, '01', 156),
-('00002A', 'PT', 'eLivros', 'https://www.dropbox.com/s/6qgr5oo5l7io128/00002A-00.epub?dl=0', 'epub', 0.00, '00', 157),
-('00002A', 'PT', 'eLivros', 'https://www.dropbox.com/s/aw2lkv0um8iy9q4/00002A-01.pdf?dl=0', 'pdf', 0.00, '01', 158),
-('00002B', 'PT', 'Kbook', 'https://www.dropbox.com/s/bwrndxkzynx6p7z/00002B-00.epub?dl=0', 'epub', 0.00, '00', 159),
-('00002B', 'PT', 'Kbook', 'https://www.dropbox.com/s/0zml6ncxv95aq5o/00002B-01.pdf?dl=0', 'pdf', 0.00, '01', 160),
-('00002C', 'PT', 'eLivros', 'https://www.dropbox.com/s/psbs4mylhog2v9e/00002C-00.epub?dl=0', 'epub', 0.00, '00', 161),
-('00002C', 'PT', 'eLivros', 'https://www.dropbox.com/s/bflebutlfqhkz63/00002C-01.pdf?dl=0', 'pdf', 0.00, '01', 162),
-('00002D', 'PT', 'Livraria Pública', 'https://www.dropbox.com/s/0wllhl92sq0hclp/00002D-00.epub?dl=0', 'epub', 0.00, '00', 163),
-('00002D', 'PT', 'Livraria Pública', 'https://www.dropbox.com/s/izm44nzxvgruha1/00002D-01.pdf?dl=0', 'pdf', 0.00, '01', 164),
-('00002E', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/mls0avma9n7ikve/00002E-00.epub?dl=0', 'epub', 0.00, '00', 165),
-('00002E', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/viux5eqt7tj5e7t/00002E-01.pdf?dl=0', 'pdf', 0.00, '01', 166),
-('00002H', 'PT', 'LeLivros', 'https://www.dropbox.com/s/akp3ubhug2keor4/00002H-00.epub?dl=0', 'epub', 0.00, '00', 167),
-('00002H', 'PT', 'LeLivros', 'https://www.dropbox.com/s/bsjkmzelnjdl4bl/00002H-01.pdf?dl=0', 'pdf', 0.00, '01', 168),
-('00002I', 'PT', 'Digital Source', 'https://www.dropbox.com/s/yq5glokyrt2tr67/00002I-00.epub?dl=0', 'epub', 0.00, '00', 169),
-('00002I', 'PT', 'Digital Source', 'https://www.dropbox.com/s/xuzrkasqqll1gi5/00002I-01.pdf?dl=0', 'pdf', 0.00, '01', 170),
-('00002J', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/jxlz8nlfig2tq8h/00002J-00.epub?dl=0', 'epub', 0.00, '00', 171),
-('00002J', 'PT', 'Fundação Biblioteca Nacional', 'https://www.dropbox.com/s/tnl6jvrssy6ncom/00002J-01.pdf?dl=0', 'pdf', 0.00, '01', 172),
-('00001O', 'PT', 'ebooksbrasil', 'https://www.dropbox.com/s/9gn4biqdik8w3wi/00001O-00.epub?dl=0', 'epub', 0.00, '00', 175),
-('00000I', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/h2ab0arggebwy38/00000I-01.pdf?dl=0', 'pdf', 0.00, '01', 176),
-('00000J', 'PT', 'eBooksBrasil', 'https://www.dropbox.com/s/q7pgwm8l25iomfj/00000J-01.pdf?dl=0', 'pdf', 0.00, '01', 177),
-('00002K', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/flh2ugc58ky5ll2/00002K-00.epub?dl=0', 'epub', 0.00, '00', 178),
-('00002K', 'PT', 'Baixe Livros', 'https://www.dropbox.com/s/wbqzah439lzkdky/00002K-01.pdf?dl=0', 'pdf', 0.00, '01', 179),
-('00002L', 'PT', 'Biblioteca Digital Soares Basto', 'https://www.dropbox.com/s/1c3ubqkcnio68pj/00002L-00.epub?dl=0', 'epub', 0.00, '00', 180),
-('00002L', 'PT', 'Biblioteca Digital Soares Basto', 'https://www.dropbox.com/s/2xwej2d0udawjvj/00002L-01.pdf?dl=0', 'pdf', 0.00, '01', 181),
-('00002M', 'PT', 'baixarsoftware.com', 'https://www.dropbox.coms/15frfirorxrykia/00002M-00.epub?dl=0', 'epub', 0.00, '00', 182),
-('00002M', 'PT', 'baixarsoftware.com', 'https://www.dropbox.com/s/pcjuki80unmoqbr/00002M-01.pdf?dl=0', 'pdf', 0.00, '01', 183),
-('00002N', 'PT', 'cabana-on', 'https://www.dropbox.com/s/9uvtnthwv0l3zfg/00002N-00.epub?dl=0', 'epub', 0.00, '00', 184),
-('00002N', 'PT', 'cabana-on', 'https://www.dropbox.com/s/8m2joe9bmcgrzva/00002N-01.pdf?dl=0', 'pdf', 0.00, '01', 185);
+('000000', 'PT', 'Project Gutenberg', 's/7r2a20ikwdyk7me/000000-00.epub?dl=0', 'epub', '0.00', '00', 1),
+('000001', 'PT', 'Fundação Biblioteca Nacional', 's/i8i6nz8tjer8f90/000001-00.epub?dl=0', 'epub', '0.00', '00', 2),
+('000001', 'PT', 'Fundação Biblioteca Nacional', 's/j1mf1gqsjapds94/000001-01.pdf?dl=0', 'pdf', '0.00', '01', 3),
+('000002', 'PT', 'Project Gutenberg', 's/jhhpazejtvz5h2h/000002-00.epub?dl=0', 'epub', '0.00', '00', 4),
+('000003', 'PT', 'Project Gutenberg', 's/r45hv5366j2hlvu/000003-00.epub?dl=0', 'epub', '0.00', '00', 5),
+('000004', 'PT', 'Fundação Biblioteca Nacional', 's/cr2nlm948x21il2/000004-00.epub?dl=0', 'epub', '0.00', '00', 6),
+('000004', 'PT', 'Fundação Biblioteca Nacional', 's/3kxq7m46vcryool/000004-01.pdf?dl=0', 'pdf', '0.00', '01', 7),
+('000005', 'PT', 'Fundação Biblioteca Nacional', 's/u5c1pmp9k3ybfez/000005-00.epub?dl=0', 'epub', '0.00', '00', 8),
+('000005', 'PT', 'Fundação Biblioteca Nacional', 's/x0b6fy3ey1oa8rm/000005-01.pdf?dl=0', 'pdf', '0.00', '01', 9),
+('000006', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/r4eoyml1u53m4iz/000006-00.epub?dl=0', 'epub', '0.00', '00', 10),
+('000006', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/k1n5l2n70wlu05r/000006-01.pdf?dl=0', 'pdf', '0.00', '01', 11),
+('000007', 'PT', 'Fundação Biblioteca Nacional', 's/tdyihkodeaa8vka/000007-00.epub?dl=0', 'epub', '0.00', '00', 12),
+('000007', 'PT', 'Fundação Biblioteca Nacional', 's/svx98d32psx9w8g/000007-01.pdf?dl=0', 'pdf', '0.00', '01', 13),
+('000008', 'PT', 'Fundação Biblioteca Nacional', 's/9sfoqoxp3j12z43/000008-00.epub?dl=0', 'epub', '0.00', '00', 14),
+('000008', 'PT', 'Fundação Biblioteca Nacional', 's/2hwbohi18g9lchv/000008-01.pdf?dl=0', 'pdf', '0.00', '01', 15),
+('000009', 'PT', 'Fundação Biblioteca Nacional', 's/wvsrqgicsqvv2u7/000009-00.epub?dl=0', 'epub', '0.00', '00', 16),
+('000009', 'PT', 'Fundação Biblioteca Nacional', 's/wscwa70b5feztno/000009-01.pdf?dl=0', 'pdf', '0.00', '01', 17),
+('00000A', 'PT', 'Fundação Biblioteca Nacional', 's/a24ruycwt5ig1qe/00000A-00.epub?dl=0', 'epub', '0.00', '00', 18),
+('00000A', 'PT', 'Fundação Biblioteca Nacional', 's/s9i3tqgs032oe8q/00000A-01.pdf?dl=0', 'pdf', '0.00', '01', 19),
+('00000B', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/d9a4j8yzynz2ijn/00000B-00.epub?dl=0', 'epub', '0.00', '00', 20),
+('00000B', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/gf8ma6fu5i9n0sz/00000B-01.pdf?dl=0', 'pdf', '0.00', '01', 21),
+('00000C', 'PT', 'Fundação Biblioteca Nacional', 's/7gca02qglj75ugf/00000C-00.epub?dl=0', 'epub', '0.00', '00', 22),
+('00000C', 'PT', 'Fundação Biblioteca Nacional', 's/i132yqqcbn88hwo/00000C-01.pdf?dl=0', 'pdf', '0.00', '01', 23),
+('00000D', 'PT', 'Fundação Biblioteca Nacional', 's/14mirnij8g4vc31/00000D-00.epub?dl=0', 'epub', '0.00', '00', 24),
+('00000D', 'PT', 'Fundação Biblioteca Nacional', 's/hfkbxg9nd1qehm8/00000D-01.pdf?dl=0', 'pdf', '0.00', '01', 25),
+('00000E', 'PT', 'Fundação Biblioteca Nacional', 's/tcgua422rrfg243/00000E-00.epub?dl=0', 'epub', '0.00', '00', 26),
+('00000E', 'PT', 'Fundação Biblioteca Nacional', 's/xi6wlpzmbwhexsi/00000E-01.pdf?dl=0', 'pdf', '0.00', '01', 27),
+('00000F', 'PT', 'Fundação Biblioteca Nacional', 's/j07w4dta8mqqc07/00000F-00.epub?dl=0', 'epub', '0.00', '00', 28),
+('00000F', 'PT', 'Fundação Biblioteca Nacional', 's/vgyutyqius281il/00000F-01.pdf?dl=0', 'pdf', '0.00', '01', 29),
+('00000G', 'PT', 'eBooksBrasil', 's/d28krda1q3by47e/00000G-00.epub?dl=0', 'epub', '0.00', '00', 30),
+('00000G', 'PT', 'eBooksBrasil', 's/jg7yqa4dukuq1kp/00000G-01.pdf?dl=0', 'pdf', '0.00', '01', 31),
+('00000H', 'PT', 'Instituto Federal Fluminense', 's/zvkeqz6a519n5gg/00000H-00.epub?dl=0', 'epub', '0.00', '00', 32),
+('00000H', 'PT', 'Instituto Federal Fluminense', 's/ahy4shkh1mk9mch/00000H-01.pdf?dl=0', 'pdf', '0.00', '01', 33),
+('00000I', 'PT', 'eBooksBrasil', 's/fl5fexzrzfblea2/00000I-00.epub?dl=0', 'epub', '0.00', '00', 34),
+('00000J', 'PT', 'eBooksBrasil', 's/m587zej89l4u6rj/00000J-00.epub?dl=0', 'epub', '0.00', '00', 36),
+('00000K', 'PT', 'eLivros', 's/93c32d7etjz58eh/00000K-00.epub?dl=0', 'epub', '0.00', '00', 38),
+('00000K', 'PT', 'eLivros', 's/nega024179ea0li/00000K-01.pdf?dl=0', 'pdf', '0.00', '01', 39),
+('00000L', 'PT', 'dhnet.org', 's/eosuq2jraften0d/00000L-00.epub?dl=0', 'epub', '0.00', '00', 40),
+('00000L', 'PT', 'dhnet.org', 's/d89qmnhu3d4xyhw/00000L-01.pdf?dl=0', 'pdf', '0.00', '01', 41),
+('00000M', 'PT', 'eBooksBrasil', 's/4z6pn04uxh0pfny/00000M-00.epub?dl=0', 'epub', '0.00', '00', 42),
+('00000M', 'PT', 'eBooksBrasil', 's/isldi9lhs9iqmrd/00000M-01.pdf?dl=0', 'pdf', '0.00', '01', 43),
+('00000N', 'PT', 'LeLivros', 's/c3ocy1wj5inv8sm/00000N-00.epub?dl=0', 'epub', '0.00', '00', 44),
+('00000N', 'PT', 'LeLivros', 's/d1dijnrkitmf5gi/00000N-01.pdf?dl=0', 'pdf', '0.00', '01', 45),
+('00000O', 'PT', 'eLivros', 's/xssztw8w0cgyeqh/00000O-00.epub?dl=0', 'epub', '0.00', '00', 46),
+('00000O', 'PT', 'eLivros', 's/5xxgbe67ldtjuu3/00000O-01.pdf?dl=0', 'pdf', '0.00', '01', 47),
+('00000P', 'PT', 'eLivros', 's/66kqa7r7pyr5zmc/00000P-00.epub?dl=0', 'epub', '0.00', '00', 48),
+('00000P', 'PT', 'eLivros', 's/x7m0ol2yqevnqrf/00000P-01.pdf?dl=0', 'pdf', '0.00', '01', 49),
+('00000Q', 'PT', 'Filosofia Nerd', 's/unuxcl3wx0xktkk/00000Q-00.epub?dl=0', 'epub', '0.00', '00', 50),
+('00000Q', 'PT', 'Filosofia Nerd', 's/xm5r71yyybjdeuq/00000Q-01.pdf?dl=0', 'pdf', '0.00', '01', 51),
+('00000R', 'PT', 'Coletivo Contra Corrente', 's/chhtavqq5lc8010/00000R-00.epub?dl=0', 'epub', '0.00', '00', 52),
+('00000R', 'PT', 'Coletivo Contra Corrente', 's/39p22aizn58eu9u/00000R-01.pdf?dl=0', 'pdf', '0.00', '01', 53),
+('00000S', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/oxud4551e69w4eq/00000S-00.epub?dl=0', 'epub', '0.00', '00', 54),
+('00000S', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/jdymjy0qy6bzgf5/00000S-01.pdf?dl=0', 'pdf', '0.00', '01', 55),
+('00000T', 'PT', 'Baixe.net', 's/90e6dcrcun02m7c/00000T-00.epub?dl=0', 'epub', '0.00', '00', 56),
+('00000T', 'PT', 'Baixe.net', 's/89k20cnoy77r676/00000T-01.pdf?dl=0', 'pdf', '0.00', '01', 57),
+('00000U', 'PT', 'eBooksBrasil', 's/31yvgyqa5a2mw6y/00000U-00.epub?dl=0', 'epub', '0.00', '00', 58),
+('00000U', 'PT', 'eBooksBrasil', 's/hhcme49iwr5vfar/00000U-01.pdf?dl=0', 'pdf', '0.00', '01', 59),
+('00000V', 'PT', 'Sweetdreamside.wordpress', 's/hl4preyfrhkrmc7/00000V-00.epub?dl=0', 'epub', '0.00', '00', 60),
+('00000V', 'PT', 'Sweetdreamside.wordpress', 's/ucaq1mz33x7lkxj/00000V-01.pdf?dl=0', 'pdf', '0.00', '01', 61),
+('00000W', 'PT', 'eLivros', 's/4lw6lt5ifdvvwz2/00000W-00.epub?dl=0', 'epub', '0.00', '00', 62),
+('00000W', 'PT', 'eLivros', 's/i7lrec43hc0o884/00000W-01.pdf?dl=0', 'pdf', '0.00', '01', 63),
+('00000X', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/n3cglriu4u8p69c/00000X-00.epub?dl=0', 'epub', '0.00', '00', 64),
+('00000X', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/d8b9gy4z52xzo3h/00000X-01.pdf?dl=0', 'pdf', '0.00', '01', 65),
+('00000Y', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/9gf6u8mh0g16iyz/00000Y-00.epub?dl=0', 'epub', '0.00', '00', 66),
+('00000Y', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/s6kbvyoztcvgudy/00000Y-01.pdf?dl=0', 'pdf', '0.00', '01', 67),
+('00000Z', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/ysxq9ut4q95hnzy/00000Z-00.epub?dl=0', 'epub', '0.00', '00', 68),
+('00000Z', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/t3p36e6uqpjn6aa/00000Z-01.pdf?dl=0', 'pdf', '0.00', '01', 69),
+('000010', 'PT', 'Universidade da Amazônia', 's/xyi1a4ea8lruj9u/000010-00.epub?dl=0', 'epub', '0.00', '00', 70),
+('000010', 'PT', 'Universidade da Amazônia', 's/lflcfr18qjyq4fm/000010-01.PDF?dl=0', 'pdf', '0.00', '01', 71),
+('000011', 'PT', 'EBC.com.br', 's/n97swmhl8fkjstw/000011-00.epub?dl=0', 'epub', '0.00', '00', 72),
+('000011', 'PT', 'EBC.com.br', 's/nrf1spozmb9zf3g/000011-01.pdf?dl=0', 'pdf', '0.00', '01', 73),
+('000012', 'PT', 'EBC.com.br', 's/0433zsbx4lkla7c/000012-00.epub?dl=0', 'epub', '0.00', '00', 74),
+('000012', 'PT', 'EBC.com.br', 's/di6v1rxibbw2qej/000012-01.pdf?dl=0', 'pdf', '0.00', '01', 75),
+('000013', 'PT', 'EBC.com.br', 's/66zm5cmotvprz6z/000013-00.epub?dl=0', 'epub', '0.00', '00', 76),
+('000013', 'PT', 'EBC.com.br', 's/s786tcwv5b1mo5t/000013-01.pdf?dl=0', 'pdf', '0.00', '01', 77),
+('000000', 'EN', 'EPDF.pub', 's/fm3eytadsbqqta0/000000-01.epub?dl=0', 'epub', '0.00', '01', 78),
+('000000', 'EN', 'EPDF.pub', 's/9n8rpjrlsvcy3zl/000000-02.pdf?dl=0', 'pdf', '0.00', '02', 79),
+('000000', 'ES', 'Hola Ebook', 's/t8lejjxkd1o8vxe/000000-03.epub?dl=0', 'epub', '0.00', '03', 80),
+('000000', 'ES', 'Hola Ebook', 's/nimluf29r7trk4s/000000-04.pdf?dl=0', 'pdf', '0.00', '04', 81),
+('000002', 'ES', 'Hola Ebook', 's/1rmrgzh1oea8upj/000002-03.epub?dl=0', 'epub', '0.00', '03', 82),
+('000002', 'ES', 'Hola Ebook', 's/hq9m8erwmsn284e/000002-04.pdf?dl=0', 'pdf', '0.00', '04', 83),
+('000003', 'ES', 'Hola Ebook', 's/e1j4qthd1r1nav1/000003-03.epub?dl=0', 'epub', '0.00', '03', 84),
+('000003', 'ES', 'Hola Ebook', 's/onpiykta47t7c67/000003-04.pdf?dl=0', 'pdf', '0.00', '04', 85),
+('000009', 'ES', 'Hola Ebook', 's/pe0fz83qx0s6ybt/000009-04.epub?dl=0', 'epub', '0.00', '04', 86),
+('000009', 'ES', 'Hola Ebook', 's/6rofh1hyt85geaa/000009-05.pdf?dl=0', 'pdf', '0.00', '05', 87),
+('000014', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/4whkr3uj5wrl16k/000014-00.epub?dl=0', 'epub', '0.00', '00', 88),
+('000014', 'PT', 'Biblioteca Virtual do Estudante Brasileiro', 's/s9sic5c2c5p37br/000014-01.pdf?dl=0', 'pdf', '0.00', '01', 89),
+('000015', 'PT', 'Link Livros', 's/0y5p7v0h1p6ll4o/000015-00.epub?dl=0', 'epub', '0.00', '00', 90),
+('000015', 'PT', 'Link Livros', 's/91z5b3yhdroz6zk/000015-01.pdf?dl=0', 'pdf', '0.00', '01', 91),
+('000016', 'PT', 'Baixe Livros', 's/0yxanrcznwfoyeu/000016-00.epub?dl=0', 'epub', '0.00', '00', 92),
+('000016', 'PT', 'Baixe Livros', 's/4s9ykioud98o89x/000016-01.pdf?dl=0', 'pdf', '0.00', '01', 93),
+('000017', 'PT', 'elivros.love', 's/pt6zxslyy3rjn69/000017-00.epub?dl=0', 'epub', '0.00', '00', 94),
+('000017', 'PT', 'elivros.love', 's/9y4wrv0cu5cc33l/000017-01.pdf?dl=0', 'pdf', '0.00', '01', 95),
+('000018', 'PT', 'Universidade da Amazônia', 's/dn6n69zktfatrhv/000018-00.epub?dl=0', 'epub', '0.00', '00', 96),
+('000018', 'PT', 'Universidade da Amazônia', 's/yp6uuhy1dkvp2n2/000018-01.pdf?dl=0', 'pdf', '0.00', '01', 97),
+('000019', 'PT', 'Farofa Filosófica', 's/lvqixja6431h35g/000019-00.epub?dl=0', 'epub', '0.00', '00', 98),
+('000019', 'PT', 'Farofa Filosófica', 's/j7oowdhzpfvaqrb/000019-01.pdf?dl=0', 'pdf', '0.00', '01', 99),
+('00001A', 'PT', 'Farofa Filosófica', 's/b9zcbgonztj8yxu/00001A-00.epub?dl=0', 'epub', '0.00', '00', 100),
+('00001A', 'PT', 'Farofa Filosófica', 's/b9zcbgonztj8yxu/00001A-00.epub?dl=0', 'pdf', '0.00', '01', 101),
+('00001B', 'PT', 'Farofa Filosófica', 's/u594yvldcwwyzsl/00001B-00.epub?dl=0', 'epub', '0.00', '00', 102),
+('00001B', 'PT', 'Farofa Filosófica', 's/fq9llkjlyrrr5rj/00001B-01.pdf?dl=0', 'pdf', '0.00', '01', 103),
+('00001C', 'PT', 'Farofa Filosófica', 's/mdn74pxl58nvfdf/00001C-00.epub?dl=0', 'epub', '0.00', '00', 104),
+('00001C', 'PT', 'Farofa Filosófica', 's/hhw7go5mgbxd8z0/00001C-01.pdf?dl=0', 'pdf', '0.00', '01', 105),
+('00001D', 'PT', 'Universidade da Amazônia', 's/0z2sstkutrra0yj/00001D-00.epub?dl=0', 'epub', '0.00', '00', 107),
+('00001D', 'PT', 'Universidade da Amazônia', 's/puuj2798s4o5o6z/00001D-01.pdf?dl=0', 'pdf', '0.00', '01', 108),
+('00001E', 'PT', 'Paz e Terra', 's/09ep16l1n3s0ep0/00001E-00.epub?dl=0', 'epub', '0.00', '00', 109),
+('00001E', 'PT', 'Paz e Terra', 's/efwqk7pj432ancj/00001E-01.pdf?dl=0', 'pdf', '0.00', '01', 110),
+('00001F', 'PT', 'Companhia das Letras', 's/o98qgu1jjoae746/00001F-00.epub?dl=0', 'epub', '0.00', '00', 111),
+('00001F', 'PT', 'Companhia das Letras', 's/txbk80zscrowu3q/00001F-01.pdf?dl=0', 'pdf', '0.00', '01', 112),
+('00001G', 'PT', 'eLivros', 's/mg4i12ohb8tcpho/00001G-00.epub?dl=0', 'epub', '0.00', '00', 113),
+('00001G', 'PT', 'eLivros', 's/w6hivuuue5fyi4g/00001G-01.pdf?dl=0', 'pdf', '0.00', '01', 114),
+('00001H', 'PT', 'Editora Zahar', 's/o4p9c6fsxz24hg6/00001H-00.epub?dl=0', 'epub', '0.00', '00', 115),
+('00001H', 'PT', 'Editora Zahar', 's/xonsxkznzz4q69r/00001H-01.pdf?dl=0', 'pdf', '0.00', '01', 116),
+('00001I', 'PT', 'LeLivros', 's/vfzdusy90w9m6it/00001I-00.epub?dl=0', 'epub', '0.00', '00', 117),
+('00001J', 'PT', 'LeLivros', 's/qzj3ggktxrktly6/00001J-00.epub?dl=0', 'epub', '0.00', '00', 118),
+('00001K', 'PT', 'UTFPR', 's/hxy1jpb11t7a5cp/00001K-00.epub?dl=0', 'epub', '0.00', '00', 119),
+('00001K', 'PT', 'UTFPR', 's/u5or6erw5236xtr/00001K-01.pdf?dl=0', 'pdf', '0.00', '01', 120),
+('00001L', 'PT', 'Digital Source', 's/cfhxgw83wrx6yhu/00001L-00.epub?dl=0', 'epub', '0.00', '00', 121),
+('00001L', 'PT', 'Digital Source', 's/br0y7qerwbdm3r2/00001L-01.pdf?dl=0', 'pdf', '0.00', '01', 122),
+('00001M', 'PT', 'Recicla Leitores', 's/xwyrq6iow2cxls0/00001M-00.epub?dl=0', 'epub', '0.00', '00', 123),
+('00001M', 'PT', 'Recicla Leitores', 's/bkqr4k8dglxdzny/00001M-01.pdf?dl=0', 'pdf', '0.00', '01', 124),
+('00001N', 'PT', 'Academia Brasileira de Letras', 's/8h58k68bxkchadp/00001N-00.epub?dl=0', 'epub', '0.00', '00', 125),
+('00001N', 'PT', 'Academia Brasileira de Letras', 's/i1zm8mwmhtk374f/00001N-01.pdf?dl=0', 'pdf', '0.00', '01', 126),
+('', 'PT', 'ebooksbrasil', 's/xssztw8w0cgyeqh/00000O-00.epub?dl=0', 'epub', '0.00', '00', 127),
+('00001O', 'PT', 'ebooksbrasil', 's/rm0w3yygiw01lm3/00001O-01.pdf?dl=0', 'pdf', '0.00', '01', 128),
+('00001P', 'PT', 'Ediora Rideel', 's/iax3sbmyd3y2n7y/00001P-00.epub?dl=0', 'epub', '0.00', '00', 129),
+('00001P', 'PT', 'Ediora Rideel', 's/zxzuhaj7arffwl6/00001P-01.pdf?dl=0', 'pdf', '0.00', '01', 130),
+('00001Q', 'PT', 'Estante Digital', 's/bgbrd0naqpdax9q/00001Q-00.epub?dl=0', 'epub', '0.00', '00', 131),
+('00001Q', 'PT', 'Estante Digital', 's/4tfbueozhqifzjo/00001Q-01.pdf?dl=0', 'pdf', '0.00', '01', 132),
+('00001R', 'PT', 'Secretaria de Eduação e do Esporte do Paraná', 's/pf1n6ot36m8da94/00001R-00.epub?dl=0', 'epub', '0.00', '00', 133),
+('00001R', 'PT', 'Secretaria de Eduação e do Esporte do Paraná', 's/3iz6du77t831q17/00001R-01.pdf?dl=0', 'pdf', '0.00', '01', 134),
+('00001S', 'PT', 'LeLivros', 's/dup6f1ejpk1s04d/00001S-00.epub?dl=0', 'epub', '0.00', '00', 135),
+('00001S', 'PT', 'LeLivros', 's/77vavan1xqydsd6/00001S-01.pdf?dl=0', 'pdf', '0.00', '01', 136),
+('00001T', 'PT', 'Luso Livros', 's/1wte34nhwuz2rak/00001T-00.epub?dl=0', 'epub', '0.00', '00', 137),
+('00001T', 'PT', 'Luso Livros', 's/63ma2qrb8ucwtcz/00001T-01.pdf?dl=0', 'pdf', '0.00', '01', 138),
+('00001U', 'PT', 'Fundação Biblioteca Nacional', 's/lxyg6owp5stlxn5/00001U-00.epub?dl=0', 'epub', '0.00', '00', 139),
+('00001U', 'PT', 'Fundação Biblioteca Nacional', 's/a74g5tn0v18f668/00001U-01.pdf?dl=0', 'pdf', '0.00', '01', 140),
+('00001V', 'PT', 'Fundação Biblioteca Nacional', 's/2thfncqj2d2s6zb/00001V-00.epub?dl=0', 'epub', '0.00', '00', 141),
+('00001V', 'PT', 'Fundação Biblioteca Nacional', 's/ffiwu4twp2gpo8y/00001V-01.pdf?dl=0', 'pdf', '0.00', '01', 142),
+('000023', 'PT', 'leLivros', 's/p5i4udq65vi8hog/000023-00.epub?dl=0', 'epub', '0.00', '00', 143),
+('000023', 'PT', 'leLivros', 's/t0my9w8vmbhayck/000023-01.pdf?dl=0', 'pdf', '0.00', '01', 144),
+('000024', 'PT', 'eLivros', 's/93qs2rm6zdcoikd/000024-00.epub?dl=0', 'epub', '0.00', '00', 145),
+('000024', 'PT', 'eLivros', 's/lnnqa0uev9btalt/000024-01.pdf?dl=0', 'pdf', '0.00', '01', 146),
+('000025', 'PT', 'eLivros', 's/jicdjvh3d4flx3q/000025-00.epub?dl=0', 'epub', '0.00', '00', 147),
+('000025', 'PT', 'eLivros', 's/7gof47rgrs388t7/000025-01.pdf?dl=0', 'pdf', '0.00', '01', 148),
+('000026', 'PT', 'eLivros', 's/ech1xgilqpi4fkf/000026-00.epub?dl=0', 'epub', '0.00', '00', 149),
+('000026', 'PT', 'eLivros', 's/3yi90p0j5c1wmvj/000026-01.pdf?dl=0', 'pdf', '0.00', '01', 150),
+('000027', 'PT', 'Kbook', 's/dxy2ab3l6ms525o/000027-00.epub?dl=0', 'epub', '0.00', '00', 151),
+('000027', 'PT', 'Kbook', 's/86qur7wzdwo20bu/000027-01.pdf?dl=0', 'pdf', '0.00', '01', 152),
+('000028', 'PT', 'cabana-on', 's/764hzlhoo0c7zyp/000028-00.epub?dl=0', 'epub', '0.00', '00', 153),
+('000028', 'PT', 'cabana-on', 's/3c0arx67uvcwf3q/000028-01.pdf?dl=0', 'pdf', '0.00', '01', 154),
+('000029', 'PT', 'leLivros', 's/qb7a0ftf20qk7r3/000029-00.epub?dl=0', 'epub', '0.00', '00', 155),
+('000029', 'PT', 'leLivros', 's/m8c23wyr9uemfkr/000029-01.pdf?dl=0', 'pdf', '0.00', '01', 156),
+('00002A', 'PT', 'eLivros', 's/6qgr5oo5l7io128/00002A-00.epub?dl=0', 'epub', '0.00', '00', 157),
+('00002A', 'PT', 'eLivros', 's/aw2lkv0um8iy9q4/00002A-01.pdf?dl=0', 'pdf', '0.00', '01', 158),
+('00002B', 'PT', 'Kbook', 's/bwrndxkzynx6p7z/00002B-00.epub?dl=0', 'epub', '0.00', '00', 159),
+('00002B', 'PT', 'Kbook', 's/0zml6ncxv95aq5o/00002B-01.pdf?dl=0', 'pdf', '0.00', '01', 160),
+('00002C', 'PT', 'eLivros', 's/psbs4mylhog2v9e/00002C-00.epub?dl=0', 'epub', '0.00', '00', 161),
+('00002C', 'PT', 'eLivros', 's/bflebutlfqhkz63/00002C-01.pdf?dl=0', 'pdf', '0.00', '01', 162),
+('00002D', 'PT', 'Livraria Pública', 's/0wllhl92sq0hclp/00002D-00.epub?dl=0', 'epub', '0.00', '00', 163),
+('00002D', 'PT', 'Livraria Pública', 's/izm44nzxvgruha1/00002D-01.pdf?dl=0', 'pdf', '0.00', '01', 164),
+('00002E', 'PT', 'Baixe Livros', 's/mls0avma9n7ikve/00002E-00.epub?dl=0', 'epub', '0.00', '00', 165),
+('00002E', 'PT', 'Baixe Livros', 's/viux5eqt7tj5e7t/00002E-01.pdf?dl=0', 'pdf', '0.00', '01', 166),
+('00002H', 'PT', 'LeLivros', 's/akp3ubhug2keor4/00002H-00.epub?dl=0', 'epub', '0.00', '00', 167),
+('00002H', 'PT', 'LeLivros', 's/bsjkmzelnjdl4bl/00002H-01.pdf?dl=0', 'pdf', '0.00', '01', 168),
+('00002I', 'PT', 'Digital Source', 's/yq5glokyrt2tr67/00002I-00.epub?dl=0', 'epub', '0.00', '00', 169),
+('00002I', 'PT', 'Digital Source', 's/xuzrkasqqll1gi5/00002I-01.pdf?dl=0', 'pdf', '0.00', '01', 170),
+('00002J', 'PT', 'Fundação Biblioteca Nacional', 's/jxlz8nlfig2tq8h/00002J-00.epub?dl=0', 'epub', '0.00', '00', 171),
+('00002J', 'PT', 'Fundação Biblioteca Nacional', 's/tnl6jvrssy6ncom/00002J-01.pdf?dl=0', 'pdf', '0.00', '01', 172),
+('00001O', 'PT', 'ebooksbrasil', 's/9gn4biqdik8w3wi/00001O-00.epub?dl=0', 'epub', '0.00', '00', 175),
+('00000I', 'PT', 'eBooksBrasil', 's/h2ab0arggebwy38/00000I-01.pdf?dl=0', 'pdf', '0.00', '01', 176),
+('00000J', 'PT', 'eBooksBrasil', 's/q7pgwm8l25iomfj/00000J-01.pdf?dl=0', 'pdf', '0.00', '01', 177),
+('00002K', 'PT', 'Baixe Livros', 's/flh2ugc58ky5ll2/00002K-00.epub?dl=0', 'epub', '0.00', '00', 178),
+('00002K', 'PT', 'Baixe Livros', 's/wbqzah439lzkdky/00002K-01.pdf?dl=0', 'pdf', '0.00', '01', 179),
+('00002L', 'PT', 'Biblioteca Digital Soares Basto', 's/1c3ubqkcnio68pj/00002L-00.epub?dl=0', 'epub', '0.00', '00', 180),
+('00002L', 'PT', 'Biblioteca Digital Soares Basto', 's/2xwej2d0udawjvj/00002L-01.pdf?dl=0', 'pdf', '0.00', '01', 181),
+('00002M', 'PT', 'baixarsoftware.com', 's/15frfirorxrykia/00002M-00.epub?dl=0', 'epub', '0.00', '00', 182),
+('00002M', 'PT', 'baixarsoftware.com', 's/pcjuki80unmoqbr/00002M-01.pdf?dl=0', 'pdf', '0.00', '01', 183),
+('00002N', 'PT', 'cabana-on', 's/9uvtnthwv0l3zfg/00002N-00.epub?dl=0', 'epub', '0.00', '00', 184),
+('00002N', 'PT', 'cabana-on', 's/8m2joe9bmcgrzva/00002N-01.pdf?dl=0', 'pdf', '0.00', '01', 185);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `poems`
+--
+
+CREATE TABLE `poems` (
+  `auctor` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `id` char(6) COLLATE utf8_unicode_ci NOT NULL,
+  `country` char(3) COLLATE utf8_unicode_ci NOT NULL,
+  `genre` char(3) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `litschool` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ind` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `poems`
+--
+
+INSERT INTO `poems` (`auctor`, `id`, `country`, `genre`, `litschool`, `ind`) VALUES
+('BILAColavo', '000000', 'BRA', 'LSN', NULL, 1),
+('AESOP', '000000', 'GRE', 'NFB', NULL, 2),
+('BANDEIRAmanuel', '000000', 'BRA', 'LSN', NULL, 3),
+('CAMOESluis', '000000', 'POR', 'LSN', NULL, 4),
+('DRUMMONDandrade', '000000', 'BRA', 'LSN', NULL, 5),
+('BOPPraul', '000000', 'BRA', 'LSN', NULL, 6),
+('BOPPraul', '000001', 'BRA', 'LSN', NULL, 7),
+('BOPPraul', '000002', 'BRA', 'LSN', NULL, 8),
+('BOPPraul', '000003', 'BRA', 'LSN', NULL, 9),
+('AESOP', '000001', 'GRE', 'NFB', NULL, 10),
+('AESOP', '000002', 'GRE', 'NFB', NULL, 11),
+('AESOP', '000003', 'GRE', 'NFB', NULL, 12),
+('AESOP', '000004', 'GRE', 'NFB', NULL, 13),
+('AESOP', '000005', 'GRE', 'NFB', NULL, 14),
+('AESOP', '000006', 'GRE', 'NFB', NULL, 15),
+('AESOP', '000007', 'GRE', 'NFB', NULL, 16),
+('AESOP', '000008', 'GRE', 'NFB', NULL, 17),
+('AESOP', '000009', 'GRE', 'NFB', NULL, 18),
+('AESOP', '00000A', 'GRE', 'NFB', NULL, 19),
+('AESOP', '00000B', 'GRE', 'NFB', NULL, 20),
+('AESOP', '00000C', 'GRE', 'NFB', NULL, 21),
+('ANDRADEmario', '000000', 'BRA', 'LSN', NULL, 22),
+('ANDRADEmario', '000001', 'BRA', 'LSN', NULL, 23),
+('ANDRADEmario', '000002', 'BRA', 'LSN', NULL, 24),
+('ANDRADEmario', '000003', 'BRA', 'LSN', NULL, 25),
+('ANDRADEmario', '000004', 'BRA', 'LSN', NULL, 26),
+('ANDRADEmario', '000005', 'BRA', 'LSN', NULL, 27),
+('ANDRADEmario', '000006', 'BRA', 'LSN', NULL, 28),
+('ANDRADEmario', '000007', 'BRA', 'LSN', NULL, 29),
+('ANDRADEmario', '000008', 'BRA', 'LSN', NULL, 30),
+('ANDRADEmario', '000009', 'BRA', 'LSN', NULL, 31),
+('ANDRADEmario', '00000A', 'BRA', 'LSN', NULL, 32),
+('ANDRADEmario', '00000B', 'BRA', 'LSN', NULL, 33),
+('BANDEIRAmanuel', '000001', 'BRA', 'LSN', NULL, 34),
+('BANDEIRAmanuel', '000002', 'BRA', 'LSN', NULL, 35),
+('BYSSHEshelley', '000000', 'ENG', 'LSN', NULL, 36),
+('CAMOESluis', '000001', 'POR', 'LSN', NULL, 37),
+('CAMOESluis', '000002', 'POR', 'LSN', NULL, 38),
+('CAMOESluis', '000003', 'POR', 'LSN', NULL, 39),
+('CAMOESluis', '000004', 'POR', 'LSN', NULL, 40),
+('CAMOESluis', '000005', 'POR', 'LSN', NULL, 41),
+('CAMOESluis', '000006', 'POR', 'LSN', NULL, 42),
+('CAMOESluis', '000007', 'POR', 'LSN', NULL, 43),
+('CAMOESluis', '000008', 'POR', 'LSN', NULL, 44),
+('CAMOESluis', '000009', 'POR', 'LSN', NULL, 45),
+('CAMOESluis', '00000A', 'POR', 'LSN', NULL, 46),
+('CAMOESluis', '00000B', 'POR', 'LSN', NULL, 47),
+('DRUMMONDandrade', '000001', 'BRA', 'LSN', NULL, 48),
+('DRUMMONDandrade', '000002', 'BRA', 'LSN', NULL, 49),
+('DRUMMONDandrade', '000003', 'BRA', 'LSN', NULL, 50),
+('DRUMMONDandrade', '000004', 'BRA', 'LSN', NULL, 51),
+('DRUMMONDandrade', '000005', 'BRA', 'LSN', NULL, 52),
+('DRUMMONDandrade', '000006', 'BRA', 'LSN', NULL, 53),
+('DRUMMONDandrade', '000007', 'BRA', 'LSN', NULL, 54),
+('DRUMMONDandrade', '000008', 'BRA', 'LSN', NULL, 55),
+('DRUMMONDandrade', '000009', 'BRA', 'LSN', NULL, 56),
+('DRUMMONDandrade', '00000A', 'BRA', 'LSN', NULL, 57),
+('MEIRELEScecilia', '000000', 'BRA', 'LSN', NULL, 58),
+('MEIRELEScecilia', '000001', 'BRA', 'LSN', NULL, 59),
+('MEIRELEScecilia', '000002', 'BRA', 'LSN', NULL, 60),
+('MEIRELEScecilia', '000003', 'BRA', 'LSN', NULL, 61),
+('MEIRELEScecilia', '000004', 'BRA', 'LSN', NULL, 62),
+('MEIRELEScecilia', '000005', 'BRA', 'LSN', NULL, 63),
+('MEIRELEScecilia', '000006', 'BRA', 'LSN', NULL, 64),
+('MEIRELEScecilia', '000007', 'BRA', 'LSN', NULL, 65),
+('MEIRELEScecilia', '000008', 'BRA', 'LSN', NULL, 66),
+('MEIRELEScecilia', '000009', 'BRA', 'LSN', NULL, 67),
+('PESSOAfernando', '000000', 'POR', 'LSN', NULL, 68),
+('PESSOAfernando', '000001', 'POR', 'LSN', NULL, 69),
+('PESSOAfernando', '000002', 'POR', 'LSN', NULL, 70),
+('PESSOAfernando', '000003', 'POR', 'LSN', NULL, 71),
+('PESSOAfernando', '000004', 'POR', 'LSN', NULL, 72),
+('PESSOAfernando', '000005', 'POR', 'LSN', NULL, 73),
+('PESSOAfernando', '000006', 'POR', 'LSN', NULL, 74),
+('PESSOAfernando', '000007', 'POR', 'LSN', NULL, 75),
+('PESSOAfernando', '000008', 'POR', 'LSN', NULL, 76),
+('PESSOAfernando', '000009', 'POR', 'LSN', NULL, 77);
 
 -- --------------------------------------------------------
 
@@ -361,14 +458,6 @@ CREATE TABLE `requests` (
   `user` varchar(30) NOT NULL,
   `req` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `requests`
---
-
-INSERT INTO `requests` (`rid`, `user`, `req`) VALUES
-(1, 'KaiXtr', 'auctor=jkrowling;'),
-(2, 'KaiXtr', 'pname=teste;pcontent=isso vai ser removido;pauctor=PESSOAfernando;');
 
 -- --------------------------------------------------------
 
@@ -389,8 +478,7 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`id`, `user`, `book`, `comment`, `datime`) VALUES
-(4, 'KaiXtr', '000003', 'Eu vejo muito as pessoas falando sobre esse livro, mas nunca tinha parado pra ler ele de verdade, agora que eu conheço eu não quero saber de outra coisa. É muito diferente de qualquer coisa que já vi. ', '2020-07-11 01:07:15'),
-(8, 'TEST', '000003', 'Jajsajajjaakakakxjxnsjxjanxjxjnsndiajankxjsnajxusbnsuxajpwodjccywwkndncjchanxmlaowieurhrncnkcosuwjennfmlvocicuwuwhnememfkvlvicuuwhddjdujwjdnexiwnxoiwmcicurneoaoxokvmfnrjeisjxncndnejeisixicjcjncnaneneixucujvnsnwn', '2020-07-11 04:07:23');
+(4, 'KaiXtr', '000003', 'Eu vejo muito as pessoas falando sobre esse livro, mas nunca tinha parado pra ler ele de verdade, agora que eu conheço eu não quero saber de outra coisa. É muito diferente de qualquer coisa que já vi. ', '2020-07-11 01:07:15');
 
 -- --------------------------------------------------------
 
@@ -416,25 +504,24 @@ INSERT INTO `shelves` (`user`, `book`, `state`, `id`) VALUES
 ('KaiXtr', '00000N', 3, 43),
 ('KaiXtr', '00002C', 3, 46),
 ('KaiXtr', '00000C', 1, 48),
-('KaiXtr', '00000C', 0, 49),
 ('KaiXtr', '00000B', 1, 51),
 ('KaiXtr', '000003', 0, 61),
 ('KaiXtr', '00002C', 0, 69),
 ('KaiXtr', '00002D', 0, 90),
-('TEST', '000003', 0, 91),
 ('KaiXtr', '00001S', 0, 93),
 ('KaiXtr', '000001', 0, 95),
 ('KaiXtr', '00000O', 0, 96),
 ('KaiXtr', '00000L', 0, 97),
 ('KaiXtr', '000024', 0, 98),
 ('KaiXtr', '00001V', 0, 100),
-('TEST', '00000R', 0, 103),
-('KaiXtr', '00000B', 0, 105),
-('KaiXtr', '00000A', 0, 106),
-('KaiXtr', '00000N', 0, 110),
-('KaiXtr', '000017', 0, 112),
-('KaiXtr', '000000', 0, 113),
-('TEST', '000005', 0, 114);
+('KaiXtr', '000000', 0, 118),
+('KaiXtr', '00002O', 0, 120),
+('KaiXtr', '00000A', 0, 125),
+('KaiXtr', '00000C', 0, 136),
+('KaiXtr', '00001U', 0, 149),
+('KaiXtr', '00000B', 0, 154),
+('KaiXtr', '00000N', 0, 156),
+('KaiXtr', '000017', 0, 158);
 
 -- --------------------------------------------------------
 
@@ -657,6 +744,7 @@ INSERT INTO `users` (`pt`, `en`, `es`, `nick`, `birth`, `death`, `country`, `hom
 ('Manuel de Santa Maria', NULL, NULL, 'ITAPARICAfrei', '1704', '1768', 'BRA', 'Itaparica - BA', 'M', 1, NULL, 'frei.itaparica@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Henry James', NULL, NULL, 'JAMEShenry', '1843-04-15', '1916-02-28', 'USA', 'New York', 'M', 1, NULL, 'james.henry@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('J. K. Rowling', NULL, NULL, 'JKROWLING', '1965-07-31', NULL, 'ENG', 'Yate - Gloucestershire', 'F', 1, NULL, 'jkrowling@literledge.com', 'Gu@n@b@r@', NULL, NULL),
+('J. M. Barie', NULL, NULL, 'JMBARIE', '1860-05-09', '1937-06-19', 'SCO', 'Kirriemuir - Forfarshire', 'M', 1, NULL, 'j.m.barie.@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('J. R. R. Tolkien', NULL, NULL, 'JRRTOLKIEN', '1892-01-03', '1973-09-02', 'ENG', 'Bloemfontain', 'M', 1, NULL, 'j.r.r.tolkien@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Carl Gustav Jung', NULL, NULL, 'JUNGgustav', '1875-07-26', '1961-06-06', 'SUI', 'Kesswil - Turg?via', 'M', 1, NULL, 'carl.gustav.jung@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Franz Kafka', NULL, NULL, 'KAFKAfranz', '1883-06-03', '1924-06-03', 'CZE', 'Praga - Boémia', 'M', 1, NULL, 'kafka.franz@literledge.com', 'Gu@n@b@r@', NULL, NULL),
@@ -701,7 +789,6 @@ INSERT INTO `users` (`pt`, `en`, `es`, `nick`, `birth`, `death`, `country`, `hom
 ('Ariano Suassuna', NULL, NULL, 'SUASSUNAariano', '1927-06-16', '2014-06-23', 'BRA', 'Cidade da Parahyba - PB', 'M', 1, 'ABL-32-06', 'suassuna.ariano@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Sun Tzu', NULL, NULL, 'SUNtzu', '544 a.c', '496 a.c', 'CHN', 'Qi', 'M', 1, NULL, 'sun.tzu@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Bento Teixeira', NULL, NULL, 'TEIXEIRAbento', '1561', '1600', 'BRA', 'Pernambuco', 'M', 1, NULL, 'teixeira.bento@literledge.com', 'Gu@n@b@r@', NULL, NULL),
-('Teste', NULL, NULL, 'TEST', '2013-01-01', NULL, 'ARG', '', 'M', 0, NULL, 'thekaixtr@gmail.com', 'abcABC012', '8d34201a5b85900908db6cae92723617', ''),
 ('Mark Twain', NULL, NULL, 'TWAINmark', '1835-11-30', '1910-04-21', 'USA', 'Florida - Missouri', 'M', 1, NULL, 'twain.mark@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Érico Veríssimo', NULL, NULL, 'VERISSIMOerico', '1905-12-17', '1975-11-28', 'BRA', 'Porto Alegre - RS', 'M', 1, NULL, 'verissimo.erico@literledge.com', 'Gu@n@b@r@', NULL, NULL),
 ('Júlio Verne', 'Jules Verne', 'Júlio Verne', 'VERNEjules', '1878-02-08', '1905-03-24', 'FRA', 'Nantes - Pays de La Loire', 'M', 1, NULL, 'verne.jules@literledge.com', 'Gu@n@b@r@', NULL, NULL),
@@ -729,6 +816,12 @@ ALTER TABLE `books`
 ALTER TABLE `editions`
   ADD PRIMARY KEY (`ked`),
   ADD KEY `title` (`title`) USING BTREE;
+
+--
+-- Índices para tabela `poems`
+--
+ALTER TABLE `poems`
+  ADD PRIMARY KEY (`ind`);
 
 --
 -- Índices para tabela `requests`
@@ -777,10 +870,16 @@ ALTER TABLE `editions`
   MODIFY `ked` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=186;
 
 --
+-- AUTO_INCREMENT de tabela `poems`
+--
+ALTER TABLE `poems`
+  MODIFY `ind` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+
+--
 -- AUTO_INCREMENT de tabela `requests`
 --
 ALTER TABLE `requests`
-  MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `reviews`
@@ -792,13 +891,13 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT de tabela `shelves`
 --
 ALTER TABLE `shelves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
 
 --
 -- AUTO_INCREMENT de tabela `translations`
 --
 ALTER TABLE `translations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
 -- Restrições para despejos de tabelas
