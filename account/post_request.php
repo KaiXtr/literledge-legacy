@@ -59,8 +59,8 @@
 						if ($_POST['plitschool'][$x] == 'null') {$plitschool = $_POST['plitschool'][$x];}
 						else {$plitschool = "'".$_POST['plitschool'][$x]."'";}
 
-						$conn->query("INSERT INTO poems (auctor,id,country,genre,litschool) VALUES
-							('".$_POST['pauctor'][$x]."','".$pid."','".$_POST['pcountry'][$x]."','".$_POST['pgenre'][$x]."',".$plitschool.")");
+						$mysqlquery = "INSERT INTO poems (auctor,id,country,genre,litschool) VALUES ('".$_POST['pauctor'][$x]."','".$pid."','".$_POST['pcountry'][$x]."','".$_POST['pgenre'][$x]."',".$plitschool.")";
+						$conn->query($mysqlquery);
 
 						$htmc = fopen('../poems/'.$_POST['pauctor'][$x].'-'.$pid.'.php', 'w') or die('Unable to open file!');
 						$cont = '<?php'
@@ -71,6 +71,10 @@
 						.PHP_EOL.'?>';
 						fwrite($htmc, $cont);
 						fclose($htmc);
+
+						$mysqlfil = fopen('MYSQL_QUERY.txt','a+');
+						fwrite($mysqlfil, $mysqlquery.";".PHP_EOL);
+						fclose($mysqlfil);
 					}
 				}
 			}
@@ -103,11 +107,10 @@
 						else {$bseries = "'".$_POST['bseries'][$x]."'";}
 						$btags = str_replace(' ', '#', $_POST['btags'][$x]);
 
-						$conn->query("INSERT INTO books VALUES ('".$pid."','".$_POST['bauctor'][$x]."','".$_POST['byear'][$x]."','".$_POST['bgenre'][$x]."',
-							'".$_POST['bcountry'][$x]."',".$blitschool.",".$bseries.",'".$_POST['bvolume'][$x]."','".$_POST['blicense'][$x]."',
-							'".$_POST['bcdd'][$x]."','".$btags."','0','0','0')");
-						$conn->query("INSERT INTO translations (fkey,pt,en,es) VALUES ('".$pid."',
-							'".$_POST['bnamept'][$x]."','".$_POST['bnameen'][$x]."','".$_POST['bnamees'][$x]."')");
+						$mysqlquery1 = "INSERT INTO books VALUES ('".$pid."','".$_POST['bauctor'][$x]."','".$_POST['byear'][$x]."','".$_POST['bgenre'][$x]."','".$_POST['bcountry'][$x]."',".$blitschool.",".$bseries.",'".$_POST['bvolume'][$x]."','".$_POST['blicense'][$x]."','".$_POST['bcdd'][$x]."','".$btags."','0','0','0')";
+						$conn->query($mysqlquery1);
+						$mysqlquery2 = "INSERT INTO translations (fkey,pt,en,es) VALUES ('".$pid."','".$_POST['bnamept'][$x]."','".$_POST['bnameen'][$x]."','".$_POST['bnamees'][$x]."')";
+						$conn->query($mysqlquery2);
 
 						resize_image($_FILES['bcover']['tmp_name'][$x],"../media/images/covers/".$pid,333,500);
 
@@ -138,6 +141,11 @@
 						.PHP_EOL.'?>';
 						fwrite($htmc, $cont);
 						fclose($htmc);
+
+						$mysqlfil = fopen('MYSQL_QUERY.txt','a+');
+						fwrite($mysqlfil, $mysqlquery1.";".PHP_EOL);
+						fwrite($mysqlfil, $mysqlquery2.";".PHP_EOL);
+						fclose($mysqlfil);
 					}
 				}
 			}
@@ -150,9 +158,9 @@
 					if ((!isset($_POST['anamept'][$x]))||(!isset($_POST['anick'][$x]))||(!isset($_POST['abiopt'][$x]))
 					||($_POST['anamept'][$x] == '')||($_POST['anick'][$x] == '')||($_POST['abiopt'][$x] == '')
 					||(!isset($_POST['abirth'][$x]))||(!isset($_POST['ahometown'][$x]))||(!isset($_POST['aemail'][$x]))
-					||($_POST['abirth'][$x] == '')||($_POST['ahometown'][$x] == '')||($_POST['aemail'][$x] == '')
-					||(!isset($_FILES['apropic']['tmp_name'][$x]))||(!isset($_FILES['abanner']['tmp_name'][$x]))
-					||($_FILES['apropic']['tmp_name'][$x] == '')||($_FILES['abanner']['tmp_name'][$x] == '')) {$error .= '6';}
+					||($_POST['abirth'][$x] == '')||($_POST['ahometown'][$x] == '')||($_POST['aemail'][$x] == '')) {$error .= '6';}
+					/*||(!isset($_FILES['apropic']['tmp_name'][$x]))||(!isset($_FILES['abanner']['tmp_name'][$x]))
+					||($_FILES['apropic']['tmp_name'][$x] == '')||($_FILES['abanner']['tmp_name'][$x] == '')) {$error .= '6';}*/
 
 					if ($error != '') {header("location: ".$base_url."requests.php?error=".$error."&t=3");}
 					else {
@@ -170,9 +178,8 @@
 						if ($_POST['abonds'][$x] == '') {$abonds = 'null';}
 						else {$abonds = "'".$_POST['abonds'][$x]."'";}
 
-						$conn->query("INSERT INTO users VALUES ('".$_POST['anamept'][$x]."',".$anameen.",".$anamees.",'".$_POST['anick'][$x]."',
-							'".$_POST['abirth'][$x]."',".$adeath.",'".$_POST['acountry'][$x]."','".$_POST['ahometown'][$x]."','".$_POST['agender'][$x]."',
-							'1',".$aacademy.",'".$_POST['aemail'][$x]."','Gu@n@b@r@',null,".$abonds.")");
+						$mysqlquery = "INSERT INTO users VALUES ('".$_POST['anamept'][$x]."',".$anameen.",".$anamees.",'".$_POST['anick'][$x]."','".$_POST['abirth'][$x]."',".$adeath.",'".$_POST['acountry'][$x]."','".$_POST['ahometown'][$x]."','".$_POST['agender'][$x]."','1',".$aacademy.",'".$_POST['aemail'][$x]."','Gu@n@b@r@',null,".$abonds.")";
+						$conn->query($mysqlquery);
 
 						resize_image($_FILES['apropic']['tmp_name'][$x],"../media/images/profilepics/".$_POST['anick'][$x],250,333);
 						resize_image($_FILES['abanner']['tmp_name'][$x],"../media/images/banners/".$_POST['anick'][$x],1920,500);
@@ -188,6 +195,10 @@
 						$cont = str_replace('%abioes%', $abioes, $cont);
 						fwrite($htmc, $cont);
 						fclose($htmc);
+
+						$mysqlfil = fopen('MYSQL_QUERY.txt','a+');
+						fwrite($mysqlfil, $mysqlquery.";".PHP_EOL);
+						fclose($mysqlfil);
 					}
 				}
 			}

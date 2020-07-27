@@ -1294,6 +1294,7 @@ hr {
 .requestable tr {
 	transition-duration: 0;
 	cursor: default;
+}
 
 div::-webkit-scrollbar {
 	width: 8px;

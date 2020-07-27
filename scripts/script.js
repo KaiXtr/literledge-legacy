@@ -206,8 +206,10 @@ function filter_search(search,ofsa=null,ofsb=null,ofsp=null){
 	var selected0 = olet.options[olet.selectedIndex].value;
 	var selected1 = ocou.options[ocou.selectedIndex].value;
 	var selected2 = oyer.options[oyer.selectedIndex].value;
-	var selected3 = ogen.options[ogen.selectedIndex].value;
-	var selected4 = olsc.options[olsc.selectedIndex].value;
+	if (ogen != null) {var selected3 = ogen.options[ogen.selectedIndex].value;}
+	else {var selected3 = 'none';}
+	if (olsc != null) {var selected4 = olsc.options[olsc.selectedIndex].value;}
+	else {var selected4 = 'none';}
 	var redirl = 'http://localhost/literledge/search.php?q=' + search;
 	if (selected0 != 'none') {redirl = redirl + '&l=' + selected0;}
 	if (selected1 != 'none') {redirl = redirl + '&c=' + selected1;}
@@ -338,7 +340,7 @@ function add_rowpom(txt) {
 			genres.push(document.getElementById('pgenre'+x).value);
 			litschools.push(document.getElementById('plitschool'+x).value);
 			prid.push(document.getElementById('prid'+x).value);
-			pblsh.push(document.getElementById('pblsh1'+x).value);
+			pblsh.push(document.getElementById('pblsh1'+x).checked);
 		}
 	}
 
@@ -356,14 +358,13 @@ function add_rowpom(txt) {
 			document.getElementById('pgenre'+x).value = genres[x];
 			document.getElementById('plitschool'+x).value = litschools[x];
 			document.getElementById('prid'+x).value = prid[x];
-			document.getElementById('pblsh1'+x).value = pblsh[x];
+			document.getElementById('pblsh1'+x).checked = pblsh[x];
 		}
 	}
 	rowpomcount++;
 };
 
 function add_rowbok(txt) {
-	var covers = [];
 	var titlespt = [];
 	var titlesen = [];
 	var titleses = [];
@@ -410,7 +411,7 @@ function add_rowbok(txt) {
 			binfoen.push(document.getElementById('binfoen'+x).value);
 			binfoes.push(document.getElementById('binfoes'+x).value);
 			brid.push(document.getElementById('brid'+x).value);
-			pblsh.push(document.getElementById('pblsh2'+x).value);
+			pblsh.push(document.getElementById('pblsh2'+x).checked);
 		}
 	}
 
@@ -441,7 +442,7 @@ function add_rowbok(txt) {
 			document.getElementById('binfoen'+x).value = binfoen[x];
 			document.getElementById('binfoes'+x).value = binfoes[x];
 			document.getElementById('brid'+x).value = brid[x];
-			document.getElementById('pblsh2'+x).value = pblsh[x];
+			document.getElementById('pblsh2'+x).checked = pblsh[x];
 		}
 	}
 	rowbokcount++;
@@ -460,8 +461,6 @@ function add_rowuse(txt) {
 	var emails = [];
 	var academies = [];
 	var bonds = [];
-	var propic = [];
-	var banner = [];
 	var biopt = [];
 	var bioen = [];
 	var bioes = [];
@@ -482,13 +481,11 @@ function add_rowuse(txt) {
 			emails.push(document.getElementById('aemail'+x).value);
 			academies.push(document.getElementById('aacademy'+x).value);
 			bonds.push(document.getElementById('abonds'+x).value);
-			propic.push(document.getElementById('apropic'+x).value);
-			banner.push(document.getElementById('abanner'+x).value);
 			biopt.push(document.getElementById('abiopt'+x).value);
 			bioen.push(document.getElementById('abioen'+x).value);
 			bioes.push(document.getElementById('abioes'+x).value);
 			arid.push(document.getElementById('arid'+x).value);
-			pblsh.push(document.getElementById('pblsh3'+x).value);
+			pblsh.push(document.getElementById('pblsh3'+x).checked);
 		}
 	}
 
@@ -510,13 +507,11 @@ function add_rowuse(txt) {
 			document.getElementById('aemail'+x).value = emails[x];
 			document.getElementById('aacademy'+x).value = academies[x];
 			document.getElementById('abonds'+x).value = bonds[x];
-			document.getElementById('apropic'+x).value = propic[x];
-			document.getElementById('abanner'+x).value = banner[x];
 			document.getElementById('abiopt'+x).value = biopt[x];
 			document.getElementById('abioen'+x).value = bioen[x];
 			document.getElementById('abioes'+x).value = bioes[x];
 			document.getElementById('arid'+x).value = arid[x];
-			document.getElementById('pblsh3'+x).value = pblsh[x];
+			document.getElementById('pblsh3'+x).checked = pblsh[x];
 		}
 	}
 	rowusecount++;

@@ -202,7 +202,7 @@
 								</tr>";
 						$rowbok = "<tr>
 								<th style='width: 100px;'><input id='pblsh2%lid%' type='checkbox' name='pblsh2[]' /></th>
-								<th><div id='bimgdrg%lid%' class='filprev' style='width: 333px; height: 500px;' onclick='drag_image(event,%lid%)'>
+								<th><div id='bimgdrg%lid%' class='filprev' style='width: 333px; height: 500px;'>
 								<img id='bprev%lid%' style='width: 333px; height: 500px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								</div>
 								<input id='bcover%lid%' accept='image/jpeg' name='bcover[]' type='file' onchange='previmg(event,%lid%,1)' /></th>
@@ -259,10 +259,10 @@
 								</tr>";
 						$rowuse = "<tr>
 								<th><input id='pblsh3%lid%' type='checkbox' name='pblsh3[]' /></th>
-								<th><div id='aprodrg%lid%' class='filprev' style='width: 333px; height: 500px;' onclick='drag_image(event,%lid%)'>
+								<th><div id='aprodrg%lid%' class='filprev' style='width: 333px; height: 500px;'>
 								<img id='apprev%lid%' style='width: 333px; height: 500px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								<input id='apropic%lid%' accept='image/jpeg' name='apropic[]' type='file' onchange='previmg(event,%lid%,2)' /></div><br />
-								<div id='abandrg%lid%' class='filprev' style='width: 333px; height: 87px;' onclick='drag_image(event,%lid%)'>
+								<div id='abandrg%lid%' class='filprev' style='width: 333px; height: 87px;'>
 								<img id='abprev%lid%' style='width: 333px; height: 87px; top: 0px; left: 0px;position: relative;clip: rect(0px,0px,10px,40px)' draggable='false' />
 								</div>
 								<input id='abanner%lid%' accept='image/jpeg' name='abanner[]' type='file' onchange='previmg(event,%lid%,3)' /></th>
@@ -298,9 +298,11 @@
 						$rowusecount = 0;
 						if ($find->num_rows > 0) {
 							while ($i = $find->fetch_assoc()) {
+								if (($rowpomcount >= 10)&&($rowbokcount >= 10)&&($rowusecount >= 10))
+									{break;}
 								#POEMS
 								preg_match('/pauctor/i',$i['req'],$re);
-								if (sizeof($re) > 0) {
+								if ((sizeof($re) > 0)&&($rowpomcount < 10)) {
 									$pname = substr($i['req'], strpos($i['req'], 'pname=')+6);
 									$pname = substr($pname, 0, strpos($pname, ';'));
 									$pcontent = substr($i['req'], strpos($i['req'], 'pcontent=')+9);
@@ -325,7 +327,7 @@
 									}
 								#BOOKS
 								preg_match('/bname/i',$i['req'],$re);
-								if (sizeof($re) > 0) {
+								if ((sizeof($re) > 0)&&($rowbokcount < 10)) {
 									$bname = substr($i['req'], strpos($i['req'], 'bname=')+6);
 									$bname = substr($bname, 0, strpos($bname, ';'));
 									$byear = substr($i['req'], strpos($i['req'], 'byear=')+6);
@@ -353,7 +355,7 @@
 									}
 								#USERS
 								preg_match('/aname/i',$i['req'],$re);
-								if (sizeof($re) > 0) {
+								if ((sizeof($re) > 0)&&($rowusecount < 10)) {
 									$aname = substr($i['req'], strpos($i['req'], 'aname=')+6);
 									$aname = substr($aname, 0, strpos($aname, ';'));
 									$acountry = substr($i['req'], strpos($i['req'], 'acountry=')+6);

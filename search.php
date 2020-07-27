@@ -132,6 +132,7 @@
 									||(sizeof($reptstacc) > 0)||(sizeof($reenstacc) > 0)||(sizeof($reesstacc) > 0))
 										{$p = true;}
 								}
+								else {$p = true;}
 
 								if ($p == true) {
 									if ((in_array($nm[0],$foundlet) == false)) {

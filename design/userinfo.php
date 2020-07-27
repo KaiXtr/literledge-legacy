@@ -39,6 +39,7 @@
 				$mm = substr($i['birth'],5,2);
 				$yy = substr($i['birth'],0,4);
 				$b = $dd.'/'.$mm.'/'.$yy;
+
 				if ((($dd >= 22)&&($mm == '11'))||(($dd <= 21)&&($mm == '12'))) {$sgn='01';}
 				else if ((($dd >= 22)&&($mm == '12'))||(($dd <= 19)&&($mm == '01'))) {$sgn = '02';}
 				else if ((($dd >= 20)&&($mm == '01'))||(($dd <= 18)&&($mm == '02'))) {$sgn = '03';}
@@ -51,9 +52,9 @@
 				else if ((($dd >= 23)&&($mm == '08'))||(($dd <= 22)&&($mm == '09'))) {$sgn = '10';}
 				else if ((($dd >= 23)&&($mm == '09'))||(($dd <= 22)&&($mm == '10'))) {$sgn = '11';}
 				else if ((($dd >= 23)&&($mm == '10'))||(($dd <= 21)&&($mm == '11'))) {$sgn = '12';}
-				$zd = "<a href='https://www.flaticon.com/authors/bqlqn' target='_blank'>
+				$zd = "<span id='tbirth' class='binfotip'><a href='https://www.flaticon.com/authors/bqlqn' target='_blank'>
 							<img src='media/images/icons/zodiac/".$sgn.".png' height='30' title='Icons made by Freepik' />
-						</a>".$zdclst[$sgn];
+						</a>".$zdclst[$sgn]."</span>";
 			}
 			else {$b = $i['birth'];$yy = substr($i['birth'],0,4);$zd = '';}
 
@@ -64,7 +65,7 @@
 					$dth = substr($i['death'],0,5);
 				}
 				else {$d = $d.$i['death'];$dth=substr($i['death'],0,5);}
-				$age = abs($dth) - abs($yy);
+				$age = abs(abs($dth) - abs($yy));
 				if ($_COOKIE['lang'] == 'pt') {$age = $age." anos";}
 				if ($_COOKIE['lang'] == 'en') {$age = $age." years old";}
 				if ($_COOKIE['lang'] == 'es') {$age = $age." años";}
@@ -229,8 +230,7 @@
 						<div>
 							<span id='bhover'> 
 								<img src='media/images/icons/birth-".$_COOKIE['theme'].".png' height='30' />
-								" .$b. "
-								<span id='tbirth' class='binfotip'>".$zd."</span>
+								" .$b.$zd."
 							</span>
 							" .$d. "
 						</div>
