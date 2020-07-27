@@ -1,7 +1,0 @@
-INSERT INTO users VALUES ('Sócrates','Socrates','Sócrates','SOCRATES','469 a.c','399 a.c','GRE','Atenas','M','1',null,'socrates.@literledge.com','Gu@n@b@r@',null,null);
-INSERT INTO users VALUES ('Tales de Mileto','Thales of Miletus','Tales de Mileto','THALESmiletus','624 a.c','548 a.c','GRE','Mileto','M','1',null,'thales.miletus@literledge.com','Gu@n@b@r@',null,null);
-INSERT INTO users VALUES ('Pitágoras de Samos','Pythagoras of Samos','Pitágoras de Samos','PYTHAGORASsamos','569 a.c','475 a.c','GRE','Samos','M','1',null,'pythagoras.samos@literledge.com','Gu@n@b@r@',null,null);
-INSERT INTO users VALUES ('Anaximandro de Mileto','Anaximander of Miletus','Anaximandro de Mileto','ANAXIMANDER','610 a.c','546 a.c','GRE','Mileto','M','1',null,'anaximander.@literledge.com','Gu@n@b@r@',null,null);
-INSERT INTO users VALUES ('Anaxímenes de Mileto','Anaximenes of Miletus','Anaxímenes de Mileto','ANAXIMENES','588 a.c','524 a.c','GRE','Mileto','M','1',null,'anaximenes.@literledge.com','Gu@n@b@r@',null,null);
-INSERT INTO users VALUES ('Heráclito de Éfeso','Heraclitus of Ephesus','Heráclito de Éfeso','HERACLITUSephesus','540 a.c','470 a.c','GRE','Éfeso','M','1',null,'heraclitus.ephesus@literledge.com','Gu@n@b@r@',null,null);
-INSERT INTO users VALUES ('Parmênides de Eléia','Parmenides of Elea','Parménides de Elea','PARMENIDESelea','530 a.c','460 a.c','GRE','Eléia','M','1',null,'parmenides.elea@literledge.com','Gu@n@b@r@',null,null);
