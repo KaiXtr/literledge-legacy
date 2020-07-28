@@ -238,8 +238,12 @@
 				</div>".$gly.$slf.$fav.$htc.$opn
 				."<script type='text/javascript'>
 					if ($(window).width() < 720) {
-						if ($('#username').height() == '80') {document.getElementById('username').style.top = '100px';}
 						if ($('#username').height() >= '120') {document.getElementById('username').style.top = '60px';}
+						else if ($('#username').height() >= '80') {document.getElementById('username').style.top = '100px';}
+					}
+					else if ($(window).width() < 2500) {
+						if ($('#username').height() >= '120') {document.getElementById('username').style.top = '220px';}
+						else if ($('#username').height() >= '80') {document.getElementById('username').style.top = '120px';}
 					}
 				</script>";
 			}

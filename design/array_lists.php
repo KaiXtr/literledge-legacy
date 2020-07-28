@@ -111,13 +111,13 @@ array_multisort($nam, SORT_ASC, $ltslst);
 
 #ACADEMIES
 if ($_COOKIE['lang'] == 'pt') {
-	$acalst = array('ABL'=>'Academia Brasileira de Letras','APL'=>'Academia Paraibana de Letras');
+	$acalst = array('00'=>'Patrono','01'=>'Fundador','ABL'=>'Academia Brasileira de Letras','APL'=>'Academia Paraibana de Letras');
 	}
 else if ($_COOKIE['lang'] == 'en') {
-	$acalst = array('ABL'=>'Brazilian Academy of Letters','APL'=>'Paraíba Academy of Letters');
+	$acalst = array('00'=>'Patron','01'=>'Founder','ABL'=>'Brazilian Academy of Letters','APL'=>'Paraíba Academy of Letters');
 	}
 else if ($_COOKIE['lang'] == 'es') {
-	$acalst = array('ABL'=>'Academia Brasileña de Letras','APL'=>'Academia Paraibana de Letras');
+	$acalst = array('00'=>'Patrón','01'=>'Fundador','ABL'=>'Academia Brasileña de Letras','APL'=>'Academia Paraibana de Letras');
 	}
 
 #BONDS

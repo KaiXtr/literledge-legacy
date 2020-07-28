@@ -109,7 +109,7 @@ hr {
 	padding: 0px;
 	height: 30px;
 	border: none;
-	display: inline-block;
+	display: flex;
 }
 
 .searchbar .searchtext {
@@ -119,17 +119,20 @@ hr {
 	height: 30px;
 	border: none;
 	border-radius: 8px 0px 0px 8px;
+	flex: 9;
 }
 
 .searchbar .submit {
 	margin: 0px;
 	padding: 5px;
+	width: 22px;
 	height: 22px;
 	border: none;
 	border-radius: 0px 8px 8px 0px;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	float: right;
+	flex: 0;
 }
 
 #srcbar::-webkit-calendar-picker-indicator {
@@ -250,6 +253,7 @@ hr {
 }
 
 .sidebar hr {
+	margin-top: 30px;
 	margin-bottom: 30px;
 	margin-right: 40px;
 	border: 1px solid #7F4E43;
@@ -464,10 +468,14 @@ hr {
 	padding-left: 25px;
 }
 
+#filters #poemlst #pomscroll {
+	overflow-y: auto;
+	height: inherit;
+}
+
 #filters #poemlst ul {
 	padding-left: 5px;
 	max-height: 340px;
-	overflow-y: auto;
 	list-style: none;
 }
 
@@ -553,13 +561,14 @@ hr {
 }
 
 #profile #username {
+	word-break: break-word;
 	text-align: right;
 	text-shadow: 20px 20px 15px black;
 	font-size: 100px;
 	margin: 0px;
 	top: 340px;
 	right: 200px;
-	height: 30px;
+	width: 1000px;
 	animation-name: username;
 	animation-duration: 3s;
 	position: absolute;
@@ -583,13 +592,13 @@ hr {
 }
 
 #profile #litername {
-	text-align: right;
+	text-align: left;
 	text-shadow: 20px 20px 15px black;
 	font-size: 100px;
 	margin: 0px;
 	top: 340px;
 	left: 200px;
-	height: 30px;
+	width: 1000px;
 	animation-name: litername;
 	animation-duration: 3s;
 	position: absolute;
@@ -1113,7 +1122,8 @@ hr {
 }
 
 .portraits .profilepic {
-	margin-left: 12px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 200px;
 	height: 266px;
 	display: block;
@@ -1122,7 +1132,13 @@ hr {
 
 .portraits h2 {
 	font-size: 30px;
+	margin-bottom: 0px;
 	display: block;
+}
+
+.portraits .acainfo {
+	font-size: 15px;
+	margin: 0px;
 }
 
 .pormini {
@@ -1240,7 +1256,7 @@ hr {
 }
 
 #langbox {
-	margin-left: 190px;
+	margin-left: 20px;
 	width: 200px;
 	height: 40px;
 	border: none;

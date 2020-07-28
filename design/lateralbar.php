@@ -90,6 +90,19 @@
 		?>
 		<li> <h1>
 			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Academias";}
+				if ($_COOKIE['lang'] == 'en') {echo "Academies";}
+				if ($_COOKIE['lang'] == 'es') {echo "Academias";}
+			?>
+		</h1> </li>
+		<?php
+			foreach ($acalst as $x => $v) {
+				if (($x != '00')&&($x != '01')) {echo '<li><a href="academies/'.$x.'"> '.$v.' </li></a>';}
+			}
+		?>
+		<li> <hr> </li>
+		<li> <h1>
+			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Países";}
 				if ($_COOKIE['lang'] == 'en') {echo "Countries";}
 				if ($_COOKIE['lang'] == 'es') {echo "Países";}

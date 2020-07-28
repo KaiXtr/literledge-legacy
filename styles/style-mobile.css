@@ -215,7 +215,6 @@ hr {
 }
 
 .sidebar {
-	white-space: nowrap;
 	font-size: 25px;
 	line-height: 35px;
 	position: fixed;
@@ -243,6 +242,7 @@ hr {
 }
 
 .sidebar hr {
+	margin-top: 30px;
 	margin-bottom: 30px;
 	margin-right: 40px;
 	border: 1px solid #7F4E43;
@@ -469,10 +469,18 @@ hr {
 	padding-left: 25px;
 }
 
-#filters #poemlst ul {
+#filters #poemlst {
+	height: 200px;
+}
+
+#filters #poemlst #pomscroll {
+	overflow-y: auto;
+	height: 170px;
+}
+
+#filters #poemlst div ul {
 	padding-left: 5px;
 	max-height: 340px;
-	overflow-y: auto;
 	list-style: none;
 }
 
@@ -600,13 +608,13 @@ hr {
 }
 
 #profile #litername  {
-	text-align: right;
+	text-align: left;
 	text-shadow: 10px 10px 15px black;
 	font-size: 35px;
 	margin: 0px;
 	top: 140px;
 	left: 30px;
-	height: 30px;
+	width: 200px;
 	animation-name: litername;
 	animation-duration: 3s;
 	position: absolute;
@@ -989,7 +997,7 @@ hr {
 .thbcritic #cricom {
 	font-size: 20px;
 	font-style: italic;
-	height: 110px;
+	height: 230px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -1132,7 +1140,8 @@ hr {
 }
 
 .portraits .profilepic {
-	margin-left: 0px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 120px;
 	height: 160px;
 	display: block;
@@ -1267,7 +1276,7 @@ hr {
 }
 
 .lowerbarinfo {
-	margin-left: 40px; 
+	margin-left: 30px; 
 	padding-left: 10px;
 	width: 100px;
 	list-style: none;

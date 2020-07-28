@@ -612,7 +612,7 @@
 					if ($_COOKIE['lang'] == 'pt') {echo "Poemas";}
 					if ($_COOKIE['lang'] == 'en') {echo "Poems";}
 					if ($_COOKIE['lang'] == 'es') {echo "Poemas";}
-					echo "</h2></a><div><ul>";
+					echo "</h2></a><div id='pomscroll'><ul>";
 					for ($x=0;$x<sizeof($poemlst);$x++) {
 						echo "<li><a href='".$lnk."#".$poemlst[$x]."' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.");}'>".$poemlst[$x]."</a></li>";
 					}
