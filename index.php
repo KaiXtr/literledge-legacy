@@ -97,7 +97,7 @@
 			if ($notcon == null) {
 				echo "<div class='brow home'>";
 				#RECOMENDATION FEED
-				if (@$_SESSION['user']) {
+				/*if (@$_SESSION['user']) {
 					$result = $conn->query("SELECT book, state FROM shelves WHERE user='".$_SESSION['user']."' and state > 0");
 					if ($result->num_rows > 0){
 						$alst = array();
@@ -169,9 +169,9 @@
 							}
 						}
 					}
-				}
+				}*/
 				#RANDOM FEED
-				else {
+				if (1+1 == 2) {
 					$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
 					if ($result->num_rows > 0) {
 						$list = array();

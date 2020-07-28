@@ -29,8 +29,8 @@
 			popularmente, em vida, a alcunha de \"Rainha/Dama do Crime\" (\"Queen/Lady of Crime\", no original em inglês). Durante sua carreira, publicou mais de oitenta livros, <br />
 			alguns sob o pseudônimo de Mary Westmacott. <br />
 			<br />
-			Segundo o Guiness Book, Christie é a romancista mais bem sucedida da história da literatura popular mundial em número total de livros vendidos,[1][2] uma vez que <br />
-			suas obras, juntas, venderam cerca de quatro bilhões de cópias ao longo dos séculos XX e XXI,[3] cujos números totais só ficam atrás das obras vendidas do <br />
+			Segundo o Guiness Book, Christie é a romancista mais bem sucedida da história da literatura popular mundial em número total de livros vendidos, uma vez que <br />
+			suas obras, juntas, venderam cerca de quatro bilhões de cópias ao longo dos séculos XX e XXI, cujos números totais só ficam atrás das obras vendidas do <br />
 			dramaturgo e poeta William Shakespeare e da Bíblia. Segundo a organização Index Translationum, as obras de Agatha Christie já foram traduzidas, em levantamento recente, <br />
 			para mais de 100 idiomas em todo o mundo. Seu livro mais vendido, Ten Little Niggers (publicado no Brasil como E Não Sobrou Nenhum, ou O Caso dos Dez Negrinhos, <br />
 			e em Portugal como Convite para a Morte ou As Dez Figuras Negras), de 1939, é também, com cerca de 100 milhões de cópias comercializadas em todo o globo, <br />
@@ -52,8 +52,8 @@
 			popularmente, em vida, a alcunha de \"Rainha/Dama do Crime\" (\"Queen/Lady of Crime\", no original em inglês). Durante sua carreira, publicou mais de oitenta livros, <br />
 			alguns sob o pseudônimo de Mary Westmacott. <br />
 			<br />
-			Segundo o Guiness Book, Christie é a romancista mais bem sucedida da história da literatura popular mundial em número total de livros vendidos,[1][2] uma vez que <br />
-			suas obras, juntas, venderam cerca de quatro bilhões de cópias ao longo dos séculos XX e XXI,[3] cujos números totais só ficam atrás das obras vendidas do <br />
+			Segundo o Guiness Book, Christie é a romancista mais bem sucedida da história da literatura popular mundial em número total de livros vendidos, uma vez que <br />
+			suas obras, juntas, venderam cerca de quatro bilhões de cópias ao longo dos séculos XX e XXI, cujos números totais só ficam atrás das obras vendidas do <br />
 			dramaturgo e poeta William Shakespeare e da Bíblia. Segundo a organização Index Translationum, as obras de Agatha Christie já foram traduzidas, em levantamento recente, <br />
 			para mais de 100 idiomas em todo o mundo. Seu livro mais vendido, Ten Little Niggers (publicado no Brasil como E Não Sobrou Nenhum, ou O Caso dos Dez Negrinhos, <br />
 			e em Portugal como Convite para a Morte ou As Dez Figuras Negras), de 1939, é também, com cerca de 100 milhões de cópias comercializadas em todo o globo, <br />
@@ -75,8 +75,8 @@
 			popularmente, em vida, a alcunha de \"Rainha/Dama do Crime\" (\"Queen/Lady of Crime\", no original em inglês). Durante sua carreira, publicou mais de oitenta livros, <br />
 			alguns sob o pseudônimo de Mary Westmacott. <br />
 			<br />
-			Segundo o Guiness Book, Christie é a romancista mais bem sucedida da história da literatura popular mundial em número total de livros vendidos,[1][2] uma vez que <br />
-			suas obras, juntas, venderam cerca de quatro bilhões de cópias ao longo dos séculos XX e XXI,[3] cujos números totais só ficam atrás das obras vendidas do <br />
+			Segundo o Guiness Book, Christie é a romancista mais bem sucedida da história da literatura popular mundial em número total de livros vendidos, uma vez que <br />
+			suas obras, juntas, venderam cerca de quatro bilhões de cópias ao longo dos séculos XX e XXI, cujos números totais só ficam atrás das obras vendidas do <br />
 			dramaturgo e poeta William Shakespeare e da Bíblia. Segundo a organização Index Translationum, as obras de Agatha Christie já foram traduzidas, em levantamento recente, <br />
 			para mais de 100 idiomas em todo o mundo. Seu livro mais vendido, Ten Little Niggers (publicado no Brasil como E Não Sobrou Nenhum, ou O Caso dos Dez Negrinhos, <br />
 			e em Portugal como Convite para a Morte ou As Dez Figuras Negras), de 1939, é também, com cerca de 100 milhões de cópias comercializadas em todo o globo, <br />

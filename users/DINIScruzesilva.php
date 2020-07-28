@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			António Dinis da Cruz e Silva (Lisboa, 4 de Julho de 1731[1] – † Rio de Janeiro, 5 Outubro de 1799) é um poeta português do século XVIII, foi magistrado de profissão e fundador da Arcádia Lusitana em 1756.
+			António Dinis da Cruz e Silva (Lisboa, 4 de Julho de 1731 – † Rio de Janeiro, 5 Outubro de 1799) é um poeta português do século XVIII, foi magistrado de profissão e fundador da Arcádia Lusitana em 1756.
 			António Dinis da Cruz e Silva nasceu em Lisboa, em 1731, filho de uma modesta família lisboeta, cujo pai imigrou para o Brasil pouco antes do seu nascimento, deixando a educação dos filhos a cuidado de sua esposa.
 
 			António Dinis estudou Latim e Filosofia no Colégio dos Oratorianos e, em 1747, entrou na Universidade de Coimbra onde estudou Direito, altura em que terá escrito os seus primeiros poemas.
@@ -42,7 +42,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			António Dinis da Cruz e Silva (Lisboa, 4 de Julho de 1731[1] – † Rio de Janeiro, 5 Outubro de 1799) é um poeta português do século XVIII, foi magistrado de profissão e fundador da Arcádia Lusitana em 1756.
+			António Dinis da Cruz e Silva (Lisboa, 4 de Julho de 1731 – † Rio de Janeiro, 5 Outubro de 1799) é um poeta português do século XVIII, foi magistrado de profissão e fundador da Arcádia Lusitana em 1756.
 			António Dinis da Cruz e Silva nasceu em Lisboa, em 1731, filho de uma modesta família lisboeta, cujo pai imigrou para o Brasil pouco antes do seu nascimento, deixando a educação dos filhos a cuidado de sua esposa.
 
 			António Dinis estudou Latim e Filosofia no Colégio dos Oratorianos e, em 1747, entrou na Universidade de Coimbra onde estudou Direito, altura em que terá escrito os seus primeiros poemas.
@@ -60,7 +60,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			António Dinis da Cruz e Silva (Lisboa, 4 de Julho de 1731[1] – † Rio de Janeiro, 5 Outubro de 1799) é um poeta português do século XVIII, foi magistrado de profissão e fundador da Arcádia Lusitana em 1756.
+			António Dinis da Cruz e Silva (Lisboa, 4 de Julho de 1731 – † Rio de Janeiro, 5 Outubro de 1799) é um poeta português do século XVIII, foi magistrado de profissão e fundador da Arcádia Lusitana em 1756.
 			António Dinis da Cruz e Silva nasceu em Lisboa, em 1731, filho de uma modesta família lisboeta, cujo pai imigrou para o Brasil pouco antes do seu nascimento, deixando a educação dos filhos a cuidado de sua esposa.
 
 			António Dinis estudou Latim e Filosofia no Colégio dos Oratorianos e, em 1747, entrou na Universidade de Coimbra onde estudou Direito, altura em que terá escrito os seus primeiros poemas.

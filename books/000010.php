@@ -34,7 +34,7 @@
 
 					O espaço possui um movimento de deslocamento: o retirante faz a travessia da Caatinga, passando pelo Agreste, para a Zona da Mata, até chegar ao Recife, ou seja, sai da serra, mais especificamente da Serra da Costela, e vai para o litoral (mangue). Durante esse deslocamento em buscas da vida, depara-se com tantas mortes e miséria que pensa em se atirar no rio onde ele se encontrava e apressar a própria morte. A história é narrada em primeira pessoa, pelo personagem Severino e é composta de monólogos e diálogos com outros personagens.
 
-					A primeira representação de Morte e Vida Severina se deu com um grupo de teatro do Pará em 1957. A peça foi ensaiada e montada pela primeira vez em Belém pelo grupo Norte Teatro Escola e depois foi levada para o I Festival Nacional de Teatro de Estudantes, em Recife (1957), sendo promovido por Paschoal Carlos Magno. A montagem foi premiada, tendo o ator Carlos Miranda, intérprete de Severino, obtido o primeiro prêmio como revelação de ator.[4].
+					A primeira representação de Morte e Vida Severina se deu com um grupo de teatro do Pará em 1957. A peça foi ensaiada e montada pela primeira vez em Belém pelo grupo Norte Teatro Escola e depois foi levada para o I Festival Nacional de Teatro de Estudantes, em Recife (1957), sendo promovido por Paschoal Carlos Magno. A montagem foi premiada, tendo o ator Carlos Miranda, intérprete de Severino, obtido o primeiro prêmio como revelação de ator..
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -55,7 +55,7 @@
 
 					O espaço possui um movimento de deslocamento: o retirante faz a travessia da Caatinga, passando pelo Agreste, para a Zona da Mata, até chegar ao Recife, ou seja, sai da serra, mais especificamente da Serra da Costela, e vai para o litoral (mangue). Durante esse deslocamento em buscas da vida, depara-se com tantas mortes e miséria que pensa em se atirar no rio onde ele se encontrava e apressar a própria morte. A história é narrada em primeira pessoa, pelo personagem Severino e é composta de monólogos e diálogos com outros personagens.
 
-					A primeira representação de Morte e Vida Severina se deu com um grupo de teatro do Pará em 1957. A peça foi ensaiada e montada pela primeira vez em Belém pelo grupo Norte Teatro Escola e depois foi levada para o I Festival Nacional de Teatro de Estudantes, em Recife (1957), sendo promovido por Paschoal Carlos Magno. A montagem foi premiada, tendo o ator Carlos Miranda, intérprete de Severino, obtido o primeiro prêmio como revelação de ator.[4].
+					A primeira representação de Morte e Vida Severina se deu com um grupo de teatro do Pará em 1957. A peça foi ensaiada e montada pela primeira vez em Belém pelo grupo Norte Teatro Escola e depois foi levada para o I Festival Nacional de Teatro de Estudantes, em Recife (1957), sendo promovido por Paschoal Carlos Magno. A montagem foi premiada, tendo o ator Carlos Miranda, intérprete de Severino, obtido o primeiro prêmio como revelação de ator..
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -76,7 +76,7 @@
 
 					O espaço possui um movimento de deslocamento: o retirante faz a travessia da Caatinga, passando pelo Agreste, para a Zona da Mata, até chegar ao Recife, ou seja, sai da serra, mais especificamente da Serra da Costela, e vai para o litoral (mangue). Durante esse deslocamento em buscas da vida, depara-se com tantas mortes e miséria que pensa em se atirar no rio onde ele se encontrava e apressar a própria morte. A história é narrada em primeira pessoa, pelo personagem Severino e é composta de monólogos e diálogos com outros personagens.
 
-					A primeira representação de Morte e Vida Severina se deu com um grupo de teatro do Pará em 1957. A peça foi ensaiada e montada pela primeira vez em Belém pelo grupo Norte Teatro Escola e depois foi levada para o I Festival Nacional de Teatro de Estudantes, em Recife (1957), sendo promovido por Paschoal Carlos Magno. A montagem foi premiada, tendo o ator Carlos Miranda, intérprete de Severino, obtido o primeiro prêmio como revelação de ator.[4].
+					A primeira representação de Morte e Vida Severina se deu com um grupo de teatro do Pará em 1957. A peça foi ensaiada e montada pela primeira vez em Belém pelo grupo Norte Teatro Escola e depois foi levada para o I Festival Nacional de Teatro de Estudantes, em Recife (1957), sendo promovido por Paschoal Carlos Magno. A montagem foi premiada, tendo o ator Carlos Miranda, intérprete de Severino, obtido o primeiro prêmio como revelação de ator..
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>

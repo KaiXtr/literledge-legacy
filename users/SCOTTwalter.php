@@ -28,7 +28,7 @@
 
 			Walter Scott nasceu em Edimburgo e era filho de um advogado. Seu pai destinou-lhe a carreira de Direito, mas ele depressa a trocou pelos entusiasmos da literatura e pela adoração das antiguidades.
 
-			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
+			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
 
 			Possuidor de uma energia inesgotável, ele escreveu sem descanso, oferecendo-nos obra sobre obra.
 			<br />
@@ -41,7 +41,7 @@
 
 			Walter Scott nasceu em Edimburgo e era filho de um advogado. Seu pai destinou-lhe a carreira de Direito, mas ele depressa a trocou pelos entusiasmos da literatura e pela adoração das antiguidades.
 
-			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
+			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
 
 			Possuidor de uma energia inesgotável, ele escreveu sem descanso, oferecendo-nos obra sobre obra.
 			<br />
@@ -54,7 +54,7 @@
 
 			Walter Scott nasceu em Edimburgo e era filho de um advogado. Seu pai destinou-lhe a carreira de Direito, mas ele depressa a trocou pelos entusiasmos da literatura e pela adoração das antiguidades.
 
-			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories[1]. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
+			Aos vinte e dois anos, Walter Scott era já considerado o primeiro poeta nacional, famoso pela «Canção do Último Menestrel», onde se adivinhava ligeiramente o surto que o seu espírito estava conseguindo. Foi um nacionalista favorável à causa jacobita, mesmo ciente de que tratava de uma \"causa morta\", conservador na política, favorável aos Tories. E, de fato, passados tempos, estreava-se como romancista, apresentando anonimamente um volume intitulado «Waverley», no qual relatava o levantamento jacobita de 1745 e dava largas aos conhecimentos que adquirira durante longas pesquisas. O livro foi coroado do mais absoluto sucesso.
 
 			Possuidor de uma energia inesgotável, ele escreveu sem descanso, oferecendo-nos obra sobre obra.
 			<br />

@@ -69,13 +69,11 @@
 							$cn[] = $x;
 						}
 						for ($y = 0; $y < sizeof($cn); $y++) {
-							$disp = $disp ."<html>
-									<a href='schools/".strtolower($cn[$y]).".php'>
-										<button class='portraits'>
+							$disp = $disp ."<a href='schools/".strtolower($cn[$y]).".php'>
+										<button class='litbut' style='background-image: url(media/images/banners/".$cn[$y].".jpg)'>
 											<h2> " .$ltslst[$cn[$y]]. " </h2>
 										</button>
-									</a>
-								</html>";
+									</a>";
 							};
 						echo $disp ."</div></div>";
 					}

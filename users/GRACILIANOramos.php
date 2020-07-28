@@ -25,7 +25,7 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			Graciliano Ramos de Oliveira (Quebrangulo, 27 de outubro de 1892 — Rio de Janeiro, 20 de março de 1953) foi um romancista, cronista, contista, jornalista, <br />
-			político, militante comunista e memorialista brasileiro do século XX, mais conhecido por sua obra Vidas Secas (1938).[1] <br />
+			político, militante comunista e memorialista brasileiro do século XX, mais conhecido por sua obra Vidas Secas (1938). <br />
 			<br />
 			Nascido numa grande família de classe média, viveu os primeiros anos de sua infância migrando para diversas cidades da Região Nordeste do Brasil. <br />
 			Trabalhou como jornalista na cidade do Rio de Janeiro, onde escreveu para O Malho e Correio da Manhã, até regressar para o Nordeste em 1915, devido tragédia <br />
@@ -40,7 +40,7 @@
 			Tradutor de obras em inglês e francês e honrado com diversos prêmios em vida, a obra de Graciliano Ramos recebeu riqueza da crítica literária e atenção do <br />
 			mundo acadêmico. Seu romance modernista também conhecido como regionalista Vidas Secas é visto como um clássico da literatura brasileira. <br />
 			<br />
-			Encontra-se colaboração da sua autoria na revista luso-brasileira Atlântico [2]. <br />
+			Encontra-se colaboração da sua autoria na revista luso-brasileira Atlântico . <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Graciliano_Ramos' > Wikipedia </a>
 					";
@@ -48,7 +48,7 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			Graciliano Ramos de Oliveira (Quebrangulo, 27 de outubro de 1892 — Rio de Janeiro, 20 de março de 1953) foi um romancista, cronista, contista, jornalista, <br />
-			político, militante comunista e memorialista brasileiro do século XX, mais conhecido por sua obra Vidas Secas (1938).[1] <br />
+			político, militante comunista e memorialista brasileiro do século XX, mais conhecido por sua obra Vidas Secas (1938). <br />
 			<br />
 			Nascido numa grande família de classe média, viveu os primeiros anos de sua infância migrando para diversas cidades da Região Nordeste do Brasil. <br />
 			Trabalhou como jornalista na cidade do Rio de Janeiro, onde escreveu para O Malho e Correio da Manhã, até regressar para o Nordeste em 1915, devido tragédia <br />
@@ -63,7 +63,7 @@
 			Tradutor de obras em inglês e francês e honrado com diversos prêmios em vida, a obra de Graciliano Ramos recebeu riqueza da crítica literária e atenção do <br />
 			mundo acadêmico. Seu romance modernista também conhecido como regionalista Vidas Secas é visto como um clássico da literatura brasileira. <br />
 			<br />
-			Encontra-se colaboração da sua autoria na revista luso-brasileira Atlântico [2]. <br />
+			Encontra-se colaboração da sua autoria na revista luso-brasileira Atlântico . <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Graciliano_Ramos' > Wikipedia </a>
 					";
@@ -71,7 +71,7 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			Graciliano Ramos de Oliveira (Quebrangulo, 27 de outubro de 1892 — Rio de Janeiro, 20 de março de 1953) foi um romancista, cronista, contista, jornalista, <br />
-			político, militante comunista e memorialista brasileiro do século XX, mais conhecido por sua obra Vidas Secas (1938).[1] <br />
+			político, militante comunista e memorialista brasileiro do século XX, mais conhecido por sua obra Vidas Secas (1938). <br />
 			<br />
 			Nascido numa grande família de classe média, viveu os primeiros anos de sua infância migrando para diversas cidades da Região Nordeste do Brasil. <br />
 			Trabalhou como jornalista na cidade do Rio de Janeiro, onde escreveu para O Malho e Correio da Manhã, até regressar para o Nordeste em 1915, devido tragédia <br />
@@ -86,7 +86,7 @@
 			Tradutor de obras em inglês e francês e honrado com diversos prêmios em vida, a obra de Graciliano Ramos recebeu riqueza da crítica literária e atenção do <br />
 			mundo acadêmico. Seu romance modernista também conhecido como regionalista Vidas Secas é visto como um clássico da literatura brasileira. <br />
 			<br />
-			Encontra-se colaboração da sua autoria na revista luso-brasileira Atlântico [2]. <br />
+			Encontra-se colaboração da sua autoria na revista luso-brasileira Atlântico . <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Graciliano_Ramos' > Wikipedia </a>
 					";

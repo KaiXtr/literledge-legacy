@@ -24,33 +24,33 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Augusto de Carvalho Rodrigues dos Anjos (Sapé, 20 de abril de 1884 — Leopoldina, 12 de novembro de 1914) foi um poeta brasileiro, identificado muitas vezes como simbolista ou parnasiano.[1] Todavia, muitos críticos, como o poeta Ferreira Gullar, preferem identificá-lo como pré-modernista, pois encontramos características nitidamente expressionistas em seus poemas.[1]
+			Augusto de Carvalho Rodrigues dos Anjos (Sapé, 20 de abril de 1884 — Leopoldina, 12 de novembro de 1914) foi um poeta brasileiro, identificado muitas vezes como simbolista ou parnasiano. Todavia, muitos críticos, como o poeta Ferreira Gullar, preferem identificá-lo como pré-modernista, pois encontramos características nitidamente expressionistas em seus poemas.
 
-			É conhecido como um dos poetas mais críticos do seu tempo, focando suas críticas ao idealismo egocentrista que se emergia em sua época, e até hoje sua obra é admirada tanto por leigos como por críticos literários[2]
+			É conhecido como um dos poetas mais críticos do seu tempo, focando suas críticas ao idealismo egocentrista que se emergia em sua época, e até hoje sua obra é admirada tanto por leigos como por críticos literários
 
-			É patrono da cadeira número 1 da Academia Paraibana de Letras (APL), que teve como fundador o jurista e ensaísta José Flósculo da Nóbrega e como primeiro ocupante o seu biógrafo Humberto Nóbrega, sendo ocupada, atualmente, por José Nêumanne Pinto. Augusto dos Anjos também é o patrono da Academia Leopoldinense de Letras e Artes[3].
+			É patrono da cadeira número 1 da Academia Paraibana de Letras (APL), que teve como fundador o jurista e ensaísta José Flósculo da Nóbrega e como primeiro ocupante o seu biógrafo Humberto Nóbrega, sendo ocupada, atualmente, por José Nêumanne Pinto. Augusto dos Anjos também é o patrono da Academia Leopoldinense de Letras e Artes.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Augusto_dos_Anjos'> Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Augusto de Carvalho Rodrigues dos Anjos (Sapé, 20 de abril de 1884 — Leopoldina, 12 de novembro de 1914) foi um poeta brasileiro, identificado muitas vezes como simbolista ou parnasiano.[1] Todavia, muitos críticos, como o poeta Ferreira Gullar, preferem identificá-lo como pré-modernista, pois encontramos características nitidamente expressionistas em seus poemas.[1]
+			Augusto de Carvalho Rodrigues dos Anjos (Sapé, 20 de abril de 1884 — Leopoldina, 12 de novembro de 1914) foi um poeta brasileiro, identificado muitas vezes como simbolista ou parnasiano. Todavia, muitos críticos, como o poeta Ferreira Gullar, preferem identificá-lo como pré-modernista, pois encontramos características nitidamente expressionistas em seus poemas.
 
-			É conhecido como um dos poetas mais críticos do seu tempo, focando suas críticas ao idealismo egocentrista que se emergia em sua época, e até hoje sua obra é admirada tanto por leigos como por críticos literários[2]
+			É conhecido como um dos poetas mais críticos do seu tempo, focando suas críticas ao idealismo egocentrista que se emergia em sua época, e até hoje sua obra é admirada tanto por leigos como por críticos literários
 
-			É patrono da cadeira número 1 da Academia Paraibana de Letras (APL), que teve como fundador o jurista e ensaísta José Flósculo da Nóbrega e como primeiro ocupante o seu biógrafo Humberto Nóbrega, sendo ocupada, atualmente, por José Nêumanne Pinto. Augusto dos Anjos também é o patrono da Academia Leopoldinense de Letras e Artes[3].
+			É patrono da cadeira número 1 da Academia Paraibana de Letras (APL), que teve como fundador o jurista e ensaísta José Flósculo da Nóbrega e como primeiro ocupante o seu biógrafo Humberto Nóbrega, sendo ocupada, atualmente, por José Nêumanne Pinto. Augusto dos Anjos também é o patrono da Academia Leopoldinense de Letras e Artes.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Augusto_dos_Anjos'> Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Augusto de Carvalho Rodrigues dos Anjos (Sapé, 20 de abril de 1884 — Leopoldina, 12 de novembro de 1914) foi um poeta brasileiro, identificado muitas vezes como simbolista ou parnasiano.[1] Todavia, muitos críticos, como o poeta Ferreira Gullar, preferem identificá-lo como pré-modernista, pois encontramos características nitidamente expressionistas em seus poemas.[1]
+			Augusto de Carvalho Rodrigues dos Anjos (Sapé, 20 de abril de 1884 — Leopoldina, 12 de novembro de 1914) foi um poeta brasileiro, identificado muitas vezes como simbolista ou parnasiano. Todavia, muitos críticos, como o poeta Ferreira Gullar, preferem identificá-lo como pré-modernista, pois encontramos características nitidamente expressionistas em seus poemas.
 
-			É conhecido como um dos poetas mais críticos do seu tempo, focando suas críticas ao idealismo egocentrista que se emergia em sua época, e até hoje sua obra é admirada tanto por leigos como por críticos literários[2]
+			É conhecido como um dos poetas mais críticos do seu tempo, focando suas críticas ao idealismo egocentrista que se emergia em sua época, e até hoje sua obra é admirada tanto por leigos como por críticos literários
 
-			É patrono da cadeira número 1 da Academia Paraibana de Letras (APL), que teve como fundador o jurista e ensaísta José Flósculo da Nóbrega e como primeiro ocupante o seu biógrafo Humberto Nóbrega, sendo ocupada, atualmente, por José Nêumanne Pinto. Augusto dos Anjos também é o patrono da Academia Leopoldinense de Letras e Artes[3].
+			É patrono da cadeira número 1 da Academia Paraibana de Letras (APL), que teve como fundador o jurista e ensaísta José Flósculo da Nóbrega e como primeiro ocupante o seu biógrafo Humberto Nóbrega, sendo ocupada, atualmente, por José Nêumanne Pinto. Augusto dos Anjos também é o patrono da Academia Leopoldinense de Letras e Artes.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Augusto_dos_Anjos'> Wikipedia </a>
 					";

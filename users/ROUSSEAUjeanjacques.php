@@ -28,7 +28,7 @@
 
 			Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
 
-			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
+			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
 					";
@@ -39,7 +39,7 @@
 
 			Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
 
-			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
+			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
 					";
@@ -50,7 +50,7 @@
 
 			Sua filosofia política de fato influenciou o Iluminismo por toda a Europa, assim como também aspectos da Revolução Francesa e o desenvolvimento moderno da economia, da política e do pensamento educacional.
 
-			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.[1]
+			Para ele, as instituições educativas tradicionais corrompem o homem e tiram-lhe a liberdade. Para a criação de um novo homem e de uma nova sociedade, seria preciso educar a criança de acordo com a Natureza, desenvolvendo progressivamente seus sentidos e a razão com vistas à liberdade e à capacidade de julgar.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau' > Wikipedia </a>
 					";

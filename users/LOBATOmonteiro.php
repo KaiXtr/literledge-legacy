@@ -30,7 +30,7 @@
 			Foi um importante editor de livros inéditos e autor de importantes traduções. Seguido a seu precursor Figueiredo Pimentel (\"Contos da Carochinha\") da <br />
 			literatura infantil brasileira, ficou popularmente conhecido pelo conjunto educativo de sua obra de livros infantis, que constitui aproximadamente a metade da <br />
 			sua produção literária. A outra metade, consistindo de contos (geralmente sobre temas brasileiros), artigos, críticas, crônicas, prefácios, cartas, livros sobre a <br />
-			importância do ferro (Ferro, 1931) e do petróleo (O Escândalo do Petróleo, 1936).[3][4] Escreveu um único romance, O Presidente Negro, que não alcançou a mesma <br />
+			importância do ferro (Ferro, 1931) e do petróleo (O Escândalo do Petróleo, 1936). Escreveu um único romance, O Presidente Negro, que não alcançou a mesma <br />
 			popularidade que suas obras para crianças, que entre as mais famosas destaca-se Reinações de Narizinho (1931), Caçadas de Pedrinho (1933) e O Picapau Amarelo (1939). <br />
 			<br />
 			Contista, ensaísta e tradutor, Lobato nasceu na cidade de Taubaté, interior de São Paulo, no ano de 1882. Formado em Direito, atuou como promotor público até se <br />
@@ -60,7 +60,7 @@
 			Foi um importante editor de livros inéditos e autor de importantes traduções. Seguido a seu precursor Figueiredo Pimentel (\"Contos da Carochinha\") da <br />
 			literatura infantil brasileira, ficou popularmente conhecido pelo conjunto educativo de sua obra de livros infantis, que constitui aproximadamente a metade da <br />
 			sua produção literária. A outra metade, consistindo de contos (geralmente sobre temas brasileiros), artigos, críticas, crônicas, prefácios, cartas, livros sobre a <br />
-			importância do ferro (Ferro, 1931) e do petróleo (O Escândalo do Petróleo, 1936).[3][4] Escreveu um único romance, O Presidente Negro, que não alcançou a mesma <br />
+			importância do ferro (Ferro, 1931) e do petróleo (O Escândalo do Petróleo, 1936). Escreveu um único romance, O Presidente Negro, que não alcançou a mesma <br />
 			popularidade que suas obras para crianças, que entre as mais famosas destaca-se Reinações de Narizinho (1931), Caçadas de Pedrinho (1933) e O Picapau Amarelo (1939). <br />
 			<br />
 			Contista, ensaísta e tradutor, Lobato nasceu na cidade de Taubaté, interior de São Paulo, no ano de 1882. Formado em Direito, atuou como promotor público até se <br />
@@ -90,7 +90,7 @@
 			Foi um importante editor de livros inéditos e autor de importantes traduções. Seguido a seu precursor Figueiredo Pimentel (\"Contos da Carochinha\") da <br />
 			literatura infantil brasileira, ficou popularmente conhecido pelo conjunto educativo de sua obra de livros infantis, que constitui aproximadamente a metade da <br />
 			sua produção literária. A outra metade, consistindo de contos (geralmente sobre temas brasileiros), artigos, críticas, crônicas, prefácios, cartas, livros sobre a <br />
-			importância do ferro (Ferro, 1931) e do petróleo (O Escândalo do Petróleo, 1936).[3][4] Escreveu um único romance, O Presidente Negro, que não alcançou a mesma <br />
+			importância do ferro (Ferro, 1931) e do petróleo (O Escândalo do Petróleo, 1936). Escreveu um único romance, O Presidente Negro, que não alcançou a mesma <br />
 			popularidade que suas obras para crianças, que entre as mais famosas destaca-se Reinações de Narizinho (1931), Caçadas de Pedrinho (1933) e O Picapau Amarelo (1939). <br />
 			<br />
 			Contista, ensaísta e tradutor, Lobato nasceu na cidade de Taubaté, interior de São Paulo, no ano de 1882. Formado em Direito, atuou como promotor público até se <br />

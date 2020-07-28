@@ -26,11 +26,11 @@
 					echo "
 			Carl Gustav Jung ( /ˈjʊŋ/; Kesswil, na Turgóvia, Suíça, 26 de julho de 1875 — Küsnacht, em Zurique, Suíça, 6 de junho de 1961) foi um psiquiatra e psicoterapeuta suíço que fundou a psicologia analítica. Jung propôs e desenvolveu os conceitos de personalidade extrovertida e introvertida, arquétipo e inconsciente coletivo. Seu trabalho tem sido influente na psiquiatria, psicologia, ciência da religião, literatura e áreas afins.
 
-			O conceito central da psicologia analítica é a individuação - o processo psicológico de integração dos opostos, incluindo o consciente e o inconsciente, mantendo, no entanto, a sua autonomia relativa.[3] Jung considerou a individuação como o processo central do desenvolvimento humano.[4]
+			O conceito central da psicologia analítica é a individuação - o processo psicológico de integração dos opostos, incluindo o consciente e o inconsciente, mantendo, no entanto, a sua autonomia relativa. Jung considerou a individuação como o processo central do desenvolvimento humano.
 
 			Ele criou alguns dos mais conhecidos conceitos psicológicos, incluindo o arquétipo, o inconsciente coletivo, o complexo, e a sincronicidade. A classificação tipológica de Myers Briggs (MBTI), um instrumento popular psicométrico, foi desenvolvido a partir de suas teorias.
 
-			Via a psique humana como \"de natureza simbólica\",[5] e fez, deste simbolismo, o foco de suas explorações. Ele é um dos maiores estudiosos contemporâneos de análise de sonhos e simbolização.[6] Embora exercesse sua profissão como médico e se considerasse um cientista,[7] muito do trabalho de sua vida foi passado a explorar áreas tangenciais à ciência, incluindo a filosofia oriental e ocidental, alquimia, astrologia e sociologia, bem como a literatura e as artes. Seu interesse pela filosofia e ocultismo levaram muitos a vê-lo como um místico.[7]
+			Via a psique humana como \"de natureza simbólica\", e fez, deste simbolismo, o foco de suas explorações. Ele é um dos maiores estudiosos contemporâneos de análise de sonhos e simbolização. Embora exercesse sua profissão como médico e se considerasse um cientista, muito do trabalho de sua vida foi passado a explorar áreas tangenciais à ciência, incluindo a filosofia oriental e ocidental, alquimia, astrologia e sociologia, bem como a literatura e as artes. Seu interesse pela filosofia e ocultismo levaram muitos a vê-lo como um místico.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Carl_Gustav_Jung' > Wikipedia </a>
 			<br />
@@ -40,11 +40,11 @@
 					echo "
 			Carl Gustav Jung ( /ˈjʊŋ/; Kesswil, na Turgóvia, Suíça, 26 de julho de 1875 — Küsnacht, em Zurique, Suíça, 6 de junho de 1961) foi um psiquiatra e psicoterapeuta suíço que fundou a psicologia analítica. Jung propôs e desenvolveu os conceitos de personalidade extrovertida e introvertida, arquétipo e inconsciente coletivo. Seu trabalho tem sido influente na psiquiatria, psicologia, ciência da religião, literatura e áreas afins.
 
-			O conceito central da psicologia analítica é a individuação - o processo psicológico de integração dos opostos, incluindo o consciente e o inconsciente, mantendo, no entanto, a sua autonomia relativa.[3] Jung considerou a individuação como o processo central do desenvolvimento humano.[4]
+			O conceito central da psicologia analítica é a individuação - o processo psicológico de integração dos opostos, incluindo o consciente e o inconsciente, mantendo, no entanto, a sua autonomia relativa. Jung considerou a individuação como o processo central do desenvolvimento humano.
 
 			Ele criou alguns dos mais conhecidos conceitos psicológicos, incluindo o arquétipo, o inconsciente coletivo, o complexo, e a sincronicidade. A classificação tipológica de Myers Briggs (MBTI), um instrumento popular psicométrico, foi desenvolvido a partir de suas teorias.
 
-			Via a psique humana como \"de natureza simbólica\",[5] e fez, deste simbolismo, o foco de suas explorações. Ele é um dos maiores estudiosos contemporâneos de análise de sonhos e simbolização.[6] Embora exercesse sua profissão como médico e se considerasse um cientista,[7] muito do trabalho de sua vida foi passado a explorar áreas tangenciais à ciência, incluindo a filosofia oriental e ocidental, alquimia, astrologia e sociologia, bem como a literatura e as artes. Seu interesse pela filosofia e ocultismo levaram muitos a vê-lo como um místico.[7]
+			Via a psique humana como \"de natureza simbólica\", e fez, deste simbolismo, o foco de suas explorações. Ele é um dos maiores estudiosos contemporâneos de análise de sonhos e simbolização. Embora exercesse sua profissão como médico e se considerasse um cientista, muito do trabalho de sua vida foi passado a explorar áreas tangenciais à ciência, incluindo a filosofia oriental e ocidental, alquimia, astrologia e sociologia, bem como a literatura e as artes. Seu interesse pela filosofia e ocultismo levaram muitos a vê-lo como um místico.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Carl_Gustav_Jung' > Wikipedia </a>
 			<br />
@@ -54,11 +54,11 @@
 					echo "
 			Carl Gustav Jung ( /ˈjʊŋ/; Kesswil, na Turgóvia, Suíça, 26 de julho de 1875 — Küsnacht, em Zurique, Suíça, 6 de junho de 1961) foi um psiquiatra e psicoterapeuta suíço que fundou a psicologia analítica. Jung propôs e desenvolveu os conceitos de personalidade extrovertida e introvertida, arquétipo e inconsciente coletivo. Seu trabalho tem sido influente na psiquiatria, psicologia, ciência da religião, literatura e áreas afins.
 
-			O conceito central da psicologia analítica é a individuação - o processo psicológico de integração dos opostos, incluindo o consciente e o inconsciente, mantendo, no entanto, a sua autonomia relativa.[3] Jung considerou a individuação como o processo central do desenvolvimento humano.[4]
+			O conceito central da psicologia analítica é a individuação - o processo psicológico de integração dos opostos, incluindo o consciente e o inconsciente, mantendo, no entanto, a sua autonomia relativa. Jung considerou a individuação como o processo central do desenvolvimento humano.
 
 			Ele criou alguns dos mais conhecidos conceitos psicológicos, incluindo o arquétipo, o inconsciente coletivo, o complexo, e a sincronicidade. A classificação tipológica de Myers Briggs (MBTI), um instrumento popular psicométrico, foi desenvolvido a partir de suas teorias.
 
-			Via a psique humana como \"de natureza simbólica\",[5] e fez, deste simbolismo, o foco de suas explorações. Ele é um dos maiores estudiosos contemporâneos de análise de sonhos e simbolização.[6] Embora exercesse sua profissão como médico e se considerasse um cientista,[7] muito do trabalho de sua vida foi passado a explorar áreas tangenciais à ciência, incluindo a filosofia oriental e ocidental, alquimia, astrologia e sociologia, bem como a literatura e as artes. Seu interesse pela filosofia e ocultismo levaram muitos a vê-lo como um místico.[7]
+			Via a psique humana como \"de natureza simbólica\", e fez, deste simbolismo, o foco de suas explorações. Ele é um dos maiores estudiosos contemporâneos de análise de sonhos e simbolização. Embora exercesse sua profissão como médico e se considerasse um cientista, muito do trabalho de sua vida foi passado a explorar áreas tangenciais à ciência, incluindo a filosofia oriental e ocidental, alquimia, astrologia e sociologia, bem como a literatura e as artes. Seu interesse pela filosofia e ocultismo levaram muitos a vê-lo como um místico.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Carl_Gustav_Jung' > Wikipedia </a>
 			<br />

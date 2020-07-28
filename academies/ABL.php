@@ -20,33 +20,33 @@
 		<div id='bio'>
 		<?php
 			if ($_COOKIE['lang'] == 'pt') {
-			echo "Academia Brasileira de Letras (ABL - Loudspeaker.svg? Pronúncia) GCSE • MHSE é uma instituição literária brasileira fundada na cidade do Rio de Janeiro em 20 de julho de 1897 pelos escritores Machado de Assis, Lúcio de Mendonça, Inglês de Sousa, Olavo Bilac, Afonso Celso, Graça Aranha, Medeiros e Albuquerque, Joaquim Nabuco, Teixeira de Melo, Visconde de Taunay e Ruy Barbosa.[2] É composta por quarenta membros efetivos e perpétuos (por isso alcunhados imortais)[3] e por vinte sócios estrangeiros.[4]<br />
+			echo "Academia Brasileira de Letras (ABL - Loudspeaker.svg? Pronúncia) GCSE • MHSE é uma instituição literária brasileira fundada na cidade do Rio de Janeiro em 20 de julho de 1897 pelos escritores Machado de Assis, Lúcio de Mendonça, Inglês de Sousa, Olavo Bilac, Afonso Celso, Graça Aranha, Medeiros e Albuquerque, Joaquim Nabuco, Teixeira de Melo, Visconde de Taunay e Ruy Barbosa. É composta por quarenta membros efetivos e perpétuos (por isso alcunhados imortais) e por vinte sócios estrangeiros.<br />
 				<br />
-				Tem por objetivo o cultivo da língua portuguesa[5] e da literatura brasileira. É-lhe reconhecido o mérito por esforços históricos em prol da unificação do idioma, do português brasileiro e do português europeu. Nomeadamente, teve um papel importante no Acordo Ortográfico de 1945, conseguido em conjunto com a Academia das Ciências de Lisboa,[6] assim como foi de novo interlocutora quanto ao ainda \"polêmico\" Acordo Ortográfico de 1990.<br />
+				Tem por objetivo o cultivo da língua portuguesa e da literatura brasileira. É-lhe reconhecido o mérito por esforços históricos em prol da unificação do idioma, do português brasileiro e do português europeu. Nomeadamente, teve um papel importante no Acordo Ortográfico de 1945, conseguido em conjunto com a Academia das Ciências de Lisboa, assim como foi de novo interlocutora quanto ao ainda \"polêmico\" Acordo Ortográfico de 1990.<br />
 				<br />
-				A instituição é responsável pela edição de obras de grande valor histórico e literário, e atribui diversos prêmios literários.[6][7] A ABL remonta ao final do século XIX, quando escritores e intelectuais brasileiros desejaram criar uma academia nacional nos moldes da Academia Francesa.[8]<br />
+				A instituição é responsável pela edição de obras de grande valor histórico e literário, e atribui diversos prêmios literários. A ABL remonta ao final do século XIX, quando escritores e intelectuais brasileiros desejaram criar uma academia nacional nos moldes da Academia Francesa.<br />
 				<br />
-				Esta tem quarenta cadeiras, ocupadas por quarenta membros efetivos perpétuos (no mínimo vinte e cinco devem morar na cidade que sedia a Academia, o Rio de Janeiro), sendo cada novo membro eleito pelos acadêmicos para ocupar uma cadeira vazia devido ao falecimento do último titular. Há ainda vinte membros estrangeiros correspondentes.[8]";
+				Esta tem quarenta cadeiras, ocupadas por quarenta membros efetivos perpétuos (no mínimo vinte e cinco devem morar na cidade que sedia a Academia, o Rio de Janeiro), sendo cada novo membro eleito pelos acadêmicos para ocupar uma cadeira vazia devido ao falecimento do último titular. Há ainda vinte membros estrangeiros correspondentes.";
 			}
 
 			if ($_COOKIE['lang'] == 'en') {
-			echo "Academia Brasileira de Letras (ABL - Loudspeaker.svg? Pronunciation) GCSE • MHSE is a Brazilian literary institution founded in the city of Rio de Janeiro on July 20, 1897 by the writers Machado de Assis, Lúcio de Mendonça, Inglês de Sousa, Olavo Bilac , Afonso Celso, Graça Aranha, Medeiros and Albuquerque, Joaquim Nabuco, Teixeira de Melo, Viscount de Taunay and Ruy Barbosa. [2] It is made up of forty permanent and perpetual members (hence called immortals) [3] and twenty foreign members. [4] <br />
+			echo "Academia Brasileira de Letras (ABL - Loudspeaker.svg? Pronunciation) GCSE • MHSE is a Brazilian literary institution founded in the city of Rio de Janeiro on July 20, 1897 by the writers Machado de Assis, Lúcio de Mendonça, Inglês de Sousa, Olavo Bilac , Afonso Celso, Graça Aranha, Medeiros and Albuquerque, Joaquim Nabuco, Teixeira de Melo, Viscount de Taunay and Ruy Barbosa.  It is made up of forty permanent and perpetual members (hence called immortals)  and twenty foreign members.  <br />
 				<br />
-				It aims to cultivate the Portuguese language [5] and Brazilian literature. It is recognized for its merit for its historic efforts to unify the language, Brazilian Portuguese and European Portuguese. Namely, it played an important role in the 1945 Orthographic Agreement, achieved jointly with the Lisbon Academy of Sciences, [6] as well as being a new interlocutor regarding the still \"controversial\" 1990 Orthographic Agreement. <br />
+				It aims to cultivate the Portuguese language  and Brazilian literature. It is recognized for its merit for its historic efforts to unify the language, Brazilian Portuguese and European Portuguese. Namely, it played an important role in the 1945 Orthographic Agreement, achieved jointly with the Lisbon Academy of Sciences,  as well as being a new interlocutor regarding the still \"controversial\" 1990 Orthographic Agreement. <br />
 				<br />
-				The institution is responsible for publishing works of great historical and literary value, and awards several literary awards. [6] [7] GLA dates back to the end of the 19th century, when Brazilian writers and intellectuals wanted to create a national academy along the lines of the French Academy. [8] <br />
+				The institution is responsible for publishing works of great historical and literary value, and awards several literary awards.   GLA dates back to the end of the 19th century, when Brazilian writers and intellectuals wanted to create a national academy along the lines of the French Academy.  <br />
 				<br />
-				It has forty chairs, occupied by forty perpetual members (at least twenty-five must live in the city that houses the Academy, Rio de Janeiro), with each new member being elected by the academics to occupy an empty chair due to the death of the last holder . There are also twenty foreign correspondent members. [8]";
+				It has forty chairs, occupied by forty perpetual members (at least twenty-five must live in the city that houses the Academy, Rio de Janeiro), with each new member being elected by the academics to occupy an empty chair due to the death of the last holder . There are also twenty foreign correspondent members. ";
 			}
 
 			if ($_COOKIE['lang'] == 'es') {
-			echo "Academia Brasileira de Letras (ABL - Loudspeaker.svg? Pronunciación) GCSE • MHSE es una institución literaria brasileña fundada en la ciudad de Río de Janeiro el 20 de julio de 1897 por los escritores Machado de Assis, Lúcio de Mendonça, Inglés de Sousa, Olavo Bilac , Afonso Celso, Graça Aranha, Medeiros y Albuquerque, Joaquim Nabuco, Teixeira de Melo, Vizconde de Taunay y Ruy Barbosa. [2] Se compone de cuarenta miembros permanentes y perpetuos (por lo tanto llamados inmortales) [3] y veinte miembros extranjeros. [4] <br />
+			echo "Academia Brasileira de Letras (ABL - Loudspeaker.svg? Pronunciación) GCSE • MHSE es una institución literaria brasileña fundada en la ciudad de Río de Janeiro el 20 de julio de 1897 por los escritores Machado de Assis, Lúcio de Mendonça, Inglés de Sousa, Olavo Bilac , Afonso Celso, Graça Aranha, Medeiros y Albuquerque, Joaquim Nabuco, Teixeira de Melo, Vizconde de Taunay y Ruy Barbosa.  Se compone de cuarenta miembros permanentes y perpetuos (por lo tanto llamados inmortales)  y veinte miembros extranjeros.  <br />
 				<br />
-				Su objetivo es cultivar la lengua portuguesa [5] y la literatura brasileña. Es reconocido por su mérito por sus esfuerzos históricos para unificar el idioma, portugués brasileño y portugués europeo. A saber, jugó un papel importante en el Acuerdo Ortográfico de 1945, logrado conjuntamente con la Academia de Ciencias de Lisboa, [6] además de ser un nuevo interlocutor con respecto al Acuerdo Ortográfico de 1990 todavía \"controvertido\". <br />
+				Su objetivo es cultivar la lengua portuguesa  y la literatura brasileña. Es reconocido por su mérito por sus esfuerzos históricos para unificar el idioma, portugués brasileño y portugués europeo. A saber, jugó un papel importante en el Acuerdo Ortográfico de 1945, logrado conjuntamente con la Academia de Ciencias de Lisboa,  además de ser un nuevo interlocutor con respecto al Acuerdo Ortográfico de 1990 todavía \"controvertido\". <br />
 				<br />
-				La institución es responsable de publicar obras de gran valor histórico y literario, y otorga varios premios literarios. [6] [7] GLA se remonta a finales del siglo XIX, cuando los escritores e intelectuales brasileños querían crear una academia nacional similar a la Academia Francesa. [8] <br />
+				La institución es responsable de publicar obras de gran valor histórico y literario, y otorga varios premios literarios.   GLA se remonta a finales del siglo XIX, cuando los escritores e intelectuales brasileños querían crear una academia nacional similar a la Academia Francesa.  <br />
 				<br />
-				Tiene cuarenta sillas, ocupadas por cuarenta miembros perpetuos (al menos veinticinco deben vivir en la ciudad que alberga la Academia, Río de Janeiro), y cada nuevo miembro es elegido por los académicos para ocupar una silla vacía debido a la muerte del último titular. . También hay veinte miembros corresponsales extranjeros. [8]";
+				Tiene cuarenta sillas, ocupadas por cuarenta miembros perpetuos (al menos veinticinco deben vivir en la ciudad que alberga la Academia, Río de Janeiro), y cada nuevo miembro es elegido por los académicos para ocupar una silla vacía debido a la muerte del último titular. . También hay veinte miembros corresponsales extranjeros. ";
 			}
 		?>
 		</div>
@@ -54,7 +54,7 @@
 			<?php
 				require '../account/mysql_connect.php';
 				if ($notcon == null) {
-					$find = $conn->query("SELECT nick,academy FROM users WHERE academy REGEXP '^ABL' ORDER BY academy");
+					$find = $conn->query("SELECT nick,academy FROM users WHERE academy REGEXP '^".$aca."' ORDER BY academy");
 					if ($find->num_rows > 0) {
 						$ac = array();
 						while ($i = $find->fetch_assoc()) {
@@ -99,8 +99,8 @@
 				else if ($('#litername').height() >= '80') {document.getElementById('litername').style.top = '120px';}
 			}
 			else if ($(window).width() < 2500) {
-				if ($('#litername').height() >= '120') {document.getElementById('litername').style.top = '220px';}
-				else if ($('#litername').height() >= '80') {document.getElementById('litername').style.top = '120px';}
+				if ($('#litername').height() >= '345') {document.getElementById('litername').style.top = '120px';}
+				else if ($('#litername').height() >= '230') {document.getElementById('litername').style.top = '220px';}
 			}
 		</script>
 		<?php include '../design/footer.php' ?>

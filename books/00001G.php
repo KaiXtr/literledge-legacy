@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.[1]
+					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.
 
 					Em 1981, esta obra ganhou o Premio Strega.
 
@@ -38,7 +38,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.[1]
+					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.
 
 					Em 1981, esta obra ganhou o Premio Strega.
 
@@ -50,7 +50,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.[1]
+					O Nome da Rosa (em italiano: Il nome della rosa) é um romance histórico do escritor italiano Umberto Eco, lançado em 1980 que o tornou conhecido mundialmente.
 
 					Em 1981, esta obra ganhou o Premio Strega.
 

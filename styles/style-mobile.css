@@ -152,27 +152,6 @@ hr {
 	cursor: not-allowed;
 }
 
-.upperbar #btup {
-	text-align: center;
-	padding: 5px;
-	width: 30px;
-	height: 30px;
-	transition-duration: 0.2s;
-	display: none;
-}
-
-.upperbar #btup:hover {
-	border-radius: 5px;
-}
-
-.upperbar #btup:active {
-	padding: 4px;
-}
-
-.upperbar #btreq {
-	display: none;
-}
-
 .upperbar .profilepic {
 	margin-left: 10px;
 	width: 28px;
@@ -182,13 +161,21 @@ hr {
 	cursor: pointer;
 }
 
+#linkpro {
+	display: none;
+}
+
+#accountbuts {
+	display: none;
+}
+
 #profilemenu {
 	text-align: left;
 	font-size: 25px;
 	padding: 10px;
 	width: 200px;
 	z-index: 10;
-	top: 10%;
+	top: 45px;
 	right: 10%;
 	border-radius: 8px;
 	position: fixed;
@@ -198,7 +185,7 @@ hr {
 }
 
 #profilemenu h1 {
-	font-size: 25px;
+	font-size: 30px;
 	margin: 0px;
 }
 
@@ -210,8 +197,13 @@ hr {
 
 #profilemenu ul {
 	margin: 0px;
+	padding: 10px;
 	list-style: none;
 	line-height: 35px;
+}
+
+#profilemenu img {
+	margin-right: 10px;
 }
 
 .sidebar {
@@ -283,7 +275,7 @@ hr {
 	font-size: 15px;
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-top: 10px;
+	margin-top: 40px;
 	margin-bottom: 130px;
 	padding: 20px;
 	width: 70%;
@@ -802,6 +794,15 @@ hr {
 	margin: 0px;
 }
 
+#thank {
+	padding: 20px;
+	top: 150px;
+	right: 300px;
+	z-index: 20;
+	border-radius: 15px;
+	position: fixed;
+}
+
 #bookinfo {
 	margin-top: 60px;
 	margin-left: 0px;
@@ -827,12 +828,11 @@ hr {
 	font-size: 22px;
 	margin: 0px;
 	padding: 10px;
-	height: 440px;
 }
 
 #bookinfo #info h1 {
 	font-size: 48px;
-	width: 320px;
+	width: 90%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -851,7 +851,7 @@ hr {
 	font-size: 20px;
 	margin-top: 20px;
 	padding: 15px;
-	width: 300px;
+	width: 90%;
 	border-radius: 15px;
 }
 
@@ -859,7 +859,7 @@ hr {
 	margin: 0px;
 	padding-top: 10px;
 	padding-left: 0px;
-	width: 300px;
+	width: 100%;
 	display: block;
 }
 
@@ -901,7 +901,6 @@ hr {
 	margin: 5px;
 	width: 34px;
 	height: 34px;
-	float: left;
 }
 
 #bookinfo #status #ubuttons button {
@@ -910,7 +909,6 @@ hr {
 	margin: 5px;
 	width: 34px;
 	height: 34px;
-	float: left;
 }
 
 #bookinfo .summary {
@@ -1039,9 +1037,9 @@ hr {
 	padding: 5px;
 	width: 50px;
 	height: 50px;
-	top: 96px;
-	right: 18px;
-	border-radius: 0px 30px 0px 15px;
+	top: 70px;
+	right: 5px;
+	border-radius: 15px 15px 15px 15px;
 	position: absolute;
 }
 
@@ -1150,7 +1148,13 @@ hr {
 
 .portraits h2 {
 	font-size: 20px;
+	margin-bottom: 0px;
 	display: block;
+}
+
+.portraits .acainfo {
+	font-size: 15px;
+	margin: 0px;
 }
 
 .pormini  {
@@ -1171,6 +1175,29 @@ hr {
 
 .pormini .binfotip {
 	left: -20px;
+}
+
+.litbut {
+	background-position: center;
+	background-size: 250%;
+	white-space: normal;
+	text-align: center;
+	font-size: 20px;
+	margin: 10px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 10px;
+	width: 260px;
+	height: 150px;
+	border-style: double;
+	border-radius: 15px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	float: left;
+}
+
+.litbut h2 {
+	filter: blur(0px);
 }
 
 .infocontent {
@@ -1334,4 +1361,8 @@ div::-webkit-scrollbar  {
 div::-webkit-scrollbar-thumb  {
   border-radius: 10px;
   transition-duration: 4s;
+}
+
+iframe {
+	width: 100%;
 }

@@ -27,25 +27,25 @@
 			Homero (em grego: Ὅμηρος, transl. Hómēros) foi um poeta épico da Grécia Antiga, ao qual tradicionalmente se atribui a autoria dos poemas épicos Ilíada e Odisseia. <br />
 			<br />
 			Os gregos antigos geralmente acreditavam que Homero era um indivíduo histórico, mas os estudiosos modernos são céticos: nenhuma informação biográfica de confiança <br />
-			foi transmitida a partir da antiguidade clássica,[1] e os próprios poemas manifestamente representam o culminar de muitos séculos de história contadas oralmente e um <br />
+			foi transmitida a partir da antiguidade clássica, e os próprios poemas manifestamente representam o culminar de muitos séculos de história contadas oralmente e um <br />
 			bem desenvolvido sistema já muitas vezes usado de composição poética. De acordo com Martin West, \"Homero\" não é \"o nome de um poeta histórico, mas um nome fictício ou <br />
-			construído\".[2] Para o historiador e filósofo Richard Tarnas, Homero - independentemente da polêmica sobre sua existência histórica - foi \"uma personificação coletiva <br />
-			de toda a memória grega antiga\".[3] <br />
+			construído\". Para o historiador e filósofo Richard Tarnas, Homero - independentemente da polêmica sobre sua existência histórica - foi \"uma personificação coletiva <br />
+			de toda a memória grega antiga\". <br />
 			<br />
 			Homero teria nascido em Esmirna, atual Turquia, ou em alguma ilha do mar Egeu e vivido no século VIII a.C. Mas a sua origem é tão controversa que oito cidades disputam <br />
-			a honra de terem sido a terra natal do poeta.[4] <br />
+			a honra de terem sido a terra natal do poeta. <br />
 			<br />
 			A data da existência de Homero foi controversa na antiguidade e não o é menos hoje. Heródoto disse que Homero viveu 400 anos antes de seu próprio tempo, o que o <br />
-			colocaria em torno de 850 a.C., mas outras fontes antigas deram datas muito mais próximas da suposta época da Guerra de Troia.[5] A data da Guerra de Troia foi <br />
+			colocaria em torno de 850 a.C., mas outras fontes antigas deram datas muito mais próximas da suposta época da Guerra de Troia. A data da Guerra de Troia foi <br />
 			dada como 1194-1184 a.C. por Eratóstenes, que se esforçou para estabelecer uma cronologia científica dos eventos e esta data tem obtido apoio por causa de pesquisas <br />
 			 arqueológicas mais recentes.[carece de fontes] <br />
 
 			Para a ciência moderna, \"a data de Homero\" refere-se à data de concepção dos poemas tanto quanto à vida de um indivíduo. O consenso dos estudiosos é que <br />
-			\"a Ilíada e a Odisseia datam dos últimos anos do século IX a.C., ou a partir do século VIII a.C., a Ilíada sendo anterior à Odisseia, talvez por algumas décadas\",[6] <br />
-			ou seja, um pouco mais cedo do que Hesíodo,[7] e que a Ilíada é o trabalho mais antigo da literatura ocidental. Ao longo das últimas décadas, alguns estudiosos têm <br />
+			\"a Ilíada e a Odisseia datam dos últimos anos do século IX a.C., ou a partir do século VIII a.C., a Ilíada sendo anterior à Odisseia, talvez por algumas décadas\", <br />
+			ou seja, um pouco mais cedo do que Hesíodo, e que a Ilíada é o trabalho mais antigo da literatura ocidental. Ao longo das últimas décadas, alguns estudiosos têm <br />
 			defendido uma data do século VII a.C. Aqueles que acreditam que os poemas homéricos desenvolveram-se gradualmente durante um longo período de tempo, entretanto, <br />
-			geralmente dão uma data posterior para os poemas: de acordo com Pausânias, os textos foram compilados na época do tirano ateniense Pisístrato;[8] de acordo com <br />
-			Gregory Nagy, tornaram-se textos fixos apenas no século VI a.C.[9] <br />
+			geralmente dão uma data posterior para os poemas: de acordo com Pausânias, os textos foram compilados na época do tirano ateniense Pisístrato; de acordo com <br />
+			Gregory Nagy, tornaram-se textos fixos apenas no século VI a.C. <br />
 			<br />
 			Alfred Heubeck afirma que a influência formativa dos trabalhos de Homero modelando e influenciando todo o desenvolvimento da cultura grega foi reconhecida por <br />
 			muitos dos próprios gregos, que o consideravam seu instrutor.[10] <br />
@@ -75,25 +75,25 @@
 			Homero (em grego: Ὅμηρος, transl. Hómēros) foi um poeta épico da Grécia Antiga, ao qual tradicionalmente se atribui a autoria dos poemas épicos Ilíada e Odisseia. <br />
 			<br />
 			Os gregos antigos geralmente acreditavam que Homero era um indivíduo histórico, mas os estudiosos modernos são céticos: nenhuma informação biográfica de confiança <br />
-			foi transmitida a partir da antiguidade clássica,[1] e os próprios poemas manifestamente representam o culminar de muitos séculos de história contadas oralmente e um <br />
+			foi transmitida a partir da antiguidade clássica, e os próprios poemas manifestamente representam o culminar de muitos séculos de história contadas oralmente e um <br />
 			bem desenvolvido sistema já muitas vezes usado de composição poética. De acordo com Martin West, \"Homero\" não é \"o nome de um poeta histórico, mas um nome fictício ou <br />
-			construído\".[2] Para o historiador e filósofo Richard Tarnas, Homero - independentemente da polêmica sobre sua existência histórica - foi \"uma personificação coletiva <br />
-			de toda a memória grega antiga\".[3] <br />
+			construído\". Para o historiador e filósofo Richard Tarnas, Homero - independentemente da polêmica sobre sua existência histórica - foi \"uma personificação coletiva <br />
+			de toda a memória grega antiga\". <br />
 			<br />
 			Homero teria nascido em Esmirna, atual Turquia, ou em alguma ilha do mar Egeu e vivido no século VIII a.C. Mas a sua origem é tão controversa que oito cidades disputam <br />
-			a honra de terem sido a terra natal do poeta.[4] <br />
+			a honra de terem sido a terra natal do poeta. <br />
 			<br />
 			A data da existência de Homero foi controversa na antiguidade e não o é menos hoje. Heródoto disse que Homero viveu 400 anos antes de seu próprio tempo, o que o <br />
-			colocaria em torno de 850 a.C., mas outras fontes antigas deram datas muito mais próximas da suposta época da Guerra de Troia.[5] A data da Guerra de Troia foi <br />
+			colocaria em torno de 850 a.C., mas outras fontes antigas deram datas muito mais próximas da suposta época da Guerra de Troia. A data da Guerra de Troia foi <br />
 			dada como 1194-1184 a.C. por Eratóstenes, que se esforçou para estabelecer uma cronologia científica dos eventos e esta data tem obtido apoio por causa de pesquisas <br />
 			 arqueológicas mais recentes.[carece de fontes] <br />
 
 			Para a ciência moderna, \"a data de Homero\" refere-se à data de concepção dos poemas tanto quanto à vida de um indivíduo. O consenso dos estudiosos é que <br />
-			\"a Ilíada e a Odisseia datam dos últimos anos do século IX a.C., ou a partir do século VIII a.C., a Ilíada sendo anterior à Odisseia, talvez por algumas décadas\",[6] <br />
-			ou seja, um pouco mais cedo do que Hesíodo,[7] e que a Ilíada é o trabalho mais antigo da literatura ocidental. Ao longo das últimas décadas, alguns estudiosos têm <br />
+			\"a Ilíada e a Odisseia datam dos últimos anos do século IX a.C., ou a partir do século VIII a.C., a Ilíada sendo anterior à Odisseia, talvez por algumas décadas\", <br />
+			ou seja, um pouco mais cedo do que Hesíodo, e que a Ilíada é o trabalho mais antigo da literatura ocidental. Ao longo das últimas décadas, alguns estudiosos têm <br />
 			defendido uma data do século VII a.C. Aqueles que acreditam que os poemas homéricos desenvolveram-se gradualmente durante um longo período de tempo, entretanto, <br />
-			geralmente dão uma data posterior para os poemas: de acordo com Pausânias, os textos foram compilados na época do tirano ateniense Pisístrato;[8] de acordo com <br />
-			Gregory Nagy, tornaram-se textos fixos apenas no século VI a.C.[9] <br />
+			geralmente dão uma data posterior para os poemas: de acordo com Pausânias, os textos foram compilados na época do tirano ateniense Pisístrato; de acordo com <br />
+			Gregory Nagy, tornaram-se textos fixos apenas no século VI a.C. <br />
 			<br />
 			Alfred Heubeck afirma que a influência formativa dos trabalhos de Homero modelando e influenciando todo o desenvolvimento da cultura grega foi reconhecida por <br />
 			muitos dos próprios gregos, que o consideravam seu instrutor.[10] <br />
@@ -123,25 +123,25 @@
 			Homero (em grego: Ὅμηρος, transl. Hómēros) foi um poeta épico da Grécia Antiga, ao qual tradicionalmente se atribui a autoria dos poemas épicos Ilíada e Odisseia. <br />
 			<br />
 			Os gregos antigos geralmente acreditavam que Homero era um indivíduo histórico, mas os estudiosos modernos são céticos: nenhuma informação biográfica de confiança <br />
-			foi transmitida a partir da antiguidade clássica,[1] e os próprios poemas manifestamente representam o culminar de muitos séculos de história contadas oralmente e um <br />
+			foi transmitida a partir da antiguidade clássica, e os próprios poemas manifestamente representam o culminar de muitos séculos de história contadas oralmente e um <br />
 			bem desenvolvido sistema já muitas vezes usado de composição poética. De acordo com Martin West, \"Homero\" não é \"o nome de um poeta histórico, mas um nome fictício ou <br />
-			construído\".[2] Para o historiador e filósofo Richard Tarnas, Homero - independentemente da polêmica sobre sua existência histórica - foi \"uma personificação coletiva <br />
-			de toda a memória grega antiga\".[3] <br />
+			construído\". Para o historiador e filósofo Richard Tarnas, Homero - independentemente da polêmica sobre sua existência histórica - foi \"uma personificação coletiva <br />
+			de toda a memória grega antiga\". <br />
 			<br />
 			Homero teria nascido em Esmirna, atual Turquia, ou em alguma ilha do mar Egeu e vivido no século VIII a.C. Mas a sua origem é tão controversa que oito cidades disputam <br />
-			a honra de terem sido a terra natal do poeta.[4] <br />
+			a honra de terem sido a terra natal do poeta. <br />
 			<br />
 			A data da existência de Homero foi controversa na antiguidade e não o é menos hoje. Heródoto disse que Homero viveu 400 anos antes de seu próprio tempo, o que o <br />
-			colocaria em torno de 850 a.C., mas outras fontes antigas deram datas muito mais próximas da suposta época da Guerra de Troia.[5] A data da Guerra de Troia foi <br />
+			colocaria em torno de 850 a.C., mas outras fontes antigas deram datas muito mais próximas da suposta época da Guerra de Troia. A data da Guerra de Troia foi <br />
 			dada como 1194-1184 a.C. por Eratóstenes, que se esforçou para estabelecer uma cronologia científica dos eventos e esta data tem obtido apoio por causa de pesquisas <br />
 			 arqueológicas mais recentes.[carece de fontes] <br />
 
 			Para a ciência moderna, \"a data de Homero\" refere-se à data de concepção dos poemas tanto quanto à vida de um indivíduo. O consenso dos estudiosos é que <br />
-			\"a Ilíada e a Odisseia datam dos últimos anos do século IX a.C., ou a partir do século VIII a.C., a Ilíada sendo anterior à Odisseia, talvez por algumas décadas\",[6] <br />
-			ou seja, um pouco mais cedo do que Hesíodo,[7] e que a Ilíada é o trabalho mais antigo da literatura ocidental. Ao longo das últimas décadas, alguns estudiosos têm <br />
+			\"a Ilíada e a Odisseia datam dos últimos anos do século IX a.C., ou a partir do século VIII a.C., a Ilíada sendo anterior à Odisseia, talvez por algumas décadas\", <br />
+			ou seja, um pouco mais cedo do que Hesíodo, e que a Ilíada é o trabalho mais antigo da literatura ocidental. Ao longo das últimas décadas, alguns estudiosos têm <br />
 			defendido uma data do século VII a.C. Aqueles que acreditam que os poemas homéricos desenvolveram-se gradualmente durante um longo período de tempo, entretanto, <br />
-			geralmente dão uma data posterior para os poemas: de acordo com Pausânias, os textos foram compilados na época do tirano ateniense Pisístrato;[8] de acordo com <br />
-			Gregory Nagy, tornaram-se textos fixos apenas no século VI a.C.[9] <br />
+			geralmente dão uma data posterior para os poemas: de acordo com Pausânias, os textos foram compilados na época do tirano ateniense Pisístrato; de acordo com <br />
+			Gregory Nagy, tornaram-se textos fixos apenas no século VI a.C. <br />
 			<br />
 			Alfred Heubeck afirma que a influência formativa dos trabalhos de Homero modelando e influenciando todo o desenvolvimento da cultura grega foi reconhecida por <br />
 			muitos dos próprios gregos, que o consideravam seu instrutor.[10] <br />

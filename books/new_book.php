@@ -37,15 +37,3 @@
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>
-
-<?php
-					if ($_COOKIE['lang'] == 'pt') {
-						echo "\2";
-					}
-					if ($_COOKIE['lang'] == 'en') {
-						echo "binfoen";
-					}
-					if ($_COOKIE['lang'] == 'es') {
-						echo "binfoes";
-					}
-				?>

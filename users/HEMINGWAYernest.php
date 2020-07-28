@@ -24,21 +24,21 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Ernest Miller Hemingway (Oak Park, 21 de Julho de 1899 — Ketchum, 2 de Julho de 1961) foi um escritor norte-americano. Trabalhou como correspondente de guerra em Madri durante a Guerra Civil Espanhola (1936-1939). Esta experiência inspirou uma de suas maiores obras, Por Quem os Sinos Dobram. Ao fim da Segunda Guerra Mundial (1939-1945), se instalou em Cuba. Em 1953, ganhou o Prémio Pulitzer de Ficção, e, em 1954, ganhou o prêmio Nobel de Literatura.[1][2] Suicidou-se em Ketchum, em Idaho, em 1961.[2]
+			Ernest Miller Hemingway (Oak Park, 21 de Julho de 1899 — Ketchum, 2 de Julho de 1961) foi um escritor norte-americano. Trabalhou como correspondente de guerra em Madri durante a Guerra Civil Espanhola (1936-1939). Esta experiência inspirou uma de suas maiores obras, Por Quem os Sinos Dobram. Ao fim da Segunda Guerra Mundial (1939-1945), se instalou em Cuba. Em 1953, ganhou o Prémio Pulitzer de Ficção, e, em 1954, ganhou o prêmio Nobel de Literatura. Suicidou-se em Ketchum, em Idaho, em 1961.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Ernest_Hemingway' > Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Ernest Miller Hemingway (Oak Park, 21 de Julho de 1899 — Ketchum, 2 de Julho de 1961) foi um escritor norte-americano. Trabalhou como correspondente de guerra em Madri durante a Guerra Civil Espanhola (1936-1939). Esta experiência inspirou uma de suas maiores obras, Por Quem os Sinos Dobram. Ao fim da Segunda Guerra Mundial (1939-1945), se instalou em Cuba. Em 1953, ganhou o Prémio Pulitzer de Ficção, e, em 1954, ganhou o prêmio Nobel de Literatura.[1][2] Suicidou-se em Ketchum, em Idaho, em 1961.[2]
+			Ernest Miller Hemingway (Oak Park, 21 de Julho de 1899 — Ketchum, 2 de Julho de 1961) foi um escritor norte-americano. Trabalhou como correspondente de guerra em Madri durante a Guerra Civil Espanhola (1936-1939). Esta experiência inspirou uma de suas maiores obras, Por Quem os Sinos Dobram. Ao fim da Segunda Guerra Mundial (1939-1945), se instalou em Cuba. Em 1953, ganhou o Prémio Pulitzer de Ficção, e, em 1954, ganhou o prêmio Nobel de Literatura. Suicidou-se em Ketchum, em Idaho, em 1961.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Ernest_Hemingway' > Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Ernest Miller Hemingway (Oak Park, 21 de Julho de 1899 — Ketchum, 2 de Julho de 1961) foi um escritor norte-americano. Trabalhou como correspondente de guerra em Madri durante a Guerra Civil Espanhola (1936-1939). Esta experiência inspirou uma de suas maiores obras, Por Quem os Sinos Dobram. Ao fim da Segunda Guerra Mundial (1939-1945), se instalou em Cuba. Em 1953, ganhou o Prémio Pulitzer de Ficção, e, em 1954, ganhou o prêmio Nobel de Literatura.[1][2] Suicidou-se em Ketchum, em Idaho, em 1961.[2]
+			Ernest Miller Hemingway (Oak Park, 21 de Julho de 1899 — Ketchum, 2 de Julho de 1961) foi um escritor norte-americano. Trabalhou como correspondente de guerra em Madri durante a Guerra Civil Espanhola (1936-1939). Esta experiência inspirou uma de suas maiores obras, Por Quem os Sinos Dobram. Ao fim da Segunda Guerra Mundial (1939-1945), se instalou em Cuba. Em 1953, ganhou o Prémio Pulitzer de Ficção, e, em 1954, ganhou o prêmio Nobel de Literatura. Suicidou-se em Ketchum, em Idaho, em 1961.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Ernest_Hemingway' > Wikipedia </a>
 					";

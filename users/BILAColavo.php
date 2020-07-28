@@ -29,7 +29,7 @@
 			cujo patrono é Gonçalves Dias. <br />
 			 <br />
 			Conhecido por sua atenção à literatura infantil e, principalmente, pela participação cívica, Bilac era um ativo republicano e nacionalista, também defensor do serviço  <br />
-			militar obrigatório[1] em um período em que o exército usufruía de amplas faculdades políticas em virtude do golpe militar de 1889. <br />
+			militar obrigatório em um período em que o exército usufruía de amplas faculdades políticas em virtude do golpe militar de 1889. <br />
 			 <br />
 			Foi o responsável pela criação da letra do Hino à Bandeira, inicialmente criado para circulação na capital federal (na época, o Rio de Janeiro),  <br />
 			e mais tarde sendo adotado em todo o Brasil. Também ficou famoso pelas fortes convicções políticas, sobressaindo-se a ferrenha oposição ao governo militar do marechal  <br />
@@ -48,7 +48,7 @@
 			cujo patrono é Gonçalves Dias. <br />
 			 <br />
 			Conhecido por sua atenção à literatura infantil e, principalmente, pela participação cívica, Bilac era um ativo republicano e nacionalista, também defensor do serviço  <br />
-			militar obrigatório[1] em um período em que o exército usufruía de amplas faculdades políticas em virtude do golpe militar de 1889. <br />
+			militar obrigatório em um período em que o exército usufruía de amplas faculdades políticas em virtude do golpe militar de 1889. <br />
 			 <br />
 			Foi o responsável pela criação da letra do Hino à Bandeira, inicialmente criado para circulação na capital federal (na época, o Rio de Janeiro),  <br />
 			e mais tarde sendo adotado em todo o Brasil. Também ficou famoso pelas fortes convicções políticas, sobressaindo-se a ferrenha oposição ao governo militar do marechal  <br />
@@ -67,7 +67,7 @@
 			cujo patrono é Gonçalves Dias. <br />
 			 <br />
 			Conhecido por sua atenção à literatura infantil e, principalmente, pela participação cívica, Bilac era um ativo republicano e nacionalista, também defensor do serviço  <br />
-			militar obrigatório[1] em um período em que o exército usufruía de amplas faculdades políticas em virtude do golpe militar de 1889. <br />
+			militar obrigatório em um período em que o exército usufruía de amplas faculdades políticas em virtude do golpe militar de 1889. <br />
 			 <br />
 			Foi o responsável pela criação da letra do Hino à Bandeira, inicialmente criado para circulação na capital federal (na época, o Rio de Janeiro),  <br />
 			e mais tarde sendo adotado em todo o Brasil. Também ficou famoso pelas fortes convicções políticas, sobressaindo-se a ferrenha oposição ao governo militar do marechal  <br />

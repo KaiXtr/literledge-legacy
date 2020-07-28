@@ -71,5 +71,5 @@
 		$conn->close();
 	}
 
-	if ($error == '') {header("location: ".$base_url."upload.php");}
+	if ($error == '') {header("location: ".$base_url."upload.php?a=1");}
 ?>

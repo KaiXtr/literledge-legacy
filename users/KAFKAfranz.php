@@ -25,14 +25,14 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			Franz Kafka (Praga, Império Austro-Húngaro, atual República Tcheca, 3 de julho de 1883 — Klosterneuburg, República Austríaca, atual Áustria, <br />
-			3 de junho de 1924)[4][5] foi um escritor de língua alemã, autor de romances e contos, considerado pelos críticos como um dos escritores mais influentes <br />
+			3 de junho de 1924) foi um escritor de língua alemã, autor de romances e contos, considerado pelos críticos como um dos escritores mais influentes <br />
 			do século XX. A maior parte de sua obra, como A Metamorfose, O Processo e O Castelo, está repleta de temas e arquétipos de alienação e <br />
 			brutalidade física e psicológica, conflito entre pais e filhos, personagens com missões aterrorizantes, labirintos burocráticos e transformações místicas. <br />
 			<br />
-			Kafka nasceu em uma família judaica de classe média e falante de alemão em Praga, então pertencente ao Império Austro-Húngaro.[6] Durante sua vida, <br />
+			Kafka nasceu em uma família judaica de classe média e falante de alemão em Praga, então pertencente ao Império Austro-Húngaro. Durante sua vida, <br />
 			a maior parte da população de Praga falava tcheco e a divisão entre os falantes de tcheco e alemão era visível, já que ambos os grupos estavam tentando <br />
 			fortalecer sua identidade nacional. A comunidade judaica muitas vezes achou-se dividida entre esses dois grupos, levantando, naturalmente, questões sobre <br />
-			a origem de uma pessoa. O próprio Kafka era fluente nas duas línguas, considerando o alemão sua língua materna.[7] <br />
+			a origem de uma pessoa. O próprio Kafka era fluente nas duas línguas, considerando o alemão sua língua materna. <br />
 			<br />
 			Kafka formou-se em direito e, depois de completar sua educação, conseguiu um emprego em uma companhia de seguros. Começou a escrever contos no seu tempo livre. <br />
 			Pelo resto de sua vida, reclamou do pouco tempo que tinha para dedicar-se ao que chegaria a chamar de \"seu chamado\". Arrependeu-se de ter tido que dedicar <br />
@@ -52,14 +52,14 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			Franz Kafka (Praga, Império Austro-Húngaro, atual República Tcheca, 3 de julho de 1883 — Klosterneuburg, República Austríaca, atual Áustria, <br />
-			3 de junho de 1924)[4][5] foi um escritor de língua alemã, autor de romances e contos, considerado pelos críticos como um dos escritores mais influentes <br />
+			3 de junho de 1924) foi um escritor de língua alemã, autor de romances e contos, considerado pelos críticos como um dos escritores mais influentes <br />
 			do século XX. A maior parte de sua obra, como A Metamorfose, O Processo e O Castelo, está repleta de temas e arquétipos de alienação e <br />
 			brutalidade física e psicológica, conflito entre pais e filhos, personagens com missões aterrorizantes, labirintos burocráticos e transformações místicas. <br />
 			<br />
-			Kafka nasceu em uma família judaica de classe média e falante de alemão em Praga, então pertencente ao Império Austro-Húngaro.[6] Durante sua vida, <br />
+			Kafka nasceu em uma família judaica de classe média e falante de alemão em Praga, então pertencente ao Império Austro-Húngaro. Durante sua vida, <br />
 			a maior parte da população de Praga falava tcheco e a divisão entre os falantes de tcheco e alemão era visível, já que ambos os grupos estavam tentando <br />
 			fortalecer sua identidade nacional. A comunidade judaica muitas vezes achou-se dividida entre esses dois grupos, levantando, naturalmente, questões sobre <br />
-			a origem de uma pessoa. O próprio Kafka era fluente nas duas línguas, considerando o alemão sua língua materna.[7] <br />
+			a origem de uma pessoa. O próprio Kafka era fluente nas duas línguas, considerando o alemão sua língua materna. <br />
 			<br />
 			Kafka formou-se em direito e, depois de completar sua educação, conseguiu um emprego em uma companhia de seguros. Começou a escrever contos no seu tempo livre. <br />
 			Pelo resto de sua vida, reclamou do pouco tempo que tinha para dedicar-se ao que chegaria a chamar de \"seu chamado\". Arrependeu-se de ter tido que dedicar <br />
@@ -79,14 +79,14 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			Franz Kafka (Praga, Império Austro-Húngaro, atual República Tcheca, 3 de julho de 1883 — Klosterneuburg, República Austríaca, atual Áustria, <br />
-			3 de junho de 1924)[4][5] foi um escritor de língua alemã, autor de romances e contos, considerado pelos críticos como um dos escritores mais influentes <br />
+			3 de junho de 1924) foi um escritor de língua alemã, autor de romances e contos, considerado pelos críticos como um dos escritores mais influentes <br />
 			do século XX. A maior parte de sua obra, como A Metamorfose, O Processo e O Castelo, está repleta de temas e arquétipos de alienação e <br />
 			brutalidade física e psicológica, conflito entre pais e filhos, personagens com missões aterrorizantes, labirintos burocráticos e transformações místicas. <br />
 			<br />
-			Kafka nasceu em uma família judaica de classe média e falante de alemão em Praga, então pertencente ao Império Austro-Húngaro.[6] Durante sua vida, <br />
+			Kafka nasceu em uma família judaica de classe média e falante de alemão em Praga, então pertencente ao Império Austro-Húngaro. Durante sua vida, <br />
 			a maior parte da população de Praga falava tcheco e a divisão entre os falantes de tcheco e alemão era visível, já que ambos os grupos estavam tentando <br />
 			fortalecer sua identidade nacional. A comunidade judaica muitas vezes achou-se dividida entre esses dois grupos, levantando, naturalmente, questões sobre <br />
-			a origem de uma pessoa. O próprio Kafka era fluente nas duas línguas, considerando o alemão sua língua materna.[7] <br />
+			a origem de uma pessoa. O próprio Kafka era fluente nas duas línguas, considerando o alemão sua língua materna. <br />
 			<br />
 			Kafka formou-se em direito e, depois de completar sua educação, conseguiu um emprego em uma companhia de seguros. Começou a escrever contos no seu tempo livre. <br />
 			Pelo resto de sua vida, reclamou do pouco tempo que tinha para dedicar-se ao que chegaria a chamar de \"seu chamado\". Arrependeu-se de ter tido que dedicar <br />

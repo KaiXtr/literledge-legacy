@@ -26,9 +26,9 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Ilíada (em grego antigo: Ἰλιάς, IPA: [iːliás]) é um dos dois principais poemas épicos da Grécia Antiga, de autoria atribuída ao poeta Homero, que narra os acontecimentos decorridos no período de 51 dias durante o décimo e último ano da Guerra de Troia, conflito empreendido para a conquista de Ílio ou Troia, cuja gênese radica na ira (μῆνις, mênis) da Aquiles.[1][2]
+					A Ilíada (em grego antigo: Ἰλιάς, IPA: [iːliás]) é um dos dois principais poemas épicos da Grécia Antiga, de autoria atribuída ao poeta Homero, que narra os acontecimentos decorridos no período de 51 dias durante o décimo e último ano da Guerra de Troia, conflito empreendido para a conquista de Ílio ou Troia, cuja gênese radica na ira (μῆνις, mênis) da Aquiles.
 
-					A Ilíada é atribuída a Homero, que se julga ter vivido por volta do século VIII a.C.,[2] na Jônia (atualmente região da Turquia), e constitui o mais antigo e extenso documento literário grego (e ocidental) existente. Ainda hoje, contudo, se discute a verdadeira autoria e a existência real de Homero (nascido ou em Quios, Grécia ou em Esmirna, Turquia).[3]
+					A Ilíada é atribuída a Homero, que se julga ter vivido por volta do século VIII a.C., na Jônia (atualmente região da Turquia), e constitui o mais antigo e extenso documento literário grego (e ocidental) existente. Ainda hoje, contudo, se discute a verdadeira autoria e a existência real de Homero (nascido ou em Quios, Grécia ou em Esmirna, Turquia).
 
 					A Ilíada é constituída por 15 693 versos em hexâmetro datílico, a forma tradicional da poesia épica grega. Foi composta por uma mistura de dialetos, resultando numa língua literária artificial, nunca de fato falada na Grécia.
 
@@ -87,9 +87,9 @@
 					if ($_COOKIE['lang'] == 'en') {
 						echo "<a name='goto1'> </a>
 					<h1> Review </h1>
-					The Iliad (in ancient Greek: Ἰλιάς, IPA: [iːliás]) is one of the two main epic poems of Ancient Greece, authored by the poet Homer, who narrates the events that took place during the period of 51 days during the tenth and final year of the Trojan War, conflict undertaken to conquer Ilio or Troia, whose genesis lies in the anger (μῆνις, penis) of Aquiles. [1] [2]
+					The Iliad (in ancient Greek: Ἰλιάς, IPA: [iːliás]) is one of the two main epic poems of Ancient Greece, authored by the poet Homer, who narrates the events that took place during the period of 51 days during the tenth and final year of the Trojan War, conflict undertaken to conquer Ilio or Troia, whose genesis lies in the anger (μῆνις, penis) of Aquiles.  
 
-					The Iliad is attributed to Homer, who is believed to have lived around the 8th century BC., [2] in Ionia (currently the region of Turkey), and is the oldest and most extensive Greek (and Western) literary document in existence. Even today, however, Homer's real authorship and real existence is discussed (born or in Chios, Greece or in Izmir, Turkey). [3]
+					The Iliad is attributed to Homer, who is believed to have lived around the 8th century BC.,  in Ionia (currently the region of Turkey), and is the oldest and most extensive Greek (and Western) literary document in existence. Even today, however, Homer's real authorship and real existence is discussed (born or in Chios, Greece or in Izmir, Turkey). 
 
 					The Iliad consists of 15,693 verses in hexyl dyameter, the traditional form of Greek epic poetry. It was composed of a mixture of dialects, resulting in an artificial literary language, never actually spoken in Greece.
 
@@ -123,9 +123,9 @@
 					if ($_COOKIE['lang'] == 'es') {
 						echo "<a name='goto1'> </a>
 					<h1> Revisión </h1>
-					La Ilíada (en griego antiguo: Ἰλιάς, IPA: [iːliás]) es uno de los dos poemas épicos principales de la Antigua Grecia, escrito por el poeta Homero, quien narra los eventos que tuvieron lugar durante el período de 51 días durante el décimo y último año del año. Guerra de Troya, conflicto emprendido para conquistar Ilio o Troia, cuya génesis reside en la ira de Aquiles (μῆνις, pene). [1] [2]
+					La Ilíada (en griego antiguo: Ἰλιάς, IPA: [iːliás]) es uno de los dos poemas épicos principales de la Antigua Grecia, escrito por el poeta Homero, quien narra los eventos que tuvieron lugar durante el período de 51 días durante el décimo y último año del año. Guerra de Troya, conflicto emprendido para conquistar Ilio o Troia, cuya génesis reside en la ira de Aquiles (μῆνις, pene).  
 
-					La Ilíada se atribuye a Homero, quien se cree que vivió alrededor del siglo VIII a. C. [2] en Jonia (actualmente la región de Turquía), y es el documento literario griego (y occidental) más antiguo y extenso que existe. Incluso hoy, sin embargo, se discute la verdadera autoría y existencia real de Homero (nacido o en Chios, Grecia o en Izmir, Turquía). [3]
+					La Ilíada se atribuye a Homero, quien se cree que vivió alrededor del siglo VIII a. C.  en Jonia (actualmente la región de Turquía), y es el documento literario griego (y occidental) más antiguo y extenso que existe. Incluso hoy, sin embargo, se discute la verdadera autoría y existencia real de Homero (nacido o en Chios, Grecia o en Izmir, Turquía). 
 
 					La Ilíada consta de 15,693 versos en la heximetría, la forma tradicional de la poesía épica griega. Estaba compuesto por una mezcla de dialectos, lo que resulta en un lenguaje literario artificial, que en realidad nunca se habla en Grecia.
 

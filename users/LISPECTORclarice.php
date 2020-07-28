@@ -35,7 +35,7 @@
 			A futura escritora chegou ao Brasil, ainda pequena, em 1922, com seus pais e duas irmãs.[nota 2] Clarice dizia não ter nenhuma ligação com a Ucrânia - <br />
 			\"Naquela terra eu literalmente nunca pisei: fui carregada de colo\" - e que sua verdadeira pátria era o Brasil. Inicialmente, a família passou um breve <br />
 			período em Maceió, até se mudar para o Recife, onde Clarice cresceu e onde, aos oito anos, perdeu a mãe. Aos quatorze anos de idade transferiu-se com o <br />
-			pai e as irmãs para o Rio de Janeiro, local em que a família se estabilizou e onde o seu pai viria a falecer, em 1940[1]. <br />
+			pai e as irmãs para o Rio de Janeiro, local em que a família se estabilizou e onde o seu pai viria a falecer, em 1940. <br />
 			<br />
 			Estudou Direito na Universidade Federal do Rio de Janeiro, conhecida como Universidade do Brasil, apesar de, na época, ter demonstrado mais interesse pelo meio <br />
 			literário, no qual ingressou precocemente como tradutora, logo se consagrando como escritora, jornalista, contista e ensaísta, tornando-se uma das figuras mais <br />
@@ -63,7 +63,7 @@
 			A futura escritora chegou ao Brasil, ainda pequena, em 1922, com seus pais e duas irmãs.[nota 2] Clarice dizia não ter nenhuma ligação com a Ucrânia - <br />
 			\"Naquela terra eu literalmente nunca pisei: fui carregada de colo\" - e que sua verdadeira pátria era o Brasil. Inicialmente, a família passou um breve <br />
 			período em Maceió, até se mudar para o Recife, onde Clarice cresceu e onde, aos oito anos, perdeu a mãe. Aos quatorze anos de idade transferiu-se com o <br />
-			pai e as irmãs para o Rio de Janeiro, local em que a família se estabilizou e onde o seu pai viria a falecer, em 1940[1]. <br />
+			pai e as irmãs para o Rio de Janeiro, local em que a família se estabilizou e onde o seu pai viria a falecer, em 1940. <br />
 			<br />
 			Estudou Direito na Universidade Federal do Rio de Janeiro, conhecida como Universidade do Brasil, apesar de, na época, ter demonstrado mais interesse pelo meio <br />
 			literário, no qual ingressou precocemente como tradutora, logo se consagrando como escritora, jornalista, contista e ensaísta, tornando-se uma das figuras mais <br />
@@ -91,7 +91,7 @@
 			A futura escritora chegou ao Brasil, ainda pequena, em 1922, com seus pais e duas irmãs.[nota 2] Clarice dizia não ter nenhuma ligação com a Ucrânia - <br />
 			\"Naquela terra eu literalmente nunca pisei: fui carregada de colo\" - e que sua verdadeira pátria era o Brasil. Inicialmente, a família passou um breve <br />
 			período em Maceió, até se mudar para o Recife, onde Clarice cresceu e onde, aos oito anos, perdeu a mãe. Aos quatorze anos de idade transferiu-se com o <br />
-			pai e as irmãs para o Rio de Janeiro, local em que a família se estabilizou e onde o seu pai viria a falecer, em 1940[1]. <br />
+			pai e as irmãs para o Rio de Janeiro, local em que a família se estabilizou e onde o seu pai viria a falecer, em 1940. <br />
 			<br />
 			Estudou Direito na Universidade Federal do Rio de Janeiro, conhecida como Universidade do Brasil, apesar de, na época, ter demonstrado mais interesse pelo meio <br />
 			literário, no qual ingressou precocemente como tradutora, logo se consagrando como escritora, jornalista, contista e ensaísta, tornando-se uma das figuras mais <br />

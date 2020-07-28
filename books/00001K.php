@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Urupês é uma coletânea de contos e crônicas do escritor brasileiro Monteiro Lobato, considerada sua obra-prima e publicada originalmente em 1918. Inaugura na literatura brasileira um regionalismo crítico e mais realista do que o praticado anteriormente, durante o romantismo.[1] A crônica que dá título ao livro traz uma visão depreciativa do caboclo brasileiro, chamado pelo autor de \"fazedor de desertos\", estereótipo contrário à visão romântica dos autores modernistas.
+					Urupês é uma coletânea de contos e crônicas do escritor brasileiro Monteiro Lobato, considerada sua obra-prima e publicada originalmente em 1918. Inaugura na literatura brasileira um regionalismo crítico e mais realista do que o praticado anteriormente, durante o romantismo. A crônica que dá título ao livro traz uma visão depreciativa do caboclo brasileiro, chamado pelo autor de \"fazedor de desertos\", estereótipo contrário à visão romântica dos autores modernistas.
 					<hr>
 						";
 					}
@@ -34,7 +34,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Urupês é uma coletânea de contos e crônicas do escritor brasileiro Monteiro Lobato, considerada sua obra-prima e publicada originalmente em 1918. Inaugura na literatura brasileira um regionalismo crítico e mais realista do que o praticado anteriormente, durante o romantismo.[1] A crônica que dá título ao livro traz uma visão depreciativa do caboclo brasileiro, chamado pelo autor de \"fazedor de desertos\", estereótipo contrário à visão romântica dos autores modernistas.
+					Urupês é uma coletânea de contos e crônicas do escritor brasileiro Monteiro Lobato, considerada sua obra-prima e publicada originalmente em 1918. Inaugura na literatura brasileira um regionalismo crítico e mais realista do que o praticado anteriormente, durante o romantismo. A crônica que dá título ao livro traz uma visão depreciativa do caboclo brasileiro, chamado pelo autor de \"fazedor de desertos\", estereótipo contrário à visão romântica dos autores modernistas.
 					<hr>
 						";
 					}
@@ -42,7 +42,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Urupês é uma coletânea de contos e crônicas do escritor brasileiro Monteiro Lobato, considerada sua obra-prima e publicada originalmente em 1918. Inaugura na literatura brasileira um regionalismo crítico e mais realista do que o praticado anteriormente, durante o romantismo.[1] A crônica que dá título ao livro traz uma visão depreciativa do caboclo brasileiro, chamado pelo autor de \"fazedor de desertos\", estereótipo contrário à visão romântica dos autores modernistas.
+					Urupês é uma coletânea de contos e crônicas do escritor brasileiro Monteiro Lobato, considerada sua obra-prima e publicada originalmente em 1918. Inaugura na literatura brasileira um regionalismo crítico e mais realista do que o praticado anteriormente, durante o romantismo. A crônica que dá título ao livro traz uma visão depreciativa do caboclo brasileiro, chamado pelo autor de \"fazedor de desertos\", estereótipo contrário à visão romântica dos autores modernistas.
 					<hr>
 						";
 					}

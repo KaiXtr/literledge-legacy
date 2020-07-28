@@ -100,19 +100,6 @@
 				if (($x != '00')&&($x != '01')) {echo '<li><a href="academies/'.$x.'"> '.$v.' </li></a>';}
 			}
 		?>
-		<li> <hr> </li>
-		<li> <h1>
-			<?php
-				if ($_COOKIE['lang'] == 'pt') {echo "Países";}
-				if ($_COOKIE['lang'] == 'en') {echo "Countries";}
-				if ($_COOKIE['lang'] == 'es') {echo "Países";}
-			?>
-		</h1> </li>
-		<?php
-			foreach ($coulst as $x => $v) {
-				echo '<li><a href="search.php?q=$all&c='.$x.'"> '.$v.' </li></a>';
-			}
-		?>
 		<li><br /></li>
 		<li><br /></li>
 		<li><br /></li>

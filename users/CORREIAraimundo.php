@@ -25,13 +25,13 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			Raimundo da Mota de Azevedo Correia (São Luís, 13 de maio de 1859 — Paris, 13 de setembro de 1911) foi um juiz e poeta brasileiro.
-			Nasceu a bordo do navio São Luís, ancorado em águas maranhenses, em 1859. Referindo-se a seu nascimento sobre as águas, costumava Raimundo dizer de si, pilhericamente, \"Sou um homem sem pátria; nasci no Oceano\".[1] Filho de família de classe elevada, foram seus pais o desembargador José da Mota de Azevedo Correia e Maria Clara Vieira da Mota de Azevedo Corrêa,[2] ambos naturais do Maranhão. Seu pai descendia dos duques de Caminha e era filho de pais portugueses.
+			Nasceu a bordo do navio São Luís, ancorado em águas maranhenses, em 1859. Referindo-se a seu nascimento sobre as águas, costumava Raimundo dizer de si, pilhericamente, \"Sou um homem sem pátria; nasci no Oceano\". Filho de família de classe elevada, foram seus pais o desembargador José da Mota de Azevedo Correia e Maria Clara Vieira da Mota de Azevedo Corrêa, ambos naturais do Maranhão. Seu pai descendia dos duques de Caminha e era filho de pais portugueses.
 
-			Realizou o curso secundário no Colégio Pedro II, no Rio de Janeiro. Em 1882 formou-se advogado pela Faculdade de Direito de São Paulo, localizada no Largo de São Francisco, conhecida como Faculdade do Largo São Francisco, desenvolvendo uma bem-sucedida carreira como Juiz de Direito no Rio de Janeiro e em Minas Gerais. Neste Estado, foi o primeiro Juiz de Direito da comarca de São Gonçalo do Sapucaí.[3]
+			Realizou o curso secundário no Colégio Pedro II, no Rio de Janeiro. Em 1882 formou-se advogado pela Faculdade de Direito de São Paulo, localizada no Largo de São Francisco, conhecida como Faculdade do Largo São Francisco, desenvolvendo uma bem-sucedida carreira como Juiz de Direito no Rio de Janeiro e em Minas Gerais. Neste Estado, foi o primeiro Juiz de Direito da comarca de São Gonçalo do Sapucaí.
 
-			Casou-se em 1884 com Mariana de Abreu Sodré (\"Zinha\"), tendo três filhas: Lavinia, Stella e Alexandrina. Sua filha, Stella Corrêa da Paixão, foi casada com Rodolpho Gustavo da Paixão Filho, filho do também poeta Rodolfo Gustavo da Paixão.[4]
+			Casou-se em 1884 com Mariana de Abreu Sodré (\"Zinha\"), tendo três filhas: Lavinia, Stella e Alexandrina. Sua filha, Stella Corrêa da Paixão, foi casada com Rodolpho Gustavo da Paixão Filho, filho do também poeta Rodolfo Gustavo da Paixão.
 
-			Teve um tio homônimo (1838-1889), que foi juiz.[4] Teve também um sobrinho que levou seu nome, Raimundo Correia Sobrinho, formado em direito e poeta como o tio, que escreveu um livro de poesias, Oração aos Aflitos, publicado em 1945 pela Livraria José Olympio Editora.
+			Teve um tio homônimo (1838-1889), que foi juiz. Teve também um sobrinho que levou seu nome, Raimundo Correia Sobrinho, formado em direito e poeta como o tio, que escreveu um livro de poesias, Oração aos Aflitos, publicado em 1945 pela Livraria José Olympio Editora.
 
 			Raimundo Correia iniciou a sua carreira poética com o livro Primeiros sonhos, revelando forte influência dos poetas românticos Fagundes Varela, Casimiro de Abreu e Castro Alves. Em 1883 com o livro Sinfonias, assume o parnasianismo e passa a integrar, ao lado de Alberto de Oliveira e Olavo Bilac, a chamada Tríade Parnasiana.
 
@@ -45,13 +45,13 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			Raimundo da Mota de Azevedo Correia (São Luís, 13 de maio de 1859 — Paris, 13 de setembro de 1911) foi um juiz e poeta brasileiro.
-			Nasceu a bordo do navio São Luís, ancorado em águas maranhenses, em 1859. Referindo-se a seu nascimento sobre as águas, costumava Raimundo dizer de si, pilhericamente, \"Sou um homem sem pátria; nasci no Oceano\".[1] Filho de família de classe elevada, foram seus pais o desembargador José da Mota de Azevedo Correia e Maria Clara Vieira da Mota de Azevedo Corrêa,[2] ambos naturais do Maranhão. Seu pai descendia dos duques de Caminha e era filho de pais portugueses.
+			Nasceu a bordo do navio São Luís, ancorado em águas maranhenses, em 1859. Referindo-se a seu nascimento sobre as águas, costumava Raimundo dizer de si, pilhericamente, \"Sou um homem sem pátria; nasci no Oceano\". Filho de família de classe elevada, foram seus pais o desembargador José da Mota de Azevedo Correia e Maria Clara Vieira da Mota de Azevedo Corrêa, ambos naturais do Maranhão. Seu pai descendia dos duques de Caminha e era filho de pais portugueses.
 
-			Realizou o curso secundário no Colégio Pedro II, no Rio de Janeiro. Em 1882 formou-se advogado pela Faculdade de Direito de São Paulo, localizada no Largo de São Francisco, conhecida como Faculdade do Largo São Francisco, desenvolvendo uma bem-sucedida carreira como Juiz de Direito no Rio de Janeiro e em Minas Gerais. Neste Estado, foi o primeiro Juiz de Direito da comarca de São Gonçalo do Sapucaí.[3]
+			Realizou o curso secundário no Colégio Pedro II, no Rio de Janeiro. Em 1882 formou-se advogado pela Faculdade de Direito de São Paulo, localizada no Largo de São Francisco, conhecida como Faculdade do Largo São Francisco, desenvolvendo uma bem-sucedida carreira como Juiz de Direito no Rio de Janeiro e em Minas Gerais. Neste Estado, foi o primeiro Juiz de Direito da comarca de São Gonçalo do Sapucaí.
 
-			Casou-se em 1884 com Mariana de Abreu Sodré (\"Zinha\"), tendo três filhas: Lavinia, Stella e Alexandrina. Sua filha, Stella Corrêa da Paixão, foi casada com Rodolpho Gustavo da Paixão Filho, filho do também poeta Rodolfo Gustavo da Paixão.[4]
+			Casou-se em 1884 com Mariana de Abreu Sodré (\"Zinha\"), tendo três filhas: Lavinia, Stella e Alexandrina. Sua filha, Stella Corrêa da Paixão, foi casada com Rodolpho Gustavo da Paixão Filho, filho do também poeta Rodolfo Gustavo da Paixão.
 
-			Teve um tio homônimo (1838-1889), que foi juiz.[4] Teve também um sobrinho que levou seu nome, Raimundo Correia Sobrinho, formado em direito e poeta como o tio, que escreveu um livro de poesias, Oração aos Aflitos, publicado em 1945 pela Livraria José Olympio Editora.
+			Teve um tio homônimo (1838-1889), que foi juiz. Teve também um sobrinho que levou seu nome, Raimundo Correia Sobrinho, formado em direito e poeta como o tio, que escreveu um livro de poesias, Oração aos Aflitos, publicado em 1945 pela Livraria José Olympio Editora.
 
 			Raimundo Correia iniciou a sua carreira poética com o livro Primeiros sonhos, revelando forte influência dos poetas românticos Fagundes Varela, Casimiro de Abreu e Castro Alves. Em 1883 com o livro Sinfonias, assume o parnasianismo e passa a integrar, ao lado de Alberto de Oliveira e Olavo Bilac, a chamada Tríade Parnasiana.
 
@@ -65,13 +65,13 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			Raimundo da Mota de Azevedo Correia (São Luís, 13 de maio de 1859 — Paris, 13 de setembro de 1911) foi um juiz e poeta brasileiro.
-			Nasceu a bordo do navio São Luís, ancorado em águas maranhenses, em 1859. Referindo-se a seu nascimento sobre as águas, costumava Raimundo dizer de si, pilhericamente, \"Sou um homem sem pátria; nasci no Oceano\".[1] Filho de família de classe elevada, foram seus pais o desembargador José da Mota de Azevedo Correia e Maria Clara Vieira da Mota de Azevedo Corrêa,[2] ambos naturais do Maranhão. Seu pai descendia dos duques de Caminha e era filho de pais portugueses.
+			Nasceu a bordo do navio São Luís, ancorado em águas maranhenses, em 1859. Referindo-se a seu nascimento sobre as águas, costumava Raimundo dizer de si, pilhericamente, \"Sou um homem sem pátria; nasci no Oceano\". Filho de família de classe elevada, foram seus pais o desembargador José da Mota de Azevedo Correia e Maria Clara Vieira da Mota de Azevedo Corrêa, ambos naturais do Maranhão. Seu pai descendia dos duques de Caminha e era filho de pais portugueses.
 
-			Realizou o curso secundário no Colégio Pedro II, no Rio de Janeiro. Em 1882 formou-se advogado pela Faculdade de Direito de São Paulo, localizada no Largo de São Francisco, conhecida como Faculdade do Largo São Francisco, desenvolvendo uma bem-sucedida carreira como Juiz de Direito no Rio de Janeiro e em Minas Gerais. Neste Estado, foi o primeiro Juiz de Direito da comarca de São Gonçalo do Sapucaí.[3]
+			Realizou o curso secundário no Colégio Pedro II, no Rio de Janeiro. Em 1882 formou-se advogado pela Faculdade de Direito de São Paulo, localizada no Largo de São Francisco, conhecida como Faculdade do Largo São Francisco, desenvolvendo uma bem-sucedida carreira como Juiz de Direito no Rio de Janeiro e em Minas Gerais. Neste Estado, foi o primeiro Juiz de Direito da comarca de São Gonçalo do Sapucaí.
 
-			Casou-se em 1884 com Mariana de Abreu Sodré (\"Zinha\"), tendo três filhas: Lavinia, Stella e Alexandrina. Sua filha, Stella Corrêa da Paixão, foi casada com Rodolpho Gustavo da Paixão Filho, filho do também poeta Rodolfo Gustavo da Paixão.[4]
+			Casou-se em 1884 com Mariana de Abreu Sodré (\"Zinha\"), tendo três filhas: Lavinia, Stella e Alexandrina. Sua filha, Stella Corrêa da Paixão, foi casada com Rodolpho Gustavo da Paixão Filho, filho do também poeta Rodolfo Gustavo da Paixão.
 
-			Teve um tio homônimo (1838-1889), que foi juiz.[4] Teve também um sobrinho que levou seu nome, Raimundo Correia Sobrinho, formado em direito e poeta como o tio, que escreveu um livro de poesias, Oração aos Aflitos, publicado em 1945 pela Livraria José Olympio Editora.
+			Teve um tio homônimo (1838-1889), que foi juiz. Teve também um sobrinho que levou seu nome, Raimundo Correia Sobrinho, formado em direito e poeta como o tio, que escreveu um livro de poesias, Oração aos Aflitos, publicado em 1945 pela Livraria José Olympio Editora.
 
 			Raimundo Correia iniciou a sua carreira poética com o livro Primeiros sonhos, revelando forte influência dos poetas românticos Fagundes Varela, Casimiro de Abreu e Castro Alves. Em 1883 com o livro Sinfonias, assume o parnasianismo e passa a integrar, ao lado de Alberto de Oliveira e Olavo Bilac, a chamada Tríade Parnasiana.
 

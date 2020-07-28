@@ -28,8 +28,19 @@
 		?>
 	</head>
 	<body>
-		<?php include 'design/header.php' ?>
-		<?php include 'design/lateralbar.php' ?>
+		<?php
+			include 'design/header.php';
+			include 'design/lateralbar.php';
+
+			#THANK
+			if ((@$_GET['a'])&&($_GET['a'] == '1')) {
+				echo "<div id='thank'>";
+				if ($_COOKIE['lang'] == 'pt') {echo "Obrigado por contribuir para o acervo!";}
+				if ($_COOKIE['lang'] == 'en') {echo "Thank you for contributing to the collection!";}
+				if ($_COOKIE['lang'] == 'es') {echo "¡Gracias por contribuir a la colección!";}
+				echo "</div>";
+			}
+		?>
 
 		<div class='content'>
 			<div class='login proedit'>

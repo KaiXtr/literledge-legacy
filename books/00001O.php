@@ -30,7 +30,7 @@
 
 					O livro narra as andanças e ensinamentos de um filósofo, que se autonomeou Zaratustra após a fundação do Zoroastrismo na antiga Pérsia. Para explorar muitas das ideias de Nietzsche, o livro usa uma forma poética e fictícia, frequentemente satirizando o Velho e Novo Testamento
 
-					O centro de Zaratustra é a noção de que os seres humanos são uma forma transicional entre macacos e o que Nietzsche chamou de Übermensch, literalmente \"além-do-homem\", normalmente traduzido como \"super-homem\".[1] O nome é um dos muitos trocadilhos no livro e se refere mais claramente à imagem do Sol vindo além do horizonte ao amanhecer como a simples noção de vitória.[carece de fontes]
+					O centro de Zaratustra é a noção de que os seres humanos são uma forma transicional entre macacos e o que Nietzsche chamou de Übermensch, literalmente \"além-do-homem\", normalmente traduzido como \"super-homem\". O nome é um dos muitos trocadilhos no livro e se refere mais claramente à imagem do Sol vindo além do horizonte ao amanhecer como a simples noção de vitória.[carece de fontes]
 
 					Amplamente baseado em episódios, as histórias em Zaratustra podem ser lidas em qualquer ordem. Zaratustra contém a famosa frase Gott ist tot (\"Deus está morto\"), embora essa também tenha aparecido anteriormente no livro Die fröhliche Wissenschaft (A Gaia Ciência) de Nietszche, e antes ainda em diversas obras de Georg Hegel.
 
@@ -46,7 +46,7 @@
 
 					O livro narra as andanças e ensinamentos de um filósofo, que se autonomeou Zaratustra após a fundação do Zoroastrismo na antiga Pérsia. Para explorar muitas das ideias de Nietzsche, o livro usa uma forma poética e fictícia, frequentemente satirizando o Velho e Novo Testamento
 
-					O centro de Zaratustra é a noção de que os seres humanos são uma forma transicional entre macacos e o que Nietzsche chamou de Übermensch, literalmente \"além-do-homem\", normalmente traduzido como \"super-homem\".[1] O nome é um dos muitos trocadilhos no livro e se refere mais claramente à imagem do Sol vindo além do horizonte ao amanhecer como a simples noção de vitória.[carece de fontes]
+					O centro de Zaratustra é a noção de que os seres humanos são uma forma transicional entre macacos e o que Nietzsche chamou de Übermensch, literalmente \"além-do-homem\", normalmente traduzido como \"super-homem\". O nome é um dos muitos trocadilhos no livro e se refere mais claramente à imagem do Sol vindo além do horizonte ao amanhecer como a simples noção de vitória.[carece de fontes]
 
 					Amplamente baseado em episódios, as histórias em Zaratustra podem ser lidas em qualquer ordem. Zaratustra contém a famosa frase Gott ist tot (\"Deus está morto\"), embora essa também tenha aparecido anteriormente no livro Die fröhliche Wissenschaft (A Gaia Ciência) de Nietszche, e antes ainda em diversas obras de Georg Hegel.
 
@@ -62,7 +62,7 @@
 
 					O livro narra as andanças e ensinamentos de um filósofo, que se autonomeou Zaratustra após a fundação do Zoroastrismo na antiga Pérsia. Para explorar muitas das ideias de Nietzsche, o livro usa uma forma poética e fictícia, frequentemente satirizando o Velho e Novo Testamento
 
-					O centro de Zaratustra é a noção de que os seres humanos são uma forma transicional entre macacos e o que Nietzsche chamou de Übermensch, literalmente \"além-do-homem\", normalmente traduzido como \"super-homem\".[1] O nome é um dos muitos trocadilhos no livro e se refere mais claramente à imagem do Sol vindo além do horizonte ao amanhecer como a simples noção de vitória.[carece de fontes]
+					O centro de Zaratustra é a noção de que os seres humanos são uma forma transicional entre macacos e o que Nietzsche chamou de Übermensch, literalmente \"além-do-homem\", normalmente traduzido como \"super-homem\". O nome é um dos muitos trocadilhos no livro e se refere mais claramente à imagem do Sol vindo além do horizonte ao amanhecer como a simples noção de vitória.[carece de fontes]
 
 					Amplamente baseado em episódios, as histórias em Zaratustra podem ser lidas em qualquer ordem. Zaratustra contém a famosa frase Gott ist tot (\"Deus está morto\"), embora essa também tenha aparecido anteriormente no livro Die fröhliche Wissenschaft (A Gaia Ciência) de Nietszche, e antes ainda em diversas obras de Georg Hegel.
 

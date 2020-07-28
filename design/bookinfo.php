@@ -22,6 +22,15 @@
 			$n = $find->fetch_assoc();
 			if ($n[$_COOKIE['lang']] == null) {$nm = $n['pt'];}
 			else {$nm = $n[$_COOKIE['lang']];}
+
+			#THANK
+			if ((@$_GET['a'])&&($_GET['a'] == '1')) {
+				echo "<div id='thank'>";
+				if ($_COOKIE['lang'] == 'pt') {echo "Tenha uma boa leitura!";}
+				if ($_COOKIE['lang'] == 'en') {echo "Have a good reading!";}
+				if ($_COOKIE['lang'] == 'es') {echo "Que tengas una buena lectura!";}
+				echo "</div>";
+			}
 			
 			if ($ech == '1') {
 				#WARNING
@@ -276,7 +285,8 @@
 
 						if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
 						#$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
-						$d = $d ."<tr onclick='window.location.href=".'"https://dl.dropboxusercontent.com/'.$e['link'].'"'.";'>
+						#window.location.href="'.$base_url.'books/'.$b['id'].'.php?a=1"
+						$d = $d ."<tr onclick='window.location.href=".'"https://dl.dropboxusercontent.com/'.$e['link'].'";'."'>
 							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th>
 							</tr>";
 						#inserir isto depois: <th>".$pr. "</th> <th>".$byt."</th>

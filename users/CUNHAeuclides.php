@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Euclides Rodrigues Pimenta da Cunha[nota 1] (Cantagalo, 20 de janeiro de 1866 — Rio de Janeiro, 15 de agosto de 1909)[1] foi um escritor e jornalista brasileiro. <br />
+			Euclides Rodrigues Pimenta da Cunha[nota 1] (Cantagalo, 20 de janeiro de 1866 — Rio de Janeiro, 15 de agosto de 1909) foi um escritor e jornalista brasileiro. <br />
 			<br />
 			Nascido em Cantagalo, estudou na Escola Politécnica e na Escola Militar da Praia Vermelha, tornando-se brevemente um militar. Ingressou no jornal <br />
 			A Província de S. Paulo — hoje O Estado de S. Paulo — enquanto recebia título de bacharel e primeiro-tenente. Em 1897, tornou-se jornalista <br />
@@ -47,7 +47,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Euclides Rodrigues Pimenta da Cunha[nota 1] (Cantagalo, 20 de janeiro de 1866 — Rio de Janeiro, 15 de agosto de 1909)[1] foi um escritor e jornalista brasileiro. <br />
+			Euclides Rodrigues Pimenta da Cunha[nota 1] (Cantagalo, 20 de janeiro de 1866 — Rio de Janeiro, 15 de agosto de 1909) foi um escritor e jornalista brasileiro. <br />
 			<br />
 			Nascido em Cantagalo, estudou na Escola Politécnica e na Escola Militar da Praia Vermelha, tornando-se brevemente um militar. Ingressou no jornal <br />
 			A Província de S. Paulo — hoje O Estado de S. Paulo — enquanto recebia título de bacharel e primeiro-tenente. Em 1897, tornou-se jornalista <br />
@@ -70,7 +70,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Euclides Rodrigues Pimenta da Cunha[nota 1] (Cantagalo, 20 de janeiro de 1866 — Rio de Janeiro, 15 de agosto de 1909)[1] foi um escritor e jornalista brasileiro. <br />
+			Euclides Rodrigues Pimenta da Cunha[nota 1] (Cantagalo, 20 de janeiro de 1866 — Rio de Janeiro, 15 de agosto de 1909) foi um escritor e jornalista brasileiro. <br />
 			<br />
 			Nascido em Cantagalo, estudou na Escola Politécnica e na Escola Militar da Praia Vermelha, tornando-se brevemente um militar. Ingressou no jornal <br />
 			A Província de S. Paulo — hoje O Estado de S. Paulo — enquanto recebia título de bacharel e primeiro-tenente. Em 1897, tornou-se jornalista <br />

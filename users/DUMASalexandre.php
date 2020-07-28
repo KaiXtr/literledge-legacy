@@ -27,7 +27,7 @@
 			Alexandre Dumas, conhecido como Alexandre Dumas, Pai (Villers-Cotterêts, 24 de julho de 1802 — Puys, 5 de dezembro de 1870), foi um romancista francês. <br />
 			Nasceu na região de Aisne, próximo a Paris. Era neto do marquês Alexandre Antoine Davy de la Pailleterie e de uma escrava <br />
 			(ou liberta, não se sabe ao certo) negra, Marie-Césette Dumas. Seu pai foi Thomas Alexandre Davy de la Pailleterie, mais conhecido como General Dumas, <br />
-			grande figura militar de sua época.[1] <br />
+			grande figura militar de sua época. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Alexandre_Dumas_(pai)' > Wikipedia </a>
 					";
@@ -37,7 +37,7 @@
 			Alexandre Dumas, conhecido como Alexandre Dumas, Pai (Villers-Cotterêts, 24 de julho de 1802 — Puys, 5 de dezembro de 1870), foi um romancista francês. <br />
 			Nasceu na região de Aisne, próximo a Paris. Era neto do marquês Alexandre Antoine Davy de la Pailleterie e de uma escrava <br />
 			(ou liberta, não se sabe ao certo) negra, Marie-Césette Dumas. Seu pai foi Thomas Alexandre Davy de la Pailleterie, mais conhecido como General Dumas, <br />
-			grande figura militar de sua época.[1] <br />
+			grande figura militar de sua época. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Alexandre_Dumas_(pai)' > Wikipedia </a>
 					";
@@ -47,7 +47,7 @@
 			Alexandre Dumas, conhecido como Alexandre Dumas, Pai (Villers-Cotterêts, 24 de julho de 1802 — Puys, 5 de dezembro de 1870), foi um romancista francês. <br />
 			Nasceu na região de Aisne, próximo a Paris. Era neto do marquês Alexandre Antoine Davy de la Pailleterie e de uma escrava <br />
 			(ou liberta, não se sabe ao certo) negra, Marie-Césette Dumas. Seu pai foi Thomas Alexandre Davy de la Pailleterie, mais conhecido como General Dumas, <br />
-			grande figura militar de sua época.[1] <br />
+			grande figura militar de sua época. <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Alexandre_Dumas_(pai)' > Wikipedia </a>
 					";

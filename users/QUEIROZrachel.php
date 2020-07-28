@@ -24,27 +24,27 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Rachel de Queiroz GOIH (Fortaleza, 17 de novembro de 1910 — Rio de Janeiro, 4 de novembro de 2003) foi uma tradutora, romancista, escritora, jornalista, cronista prolífica e importante dramaturga brasileira.[1]
+			Rachel de Queiroz GOIH (Fortaleza, 17 de novembro de 1910 — Rio de Janeiro, 4 de novembro de 2003) foi uma tradutora, romancista, escritora, jornalista, cronista prolífica e importante dramaturga brasileira.
 
-			Autora de destaque na ficção social nordestina. Foi a primeira mulher a ingressar na Academia Brasileira de Letras. Em 1993, foi a primeira mulher galardoada com o Prêmio Camões.[2] Ingressou na Academia Cearense de Letras no dia 15 de agosto de 1994, na ocasião do centenário da instituição.[3]
+			Autora de destaque na ficção social nordestina. Foi a primeira mulher a ingressar na Academia Brasileira de Letras. Em 1993, foi a primeira mulher galardoada com o Prêmio Camões. Ingressou na Academia Cearense de Letras no dia 15 de agosto de 1994, na ocasião do centenário da instituição.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Rachel_de_Queiroz' > Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Rachel de Queiroz GOIH (Fortaleza, 17 de novembro de 1910 — Rio de Janeiro, 4 de novembro de 2003) foi uma tradutora, romancista, escritora, jornalista, cronista prolífica e importante dramaturga brasileira.[1]
+			Rachel de Queiroz GOIH (Fortaleza, 17 de novembro de 1910 — Rio de Janeiro, 4 de novembro de 2003) foi uma tradutora, romancista, escritora, jornalista, cronista prolífica e importante dramaturga brasileira.
 
-			Autora de destaque na ficção social nordestina. Foi a primeira mulher a ingressar na Academia Brasileira de Letras. Em 1993, foi a primeira mulher galardoada com o Prêmio Camões.[2] Ingressou na Academia Cearense de Letras no dia 15 de agosto de 1994, na ocasião do centenário da instituição.[3]
+			Autora de destaque na ficção social nordestina. Foi a primeira mulher a ingressar na Academia Brasileira de Letras. Em 1993, foi a primeira mulher galardoada com o Prêmio Camões. Ingressou na Academia Cearense de Letras no dia 15 de agosto de 1994, na ocasião do centenário da instituição.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Rachel_de_Queiroz' > Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Rachel de Queiroz GOIH (Fortaleza, 17 de novembro de 1910 — Rio de Janeiro, 4 de novembro de 2003) foi uma tradutora, romancista, escritora, jornalista, cronista prolífica e importante dramaturga brasileira.[1]
+			Rachel de Queiroz GOIH (Fortaleza, 17 de novembro de 1910 — Rio de Janeiro, 4 de novembro de 2003) foi uma tradutora, romancista, escritora, jornalista, cronista prolífica e importante dramaturga brasileira.
 
-			Autora de destaque na ficção social nordestina. Foi a primeira mulher a ingressar na Academia Brasileira de Letras. Em 1993, foi a primeira mulher galardoada com o Prêmio Camões.[2] Ingressou na Academia Cearense de Letras no dia 15 de agosto de 1994, na ocasião do centenário da instituição.[3]
+			Autora de destaque na ficção social nordestina. Foi a primeira mulher a ingressar na Academia Brasileira de Letras. Em 1993, foi a primeira mulher galardoada com o Prêmio Camões. Ingressou na Academia Cearense de Letras no dia 15 de agosto de 1994, na ocasião do centenário da instituição.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Rachel_de_Queiroz' > Wikipedia </a>
 					";

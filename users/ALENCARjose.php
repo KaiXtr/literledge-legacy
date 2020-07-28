@@ -25,30 +25,30 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 				José Martiniano de Alencar (Messejana, 1 de maio de 1829 — Rio de Janeiro, 12 de dezembro de 1877) foi um escritor e político brasileiro. É notável como escritor por ter <br />
-				sido o fundador do romance de temática nacional, e por ser o patrono da cadeira fundada por Machado de Assis na Academia Brasileira de Letras.[1][2][3] <br />
+				sido o fundador do romance de temática nacional, e por ser o patrono da cadeira fundada por Machado de Assis na Academia Brasileira de Letras. <br />
 				 <br />
-				Na carreira política, foi notória a sua tenaz defesa da escravidão no Brasil quando ministro da Justiça do segundo reinado (ver Gabinete Itaboraí de 1868).[4][5][6] Era neto <br />
-				de Bárbara de Alencar, uma heroína da Revolução Pernambucana.[7] <br />
+				Na carreira política, foi notória a sua tenaz defesa da escravidão no Brasil quando ministro da Justiça do segundo reinado (ver Gabinete Itaboraí de 1868). Era neto <br />
+				de Bárbara de Alencar, uma heroína da Revolução Pernambucana. <br />
 				 <br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/José_de_Alencar' > Wikipedia </a>";
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 				José Martiniano de Alencar (Messejana, 1 de maio de 1829 — Rio de Janeiro, 12 de dezembro de 1877) foi um escritor e político brasileiro. É notável como escritor por ter <br />
-				sido o fundador do romance de temática nacional, e por ser o patrono da cadeira fundada por Machado de Assis na Academia Brasileira de Letras.[1][2][3] <br />
+				sido o fundador do romance de temática nacional, e por ser o patrono da cadeira fundada por Machado de Assis na Academia Brasileira de Letras. <br />
 				 <br />
-				Na carreira política, foi notória a sua tenaz defesa da escravidão no Brasil quando ministro da Justiça do segundo reinado (ver Gabinete Itaboraí de 1868).[4][5][6] Era neto <br />
-				de Bárbara de Alencar, uma heroína da Revolução Pernambucana.[7] <br />
+				Na carreira política, foi notória a sua tenaz defesa da escravidão no Brasil quando ministro da Justiça do segundo reinado (ver Gabinete Itaboraí de 1868). Era neto <br />
+				de Bárbara de Alencar, uma heroína da Revolução Pernambucana. <br />
 				 <br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/José_de_Alencar' > Wikipedia </a>";
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 				José Martiniano de Alencar (Messejana, 1 de maio de 1829 — Rio de Janeiro, 12 de dezembro de 1877) foi um escritor e político brasileiro. É notável como escritor por ter <br />
-				sido o fundador do romance de temática nacional, e por ser o patrono da cadeira fundada por Machado de Assis na Academia Brasileira de Letras.[1][2][3] <br />
+				sido o fundador do romance de temática nacional, e por ser o patrono da cadeira fundada por Machado de Assis na Academia Brasileira de Letras. <br />
 				 <br />
-				Na carreira política, foi notória a sua tenaz defesa da escravidão no Brasil quando ministro da Justiça do segundo reinado (ver Gabinete Itaboraí de 1868).[4][5][6] Era neto <br />
-				de Bárbara de Alencar, uma heroína da Revolução Pernambucana.[7] <br />
+				Na carreira política, foi notória a sua tenaz defesa da escravidão no Brasil quando ministro da Justiça do segundo reinado (ver Gabinete Itaboraí de 1868). Era neto <br />
+				de Bárbara de Alencar, uma heroína da Revolução Pernambucana. <br />
 				 <br />
 				Fonte: <a href='https://pt.wikipedia.org/wiki/José_de_Alencar' > Wikipedia </a>";
 				}

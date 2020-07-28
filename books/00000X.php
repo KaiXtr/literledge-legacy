@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Escrava Isaura é um romance escrito por Bernardo Guimarães em 1875 e publicado no mesmo ano pela B.L. Garnier, Rio de Janeiro. Com o romance, Bernardo Guimarães obteve fama, sendo reconhecido até pelo imperador do Brasil, Dom Pedro II.[1]
+					A Escrava Isaura é um romance escrito por Bernardo Guimarães em 1875 e publicado no mesmo ano pela B.L. Garnier, Rio de Janeiro. Com o romance, Bernardo Guimarães obteve fama, sendo reconhecido até pelo imperador do Brasil, Dom Pedro II.
 
 					Escrito em plena campanha abolicionista (1875), o livro conta as desventuras de Isaura, escrava branca e educada, de caráter nobre, vítima de um senhor devasso.
 
@@ -67,7 +67,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Escrava Isaura é um romance escrito por Bernardo Guimarães em 1875 e publicado no mesmo ano pela B.L. Garnier, Rio de Janeiro. Com o romance, Bernardo Guimarães obteve fama, sendo reconhecido até pelo imperador do Brasil, Dom Pedro II.[1]
+					A Escrava Isaura é um romance escrito por Bernardo Guimarães em 1875 e publicado no mesmo ano pela B.L. Garnier, Rio de Janeiro. Com o romance, Bernardo Guimarães obteve fama, sendo reconhecido até pelo imperador do Brasil, Dom Pedro II.
 
 					Escrito em plena campanha abolicionista (1875), o livro conta as desventuras de Isaura, escrava branca e educada, de caráter nobre, vítima de um senhor devasso.
 
@@ -108,7 +108,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Escrava Isaura é um romance escrito por Bernardo Guimarães em 1875 e publicado no mesmo ano pela B.L. Garnier, Rio de Janeiro. Com o romance, Bernardo Guimarães obteve fama, sendo reconhecido até pelo imperador do Brasil, Dom Pedro II.[1]
+					A Escrava Isaura é um romance escrito por Bernardo Guimarães em 1875 e publicado no mesmo ano pela B.L. Garnier, Rio de Janeiro. Com o romance, Bernardo Guimarães obteve fama, sendo reconhecido até pelo imperador do Brasil, Dom Pedro II.
 
 					Escrito em plena campanha abolicionista (1875), o livro conta as desventuras de Isaura, escrava branca e educada, de caráter nobre, vítima de um senhor devasso.
 

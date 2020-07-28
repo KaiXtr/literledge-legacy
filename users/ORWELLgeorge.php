@@ -24,13 +24,13 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Eric Arthur Blair (Motihari, Índia Britânica, 25 de junho de 1903[2][3] — Camden, Londres, Reino Unido, 21 de janeiro de 1950),[4] mais conhecido pelo pseudónimo <br />
+			Eric Arthur Blair (Motihari, Índia Britânica, 25 de junho de 1903 — Camden, Londres, Reino Unido, 21 de janeiro de 1950), mais conhecido pelo pseudónimo <br />
 			George Orwell, foi um escritor, jornalista e ensaísta político inglês, nascido na Índia Britânica. Sua obra é marcada por uma inteligência perspicaz e bem-humorada, <br />
-			uma consciência profunda das injustiças sociais, uma intensa oposição ao totalitarismo e uma paixão pela clareza da escrita.[5] Apontado como simpatizante <br />
-			da proposta anarquista, o escritor faz uma defesa da auto-gestão ou autonomismo. Sua hostilidade ao Stalinismo e pela experiência do socialismo soviético,[6] <br />
-			um regime que Orwell denunciou em seu romance satírico A Revolução dos Bichos[7][8], se revelou uma característica constante em sua obra. <br />
+			uma consciência profunda das injustiças sociais, uma intensa oposição ao totalitarismo e uma paixão pela clareza da escrita. Apontado como simpatizante <br />
+			da proposta anarquista, o escritor faz uma defesa da auto-gestão ou autonomismo. Sua hostilidade ao Stalinismo e pela experiência do socialismo soviético, <br />
+			um regime que Orwell denunciou em seu romance satírico A Revolução dos Bichos, se revelou uma característica constante em sua obra. <br />
 			<br />
-			Considerado talvez o melhor cronista da cultura inglesa do século XX,[9] Orwell dedicou-se a escrever resenhas, ficção, artigos jornalísticos polémicos, <br />
+			Considerado talvez o melhor cronista da cultura inglesa do século XX, Orwell dedicou-se a escrever resenhas, ficção, artigos jornalísticos polémicos, <br />
 			crítica literária e poesia. Ele é mais conhecido pelo romance distópico Nineteen Eighty-Four, escrito em 1949, e pela novela satírica Animal Farm (1945). <br />
 			Juntas, estas obras venderam mais cópias do que os dois livros mais vendidos de qualquer outro escritor do século XX.[10] Um outro livro de sua autoria, <br />
 			Homage to Catalonia (1938) - um relato de sua experiência como combatente voluntário no lado republicano da Guerra Civil Espanhola — também é altamente aclamado, <br />
@@ -46,13 +46,13 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Eric Arthur Blair (Motihari, Índia Britânica, 25 de junho de 1903[2][3] — Camden, Londres, Reino Unido, 21 de janeiro de 1950),[4] mais conhecido pelo pseudónimo <br />
+			Eric Arthur Blair (Motihari, Índia Britânica, 25 de junho de 1903 — Camden, Londres, Reino Unido, 21 de janeiro de 1950), mais conhecido pelo pseudónimo <br />
 			George Orwell, foi um escritor, jornalista e ensaísta político inglês, nascido na Índia Britânica. Sua obra é marcada por uma inteligência perspicaz e bem-humorada, <br />
-			uma consciência profunda das injustiças sociais, uma intensa oposição ao totalitarismo e uma paixão pela clareza da escrita.[5] Apontado como simpatizante <br />
-			da proposta anarquista, o escritor faz uma defesa da auto-gestão ou autonomismo. Sua hostilidade ao Stalinismo e pela experiência do socialismo soviético,[6] <br />
-			um regime que Orwell denunciou em seu romance satírico A Revolução dos Bichos[7][8], se revelou uma característica constante em sua obra. <br />
+			uma consciência profunda das injustiças sociais, uma intensa oposição ao totalitarismo e uma paixão pela clareza da escrita. Apontado como simpatizante <br />
+			da proposta anarquista, o escritor faz uma defesa da auto-gestão ou autonomismo. Sua hostilidade ao Stalinismo e pela experiência do socialismo soviético, <br />
+			um regime que Orwell denunciou em seu romance satírico A Revolução dos Bichos, se revelou uma característica constante em sua obra. <br />
 			<br />
-			Considerado talvez o melhor cronista da cultura inglesa do século XX,[9] Orwell dedicou-se a escrever resenhas, ficção, artigos jornalísticos polémicos, <br />
+			Considerado talvez o melhor cronista da cultura inglesa do século XX, Orwell dedicou-se a escrever resenhas, ficção, artigos jornalísticos polémicos, <br />
 			crítica literária e poesia. Ele é mais conhecido pelo romance distópico Nineteen Eighty-Four, escrito em 1949, e pela novela satírica Animal Farm (1945). <br />
 			Juntas, estas obras venderam mais cópias do que os dois livros mais vendidos de qualquer outro escritor do século XX.[10] Um outro livro de sua autoria, <br />
 			Homage to Catalonia (1938) - um relato de sua experiência como combatente voluntário no lado republicano da Guerra Civil Espanhola — também é altamente aclamado, <br />
@@ -68,13 +68,13 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Eric Arthur Blair (Motihari, Índia Britânica, 25 de junho de 1903[2][3] — Camden, Londres, Reino Unido, 21 de janeiro de 1950),[4] mais conhecido pelo pseudónimo <br />
+			Eric Arthur Blair (Motihari, Índia Britânica, 25 de junho de 1903 — Camden, Londres, Reino Unido, 21 de janeiro de 1950), mais conhecido pelo pseudónimo <br />
 			George Orwell, foi um escritor, jornalista e ensaísta político inglês, nascido na Índia Britânica. Sua obra é marcada por uma inteligência perspicaz e bem-humorada, <br />
-			uma consciência profunda das injustiças sociais, uma intensa oposição ao totalitarismo e uma paixão pela clareza da escrita.[5] Apontado como simpatizante <br />
-			da proposta anarquista, o escritor faz uma defesa da auto-gestão ou autonomismo. Sua hostilidade ao Stalinismo e pela experiência do socialismo soviético,[6] <br />
-			um regime que Orwell denunciou em seu romance satírico A Revolução dos Bichos[7][8], se revelou uma característica constante em sua obra. <br />
+			uma consciência profunda das injustiças sociais, uma intensa oposição ao totalitarismo e uma paixão pela clareza da escrita. Apontado como simpatizante <br />
+			da proposta anarquista, o escritor faz uma defesa da auto-gestão ou autonomismo. Sua hostilidade ao Stalinismo e pela experiência do socialismo soviético, <br />
+			um regime que Orwell denunciou em seu romance satírico A Revolução dos Bichos, se revelou uma característica constante em sua obra. <br />
 			<br />
-			Considerado talvez o melhor cronista da cultura inglesa do século XX,[9] Orwell dedicou-se a escrever resenhas, ficção, artigos jornalísticos polémicos, <br />
+			Considerado talvez o melhor cronista da cultura inglesa do século XX, Orwell dedicou-se a escrever resenhas, ficção, artigos jornalísticos polémicos, <br />
 			crítica literária e poesia. Ele é mais conhecido pelo romance distópico Nineteen Eighty-Four, escrito em 1949, e pela novela satírica Animal Farm (1945). <br />
 			Juntas, estas obras venderam mais cópias do que os dois livros mais vendidos de qualquer outro escritor do século XX.[10] Um outro livro de sua autoria, <br />
 			Homage to Catalonia (1938) - um relato de sua experiência como combatente voluntário no lado republicano da Guerra Civil Espanhola — também é altamente aclamado, <br />

@@ -24,33 +24,33 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Jorge Leal Amado de Faria OMC • GOSE • GOIH• CBJM ou apenas Jorge Amado (Itabuna, 10 de agosto de 1912 — Salvador, 6 de agosto de 2001) foi um dos mais famosos e traduzidos escritores brasileiros de todos os tempos.[5][6] Jorge Amado é o autor mais adaptado do cinema, do teatro e da televisão. Verdadeiros sucessos como Dona Flor e Seus Dois Maridos, Tenda dos Milagres, Tieta do Agreste, Gabriela, Cravo e Canela e Tereza Batista Cansada de Guerra foram criações suas.[7] Sua obra literária – 49 livros, ao todo – também já foi tema de escolas de samba por todo o País. Seus livros foram traduzidos em 80 países, em 49 idiomas,[8] bem como em braille e em fitas gravadas para cegos.[5]
+			Jorge Leal Amado de Faria OMC • GOSE • GOIH• CBJM ou apenas Jorge Amado (Itabuna, 10 de agosto de 1912 — Salvador, 6 de agosto de 2001) foi um dos mais famosos e traduzidos escritores brasileiros de todos os tempos. Jorge Amado é o autor mais adaptado do cinema, do teatro e da televisão. Verdadeiros sucessos como Dona Flor e Seus Dois Maridos, Tenda dos Milagres, Tieta do Agreste, Gabriela, Cravo e Canela e Tereza Batista Cansada de Guerra foram criações suas. Sua obra literária – 49 livros, ao todo – também já foi tema de escolas de samba por todo o País. Seus livros foram traduzidos em 80 países, em 49 idiomas, bem como em braille e em fitas gravadas para cegos.
 
 			Integrou os quadros da intelectualidade comunista brasileira desde o final da primeira metade do século XX - ideologia presente em várias obras, como a retratação dos moradores do trapiche baiano em Capitães da Areia, de 1937. Em 1995, já descrente dos resultados práticos do comunismo, deixa o PCB (Partido Comunista Brasileiro), despejando fortes críticas à ideologia comunista.
 
-			Jorge foi superado, em número de vendas, apenas por Paulo Coelho. Mas em seu estilo - o romance ficcional -, não há paralelo no Brasil. Em 1994, a sua obra foi reconhecida com o Prémio Camões.[9]
+			Jorge foi superado, em número de vendas, apenas por Paulo Coelho. Mas em seu estilo - o romance ficcional -, não há paralelo no Brasil. Em 1994, a sua obra foi reconhecida com o Prémio Camões.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Jorge_Amado' > Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Jorge Leal Amado de Faria OMC • GOSE • GOIH• CBJM ou apenas Jorge Amado (Itabuna, 10 de agosto de 1912 — Salvador, 6 de agosto de 2001) foi um dos mais famosos e traduzidos escritores brasileiros de todos os tempos.[5][6] Jorge Amado é o autor mais adaptado do cinema, do teatro e da televisão. Verdadeiros sucessos como Dona Flor e Seus Dois Maridos, Tenda dos Milagres, Tieta do Agreste, Gabriela, Cravo e Canela e Tereza Batista Cansada de Guerra foram criações suas.[7] Sua obra literária – 49 livros, ao todo – também já foi tema de escolas de samba por todo o País. Seus livros foram traduzidos em 80 países, em 49 idiomas,[8] bem como em braille e em fitas gravadas para cegos.[5]
+			Jorge Leal Amado de Faria OMC • GOSE • GOIH• CBJM ou apenas Jorge Amado (Itabuna, 10 de agosto de 1912 — Salvador, 6 de agosto de 2001) foi um dos mais famosos e traduzidos escritores brasileiros de todos os tempos. Jorge Amado é o autor mais adaptado do cinema, do teatro e da televisão. Verdadeiros sucessos como Dona Flor e Seus Dois Maridos, Tenda dos Milagres, Tieta do Agreste, Gabriela, Cravo e Canela e Tereza Batista Cansada de Guerra foram criações suas. Sua obra literária – 49 livros, ao todo – também já foi tema de escolas de samba por todo o País. Seus livros foram traduzidos em 80 países, em 49 idiomas, bem como em braille e em fitas gravadas para cegos.
 
 			Integrou os quadros da intelectualidade comunista brasileira desde o final da primeira metade do século XX - ideologia presente em várias obras, como a retratação dos moradores do trapiche baiano em Capitães da Areia, de 1937. Em 1995, já descrente dos resultados práticos do comunismo, deixa o PCB (Partido Comunista Brasileiro), despejando fortes críticas à ideologia comunista.
 
-			Jorge foi superado, em número de vendas, apenas por Paulo Coelho. Mas em seu estilo - o romance ficcional -, não há paralelo no Brasil. Em 1994, a sua obra foi reconhecida com o Prémio Camões.[9]
+			Jorge foi superado, em número de vendas, apenas por Paulo Coelho. Mas em seu estilo - o romance ficcional -, não há paralelo no Brasil. Em 1994, a sua obra foi reconhecida com o Prémio Camões.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Jorge_Amado' > Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Jorge Leal Amado de Faria OMC • GOSE • GOIH• CBJM ou apenas Jorge Amado (Itabuna, 10 de agosto de 1912 — Salvador, 6 de agosto de 2001) foi um dos mais famosos e traduzidos escritores brasileiros de todos os tempos.[5][6] Jorge Amado é o autor mais adaptado do cinema, do teatro e da televisão. Verdadeiros sucessos como Dona Flor e Seus Dois Maridos, Tenda dos Milagres, Tieta do Agreste, Gabriela, Cravo e Canela e Tereza Batista Cansada de Guerra foram criações suas.[7] Sua obra literária – 49 livros, ao todo – também já foi tema de escolas de samba por todo o País. Seus livros foram traduzidos em 80 países, em 49 idiomas,[8] bem como em braille e em fitas gravadas para cegos.[5]
+			Jorge Leal Amado de Faria OMC • GOSE • GOIH• CBJM ou apenas Jorge Amado (Itabuna, 10 de agosto de 1912 — Salvador, 6 de agosto de 2001) foi um dos mais famosos e traduzidos escritores brasileiros de todos os tempos. Jorge Amado é o autor mais adaptado do cinema, do teatro e da televisão. Verdadeiros sucessos como Dona Flor e Seus Dois Maridos, Tenda dos Milagres, Tieta do Agreste, Gabriela, Cravo e Canela e Tereza Batista Cansada de Guerra foram criações suas. Sua obra literária – 49 livros, ao todo – também já foi tema de escolas de samba por todo o País. Seus livros foram traduzidos em 80 países, em 49 idiomas, bem como em braille e em fitas gravadas para cegos.
 
 			Integrou os quadros da intelectualidade comunista brasileira desde o final da primeira metade do século XX - ideologia presente em várias obras, como a retratação dos moradores do trapiche baiano em Capitães da Areia, de 1937. Em 1995, já descrente dos resultados práticos do comunismo, deixa o PCB (Partido Comunista Brasileiro), despejando fortes críticas à ideologia comunista.
 
-			Jorge foi superado, em número de vendas, apenas por Paulo Coelho. Mas em seu estilo - o romance ficcional -, não há paralelo no Brasil. Em 1994, a sua obra foi reconhecida com o Prémio Camões.[9]
+			Jorge foi superado, em número de vendas, apenas por Paulo Coelho. Mas em seu estilo - o romance ficcional -, não há paralelo no Brasil. Em 1994, a sua obra foi reconhecida com o Prémio Camões.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Jorge_Amado' > Wikipedia </a>
 					";

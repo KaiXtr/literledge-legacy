@@ -26,7 +26,7 @@
 					echo "
 			Manuel Botelho de Oliveira (Salvador, 1636 — Salvador, 5 de janeiro de 1711) foi um advogado, político e um poeta barroco do Brasil Colônia. Foi o primeiro autor nascido no Brasil a ter um livro publicado.
 
-			Filho de um capitão de infantaria, cursou Direito na Universidade de Coimbra, em Portugal.[1] De volta ao Brasil, passou a exercer a advocacia e foi eleito vereador da Câmara de Salvador. Em 1694 tornou-se capitão-mor dos distritos de Papagaio, Rio do Peixe e Gameleira, cargo obtido em função de empréstimo de 22 mil cruzados para a criação da Casa da Moeda, na Bahia.
+			Filho de um capitão de infantaria, cursou Direito na Universidade de Coimbra, em Portugal. De volta ao Brasil, passou a exercer a advocacia e foi eleito vereador da Câmara de Salvador. Em 1694 tornou-se capitão-mor dos distritos de Papagaio, Rio do Peixe e Gameleira, cargo obtido em função de empréstimo de 22 mil cruzados para a criação da Casa da Moeda, na Bahia.
 
 			Manuel Botelho de Oliveira conviveu com Gregório de Matos e versou sobre os temas correntes da poesia de seu tempo.
 			<br />
@@ -37,7 +37,7 @@
 					echo "
 			Manuel Botelho de Oliveira (Salvador, 1636 — Salvador, 5 de janeiro de 1711) foi um advogado, político e um poeta barroco do Brasil Colônia. Foi o primeiro autor nascido no Brasil a ter um livro publicado.
 
-			Filho de um capitão de infantaria, cursou Direito na Universidade de Coimbra, em Portugal.[1] De volta ao Brasil, passou a exercer a advocacia e foi eleito vereador da Câmara de Salvador. Em 1694 tornou-se capitão-mor dos distritos de Papagaio, Rio do Peixe e Gameleira, cargo obtido em função de empréstimo de 22 mil cruzados para a criação da Casa da Moeda, na Bahia.
+			Filho de um capitão de infantaria, cursou Direito na Universidade de Coimbra, em Portugal. De volta ao Brasil, passou a exercer a advocacia e foi eleito vereador da Câmara de Salvador. Em 1694 tornou-se capitão-mor dos distritos de Papagaio, Rio do Peixe e Gameleira, cargo obtido em função de empréstimo de 22 mil cruzados para a criação da Casa da Moeda, na Bahia.
 
 			Manuel Botelho de Oliveira conviveu com Gregório de Matos e versou sobre os temas correntes da poesia de seu tempo.
 			<br />
@@ -48,7 +48,7 @@
 					echo "
 			Manuel Botelho de Oliveira (Salvador, 1636 — Salvador, 5 de janeiro de 1711) foi um advogado, político e um poeta barroco do Brasil Colônia. Foi o primeiro autor nascido no Brasil a ter um livro publicado.
 
-			Filho de um capitão de infantaria, cursou Direito na Universidade de Coimbra, em Portugal.[1] De volta ao Brasil, passou a exercer a advocacia e foi eleito vereador da Câmara de Salvador. Em 1694 tornou-se capitão-mor dos distritos de Papagaio, Rio do Peixe e Gameleira, cargo obtido em função de empréstimo de 22 mil cruzados para a criação da Casa da Moeda, na Bahia.
+			Filho de um capitão de infantaria, cursou Direito na Universidade de Coimbra, em Portugal. De volta ao Brasil, passou a exercer a advocacia e foi eleito vereador da Câmara de Salvador. Em 1694 tornou-se capitão-mor dos distritos de Papagaio, Rio do Peixe e Gameleira, cargo obtido em função de empréstimo de 22 mil cruzados para a criação da Casa da Moeda, na Bahia.
 
 			Manuel Botelho de Oliveira conviveu com Gregório de Matos e versou sobre os temas correntes da poesia de seu tempo.
 			<br />

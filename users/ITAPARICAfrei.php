@@ -25,7 +25,7 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			Frei Itaparica, ou Frei Manuel de Santa Maria (Ilha de Itaparica, 1704 — Itaparica, c. 1768) foi um frade franciscano e um poeta barroco brasileiro.
-			Pouco se conhece da sua vida, sabendo-se apenas que professou na Ordem dos Frades Menores, no convento de Cabaceiras do Paraguaçu, dedicando-se, mais tarde, ao púlpito.[1][2][3]
+			Pouco se conhece da sua vida, sabendo-se apenas que professou na Ordem dos Frades Menores, no convento de Cabaceiras do Paraguaçu, dedicando-se, mais tarde, ao púlpito.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_de_Santa_Maria'> Wikipedia </a>
 					";
@@ -33,7 +33,7 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			Frei Itaparica, ou Frei Manuel de Santa Maria (Ilha de Itaparica, 1704 — Itaparica, c. 1768) foi um frade franciscano e um poeta barroco brasileiro.
-			Pouco se conhece da sua vida, sabendo-se apenas que professou na Ordem dos Frades Menores, no convento de Cabaceiras do Paraguaçu, dedicando-se, mais tarde, ao púlpito.[1][2][3]
+			Pouco se conhece da sua vida, sabendo-se apenas que professou na Ordem dos Frades Menores, no convento de Cabaceiras do Paraguaçu, dedicando-se, mais tarde, ao púlpito.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_de_Santa_Maria'> Wikipedia </a>
 					";
@@ -41,7 +41,7 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			Frei Itaparica, ou Frei Manuel de Santa Maria (Ilha de Itaparica, 1704 — Itaparica, c. 1768) foi um frade franciscano e um poeta barroco brasileiro.
-			Pouco se conhece da sua vida, sabendo-se apenas que professou na Ordem dos Frades Menores, no convento de Cabaceiras do Paraguaçu, dedicando-se, mais tarde, ao púlpito.[1][2][3]
+			Pouco se conhece da sua vida, sabendo-se apenas que professou na Ordem dos Frades Menores, no convento de Cabaceiras do Paraguaçu, dedicando-se, mais tarde, ao púlpito.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Manuel_de_Santa_Maria'> Wikipedia </a>
 					";

@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas[1][2][3][4] do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.[5]
+					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.
 					<hr>
 						";
 					}
@@ -34,7 +34,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas[1][2][3][4] do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.[5]
+					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.
 					<hr>
 						";
 					}
@@ -42,7 +42,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas[1][2][3][4] do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.[5]
+					O Patinho Feio (em dinamarquês Den grimme ælling) é um conto de fadas do escritor dinamarquês Hans Christian Andersen, publicado pela primeira vez em 11 de Novembro de 1843 em Nye Eventyr. Første Bind. Første Samling. 1844.
 					<hr>
 						";
 					}

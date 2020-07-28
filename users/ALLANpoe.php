@@ -25,10 +25,10 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			Edgar Allan Poe (nascido Edgar Poe; Boston, Massachusetts, Estados Unidos, 19 de Janeiro de 1809 — Baltimore, Maryland, Estados Unidos, 7 de Outubro de 1849) <br />
-			foi um autor, poeta, editor e crítico literário estadunidense, integrante do movimento romântico em seu país.[1][2] Conhecido por suas histórias que envolvem <br />
+			foi um autor, poeta, editor e crítico literário estadunidense, integrante do movimento romântico em seu país. Conhecido por suas histórias que envolvem <br />
 			o mistério e o macabro, Poe foi um dos primeiros escritores norte-americanos de contos e é geralmente considerado o inventor do gênero ficção policial, <br />
-			também recebendo crédito por sua contribuição ao emergente gênero de ficção científica.[3] Ele foi o primeiro escritor americano conhecido por tentar <br />
-			ganhar a vida através da escrita por si só, resultando em uma vida e carreira financeiramente difíceis.[4] <br />
+			também recebendo crédito por sua contribuição ao emergente gênero de ficção científica. Ele foi o primeiro escritor americano conhecido por tentar <br />
+			ganhar a vida através da escrita por si só, resultando em uma vida e carreira financeiramente difíceis. <br />
 			<br />
 			Ele nasceu como Edgar Poe, em Boston, Massachusetts; quando jovem, ficou órfão de mãe, que morreu pouco depois de seu pai abandonar a família. <br />
 			Poe foi acolhido por Francis Allan e o seu marido John Allan, de Richmond, Virginia, mas nunca foi formalmente adotado. Ele frequentou a <br />
@@ -41,7 +41,7 @@
 			sua prima de 13 anos de idade. Em 1845, Poe publicou seu poema The Raven, foi um sucesso instantâneo. Sua esposa morreu de tuberculose dois anos após a <br />
 			publicação. Ele começou a planejar a criação de seu próprio jornal, The Penn (posteriormente renomeado para The Stylus), porém, em 7 de outubro de 1849, <br />
 			aos 40 anos, morreu antes que pudesse ser produzido. A causa de sua morte é desconhecida e foi por diversas vezes atribuída ao álcool, congestão cerebral, <br />
-			cólera, drogas, doenças cardiovasculares, raiva, suicídio, tuberculose entre outros agentes.[5] <br />
+			cólera, drogas, doenças cardiovasculares, raiva, suicídio, tuberculose entre outros agentes. <br />
 			<br />
 			Poe e suas obras influenciaram a literatura nos Estados Unidos e ao redor do mundo, bem como em campos especializados, tais como a cosmologia e a criptografia. <br />
 			Poe e seu trabalho aparecem ao longo da cultura popular na literatura, música, filmes e televisão. Várias de suas casas são dedicadas como museus atualmente. <br />
@@ -51,10 +51,10 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			Edgar Allan Poe (nascido Edgar Poe; Boston, Massachusetts, Estados Unidos, 19 de Janeiro de 1809 — Baltimore, Maryland, Estados Unidos, 7 de Outubro de 1849) <br />
-			foi um autor, poeta, editor e crítico literário estadunidense, integrante do movimento romântico em seu país.[1][2] Conhecido por suas histórias que envolvem <br />
+			foi um autor, poeta, editor e crítico literário estadunidense, integrante do movimento romântico em seu país. Conhecido por suas histórias que envolvem <br />
 			o mistério e o macabro, Poe foi um dos primeiros escritores norte-americanos de contos e é geralmente considerado o inventor do gênero ficção policial, <br />
-			também recebendo crédito por sua contribuição ao emergente gênero de ficção científica.[3] Ele foi o primeiro escritor americano conhecido por tentar <br />
-			ganhar a vida através da escrita por si só, resultando em uma vida e carreira financeiramente difíceis.[4] <br />
+			também recebendo crédito por sua contribuição ao emergente gênero de ficção científica. Ele foi o primeiro escritor americano conhecido por tentar <br />
+			ganhar a vida através da escrita por si só, resultando em uma vida e carreira financeiramente difíceis. <br />
 			<br />
 			Ele nasceu como Edgar Poe, em Boston, Massachusetts; quando jovem, ficou órfão de mãe, que morreu pouco depois de seu pai abandonar a família. <br />
 			Poe foi acolhido por Francis Allan e o seu marido John Allan, de Richmond, Virginia, mas nunca foi formalmente adotado. Ele frequentou a <br />
@@ -67,7 +67,7 @@
 			sua prima de 13 anos de idade. Em 1845, Poe publicou seu poema The Raven, foi um sucesso instantâneo. Sua esposa morreu de tuberculose dois anos após a <br />
 			publicação. Ele começou a planejar a criação de seu próprio jornal, The Penn (posteriormente renomeado para The Stylus), porém, em 7 de outubro de 1849, <br />
 			aos 40 anos, morreu antes que pudesse ser produzido. A causa de sua morte é desconhecida e foi por diversas vezes atribuída ao álcool, congestão cerebral, <br />
-			cólera, drogas, doenças cardiovasculares, raiva, suicídio, tuberculose entre outros agentes.[5] <br />
+			cólera, drogas, doenças cardiovasculares, raiva, suicídio, tuberculose entre outros agentes. <br />
 			<br />
 			Poe e suas obras influenciaram a literatura nos Estados Unidos e ao redor do mundo, bem como em campos especializados, tais como a cosmologia e a criptografia. <br />
 			Poe e seu trabalho aparecem ao longo da cultura popular na literatura, música, filmes e televisão. Várias de suas casas são dedicadas como museus atualmente. <br />
@@ -77,10 +77,10 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			Edgar Allan Poe (nascido Edgar Poe; Boston, Massachusetts, Estados Unidos, 19 de Janeiro de 1809 — Baltimore, Maryland, Estados Unidos, 7 de Outubro de 1849) <br />
-			foi um autor, poeta, editor e crítico literário estadunidense, integrante do movimento romântico em seu país.[1][2] Conhecido por suas histórias que envolvem <br />
+			foi um autor, poeta, editor e crítico literário estadunidense, integrante do movimento romântico em seu país. Conhecido por suas histórias que envolvem <br />
 			o mistério e o macabro, Poe foi um dos primeiros escritores norte-americanos de contos e é geralmente considerado o inventor do gênero ficção policial, <br />
-			também recebendo crédito por sua contribuição ao emergente gênero de ficção científica.[3] Ele foi o primeiro escritor americano conhecido por tentar <br />
-			ganhar a vida através da escrita por si só, resultando em uma vida e carreira financeiramente difíceis.[4] <br />
+			também recebendo crédito por sua contribuição ao emergente gênero de ficção científica. Ele foi o primeiro escritor americano conhecido por tentar <br />
+			ganhar a vida através da escrita por si só, resultando em uma vida e carreira financeiramente difíceis. <br />
 			<br />
 			Ele nasceu como Edgar Poe, em Boston, Massachusetts; quando jovem, ficou órfão de mãe, que morreu pouco depois de seu pai abandonar a família. <br />
 			Poe foi acolhido por Francis Allan e o seu marido John Allan, de Richmond, Virginia, mas nunca foi formalmente adotado. Ele frequentou a <br />
@@ -93,7 +93,7 @@
 			sua prima de 13 anos de idade. Em 1845, Poe publicou seu poema The Raven, foi um sucesso instantâneo. Sua esposa morreu de tuberculose dois anos após a <br />
 			publicação. Ele começou a planejar a criação de seu próprio jornal, The Penn (posteriormente renomeado para The Stylus), porém, em 7 de outubro de 1849, <br />
 			aos 40 anos, morreu antes que pudesse ser produzido. A causa de sua morte é desconhecida e foi por diversas vezes atribuída ao álcool, congestão cerebral, <br />
-			cólera, drogas, doenças cardiovasculares, raiva, suicídio, tuberculose entre outros agentes.[5] <br />
+			cólera, drogas, doenças cardiovasculares, raiva, suicídio, tuberculose entre outros agentes. <br />
 			<br />
 			Poe e suas obras influenciaram a literatura nos Estados Unidos e ao redor do mundo, bem como em campos especializados, tais como a cosmologia e a criptografia. <br />
 			Poe e seu trabalho aparecem ao longo da cultura popular na literatura, música, filmes e televisão. Várias de suas casas são dedicadas como museus atualmente. <br />

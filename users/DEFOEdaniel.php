@@ -24,8 +24,8 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Daniel Defoe (Londres, 1660 – Londres, 21 de Abril de 1731) foi um escritor e jornalista inglês, famoso pelo seu livro Robinson Crusoé[1].
-			Nasceu em Londres, provavelmente na paróquia de St. Giles Cripplegate. Foi aluno de Charles Morton cujo estilo, juntamente com John Bunyan e da oratória da época, poderá tê-lo influenciado construtivamente. Depois de acabados os estudos, tornou-se comerciante, embora a sua tendência para a especulação não tenha favorecido essa carreira[2] Escreveu panfletos famosos, muitos deles favoráveis a Guilherme III. Fundou e incrementou o jornal periódico The Review quase sozinho, desenvolvendo um trabalho que viria a favorecer a afirmação dos famosos The Tatler e The Spectator.
+			Daniel Defoe (Londres, 1660 – Londres, 21 de Abril de 1731) foi um escritor e jornalista inglês, famoso pelo seu livro Robinson Crusoé.
+			Nasceu em Londres, provavelmente na paróquia de St. Giles Cripplegate. Foi aluno de Charles Morton cujo estilo, juntamente com John Bunyan e da oratória da época, poderá tê-lo influenciado construtivamente. Depois de acabados os estudos, tornou-se comerciante, embora a sua tendência para a especulação não tenha favorecido essa carreira Escreveu panfletos famosos, muitos deles favoráveis a Guilherme III. Fundou e incrementou o jornal periódico The Review quase sozinho, desenvolvendo um trabalho que viria a favorecer a afirmação dos famosos The Tatler e The Spectator.
 
 			Contudo, foi graças a Robinson Crusoe, de 1719, que ficou famoso. Os críticos consideram que a forma moderna do romance nasceu como um texto narrativo, que, partindo das memórias de alguns viajantes, nomeadamente do marinheiro escocês Alexander Selkirk, configura um relato cuja verdade depende sobretudo da acumulação de pormenores concretos.
 
@@ -42,8 +42,8 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Daniel Defoe (Londres, 1660 – Londres, 21 de Abril de 1731) foi um escritor e jornalista inglês, famoso pelo seu livro Robinson Crusoé[1].
-			Nasceu em Londres, provavelmente na paróquia de St. Giles Cripplegate. Foi aluno de Charles Morton cujo estilo, juntamente com John Bunyan e da oratória da época, poderá tê-lo influenciado construtivamente. Depois de acabados os estudos, tornou-se comerciante, embora a sua tendência para a especulação não tenha favorecido essa carreira[2] Escreveu panfletos famosos, muitos deles favoráveis a Guilherme III. Fundou e incrementou o jornal periódico The Review quase sozinho, desenvolvendo um trabalho que viria a favorecer a afirmação dos famosos The Tatler e The Spectator.
+			Daniel Defoe (Londres, 1660 – Londres, 21 de Abril de 1731) foi um escritor e jornalista inglês, famoso pelo seu livro Robinson Crusoé.
+			Nasceu em Londres, provavelmente na paróquia de St. Giles Cripplegate. Foi aluno de Charles Morton cujo estilo, juntamente com John Bunyan e da oratória da época, poderá tê-lo influenciado construtivamente. Depois de acabados os estudos, tornou-se comerciante, embora a sua tendência para a especulação não tenha favorecido essa carreira Escreveu panfletos famosos, muitos deles favoráveis a Guilherme III. Fundou e incrementou o jornal periódico The Review quase sozinho, desenvolvendo um trabalho que viria a favorecer a afirmação dos famosos The Tatler e The Spectator.
 
 			Contudo, foi graças a Robinson Crusoe, de 1719, que ficou famoso. Os críticos consideram que a forma moderna do romance nasceu como um texto narrativo, que, partindo das memórias de alguns viajantes, nomeadamente do marinheiro escocês Alexander Selkirk, configura um relato cuja verdade depende sobretudo da acumulação de pormenores concretos.
 
@@ -60,8 +60,8 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Daniel Defoe (Londres, 1660 – Londres, 21 de Abril de 1731) foi um escritor e jornalista inglês, famoso pelo seu livro Robinson Crusoé[1].
-			Nasceu em Londres, provavelmente na paróquia de St. Giles Cripplegate. Foi aluno de Charles Morton cujo estilo, juntamente com John Bunyan e da oratória da época, poderá tê-lo influenciado construtivamente. Depois de acabados os estudos, tornou-se comerciante, embora a sua tendência para a especulação não tenha favorecido essa carreira[2] Escreveu panfletos famosos, muitos deles favoráveis a Guilherme III. Fundou e incrementou o jornal periódico The Review quase sozinho, desenvolvendo um trabalho que viria a favorecer a afirmação dos famosos The Tatler e The Spectator.
+			Daniel Defoe (Londres, 1660 – Londres, 21 de Abril de 1731) foi um escritor e jornalista inglês, famoso pelo seu livro Robinson Crusoé.
+			Nasceu em Londres, provavelmente na paróquia de St. Giles Cripplegate. Foi aluno de Charles Morton cujo estilo, juntamente com John Bunyan e da oratória da época, poderá tê-lo influenciado construtivamente. Depois de acabados os estudos, tornou-se comerciante, embora a sua tendência para a especulação não tenha favorecido essa carreira Escreveu panfletos famosos, muitos deles favoráveis a Guilherme III. Fundou e incrementou o jornal periódico The Review quase sozinho, desenvolvendo um trabalho que viria a favorecer a afirmação dos famosos The Tatler e The Spectator.
 
 			Contudo, foi graças a Robinson Crusoe, de 1719, que ficou famoso. Os críticos consideram que a forma moderna do romance nasceu como um texto narrativo, que, partindo das memórias de alguns viajantes, nomeadamente do marinheiro escocês Alexander Selkirk, configura um relato cuja verdade depende sobretudo da acumulação de pormenores concretos.
 

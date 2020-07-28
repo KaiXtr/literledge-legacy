@@ -30,7 +30,7 @@
 
 					Nesse caso, o detetive e seu fiel parceiro Watson investigam a morte do Sir Charles Baskerville, um milionário inglês achado morto em um pântano próximo de seu lar. Conta a lenda que Charles havia sido assassinado por um cão que assombrava a região, conhecido por matar gerações da família Baskerville. A causa mais provável pela morte de Charles, no entanto, seria um ataque cardíaco.
 
-					Após a morte do milionário, seu sobrinho assumiria a mansão da família. Sherlock Holmes foi chamado para investigar o caso e descobrir se o futuro proprietário da mansão teria o mesmo destino de seus antepassados. Sua missão será desvendar o mistério da lenda que assombra as gerações dos Baskervilles.[1]
+					Após a morte do milionário, seu sobrinho assumiria a mansão da família. Sherlock Holmes foi chamado para investigar o caso e descobrir se o futuro proprietário da mansão teria o mesmo destino de seus antepassados. Sua missão será desvendar o mistério da lenda que assombra as gerações dos Baskervilles.
 					<hr>
 						";
 					}
@@ -42,7 +42,7 @@
 
 					Nesse caso, o detetive e seu fiel parceiro Watson investigam a morte do Sir Charles Baskerville, um milionário inglês achado morto em um pântano próximo de seu lar. Conta a lenda que Charles havia sido assassinado por um cão que assombrava a região, conhecido por matar gerações da família Baskerville. A causa mais provável pela morte de Charles, no entanto, seria um ataque cardíaco.
 
-					Após a morte do milionário, seu sobrinho assumiria a mansão da família. Sherlock Holmes foi chamado para investigar o caso e descobrir se o futuro proprietário da mansão teria o mesmo destino de seus antepassados. Sua missão será desvendar o mistério da lenda que assombra as gerações dos Baskervilles.[1]
+					Após a morte do milionário, seu sobrinho assumiria a mansão da família. Sherlock Holmes foi chamado para investigar o caso e descobrir se o futuro proprietário da mansão teria o mesmo destino de seus antepassados. Sua missão será desvendar o mistério da lenda que assombra as gerações dos Baskervilles.
 					<hr>
 						";
 					}
@@ -54,7 +54,7 @@
 
 					Nesse caso, o detetive e seu fiel parceiro Watson investigam a morte do Sir Charles Baskerville, um milionário inglês achado morto em um pântano próximo de seu lar. Conta a lenda que Charles havia sido assassinado por um cão que assombrava a região, conhecido por matar gerações da família Baskerville. A causa mais provável pela morte de Charles, no entanto, seria um ataque cardíaco.
 
-					Após a morte do milionário, seu sobrinho assumiria a mansão da família. Sherlock Holmes foi chamado para investigar o caso e descobrir se o futuro proprietário da mansão teria o mesmo destino de seus antepassados. Sua missão será desvendar o mistério da lenda que assombra as gerações dos Baskervilles.[1]
+					Após a morte do milionário, seu sobrinho assumiria a mansão da família. Sherlock Holmes foi chamado para investigar o caso e descobrir se o futuro proprietário da mansão teria o mesmo destino de seus antepassados. Sua missão será desvendar o mistério da lenda que assombra as gerações dos Baskervilles.
 					<hr>
 						";
 					}

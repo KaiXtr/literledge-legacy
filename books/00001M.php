@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Reinações de Narizinho é um livro de fantasia e infantil de autoria do escritor brasileiro Monteiro Lobato.[1] Publicado em 1931, é o livro que serve de propulsor à série que seria protagonizada no Sítio do Picapau Amarelo. É um clássico da literatura, e até hoje serve de inspiração para muitos autores infantis, como Ana Maria Machado, Ruth Rocha, Pedro Bandeira e muitos outros.
+					Reinações de Narizinho é um livro de fantasia e infantil de autoria do escritor brasileiro Monteiro Lobato. Publicado em 1931, é o livro que serve de propulsor à série que seria protagonizada no Sítio do Picapau Amarelo. É um clássico da literatura, e até hoje serve de inspiração para muitos autores infantis, como Ana Maria Machado, Ruth Rocha, Pedro Bandeira e muitos outros.
 
 					O livro é composto de várias pequenas histórias, previamente publicadas, compostas em capítulos. Algumas histórias são plenamente originais, enquanto outras histórias são combinações utilizando histórias e personagens já conhecidos, como a visita dos personagens do Mundo das Maravilhas, incluindo as princesas Branca de Neve, Cinderela e Aladim.
 					<hr>
@@ -36,7 +36,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Reinações de Narizinho é um livro de fantasia e infantil de autoria do escritor brasileiro Monteiro Lobato.[1] Publicado em 1931, é o livro que serve de propulsor à série que seria protagonizada no Sítio do Picapau Amarelo. É um clássico da literatura, e até hoje serve de inspiração para muitos autores infantis, como Ana Maria Machado, Ruth Rocha, Pedro Bandeira e muitos outros.
+					Reinações de Narizinho é um livro de fantasia e infantil de autoria do escritor brasileiro Monteiro Lobato. Publicado em 1931, é o livro que serve de propulsor à série que seria protagonizada no Sítio do Picapau Amarelo. É um clássico da literatura, e até hoje serve de inspiração para muitos autores infantis, como Ana Maria Machado, Ruth Rocha, Pedro Bandeira e muitos outros.
 
 					O livro é composto de várias pequenas histórias, previamente publicadas, compostas em capítulos. Algumas histórias são plenamente originais, enquanto outras histórias são combinações utilizando histórias e personagens já conhecidos, como a visita dos personagens do Mundo das Maravilhas, incluindo as princesas Branca de Neve, Cinderela e Aladim.
 					<hr>
@@ -46,7 +46,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Reinações de Narizinho é um livro de fantasia e infantil de autoria do escritor brasileiro Monteiro Lobato.[1] Publicado em 1931, é o livro que serve de propulsor à série que seria protagonizada no Sítio do Picapau Amarelo. É um clássico da literatura, e até hoje serve de inspiração para muitos autores infantis, como Ana Maria Machado, Ruth Rocha, Pedro Bandeira e muitos outros.
+					Reinações de Narizinho é um livro de fantasia e infantil de autoria do escritor brasileiro Monteiro Lobato. Publicado em 1931, é o livro que serve de propulsor à série que seria protagonizada no Sítio do Picapau Amarelo. É um clássico da literatura, e até hoje serve de inspiração para muitos autores infantis, como Ana Maria Machado, Ruth Rocha, Pedro Bandeira e muitos outros.
 
 					O livro é composto de várias pequenas histórias, previamente publicadas, compostas em capítulos. Algumas histórias são plenamente originais, enquanto outras histórias são combinações utilizando histórias e personagens já conhecidos, como a visita dos personagens do Mundo das Maravilhas, incluindo as princesas Branca de Neve, Cinderela e Aladim.
 					<hr>

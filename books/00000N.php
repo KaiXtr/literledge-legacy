@@ -28,7 +28,7 @@
 					<h1 name='goto1'> Resenha </h1>
 					Les Misérables (Os Miseráveis) é um romance de Victor Hugo publicado em 1862 que deu origem a muitas adaptações, no cinema e muitas outras mídias. Neste romance emblemático da literatura francesa que descreve a vida das pessoas pobres em Paris e na França provincial do século XIX, o autor se concentra mais particularmente no destino do condenado Jean Valjean.
 
-					O romance expõe a filosofia política de Hugo, retratando a desigualdade social e a miséria decorrente, e, por outro lado, o empreendedorismo e o trabalho desempenhando uma função benéfica para o indivíduo e para a sociedade. Retrata também o conflito na relação com o Estado, seja pela ação arbitrária do policial ou pela atitude do revolucionário obcecado pela justiça.[1]
+					O romance expõe a filosofia política de Hugo, retratando a desigualdade social e a miséria decorrente, e, por outro lado, o empreendedorismo e o trabalho desempenhando uma função benéfica para o indivíduo e para a sociedade. Retrata também o conflito na relação com o Estado, seja pela ação arbitrária do policial ou pela atitude do revolucionário obcecado pela justiça.
 
 					<hr>
 					<a name='goto2'></a>
@@ -131,7 +131,7 @@
 					<h1 name='goto1'> Resenha </h1>
 					Les Misérables (Os Miseráveis) é um romance de Victor Hugo publicado em 1862 que deu origem a muitas adaptações, no cinema e muitas outras mídias. Neste romance emblemático da literatura francesa que descreve a vida das pessoas pobres em Paris e na França provincial do século XIX, o autor se concentra mais particularmente no destino do condenado Jean Valjean.
 
-					O romance expõe a filosofia política de Hugo, retratando a desigualdade social e a miséria decorrente, e, por outro lado, o empreendedorismo e o trabalho desempenhando uma função benéfica para o indivíduo e para a sociedade. Retrata também o conflito na relação com o Estado, seja pela ação arbitrária do policial ou pela atitude do revolucionário obcecado pela justiça.[1]
+					O romance expõe a filosofia política de Hugo, retratando a desigualdade social e a miséria decorrente, e, por outro lado, o empreendedorismo e o trabalho desempenhando uma função benéfica para o indivíduo e para a sociedade. Retrata também o conflito na relação com o Estado, seja pela ação arbitrária do policial ou pela atitude do revolucionário obcecado pela justiça.
 
 					<hr>
 					<a name='goto2'></a>
@@ -234,7 +234,7 @@
 					<h1 name='goto1'> Resenha </h1>
 					Les Misérables (Os Miseráveis) é um romance de Victor Hugo publicado em 1862 que deu origem a muitas adaptações, no cinema e muitas outras mídias. Neste romance emblemático da literatura francesa que descreve a vida das pessoas pobres em Paris e na França provincial do século XIX, o autor se concentra mais particularmente no destino do condenado Jean Valjean.
 
-					O romance expõe a filosofia política de Hugo, retratando a desigualdade social e a miséria decorrente, e, por outro lado, o empreendedorismo e o trabalho desempenhando uma função benéfica para o indivíduo e para a sociedade. Retrata também o conflito na relação com o Estado, seja pela ação arbitrária do policial ou pela atitude do revolucionário obcecado pela justiça.[1]
+					O romance expõe a filosofia política de Hugo, retratando a desigualdade social e a miséria decorrente, e, por outro lado, o empreendedorismo e o trabalho desempenhando uma função benéfica para o indivíduo e para a sociedade. Retrata também o conflito na relação com o Estado, seja pela ação arbitrária do policial ou pela atitude do revolucionário obcecado pela justiça.
 
 					<hr>
 					<a name='goto2'></a>

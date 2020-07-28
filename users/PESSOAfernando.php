@@ -29,16 +29,16 @@
 			<br />
 			Fernando Pessoa é o mais universal poeta português. Por ter sido educado na África do Sul, numa escola católica irlandesa, chegou a ter maior  <br />
 			familiaridade com o idioma inglês do que com o português ao escrever os seus primeiros poemas nesse idioma. O crítico literário Harold Bloom  <br />
-			considerou Pessoa como \"Whitman renascido\",[4] e o incluiu no seu cânone entre os 26 melhores escritores da civilização ocidental,[5] não apenas  <br />
-			da literatura portuguesa mas também da inglesa.[5] <br />
+			considerou Pessoa como \"Whitman renascido\", e o incluiu no seu cânone entre os 26 melhores escritores da civilização ocidental, não apenas  <br />
+			da literatura portuguesa mas também da inglesa. <br />
 			<br />
-			Das quatro obras que publicou em vida, três são na língua inglesa e apenas uma em língua portuguesa, entitulada Mensagem.[6][7] Fernando Pessoa  <br />
-			traduziu várias obras em inglês (e.g., de Shakespeare e Edgar Allan Poe) para o português, e obras portuguesas (nomeadamente de António Botto[8] <br />
+			Das quatro obras que publicou em vida, três são na língua inglesa e apenas uma em língua portuguesa, entitulada Mensagem. Fernando Pessoa  <br />
+			traduziu várias obras em inglês (e.g., de Shakespeare e Edgar Allan Poe) para o português, e obras portuguesas (nomeadamente de António Botto <br />
 			e Almada Negreiros) para o inglês. <br />
 			<br />
 			Enquanto poeta, escreveu sob diversas personalidades – heterónimos, como Ricardo Reis, Álvaro de Campos e Alberto Caeiro –, sendo estes últimos  <br />
 			objeto da maior parte dos estudos sobre a sua vida e obra. Robert Hass, poeta americano, diz: \"outros modernistas como Yeats, Pound, Eliot inventaram  <br />
-			máscaras pelas quais falavam ocasionalmente... Pessoa inventava poetas inteiros.\" [9] <br />
+			máscaras pelas quais falavam ocasionalmente... Pessoa inventava poetas inteiros.\"  <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Fernando_pessoa' > Wikipedia </a>
 					";
@@ -50,16 +50,16 @@
 			<br />
 			Fernando Pessoa é o mais universal poeta português. Por ter sido educado na África do Sul, numa escola católica irlandesa, chegou a ter maior  <br />
 			familiaridade com o idioma inglês do que com o português ao escrever os seus primeiros poemas nesse idioma. O crítico literário Harold Bloom  <br />
-			considerou Pessoa como \"Whitman renascido\",[4] e o incluiu no seu cânone entre os 26 melhores escritores da civilização ocidental,[5] não apenas  <br />
-			da literatura portuguesa mas também da inglesa.[5] <br />
+			considerou Pessoa como \"Whitman renascido\", e o incluiu no seu cânone entre os 26 melhores escritores da civilização ocidental, não apenas  <br />
+			da literatura portuguesa mas também da inglesa. <br />
 			<br />
-			Das quatro obras que publicou em vida, três são na língua inglesa e apenas uma em língua portuguesa, entitulada Mensagem.[6][7] Fernando Pessoa  <br />
-			traduziu várias obras em inglês (e.g., de Shakespeare e Edgar Allan Poe) para o português, e obras portuguesas (nomeadamente de António Botto[8] <br />
+			Das quatro obras que publicou em vida, três são na língua inglesa e apenas uma em língua portuguesa, entitulada Mensagem. Fernando Pessoa  <br />
+			traduziu várias obras em inglês (e.g., de Shakespeare e Edgar Allan Poe) para o português, e obras portuguesas (nomeadamente de António Botto <br />
 			e Almada Negreiros) para o inglês. <br />
 			<br />
 			Enquanto poeta, escreveu sob diversas personalidades – heterónimos, como Ricardo Reis, Álvaro de Campos e Alberto Caeiro –, sendo estes últimos  <br />
 			objeto da maior parte dos estudos sobre a sua vida e obra. Robert Hass, poeta americano, diz: \"outros modernistas como Yeats, Pound, Eliot inventaram  <br />
-			máscaras pelas quais falavam ocasionalmente... Pessoa inventava poetas inteiros.\" [9] <br />
+			máscaras pelas quais falavam ocasionalmente... Pessoa inventava poetas inteiros.\"  <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Fernando_pessoa' > Wikipedia </a>
 					";
@@ -71,16 +71,16 @@
 			<br />
 			Fernando Pessoa é o mais universal poeta português. Por ter sido educado na África do Sul, numa escola católica irlandesa, chegou a ter maior  <br />
 			familiaridade com o idioma inglês do que com o português ao escrever os seus primeiros poemas nesse idioma. O crítico literário Harold Bloom  <br />
-			considerou Pessoa como \"Whitman renascido\",[4] e o incluiu no seu cânone entre os 26 melhores escritores da civilização ocidental,[5] não apenas  <br />
-			da literatura portuguesa mas também da inglesa.[5] <br />
+			considerou Pessoa como \"Whitman renascido\", e o incluiu no seu cânone entre os 26 melhores escritores da civilização ocidental, não apenas  <br />
+			da literatura portuguesa mas também da inglesa. <br />
 			<br />
-			Das quatro obras que publicou em vida, três são na língua inglesa e apenas uma em língua portuguesa, entitulada Mensagem.[6][7] Fernando Pessoa  <br />
-			traduziu várias obras em inglês (e.g., de Shakespeare e Edgar Allan Poe) para o português, e obras portuguesas (nomeadamente de António Botto[8] <br />
+			Das quatro obras que publicou em vida, três são na língua inglesa e apenas uma em língua portuguesa, entitulada Mensagem. Fernando Pessoa  <br />
+			traduziu várias obras em inglês (e.g., de Shakespeare e Edgar Allan Poe) para o português, e obras portuguesas (nomeadamente de António Botto <br />
 			e Almada Negreiros) para o inglês. <br />
 			<br />
 			Enquanto poeta, escreveu sob diversas personalidades – heterónimos, como Ricardo Reis, Álvaro de Campos e Alberto Caeiro –, sendo estes últimos  <br />
 			objeto da maior parte dos estudos sobre a sua vida e obra. Robert Hass, poeta americano, diz: \"outros modernistas como Yeats, Pound, Eliot inventaram  <br />
-			máscaras pelas quais falavam ocasionalmente... Pessoa inventava poetas inteiros.\" [9] <br />
+			máscaras pelas quais falavam ocasionalmente... Pessoa inventava poetas inteiros.\"  <br />
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Fernando_pessoa' > Wikipedia </a>
 					";

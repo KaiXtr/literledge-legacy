@@ -24,27 +24,27 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			José Maria de Eça de Queiroz[1] (Póvoa de Varzim, 25 de novembro de 1845 — Neuilly-sur-Seine, 16 de agosto de 1900), contemporaneamente escrito Eça de Queirós, foi um escritor e diplomata português. É considerado um dos mais importantes escritores portugueses da história. Foi autor de romances de reconhecida importância, de Os Maias e O Crime do Padre Amaro. Os Maias é considerado por muitos o melhor romance realista português do século XIX.[2][3]
+			José Maria de Eça de Queiroz (Póvoa de Varzim, 25 de novembro de 1845 — Neuilly-sur-Seine, 16 de agosto de 1900), contemporaneamente escrito Eça de Queirós, foi um escritor e diplomata português. É considerado um dos mais importantes escritores portugueses da história. Foi autor de romances de reconhecida importância, de Os Maias e O Crime do Padre Amaro. Os Maias é considerado por muitos o melhor romance realista português do século XIX.
 
-			Eça de Queiroz e Machado de Assis são considerados os dois maiores escritores em língua portuguesa do século XIX.[4][5][6] Eça notabilizou-se pela originalidade e riqueza do seu estilo e linguagem, o realismo descritivo; e pela crítica social constantes nos seus romances.[7] O termo \"acaciano\" para definir alguém com um discurso vazio, enfeitado, pomposo, mas sem conteúdo, presente na Língua portuguesa; é uma alusão ao personagem Conselheiro Acácio, do romance O Primo Basílio.[8][9]
+			Eça de Queiroz e Machado de Assis são considerados os dois maiores escritores em língua portuguesa do século XIX. Eça notabilizou-se pela originalidade e riqueza do seu estilo e linguagem, o realismo descritivo; e pela crítica social constantes nos seus romances. O termo \"acaciano\" para definir alguém com um discurso vazio, enfeitado, pomposo, mas sem conteúdo, presente na Língua portuguesa; é uma alusão ao personagem Conselheiro Acácio, do romance O Primo Basílio.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/E%C3%A7a_de_Queiroz'> Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			José Maria de Eça de Queiroz[1] (Póvoa de Varzim, 25 de novembro de 1845 — Neuilly-sur-Seine, 16 de agosto de 1900), contemporaneamente escrito Eça de Queirós, foi um escritor e diplomata português. É considerado um dos mais importantes escritores portugueses da história. Foi autor de romances de reconhecida importância, de Os Maias e O Crime do Padre Amaro. Os Maias é considerado por muitos o melhor romance realista português do século XIX.[2][3]
+			José Maria de Eça de Queiroz (Póvoa de Varzim, 25 de novembro de 1845 — Neuilly-sur-Seine, 16 de agosto de 1900), contemporaneamente escrito Eça de Queirós, foi um escritor e diplomata português. É considerado um dos mais importantes escritores portugueses da história. Foi autor de romances de reconhecida importância, de Os Maias e O Crime do Padre Amaro. Os Maias é considerado por muitos o melhor romance realista português do século XIX.
 
-			Eça de Queiroz e Machado de Assis são considerados os dois maiores escritores em língua portuguesa do século XIX.[4][5][6] Eça notabilizou-se pela originalidade e riqueza do seu estilo e linguagem, o realismo descritivo; e pela crítica social constantes nos seus romances.[7] O termo \"acaciano\" para definir alguém com um discurso vazio, enfeitado, pomposo, mas sem conteúdo, presente na Língua portuguesa; é uma alusão ao personagem Conselheiro Acácio, do romance O Primo Basílio.[8][9]
+			Eça de Queiroz e Machado de Assis são considerados os dois maiores escritores em língua portuguesa do século XIX. Eça notabilizou-se pela originalidade e riqueza do seu estilo e linguagem, o realismo descritivo; e pela crítica social constantes nos seus romances. O termo \"acaciano\" para definir alguém com um discurso vazio, enfeitado, pomposo, mas sem conteúdo, presente na Língua portuguesa; é uma alusão ao personagem Conselheiro Acácio, do romance O Primo Basílio.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/E%C3%A7a_de_Queiroz'> Wikipedia </a>
 					";
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			José Maria de Eça de Queiroz[1] (Póvoa de Varzim, 25 de novembro de 1845 — Neuilly-sur-Seine, 16 de agosto de 1900), contemporaneamente escrito Eça de Queirós, foi um escritor e diplomata português. É considerado um dos mais importantes escritores portugueses da história. Foi autor de romances de reconhecida importância, de Os Maias e O Crime do Padre Amaro. Os Maias é considerado por muitos o melhor romance realista português do século XIX.[2][3]
+			José Maria de Eça de Queiroz (Póvoa de Varzim, 25 de novembro de 1845 — Neuilly-sur-Seine, 16 de agosto de 1900), contemporaneamente escrito Eça de Queirós, foi um escritor e diplomata português. É considerado um dos mais importantes escritores portugueses da história. Foi autor de romances de reconhecida importância, de Os Maias e O Crime do Padre Amaro. Os Maias é considerado por muitos o melhor romance realista português do século XIX.
 
-			Eça de Queiroz e Machado de Assis são considerados os dois maiores escritores em língua portuguesa do século XIX.[4][5][6] Eça notabilizou-se pela originalidade e riqueza do seu estilo e linguagem, o realismo descritivo; e pela crítica social constantes nos seus romances.[7] O termo \"acaciano\" para definir alguém com um discurso vazio, enfeitado, pomposo, mas sem conteúdo, presente na Língua portuguesa; é uma alusão ao personagem Conselheiro Acácio, do romance O Primo Basílio.[8][9]
+			Eça de Queiroz e Machado de Assis são considerados os dois maiores escritores em língua portuguesa do século XIX. Eça notabilizou-se pela originalidade e riqueza do seu estilo e linguagem, o realismo descritivo; e pela crítica social constantes nos seus romances. O termo \"acaciano\" para definir alguém com um discurso vazio, enfeitado, pomposo, mas sem conteúdo, presente na Língua portuguesa; é uma alusão ao personagem Conselheiro Acácio, do romance O Primo Basílio.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/E%C3%A7a_de_Queiroz'> Wikipedia </a>
 					";

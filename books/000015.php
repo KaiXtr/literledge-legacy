@@ -26,9 +26,9 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Canaã[1] é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.[2]
+					Canaã é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.
 
-					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.[3]
+					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -44,9 +44,9 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Canaã[1] é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.[2]
+					Canaã é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.
 
-					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.[3]
+					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -62,9 +62,9 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Canaã[1] é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.[2]
+					Canaã é um livro de Graça Aranha publicado no Brasil pela primeira vez em 1902. O romance-novela aborda a imigração alemã no estado do Espírito Santo, por intermédio do conflito entre dois personagens principais, Milkau e Lentz, que representam diferentes linhas filosóficas.
 
-					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.[3]
+					Temas como opressão feminina, imperialismo germânico, militarismo, corrupção dos administradores públicos, ostracismo, conflito de adaptação à nova terra são tratados nesse romance.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>

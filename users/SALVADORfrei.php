@@ -26,7 +26,7 @@
 					echo "
 			Frei Vicente do Salvador, OFM, nascido Vicente Rodrigues Palha (Matuim, Salvador, circa 1564 — Salvador, circa 1636-1639) foi um religioso franciscano brasileiro.
 
-			Sua vida é pobremente conhecida e sua fama repousa sobre dois escritos, Crônica da Custódia do Brasil, e principalmente a História do Brasil (1627), valiosos relatos históricos e corográficos sobre a vasta colônia portuguesa na América em seus primeiros tempos. Este legado documental, cuja importância a crítica reconhece em consenso, lhe valeu os epítetos de Pai da Historiografia brasileira,[1][2] ou Heródoto brasileiro.[3] Sua vida como religioso também foi relevante, recebendo várias atribuições de responsabilidade e fundando o convento de Santo Antônio do Rio de Janeiro.
+			Sua vida é pobremente conhecida e sua fama repousa sobre dois escritos, Crônica da Custódia do Brasil, e principalmente a História do Brasil (1627), valiosos relatos históricos e corográficos sobre a vasta colônia portuguesa na América em seus primeiros tempos. Este legado documental, cuja importância a crítica reconhece em consenso, lhe valeu os epítetos de Pai da Historiografia brasileira, ou Heródoto brasileiro. Sua vida como religioso também foi relevante, recebendo várias atribuições de responsabilidade e fundando o convento de Santo Antônio do Rio de Janeiro.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Vicente_do_Salvador'> Wikipedia </a>
 					";
@@ -35,7 +35,7 @@
 					echo "
 			Frei Vicente do Salvador, OFM, nascido Vicente Rodrigues Palha (Matuim, Salvador, circa 1564 — Salvador, circa 1636-1639) foi um religioso franciscano brasileiro.
 
-			Sua vida é pobremente conhecida e sua fama repousa sobre dois escritos, Crônica da Custódia do Brasil, e principalmente a História do Brasil (1627), valiosos relatos históricos e corográficos sobre a vasta colônia portuguesa na América em seus primeiros tempos. Este legado documental, cuja importância a crítica reconhece em consenso, lhe valeu os epítetos de Pai da Historiografia brasileira,[1][2] ou Heródoto brasileiro.[3] Sua vida como religioso também foi relevante, recebendo várias atribuições de responsabilidade e fundando o convento de Santo Antônio do Rio de Janeiro.
+			Sua vida é pobremente conhecida e sua fama repousa sobre dois escritos, Crônica da Custódia do Brasil, e principalmente a História do Brasil (1627), valiosos relatos históricos e corográficos sobre a vasta colônia portuguesa na América em seus primeiros tempos. Este legado documental, cuja importância a crítica reconhece em consenso, lhe valeu os epítetos de Pai da Historiografia brasileira, ou Heródoto brasileiro. Sua vida como religioso também foi relevante, recebendo várias atribuições de responsabilidade e fundando o convento de Santo Antônio do Rio de Janeiro.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Vicente_do_Salvador'> Wikipedia </a>
 					";
@@ -44,7 +44,7 @@
 					echo "
 			Frei Vicente do Salvador, OFM, nascido Vicente Rodrigues Palha (Matuim, Salvador, circa 1564 — Salvador, circa 1636-1639) foi um religioso franciscano brasileiro.
 
-			Sua vida é pobremente conhecida e sua fama repousa sobre dois escritos, Crônica da Custódia do Brasil, e principalmente a História do Brasil (1627), valiosos relatos históricos e corográficos sobre a vasta colônia portuguesa na América em seus primeiros tempos. Este legado documental, cuja importância a crítica reconhece em consenso, lhe valeu os epítetos de Pai da Historiografia brasileira,[1][2] ou Heródoto brasileiro.[3] Sua vida como religioso também foi relevante, recebendo várias atribuições de responsabilidade e fundando o convento de Santo Antônio do Rio de Janeiro.
+			Sua vida é pobremente conhecida e sua fama repousa sobre dois escritos, Crônica da Custódia do Brasil, e principalmente a História do Brasil (1627), valiosos relatos históricos e corográficos sobre a vasta colônia portuguesa na América em seus primeiros tempos. Este legado documental, cuja importância a crítica reconhece em consenso, lhe valeu os epítetos de Pai da Historiografia brasileira, ou Heródoto brasileiro. Sua vida como religioso também foi relevante, recebendo várias atribuições de responsabilidade e fundando o convento de Santo Antônio do Rio de Janeiro.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Vicente_do_Salvador'> Wikipedia </a>
 					";

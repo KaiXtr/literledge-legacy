@@ -72,8 +72,8 @@ hr {
 }
 
 .upperbarcontent {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 	display: flex;
 	align-items: center;
 }
@@ -104,9 +104,10 @@ hr {
 
 .searchbar {
 	margin: 0px;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 5%;
+	margin-right: 2%;
 	padding: 0px;
+	width: 60%;
 	height: 30px;
 	border: none;
 	display: flex;
@@ -115,7 +116,6 @@ hr {
 .searchbar .searchtext {
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 500px;
 	height: 30px;
 	border: none;
 	border-radius: 8px 0px 0px 8px;
@@ -154,6 +154,26 @@ hr {
 	cursor: not-allowed;
 }
 
+.upperbar .profilepic {
+	width: 28px;
+	height: 37px;
+	border: none;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+
+#openpro {
+	display: none;
+}
+
+#accountbuts {
+	margin-left: 10px;
+	width: 180px;
+	right: 0px;
+	vertical-align: middle;
+	align-items: center;
+}
+
 .upperbar #btup {
 	text-align: center;
 	padding: 5px;
@@ -186,44 +206,8 @@ hr {
 	padding: 4px;
 }
 
-.upperbar .profilepic {
-	margin-left: 100px; 
-	width: 28px;
-	height: 37px;
-	border: none;
-	transition-duration: 0.2s;
-	cursor: pointer;
-}
-
 #profilemenu {
-	text-align: left;
-	font-size: 20px;
-	padding: 10px;
-	width: 200px;
-	height: 0px;
-	z-index: 10;
-	top: 80px;
-	right: 300px;
-	border-radius: 8px;
-	position: fixed;
-	transition: height 0.5s, visibility 0.5s, opacity 0.5s;
-	opacity: 0%;
-}
-
-#profilemenu h1 {
-	font-size: 25px;
-	margin: 5px;
-}
-
-#profilemenu h2 {
-	font-style: italic;
-	font-size: 18px;
-	margin: 5px;
-}
-
-#profilemenu ul {
-	margin: 0px;
-	list-style: none;
+	display: none;
 }
 
 .sidebar {
@@ -416,8 +400,8 @@ hr {
 
 .content {
 	margin-top: 90px;
-	margin-left: 190px;
-	margin-right: 190px;
+	margin-left: 10%;
+	margin-right: 10%;
 	padding: 10px;
 }
 
@@ -528,7 +512,7 @@ hr {
 
 #profile #propic {
 	top: 250px;
-	left: 200px;
+	left: 8%;
 	position: absolute;
 	z-index: 5;
 }
@@ -568,7 +552,7 @@ hr {
 	margin: 0px;
 	top: 340px;
 	right: 200px;
-	width: 1000px;
+	width: 55%;
 	animation-name: username;
 	animation-duration: 3s;
 	position: absolute;
@@ -598,7 +582,7 @@ hr {
 	margin: 0px;
 	top: 340px;
 	left: 200px;
-	width: 1000px;
+	width: 80%;
 	animation-name: litername;
 	animation-duration: 3s;
 	position: absolute;
@@ -753,7 +737,7 @@ hr {
 	text-align: left;
 	line-height: 30px;
 	font-size: 20px;
-	padding: 200px;
+	padding: 8%;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	position: relative;
@@ -786,6 +770,15 @@ hr {
 
 #btexit {
 	margin: 0px;
+}
+
+#thank {
+	padding: 20px;
+	top: 150px;
+	right: 300px;
+	z-index: 20;
+	border-radius: 15px;
+	position: fixed;
 }
 
 #bookinfo {
@@ -1161,6 +1154,29 @@ hr {
 	left: -20px;
 }
 
+.litbut {
+	background-position: center;
+	background-size: 250%;
+	white-space: normal;
+	text-align: center;
+	font-size: 20px;
+	margin: 10px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 10px;
+	width: 260px;
+	height: 150px;
+	border-style: double;
+	border-radius: 15px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	float: left;
+}
+
+.litbut h2 {
+	filter: blur(0px);
+}
+
 .infocontent {
 	font-size: 20px;
 	margin-left: 190px;
@@ -1249,14 +1265,14 @@ hr {
 	padding: 0px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	padding-left: 190px;
+	padding-left: 8%;
 	width: 100%;
 	display: inline-flex;
 	float: none;
 }
 
 #langbox {
-	margin-left: 20px;
+	margin-left: 8%;
 	width: 200px;
 	height: 40px;
 	border: none;
@@ -1264,7 +1280,7 @@ hr {
 }
 
 .lowerbarinfo {
-	margin-left: 190px; 
+	margin-left: 5%; 
 	padding-left: 10px;
 	width: 100px;
 	list-style: none;
@@ -1319,4 +1335,9 @@ div::-webkit-scrollbar {
 div::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	transition-duration: 4s;
+}
+
+iframe {
+	width: 100%;
+	height: 30em;
 }

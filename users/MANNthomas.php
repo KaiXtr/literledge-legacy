@@ -26,7 +26,7 @@
 					echo "
 			Paul Thomas Mann (Cidade Livre de Lübeck, 6 de junho de 1875 — Zurique, 12 de agosto de 1955) foi um escritor, romancista, ensaísta, contista e crítico social do Império Alemão.
 
-			Tendo recebido o Nobel de Literatura de 1929, é considerado um dos maiores romancistas do século XX. Irmão mais novo do também romancista Heinrich Mann, Thomas Mann teve seis filhos: o escritor Klaus, a atriz Erika, o historiador Golo Mann, a ensaísta Monika Mann, o violinista e literato Michael Thomas Mann[1] e a cientista Elisabeth Mann.
+			Tendo recebido o Nobel de Literatura de 1929, é considerado um dos maiores romancistas do século XX. Irmão mais novo do também romancista Heinrich Mann, Thomas Mann teve seis filhos: o escritor Klaus, a atriz Erika, o historiador Golo Mann, a ensaísta Monika Mann, o violinista e literato Michael Thomas Mann e a cientista Elisabeth Mann.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Thomas_Mann' > Wikipedia </a>
 					";
@@ -35,7 +35,7 @@
 					echo "
 			Paul Thomas Mann (Cidade Livre de Lübeck, 6 de junho de 1875 — Zurique, 12 de agosto de 1955) foi um escritor, romancista, ensaísta, contista e crítico social do Império Alemão.
 
-			Tendo recebido o Nobel de Literatura de 1929, é considerado um dos maiores romancistas do século XX. Irmão mais novo do também romancista Heinrich Mann, Thomas Mann teve seis filhos: o escritor Klaus, a atriz Erika, o historiador Golo Mann, a ensaísta Monika Mann, o violinista e literato Michael Thomas Mann[1] e a cientista Elisabeth Mann.
+			Tendo recebido o Nobel de Literatura de 1929, é considerado um dos maiores romancistas do século XX. Irmão mais novo do também romancista Heinrich Mann, Thomas Mann teve seis filhos: o escritor Klaus, a atriz Erika, o historiador Golo Mann, a ensaísta Monika Mann, o violinista e literato Michael Thomas Mann e a cientista Elisabeth Mann.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Thomas_Mann' > Wikipedia </a>
 					";
@@ -44,7 +44,7 @@
 					echo "
 			Paul Thomas Mann (Cidade Livre de Lübeck, 6 de junho de 1875 — Zurique, 12 de agosto de 1955) foi um escritor, romancista, ensaísta, contista e crítico social do Império Alemão.
 
-			Tendo recebido o Nobel de Literatura de 1929, é considerado um dos maiores romancistas do século XX. Irmão mais novo do também romancista Heinrich Mann, Thomas Mann teve seis filhos: o escritor Klaus, a atriz Erika, o historiador Golo Mann, a ensaísta Monika Mann, o violinista e literato Michael Thomas Mann[1] e a cientista Elisabeth Mann.
+			Tendo recebido o Nobel de Literatura de 1929, é considerado um dos maiores romancistas do século XX. Irmão mais novo do também romancista Heinrich Mann, Thomas Mann teve seis filhos: o escritor Klaus, a atriz Erika, o historiador Golo Mann, a ensaísta Monika Mann, o violinista e literato Michael Thomas Mann e a cientista Elisabeth Mann.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Thomas_Mann' > Wikipedia </a>
 					";

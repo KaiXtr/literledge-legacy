@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Livro da Selva (The Jungle Book originalmente) é o título de um livro publicado em 1894, constituído de uma coleção de 7 contos do escritor Rudyard Kipling, inicialmente publicadas em revistas de 1893 e 1894. As publicações originais contêm ilustrações, algumas do pai de Rudyard, John Lockwood Kipling. O livro foi escrito quando Rudyard morava em Vermont. Dos 7 contos, os 3 primeiros relatam a história de Mogli, um rapaz indiano criado por lobos[1]. O livro é mais conhecido por ter sido adaptado em um filme animado produzido pela Walt Disney Company e lançado em 1967[2]. No Brasil, o livro foi publicado pela primeira vez em 1933 pela Companhia Editora Nacional como parte da Coleção Terramarear e foi traduzido pelo escritor Monteiro Lobato e foi intitulado O Livro da Jângal.
+					O Livro da Selva (The Jungle Book originalmente) é o título de um livro publicado em 1894, constituído de uma coleção de 7 contos do escritor Rudyard Kipling, inicialmente publicadas em revistas de 1893 e 1894. As publicações originais contêm ilustrações, algumas do pai de Rudyard, John Lockwood Kipling. O livro foi escrito quando Rudyard morava em Vermont. Dos 7 contos, os 3 primeiros relatam a história de Mogli, um rapaz indiano criado por lobos. O livro é mais conhecido por ter sido adaptado em um filme animado produzido pela Walt Disney Company e lançado em 1967. No Brasil, o livro foi publicado pela primeira vez em 1933 pela Companhia Editora Nacional como parte da Coleção Terramarear e foi traduzido pelo escritor Monteiro Lobato e foi intitulado O Livro da Jângal.
 					<hr>
 						";
 					}
@@ -34,7 +34,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Livro da Selva (The Jungle Book originalmente) é o título de um livro publicado em 1894, constituído de uma coleção de 7 contos do escritor Rudyard Kipling, inicialmente publicadas em revistas de 1893 e 1894. As publicações originais contêm ilustrações, algumas do pai de Rudyard, John Lockwood Kipling. O livro foi escrito quando Rudyard morava em Vermont. Dos 7 contos, os 3 primeiros relatam a história de Mogli, um rapaz indiano criado por lobos[1]. O livro é mais conhecido por ter sido adaptado em um filme animado produzido pela Walt Disney Company e lançado em 1967[2]. No Brasil, o livro foi publicado pela primeira vez em 1933 pela Companhia Editora Nacional como parte da Coleção Terramarear e foi traduzido pelo escritor Monteiro Lobato e foi intitulado O Livro da Jângal.
+					O Livro da Selva (The Jungle Book originalmente) é o título de um livro publicado em 1894, constituído de uma coleção de 7 contos do escritor Rudyard Kipling, inicialmente publicadas em revistas de 1893 e 1894. As publicações originais contêm ilustrações, algumas do pai de Rudyard, John Lockwood Kipling. O livro foi escrito quando Rudyard morava em Vermont. Dos 7 contos, os 3 primeiros relatam a história de Mogli, um rapaz indiano criado por lobos. O livro é mais conhecido por ter sido adaptado em um filme animado produzido pela Walt Disney Company e lançado em 1967. No Brasil, o livro foi publicado pela primeira vez em 1933 pela Companhia Editora Nacional como parte da Coleção Terramarear e foi traduzido pelo escritor Monteiro Lobato e foi intitulado O Livro da Jângal.
 					<hr>
 						";
 					}
@@ -42,7 +42,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					O Livro da Selva (The Jungle Book originalmente) é o título de um livro publicado em 1894, constituído de uma coleção de 7 contos do escritor Rudyard Kipling, inicialmente publicadas em revistas de 1893 e 1894. As publicações originais contêm ilustrações, algumas do pai de Rudyard, John Lockwood Kipling. O livro foi escrito quando Rudyard morava em Vermont. Dos 7 contos, os 3 primeiros relatam a história de Mogli, um rapaz indiano criado por lobos[1]. O livro é mais conhecido por ter sido adaptado em um filme animado produzido pela Walt Disney Company e lançado em 1967[2]. No Brasil, o livro foi publicado pela primeira vez em 1933 pela Companhia Editora Nacional como parte da Coleção Terramarear e foi traduzido pelo escritor Monteiro Lobato e foi intitulado O Livro da Jângal.
+					O Livro da Selva (The Jungle Book originalmente) é o título de um livro publicado em 1894, constituído de uma coleção de 7 contos do escritor Rudyard Kipling, inicialmente publicadas em revistas de 1893 e 1894. As publicações originais contêm ilustrações, algumas do pai de Rudyard, John Lockwood Kipling. O livro foi escrito quando Rudyard morava em Vermont. Dos 7 contos, os 3 primeiros relatam a história de Mogli, um rapaz indiano criado por lobos. O livro é mais conhecido por ter sido adaptado em um filme animado produzido pela Walt Disney Company e lançado em 1967. No Brasil, o livro foi publicado pela primeira vez em 1933 pela Companhia Editora Nacional como parte da Coleção Terramarear e foi traduzido pelo escritor Monteiro Lobato e foi intitulado O Livro da Jângal.
 					<hr>
 						";
 					}

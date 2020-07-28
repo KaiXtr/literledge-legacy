@@ -40,7 +40,7 @@
 
 					A vontade de escrever um livr\"um todo artístico\" levou a refinar bastante o texto, acrescentando referências, e a excluir doo que seria o capítulo 6 do plano inicial do Livro 1.
 
-					Infelizmente o autor não pôde continuar a cuidar da publicação dos seus livros, muito embora alguns manuscritos não-publicados em resposta aos economistas marginais da época possam ser classificados como parte desta série de livros.[1]
+					Infelizmente o autor não pôde continuar a cuidar da publicação dos seus livros, muito embora alguns manuscritos não-publicados em resposta aos economistas marginais da época possam ser classificados como parte desta série de livros.
 					<hr>
 						";
 					}
@@ -62,7 +62,7 @@
 
 					A vontade de escrever um livr\"um todo artístico\" levou a refinar bastante o texto, acrescentando referências, e a excluir doo que seria o capítulo 6 do plano inicial do Livro 1.
 
-					Infelizmente o autor não pôde continuar a cuidar da publicação dos seus livros, muito embora alguns manuscritos não-publicados em resposta aos economistas marginais da época possam ser classificados como parte desta série de livros.[1]
+					Infelizmente o autor não pôde continuar a cuidar da publicação dos seus livros, muito embora alguns manuscritos não-publicados em resposta aos economistas marginais da época possam ser classificados como parte desta série de livros.
 					<hr>
 						";
 					}
@@ -84,7 +84,7 @@
 
 					A vontade de escrever um livr\"um todo artístico\" levou a refinar bastante o texto, acrescentando referências, e a excluir doo que seria o capítulo 6 do plano inicial do Livro 1.
 
-					Infelizmente o autor não pôde continuar a cuidar da publicação dos seus livros, muito embora alguns manuscritos não-publicados em resposta aos economistas marginais da época possam ser classificados como parte desta série de livros.[1]
+					Infelizmente o autor não pôde continuar a cuidar da publicação dos seus livros, muito embora alguns manuscritos não-publicados em resposta aos economistas marginais da época possam ser classificados como parte desta série de livros.
 					<hr>
 						";
 					}

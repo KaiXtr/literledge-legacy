@@ -25,7 +25,7 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			<div lang='pt-br'>
-				Simone Lucie-Ernestine-Marie Bertrand de Beauvoir, mais conhecida como Simone de Beauvoir (francês: [simɔn də bovwaʁ]; Paris, 9 de janeiro de 1908 – Paris, 14 de abril de 1986), foi uma escritora, intelectual, filósofa existencialista, ativista política, feminista e teórica social francesa. Embora não se considerasse uma filósofa, De Beauvoir teve uma influência significativa tanto no existencialismo feminista quanto na teoria feminista.[1]
+				Simone Lucie-Ernestine-Marie Bertrand de Beauvoir, mais conhecida como Simone de Beauvoir (francês: [simɔn də bovwaʁ]; Paris, 9 de janeiro de 1908 – Paris, 14 de abril de 1986), foi uma escritora, intelectual, filósofa existencialista, ativista política, feminista e teórica social francesa. Embora não se considerasse uma filósofa, De Beauvoir teve uma influência significativa tanto no existencialismo feminista quanto na teoria feminista.
 
 				Nascida em Paris, era a primogênita de duas irmãs, filha de um casal descendente de famílias tradicionais, porém decadente. Seu pai era o advogado Georges Bertrand de Beauvoir, ex-membro da aristocracia francesa, enquanto a mãe era Françoise Brasseur, membro da alta burguesia francesa. Ela estudou em uma escola católica privada até os 17 anos. Depois de passar no vestibular de matemática e filosofia, acabou por estudar matemática no Instituto Católico de Paris e literatura e línguas no colégio Sainte-Marie de Neuilly, e em seguida, filosofia na Universidade de Paris (Sorbonne), onde conheceu outros jovens intelectuais, como Maurice Merleau-Ponty, René Maheu e Jean-Paul Sartre, com quem manteve um relacionamento aberto por toda a vida.
 
@@ -46,7 +46,7 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			<div lang='pt-br'>
-				Simone Lucie-Ernestine-Marie Bertrand de Beauvoir, mais conhecida como Simone de Beauvoir (francês: [simɔn də bovwaʁ]; Paris, 9 de janeiro de 1908 – Paris, 14 de abril de 1986), foi uma escritora, intelectual, filósofa existencialista, ativista política, feminista e teórica social francesa. Embora não se considerasse uma filósofa, De Beauvoir teve uma influência significativa tanto no existencialismo feminista quanto na teoria feminista.[1]
+				Simone Lucie-Ernestine-Marie Bertrand de Beauvoir, mais conhecida como Simone de Beauvoir (francês: [simɔn də bovwaʁ]; Paris, 9 de janeiro de 1908 – Paris, 14 de abril de 1986), foi uma escritora, intelectual, filósofa existencialista, ativista política, feminista e teórica social francesa. Embora não se considerasse uma filósofa, De Beauvoir teve uma influência significativa tanto no existencialismo feminista quanto na teoria feminista.
 
 				Nascida em Paris, era a primogênita de duas irmãs, filha de um casal descendente de famílias tradicionais, porém decadente. Seu pai era o advogado Georges Bertrand de Beauvoir, ex-membro da aristocracia francesa, enquanto a mãe era Françoise Brasseur, membro da alta burguesia francesa. Ela estudou em uma escola católica privada até os 17 anos. Depois de passar no vestibular de matemática e filosofia, acabou por estudar matemática no Instituto Católico de Paris e literatura e línguas no colégio Sainte-Marie de Neuilly, e em seguida, filosofia na Universidade de Paris (Sorbonne), onde conheceu outros jovens intelectuais, como Maurice Merleau-Ponty, René Maheu e Jean-Paul Sartre, com quem manteve um relacionamento aberto por toda a vida.
 
@@ -67,7 +67,7 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			<div lang='pt-br'>
-				Simone Lucie-Ernestine-Marie Bertrand de Beauvoir, mais conhecida como Simone de Beauvoir (francês: [simɔn də bovwaʁ]; Paris, 9 de janeiro de 1908 – Paris, 14 de abril de 1986), foi uma escritora, intelectual, filósofa existencialista, ativista política, feminista e teórica social francesa. Embora não se considerasse uma filósofa, De Beauvoir teve uma influência significativa tanto no existencialismo feminista quanto na teoria feminista.[1]
+				Simone Lucie-Ernestine-Marie Bertrand de Beauvoir, mais conhecida como Simone de Beauvoir (francês: [simɔn də bovwaʁ]; Paris, 9 de janeiro de 1908 – Paris, 14 de abril de 1986), foi uma escritora, intelectual, filósofa existencialista, ativista política, feminista e teórica social francesa. Embora não se considerasse uma filósofa, De Beauvoir teve uma influência significativa tanto no existencialismo feminista quanto na teoria feminista.
 
 				Nascida em Paris, era a primogênita de duas irmãs, filha de um casal descendente de famílias tradicionais, porém decadente. Seu pai era o advogado Georges Bertrand de Beauvoir, ex-membro da aristocracia francesa, enquanto a mãe era Françoise Brasseur, membro da alta burguesia francesa. Ela estudou em uma escola católica privada até os 17 anos. Depois de passar no vestibular de matemática e filosofia, acabou por estudar matemática no Instituto Católico de Paris e literatura e línguas no colégio Sainte-Marie de Neuilly, e em seguida, filosofia na Universidade de Paris (Sorbonne), onde conheceu outros jovens intelectuais, como Maurice Merleau-Ponty, René Maheu e Jean-Paul Sartre, com quem manteve um relacionamento aberto por toda a vida.
 

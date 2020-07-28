@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					The Book Thief (Brasil: A menina que roubava livros /Portugal: A rapariga que roubava livros) é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador.[3] No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respectivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.
+					The Book Thief (Brasil: A menina que roubava livros /Portugal: A rapariga que roubava livros) é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador. No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respectivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.
 
 					The Book Thief tem, como narradora, a Morte, cuja função é recolher a alma de todos aqueles que morrem. Durante a sua passagem pela Alemanha, na Segunda Guerra Mundial, ela encontra a protagonista, Liesel Meminger, numa estação de comboio enquanto o seu irmão mais novo é enterrado próximo ao local. A menina, ao perceber que o coveiro deixou um livro, O manual do coveiro, cair na neve, rouba-o e é levada, então, até a cidade fictícia de Molching, onde a sua mãe pretende entregá-la a uma família para que a adotem. Na Rua Himmel, reside o casal de classe trabalhadora formado por Hans e Rosa Hubermann.
 
@@ -40,7 +40,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					The Book Thief (Brasil: A menina que roubava livros /Portugal: A rapariga que roubava livros) é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador.[3] No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respectivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.
+					The Book Thief (Brasil: A menina que roubava livros /Portugal: A rapariga que roubava livros) é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador. No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respectivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.
 
 					The Book Thief tem, como narradora, a Morte, cuja função é recolher a alma de todos aqueles que morrem. Durante a sua passagem pela Alemanha, na Segunda Guerra Mundial, ela encontra a protagonista, Liesel Meminger, numa estação de comboio enquanto o seu irmão mais novo é enterrado próximo ao local. A menina, ao perceber que o coveiro deixou um livro, O manual do coveiro, cair na neve, rouba-o e é levada, então, até a cidade fictícia de Molching, onde a sua mãe pretende entregá-la a uma família para que a adotem. Na Rua Himmel, reside o casal de classe trabalhadora formado por Hans e Rosa Hubermann.
 
@@ -54,7 +54,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					The Book Thief (Brasil: A menina que roubava livros /Portugal: A rapariga que roubava livros) é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador.[3] No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respectivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.
+					The Book Thief (Brasil: A menina que roubava livros /Portugal: A rapariga que roubava livros) é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador. No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respectivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.
 
 					The Book Thief tem, como narradora, a Morte, cuja função é recolher a alma de todos aqueles que morrem. Durante a sua passagem pela Alemanha, na Segunda Guerra Mundial, ela encontra a protagonista, Liesel Meminger, numa estação de comboio enquanto o seu irmão mais novo é enterrado próximo ao local. A menina, ao perceber que o coveiro deixou um livro, O manual do coveiro, cair na neve, rouba-o e é levada, então, até a cidade fictícia de Molching, onde a sua mãe pretende entregá-la a uma família para que a adotem. Na Rua Himmel, reside o casal de classe trabalhadora formado por Hans e Rosa Hubermann.
 

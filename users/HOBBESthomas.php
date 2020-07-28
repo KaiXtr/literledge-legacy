@@ -29,7 +29,7 @@
 			No estado natural, embora alguns homens possam ser mais fortes ou mais inteligentes do que outros, nenhum se ergue tão acima dos demais de forma a estar isento <br />
 			do medo de que outro homem lhe possa fazer mal. Por isso, cada um de nós tem direito a tudo e, uma vez que todas as coisas são escassas, existe uma constante guerra <br />
 			de todos contra todos (Bellum omnia omnes). No entanto, os homens têm um desejo, que é também em interesse próprio, de acabar com a guerra e, por isso, <br />
-			formam sociedades através de um contrato social.[1] <br />
+			formam sociedades através de um contrato social. <br />
 			<br />
 			De acordo com Hobbes, tal sociedade necessita de uma autoridade à qual todos os membros devem render o suficiente da sua liberdade natural, de forma que a <br />
 			autoridade possa assegurar a paz interna e a defesa comum. Este soberano, quer seja um monarca ou uma assembleia (que pode, até mesmo, ser composta de todos, <br />
@@ -38,7 +38,7 @@
 			<br />
 			Thomas Hobbes defendia a ideia segundo a qual os homens só podem viver em paz se concordarem em submeter-se a um poder absoluto e centralizado. <br />
 			O Estado não pode estar sujeito às leis por ele criadas pois isso seria infringir sua soberania. Para ele, a Igreja cristã e o Estado cristão formavam <br />
-			um mesmo corpo, encabeçado pelo monarca, que teria o direito de interpretar as Escrituras, decidir questões religiosas[2] e presidir o culto. <br />
+			um mesmo corpo, encabeçado pelo monarca, que teria o direito de interpretar as Escrituras, decidir questões religiosas e presidir o culto. <br />
 			Neste sentido, critica a livre interpretação da Bíblia na Reforma Protestante por, de certa forma, enfraquecer o monarca. Sua filosofia política foi analisada <br />
 			pelo cientista político Richard Tuck como uma resposta para os problemas que o método cartesiano introduziu para a filosofia moral. Hobbes argumenta que só <br />
 			podemos conhecer algo do mundo exterior a partir das impressões sensoriais que temos dele (\"Só existe o que meus sentidos percebem\"). <br />
@@ -62,7 +62,7 @@
 			No estado natural, embora alguns homens possam ser mais fortes ou mais inteligentes do que outros, nenhum se ergue tão acima dos demais de forma a estar isento <br />
 			do medo de que outro homem lhe possa fazer mal. Por isso, cada um de nós tem direito a tudo e, uma vez que todas as coisas são escassas, existe uma constante guerra <br />
 			de todos contra todos (Bellum omnia omnes). No entanto, os homens têm um desejo, que é também em interesse próprio, de acabar com a guerra e, por isso, <br />
-			formam sociedades através de um contrato social.[1] <br />
+			formam sociedades através de um contrato social. <br />
 			<br />
 			De acordo com Hobbes, tal sociedade necessita de uma autoridade à qual todos os membros devem render o suficiente da sua liberdade natural, de forma que a <br />
 			autoridade possa assegurar a paz interna e a defesa comum. Este soberano, quer seja um monarca ou uma assembleia (que pode, até mesmo, ser composta de todos, <br />
@@ -71,7 +71,7 @@
 			<br />
 			Thomas Hobbes defendia a ideia segundo a qual os homens só podem viver em paz se concordarem em submeter-se a um poder absoluto e centralizado. <br />
 			O Estado não pode estar sujeito às leis por ele criadas pois isso seria infringir sua soberania. Para ele, a Igreja cristã e o Estado cristão formavam <br />
-			um mesmo corpo, encabeçado pelo monarca, que teria o direito de interpretar as Escrituras, decidir questões religiosas[2] e presidir o culto. <br />
+			um mesmo corpo, encabeçado pelo monarca, que teria o direito de interpretar as Escrituras, decidir questões religiosas e presidir o culto. <br />
 			Neste sentido, critica a livre interpretação da Bíblia na Reforma Protestante por, de certa forma, enfraquecer o monarca. Sua filosofia política foi analisada <br />
 			pelo cientista político Richard Tuck como uma resposta para os problemas que o método cartesiano introduziu para a filosofia moral. Hobbes argumenta que só <br />
 			podemos conhecer algo do mundo exterior a partir das impressões sensoriais que temos dele (\"Só existe o que meus sentidos percebem\"). <br />
@@ -95,7 +95,7 @@
 			No estado natural, embora alguns homens possam ser mais fortes ou mais inteligentes do que outros, nenhum se ergue tão acima dos demais de forma a estar isento <br />
 			do medo de que outro homem lhe possa fazer mal. Por isso, cada um de nós tem direito a tudo e, uma vez que todas as coisas são escassas, existe uma constante guerra <br />
 			de todos contra todos (Bellum omnia omnes). No entanto, os homens têm um desejo, que é também em interesse próprio, de acabar com a guerra e, por isso, <br />
-			formam sociedades através de um contrato social.[1] <br />
+			formam sociedades através de um contrato social. <br />
 			<br />
 			De acordo com Hobbes, tal sociedade necessita de uma autoridade à qual todos os membros devem render o suficiente da sua liberdade natural, de forma que a <br />
 			autoridade possa assegurar a paz interna e a defesa comum. Este soberano, quer seja um monarca ou uma assembleia (que pode, até mesmo, ser composta de todos, <br />
@@ -104,7 +104,7 @@
 			<br />
 			Thomas Hobbes defendia a ideia segundo a qual os homens só podem viver em paz se concordarem em submeter-se a um poder absoluto e centralizado. <br />
 			O Estado não pode estar sujeito às leis por ele criadas pois isso seria infringir sua soberania. Para ele, a Igreja cristã e o Estado cristão formavam <br />
-			um mesmo corpo, encabeçado pelo monarca, que teria o direito de interpretar as Escrituras, decidir questões religiosas[2] e presidir o culto. <br />
+			um mesmo corpo, encabeçado pelo monarca, que teria o direito de interpretar as Escrituras, decidir questões religiosas e presidir o culto. <br />
 			Neste sentido, critica a livre interpretação da Bíblia na Reforma Protestante por, de certa forma, enfraquecer o monarca. Sua filosofia política foi analisada <br />
 			pelo cientista político Richard Tuck como uma resposta para os problemas que o método cartesiano introduziu para a filosofia moral. Hobbes argumenta que só <br />
 			podemos conhecer algo do mundo exterior a partir das impressões sensoriais que temos dele (\"Só existe o que meus sentidos percebem\"). <br />

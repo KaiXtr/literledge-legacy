@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta boémio, dandy, flâneur[1] e teórico da arte francesa. É considerado um dos precursores do simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia,[2] juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
+			Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta boémio, dandy, flâneur e teórico da arte francesa. É considerado um dos precursores do simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia, juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
 			<br />
 			Nasceu em 9 de abril de 1821 em Paris. Estudou no Colégio Real de Lyon e Lycée Louis-le-Grand (de onde foi expulso por não querer mostrar um bilhete que lhe fora passado por um colega).
 
@@ -43,7 +43,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta boémio, dandy, flâneur[1] e teórico da arte francesa. É considerado um dos precursores do simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia,[2] juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
+			Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta boémio, dandy, flâneur e teórico da arte francesa. É considerado um dos precursores do simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia, juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
 			<br />
 			Nasceu em 9 de abril de 1821 em Paris. Estudou no Colégio Real de Lyon e Lycée Louis-le-Grand (de onde foi expulso por não querer mostrar um bilhete que lhe fora passado por um colega).
 
@@ -62,7 +62,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta boémio, dandy, flâneur[1] e teórico da arte francesa. É considerado um dos precursores do simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia,[2] juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
+			Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta boémio, dandy, flâneur e teórico da arte francesa. É considerado um dos precursores do simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia, juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
 			<br />
 			Nasceu em 9 de abril de 1821 em Paris. Estudou no Colégio Real de Lyon e Lycée Louis-le-Grand (de onde foi expulso por não querer mostrar um bilhete que lhe fora passado por um colega).
 

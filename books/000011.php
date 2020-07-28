@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Viagem ao Centro Da Terra (em língua francesa: Voyage au Centre de la Terre) é um livro de ficção científica, de autoria do escritor francês Júlio Verne, lançado em 1864 e considerado como um dos clássicos do gênero.[1] Uma obra que leva o leitor dentro de uma emocionante aventura narrada em primeira pessoa por Axel, um garoto que participa do percurso ao centro da terra, realizado graças a um manuscrito decifrado pelo próprio.[1] O volume é um exemplo de como um escritor pode transitar pelo real e pelo ficcional de forma muito bem estruturada e, com isso, deixar solto para o leitor pensar no que pode acontecer na realidade. O trabalho de Verne foi digno por discutir em seus livros certos assuntos científicos, os quais ainda não se sabiam em sua época.
+					Viagem ao Centro Da Terra (em língua francesa: Voyage au Centre de la Terre) é um livro de ficção científica, de autoria do escritor francês Júlio Verne, lançado em 1864 e considerado como um dos clássicos do gênero. Uma obra que leva o leitor dentro de uma emocionante aventura narrada em primeira pessoa por Axel, um garoto que participa do percurso ao centro da terra, realizado graças a um manuscrito decifrado pelo próprio. O volume é um exemplo de como um escritor pode transitar pelo real e pelo ficcional de forma muito bem estruturada e, com isso, deixar solto para o leitor pensar no que pode acontecer na realidade. O trabalho de Verne foi digno por discutir em seus livros certos assuntos científicos, os quais ainda não se sabiam em sua época.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -51,7 +51,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Viagem ao Centro Da Terra (em língua francesa: Voyage au Centre de la Terre) é um livro de ficção científica, de autoria do escritor francês Júlio Verne, lançado em 1864 e considerado como um dos clássicos do gênero.[1] Uma obra que leva o leitor dentro de uma emocionante aventura narrada em primeira pessoa por Axel, um garoto que participa do percurso ao centro da terra, realizado graças a um manuscrito decifrado pelo próprio.[1] O volume é um exemplo de como um escritor pode transitar pelo real e pelo ficcional de forma muito bem estruturada e, com isso, deixar solto para o leitor pensar no que pode acontecer na realidade. O trabalho de Verne foi digno por discutir em seus livros certos assuntos científicos, os quais ainda não se sabiam em sua época.
+					Viagem ao Centro Da Terra (em língua francesa: Voyage au Centre de la Terre) é um livro de ficção científica, de autoria do escritor francês Júlio Verne, lançado em 1864 e considerado como um dos clássicos do gênero. Uma obra que leva o leitor dentro de uma emocionante aventura narrada em primeira pessoa por Axel, um garoto que participa do percurso ao centro da terra, realizado graças a um manuscrito decifrado pelo próprio. O volume é um exemplo de como um escritor pode transitar pelo real e pelo ficcional de forma muito bem estruturada e, com isso, deixar solto para o leitor pensar no que pode acontecer na realidade. O trabalho de Verne foi digno por discutir em seus livros certos assuntos científicos, os quais ainda não se sabiam em sua época.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -76,7 +76,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					Viagem ao Centro Da Terra (em língua francesa: Voyage au Centre de la Terre) é um livro de ficção científica, de autoria do escritor francês Júlio Verne, lançado em 1864 e considerado como um dos clássicos do gênero.[1] Uma obra que leva o leitor dentro de uma emocionante aventura narrada em primeira pessoa por Axel, um garoto que participa do percurso ao centro da terra, realizado graças a um manuscrito decifrado pelo próprio.[1] O volume é um exemplo de como um escritor pode transitar pelo real e pelo ficcional de forma muito bem estruturada e, com isso, deixar solto para o leitor pensar no que pode acontecer na realidade. O trabalho de Verne foi digno por discutir em seus livros certos assuntos científicos, os quais ainda não se sabiam em sua época.
+					Viagem ao Centro Da Terra (em língua francesa: Voyage au Centre de la Terre) é um livro de ficção científica, de autoria do escritor francês Júlio Verne, lançado em 1864 e considerado como um dos clássicos do gênero. Uma obra que leva o leitor dentro de uma emocionante aventura narrada em primeira pessoa por Axel, um garoto que participa do percurso ao centro da terra, realizado graças a um manuscrito decifrado pelo próprio. O volume é um exemplo de como um escritor pode transitar pelo real e pelo ficcional de forma muito bem estruturada e, com isso, deixar solto para o leitor pensar no que pode acontecer na realidade. O trabalho de Verne foi digno por discutir em seus livros certos assuntos científicos, os quais ainda não se sabiam em sua época.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>

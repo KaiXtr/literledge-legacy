@@ -40,7 +40,7 @@
 
 
 					Edição de bolso americana de A Arte da Guerra.
-					Hoje, A Arte da Guerra parece destinado a secundar outra guerra: a das empresas no mundo dos negócios. Assim, o livro migrou das estantes dos estrategistas para as do economista e do administrador[1]
+					Hoje, A Arte da Guerra parece destinado a secundar outra guerra: a das empresas no mundo dos negócios. Assim, o livro migrou das estantes dos estrategistas para as do economista e do administrador
 
 					Embora as táticas bélicas tenham mudado desde a época de Sun Tzu, esse tratado teria influenciado, segundo a Enciclopédia Britânica, certos estrategistas modernos como Mao Tsé-Tung, em sua luta contra os japoneses e os chineses nacionalistas.
 
@@ -68,7 +68,7 @@
 
 
 					Edição de bolso americana de A Arte da Guerra.
-					Hoje, A Arte da Guerra parece destinado a secundar outra guerra: a das empresas no mundo dos negócios. Assim, o livro migrou das estantes dos estrategistas para as do economista e do administrador[1]
+					Hoje, A Arte da Guerra parece destinado a secundar outra guerra: a das empresas no mundo dos negócios. Assim, o livro migrou das estantes dos estrategistas para as do economista e do administrador
 
 					Embora as táticas bélicas tenham mudado desde a época de Sun Tzu, esse tratado teria influenciado, segundo a Enciclopédia Britânica, certos estrategistas modernos como Mao Tsé-Tung, em sua luta contra os japoneses e os chineses nacionalistas.
 
@@ -96,7 +96,7 @@
 
 
 					Edição de bolso americana de A Arte da Guerra.
-					Hoje, A Arte da Guerra parece destinado a secundar outra guerra: a das empresas no mundo dos negócios. Assim, o livro migrou das estantes dos estrategistas para as do economista e do administrador[1]
+					Hoje, A Arte da Guerra parece destinado a secundar outra guerra: a das empresas no mundo dos negócios. Assim, o livro migrou das estantes dos estrategistas para as do economista e do administrador
 
 					Embora as táticas bélicas tenham mudado desde a época de Sun Tzu, esse tratado teria influenciado, segundo a Enciclopédia Britânica, certos estrategistas modernos como Mao Tsé-Tung, em sua luta contra os japoneses e os chineses nacionalistas.
 

@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					As Regras do Método Sociológico (em francês: Les règles de la méthode sociologique), primeiramente publicado em 1895, é um livro de Émile Durkheim. É reconhecido por ser resultado direto do projeto próprio de Durkheim de estabelecer a sociologia como uma nova ciência social. Assim sugere duas teses principais, sem as quais a sociologia não poderia ser uma ciência, tendo como características:[1]
+					As Regras do Método Sociológico (em francês: Les règles de la méthode sociologique), primeiramente publicado em 1895, é um livro de Émile Durkheim. É reconhecido por ser resultado direto do projeto próprio de Durkheim de estabelecer a sociologia como uma nova ciência social. Assim sugere duas teses principais, sem as quais a sociologia não poderia ser uma ciência, tendo como características:
 
 					Precisa ter um objeto específico de estudo. Diferentemente da filosofia ou da psicologia, o objeto próprio da sociologia é o fato social.
 					Precisa respeitar e aplicar um reconhecimento objetivo, um método científico, trazendo-a para perto, dentro do possível, das outras ciências exatas. Este método deve evitar a todo custo preconceitos e julgamentos subjetivos.
@@ -38,7 +38,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					As Regras do Método Sociológico (em francês: Les règles de la méthode sociologique), primeiramente publicado em 1895, é um livro de Émile Durkheim. É reconhecido por ser resultado direto do projeto próprio de Durkheim de estabelecer a sociologia como uma nova ciência social. Assim sugere duas teses principais, sem as quais a sociologia não poderia ser uma ciência, tendo como características:[1]
+					As Regras do Método Sociológico (em francês: Les règles de la méthode sociologique), primeiramente publicado em 1895, é um livro de Émile Durkheim. É reconhecido por ser resultado direto do projeto próprio de Durkheim de estabelecer a sociologia como uma nova ciência social. Assim sugere duas teses principais, sem as quais a sociologia não poderia ser uma ciência, tendo como características:
 
 					Precisa ter um objeto específico de estudo. Diferentemente da filosofia ou da psicologia, o objeto próprio da sociologia é o fato social.
 					Precisa respeitar e aplicar um reconhecimento objetivo, um método científico, trazendo-a para perto, dentro do possível, das outras ciências exatas. Este método deve evitar a todo custo preconceitos e julgamentos subjetivos.
@@ -50,7 +50,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					As Regras do Método Sociológico (em francês: Les règles de la méthode sociologique), primeiramente publicado em 1895, é um livro de Émile Durkheim. É reconhecido por ser resultado direto do projeto próprio de Durkheim de estabelecer a sociologia como uma nova ciência social. Assim sugere duas teses principais, sem as quais a sociologia não poderia ser uma ciência, tendo como características:[1]
+					As Regras do Método Sociológico (em francês: Les règles de la méthode sociologique), primeiramente publicado em 1895, é um livro de Émile Durkheim. É reconhecido por ser resultado direto do projeto próprio de Durkheim de estabelecer a sociologia como uma nova ciência social. Assim sugere duas teses principais, sem as quais a sociologia não poderia ser uma ciência, tendo como características:
 
 					Precisa ter um objeto específico de estudo. Diferentemente da filosofia ou da psicologia, o objeto próprio da sociologia é o fato social.
 					Precisa respeitar e aplicar um reconhecimento objetivo, um método científico, trazendo-a para perto, dentro do possível, das outras ciências exatas. Este método deve evitar a todo custo preconceitos e julgamentos subjetivos.

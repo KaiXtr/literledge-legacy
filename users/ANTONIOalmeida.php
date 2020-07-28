@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Manuel Antônio de Almeida (Rio de Janeiro, 17 de novembro de 1830 — Macaé, 28 de novembro de 1861) foi um médico, escritor e professor brasileiro.[1] <br />
+			Manuel Antônio de Almeida (Rio de Janeiro, 17 de novembro de 1830 — Macaé, 28 de novembro de 1861) foi um médico, escritor e professor brasileiro. <br />
 			Filho do tenente Antônio de Almeida, e de Josefina Maria de Almeida. Seu pai morreu quando Manuel Antônio tinha dez anos de idade. Concluiu a Faculdade de Medicina  <br />
 			em 1855, mas nunca exerceu a profissão. Dificuldades financeiras o levaram ao jornalismo e às letras.  <br />
 			<br />
@@ -47,7 +47,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Manuel Antônio de Almeida (Rio de Janeiro, 17 de novembro de 1830 — Macaé, 28 de novembro de 1861) foi um médico, escritor e professor brasileiro.[1] <br />
+			Manuel Antônio de Almeida (Rio de Janeiro, 17 de novembro de 1830 — Macaé, 28 de novembro de 1861) foi um médico, escritor e professor brasileiro. <br />
 			Filho do tenente Antônio de Almeida, e de Josefina Maria de Almeida. Seu pai morreu quando Manuel Antônio tinha dez anos de idade. Concluiu a Faculdade de Medicina  <br />
 			em 1855, mas nunca exerceu a profissão. Dificuldades financeiras o levaram ao jornalismo e às letras.  <br />
 			<br />
@@ -70,7 +70,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Manuel Antônio de Almeida (Rio de Janeiro, 17 de novembro de 1830 — Macaé, 28 de novembro de 1861) foi um médico, escritor e professor brasileiro.[1] <br />
+			Manuel Antônio de Almeida (Rio de Janeiro, 17 de novembro de 1830 — Macaé, 28 de novembro de 1861) foi um médico, escritor e professor brasileiro. <br />
 			Filho do tenente Antônio de Almeida, e de Josefina Maria de Almeida. Seu pai morreu quando Manuel Antônio tinha dez anos de idade. Concluiu a Faculdade de Medicina  <br />
 			em 1855, mas nunca exerceu a profissão. Dificuldades financeiras o levaram ao jornalismo e às letras.  <br />
 			<br />

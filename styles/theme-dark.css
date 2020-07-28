@@ -176,6 +176,10 @@ a:active{
 	border-color: var(--color-thumb);
 }
 
+#thank{
+	background-color: var(--color-thumb);
+}
+
 #bookinfo{
 	background-color: var(--bg-rect);
 }
@@ -259,6 +263,10 @@ a:active{
 .portraits:hover{
 	background-color: var(--bg-thmb);
 	border-color: var(--bg-thmb);
+}
+
+.litbut h2{
+	color: var(--header-color);
 }
 
 .infocontent{

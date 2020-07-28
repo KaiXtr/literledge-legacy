@@ -24,13 +24,13 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.[1]
+			Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.
 
 			Sua prática didática fundamentava-se na crença de que o educando assimilaria o objeto de estudo fazendo uso de uma prática dialética com a realidade, em contraposição à por ele denominada educação bancária, tecnicista e alienante: o educando criaria sua própria educação, fazendo ele próprio o caminho, e não seguindo um já previamente construído; libertando-se de chavões alienantes, o educando seguiria e criaria o rumo do seu aprendizado. Destacou-se por seu trabalho na área da educação popular, voltada tanto para a escolarização como para a formação da consciência política.
 
-			Autor de Pedagogia do Oprimido, livro que propõe um método de alfabetização dialético, se diferenciou do \"vanguardismo\" dos intelectuais de esquerda tradicionais e sempre defendeu o diálogo com as pessoas simples, não só como método, mas como um modo de ser realmente democrático. Trata-se da terceira obra mais citada em trabalhos acadêmicos da área de humanas em todo o mundo, à frente de clássicos como Vigiar e Punir de Michel Foucault e O Capital de Karl Marx.[2][3]
+			Autor de Pedagogia do Oprimido, livro que propõe um método de alfabetização dialético, se diferenciou do \"vanguardismo\" dos intelectuais de esquerda tradicionais e sempre defendeu o diálogo com as pessoas simples, não só como método, mas como um modo de ser realmente democrático. Trata-se da terceira obra mais citada em trabalhos acadêmicos da área de humanas em todo o mundo, à frente de clássicos como Vigiar e Punir de Michel Foucault e O Capital de Karl Marx.
 
-			Foi o brasileiro mais homenageado da história, com pelo menos 35 títulos de Doutor Honoris Causa de universidades da Europa e América; e recebeu diversos galardões como o prêmio da UNESCO de Educação para a Paz em 1986.[4][5][6] Em 13 de abril de 2012 foi sancionada a Lei nº 12.612, que declara o educador Paulo Freire Patrono da Educação Brasileira.[7] Segundo uma pesquisa envolvendo três estados brasileiros, Paulo Freire é o nome de escola mais comum.[8]
+			Foi o brasileiro mais homenageado da história, com pelo menos 35 títulos de Doutor Honoris Causa de universidades da Europa e América; e recebeu diversos galardões como o prêmio da UNESCO de Educação para a Paz em 1986. Em 13 de abril de 2012 foi sancionada a Lei nº 12.612, que declara o educador Paulo Freire Patrono da Educação Brasileira. Segundo uma pesquisa envolvendo três estados brasileiros, Paulo Freire é o nome de escola mais comum.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Paulo_Freire' > Wikipedia </a>
 			<br />
@@ -38,13 +38,13 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.[1]
+			Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.
 
 			Sua prática didática fundamentava-se na crença de que o educando assimilaria o objeto de estudo fazendo uso de uma prática dialética com a realidade, em contraposição à por ele denominada educação bancária, tecnicista e alienante: o educando criaria sua própria educação, fazendo ele próprio o caminho, e não seguindo um já previamente construído; libertando-se de chavões alienantes, o educando seguiria e criaria o rumo do seu aprendizado. Destacou-se por seu trabalho na área da educação popular, voltada tanto para a escolarização como para a formação da consciência política.
 
-			Autor de Pedagogia do Oprimido, livro que propõe um método de alfabetização dialético, se diferenciou do \"vanguardismo\" dos intelectuais de esquerda tradicionais e sempre defendeu o diálogo com as pessoas simples, não só como método, mas como um modo de ser realmente democrático. Trata-se da terceira obra mais citada em trabalhos acadêmicos da área de humanas em todo o mundo, à frente de clássicos como Vigiar e Punir de Michel Foucault e O Capital de Karl Marx.[2][3]
+			Autor de Pedagogia do Oprimido, livro que propõe um método de alfabetização dialético, se diferenciou do \"vanguardismo\" dos intelectuais de esquerda tradicionais e sempre defendeu o diálogo com as pessoas simples, não só como método, mas como um modo de ser realmente democrático. Trata-se da terceira obra mais citada em trabalhos acadêmicos da área de humanas em todo o mundo, à frente de clássicos como Vigiar e Punir de Michel Foucault e O Capital de Karl Marx.
 
-			Foi o brasileiro mais homenageado da história, com pelo menos 35 títulos de Doutor Honoris Causa de universidades da Europa e América; e recebeu diversos galardões como o prêmio da UNESCO de Educação para a Paz em 1986.[4][5][6] Em 13 de abril de 2012 foi sancionada a Lei nº 12.612, que declara o educador Paulo Freire Patrono da Educação Brasileira.[7] Segundo uma pesquisa envolvendo três estados brasileiros, Paulo Freire é o nome de escola mais comum.[8]
+			Foi o brasileiro mais homenageado da história, com pelo menos 35 títulos de Doutor Honoris Causa de universidades da Europa e América; e recebeu diversos galardões como o prêmio da UNESCO de Educação para a Paz em 1986. Em 13 de abril de 2012 foi sancionada a Lei nº 12.612, que declara o educador Paulo Freire Patrono da Educação Brasileira. Segundo uma pesquisa envolvendo três estados brasileiros, Paulo Freire é o nome de escola mais comum.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Paulo_Freire' > Wikipedia </a>
 			<br />
@@ -52,13 +52,13 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.[1]
+			Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.
 
 			Sua prática didática fundamentava-se na crença de que o educando assimilaria o objeto de estudo fazendo uso de uma prática dialética com a realidade, em contraposição à por ele denominada educação bancária, tecnicista e alienante: o educando criaria sua própria educação, fazendo ele próprio o caminho, e não seguindo um já previamente construído; libertando-se de chavões alienantes, o educando seguiria e criaria o rumo do seu aprendizado. Destacou-se por seu trabalho na área da educação popular, voltada tanto para a escolarização como para a formação da consciência política.
 
-			Autor de Pedagogia do Oprimido, livro que propõe um método de alfabetização dialético, se diferenciou do \"vanguardismo\" dos intelectuais de esquerda tradicionais e sempre defendeu o diálogo com as pessoas simples, não só como método, mas como um modo de ser realmente democrático. Trata-se da terceira obra mais citada em trabalhos acadêmicos da área de humanas em todo o mundo, à frente de clássicos como Vigiar e Punir de Michel Foucault e O Capital de Karl Marx.[2][3]
+			Autor de Pedagogia do Oprimido, livro que propõe um método de alfabetização dialético, se diferenciou do \"vanguardismo\" dos intelectuais de esquerda tradicionais e sempre defendeu o diálogo com as pessoas simples, não só como método, mas como um modo de ser realmente democrático. Trata-se da terceira obra mais citada em trabalhos acadêmicos da área de humanas em todo o mundo, à frente de clássicos como Vigiar e Punir de Michel Foucault e O Capital de Karl Marx.
 
-			Foi o brasileiro mais homenageado da história, com pelo menos 35 títulos de Doutor Honoris Causa de universidades da Europa e América; e recebeu diversos galardões como o prêmio da UNESCO de Educação para a Paz em 1986.[4][5][6] Em 13 de abril de 2012 foi sancionada a Lei nº 12.612, que declara o educador Paulo Freire Patrono da Educação Brasileira.[7] Segundo uma pesquisa envolvendo três estados brasileiros, Paulo Freire é o nome de escola mais comum.[8]
+			Foi o brasileiro mais homenageado da história, com pelo menos 35 títulos de Doutor Honoris Causa de universidades da Europa e América; e recebeu diversos galardões como o prêmio da UNESCO de Educação para a Paz em 1986. Em 13 de abril de 2012 foi sancionada a Lei nº 12.612, que declara o educador Paulo Freire Patrono da Educação Brasileira. Segundo uma pesquisa envolvendo três estados brasileiros, Paulo Freire é o nome de escola mais comum.
 			<br />
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Paulo_Freire' > Wikipedia </a>
 			<br />

@@ -24,9 +24,9 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			John Locke (Wrington, 29 de agosto de 1632 — Harlow, 28 de outubro de 1704) foi um filósofo inglês conhecido como o \"pai do liberalismo\",[1] sendo considerado o principal representante do empirismo britânico e um dos principais teóricos do contrato social.[2]
+			John Locke (Wrington, 29 de agosto de 1632 — Harlow, 28 de outubro de 1704) foi um filósofo inglês conhecido como o \"pai do liberalismo\", sendo considerado o principal representante do empirismo britânico e um dos principais teóricos do contrato social.
 
-			Locke ficou conhecido como o fundador do empirismo, além de defender a liberdade e a tolerância religiosa. Como filósofo, pregou a teoria da tábua rasa, segundo a qual a mente humana era como uma folha em branco, que se preenchia apenas com a experiência. Essa teoria é uma crítica à doutrina das ideias inatas de Platão, segundo a qual princípios e noções são inerentes ao conhecimento humano e existem independentemente da experiência.[3]
+			Locke ficou conhecido como o fundador do empirismo, além de defender a liberdade e a tolerância religiosa. Como filósofo, pregou a teoria da tábua rasa, segundo a qual a mente humana era como uma folha em branco, que se preenchia apenas com a experiência. Essa teoria é uma crítica à doutrina das ideias inatas de Platão, segundo a qual princípios e noções são inerentes ao conhecimento humano e existem independentemente da experiência.
 
 			Locke escreveu o Ensaio acerca do Entendimento Humano, onde desenvolve sua teoria sobre a origem e a natureza do conhecimento.
 
@@ -37,9 +37,9 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			John Locke (Wrington, 29 de agosto de 1632 — Harlow, 28 de outubro de 1704) foi um filósofo inglês conhecido como o \"pai do liberalismo\",[1] sendo considerado o principal representante do empirismo britânico e um dos principais teóricos do contrato social.[2]
+			John Locke (Wrington, 29 de agosto de 1632 — Harlow, 28 de outubro de 1704) foi um filósofo inglês conhecido como o \"pai do liberalismo\", sendo considerado o principal representante do empirismo britânico e um dos principais teóricos do contrato social.
 
-			Locke ficou conhecido como o fundador do empirismo, além de defender a liberdade e a tolerância religiosa. Como filósofo, pregou a teoria da tábua rasa, segundo a qual a mente humana era como uma folha em branco, que se preenchia apenas com a experiência. Essa teoria é uma crítica à doutrina das ideias inatas de Platão, segundo a qual princípios e noções são inerentes ao conhecimento humano e existem independentemente da experiência.[3]
+			Locke ficou conhecido como o fundador do empirismo, além de defender a liberdade e a tolerância religiosa. Como filósofo, pregou a teoria da tábua rasa, segundo a qual a mente humana era como uma folha em branco, que se preenchia apenas com a experiência. Essa teoria é uma crítica à doutrina das ideias inatas de Platão, segundo a qual princípios e noções são inerentes ao conhecimento humano e existem independentemente da experiência.
 
 			Locke escreveu o Ensaio acerca do Entendimento Humano, onde desenvolve sua teoria sobre a origem e a natureza do conhecimento.
 
@@ -50,9 +50,9 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			John Locke (Wrington, 29 de agosto de 1632 — Harlow, 28 de outubro de 1704) foi um filósofo inglês conhecido como o \"pai do liberalismo\",[1] sendo considerado o principal representante do empirismo britânico e um dos principais teóricos do contrato social.[2]
+			John Locke (Wrington, 29 de agosto de 1632 — Harlow, 28 de outubro de 1704) foi um filósofo inglês conhecido como o \"pai do liberalismo\", sendo considerado o principal representante do empirismo britânico e um dos principais teóricos do contrato social.
 
-			Locke ficou conhecido como o fundador do empirismo, além de defender a liberdade e a tolerância religiosa. Como filósofo, pregou a teoria da tábua rasa, segundo a qual a mente humana era como uma folha em branco, que se preenchia apenas com a experiência. Essa teoria é uma crítica à doutrina das ideias inatas de Platão, segundo a qual princípios e noções são inerentes ao conhecimento humano e existem independentemente da experiência.[3]
+			Locke ficou conhecido como o fundador do empirismo, além de defender a liberdade e a tolerância religiosa. Como filósofo, pregou a teoria da tábua rasa, segundo a qual a mente humana era como uma folha em branco, que se preenchia apenas com a experiência. Essa teoria é uma crítica à doutrina das ideias inatas de Platão, segundo a qual princípios e noções são inerentes ao conhecimento humano e existem independentemente da experiência.
 
 			Locke escreveu o Ensaio acerca do Entendimento Humano, onde desenvolve sua teoria sobre a origem e a natureza do conhecimento.
 

@@ -25,10 +25,10 @@
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
 			Joaquim Maria Machado de Assis (Rio de Janeiro, 21 de junho de 1839 — Rio de Janeiro, 29 de setembro de 1908) foi um escritor brasileiro, considerado por muitos <br />
-			críticos, estudiosos, escritores e leitores um dos maiores senão o maior nome da literatura do Brasil.[2][3][4][5][6] Escreveu em praticamente todos os gêneros <br />
-			literários, sendo poeta, romancista, cronista, dramaturgo, contista, folhetinista, jornalista e crítico literário.[7][8] Testemunhou a Abolição da escravatura e a <br />
+			críticos, estudiosos, escritores e leitores um dos maiores senão o maior nome da literatura do Brasil. Escreveu em praticamente todos os gêneros <br />
+			literários, sendo poeta, romancista, cronista, dramaturgo, contista, folhetinista, jornalista e crítico literário. Testemunhou a Abolição da escravatura e a <br />
 			mudança política no país quando a República substituiu o Império, além das mais diversas reviravoltas pelo mundo em finais do século XIX e início do XX, tendo sido <br />
-			grande comentador e relator dos eventos político-sociais de sua época.[9] <br />
+			grande comentador e relator dos eventos político-sociais de sua época. <br />
 			 <br />
 			Nascido no Morro do Livramento, Rio de Janeiro, mestiço,[10] de uma família pobre, mal estudou em escolas públicas e nunca frequentou universidade.[11] Os biógrafos <br /> 
 			notam que, interessado pela boemia e pela corte, lutou para subir socialmente abastecendo-se de superioridade intelectual e da cultura da capital.[12] Para isso, assumiu <br />
@@ -39,7 +39,7 @@
 			 de Assis é considerado o introdutor do Realismo no Brasil, com a publicação de Memórias Póstumas de Brás Cubas (1881).[16][17] Este romance é posto ao lado de todas  <br />
 			 suas produções posteriores, Quincas Borba, Dom Casmurro, Esaú e Jacó e Memorial de Aires, ortodoxamente conhecidas como pertencentes a sua segunda fase, em que se notam  <br />
 			 traços de pessimismo e ironia, embora não haja rompimento de resíduos românticos. Dessa fase, os críticos destacam que suas melhores obras são as da Trilogia  <br />
-			 Realista.[1] Sua primeira fase literária é constituída de obras como Ressurreição, A Mão e a Luva, Helena e Iaiá Garcia, onde notam-se características herdadas do  <br />
+			 Realista. Sua primeira fase literária é constituída de obras como Ressurreição, A Mão e a Luva, Helena e Iaiá Garcia, onde notam-se características herdadas do  <br />
 			 Romantismo, ou \"convencionalismo\", como prefere a crítica moderna.[18] <br />
 			  <br />
 			Sua obra foi de fundamental importância para as escolas literárias brasileiras do século XIX e do século XX e surge nos dias de hoje como de grande interesse acadêmico e <br />
@@ -56,10 +56,10 @@
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
 			Joaquim Maria Machado de Assis (Rio de Janeiro, 21 de junho de 1839 — Rio de Janeiro, 29 de setembro de 1908) foi um escritor brasileiro, considerado por muitos <br />
-			críticos, estudiosos, escritores e leitores um dos maiores senão o maior nome da literatura do Brasil.[2][3][4][5][6] Escreveu em praticamente todos os gêneros <br />
-			literários, sendo poeta, romancista, cronista, dramaturgo, contista, folhetinista, jornalista e crítico literário.[7][8] Testemunhou a Abolição da escravatura e a <br />
+			críticos, estudiosos, escritores e leitores um dos maiores senão o maior nome da literatura do Brasil. Escreveu em praticamente todos os gêneros <br />
+			literários, sendo poeta, romancista, cronista, dramaturgo, contista, folhetinista, jornalista e crítico literário. Testemunhou a Abolição da escravatura e a <br />
 			mudança política no país quando a República substituiu o Império, além das mais diversas reviravoltas pelo mundo em finais do século XIX e início do XX, tendo sido <br />
-			grande comentador e relator dos eventos político-sociais de sua época.[9] <br />
+			grande comentador e relator dos eventos político-sociais de sua época. <br />
 			 <br />
 			Nascido no Morro do Livramento, Rio de Janeiro, mestiço,[10] de uma família pobre, mal estudou em escolas públicas e nunca frequentou universidade.[11] Os biógrafos <br /> 
 			notam que, interessado pela boemia e pela corte, lutou para subir socialmente abastecendo-se de superioridade intelectual e da cultura da capital.[12] Para isso, assumiu <br />
@@ -70,7 +70,7 @@
 			 de Assis é considerado o introdutor do Realismo no Brasil, com a publicação de Memórias Póstumas de Brás Cubas (1881).[16][17] Este romance é posto ao lado de todas  <br />
 			 suas produções posteriores, Quincas Borba, Dom Casmurro, Esaú e Jacó e Memorial de Aires, ortodoxamente conhecidas como pertencentes a sua segunda fase, em que se notam  <br />
 			 traços de pessimismo e ironia, embora não haja rompimento de resíduos românticos. Dessa fase, os críticos destacam que suas melhores obras são as da Trilogia  <br />
-			 Realista.[1] Sua primeira fase literária é constituída de obras como Ressurreição, A Mão e a Luva, Helena e Iaiá Garcia, onde notam-se características herdadas do  <br />
+			 Realista. Sua primeira fase literária é constituída de obras como Ressurreição, A Mão e a Luva, Helena e Iaiá Garcia, onde notam-se características herdadas do  <br />
 			 Romantismo, ou \"convencionalismo\", como prefere a crítica moderna.[18] <br />
 			  <br />
 			Sua obra foi de fundamental importância para as escolas literárias brasileiras do século XIX e do século XX e surge nos dias de hoje como de grande interesse acadêmico e <br />
@@ -87,10 +87,10 @@
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
 			Joaquim Maria Machado de Assis (Rio de Janeiro, 21 de junho de 1839 — Rio de Janeiro, 29 de setembro de 1908) foi um escritor brasileiro, considerado por muitos <br />
-			críticos, estudiosos, escritores e leitores um dos maiores senão o maior nome da literatura do Brasil.[2][3][4][5][6] Escreveu em praticamente todos os gêneros <br />
-			literários, sendo poeta, romancista, cronista, dramaturgo, contista, folhetinista, jornalista e crítico literário.[7][8] Testemunhou a Abolição da escravatura e a <br />
+			críticos, estudiosos, escritores e leitores um dos maiores senão o maior nome da literatura do Brasil. Escreveu em praticamente todos os gêneros <br />
+			literários, sendo poeta, romancista, cronista, dramaturgo, contista, folhetinista, jornalista e crítico literário. Testemunhou a Abolição da escravatura e a <br />
 			mudança política no país quando a República substituiu o Império, além das mais diversas reviravoltas pelo mundo em finais do século XIX e início do XX, tendo sido <br />
-			grande comentador e relator dos eventos político-sociais de sua época.[9] <br />
+			grande comentador e relator dos eventos político-sociais de sua época. <br />
 			 <br />
 			Nascido no Morro do Livramento, Rio de Janeiro, mestiço,[10] de uma família pobre, mal estudou em escolas públicas e nunca frequentou universidade.[11] Os biógrafos <br /> 
 			notam que, interessado pela boemia e pela corte, lutou para subir socialmente abastecendo-se de superioridade intelectual e da cultura da capital.[12] Para isso, assumiu <br />
@@ -101,7 +101,7 @@
 			 de Assis é considerado o introdutor do Realismo no Brasil, com a publicação de Memórias Póstumas de Brás Cubas (1881).[16][17] Este romance é posto ao lado de todas  <br />
 			 suas produções posteriores, Quincas Borba, Dom Casmurro, Esaú e Jacó e Memorial de Aires, ortodoxamente conhecidas como pertencentes a sua segunda fase, em que se notam  <br />
 			 traços de pessimismo e ironia, embora não haja rompimento de resíduos românticos. Dessa fase, os críticos destacam que suas melhores obras são as da Trilogia  <br />
-			 Realista.[1] Sua primeira fase literária é constituída de obras como Ressurreição, A Mão e a Luva, Helena e Iaiá Garcia, onde notam-se características herdadas do  <br />
+			 Realista. Sua primeira fase literária é constituída de obras como Ressurreição, A Mão e a Luva, Helena e Iaiá Garcia, onde notam-se características herdadas do  <br />
 			 Romantismo, ou \"convencionalismo\", como prefere a crítica moderna.[18] <br />
 			  <br />
 			Sua obra foi de fundamental importância para as escolas literárias brasileiras do século XIX e do século XX e surge nos dias de hoje como de grande interesse acadêmico e <br />

@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Antônio Gonçalves Dias (Caxias, 10 de agosto de 1823 — Guimarães, 3 de novembro de 1864) foi um poeta, advogado, jornalista, etnógrafo e teatrólogo brasileiro.[2] Um grande expoente do romantismo brasileiro e da tradição literária conhecida como \"indianismo\", é famoso por ter escrito o poema \"Canção do Exílio\", o curto poema épico I-Juca-Pirama e muitos outros poemas nacionalistas e patrióticos, além de seu segundo mais conhecido poema chamado: Canções de Exílio que viriam a dar-lhe o título de poeta nacional do Brasil. Foi um ávido pesquisador das línguas indígenas e do folclore brasileiro.
+			Antônio Gonçalves Dias (Caxias, 10 de agosto de 1823 — Guimarães, 3 de novembro de 1864) foi um poeta, advogado, jornalista, etnógrafo e teatrólogo brasileiro. Um grande expoente do romantismo brasileiro e da tradição literária conhecida como \"indianismo\", é famoso por ter escrito o poema \"Canção do Exílio\", o curto poema épico I-Juca-Pirama e muitos outros poemas nacionalistas e patrióticos, além de seu segundo mais conhecido poema chamado: Canções de Exílio que viriam a dar-lhe o título de poeta nacional do Brasil. Foi um ávido pesquisador das línguas indígenas e do folclore brasileiro.
 
 			É o patrono da cadeira 15 da Academia Brasileira de Letras.
 			<br />
@@ -33,7 +33,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Antônio Gonçalves Dias (Caxias, 10 de agosto de 1823 — Guimarães, 3 de novembro de 1864) foi um poeta, advogado, jornalista, etnógrafo e teatrólogo brasileiro.[2] Um grande expoente do romantismo brasileiro e da tradição literária conhecida como \"indianismo\", é famoso por ter escrito o poema \"Canção do Exílio\", o curto poema épico I-Juca-Pirama e muitos outros poemas nacionalistas e patrióticos, além de seu segundo mais conhecido poema chamado: Canções de Exílio que viriam a dar-lhe o título de poeta nacional do Brasil. Foi um ávido pesquisador das línguas indígenas e do folclore brasileiro.
+			Antônio Gonçalves Dias (Caxias, 10 de agosto de 1823 — Guimarães, 3 de novembro de 1864) foi um poeta, advogado, jornalista, etnógrafo e teatrólogo brasileiro. Um grande expoente do romantismo brasileiro e da tradição literária conhecida como \"indianismo\", é famoso por ter escrito o poema \"Canção do Exílio\", o curto poema épico I-Juca-Pirama e muitos outros poemas nacionalistas e patrióticos, além de seu segundo mais conhecido poema chamado: Canções de Exílio que viriam a dar-lhe o título de poeta nacional do Brasil. Foi um ávido pesquisador das línguas indígenas e do folclore brasileiro.
 
 			É o patrono da cadeira 15 da Academia Brasileira de Letras.
 			<br />
@@ -42,7 +42,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Antônio Gonçalves Dias (Caxias, 10 de agosto de 1823 — Guimarães, 3 de novembro de 1864) foi um poeta, advogado, jornalista, etnógrafo e teatrólogo brasileiro.[2] Um grande expoente do romantismo brasileiro e da tradição literária conhecida como \"indianismo\", é famoso por ter escrito o poema \"Canção do Exílio\", o curto poema épico I-Juca-Pirama e muitos outros poemas nacionalistas e patrióticos, além de seu segundo mais conhecido poema chamado: Canções de Exílio que viriam a dar-lhe o título de poeta nacional do Brasil. Foi um ávido pesquisador das línguas indígenas e do folclore brasileiro.
+			Antônio Gonçalves Dias (Caxias, 10 de agosto de 1823 — Guimarães, 3 de novembro de 1864) foi um poeta, advogado, jornalista, etnógrafo e teatrólogo brasileiro. Um grande expoente do romantismo brasileiro e da tradição literária conhecida como \"indianismo\", é famoso por ter escrito o poema \"Canção do Exílio\", o curto poema épico I-Juca-Pirama e muitos outros poemas nacionalistas e patrióticos, além de seu segundo mais conhecido poema chamado: Canções de Exílio que viriam a dar-lhe o título de poeta nacional do Brasil. Foi um ávido pesquisador das línguas indígenas e do folclore brasileiro.
 
 			É o patrono da cadeira 15 da Academia Brasileira de Letras.
 			<br />

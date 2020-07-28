@@ -26,7 +26,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Volta ao Mundo em 80 Dias (Le tour du monde en quatre-vingts jours, em francês) é um romance de aventura escrito pelo francês Júlio Verne e lançado em 1873.[1] A obra retrata a tentativa do cavalheiro inglês Phileas Fogg e seu valete, Passepartout, de circum-navegar o mundo em 80 dias. É considerada uma das maiores obras da literatura mundial, tendo inspirado várias adaptações ao cinema e ao teatro.
+					A Volta ao Mundo em 80 Dias (Le tour du monde en quatre-vingts jours, em francês) é um romance de aventura escrito pelo francês Júlio Verne e lançado em 1873. A obra retrata a tentativa do cavalheiro inglês Phileas Fogg e seu valete, Passepartout, de circum-navegar o mundo em 80 dias. É considerada uma das maiores obras da literatura mundial, tendo inspirado várias adaptações ao cinema e ao teatro.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -43,7 +43,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Volta ao Mundo em 80 Dias (Le tour du monde en quatre-vingts jours, em francês) é um romance de aventura escrito pelo francês Júlio Verne e lançado em 1873.[1] A obra retrata a tentativa do cavalheiro inglês Phileas Fogg e seu valete, Passepartout, de circum-navegar o mundo em 80 dias. É considerada uma das maiores obras da literatura mundial, tendo inspirado várias adaptações ao cinema e ao teatro.
+					A Volta ao Mundo em 80 Dias (Le tour du monde en quatre-vingts jours, em francês) é um romance de aventura escrito pelo francês Júlio Verne e lançado em 1873. A obra retrata a tentativa do cavalheiro inglês Phileas Fogg e seu valete, Passepartout, de circum-navegar o mundo em 80 dias. É considerada uma das maiores obras da literatura mundial, tendo inspirado várias adaptações ao cinema e ao teatro.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>
@@ -60,7 +60,7 @@
 						echo "
 					<a name='goto1'></a>
 					<h1> Resenha </h1>
-					A Volta ao Mundo em 80 Dias (Le tour du monde en quatre-vingts jours, em francês) é um romance de aventura escrito pelo francês Júlio Verne e lançado em 1873.[1] A obra retrata a tentativa do cavalheiro inglês Phileas Fogg e seu valete, Passepartout, de circum-navegar o mundo em 80 dias. É considerada uma das maiores obras da literatura mundial, tendo inspirado várias adaptações ao cinema e ao teatro.
+					A Volta ao Mundo em 80 Dias (Le tour du monde en quatre-vingts jours, em francês) é um romance de aventura escrito pelo francês Júlio Verne e lançado em 1873. A obra retrata a tentativa do cavalheiro inglês Phileas Fogg e seu valete, Passepartout, de circum-navegar o mundo em 80 dias. É considerada uma das maiores obras da literatura mundial, tendo inspirado várias adaptações ao cinema e ao teatro.
 					<hr>
 					<a name='goto2'></a>
 					<h1> Personagens </h1>

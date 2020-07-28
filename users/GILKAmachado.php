@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Gilka da Costa de Melo Machado, conhecida como Gilka Machado, (Rio de Janeiro, 12 de março de 1893 - Rio de Janeiro, 11 de dezembro de 1980) foi uma poeta brasileira.[1] Seu trabalho geralmente é classificado como simbolista. Machado ficou conhecida como uma das primeiras mulheres a escrever poesia erótica no Brasil; também foi uma das fundadoras do Partido Republicano Feminino (em 1910), que defendia o direito das mulheres ao voto[2], atuando no mesmo também como tesoureira.
+			Gilka da Costa de Melo Machado, conhecida como Gilka Machado, (Rio de Janeiro, 12 de março de 1893 - Rio de Janeiro, 11 de dezembro de 1980) foi uma poeta brasileira. Seu trabalho geralmente é classificado como simbolista. Machado ficou conhecida como uma das primeiras mulheres a escrever poesia erótica no Brasil; também foi uma das fundadoras do Partido Republicano Feminino (em 1910), que defendia o direito das mulheres ao voto, atuando no mesmo também como tesoureira.
 
 			Desde o resgate de sua vida e obra por pesquisadores nos últimos anos, o interesse pela figura da poeta vem crescendo.
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Gilka_Machado'> Wikipedia </a>
@@ -32,7 +32,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Gilka da Costa de Melo Machado, conhecida como Gilka Machado, (Rio de Janeiro, 12 de março de 1893 - Rio de Janeiro, 11 de dezembro de 1980) foi uma poeta brasileira.[1] Seu trabalho geralmente é classificado como simbolista. Machado ficou conhecida como uma das primeiras mulheres a escrever poesia erótica no Brasil; também foi uma das fundadoras do Partido Republicano Feminino (em 1910), que defendia o direito das mulheres ao voto[2], atuando no mesmo também como tesoureira.
+			Gilka da Costa de Melo Machado, conhecida como Gilka Machado, (Rio de Janeiro, 12 de março de 1893 - Rio de Janeiro, 11 de dezembro de 1980) foi uma poeta brasileira. Seu trabalho geralmente é classificado como simbolista. Machado ficou conhecida como uma das primeiras mulheres a escrever poesia erótica no Brasil; também foi uma das fundadoras do Partido Republicano Feminino (em 1910), que defendia o direito das mulheres ao voto, atuando no mesmo também como tesoureira.
 
 			Desde o resgate de sua vida e obra por pesquisadores nos últimos anos, o interesse pela figura da poeta vem crescendo.
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Gilka_Machado'> Wikipedia </a>
@@ -40,7 +40,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Gilka da Costa de Melo Machado, conhecida como Gilka Machado, (Rio de Janeiro, 12 de março de 1893 - Rio de Janeiro, 11 de dezembro de 1980) foi uma poeta brasileira.[1] Seu trabalho geralmente é classificado como simbolista. Machado ficou conhecida como uma das primeiras mulheres a escrever poesia erótica no Brasil; também foi uma das fundadoras do Partido Republicano Feminino (em 1910), que defendia o direito das mulheres ao voto[2], atuando no mesmo também como tesoureira.
+			Gilka da Costa de Melo Machado, conhecida como Gilka Machado, (Rio de Janeiro, 12 de março de 1893 - Rio de Janeiro, 11 de dezembro de 1980) foi uma poeta brasileira. Seu trabalho geralmente é classificado como simbolista. Machado ficou conhecida como uma das primeiras mulheres a escrever poesia erótica no Brasil; também foi uma das fundadoras do Partido Republicano Feminino (em 1910), que defendia o direito das mulheres ao voto, atuando no mesmo também como tesoureira.
 
 			Desde o resgate de sua vida e obra por pesquisadores nos últimos anos, o interesse pela figura da poeta vem crescendo.
 			Fonte: <a href='https://pt.wikipedia.org/wiki/Gilka_Machado'> Wikipedia </a>
