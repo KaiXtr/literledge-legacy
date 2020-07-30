@@ -77,7 +77,7 @@
 						<?php echo "<input type='text' class='textbox' name='name' value='".$i['pt']."' maxLength='30' />"; ?>
 						<br />
 						<span id='text'> email </span> <br />
-						<?php echo "<input type='text' class='textbox' name='email' value='".$i['email']."' maxLength='30' />"; ?>
+						<?php echo "<input type='email' class='textbox' name='email' value='".$i['email']."' maxLength='30' />"; ?>
 						<br />
 						<div class='selectrow'>
 							<span id='text'>

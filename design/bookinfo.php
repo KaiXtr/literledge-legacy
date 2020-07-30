@@ -102,6 +102,13 @@
 					}
 
 					if ($ys == true) {
+						if ($i['auctor'] == '2') {
+							echo "<button id='editreview' class='btpress'>";
+							if ($lang == 'pt') {echo "Editar resenha";}
+							if ($lang == 'en') {echo "Edit review";}
+							if ($lang == 'es') {echo "Editar reseña";}
+							echo "</button>";
+						}
 						$shelf = $conn->query("SELECT * FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b['id']."' and state='0'");
 						$quant = $conn->query("SELECT * FROM shelves WHERE user='".$_SESSION['user']."' and state='0'");
 						if ($shelf->num_rows > 0) {$conn->query("DELETE FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b['id']."' and state='0'");}

@@ -281,7 +281,7 @@
 								</select>
 								<input id='ahometown%lid%' type='text' class='textbox' name='ahometown[]' placeholder='hometown*' style='width: 160px' autocomplete='off' /><br />
 								<input id='aacademy%lid%' type='text' class='textbox' name='aacademy[]' placeholder='academy (ACC-XX-XX)' /><br />
-								<input id='aemail%lid%' type='text' class='textbox' name='aemail[]' placeholder='email*' value='@literledge.com' /><br />
+								<input id='aemail%lid%' type='email' class='textbox' name='aemail[]' placeholder='email*' value='@literledge.com' /><br />
 								<input id='abonds%lid%' type='text' class='textbox' name='abonds[]' placeholder='bonds (nick[X];)' /><br />
 								<input id='arid%lid%' type='hidden' name='arid[]' value='%arid%' />
 								</th>

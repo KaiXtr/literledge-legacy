@@ -271,6 +271,8 @@ $(document).ready(function() {
 	$("#btcridel").on('click', function () {set_display('cridel')});
 	$("#btcriditexit").on('click', function () {set_display('cridit')});
 	$("#btcridelexit").on('click', function () {set_display('cridel')});
+	$("#editreview").on('click', function () {edit_page(event,'review')});
+	$("#editbio").on('click', function () {edit_page(event,'bio')});
 });
 
 /*
@@ -556,4 +558,14 @@ function email_autofill(lid) {
 		autofill += nick.value.match(/([a-z]['a-z]+|\b[a-z]\b)/g)[0];
 	}
 	document.getElementById('aemail'+lid).value = autofill+'@literledge.com';
+}
+
+function edit_page(event, id) {
+	var obj = document.getElementById(id);
+	obj.innerHTML = "<form action='account/edit_page.php' method='post'> \
+	<textarea id='revedit' class='textbox long' name='pagechanges'>" + obj.innerHTML + "</textarea> \
+	<input type='submit' id='editreview' class='btpress' /> \
+	<input type='hidden' name='webpage' value='" + window.location.href +"' /> \
+	</form>";
+	event.target.style = 'display: none';
 }

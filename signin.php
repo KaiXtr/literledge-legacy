@@ -47,7 +47,7 @@
 						echo $errl ."</span>";
 					?>
 					<span id='text'> email </span> <br />
-					<input type='text' class='textbox' name='email' /> <br />
+					<input type='email' class='textbox' name='email' /> <br />
 
 					<?php
 						$errl = "<span class='error'>";
