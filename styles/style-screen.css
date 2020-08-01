@@ -1134,6 +1134,22 @@ hr {
 	margin: 0px;
 }
 
+.portraits.citation {
+	width: 660px;
+	display: flex;
+}
+
+.portraits .cinfo {
+	margin: 0px;
+	width: 300px;
+}
+
+.portraits .ctext {
+	margin: 0px;
+	padding: 40px;
+	width: 200px;
+}
+
 .pormini {
 	padding: 0px;
 	width: 38px;
@@ -1328,10 +1344,11 @@ hr {
 	cursor: default;
 }
 
-#editreview {
+#editreview, #editbio {
 	top: 500px;
 	right: 30px;
 	position: fixed;
+	z-index: 30;
 }
 
 #revedit {

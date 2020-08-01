@@ -100,6 +100,19 @@
 				if (($x != '00')&&($x != '01')) {echo '<li><a href="academies/'.$x.'"> '.$v.' </li></a>';}
 			}
 		?>
+		<li><hr></li>
+		<li> <h1>
+			<?php
+				if ($_COOKIE['lang'] == 'pt') {echo "Premiações";}
+				if ($_COOKIE['lang'] == 'en') {echo "Awards";}
+				if ($_COOKIE['lang'] == 'es') {echo "Premios";}
+			?>
+		</h1> </li>
+		<?php
+			foreach ($przlst as $x => $v) {
+				if (($x != '00')&&($x != '01')) {echo '<li><a href="prizes/'.$x.'"> '.$v.' </li></a>';}
+			}
+		?>
 		<li><br /></li>
 		<li><br /></li>
 		<li><br /></li>

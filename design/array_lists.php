@@ -117,6 +117,17 @@ else if ($_COOKIE['lang'] == 'es') {
 	$acalst = array('00'=>'Patrón','01'=>'Fundador','AFR'=>'Academia Francesa','ABL'=>'Academia Brasileña de Letras','APL'=>'Academia Paraibana de Letras');
 	}
 
+#PRIZES
+if ($_COOKIE['lang'] == 'pt') {
+	$przlst = array('nobel'=>'Prêmio Nobel de Literatura','machadoassis'=>'Prêmio Machado de Assis');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$przlst = array('nobel'=>'Nobel Prize for Literature','machadoassis'=>'Machado de Assis Award');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$przlst = array('nobel'=>'Premio Nobel de Literatura','machadoassis'=>'Premio Machado de Assis');
+	}
+
 #BONDS
 if ($_COOKIE['lang'] == 'pt') {
 	$bndlst = array('H'=>'Marido','W'=>'Esposa','S'=>'Filho','D'=>'Filha','F'=>'Amigo');

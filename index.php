@@ -98,80 +98,86 @@
 				echo "<div class='brow home'>";
 				#RECOMENDATION FEED
 				/*if (@$_SESSION['user']) {
-					$result = $conn->query("SELECT book, state FROM shelves WHERE user='".$_SESSION['user']."' and state > 0");
-					if ($result->num_rows > 0){
-						$alst = array();
-						$glst = array();
-						$llst = array();
-						$tlst = array();
-						while ($i = $result->fetch_assoc()){
-							$bdata = $conn->query("SELECT auctor,genre,litschool,tags FROM books WHERE id='".$i['book']."'");
-							$b = $bdata->fetch_assoc();
-							$alst[] = $b['auctor'];
-							$glst[] = $b['genre'];
-							$llst[] = $b['litschool'];
-							$tg = 0;
-							for($x=0;$x<strlen($b['tags']);$x++) {
-								if ($b['tags'][$x] == '#') {
-									$t = substr(substr($b['tags'],$x-$tg,$tg),1);
-									$tlst[] = $t;
-									$tg = 0;
-								}
-								$tg++;
-							}
+					$find = $conn->query("SELECT b.id,b.auctor,b.warning,b.genre
+						FROM books as b JOIN shelves as s ON s.book=b.id WHERE s.state > 0 and s.user='".$_SESSION['user']."'");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_array(MYSQLI_ASSOC)) {
+							$books[] = $i;
 						}
-						sort($alst);
-						sort($glst);
-						sort($llst);
-						sort($tlst);
-						$list = array();
-
-						for ($x=0;$x<sizeof($alst);$x++) {
-							$aqry = $conn->query("SELECT id,auctor,warning FROM books WHERE auctor='".$alst[$x]."'");
-							if ($aqry->num_rows > 0) {
-								while ($i = $aqry->fetch_array(MYSQLI_ASSOC)) {
-									if (in_array($i, $list) == false) {$list[] = $i;}
-								}
-							}
-						}
-						for ($x=0;$x<sizeof($glst);$x++) {
-							$gqry = $conn->query("SELECT id,auctor,warning FROM books WHERE genre='".$glst[$x]."'");
-							if ($gqry->num_rows > 0) {
-								while ($i = $gqry->fetch_array(MYSQLI_ASSOC)) {
-									if (in_array($i, $list) == false) {$list[] = $i;}
-								}
-							}
-						}
-						for ($x=0;$x<sizeof($llst);$x++) {
-							$lqry = $conn->query("SELECT id,auctor,warning FROM books WHERE litschool='".$llst[$x]."'");
-							if ($lqry->num_rows > 0) {
-								while ($i = $lqry->fetch_array(MYSQLI_ASSOC)) {
-									if (in_array($i, $list) == false) {$list[] = $i;}
-								}
-							}
-						}
-						for ($x=0;$x<sizeof($tlst);$x++) {
-							$tqry = $conn->query("SELECT id,auctor,warning FROM books WHERE tags REGEXP '#".$tlst[$x]."'");
-							if ($tqry->num_rows > 0) {
-								while ($i = $tqry->fetch_array(MYSQLI_ASSOC)) {
-									if (in_array($i, $list) == false) {$list[] = $i;}
-								}
-							}
-						}
-						$list = array_slice($list, 0, 52);
 					}
-					else {
-						$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
-						if ($result->num_rows > 0) {
-							$list = array();
-							while ($i = $result->fetch_array(MYSQLI_ASSOC)) {
-								$list[] = $i;
+					$find = $conn->query("SELECT id,auctor,warning,genre FROM books ORDER BY RAND() LIMIT 52");
+					if ($find->num_rows > 0) {
+						while ($i = $find->fetch_array(MYSQLI_ASSOC)) {
+							$recomendations[] = $i;
+						}
+					}
+					$values = array();
+					$list = array();
+					#ADD RELEVANT DATA
+					foreach ($books[0] as $key => $val) {
+						if (!array_key_exists($key, $values)) {
+							$values[$key] = array();
+						}
+					}
+					foreach ($books as $i) {
+						foreach ($values as $key => $val) {
+							if (!array_key_exists($i[$key],$values[$key])) {
+								$values[$key][$i[$key]] = 1;
+							}
+							else {
+								$values[$key][$i[$key]] += 1;
 							}
 						}
 					}
+					#SORT ITEMS BY RELEVANT DATA
+					/*foreach ($values as $vkey => $vval) {
+						foreach ($vval as $ikey => $ival) {
+							foreach ($books as $b) {
+								if ($b[$vkey] == $ikey) {
+									$app = true;
+									foreach ($list as $d) {
+										if ($d['id'] == $b['id']) {
+											$d['RELEVANCE'] += $ival;
+											$app = false;
+										}
+									}
+									if ($app == true) {
+										$b['RELEVANCE'] = $ival;
+										$list[] = $b;
+									}
+								}
+							}
+						}
+					}*/
+					#ADD RECOMENDATIONS
+					/*foreach ($recomendations as $i) {
+						foreach ($values as $vkey => $vval) {
+							foreach ($vval as $akey => $aval) {
+								if ($i[$vkey] == $akey) {
+									$app = true;
+									foreach ($list as $d) {
+										if ($i['id'] == $d['id']) {
+											$d['RELEVANCE'] += $aval;
+											$app = false;
+										}
+									}
+									if ($app == true) {
+										$i['RELEVANCE'] = $aval;
+										$list[] = $i;
+									}
+								}
+							}
+						}
+					}
+					#DISPLAY ALGORITHM
+					$nam = array();
+					foreach ($list as $i) {
+						$nam[] = $i['RELEVANCE'];
+					}
+					array_multisort($nam, SORT_DESC, $list);
 				}*/
 				#RANDOM FEED
-				if (1+1 == 2) {
+				if (1+1==2) {
 					$result = $conn->query('SELECT id,auctor,warning FROM books ORDER BY RAND() LIMIT 52');
 					if ($result->num_rows > 0) {
 						$list = array();

@@ -29,6 +29,21 @@
 				</script>";
 			}
 
+			#DEVELOPER TOOLS
+			if (@$_SESSION['user']) {
+				$chk = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
+				if ($chk->num_rows > 0) {
+					$ck = $chk->fetch_assoc();
+					if ($ck['auctor'] == '2') {
+						echo "<button id='editbio' class='btpress'>";
+						if ($_COOKIE['lang'] == 'pt') {echo "Editar biografia";}
+						if ($_COOKIE['lang'] == 'en') {echo "Edit biography";}
+						if ($_COOKIE['lang'] == 'es') {echo "Editar biografía";}
+						echo "</button>";
+					}
+				}
+			}
+
 			#VERIFICATION
 			if ($i["auctor"] == '1') {$v = "<img id='vicon' src='media/images/icons/verified.png' />";}
 			else {$v = "";};

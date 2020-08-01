@@ -23,21 +23,21 @@
 			<div id='review'>
 				<?php
 					if ($_COOKIE['lang'] == 'pt') {
-						echo "<a name='goto1'></a>
+						echo "				<a name=\"goto1\"></a>
 						<h1> Resenha </h1>
 						Memórias Póstumas de Brás Cubas foi o primeiro livro da obra realista de Machado de Assis, considerado por muitos o marco da
 						literatura realista no Brasil. O Narrador é Brás Cubas, um cadáver que decide contar sua história de vida, e como o narrador está morto,
 						longe do plano material, moralidade é a menor das preocupações dele. O narrador constantemente fala diretamente com o leitor, como
-						numa conversa casual, mesmo de forma metalinguística, falando sobre seu próprio livro. <br />
-						<br />
+						numa conversa casual, mesmo de forma metalinguística, falando sobre seu próprio livro. <br>
+						<br>
 						O livro não possui uma ordem cronológica bem definida, rompendo assim com a linearidade da história, característica que marcou a literatura brasileira. 
 						Muitas críticas e sátiras à elite brasileira são feitas, sendo ela representada majoritariamente nos personagens da obra e no próprio Brás Cubas,
-						ironizando seus privilégios. <br />
-						<br />
+						ironizando seus privilégios. <br>
+						<br>
 						A obra foge bastante dos padrões impostos na literatura, além de romper com a linearidade,
 						essa obra não tem um final feliz.
 						<hr>
-						<a name='goto2'></a>
+						<a name=\"goto2\"></a>
 						<h1> Personagens </h1>
 						<ul>
 						<li><b>Brás Cubas: </b>protagonista da história e o narrador, considerado o defunto-autor.</li>
@@ -49,27 +49,27 @@
 						<li><b>Nhá-Loló: </b>sobrinha de Cotrim e pretendente de Brás Cubas.</li>
 						</ul>
 						<hr>
-						<a name='goto3'></a>
+						<a name=\"goto3\"></a>
 						<h1> Adaptações </h1>
-						<a href='https://m.imdb.com/title/tt0166709/' target='_blank'> Memórias Póstumas (2001) - André Klotzel </a>
-						<hr>";
+						<a href=\"https://m.imdb.com/title/tt0166709/\" target=\"_blank\"> Memórias Póstumas (2001) - André Klotzel </a>
+						<hr>			";
 					}
 					if ($_COOKIE['lang'] == 'en') {
-						echo "<a name='goto1'></a>
+						echo "				<a name=\"goto1\"></a>
 						<h1> Review </h1>
 						The Posthumous Memoirs of Brás Cubas was the first book of Machado de Assis's realistic work, considered by many to be the landmark of
 						realistic literature in Brazil. The Narrator is Brás Cubas, a corpse who decides to tell his life story, and as the narrator is dead,
 						far from the material plane, morality is the least of his concerns. The narrator constantly speaks directly to the reader, as
-						in a casual conversation, even in a metalinguistic way, talking about his own book. <br />
-						<br />
+						in a casual conversation, even in a metalinguistic way, talking about his own book. <br>
+						<br>
 						The book does not have a well-defined chronological order, thus breaking with the linearity of history, a characteristic that marked Brazilian literature.
 						Many criticisms and satires of the Brazilian elite are made, being represented mainly in the characters of the work and in Brás Cubas himself,
-						ironing out their privileges. <br />
-						<br />
+						ironing out their privileges. <br>
+						<br>
 						The work differs greatly from the standards imposed in the literature, in addition to breaking with linearity,
 						this work does not have a happy ending.
 						<hr>
-						<a name='goto2'></a>
+						<a name=\"goto2\"></a>
 						<h1> Characters </h1>
 						<ul>
 						<li><b> Brás Cubas: </b>protagonist of the story and the narrator, considered the \"dead author\". </li>
@@ -81,10 +81,10 @@
 						<li><b> Nhá-Loló: </b>niece of Cotrim and suitor of Brás Cubas. </li>
 						</ul>
 						<hr>
-						<a name='goto3'></a>
+						<a name=\"goto3\"></a>
 						<h1> Adaptations </h1>
-						<a href='https://m.imdb.com/title/tt0166709/' target='_blank'> Memórias Póstumas (2001) - André Klotzel </a>
-						<hr>";
+						<a href=\"https://m.imdb.com/title/tt0166709/\" target=\"_blank\"> Memórias Póstumas (2001) - André Klotzel </a>
+						<hr>			";
 					}
 					if ($_COOKIE['lang'] == 'es') {
 						echo "<a name='goto1'></a>

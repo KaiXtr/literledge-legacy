@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Joseph Rudyard Kipling (Bombaim, 30 de dezembro de 1865 — Londres, 18 de janeiro de 1936) foi um autor e poeta britânico, conhecido por seus livros \"The Jungle Book\" (1894), \"The Second Jungle Book\" (1895), \"Just So Stories\" (1902), e \"Puck of Pook's Hill\" (1906); sua novela, \"Kim\" (1901); seus poemas, incluindo \"Mandalay\" (1890), \"Gunga Din\" (1890), \"If\"(1910) e \"Ulster 1912" (1912); e seus muitos contos curtos, incluindo \"The Man Who Would Be King\" (1888) e as compilações \"Life's Handicap\" (1891), \"The Day's Work\" (1898), e \"Plain Tales from the Hills\" (1888).
+			Joseph Rudyard Kipling (Bombaim, 30 de dezembro de 1865 — Londres, 18 de janeiro de 1936) foi um autor e poeta britânico, conhecido por seus livros \"The Jungle Book\" (1894), \"The Second Jungle Book\" (1895), \"Just So Stories\" (1902), e \"Puck of Pook's Hill\" (1906); sua novela, \"Kim\" (1901); seus poemas, incluindo \"Mandalay\" (1890), \"Gunga Din\" (1890), \"If\"(1910) e \"Ulster 1912\" (1912); e seus muitos contos curtos, incluindo \"The Man Who Would Be King\" (1888) e as compilações \"Life's Handicap\" (1891), \"The Day's Work\" (1898), e \"Plain Tales from the Hills\" (1888).
 
 			É considerado o maior \"inovador na arte do conto curto\"; os seus livros para crianças são clássicos da literatura infantil; e o seu melhor trabalho dá mostras de um talento narrativo versátil e brilhante.[nota 1]
 
@@ -37,7 +37,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Joseph Rudyard Kipling (Bombaim, 30 de dezembro de 1865 — Londres, 18 de janeiro de 1936) foi um autor e poeta britânico, conhecido por seus livros \"The Jungle Book\" (1894), \"The Second Jungle Book\" (1895), \"Just So Stories\" (1902), e \"Puck of Pook's Hill\" (1906); sua novela, \"Kim\" (1901); seus poemas, incluindo \"Mandalay\" (1890), \"Gunga Din\" (1890), \"If\"(1910) e \"Ulster 1912" (1912); e seus muitos contos curtos, incluindo \"The Man Who Would Be King\" (1888) e as compilações \"Life's Handicap\" (1891), \"The Day's Work\" (1898), e \"Plain Tales from the Hills\" (1888).
+			Joseph Rudyard Kipling (Bombaim, 30 de dezembro de 1865 — Londres, 18 de janeiro de 1936) foi um autor e poeta britânico, conhecido por seus livros \"The Jungle Book\" (1894), \"The Second Jungle Book\" (1895), \"Just So Stories\" (1902), e \"Puck of Pook's Hill\" (1906); sua novela, \"Kim\" (1901); seus poemas, incluindo \"Mandalay\" (1890), \"Gunga Din\" (1890), \"If\"(1910) e \"Ulster 1912\" (1912); e seus muitos contos curtos, incluindo \"The Man Who Would Be King\" (1888) e as compilações \"Life's Handicap\" (1891), \"The Day's Work\" (1898), e \"Plain Tales from the Hills\" (1888).
 
 			É considerado o maior \"inovador na arte do conto curto\"; os seus livros para crianças são clássicos da literatura infantil; e o seu melhor trabalho dá mostras de um talento narrativo versátil e brilhante.[nota 1]
 
@@ -50,7 +50,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Joseph Rudyard Kipling (Bombaim, 30 de dezembro de 1865 — Londres, 18 de janeiro de 1936) foi um autor e poeta britânico, conhecido por seus livros \"The Jungle Book\" (1894), \"The Second Jungle Book\" (1895), \"Just So Stories\" (1902), e \"Puck of Pook's Hill\" (1906); sua novela, \"Kim\" (1901); seus poemas, incluindo \"Mandalay\" (1890), \"Gunga Din\" (1890), \"If\"(1910) e \"Ulster 1912" (1912); e seus muitos contos curtos, incluindo \"The Man Who Would Be King\" (1888) e as compilações \"Life's Handicap\" (1891), \"The Day's Work\" (1898), e \"Plain Tales from the Hills\" (1888).
+			Joseph Rudyard Kipling (Bombaim, 30 de dezembro de 1865 — Londres, 18 de janeiro de 1936) foi um autor e poeta britânico, conhecido por seus livros \"The Jungle Book\" (1894), \"The Second Jungle Book\" (1895), \"Just So Stories\" (1902), e \"Puck of Pook's Hill\" (1906); sua novela, \"Kim\" (1901); seus poemas, incluindo \"Mandalay\" (1890), \"Gunga Din\" (1890), \"If\"(1910) e \"Ulster 1912\" (1912); e seus muitos contos curtos, incluindo \"The Man Who Would Be King\" (1888) e as compilações \"Life's Handicap\" (1891), \"The Day's Work\" (1898), e \"Plain Tales from the Hills\" (1888).
 
 			É considerado o maior \"inovador na arte do conto curto\"; os seus livros para crianças são clássicos da literatura infantil; e o seu melhor trabalho dá mostras de um talento narrativo versátil e brilhante.[nota 1]
 

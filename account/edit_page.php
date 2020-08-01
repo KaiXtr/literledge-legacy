@@ -9,19 +9,31 @@
 				if ($i['auctor'] == '2') {$ys = true;}
 			}
 		}
-		if (($ys == true)&&(@$_POST['pagechanges'])&&(@$_POST['webpage'])) {
-			$file = $_POST['webpage'];
-			$htmc = fopen($file, 'r') or die('Unable to open file!');
-			print_r($htmc);
-			/*$cont = '<?php'
-			.PHP_EOL.'	$shwpm = "<h1> '.$_POST['pname'][$x].' </h1>'
-			.PHP_EOL.'	'.str_replace(PHP_EOL, '<br />'.PHP_EOL, $_POST['pcontent'][$x]).'<br />'
-			.PHP_EOL.'	<span> ".$pnm." </span>'
-			.PHP_EOL.'	<br />";'
-			.PHP_EOL.'?>';
-			fwrite($htmc, $cont);*/
+		if (($ys == true)&&(@$_POST['pagechanges'])&&(@$_POST['webpage'])&&(@$_POST['webpath'])) {
+			$file = '../'.$_POST['webpath'].'/'.basename($_POST['webpage']);
+			$cont = file_get_contents($file);
+			if ($_POST['webpath'] == 'books') {$tabs = '						';$tbn = 25;}
+			if ($_POST['webpath'] == 'users') {$tabs = '					';$tbn = 24;}
+
+			if ($_COOKIE['lang'] == 'pt') {
+				$old = substr($cont, strpos($cont, " == 'pt') {".PHP_EOL.$tabs.'echo "')+$tbn);
+				$old = substr($old, 0, strpos($old, '";'));
+			}
+			if ($_COOKIE['lang'] == 'en') {
+				$old = substr($cont, strpos($cont, " == 'en') {".PHP_EOL.$tabs.'echo "')+$tbn);
+				$old = substr($old, 0, strpos($old, '";'));
+			}
+			if ($_COOKIE['lang'] == 'es') {
+				$old = substr($cont, strpos($cont, " == 'es') {".PHP_EOL.$tabs.'echo "')+$tbn);
+				$old = substr($old, 0, strpos($old, '";'));
+			}
+			$new = str_replace('"', '\"', $_POST['pagechanges']);
+			$cont = str_replace($old, $new, $cont);
+			$htmc = fopen($file, 'w') or die('Unable to open file!');
+			fwrite($htmc, $cont);
 			fclose($htmc);
 		}
 	$conn->close();
 	}
+	header("location: ".$_POST['webpage']);
 ?>

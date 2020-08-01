@@ -271,8 +271,8 @@ $(document).ready(function() {
 	$("#btcridel").on('click', function () {set_display('cridel')});
 	$("#btcriditexit").on('click', function () {set_display('cridit')});
 	$("#btcridelexit").on('click', function () {set_display('cridel')});
-	$("#editreview").on('click', function () {edit_page(event,'review')});
-	$("#editbio").on('click', function () {edit_page(event,'bio')});
+	$("#editreview").on('click', function () {edit_page(event,'review','books')});
+	$("#editbio").on('click', function () {edit_page(event,'bio','users')});
 });
 
 /*
@@ -560,12 +560,13 @@ function email_autofill(lid) {
 	document.getElementById('aemail'+lid).value = autofill+'@literledge.com';
 }
 
-function edit_page(event, id) {
+function edit_page(event, id, path) {
 	var obj = document.getElementById(id);
 	obj.innerHTML = "<form action='account/edit_page.php' method='post'> \
 	<textarea id='revedit' class='textbox long' name='pagechanges'>" + obj.innerHTML + "</textarea> \
 	<input type='submit' id='editreview' class='btpress' /> \
 	<input type='hidden' name='webpage' value='" + window.location.href +"' /> \
+	<input type='hidden' name='webpath' value='" + path +"' /> \
 	</form>";
 	event.target.style = 'display: none';
 }
