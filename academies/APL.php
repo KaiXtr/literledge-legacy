@@ -15,7 +15,7 @@
 		<?php include '../design/header.php' ?>
 		<?php include '../design/lateralbar.php' ?>
 
-		<div id='banner' style='background-image: url("media/images/banners/<?php echo strtolower($aca); ?>.jpg")'></div>
+		<div id='banner' style='background-image: url("media/images/banners/<?php echo $aca; ?>.jpg")'></div>
 		<?php echo "<div id='profile'><a href='http://www.academia.org.br/' target='_blank'><h1 id='litername'> ".$acalst[$aca]." </h1></a></div>"; ?>
 		<div id='bio'>
 		<?php

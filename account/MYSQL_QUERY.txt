@@ -1,0 +1,17 @@
+INSERT INTO users VALUES ('Empédocles','Empedocles','Empédocles','EMPEDOCLES','495 a.c','430 a.c','GRE','Agrigento - Sicília','M','1',null,'empedocles.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Epicuro','Epicurus','Epicuro','EPICURUS','341 a.c','270 a.c','GRE','Samos','M','1',null,'epicurus.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Safo','Sappho','Safo','SAPPHO','630 - 604 a.c','580 a.c','GRE','Mitilene - Lesbos','F','1',null,'sappho.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Hipátia','Hypatia','Hipatia','HYPATIA','351 - 370','415','GRE','Alexandria - Egito','F','1',null,'hypatia.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Antístenes','Antisthenes',null,'ANTISTHENES','445 a.c','365 a.c','GRE','Atenas','M','1',null,'antisthenes.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Ptolomeu','Ptolemy','Ptolomeo','PTOLEMY','90','170','GRE','Alexandria - Egito','M','1',null,'ptolemy.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Auguste Comte',null,null,'COMTEauguste','1798-01-19','1857-09-05','FRA','Montpellier','M','1',null,'comte.auguste@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Voltaire',null,null,'VOLTAIRE','1694-11-21','1778-05-30','FRA','Paris','M','1','AFR-33-06','voltaire.@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Adam Smith',null,null,'SMITHadam','1723-06-05','1790-07-17','SCO','Kirkcaldy - Fife','M','1',null,'smith.adam@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Albert Camus',null,null,'CAMUSalbert','1913-11-07','1960-01-04','ALG','Mondovi','M','1',null,'camus.albert@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Denis Diderot',null,null,'DIDEROTdenis','1713-10-05','1784-07-31','FRA','Langres - Haute-Marne','M','1',null,'diderot.denis@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Baruch Espinosa','Baruch Spinoza',null,'SPINOZAbaruch','1632-11-24','1677-02-21','NED','Amsterdã','M','1',null,'spinoza.baruch@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Mário Quintana',null,null,'QUINTANAmario','1906-07-30','1994-05-05','BRA','Alegrete - RS','M','1',null,'quintana.mario@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Charles Bukowski',null,null,'BUKOWSKIcharles','1920-08-16','1994-03-09','USA','Andernach - Alemanha','M','1',null,'bukowski.charles@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Gilberto Freyre',null,null,'FREYREgilberto','1900-03-15','1987-07-18','BRA','Recife - PE','M','1',null,'freyre.gilberto@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Pablo Neruda',null,null,'NERUDApablo','1904-07-12','1973-09-23','CHI','Parral - Maule','M','1',null,'neruda.pablo@literledge.com','Gu@n@b@r@',null,null);
+INSERT INTO users VALUES ('Carolina de Jesus',null,null,'JESUScarolina','1914-03-14','1977-02-13','BRA','Sacramento - MG','F','1',null,'jesus.carolina@literledge.com','Gu@n@b@r@',null,null);
