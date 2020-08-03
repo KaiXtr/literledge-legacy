@@ -6,11 +6,11 @@
 		<?php
 			require 'account/mysql_connect.php';
 			if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-				{$v = 'Contribuir - ';}
+				{$v = 'Contribuir';}
 			else if ($_COOKIE['lang'] == 'en')
-				{$v = 'Contribute - ';}
+				{$v = 'Contribute';}
 			else if ($_COOKIE['lang'] == 'es')
-				{$v = 'Contribuir - ';}
+				{$v = 'Contribuir';}
 			include 'design/metadata.php';
 			if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
 			if (!isset($_SESSION['user'])) {header('location: login.php');}
@@ -285,6 +285,11 @@
 				</form>
 			</div>
 		</div>
+		<script type='text/javascript'>
+			setTimeout(function (){
+				document.getElementById('thank').style.opacity = '0%';
+			},3000)
+		</script>
 		<?php include 'design/footer.php' ?>
 	</body>
 </html>

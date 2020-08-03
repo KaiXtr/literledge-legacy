@@ -86,7 +86,7 @@
 				else if ($r >= 10000000){$sl = strlen($b['readings']); $r = substr($b['readings'],0,$sl-6).'M';}
 
 				#SHARING
-				$shurl = 'literledge.000webhostapp.com/!'.$b['id'];
+				$shurl = $base_url.'!'.$b['id'];
 				if ($lang == 'pt') {$shrmsg = "Venha dar uma olhada no livro ".$t[$lang]." no Literledge! ".$shurl;}
 				if ($lang == 'en') {$shrmsg = "Check out the book ".$t[$lang]." in Literledge! ".$shurl;}
 				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! ".$shurl;}
@@ -122,68 +122,41 @@
 						$uinpt = "<input class='btpress' type='submit' name='unf' value='' style='background-image: url(media/images/icons/unfav.png);' ";
 						$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
 						<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
+						$cpybt = "<input id='copyurl' type='text' value='".$base_url."books/".$b['id'].".php' />
+						<button class='btpress' type='button' onclick='copy_clipboard(\"copyurl\")' style='background-image: url(media/images/icons/copy.png);'></button>";
+						$citbt = "<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: dd mmm. yyyy.' />
+						<button class='btpress' type='button' onclick='copy_clipboard(\"citation\")' style='background-image: url(media/images/icons/copy.png);'></button>";
 
 						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."' and state > '0'");
 						if ($find->num_rows == 0) {
-							$btns = $btns ."
-								<div class='manlan' lang='pt'>
-									".$ainpt." alt='adicionar livro á sua estante' />
-									".$finpt." alt='adicionar livro aos favoritos' />
-									".$shrbt."
-								</div>
-								<div class='manlan' lang='en'>
-									".$ainpt." alt='add book to your shelf' />
-									".$finpt." alt='add book to favorites' />
-									".$shrbt."
-								</div>
-								<div class='manlan' lang='es'>
-									".$ainpt." alt='agregar libro a sua estante' />
-									".$finpt." alt='agregar libro a los favoritos' />
-									".$shrbt."
-								</div>";
+							if ($lang == 'pt') {$btns .= $ainpt." alt='adicionar livro á sua estante' />";}
+							if ($lang == 'en') {$btns .= $ainpt." alt='add book to your shelf' />";}
+							if ($lang == 'es') {$btns .= $ainpt." alt='agregar libro a sua estante' />";}
+
+							if ($lang == 'pt') {$btns .= $finpt." alt='adicionar livro aos favoritos' />";}
+							if ($lang == 'en') {$btns .= $finpt." alt='add book to favorites' />";}
+							if ($lang == 'es') {$btns .= $finpt." alt='agregar libro a los favoritos' />";}
 							}
 						else {
 							$i = $find->fetch_assoc();
+							if ($lang == 'pt') {$btns .= $rinpt." alt='remover livro da sua estante' />";}
+							if ($lang == 'en') {$btns .= $rinpt." alt='remove book from your shelf' />";}
+							if ($lang == 'es') {$btns .= $ainpt." alt='sacar libro de tu estante' />";}
+
 							if ($i['state'] == 3) {
-								$btns = $btns."
-									<div class='manlan' lang='pt'>
-										".$rinpt." alt='remover livro da sua estante' />
-										".$uinpt." alt='remover livro dos favoritos' />
-										".$shrbt."
-									</div>
-									<div class='manlan' lang='en'>
-										".$rinpt." alt='remove book from your shelf' />
-										".$uinpt." alt='remove book from favorites' />
-										".$shrbt."
-									</div>
-									<div class='manlan' lang='es'>
-										".$ainpt." alt='sacar libro de tu estante' />
-										".$finpt." alt='sacar libro dos favoritos' />
-										".$shrbt."
-									</div>";
+								if ($lang == 'pt') {$btns .= $uinpt." alt='remover livro dos favoritos' />";}
+								if ($lang == 'en') {$btns .= $uinpt." alt='remove book from favorites' />";}
+								if ($lang == 'es') {$btns .= $finpt." alt='sacar libro dos favoritos' />";}
 									}
 							else {
-								$btns = $btns."
-									<div class='manlan' lang='pt'>
-										".$rinpt." alt='remover livro da sua estante' />
-										".$finpt." alt='adicionar livro aos favoritos' />
-										".$shrbt."
-									</div>
-									<div class='manlan' lang='en'>
-										".$rinpt." alt='remove book from your shelf' />
-										".$finpt." alt='add book to favorites' />
-										".$shrbt."
-									</div>
-									<div class='manlan' lang='es'>
-										".$ainpt." alt='sacar libro de tu estante' />
-										".$finpt." alt='agregar libro a los favoritos' />
-										".$shrbt."
-									</div>";
-									}
+								if ($lang == 'pt') {$btns .= $finpt." alt='adicionar livro aos favoritos' />";}
+								if ($lang == 'en') {$btns .= $finpt." alt='add book to favorites' />";}
+								if ($lang == 'es') {$btns .= $finpt." alt='agregar libro a los favoritos' />";}
+								}
 							}
 						}
 					}
-				$btns = $btns."<input name='id' value='".$b['id']."' style='display: none;' /></form>";
+				$btns .= $shrbt.$cpybt.$citbt."<input name='id' value='".$b['id']."' style='display: none;' /></form>";
 				
 				echo "<div id='reportab' style='visibility: hidden;'>
 						<form action='account/send_report.php?l=".$b['id']."' method='post'>

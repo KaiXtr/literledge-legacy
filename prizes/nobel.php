@@ -6,7 +6,7 @@
 		<?php
 			require '../design/array_lists.php';
 			$prz = 'nobel';
-			$v = $przlst[$prz].' - ';
+			$v = $przlst[$prz];
 			require '../design/metadata.php';
 		?>
 	</head>
@@ -93,6 +93,16 @@
 				</div>
 			</div>
 		</div>
+		<script type='text/javascript'>
+			if ($(window).width() < 720) {
+				if ($('#litername').height() >= '120') {document.getElementById('litername').style.top = '80px';}
+				else if ($('#litername').height() >= '80') {document.getElementById('litername').style.top = '120px';}
+			}
+			else if ($(window).width() < 2500) {
+				if ($('#litername').height() >= '345') {document.getElementById('litername').style.top = '120px';}
+				else if ($('#litername').height() >= '230') {document.getElementById('litername').style.top = '220px';}
+			}
+		</script>
 		<?php include '../design/footer.php' ?>
 	</body>
 </html>

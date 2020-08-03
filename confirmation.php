@@ -6,11 +6,11 @@
 		<?php
 		if (session_status() == PHP_SESSION_NONE) {session_start();}
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Confirmação da conta - ';}
+			{$v = 'Confirmação da conta';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Account confirmation - ';}
+			{$v = 'Account confirmation';}
 		else if ($_COOKIE['lang'] == 'es')
-			{$v = 'Confirmación de la cuenta - ';}
+			{$v = 'Confirmación de la cuenta';}
 		include 'design/metadata.php';
 		?>
 	</head>

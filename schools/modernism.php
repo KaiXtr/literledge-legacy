@@ -6,7 +6,7 @@
 		<?php
 			require '../design/array_lists.php';
 			$lts = 'Modernism';
-			$v = $ltslst[$lts].' - ';
+			$v = $ltslst[$lts];
 			require '../design/metadata.php';
 		?>
 	</head>

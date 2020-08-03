@@ -4,9 +4,9 @@
 	<!--Então você gosta de usar o botão inspecionar né...?-->
 	<head>
 		<?php
-			if ($_COOKIE['lang'] == 'pt') {$v = 'Em Manutenção - ';}
-			if ($_COOKIE['lang'] == 'en') {$v = 'In Maintenance - ';}
-			if ($_COOKIE['lang'] == 'es') {$v = 'En mantenimiento - ';}
+			if ($_COOKIE['lang'] == 'pt') {$v = 'Em Manutenção';}
+			if ($_COOKIE['lang'] == 'en') {$v = 'In Maintenance';}
+			if ($_COOKIE['lang'] == 'es') {$v = 'En mantenimiento';}
 			include 'design/metadata.php';
 		?>
 	</head>

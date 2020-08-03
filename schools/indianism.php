@@ -6,7 +6,7 @@
 		<?php
 			require '../design/array_lists.php';
 			$lts = 'Indianism';
-			$v = $ltslst[$lts].' - ';
+			$v = $ltslst[$lts];
 			require '../design/metadata.php';
 		?>
 	</head>

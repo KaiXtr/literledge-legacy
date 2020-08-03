@@ -7,11 +7,11 @@
 		if (session_status() == PHP_SESSION_NONE) {session_start();}
 		if (isset($_SESSION['user'])) {header("location: index.php");}
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Recuperar senha - ';}
+			{$v = 'Recuperar senha';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Recover password - ';}
+			{$v = 'Recover password';}
 		else if ($_COOKIE['lang'] == 'es')
-			{$v = 'Recuperar la contraseña - ';}
+			{$v = 'Recuperar la contraseña';}
 		include 'design/metadata.php';
 		?>
 	</head>

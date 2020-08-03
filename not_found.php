@@ -3,7 +3,12 @@
 <html>
 	<!--Então você gosta de usar o botão inspecionar né...?-->
 	<head>
-		<?php $v = 'Página perdida - '; include 'design/metadata.php'; ?>
+		<?php
+			if ($_COOKIE['lang'] == 'pt') {$v = 'Página perdida';}
+			if ($_COOKIE['lang'] == 'en') {$v = 'Lost page';}
+			if ($_COOKIE['lang'] == 'es') {$v = 'Página perdida';}
+			include 'design/metadata.php';
+		?>
 	</head>
 
 	<body>

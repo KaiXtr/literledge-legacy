@@ -5,11 +5,11 @@
 	<head>
 		<?php
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Política de Privacidade - ';}
+			{$v = 'Política de Privacidade';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Privacy Police - ';}
+			{$v = 'Privacy Police';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Política de Privacidad - ';}
+			{$v = 'Política de Privacidad';}
 		include 'design/metadata.php'; ?>
 	</head>
 

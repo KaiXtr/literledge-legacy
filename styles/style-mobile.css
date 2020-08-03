@@ -800,6 +800,7 @@ hr {
 	right: 300px;
 	z-index: 20;
 	border-radius: 15px;
+	transition: opacity 1.5s;
 	position: fixed;
 }
 
@@ -1155,6 +1156,21 @@ hr {
 .portraits .acainfo {
 	font-size: 15px;
 	margin: 0px;
+}
+
+.portraits.citation {
+	width: 90%;
+	height: auto;
+}
+
+.portraits .cinfo {
+	margin: 0px;
+}
+
+.portraits .ctext {
+	font-size: 15px;
+	margin: 0px;
+	padding: 10px;
 }
 
 .pormini  {

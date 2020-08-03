@@ -5,11 +5,11 @@
 	<head>
 		<?php
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Termos e Condições - ';}
+			{$v = 'Termos e Condições';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Terms and Conditions - ';}
+			{$v = 'Terms and Conditions';}
 		else if ($_COOKIE['lang'] == 'es')
-			{$v = 'Términos y Condiciones - ';}
+			{$v = 'Términos y Condiciones';}
 		include 'design/metadata.php'; ?>
 	</head>
 

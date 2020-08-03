@@ -9,11 +9,11 @@
 			#else if ((@$_POST['search'] == true)&&($_POST['search'] != '')) {$search = $_POST['search'];}
 			else {$search = $_GET['q'];}
 			if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-				{$v = 'Busca - ';}
+				{$v = 'Busca';}
 			else if ($_COOKIE['lang'] == 'en')
-				{$v = 'Search - ';}
+				{$v = 'Search';}
 			else if ($_COOKIE['lang'] == 'es')
-				{$v = 'Busca - ';}
+				{$v = 'Busca';}
 			include 'design/metadata.php';
 		?>
 	</head>
@@ -70,7 +70,7 @@
 						}
 						for ($y = 0; $y < sizeof($cn); $y++) {
 							$disp = $disp ."<a href='schools/".strtolower($cn[$y]).".php'>
-										<button class='litbut' style='background-image: url(media/images/banners/".$cn[$y].".jpg)'>
+										<button class='litbut' style='background-image: url(media/images/banners/".strtolower($cn[$y]).".jpg)'>
 											<h2> " .$ltslst[$cn[$y]]. " </h2>
 										</button>
 									</a>";

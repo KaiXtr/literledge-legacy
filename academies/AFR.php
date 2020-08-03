@@ -6,7 +6,7 @@
 		<?php
 			require '../design/array_lists.php';
 			$aca = 'AFR';
-			$v = $acalst[$aca].' - ';
+			$v = $acalst[$aca];
 			require '../design/metadata.php';
 		?>
 	</head>
@@ -16,7 +16,9 @@
 		<?php include '../design/lateralbar.php' ?>
 
 		<div id='banner' style='background-image: url("media/images/banners/<?php echo $aca; ?>.jpg")'></div>
-		<?php echo "<div id='profile'><a href='http://www.academia.org.br/' target='_blank'><h1 id='litername'> ".$acalst[$aca]." </h1></a></div>"; ?>
+		<?php echo "<div id='profile'><a href='http://academie-francaise.fr/' target='_blank'>
+			<h1 id='litername'> ".$acalst[$aca]." </h1>
+			<h2 id='nickname'>academie-francaise.fr</h2></a></div>"; ?>
 		<div id='bio'>
 		<?php
 			if ($_COOKIE['lang'] == 'pt') {

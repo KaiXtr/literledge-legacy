@@ -6,11 +6,11 @@
 		<?php
 			require 'design/mysql_connect.php';
 			if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-				{$v = 'Pedidos - ';}
+				{$v = 'Pedidos';}
 			else if ($_COOKIE['lang'] == 'en')
-				{$v = 'Requests - ';}
+				{$v = 'Requests';}
 			else if ($_COOKIE['lang'] == 'es')
-				{$v = 'Pedidos - ';}
+				{$v = 'Pedidos';}
 			include 'design/metadata.php';
 			if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
 			if (!isset($_SESSION['user'])) {header('location: '.$_SERVER["HTTP_REFERER"]);}

@@ -83,14 +83,6 @@ a:active{
 	border-color: var(--bt-disab);
 }
 
-.upperbar #btup{
-	background-color: var(--color-thumb);
-}
-
-.upperbar #btup:hover{
-	background-color: var(--bt-hover);
-}
-
 #profilemenu{
 	background-color: var(--color-thumb);
 }

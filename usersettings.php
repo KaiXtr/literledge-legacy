@@ -5,11 +5,11 @@
 	<head>
 		<?php session_start();
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Ajustes - ';}
+			{$v = 'Ajustes';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Settings - ';}
+			{$v = 'Settings';}
 		else if ($_COOKIE['lang'] == 'es')
-			{$v = 'Definiciones - ';}
+			{$v = 'Definiciones';}
 		include 'design/metadata.php';
 		if (isset($_GET['error'])) {$error = $_GET['error'];} else {$error = '';}
 		if (!isset($_SESSION['user'])) {header('location: login.php');} ?>

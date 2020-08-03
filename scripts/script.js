@@ -120,6 +120,12 @@ function set_display(target){
 		}
 	}
 
+function copy_clipboard(id) {
+	var text = document.getElementById(id);
+	text.select();
+	document.execCommand("copy");
+}
+
 function show_image(src) {
 	var dis = document.getElementById('displayimg');
 	var fad = document.getElementById('fadescreen');

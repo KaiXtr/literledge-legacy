@@ -8,7 +8,7 @@
 			if ($notcon == null) {
 				$find = $conn->query("SELECT ".$_COOKIE['lang']." FROM translations WHERE fkey='000016'");
 				$i = $find->fetch_assoc();
-				$v = $i[$_COOKIE['lang']].' - ';
+				$v = $i[$_COOKIE['lang']];
 			}
 			include '../design/metadata.php'; 
 		?>

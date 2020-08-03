@@ -5,11 +5,11 @@
 	<head>
 		<?php
 		if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))
-			{$v = 'Contatos - ';}
+			{$v = 'Contatos';}
 		else if ($_COOKIE['lang'] == 'en')
-			{$v = 'Contacts - ';}
+			{$v = 'Contacts';}
 		else if ($_COOKIE['lang'] == 'es')
-			{$v = 'Contactos - ';}
+			{$v = 'Contactos';}
 		include 'design/metadata.php'; ?>
 	</head>
 

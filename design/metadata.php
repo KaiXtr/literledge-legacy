@@ -3,7 +3,7 @@
 	if (!isset($_COOKIE['lang'])) {header('location: http://localhost/literledge/design/cookieset.php?l='.substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2));}
 	if (!isset($_COOKIE['theme'])) {header('location: http://localhost/literledge/design/cookieset.php?t=sepia');}
 ?>
-<title> <?php echo $v; ?>Literledge </title>
+<title> <?php if ($v != '') {$v .= ' • ';} echo $v; ?>Literledge </title>
 <meta name='author' content='Matt kai' />
 <?php
 	if ((!isset($_COOKIE['lang']))||($_COOKIE['lang'] == 'pt'))

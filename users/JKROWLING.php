@@ -8,8 +8,8 @@
 			if ($notcon == null) {
 				$find = $conn->query("SELECT pt,".$_COOKIE['lang']." FROM users WHERE nick='JKROWLING'");
 				$i = $find->fetch_assoc();
-				if ($i[$_COOKIE['lang']] == null) {$v = $i['pt'].' - ';}
-				else {$v = $i[$_COOKIE['lang']].' - ';}
+				if ($i[$_COOKIE['lang']] == null) {$v = $i['pt'];}
+				else {$v = $i[$_COOKIE['lang']];}
 			}
 			require '../design/metadata.php';
 		?>
@@ -24,7 +24,7 @@
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {
 					echo "
-			Joanne "Jo" Rowling, OBE, FRSL, (IPA: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 500 milhões de cópias. Eles se tornaram a série literária mais vendida da história. A Warner Bros. adaptou os livros para o cinema, fazendo com que os filmes entrassem na lista de filmes de maior bilheteria.
+			Joanne \"Jo\" Rowling, OBE, FRSL, (IPA: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 500 milhões de cópias. Eles se tornaram a série literária mais vendida da história. A Warner Bros. adaptou os livros para o cinema, fazendo com que os filmes entrassem na lista de filmes de maior bilheteria.
 
 			Nascida em Yate, na Inglaterra, Rowling teve a ideia de escrever a série enquanto estava num trem indo de Manchester para Londres, em 1990. Em um período de sete anos, Rowling vivenciou a morte de sua mãe, o nascimento de sua primeira filha, seu divórcio com seu primeiro marido e uma crise financeira pessoal até que, em 1997, finalizou o primeiro dos sete livros da série, Harry Potter e a Pedra Filosofal e o último, Harry Potter e as Relíquias da Morte, em 2007. Desde então, Rowling já escreveu quatro livros para o público adulto, Morte Súbita (2012) e, sob o pseudônimo de Robert Galbraith, O Chamado do Cuco (2013), seguido por O Bicho-da-Seda (2014), Vocação Para o Mal (2015) e Branco Letal (2018).
 
@@ -35,7 +35,7 @@
 				}
 				if ($_COOKIE['lang'] == 'en') {
 					echo "
-			Joanne "Jo" Rowling, OBE, FRSL, (IPA: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 500 milhões de cópias. Eles se tornaram a série literária mais vendida da história. A Warner Bros. adaptou os livros para o cinema, fazendo com que os filmes entrassem na lista de filmes de maior bilheteria.
+			Joanne \"Jo\" Rowling, OBE, FRSL, (IPA: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 500 milhões de cópias. Eles se tornaram a série literária mais vendida da história. A Warner Bros. adaptou os livros para o cinema, fazendo com que os filmes entrassem na lista de filmes de maior bilheteria.
 
 			Nascida em Yate, na Inglaterra, Rowling teve a ideia de escrever a série enquanto estava num trem indo de Manchester para Londres, em 1990. Em um período de sete anos, Rowling vivenciou a morte de sua mãe, o nascimento de sua primeira filha, seu divórcio com seu primeiro marido e uma crise financeira pessoal até que, em 1997, finalizou o primeiro dos sete livros da série, Harry Potter e a Pedra Filosofal e o último, Harry Potter e as Relíquias da Morte, em 2007. Desde então, Rowling já escreveu quatro livros para o público adulto, Morte Súbita (2012) e, sob o pseudônimo de Robert Galbraith, O Chamado do Cuco (2013), seguido por O Bicho-da-Seda (2014), Vocação Para o Mal (2015) e Branco Letal (2018).
 
@@ -46,7 +46,7 @@
 				}
 				if ($_COOKIE['lang'] == 'es') {
 					echo "
-			Joanne "Jo" Rowling, OBE, FRSL, (IPA: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 500 milhões de cópias. Eles se tornaram a série literária mais vendida da história. A Warner Bros. adaptou os livros para o cinema, fazendo com que os filmes entrassem na lista de filmes de maior bilheteria.
+			Joanne \"Jo\" Rowling, OBE, FRSL, (IPA: [dʒoʊæn_roʊlɪŋ]; Yate, 31 de julho de 1965), mais conhecida como J. K. Rowling, é uma escritora, roteirista e produtora cinematográfica britânica, notória por escrever a série de livros Harry Potter. Os livros ganharam uma popularidade mundial, recebendo múltiplos prêmios e vendendo mais de 500 milhões de cópias. Eles se tornaram a série literária mais vendida da história. A Warner Bros. adaptou os livros para o cinema, fazendo com que os filmes entrassem na lista de filmes de maior bilheteria.
 
 			Nascida em Yate, na Inglaterra, Rowling teve a ideia de escrever a série enquanto estava num trem indo de Manchester para Londres, em 1990. Em um período de sete anos, Rowling vivenciou a morte de sua mãe, o nascimento de sua primeira filha, seu divórcio com seu primeiro marido e uma crise financeira pessoal até que, em 1997, finalizou o primeiro dos sete livros da série, Harry Potter e a Pedra Filosofal e o último, Harry Potter e as Relíquias da Morte, em 2007. Desde então, Rowling já escreveu quatro livros para o público adulto, Morte Súbita (2012) e, sob o pseudônimo de Robert Galbraith, O Chamado do Cuco (2013), seguido por O Bicho-da-Seda (2014), Vocação Para o Mal (2015) e Branco Letal (2018).
 

@@ -182,14 +182,6 @@ hr {
 	transition-duration: 0.2s;
 }
 
-.upperbar #btup:hover {
-	border-radius: 5px;
-}
-
-.upperbar #btup:active {
-	padding: 4px;
-}
-
 .upperbar #btreq {
 	text-align: center;
 	padding: 5px;
@@ -775,9 +767,10 @@ hr {
 #thank {
 	padding: 20px;
 	top: 150px;
-	right: 300px;
+	right: 40%;
 	z-index: 20;
 	border-radius: 15px;
+	transition: opacity 1.5s;
 	position: fixed;
 }
 

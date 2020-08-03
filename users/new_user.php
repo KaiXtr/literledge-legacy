@@ -8,7 +8,7 @@
 			if ($notcon == null) {
 				$find = $conn->query("SELECT pt FROM users WHERE nick='%user%'");
 				$i = $find->fetch_assoc();
-				$v = $i['pt'].' - ';
+				$v = $i['pt'];
 			}
 			require '../design/metadata.php';
 		?>
