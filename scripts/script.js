@@ -2,6 +2,22 @@ var cursli = 0;
 var imgx = 0;
 var bkimgs = ['media/images/banners/111.jpg','media/images/banners/222.jpg','media/images/banners/333.jpg'];
 
+$(document).ready(function() {
+	$("#burgerbut").on('click', function () {set_display('lateralbar')});
+	$("#openpro").on('click', function () {set_display('profilemenu')});
+	$("#filtbut").on('click', function () {set_display('filters',true)});
+	$("#btexit").on('click', function () {set_display('reportab',true)});
+	$("#reportbt").on('click', function () {set_display('reportab',true)});
+	$("#readbk").on('click', function () {set_display('bookread',true);set_display('closebk')});
+	$("#closebk").on('click', function () {set_display('bookread',true);set_display('closebk')});
+	$("#btcridit").on('click', function () {set_display('cridit')});
+	$("#btcridel").on('click', function () {set_display('cridel',null)});
+	$("#btcriditexit").on('click', function () {set_display('cridit')});
+	$("#btcridelexit").on('click', function () {set_display('cridel')});
+	$("#editreview").on('click', function () {edit_page(event,'review','books')});
+	$("#editbio").on('click', function () {edit_page(event,'bio','users')});
+});
+
 function slide_show() {
 	var xslide = document.getElementById('banner').style;
 	var arrsli = [document.getElementById('sl1'),document.getElementById('sl2'),document.getElementById('sl3')];
@@ -18,11 +34,22 @@ function slide_show() {
 	setTimeout(slide_show, 5000);
 	}
 
-function set_display(target){
+function set_display(target, background=false){
 	var obj = document.getElementById(target);
-	var fad = document.getElementById('fadescreen');
 	var height = obj.clientHeight;
 	var width = obj.clientWidth;
+
+	if (background == true) {
+		var fad = document.getElementById('fadescreen');
+		if (obj.style.visibility == 'hidden') {
+			fad.style.visibility = 'visible';
+			fad.style.opacity = '50%';
+		}
+		else {
+			fad.style.visibility = 'hidden';
+			fad.style.opacity = '0%';
+		}
+	}
 	if (target == 'lateralbar') {
 		if (obj.style.visibility == 'hidden') {
 			obj.style.visibility = 'visible';
@@ -49,34 +76,6 @@ function set_display(target){
 			obj.style.opacity = '0%';
 			}
 		}
-	else if (target == 'filters') {
-		if (obj.style.visibility == 'hidden') {
-			obj.style.visibility = 'visible';
-			obj.style.opacity = '100%';
-			fad.style.visibility = 'visible';
-			fad.style.opacity = '50%';
-			}
-		else {
-			obj.style.visibility = 'hidden';
-			obj.style.opacity = '0%';
-			fad.style.visibility = 'hidden';
-			fad.style.opacity = '0%';
-			}
-		}
-	else if (target == 'reportab') {
-		if (obj.style.visibility == 'hidden') {
-			obj.style.visibility = 'visible';
-			obj.style.opacity = '100%';
-			fad.style.visibility = 'visible';
-			fad.style.opacity = '50%';
-			}
-		else {
-			obj.style.visibility = 'hidden';
-			obj.style.opacity = '0%';
-			fad.style.visibility = 'hidden';
-			fad.style.opacity = '0%';
-			}
-		}
 	else if (target == 'cridit') {
 		if (obj.style.display == 'none') {
 			document.getElementById('criopi').style.display = 'none';
@@ -87,27 +86,14 @@ function set_display(target){
 			obj.style.display = 'none';
 			}
 		}
-	else if (target == 'cridel') {
+	else if (background == true) {
 		if (obj.style.visibility == 'hidden') {
 			obj.style.visibility = 'visible';
 			obj.style.opacity = '100%';
-			fad.style.visibility = 'visible';
-			fad.style.opacity = '50%';
 			}
 		else {
 			obj.style.visibility = 'hidden';
 			obj.style.opacity = '0%';
-			fad.style.visibility = 'hidden';
-			fad.style.opacity = '0%';
-			}
-		}
-	else if (target == 'cookies') {
-		if (obj.style.visibility == 'visible') {
-			obj.style.visibility = 'hidden';
-			obj.style.height = '0px';
-			obj.style.opacity = '0%';
-			fad.style.visibility = 'hidden';
-			fad.style.opacity = '0%';
 			}
 		}
 	else {
@@ -118,7 +104,7 @@ function set_display(target){
 			obj.style.display = 'none';
 			}
 		}
-	}
+}
 
 function copy_clipboard(id) {
 	var text = document.getElementById(id);
@@ -190,19 +176,6 @@ function top_scroll(target){
 	document.documentElement.scrollTop = 0;
 };
 
-function download_file(url,name) {
-	var link = document.createElement('a');
-	if (typeof link.download === 'string') {
-		link.href = url;
-		link.download = name
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
-	} else {
-		window.open(url);
-	}
-}
-
 function filter_search(search,ofsa=null,ofsb=null,ofsp=null){
 	var olet = document.getElementById('flet');
 	var ocou = document.getElementById('fcou');
@@ -234,18 +207,6 @@ function set_tab(){
 		{document.getElementById(arguments[x]).style.display = 'none';}
 };
 
-function lang_set() {
-	var obj = document.getElementById('langbox');
-	var selected = obj.options[obj.selectedIndex].value;
-	var langs = ['pt','en','es','fr','it'];
-	document.styleSheets[0].addRule('.manlan:lang('+selected+')','display: block;');
-	for (var x=0;x < langs.length;x++) {
-		if (langs[x] != selected) {
-			document.styleSheets[0].addRule('.manlan:lang('+langs[x]+')','display: none;');
-		}
-	}
-}
-
 function namescroll(rpf,rpt) {
 	document.styleSheets[0].addRule('@keyframes username','from {opacity: 0%; right: '+rpf+'px;} to {opacity: 100%; right: '+rpt+'px;}');
 }
@@ -263,23 +224,15 @@ function valueChange(value) {
 }
 
 function cut_sinopsis() {
-	var txt = document.getElementsByClassName('thbsin');
-	for (var x=0;x<txt.length;x++) {
-		if (txt[x].clientHeight >= 40) {txt[x].textContent = txt[x].textContent.substr(0,80)+'...';}
-	}
+	var inx = 0;
+	$(".description").each(function() {
+		if ($(this).height() >= 210) {
+			var obj = document.getElementsByClassName('thbsin')[inx];
+			obj.textContent = obj.textContent.substr(0,80)+'...';
+		}
+		inx ++;
+	});
 }
-
-$(document).ready(function() {
-	$("#burgerbut").on('click', function () {set_display('lateralbar')});
-	$("#openpro").on('click', function () {set_display('profilemenu')});
-	$("#filtbut").on('click', function () {set_display('filters')});
-	$("#btcridit").on('click', function () {set_display('cridit')});
-	$("#btcridel").on('click', function () {set_display('cridel')});
-	$("#btcriditexit").on('click', function () {set_display('cridit')});
-	$("#btcridelexit").on('click', function () {set_display('cridel')});
-	$("#editreview").on('click', function () {edit_page(event,'review','books')});
-	$("#editbio").on('click', function () {edit_page(event,'bio','users')});
-});
 
 /*
 $(window).scroll(function(e) {
@@ -293,13 +246,6 @@ $(window).scroll(function(e) {
 		$('.filters').css('position','relative');
 		}
 })*/
-
-/*
-function search_suggest() {
-	var search = document.getElementById('srcbar').value;
-	var list = document.getElementById('srclst');
-	list.innerHTML = "<option>yes</option>";
-};*/
 
 function datalist_value(n,c) {
 	if (c == 0) {

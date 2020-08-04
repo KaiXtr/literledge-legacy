@@ -21,7 +21,6 @@
 		<div id='bookinfo'>
 			<?php $book = '000004'; $ech = '1'; include '../design/bookinfo.php'; ?>
 			<div id='review'>
-				<div class='manlan' lang='pt'>
 				<?php
 					if ($_COOKIE['lang'] == 'pt') {
 						echo "<a name='goto1'></a>

@@ -17,24 +17,37 @@
 		<?php include 'design/header.php' ?>
 		<?php include 'design/lateralbar.php' ?>
 
-		<div class='login'>
-			<h1> Contate-nos</h1>
-			<?php
-				if (@$_GET['t'] == true) {
-					if ($_GET['t'] == 1) {echo 'Obrigado por nos contatar!';}
-					if ($_GET['t'] == 2) {echo 'Não foi possível enviar sua mensagem, tente novamente mais tarde.';}
-				}
-			?>
-			<form action='account/send_email.php' method='post'>
-				<span id='text'> Nome </span> <br />
-				<input type='text' id='user' class='textbox' name='name' /> <br />
-				<span id='text'> Email </span> <br />
-				<input type='text' id='user' class='textbox' name='email' /> <br />
-				<span id='text'> Mensagem </span> <br />
-				<textarea id='user' class='textbox long' name='message'></textarea> <br />
-				<input type='submit' class='btpress' /> <br />
-			</form>
+		<div class='content'>
+			<div class='login'>
+				<h1> 
+				<?php
+					if ($_COOKIE['lang'] == 'pt') {echo 'Contate-nos';}
+					if ($_COOKIE['lang'] == 'en') {echo 'Contact us';}
+					if ($_COOKIE['lang'] == 'es') {echo 'Contáctenos';}
+				?>
+				</h1>
+				<?php
+					if (@$_GET['t'] == true) {
+						if ($_GET['t'] == 1) {echo '<div id="thank">Obrigado por nos contatar!</div>';}
+						if ($_GET['t'] == 2) {echo '<span class="error">Não foi possível enviar sua mensagem,<br/> tente novamente mais tarde.</span><br /><br />';}
+					}
+				?>
+				<form action='account/send_email.php' method='post'>
+					<span id='text'> Nome </span> <br />
+					<input type='text' id='user' class='textbox' name='name' /> <br />
+					<span id='text'> Email </span> <br />
+					<input type='text' id='user' class='textbox' name='email' /> <br />
+					<span id='text'> Mensagem </span> <br />
+					<textarea id='user' class='textbox long' name='message'></textarea> <br />
+					<input type='submit' class='btpress' /> <br />
+				</form>
+			</div>
 		</div>
+		<script type='text/javascript'>
+			setTimeout(function (){
+				document.getElementById('thank').style.opacity = '0%';
+			},3000)
+		</script>
 		<?php include 'design/footer.php' ?>
 	</body>
 </html>

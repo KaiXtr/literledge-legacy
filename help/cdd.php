@@ -170,9 +170,13 @@
 				}
 			?>
 			<br />
-			<div class='manlan' lang='pt'> <button class='btpress' onClick='top_scroll()'> Voltar ao topo </button> </div>
-			<div class='manlan' lang='en'> <button class='btpress' onClick='top_scroll()'> Go back to top </button> </div>
-
+			<?php
+				echo "<button class='btpress' onClick='top_scroll()'>";
+				if ($_COOKIE['lang'] == 'pt') {echo "Voltar ao topo";}
+				if ($_COOKIE['lang'] == 'en') {echo "Go back to top";}
+				if ($_COOKIE['lang'] == 'es') {echo "Volver a la cima";}
+				echo "</button";
+			?>
 		</div>
 
 		<?php include '../design/footer.php' ?>

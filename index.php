@@ -209,7 +209,7 @@
 									<h2> ".$t[$lang]." </h2>
 									<h3> ".$nm." </h3>";
 									include 'sinopsis/'.$list[$x]['id'].'.php';
-							echo $sin."</div>
+							echo "<div class='thbsin'>".$sin."</div></div>
 							</button>
 						</a>";
 				}

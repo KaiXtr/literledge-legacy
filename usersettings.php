@@ -35,32 +35,50 @@
 					<div id='optlst'>
 						<ul>
 							<li> <a onclick='set_tab("tab1","tab2","tab3")'> <input id='op1' type='radio' name='edit' value='account' checked='true' />
-								<div class='manlan' lang='pt'> <label for='op1'> Conta </label> </div>
-								<div class='manlan' lang='en'> <label for='op1'> Account </label> </div>
-								<div class='manlan' lang='es'> <label for='op1'> Cuenta </label> </div>
+							<label for='op1'>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "Conta";}
+								if ($_COOKIE['lang'] == 'en') {echo "Account";}
+								if ($_COOKIE['lang'] == 'es') {echo "Cuenta";}
+							?>
+							</label>
 							</a> </li>
 							<li> <a onclick='set_tab("tab2","tab1","tab3")'> <input id='op2' type='radio' name='edit' value='security' />
-								<div class='manlan' lang='pt'> <label for='op2'> Segurança </label> </div>
-								<div class='manlan' lang='en'> <label for='op2'> Security </label> </div>
-								<div class='manlan' lang='es'> <label for='op2'> Seguridad </label> </div>
+							<label for='op2'>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "Segurança";}
+								if ($_COOKIE['lang'] == 'en') {echo "Security";}
+								if ($_COOKIE['lang'] == 'es') {echo "Seguridad";}
+							?>
+							</label>
 							</a> </li>
 							<li> <a onclick='set_tab("tab3","tab1","tab2")'> <input id='op3' type='radio' name='edit' value='navigation' />
-								<div class='manlan' lang='pt'> <label for='op3'> Navegação </label> </div>
-								<div class='manlan' lang='en'> <label for='op3'> Navigation </label> </div>
-								<div class='manlan' lang='es'> <label for='op3'> Navegación </label> </div>
+							<label for='op3'>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "Navegação";}
+								if ($_COOKIE['lang'] == 'en') {echo "Navigation";}
+								if ($_COOKIE['lang'] == 'es') {echo "Navegación";}
+							?>
+							</label>
 							</a> </li>
 							<li>
-								<div class='manlan' lang='pt'> <input type='submit' class='btpress' value='Salvar' /> </div>
-								<div class='manlan' lang='en'> <input type='submit' class='btpress' value='Save' /> </div>
-								<div class='manlan' lang='es'> <input type='submit' class='btpress' value='Guardar' /> </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {$n = "Salvar";}
+								if ($_COOKIE['lang'] == 'en') {$n = "Save";}
+								if ($_COOKIE['lang'] == 'es') {$n = "Guardar";}
+								echo "<input type='submit' class='btpress' value='".$n."' />";
+							?>
 							</li>
 						</ul>
 					</div>
 					<div id='tab1' class='optabs' style='display: block;'>
 						<div class='upimg'>
-							<div class='manlan' lang='pt'> Foto de perfil: </div>
-							<div class='manlan' lang='en'> Profile pic: </div>
-							<div class='manlan' lang='es'> Foto de perfil: </div> <br />
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "Foto de perfil:";}
+								if ($_COOKIE['lang'] == 'en') {echo "Profile pic:";}
+								if ($_COOKIE['lang'] == 'es') {echo "Foto de perfil:";}
+							?>
+							<br />
 							<?php echo "<img id='prevpic' class='filprev' src='media/images/profilepics/".$_SESSION['user'].".jpg' />"; ?>
 							<input id='profilepicupload' accept="image/jpeg" name='propic' type='file' onchange='previmg(event,"prevpic");' />
 						</div>
@@ -70,9 +88,11 @@
 							<input id='bannerupload' accept="image/jpeg" name='banner' type='file' onchange='previmg(event,"prevban");'/>
 						</div>
 						<span id='text'>
-							<div class='manlan' lang='pt'> nome </div>
-							<div class='manlan' lang='en'> name </div>
-							<div class='manlan' lang='es'> nombre </div>
+							<?php
+								if ($_COOKIE['lang'] == 'pt') {echo "nome";}
+								if ($_COOKIE['lang'] == 'en') {echo "name";}
+								if ($_COOKIE['lang'] == 'es') {echo "nombre";}
+							?>
 						</span> <br />
 						<?php echo "<input type='text' class='textbox' name='name' value='".$i['pt']."' maxLength='30' />"; ?>
 						<br />
@@ -81,9 +101,11 @@
 						<br />
 						<div class='selectrow'>
 							<span id='text'>
-								<div class='manlan' lang='pt'> gênero </div>
-								<div class='manlan' lang='en'> gender </div>
-								<div class='manlan' lang='es'> género </div>
+								<?php
+									if ($_COOKIE['lang'] == 'pt') {echo "gênero";}
+									if ($_COOKIE['lang'] == 'en') {echo "gender";}
+									if ($_COOKIE['lang'] == 'es') {echo "género";}
+								?>
 							</span>
 							<select class='selectbox' name='gender'>
 								<?php
@@ -99,9 +121,11 @@
 						</div>
 						<div class='selectrow'>
 							<span id='text'>
-								<div class='manlan' lang='pt'> nascimento </div>
-								<div class='manlan' lang='en'> birth </div>
-								<div class='manlan' lang='es'> nacimiento </div>
+								<?php
+									if ($_COOKIE['lang'] == 'pt') {echo "nascimento";}
+									if ($_COOKIE['lang'] == 'en') {echo "birth";}
+									if ($_COOKIE['lang'] == 'es') {echo "nacimiento";}
+								?>
 							</span>
 							<?php
 								$errl = "<span class='error'>";
@@ -139,9 +163,11 @@
 
 						<div class='selectrow'>
 							<span id='text'>
-								<div class='manlan' lang='pt'> país </div>
-								<div class='manlan' lang='en'> country </div>
-								<div class='manlan' lang='es'> país </div>
+								<?php
+									if ($_COOKIE['lang'] == 'pt') {echo "país";}
+									if ($_COOKIE['lang'] == 'en') {echo "country";}
+									if ($_COOKIE['lang'] == 'es') {echo "país";}
+								?>
 							</span>
 							<select class='selectbox' name='country'>
 								<?php

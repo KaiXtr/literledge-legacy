@@ -925,6 +925,25 @@ hr {
 	float: none;
 }
 
+#bookread {
+	width: 90%;
+	height: 100em;
+	top: 100px;
+	left: 10%;
+	position: fixed;
+	transition: visibility 0.25s, opacity 0.25s;
+	visibility: hidden;
+	opacity: 0%;
+	z-index: 20;
+}
+
+#closebk {
+	top: 100px;
+	right: 20px;
+	position: fixed;
+	z-index: 21;
+}
+
 #bookinfo #opinions {
 	white-space: nowrap;
 	margin: 100px;
@@ -1071,7 +1090,6 @@ hr {
 	margin-left: 10px;
 	padding: 10px;
 	width: 250px;
-	height: 230px;
 	flex: 1;
 }
 

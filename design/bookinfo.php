@@ -92,6 +92,12 @@
 				if ($lang == 'es') {$shrmsg = "Ven a ver el libro ".$t[$lang]." disponible en Literledge! ".$shurl;}
 
 				$btns = "";
+				$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
+				<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
+				$cpybt = "<input id='copyurl' type='text' value='".$base_url."books/".$b['id'].".php' />
+				<button class='btpress' type='button' onclick='copy_clipboard(\"copyurl\")' style='background-image: url(media/images/icons/copy.png);'></button>";
+				$citbt = "<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: dd mmm. yyyy.' />
+				<button class='btpress' type='button' onclick='copy_clipboard(\"citation\")' style='background-image: url(media/images/icons/copy.png);'></button>";
 				if (isset($_SESSION['user'])) {
 					#SHELF BUTTONS
 					$ys = false;
@@ -120,12 +126,6 @@
 						$rinpt = "<input class='btpress' type='submit' name='rem' value='' style='background-image: url(media/images/icons/remshelf.png);' ";
 						$finpt = "<input class='btpress' type='submit' name='fav' value='' style='background-image: url(media/images/icons/fav.png);' ";
 						$uinpt = "<input class='btpress' type='submit' name='unf' value='' style='background-image: url(media/images/icons/unfav.png);' ";
-						$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
-						<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
-						$cpybt = "<input id='copyurl' type='text' value='".$base_url."books/".$b['id'].".php' />
-						<button class='btpress' type='button' onclick='copy_clipboard(\"copyurl\")' style='background-image: url(media/images/icons/copy.png);'></button>";
-						$citbt = "<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: dd mmm. yyyy.' />
-						<button class='btpress' type='button' onclick='copy_clipboard(\"citation\")' style='background-image: url(media/images/icons/copy.png);'></button>";
 
 						$find = $conn->query("SELECT id,state FROM shelves WHERE user='".$_SESSION['user']."' and book='".$b["id"]."' and state > '0'");
 						if ($find->num_rows == 0) {
@@ -160,7 +160,7 @@
 				
 				echo "<div id='reportab' style='visibility: hidden;'>
 						<form action='account/send_report.php?l=".$b['id']."' method='post'>
-							<button id='btexit' class='btpress' type='button' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/exit.png' /></button>";
+							<button id='btexit' class='btpress' type='button'><img src='media/images/icons/exit.png' /></button>";
 
 						if ($_COOKIE['lang'] == 'pt') {
 							echo "<h1> Reportar Erro </h1>
@@ -196,7 +196,7 @@
 						</form>
 					</div>
 					<div id='bookblock'>
-						<button id='reportbt' class='btpress' onclick='set_display(".'"reportab"'.")'><img src='media/images/icons/report.png' /></button>
+						<button id='reportbt' class='btpress'><img src='media/images/icons/report.png' /></button>
 						<img id='coverart' src='media/images/covers/" .$b["id"]. ".jpg'/>
 						<div id='info'>
 							<h1> " .$t[$lang]. " </h1>
@@ -254,6 +254,7 @@
 						}
 						else {$pr = $e['price'];}
 						$l = $e["link"];
+
 						#$byt = filesize(substr($l,0,strlen($l)-5));
 						$byt = '---';
 						if ($byt >= 1073741824) {$byt = round($byt/1073741824).' GB';}
@@ -264,8 +265,7 @@
 						else {$byt = '---';}
 
 						if (($e['filtyp'] == 'pdf')&&(strtolower($e['language']) == $_COOKIE['lang'])) {$red = $l;}
-						#$d = $d ."<tr onclick='download_file(".'"'.$l.'"'.",".'"'.$t[$lang].'"'.");window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
-						#window.location.href="'.$base_url.'books/'.$b['id'].'.php?a=1"
+						#$d = $d ."<tr onclick='window.location.href=".'"'."design/bstatistics.php?id=".$b['id'].'"'."'>
 						$d = $d ."<tr onclick='window.location.href=".'"https://dl.dropboxusercontent.com/'.$e['link'].'";'."'>
 							<th>".$e['filtyp']."</th><th>".$e['credit']."</th><th>".$e['language']."</th>
 							</tr>";
@@ -284,7 +284,14 @@
 					<div id='getbooks'>
 						<h1> Downloads </h1>
 						<table id='downloads' cellpadding='0' cellspacing='0'> " .$d. "</table>";
-					if ($red != '') {echo "<a href='".$red."' target='_blank'><button class='btpress'> Ler </button></a>";}
+					if ($red != '') {
+						echo "<button id='readbk' class='btpress'> Ler </button>
+						<script type='text/javascript' src='https://www.dropbox.com/static/api/2/dropins.js' id='dropboxjs' data-app-key='j5hmg51n7knzdt0'></script>
+						<div id='bookread' style='visibility: hidden'>
+							<a href='https://www.dropbox.com/".$red."' class='dropbox-embed' data-width='95%' data-height='50em'></a>
+						</div>
+						<button id='closebk' class='btpress' style='display: none'>sair</button>";
+					}
 					echo "<a href='https://busca.saraiva.com.br/busca?q=".$t[$lang]."' target='_blank'><button class='btpress'> Comprar </button></a>
 					</div>
 					<a name='goto5'></a>

@@ -436,7 +436,7 @@
 				#FILTERS
 				echo "<div id='filanch'></div><div id='filters'>
 				<script type='text/javascript'>
-					if ($(window).width() < 720) {set_display('filters');}
+					if ($(window).width() < 720) {set_display('filters',true);}
 				</script>
 				<div class='brow'><h2>";
 				if ($_COOKIE['lang'] == 'pt') {echo "Filtros";}
@@ -582,21 +582,21 @@
 					if ($_COOKIE['lang'] == 'es') {echo "Conteudo";}
 					echo "</h2><ul>";
 					if ($aud == true) {
-						echo "<li><a href='".$lnk."#auctors' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.");}'>";
+						echo "<li><a href='".$lnk."#auctors' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.",true);}'>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Autores";}
 						if ($_COOKIE['lang'] == 'en') {echo "Auctors";}
 						if ($_COOKIE['lang'] == 'es') {echo "Autores";}
 						echo "</a></li>";
 					}
 					if ($brusers != '') {
-						echo "<li><a href='".$lnk."#users' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.");}'>";
+						echo "<li><a href='".$lnk."#users' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.",true);}'>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Usuários";}
 						if ($_COOKIE['lang'] == 'en') {echo "Users";}
 						if ($_COOKIE['lang'] == 'es') {echo "Usuarios";}
 						echo "</a></li>";
 					}
 					if ($bod == true) {
-						echo "<li><a href='".$lnk."#books' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.");}'>";
+						echo "<li><a href='".$lnk."#books' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.",true);}'>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Livros";}
 						if ($_COOKIE['lang'] == 'en') {echo "Books";}
 						if ($_COOKIE['lang'] == 'es') {echo "Libros";}
@@ -612,7 +612,7 @@
 					if ($_COOKIE['lang'] == 'es') {echo "Poemas";}
 					echo "</h2></a><div id='pomscroll'><ul>";
 					for ($x=0;$x<sizeof($poemlst);$x++) {
-						echo "<li><a href='".$lnk."#".$poemlst[$x]."' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.");}'>".$poemlst[$x]."</a></li>";
+						echo "<li><a href='".$lnk."#".$poemlst[$x]."' onclick='if ($(window).width() < 720) {set_display(".'"filters"'.",true);}'>".$poemlst[$x]."</a></li>";
 					}
 					echo "</ul></div></div>";
 				}
