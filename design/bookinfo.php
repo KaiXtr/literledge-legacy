@@ -95,7 +95,7 @@
 				$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
 				<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
 				$cpybt = "<div id='cpybt' class='shrdiv' style='display: none'>
-					<input id='copyurl' type='text' value='".$base_url."/!".$b['id'].".php' />
+					<input id='copyurl' type='text' value='".$base_url."!".$b['id'].".php' />
 					<a onclick='set_display(\"cpybt\")'>X</a><br />
 					<a onclick='copy_clipboard(\"copyurl\")'>copy</a>
 				</div>
