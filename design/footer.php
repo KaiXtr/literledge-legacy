@@ -47,6 +47,7 @@
 				if ($_COOKIE['lang'] == 'es') {echo "Política de Privacidad";}
 			?>
 		</a> </li>
+		<li> <a href='sitemap.php'>Sitemap</a> </li>
 		<li> <a href='help/summary.php'>
 			<?php
 				if ($_COOKIE['lang'] == 'pt') {echo "Ajuda";}

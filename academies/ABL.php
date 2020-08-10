@@ -95,6 +95,9 @@
 				}
 			?>
 		</div>
+		<div class='sources'>
+			ACADEMIA BRASILEIRA DE LETRAS. Academia Brasileira de letras, 2020. Disponível em: &lthttp://www.academia.org.br&gt. Acesso em: 04 ago.2020.
+		</div>
 		<script type='text/javascript'>
 			if ($(window).width() < 720) {
 				if ($('#litername').height() >= '120') {document.getElementById('litername').style.top = '80px';}

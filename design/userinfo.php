@@ -34,7 +34,7 @@
 				$chk = $conn->query("SELECT auctor FROM users WHERE nick='".$_SESSION['user']."'");
 				if ($chk->num_rows > 0) {
 					$ck = $chk->fetch_assoc();
-					if ($ck['auctor'] == '2') {
+					if (($ck['auctor'] == '2')&&($i['auctor'] == '1')) {
 						echo "<button id='editbio' class='btpress'>";
 						if ($_COOKIE['lang'] == 'pt') {echo "Editar biografia";}
 						if ($_COOKIE['lang'] == 'en') {echo "Edit biography";}

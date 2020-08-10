@@ -522,3 +522,23 @@ function edit_page(event, id, path) {
 	</form>";
 	event.target.style = 'display: none';
 }
+
+function save_edit() {
+	html2canvas([document.getElementById('mainDiv')], {
+		onrendered: function (canvas) {
+			var imagedata = canvas.toDataURL('image/png');
+			var imgdata = imagedata.replace(/^data:image\/(png|jpg);base64,/, "");
+			$.ajax({
+				url: 'generate_image.php',
+				data: {
+					imgdata:imgdata
+					},
+				type: 'post',
+				success: function (response) {   
+					console.log(response);
+					$('#image_id img').attr('src', response);
+				}
+			});
+		}
+	})
+}

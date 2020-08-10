@@ -10,6 +10,7 @@
 			else {$pnm = $n[$_COOKIE['lang']];}
 
 			$list = $list. "<blockquote class='quotepoem'>";
+			//$list .= "<a href='design/generate_image.php?p=".basename($pom[$x])."'>image</a>";
 			include $pom[$x];
 			$list = $list. $shwpm;
 			$list = $list. "</blockquote>";
