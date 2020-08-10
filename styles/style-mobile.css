@@ -896,7 +896,7 @@ hr {
 	display: inline-block;
 }
 
-#bookinfo #status #ubuttons input {
+#bookinfo #status #ubuttons input[type=submit], #bookinfo #status #ubuttons button {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 5px;
@@ -904,12 +904,19 @@ hr {
 	height: 34px;
 }
 
-#bookinfo #status #ubuttons button {
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: 5px;
-	width: 34px;
-	height: 34px;
+#bookinfo #status .shrdiv {
+	font-size: 18px;
+	top: 300px;
+	right: 10%;
+	width: 80%;
+	padding: 10px;
+	border-radius: 15px;
+	position: fixed;
+}
+
+#bookinfo #status .shrdiv input {
+	width: 80%;
+	height: 2em;
 }
 
 #bookinfo .summary {

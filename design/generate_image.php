@@ -11,15 +11,32 @@
 		header("Content-Type: image/png");
 		$img = imagecreatefromjpeg('../media/images/profilepics/'.$auctor.'.jpg');
 		$src = imagecreate(500, 300);
-		imagealphablending($img, false);
-		imagesavealpha($img, true);
-		$bgcol = imagecolorallocate($img, 0, 0, 0);
-		$txcol = imagecolorallocate($img, 255, 255, 255);
+		imagealphablending($src, false);
+		imagesavealpha($src, true);
+		$bgcol = imagecolorallocate($src, 0, 0, 0);
+		$txcol = imagecolorallocate($src, 255, 255, 255);
 
-		$shwpm = str_replace('<br />', '\n', $shwpm);
-		imagestring($img, 10, 10, 10, $shwpm, $txcol);
-
-		imagepng($img);
+		imagecopymerge($src, $img, 300, 0, 30, 0, 200, 300, 100);
+		$distxt = array();
+		$shwpm = str_replace('<h1>', '', $shwpm);
+		$shwpm = str_replace('</h1>', '', $shwpm);
+		$shwpm = str_replace('<br />', '', $shwpm);
+		$shwpm = str_replace('	', '', $shwpm);
+		$shwpm = str_replace(PHP_EOL, '#', $shwpm);
+		$stx = 0;
+		for ($x=0;$x<strlen($shwpm);$x++) {
+			if ($shwpm[$x] == '#') {
+				$distxt[] = substr($shwpm, $stx, $x);
+				$stx = $x + 1;
+			}
+		}
+		$py = 10;
+		foreach ($distxt as $t) {
+			imagestring($src, 1, 10, $py, $t, $txcol);
+			$py += 20;
+		}
+		
+		imagepng($src);
 		imagedestroy($img);
 		imagedestroy($src);
 		$conn->close();

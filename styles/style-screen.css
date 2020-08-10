@@ -866,7 +866,7 @@ hr {
 	display: inline-block;
 }
 
-#bookinfo #status #ubuttons input {
+#bookinfo #status #ubuttons input[type=submit], #bookinfo #status #ubuttons button {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 5px;
@@ -875,13 +875,15 @@ hr {
 	float: left;
 }
 
-#bookinfo #status #ubuttons button {
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: 5px;
-	width: 34px;
-	height: 34px;
-	float: left;
+#bookinfo #status .shrdiv {
+	width: 200px;
+	padding: 10px;
+	border-radius: 15px;
+	position: fixed;
+}
+
+#bookinfo #status .shrdiv input {
+	width: auto;
 }
 
 #bookinfo .summary {

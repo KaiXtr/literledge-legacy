@@ -1,8 +1,3 @@
-<?php
-	if (session_status() == PHP_SESSION_NONE) {session_start();}
-	if (!isset($_COOKIE['lang'])) {header('location: http://localhost/literledge/design/cookieset.php?l='.substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2));}
-	if (!isset($_COOKIE['theme'])) {header('location: http://localhost/literledge/design/cookieset.php?t=sepia');}
-?>
 <title> <?php if ($v != '') {$v .= ' • ';} echo $v; ?>Literledge </title>
 <meta name='author' content='Matt kai' />
 <?php
@@ -32,6 +27,7 @@ resumo, review, autores, escritores, movimentos, ler, escritor' />
 <link rel='stylesheet' type='text/css' media='screen and (min-width: 0px) and (max-width: 720px)' href='styles/style-mobile.css' />
 <link rel='stylesheet' type='text/css' media='screen' href='styles/theme-<?php echo $_COOKIE['theme']; ?>.css' title='<?php echo $_COOKIE['theme']; ?>' />
 
-<script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
+<script data-ad-client="ca-pub-1028247254977085" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
-<script src='scripts/script.js'type='text/javascript'></script>
+<script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
+<script src='scripts/script.js' type='text/javascript'></script>

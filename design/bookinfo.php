@@ -94,10 +94,18 @@
 				$btns = "";
 				$shrbt = "<a href='https://twitter.com/intent/tweet?source=&text=".$shrmsg."' target='_blank'>
 				<button class='btpress' type='button' name='shr' value='' style='background-image: url(media/images/icons/share.png);'></button></a>";
-				$cpybt = "<input id='copyurl' type='text' value='".$base_url."books/".$b['id'].".php' />
-				<button class='btpress' type='button' onclick='copy_clipboard(\"copyurl\")' style='background-image: url(media/images/icons/copy.png);'></button>";
-				$citbt = "<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: dd mmm. yyyy.' />
-				<button class='btpress' type='button' onclick='copy_clipboard(\"citation\")' style='background-image: url(media/images/icons/copy.png);'></button>";
+				$cpybt = "<div id='cpybt' class='shrdiv' style='display: none'>
+					<input id='copyurl' type='text' value='".$base_url."/!".$b['id'].".php' />
+					<a onclick='set_display(\"cpybt\")'>X</a><br />
+					<a onclick='copy_clipboard(\"copyurl\")'>copy</a>
+				</div>
+				<button class='btpress' type='button' onclick='set_display(\"cpybt\")' style='background-image: url(media/images/icons/copy.png);'></button>";
+				$citbt = "<div id='citbt' class='shrdiv' style='display: none'>
+					<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: ".date('d')." ".date('m').". ".date('Y').".' />
+					<a onclick='set_display(\"citbt\")'>X</a><br />
+					<a onclick='copy_clipboard(\"citation\")'>copy</a>
+				</div>
+				<button class='btpress' type='button' onclick='set_display(\"citbt\")' style='background-image: url(media/images/icons/copy.png);'></button>";
 				if (isset($_SESSION['user'])) {
 					#SHELF BUTTONS
 					$ys = false;

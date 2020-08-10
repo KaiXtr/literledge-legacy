@@ -185,6 +185,10 @@ a:active{
 	color: white;
 }
 
+#bookinfo #status .shrdiv {
+	background-color: var(--color-thumb);
+}
+
 #bookinfo #downloads{
 	background-color: var(--bg-insi);
 }

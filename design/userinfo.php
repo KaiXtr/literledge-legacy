@@ -224,7 +224,9 @@
 			}
 
 			#EMBED
-			$uembed = '<iframe width="300" height="200" src="'.$base_url."users/".$i['nick'].'.php"></iframe>';
+			$uembed = "<input id='uembed' type='text' value='".'<iframe width="300" height="200" src="'.$base_url."users/".$i['nick'].'.php"></iframe>'."' />
+				<input class='btpress' type='button' onclick='copy_clipboard(\"uembed\")' value='</>' />";
+			$uembed = "";
 
 			if ($i[$_COOKIE['lang']] == null) {$nm = $i['pt'];}
 			else {$nm = $i[$_COOKIE['lang']];}
@@ -254,8 +256,7 @@
 						</div>
 					</div>".$bnds."
 				</div>".$gly.$slf.$fav.$htc.$opn
-				."<input id='uembed' type='text' value='".$uembed."' />
-				<input class='btpress' type='button' onclick='copy_clipboard(\"uembed\")' value='</>' />
+				.$uembed."
 				<script type='text/javascript'>
 					if ($(window).width() < 720) {
 						if ($('#username').height() >= '120') {document.getElementById('username').style.top = '80px';}
