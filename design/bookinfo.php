@@ -101,7 +101,7 @@
 				</div>
 				<button class='btpress' type='button' onclick='set_display(\"cpybt\")' style='background-image: url(media/images/icons/copy.png);'></button>";
 				$citbt = "<div id='citbt' class='shrdiv' style='display: none'>
-					<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: ".date('d')." ".date('m').". ".date('Y').".' />
+					<input id='citation' type='text' value='LITERLEDGE. ".$t[$lang].", 2020. Disponível em: <".$shurl.">. Acesso em: ".date('d')." ".$monlst[date('m')].". ".date('Y').".' />
 					<a onclick='set_display(\"citbt\")'>X</a><br />
 					<a onclick='copy_clipboard(\"citation\")'>copy</a>
 				</div>

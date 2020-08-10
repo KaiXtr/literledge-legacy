@@ -1,5 +1,16 @@
 <?php
 
+#MONTHS
+if ($_COOKIE['lang'] == 'pt') {
+	$monlst = array('01'=>'jan','02'=>'fev','03'=>'mar','04'=>'abr','05'=>'mai','06'=>'jun','07'=>'jul','08'=>'ago','09'=>'set','10'=>'out','11'=>'nov','12'=>'dez');
+	}
+else if ($_COOKIE['lang'] == 'en') {
+	$monlst = array('01'=>'jan','02'=>'feb','03'=>'mar','04'=>'apr','05'=>'may','06'=>'jun','07'=>'jul','08'=>'aug','09'=>'sep','10'=>'oct','11'=>'nov','12'=>'dec');
+	}
+else if ($_COOKIE['lang'] == 'es') {
+	$monlst = array('01'=>'ene','02'=>'feb','03'=>'mar','04'=>'abr','05'=>'may','06'=>'jun','07'=>'jul','08'=>'ago','09'=>'sep','10'=>'oct','11'=>'nov','12'=>'dic');
+	}
+
 #GENDERS
 if ($_COOKIE['lang'] == 'pt') {
 	$gndlst = array('M'=>'Masculino','F'=>'Feminino','A'=>'Agênero','O'=>'Outro');
