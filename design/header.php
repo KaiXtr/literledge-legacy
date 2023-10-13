@@ -1,12 +1,10 @@
 <header class='upperbar'>
 	<div class='upperbarcontent'>
-		<button id='burgerbut'><img src='media/images/icons/burger-<?php echo $_COOKIE['theme']; ?>.png' /></button>
-		<a href='index.php'> <img id='logo' src='media/images/icons/logo-<?php echo $_COOKIE['theme']; ?>.png' /> </a>
+		<button id='burgerbut'><img src='media/images/icons/burger-sepia.png' /></button>
+		<a href='index.php'> <img id='logo' src='media/images/icons/logo-sepia.png' /> </a>
 		<a id='title' href='index.php'> Literledge </a>
 		<?php
-			if ($_COOKIE['lang'] == 'pt') {$vl = 'Buscar';}
-			if ($_COOKIE['lang'] == 'en') {$vl = 'Search';}
-			if ($_COOKIE['lang'] == 'es') {$vl = 'Buscar';}
+			$vl = 'Buscar';
 			require 'mysql_connect.php';
 		?>
 		<form class='searchbar' action='search.php' method='post'>
@@ -56,7 +54,7 @@
 				</template>
 				<datalist id='srclst'></datalist>
 				<input id='srcbar-hidden' type='hidden' name='search' ".$sch." />
-				<input class='submit' type='image' src='media/images/icons/search-".$_COOKIE['theme'].".png' alt='".strtolower($vl)."' />";
+				<input class='submit' type='image' src='media/images/icons/search-sepia.png' alt='".strtolower($vl)."' />";
 			?>
 		</form>
 		<script type='text/javascript'>
@@ -81,44 +79,34 @@
 					$i = $find->fetch_assoc();
 					echo "<a id='linkpro' href='users/" .$_SESSION['user']. ".php'><img class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' /></a>
 					<img id='openpro' class='profilepic' src='media/images/profilepics/" .$_SESSION["user"]. ".jpg' /><div id='accountbuts'>";
-					if ($i['auctor'] == '2') {echo "<a id='btreq' href='requests.php'><img src='media/images/icons/requests-".$_COOKIE['theme'].".png' /> </a>";}
-					if ($i['auctor'] != '-1') {echo "<a id='btup' href='upload.php'><img src='media/images/icons/upload-".$_COOKIE['theme'].".png' /> </a>";}
-					echo "<a id='btuset' href='usersettings.php'><img src='media/images/icons/settings-".$_COOKIE['theme'].".png' /></a>
-					<a id='btlogoff' href='account/logout.php'><img src='media/images/icons/logout-".$_COOKIE['theme'].".png' /></a>
+					if ($i['auctor'] == '2') {echo "<a id='btreq' href='requests.php'><img src='media/images/icons/requests-sepia.png' /> </a>";}
+					if ($i['auctor'] != '-1') {echo "<a id='btup' href='upload.php'><img src='media/images/icons/upload-sepia.png' /> </a>";}
+					echo "<a id='btuset' href='usersettings.php'><img src='media/images/icons/settings-sepia.png' /></a>
+					<a id='btlogoff' href='account/logout.php'><img src='media/images/icons/logout-sepia.png' /></a>
 					</div>
 						<div id='profilemenu' style='visibility: hidden;'>
 							<a href='users/" .$_SESSION['user']. ".php'><h1> " .$i['pt']. " </h1>
 							<h2> @" .$_SESSION['user']. " </h2></a>
 							<ul>
-								<li><img src='media/images/icons/upload-".$_COOKIE['theme'].".png' /><a href='upload.php'>";
-										if ($_COOKIE['lang'] == 'pt') {echo "Contribuir";}
-										if ($_COOKIE['lang'] == 'en') {echo "Contribute";}
-										if ($_COOKIE['lang'] == 'es') {echo "Contribuir";}
+								<li><img src='media/images/icons/upload-sepia.png' /><a href='upload.php'>";
+									echo "Contribuir";
 								echo "</a></li>
-								<li><img src='media/images/icons/settings-".$_COOKIE['theme'].".png' /><a href='usersettings.php'>";
-										if ($_COOKIE['lang'] == 'pt') {echo "Ajustes";}
-										if ($_COOKIE['lang'] == 'en') {echo "Settings";}
-										if ($_COOKIE['lang'] == 'es') {echo "Definiciones";}
+								<li><img src='media/images/icons/settings-sepia.png' /><a href='usersettings.php'>";
+									echo "Ajustes";
 								echo "</a></li>
-								<li><img src='media/images/icons/logout-".$_COOKIE['theme'].".png' /><a href='account/logout.php'>";
-										if ($_COOKIE['lang'] == 'pt') {echo "Sair";}
-										if ($_COOKIE['lang'] == 'en') {echo "Log out";}
-										if ($_COOKIE['lang'] == 'es') {echo "Salir";}
+								<li><img src='media/images/icons/logout-sepia.png' /><a href='account/logout.php'>";
+									echo "Sair";
 								echo "</a></li>
 							</ul>
 						</div>";
 					}
 				}
 			else {
-				echo "<a href='signin.php'> <button class='btpress'>";
-							if ($_COOKIE['lang'] == 'pt') {echo "Cadastrar";}
-							if ($_COOKIE['lang'] == 'en') {echo "Sign in";}
-							if ($_COOKIE['lang'] == 'es') {echo "Registrarse";}
+					echo "<a href='signin.php'> <button class='btpress'>";
+					echo "Cadastrar";
 					echo "</button> </a>
 					<a href='login.php'> <button class='btpress'>";
-							if ($_COOKIE['lang'] == 'pt') {echo "Entrar";}
-							if ($_COOKIE['lang'] == 'en') {echo "Log in";}
-							if ($_COOKIE['lang'] == 'es') {echo "Iniciar Sesión";}
+					echo "Entrar";
 					echo "</button> </a>";
 				}
 		?>
@@ -128,18 +116,9 @@
 <?php
 	if (!isset($_COOKIE['cookieagree'])) {
 		echo "<div id='cookies'>";
-		if ($_COOKIE['lang'] == 'pt') {
-			echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
+		echo "Este site utiliza cookies para proporcionar uma melhor experiência dentro do site. <br />
 				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendi </button>";
-			}
-		if ($_COOKIE['lang'] == 'en') {
-			echo "This site uses cookies to provide a better experience within the site. <br />
-				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> I got it </button>";
-			}
-		if ($_COOKIE['lang'] == 'es') {
-			echo "Este sitio utiliza cookies para proporcionar una mejor experiencia dentro del sitio. <br />
-				<button class='btpress' onclick='window.location.href=".'"design/cookieset.php?c=true"'.";'> Entendido </button>";
-			}
+		
 		echo "</div>";
 	}
 ?>
