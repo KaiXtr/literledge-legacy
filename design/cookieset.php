@@ -7,6 +7,7 @@
 
 	if (isset($_GET['c'])) {setcookie('cookieagree',true,time() + (86400 * 10000), '/');}
 
-	header('location: ' . $_SERVER["HTTP_REFERER"]);
+	//header('location: ' . $_SERVER["HTTP_REFERER"]);
+	header('location: https://localhost:81/literledge');
 	exit;
 ?>

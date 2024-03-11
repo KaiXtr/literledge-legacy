@@ -13,7 +13,7 @@
 		$_SESSION['password'] = $_COOKIE['password'];
 		}
 ?>
-<base href='http://localhost/literledge/' />
+<base href='http://localhost:81/literledge/' />
 <meta charset='utf-8' />
 <meta name='refresh' content='60' />
 <meta http-equiv="Content-Language" content="pt, en, es">
@@ -27,7 +27,7 @@ resumo, review, autores, escritores, movimentos, ler, escritor' />
 <link rel='stylesheet' type='text/css' media='screen and (min-width: 0px) and (max-width: 720px)' href='styles/style-mobile.css' />
 <link rel='stylesheet' type='text/css' media='screen' href='styles/theme-<?php echo $_COOKIE['theme']; ?>.css' title='<?php echo $_COOKIE['theme']; ?>' />
 
-<script data-ad-client="ca-pub-1028247254977085" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--script data-ad-client="ca-pub-1028247254977085" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
 <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
 <script src='scripts/script.js' type='text/javascript'></script>

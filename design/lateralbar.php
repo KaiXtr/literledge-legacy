@@ -97,7 +97,7 @@
 		</h1> </li>
 		<?php
 			foreach ($acalst as $x => $v) {
-				if (($x != '00')&&($x != '01')) {echo '<li><a href="academies/'.$x.'"> '.$v.' </li></a>';}
+				if (($x != '00')&&($x != '01')) {echo '<li><a href="academies/'.$x.'.php"> '.$v.' </li></a>';}
 			}
 		?>
 		<li><hr></li>
@@ -110,7 +110,7 @@
 		</h1> </li>
 		<?php
 			foreach ($przlst as $x => $v) {
-				if (($x != '00')&&($x != '01')) {echo '<li><a href="prizes/'.$x.'"> '.$v.' </li></a>';}
+				if (($x != '00')&&($x != '01')) {echo '<li><a href="prizes/'.$x.'.php"> '.$v.' </li></a>';}
 			}
 		?>
 		<li><br /></li>

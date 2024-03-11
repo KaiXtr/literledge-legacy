@@ -80,7 +80,7 @@
 					$dth = substr($i['death'],0,5);
 				}
 				else {$d = $d.$i['death'];$dth=substr($i['death'],0,5);}
-				$age = abs(abs($dth) - abs($yy));
+				$age = abs(abs((int)$dth) - abs((int)$yy));
 				if ($_COOKIE['lang'] == 'pt') {$age = $age." anos";}
 				if ($_COOKIE['lang'] == 'en') {$age = $age." years old";}
 				if ($_COOKIE['lang'] == 'es') {$age = $age." años";}

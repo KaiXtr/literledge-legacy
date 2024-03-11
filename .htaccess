@@ -1,5 +1,6 @@
 DirectoryIndex index.php
 ErrorDocument 404 /literledge/not_found.php
+php_flag display_errors 1
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
